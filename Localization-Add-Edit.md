@@ -1,4 +1,4 @@
-Version aimed 1.7.6
+**Version aimed 1.7.6**
 
 Localization > Currencies > Edit/Add Page
 
