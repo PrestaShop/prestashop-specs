@@ -14,10 +14,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -28,10 +25,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -42,10 +36,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -56,10 +47,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -70,10 +58,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -90,10 +75,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -104,10 +86,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -118,10 +97,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -132,10 +108,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -146,10 +119,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -160,10 +130,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -174,10 +141,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -188,10 +152,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -208,10 +169,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -222,10 +180,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -242,10 +197,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -256,10 +208,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -270,10 +219,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -295,10 +241,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -309,10 +252,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -329,10 +269,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -343,10 +280,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -357,10 +291,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -371,10 +302,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -385,10 +313,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -399,10 +324,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -419,10 +341,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -433,10 +352,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -453,10 +369,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -467,10 +380,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -487,10 +397,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -501,10 +408,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -515,10 +419,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -529,10 +430,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -549,10 +447,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -563,10 +458,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -577,10 +469,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -591,10 +480,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -605,10 +491,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -619,10 +502,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -633,10 +513,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -647,10 +524,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -667,10 +541,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -681,10 +552,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -695,10 +563,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -709,10 +574,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -723,10 +585,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -737,10 +596,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -751,10 +607,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -765,10 +618,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -779,10 +629,7 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Edit.md">Edit Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
