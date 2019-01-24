@@ -12,8 +12,8 @@ The 1.6 had a custom currency creation but was limited to the international need
 
 The Unicode CLDR (Common Locale Data Repository) is a database containing the convention of different languages as format date, currencies and more shared by the biggest companies. It will be the main source to provide the best currencies pre-configuration to the merchant. 
 
-This features allows the merchant to have all the currency (cryptocurrencies, local currencies...) that he needs and responds to every customers expectations.
-The merchant just has to find right paiement module adapted to their new currency.
+**This features allows the merchant to have all the currency (cryptocurrencies, local currencies...) that he needs and responds to every customers expectations.
+The merchant just has to find right paiement module adapted to their new currency.**
 
 **SPECIFICATION**
 
