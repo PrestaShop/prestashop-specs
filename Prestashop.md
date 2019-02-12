@@ -1,4 +1,24 @@
 <details>
+	<summary>General FO</summary>
+<br>
+</details>
+<br>
+
+<details>
+	<summary>General BO</summary>
+<br>
+</details>
+<br>
+
+<details>
+	<summary>Output text</summary>
+<br>
+</details>
+<br>
+
+* * *
+
+<details>
 	<summary>Dashboard</summary>
 <br>
 </details>
@@ -394,7 +414,7 @@
 		<summary>Localization</summary>
 	<ul>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Localization-Currencies-List-Add-Edit.md">Currencies</a>
 		</li>
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
