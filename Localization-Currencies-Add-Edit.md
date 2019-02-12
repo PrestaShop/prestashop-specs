@@ -47,9 +47,9 @@ A currency symbol position (right, left with or without space) saved for a langu
 
 A wording is provided to explain that the format part changes will be applied for all the currencies.
 
-Format setting on the bottom of the currency form.![image3](img/List_preview_format_currencies.png)
+_Format setting on the bottom of the currency form.!_[image3](img/List_preview_format_currencies.png)
 
-pop-in after the click on edit when no symbol was filled.![image2](img/Popin_edit_format_currency.png)
+_Pop-in after the click on edit when no symbol was filled._![image2](img/Popin_edit_format_currency_with_no_symbol.png)
 
 The merchant can reset the format of a language by clicking on the reset button next to the edit button.
 
