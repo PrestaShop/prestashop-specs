@@ -74,14 +74,14 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
 
 # ISSUES RELATED
 
-*   #9714
-*   #10014
-*   #10017
-*   #10055
-*   #10054
-*   #10053
-*   #9885
-*   #11690
+ - [ ] #9714
+ - [ ] #10014
+ - [ ] #10017
+ - [ ] #10055
+ - [ ] #10054
+ - [ ] #10053
+ - [ ] #9885
+ - [ ] #11690
 
 # ACCEPTANCE CRITERIA
 
