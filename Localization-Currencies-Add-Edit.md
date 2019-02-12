@@ -51,7 +51,7 @@ _Format setting on the bottom of the currency form._
 ![image3](img/List_preview_format_currencies.png)
 
 _Pop-in after the click on edit when no symbol was filled._
-![image2](img/Popin_edit_format_currency_with_no_symbol.png)
+![image2](img/Popin_edit_format_currency_with_no_symbol.PNG)
 
 The merchant can reset the format of a language by clicking on the reset button next to the edit button.
 
