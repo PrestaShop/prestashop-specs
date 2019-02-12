@@ -16,6 +16,19 @@
 </details>
 <br>
 
+<details>
+<summary>UI Kit</summary>
+<br>
+	<details>
+	<summary>FO</summary>
+	<br>
+	</details>
+  <details>
+	<summary>BO</summary>
+	<br>
+	</details>
+</details>
+
 * * *
 
 <details>
@@ -655,16 +668,3 @@
 	</details>
 </details>
 <br>
-
-<details>
-<summary>UI Kit</summary>
-<br>
-	<details>
-	<summary>FO</summary>
-	<br>
-	</details>
-  <details>
-	<summary>BO</summary>
-	<br>
-	</details>
-</details>
