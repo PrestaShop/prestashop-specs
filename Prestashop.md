@@ -429,9 +429,6 @@
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Localization-Currencies-List-Add-Edit.md">Currencies</a>
 		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
 	</ul>
 	</details>
 	<details>
