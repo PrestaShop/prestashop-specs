@@ -67,6 +67,7 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
 
 [https://projects.invisionapp.com/d/main#/console/16335086/338742836/preview](https://projects.invisionapp.com/d/main%23/console/16335086/338742836/preview&sa=D&ust=1549966668646000)
 
+# CASES
 ## Failing cases
 
 ## Error/Warning case:
