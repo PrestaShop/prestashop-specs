@@ -47,9 +47,9 @@ A currency symbol position (right, left with or without space) saved for a langu
 
 A wording is provided to explain that the format part changes will be applied for all the currencies.
 
-Format setting on the bottom of the currency form.![image3](images/List_preview_format_currencies.png)
+Format setting on the bottom of the currency form.![image3](img/List_preview_format_currencies.png)
 
-pop-in after the click on edit when no symbol was filled.![image2](images/Popin_edit_format_currency.png)
+pop-in after the click on edit when no symbol was filled.![image2](img/Popin_edit_format_currency.png)
 
 The merchant can reset the format of a language by clicking on the reset button next to the edit button.
 
@@ -57,7 +57,7 @@ The merchant can reset the format of a language by clicking on the reset button 
 
 All the inputs is full filled by saved data. So when the user edits the format, a pop-in will open in which the user can change the symbol and its position on the price display through a radio button.
 
-![image1](images/image1.png)
+![image1](img/Edit_Popin_edit_format_currency.png)
 
 The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted display. The currency symbol in the radio is also displaying the symbol of currency that the user is editing.
 
