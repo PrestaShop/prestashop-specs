@@ -5,27 +5,16 @@
 <br>
 
 <details>
-	<summary>General BO</summary>
-<br>
-</details>
-<br>
-
-<details>
-	<summary>Output text</summary>
-<br>
-</details>
-<br>
-
-<details>
-<summary>UI Kit</summary>
+<summary>General BO</summary>
 <br>
 	<details>
-	<summary>FO</summary>
-	<br>
+		<summary>text</summary>
+		<br>
 	</details>
-  <details>
-	<summary>BO</summary>
-	<br>
+		<br>
+  	<details>
+		<summary>UI Kit</summary>
+		<br>
 	</details>
 </details>
 
