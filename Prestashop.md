@@ -17,7 +17,12 @@
 		<br>
 	</details>
 </details>
+<br>
 
+<details>
+  <summary>Native Modules</summary>
+<br>
+</details>
 * * *
 
 <details>
@@ -41,7 +46,7 @@
 	</ul>
 	</details>
 	<details>
-		<summary>Invoices</summary>	
+		<summary>Invoices</summary>
 	<ul>
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
