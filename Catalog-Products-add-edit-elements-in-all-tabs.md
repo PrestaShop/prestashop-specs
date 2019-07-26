@@ -27,7 +27,8 @@ The third step is to detail the multistore behavior.
 
 ### Elements in all tabs
 
-As a merchant I want to always see some elements when I create or edit a product.
+**As a merchant I want to always see some elements when I create or edit a product.**
+
 Some elements are displayed in all tabs. Here is the list of those elements :
 
 - **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name” 
