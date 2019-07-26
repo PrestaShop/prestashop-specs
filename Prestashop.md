@@ -103,6 +103,9 @@
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-Products-add-edit-elements-in-all-tabs.md">Add / edit product page - Elements in all tabs</a>
 		</li>
+		<li>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-basic-settings.md">Add / edit product page - Basic settings tab</a>
+		</li>
 	</ul>
 	</details>
 	<details>
