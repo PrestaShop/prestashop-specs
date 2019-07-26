@@ -106,6 +106,9 @@
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-basic-settings.md">Add / edit product page - Basic settings tab</a>
 		</li>
+		<li>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-quantities.md">Add / edit product page - Quantities tab</a>
+		</li>
 	</ul>
 	</details>
 	<details>
