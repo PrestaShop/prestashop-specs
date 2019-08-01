@@ -32,11 +32,9 @@ The third step is to detail the multistore behavior.
 Some elements are displayed in all tabs. Here is the list of those elements :
 
 - **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name” 
-Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
+Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
 
 - **Product type**: Drop-down with 3 options: Standard product, Pack of products, Virtual product. Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
-
-- **Language**: This drop-down is displayed when there are several languages installed and enabled. It allows to choose in which language the product page is translated. If the content does not exist in a language, it must retrieve the content of the default language.
 
 - **Sales**: Link opens in a new browser tab http://localhost/presta_176x/admin-dev/index.php?controller=AdminStats&module=statsproduct&id_product=6&token=92131e635ebd32af597a9aa6ca7e1c60
 
