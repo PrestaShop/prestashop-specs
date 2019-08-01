@@ -27,7 +27,7 @@ When you search a category and click on the result, the category appears in “a
 
 - **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked. If you try to unselect all categories, you can’t do it for the last one.
 
-- **Category tree**: When you create a new product, the whole tree is collapsed. I click on "expand", it unfolds the whole tree. I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. Categories are sorted by level and position:
+- **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories. I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. Categories are sorted by level and position:
 Categ 1 level 1 position 1
 Categ 3 level 1 position 2
 Categ 2 level 1 position 3
