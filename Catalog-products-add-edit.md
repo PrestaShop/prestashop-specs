@@ -25,7 +25,8 @@ The third step is to detail the multistore behavior.
 
 ## 1.	Product creation / edition on Back office
 
-### Elements in all tabs<a id="alltabs"></a>
+<a id="alltabs"></a>
+### Elements in all tabs
 
 **As a merchant I want to always see some elements when I create or edit a product.**
 
@@ -58,8 +59,8 @@ Only the name in the default language must be filled, if the product name is not
 
 - **Add new product**: When you click on this button, it saves and opens a new empty product page. Keyboard shortcut: ALT + SHIFT + P
 
-
-### Basic settings tab<a id="basicsettings"></a>
+<a id="basicsettings"></a>
+### Basic settings tab
 
 **As a merchant I want to be able to complete the basic information of my products.**
 
@@ -156,8 +157,8 @@ The second tab name changes depending on the type of product selected :
 - **Virtual product** for a virtual product.
 - **Combinations for** a standard product with combination
 
-
-### Quantities tab<a id="quantities"></a>
+<a id="quantities"></a>
+### Quantities tab
 
 **As a merchant I want to be able to manage my products quantities.**
 
@@ -190,8 +191,8 @@ Here is the list of the elements of quantities tab:
 
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
 
-
-### Virtual product tab<a id="virtualproduct"></a>
+<a id="virtualproduct"></a>
+### Virtual product tab
 
 **As a merchant I want to be able to manage my virtual products.**
 
@@ -233,7 +234,8 @@ Here is the list of the elements of virtual product tab:
 
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
 
-### Shipping tab<a id="shipping"></a>
+<a id="shipping"></a>
+### Shipping tab
 
 **As a merchant I want to be able to manage carriers information for my products.**
 
@@ -262,8 +264,8 @@ Here is the list of the elements of shipping tab:
 
 - **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (issue 11379) Only the selected carriers can be displayed in FO. There is an information message under all the checkboxes: “If no carrier is selected then all the carriers will be available for customers orders”
 
-
-### Pricing tab<a id="pricing"></a>
+<a id="pricing"></a>
+### Pricing tab
 
 **As a merchant I want to be able to manage the prices of my products**
 
@@ -331,8 +333,8 @@ Here is the list of the elements of pricing tab:
 
 - **Apply to all products**:	Checkbox to apply the same priorities for all products.
 
-
-### SEO tab<a id="seo"></a>
+<a id="seo"></a>
+### SEO tab
 
 **As a merchant I want to be able to manage my SEO information for my products.**
 
