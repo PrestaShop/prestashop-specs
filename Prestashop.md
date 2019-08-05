@@ -113,6 +113,9 @@
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-virtual-products.md">Add / edit product page - Virtual products tab</a>
 		</li>
 		<li>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-price.md">Add / edit product page - Pricing tab</a>
+		</li>
+		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-seo.md">Add / edit product page - SEO tab</a>
 		</li>
 	</ul>
