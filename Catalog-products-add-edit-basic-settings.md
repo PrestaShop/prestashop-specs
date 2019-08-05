@@ -8,9 +8,9 @@ Here is the list of the elements of basic settings tab:
 
 - **Reference**: The reference is displayed in the product details part in front-office.
 
-- **Summary tab**: The text can be formatted thanks to the TinyMCE editor
+- **Summary**: The text can be formatted thanks to the TinyMCE editor
 
-- **Description tab**: The text can be formatted thanks to the TinyMCE editor
+- **Description**: The text can be formatted thanks to the TinyMCE editor
 
 - **Quantity**: This field is not displayed for a product with combinations. If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product). When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
