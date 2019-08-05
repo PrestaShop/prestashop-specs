@@ -1,4 +1,4 @@
-### Basic settings tab
+### Basic settings tab<a id="basicsettings"></a>
 
 **As a merchant I want to be able to complete the basic information of my products.**
 
@@ -83,7 +83,7 @@ When you add a feature with a customized value, the feature is added in all lang
 
 - **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the product name is inserted in the search bar.
 
-**Pack quantity**
+**Pack quantity**<a id="packqty"></a>
 - **Pack add a product**: Button to add the product in the quantity specified to the pack.
 
 - **Pack delete a product**: When you hover one of the pack products, a trash appears to remove the product from the pack. When you click on it, you have a modal for cancel or confirm the action.
