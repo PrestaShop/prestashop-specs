@@ -101,25 +101,7 @@
 		<summary>Products</summary>
 	<ul>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-Products-add-edit-elements-in-all-tabs.md">Add / edit product page - Elements in all tabs</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-basic-settings.md">Add / edit product page - Basic settings tab</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-quantities.md">Add / edit product page - Quantities tab</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-virtual-products.md">Add / edit product page - Virtual products tab</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-shipping.md">Add / edit product page - Shipping tab</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-price.md">Add / edit product page - Pricing tab</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit-seo.md">Add / edit product page - SEO tab</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md">Add / edit product page</a>
 		</li>
 	</ul>
 	</details>
