@@ -175,15 +175,15 @@ Here is the list of the elements of quantities tab:
 - **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
 
 - **Pack quantities**: Dropdown with 4 options, displayed only when the product type is pack:
-1) Decrement pack only: Only the pack quantity is decremented when you order it.
-2) Decrement products in pack only: Only the products contained in the pack are decremented, the pack isn’t.
-3) Decrement both: The pack and the products contained in the pack are decremented.
-4) Default: Can be one of the 3 values above, it depends on what is selected in Shop parameters > Products > Default pack stock management.
+ 1) **Decrement pack only**: Only the pack quantity is decremented when you order it.
+ 2) **Decrement products in pack only**: Only the products contained in the pack are decremented, the pack isn’t.
+ 3) **Decrement both**: The pack and the products contained in the pack are decremented.
+ 4) **Default**: Can be one of the 3 values above, it depends on what is selected in Shop parameters > Products > Default pack stock management.
 
 - **Availability preferences, behavior when out of stock: 3 radios buttons**: 
-1) Deny orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
-2) Allow orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
-3) Use default behavior (Deny orders or Allow orders): the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+ 1) **Deny orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+ 2) **Allow orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+ 3) **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
 
 - **Label when in stock**:  If completed and product quantity is > 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.        
 
@@ -224,9 +224,9 @@ Here is the list of the elements of virtual product tab:
   - **Download file**: Once the file uploaded and clicking on Save, you can download your file.
 
 - **Availability preferences, behavior when out of stock**: 3 radios buttons: 
-1) Deny orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
-2) Allow orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
-3) Use default behavior (Deny orders or Allow orders): the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+ 1) **Deny orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+ 2) **Allow orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+ 3) **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
 
 - **Label when in stock**:  If completed and product quantity is > 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 
@@ -252,9 +252,9 @@ Here is the list of the elements of shipping tab:
 - **Weight**: By default it’s filled with 0. I set the weight, carriers that does not accept products greater than this weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
 
 - **Delivery time**: 3 radio buttons: 
-  1) None: No delivery time is displayed on the product page in front-office
-  2) Default delivery time: If the product is in stock, the value filled in Shop parameters > Products settings > “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters > Products settings > “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters > Products settings in a new browser tab next to the radio button label. 
-  3) Specific delivery time to this product: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.
+ 1) **None**: No delivery time is displayed on the product page in front-office
+ 2) **Default delivery time**: If the product is in stock, the value filled in Shop parameters > Products settings > “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters > Products settings > “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters > Products settings in a new browser tab next to the radio button label. 
+ 3) **Specific delivery time to this product**: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.
 
 - **Delivery time of in-stock products**: There is a placeholder: “Delivered within 3-4 days” and a subtitle under the field: “Leave empty to disable.” A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 
@@ -354,11 +354,11 @@ If the meta description field is empty, the product description is displayed. If
 - **Information message**: Friendly URLs are currently disabled. To enable it, go to SEO and URLs. Friendly URLs are currently enabled. To disable it, go to SEO and URLs. SEO and URLs link is opened in a new tab.
 
 - **Redirection when offline**: Dropdown with 5 options:
-  1) Permanent redirection to a category (301): When my product is offline, I choose a category to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
-  2) Temporary redirection to a category (302): When my product is offline, I can choose a category to which my current product is redirected. The new category will only be displayed when my product is offline, it is not saved in the browser cache
-  3) Permanent redirection to a product (301): When my product is offline, I choose another product to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
-  4) Temporary redirection to a product (302): When my product is offline, I can choose a product to which my current product is redirected. The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache
-  5) No redirection (404): When my product is offline,, if I try to accede to the product in font-office a message is displayed: “This product is no longer available.” and the product isn’t displayed.. If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”
+ 1) **Permanent redirection to a category (301)**: When my product is offline, I choose a category to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
+ 2) **Temporary redirection to a category (302)**: When my product is offline, I can choose a category to which my current product is redirected. The new category will only be displayed when my product is offline, it is not saved in the browser cache
+ 3) **Permanent redirection to a product (301)**: When my product is offline, I choose another product to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
+ 4) **Temporary redirection to a product (302)**: When my product is offline, I can choose a product to which my current product is redirected. The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache
+ 5) **No redirection (404)**: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available.” and the product isn’t displayed.. If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”
 
 - **Target category**: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category. There is a placeholder: “To which category the page should redirect ?” If no category is selected, the Main Category is used. You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected category is displayed under the field. 
 
