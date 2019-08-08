@@ -287,7 +287,7 @@ Here is the list of the elements of pricing tab:
 
 - **Unity field**: There is a placeholder: “Per kilo, per litre”. You can fill the name of the unit. Displayed in the product page in front-office next to the unit price
 
-- **Ecotax tax incl**: WIP
+- **Ecotax tax incl**: This field should not be displayed for a virtual product. WIP. 
 
 - **Cost price tax excl**: By default, it’s set to 0.000000 It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
