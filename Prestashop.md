@@ -282,6 +282,15 @@
 		</li>
 	</ul>
 	</details>
+	<details>
+		<summary>Modules</summary>
+	<ul>
+		<li>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/ps_facetedsearch.md">Faceted search</a>
+		</li>
+	</ul>
+	</details>
+	
 </details>
 <br>
 
