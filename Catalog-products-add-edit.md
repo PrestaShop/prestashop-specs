@@ -291,7 +291,8 @@ Here is the list of the elements of pricing tab:
 
 - **Cost price tax excl**: By default, it’s set to 0.000000 It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
-- **Add a specific price**: Button that opens a form with the following fields :
+- **Add a specific price**: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created. 
+This button opens a form with the following fields :
 
   - **Currencies**: Drop down with all the currencies enabled. You can select one currency or select “all currencies”, so that the specific price is available in all currencies. By default, “all currencies” is selected.
 
