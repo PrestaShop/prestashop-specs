@@ -51,7 +51,7 @@ Only the name in the default language must be filled, if the product name is not
 
 - **Offline**: When you click on this button, it saves and makes the product invisible in front-office.
 
-- **Save**: Button to save all changes made in all tabs. Keyboard shortcut: ALT + SHIFT + S
+- **Save**: Button to save all changes made in all tabs. Keyboard shortcut: ALT + SHIFT + S.  If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
 
 - **Duplicate**: When you click on this button, it saves and duplicate the current product (the duplicated product will be offline).  The duplicated product must be exactly the same. Keyboard shortcut: ALT + SHIFT + D 
 
