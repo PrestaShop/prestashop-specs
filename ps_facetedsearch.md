@@ -86,11 +86,25 @@ You select `Polished` or  `Brushed` - `Glass` option should get hidden.
 
 **Sorting of brands in front-office**
 
-In front-office, brands are sorted by ascending alphabetical order.
+In front-office, if brands starts with a character, so sort by ascending alphabetical order.
 
-If brands are numbers, they are sorted by increasing number.
+In front-office, if brands starts with number, so sort by increasing number and ignore other characters after number.
 
 If the merchant selected a filter number limit, so show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
+
+Example, in brackets the number of result:
+
+38 (50)
+40 (20)
+42 (100)
+
+10 cm (50)
+30 cm (20)
+40 cm (100)
+
+Adidas (291)
+Converses (625)
+Nike (406)
 
 **Sorting of attributes values in front-office**
 
@@ -100,9 +114,23 @@ If the merchant selected a filter number limit, so show the X filters with the m
 
 **Sorting of features values in front-office**
 
-In front-office, features values are sorted by ascending alphabetical order
+In front-office, if features values starts with a character, so sort by ascending alphabetical order.
 
-If features values are numbers, they are sorted by increasing number
+In front-office, if features values starts with number, so sort by increasing number and ignore other characters after number.
 
 If the merchant selected a filter number limit, so show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
+
+Example, in brackets the number of result:
+
+1,6 (50)
+10 (20)
+11,2 (100)
+
+10 cm (50)
+30 cm (20)
+40 cm (100)
+
+Short sleeves (291)
+Long sleeves (406)
+Without sleeves (625)
 
