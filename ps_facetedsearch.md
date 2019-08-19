@@ -90,13 +90,13 @@ In front-office, brands are sorted by ascending alphabetical order.
 
 If brands are numbers, they are sorted by increasing number.
 
-If the merchant selected a filter number limit, then show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
+If the merchant selected a filter number limit, so show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
 
 **Sorting of attributes values in front-office**
 
 In front-office, attributes values are sorted by position ascending like defined in the back-office
 
-If the merchant selected a filter number limit, then show the X filters with the most results and sort them by ascending position.
+If the merchant selected a filter number limit, so show the X filters with the most results and sort them by ascending position.
 
 **Sorting of features values in front-office**
 
@@ -104,5 +104,5 @@ In front-office, features values are sorted by ascending alphabetical order
 
 If features values are numbers, they are sorted by increasing number
 
-If the merchant selected a filter number limit, then show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
+If the merchant selected a filter number limit, so show the X filters with the most results and sort them by ascending alphabetical order or increasing number.
 
