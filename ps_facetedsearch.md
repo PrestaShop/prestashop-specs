@@ -95,15 +95,23 @@ If the merchant selected a filter number limit, so show the X filters with the m
 Example, in brackets the number of result:
 
 38 (50)
+
 40 (20)
+
 42 (100)
 
+
 10 cm (50)
+
 30 cm (20)
+
 40 cm (100)
 
+
 Adidas (291)
+
 Converses (625)
+
 Nike (406)
 
 **Sorting of attributes values in front-office**
@@ -123,14 +131,22 @@ If the merchant selected a filter number limit, so show the X filters with the m
 Example, in brackets the number of result:
 
 1,6 (50)
+
 10 (20)
+
 11,2 (100)
 
+
 10 cm (50)
+
 30 cm (20)
-40 cm (100)
+
+40 cm(100)
+
 
 Short sleeves (291)
+
 Long sleeves (406)
+
 Without sleeves (625)
 
