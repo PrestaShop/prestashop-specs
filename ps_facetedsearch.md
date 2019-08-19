@@ -94,12 +94,15 @@ If the merchant selected a filter number limit, so show the X filters with the m
 
 Example, in brackets the number of result:
 
+Size
+
 38 (50)
 
 40 (20)
 
 42 (100)
 
+Size
 
 10 cm (50)
 
@@ -107,6 +110,7 @@ Example, in brackets the number of result:
 
 40 cm (100)
 
+Brands
 
 Adidas (291)
 
@@ -130,12 +134,15 @@ If the merchant selected a filter number limit, so show the X filters with the m
 
 Example, in brackets the number of result:
 
+Size
+
 1,6 (50)
 
 10 (20)
 
 11,2 (100)
 
+Size
 
 10 cm (50)
 
@@ -143,6 +150,7 @@ Example, in brackets the number of result:
 
 40 cm(100)
 
+Sleeves
 
 Short sleeves (291)
 
