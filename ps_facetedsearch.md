@@ -83,7 +83,7 @@ You select `Nice` or  `Ugly` - `Steel` option should get hidden.
 
 You select `Polished` or  `Brushed` - `Glass` option should get hidden.
 
-
+<a id="sorting"></a>
 **Sorting of brands in front-office**
 
 In front-office, if brands starts with a character, so sort by ascending alphabetical order.
