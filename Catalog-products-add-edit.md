@@ -11,18 +11,18 @@ Furthermore, we have identified different issues related to this page that we sh
  
 ## WHAT
 
-Thus, this project aims at specifying the current and expected behaviour for every scenario a merchant could be dealing with when creating / editing a product for his/her customers. This specification should specifically define : 
-Each field behavior
-Type of each field & errors message
-Multistore behavior
+Thus, this project aims at specifying the current and expected behaviour for every scenario a merchant could be dealing with when creating / editing a product for his/her customers. 
 
 
 ## SPECIFICATIONS
 
-The first step is to detail the behavior of each field per tab.
-The second step of this document is to detail the type of each fields and error messages per tab.
+<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#product-creation-edition">The first step is to detail the behavior of each field per tab when creating / editing a product.</a>
+
+<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#errors">The second step of this document is to detail the type of each fields and error messages per tab.</a>
+
 The third step is to detail the multistore behavior.
 
+<a id="product-creation-edition"></a>
 ## 1.	Product creation / edition on Back office
 
 <a id="alltabs"></a>
@@ -445,3 +445,6 @@ When there are many suppliers checked, it’s not mandatory to select a default 
     - **Supplier reference**: Field to specify the product reference for each supplier. 
     - **Price (tax excl.)**: Field to specify the product price for each supplier.
     - **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
+
+<a id="errors"></a>    
+## 2.	Type of each field & errors message 
