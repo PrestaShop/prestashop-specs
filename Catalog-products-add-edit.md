@@ -370,3 +370,78 @@ Delete selected category or product: You can remove the selected product or cate
 Permanent redirection (301) = Permanently display another product or category instead.
 Temporary redirection (302) = Temporarily display another product or category instead.
 
+<a id="options"></a>
+### Options tab
+
+**As a merchant I want to be able to manage the options for my products.**
+
+Here is the list of the elements of options tab:
+
+- **Visibility**: Drop-down with 4 options. By default, everywhere is selected. 
+ 1) **Everywhere**: The product is displayed in the catalog (categories) and can be found if you search for it.
+ 2) **Catalog only**: The product is displayed in the catalog (categories) and can’t be found if you search for it.
+ 3) **Search only**: The product is not displayed in the catalog (categories) and can be found if you search for it.
+ 4) **Nowhere**: The product is not displayed in the catalog (categories) and can’t be found if you search for it.
+
+- **Available for order**: Checkbox checked by default. If you uncheck it, the add to cart button is disabled in the product page in front-office and the “show price” checkbox is displayed (checked).
+
+- **Show price**: This checkbox appears when you unselect “available for order” checkbox and it’s checked. If you uncheck it, the product price isn’t displayed on the product page and product lists in front-office.
+
+- **Web only**: Checkbox not checked by default. When checked and when the product is “available for order” OR “show price” is checked, a label “Online only” is displayed on the product page and product lists in front-office.
+
+- **Tags**: There is a placeholder: “Use a comma to create separate tags. E.g.: dress, cotton, party dresses.” To validate a tag, you can push Enter or comma key. The tags appears in Shop parameters > Search > Tags and are associated to the product. You can remove a tag by clicking on the cross. The tag is also removed in Shop parameters > Search > Tags. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
+
+- **Information message**: “Tags facilitate the product search for customers using the search bar” There is a read more link to open the following info: “Choose terms and keywords which your potential customers commonly would search for when looking for this product. Make sure that they are consistent with the tags you may have already defined. You can manage tag aliases in the Search section. If you add new tags, you have to rebuild the index.”
+
+- **Condition**: Drop-down with 3 options: New, Used, Refurbished. By default, New is selected.
+
+- **Display condition on product page**: Checkbox, by default it’s not checked. When checked, the condition is displayed on the product page in front-office.
+
+- **ISBN**: Field, only numbers are accepted. The International Standard Book Number (ISBN) is used to identify books and other publications. 
+
+- **EAN-13 or JAN barcode**: Field, only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America.
+
+- **UPC barcode**: Field, only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. 
+
+- **Add a customization field**: You can click several times on this button to add multiple customization fields. Fields are displayed on the product page in front-office. When you click on it that opens a form with the following fields:
+
+  - **Label**: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. In the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.       
+
+  - **Type**: Drop-down with 2 options: text & file. By default text is selected.
+
+  - **Delete**: Button to delete the field. When you click on it, you have a modal to cancel or confirm the action.
+
+  - **Required**: Checkbox not checked by default. When checked the field is required in front-office and you can’t add the product to the cart while it’s not completed.
+
+- **Attach a new file**: Button allowing to add files to the product page. When you click on it, a form is opened with the elements below. If you click a second time on it, the form is closed. If you want to add many files, you need to add the first one before adding another one.
+
+  - **Choose files**: You can browse and choose files 
+
+  - **Title**: Field with the title of the document, displayed in front-office
+
+  - **Description**: Field with the description of the document, displayed in front-office
+
+  - **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. There is a checkbox allowing to check/uncheck all the files (issue 9790)
+When the checkbox is checked, the file is displayed on the product page (attachments tab) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog > Files.
+
+  - **Cancel**: Button to close the form
+ 
+- **Suppliers**: This part is displayed only if you have created and enabled at least one supplier. Indicating the product's supplier is not really important for customers, but it may turn out to be an essential part for the merchant’s internal management, not least when managing stock: the merchant simply needs to know who he bought the product from.
+
+  - **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool (see Shop Parameters > Products settings), the values you define (price, references) will be used in supply orders.”
+
+  - **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office. 
+
+  - **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears.
+When there is only one supplier checked, the default supplier radio button is automatically checked (issue 9580)
+When there are many suppliers checked, it’s not mandatory to select a default supplier. You can save without choosing a default supplier.
+
+ - **Supplier reference(s)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
+
+  - **Information message about supplier reference(s)**: “You can specify product reference(s) for each associated supplier. Click "Save" after changing selected suppliers to display the associated product references.”
+
+  - **Table of suppliers**:
+    - **The product name**: Display the product name
+    - **Supplier reference**: Field to specify the product reference for each supplier. 
+    - **Price (tax excl.)**: Field to specify the product price for each supplier.
+    - **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
