@@ -271,9 +271,9 @@ Here is the list of the elements of shipping tab:
 
 Here is the list of the elements of pricing tab:
 
-- **Retail price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
+- **(Retail) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 
-- **Retail price tax incl**: When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
+- **(Retail) price tax incl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
 
 - **Tax rule**: Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 
@@ -287,7 +287,10 @@ Here is the list of the elements of pricing tab:
 
 - **Unity field**: There is a placeholder: “Per kilo, per litre”. You can fill the name of the unit. Displayed in the product page in front-office next to the unit price
 
-- **Ecotax tax incl**: This field should not be displayed for a virtual product. WIP. 
+- **Ecotax tax incl**: This field is displayed if the “ecotax” option is enabled in International > Taxes. Except for a virtual product this field shouldn’t be displayed (issue 15038). The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
+
+- **Net turnover excluding tax**: This information is displayed when the ecotax is enabled and if it is not a virtual product. It’s the amount of Price (tax excl.) - ecotax (tax incl.).
+It is taken into account for the calculations instead of the field "Price (tax excl.)" when ecotax tax incl field is different from 0. This value is recalculated when the merchant will change one of the following fields: Price (tax excl.) ecotax included, Price (tax incl.) ecotax included & Ecotax (tax incl.) 
 
 - **Cost price tax excl**: By default, it’s set to 0.000000 It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
