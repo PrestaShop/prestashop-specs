@@ -37,7 +37,7 @@ Only the name in the default language must be filled, if the product name is not
 
 - **Product type**: Drop-down with 3 options: Standard product, Pack of products, Virtual product. Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
 
-- **Sales**: Link opens in a new browser tab http://localhost/presta_176x/admin-dev/index.php?controller=AdminStats&module=statsproduct&id_product=6&token=92131e635ebd32af597a9aa6ca7e1c60
+- **Sales**: This link redirect to Stats > product detail and is open in a new browser tab 
 
 - **Product list**: Link that displays the list of all products filtered as in the catalog, with their id, name, price, quantity. If you click on the id or the name, you arrive on the product page in basic settings tab. If you click on the price, you arrive on the product page in pricing tab. If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.
 
