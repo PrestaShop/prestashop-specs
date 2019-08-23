@@ -18,7 +18,9 @@ In tables and listings, some improvements and changes in behaviour have been dec
 **2) Tables with drag & drop**
 
 
+
 **3) Add new / other actions**
+
 
 
 **4) Configuration blocks**
