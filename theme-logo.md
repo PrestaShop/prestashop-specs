@@ -1,7 +1,7 @@
 **44 | Design > Theme & Logo > Theme & Logo**
 
- This page refer to the issue : #10576  
-The page can have extra sections  if i have many themes installed, if i activate multi-store feature if i have languages who needs RTL features or if i have MBO module installed.
+ This page refers to the issue : #10576  
+The page can have extra sections if I have many themes installed, if I enable multi-store feature if I have languages who needs RTL features or if I have MBO module installed.
 
 **A) BASIC STATE**
 
