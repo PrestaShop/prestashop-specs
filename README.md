@@ -14,6 +14,11 @@
 		<br>
   	<details>
 		<summary>UI Kit</summary>
+	<ul>
+		<li>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/symfony-migration.md">Symfony Migration</a>
+		</li>
+		
 		<br>
 	</details>
 </details>
@@ -89,7 +94,8 @@
 <br>
 
 <details>
-<summary>Catalog</summary>
+<summary>
+	</summary>
 <br>
 	<details>
 		<summary>Products</summary>
