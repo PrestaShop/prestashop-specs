@@ -91,8 +91,7 @@
 <br>
 
 <details>
-<summary>
-	</summary>
+<summary>Products</summary>
 <br>
 	<details>
 		<summary>Products</summary>
