@@ -158,10 +158,10 @@
 		<summary>Discounts</summary>
 	<ul>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">Cart rules</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/catalog-price-rules.md">Catalog Price rules</a>
 		</li>
 	</ul>
 	</details>
