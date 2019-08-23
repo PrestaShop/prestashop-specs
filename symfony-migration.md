@@ -14,6 +14,7 @@ In tables and listings, some improvements and changes in behaviour have been dec
 - Filter : 
 
 
+
 **2) Tables with drag & drop**
 
 
