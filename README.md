@@ -19,12 +19,6 @@
 </details>
 <br>
 
-<details>
-  <summary>Native Modules</summary>
-<br>
-</details>
-<br>
-
 * * *
 
 <details>
