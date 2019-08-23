@@ -301,7 +301,7 @@
 		<summary>Theme & Logo</summary>
 	<ul>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/theme-logo.md">Theme & Logo</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/theme-logo.md">Theme and Logo</a>
 		</li>
 	</ul>
 	</details>
