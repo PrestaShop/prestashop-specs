@@ -85,7 +85,7 @@ Here is the list of the elements of basic settings tab:
 - **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. 
 
 - **Select category**: Allows to associate categories to the product. A category is necessarily selected, it is impossible not to have one. When you create a new product, “Home” is selected.
-When you search a category and click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
+When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (issue 14052). When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
 
 - **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked. If you try to unselect all categories, you can’t do it for the last one.
 
@@ -139,11 +139,11 @@ When you add a feature with a customized value, the feature is added in all lang
 
 - **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
 
-- **Add a related product**: Search field to search a product. You can search by product name or product reference. When you start typing, if there are results, they are displayed under and you can click on it. It should not be possible to associate the same product with itself. It should not be possible to associate a product already associated to this product. You can have many associated products.
+- **Add a related product**: Search field to search a product. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (issue 14052). You can click on it to select it. It should not be possible to associate the same product with itself. It should not be possible to associate a product already associated to this product. You can have many associated products.
 
 - **Delete a related product**: The trash button is to delete all related products. When you click on it, you have a modal for cancel or confirm the action. If you want to delete only one associated product, you can click on the cross. When you click on it, you have a modal for cancel or confirm the action.
 
-- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the product name is inserted in the search bar.
+- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (issue 14052). When you select a result, then the product name is inserted in the search bar.
 
 **Pack quantity**<a id="packqty"></a>
 - **Pack add a product**: Button to add the product in the quantity specified to the pack.
@@ -303,7 +303,7 @@ This button opens a form with the following fields :
   
   - **Groups**: Drop down with all customers groups. You can select one group or select “all groups”, so that the specific price is available for all customers groups.. By default, “all groups” is selected.
 
-  - **Customers**: There is a placeholder: “All customers”. If no customer is selected, the specific price is available for all customers. You can search a customer by name, lastname or email. Enabled customers with corresponding name, lastname or email address are displayed under the field. If you enter something and no results are found, when you click outside the field, what has been entered is deleted. You can click, to select it. You can select only one customer. You can remove it by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
+  - **Customers**: There is a placeholder: “All customers”. If no customer is selected, the specific price is available for all customers. You can search a customer by name, lastname or email. Enabled customers with corresponding name, lastname or email address are displayed under the field. When you search a customer, results are highlighted in dropdown when using keyboard and hover with mouse (issue 14052). If you enter something and no results are found, when you click outside the field, what has been entered is deleted. You can click, to select it. You can select only one customer. You can remove it by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
 
   - **Combinations**: This drop down is displayed only for a product with combinations. All the combinations are listed. You can select one combination or select “apply to all combinations”, so that the specific price is available for all combinations. By default, “Apply to all combinations” is selected.
 
