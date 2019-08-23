@@ -18,9 +18,6 @@
 		<li>
 			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/symfony-migration.md">Symfony Migration</a>
 		</li>
-		
-		<br>
-	</details>
 </details>
 <br>
 
