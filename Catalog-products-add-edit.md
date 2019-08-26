@@ -35,7 +35,8 @@ Some elements are displayed in all tabs. Here is the list of those elements :
 - **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name” 
 Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
 
-- **Product type**: Drop-down with 3 options: Standard product, Pack of products, Virtual product. Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
+- **Product type**: Drop-down with 3 
+: Standard product, Pack of products, Virtual product. Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
 
 - **Sales**: This link redirect to Stats > product detail and is open in a new browser tab 
 
@@ -412,7 +413,7 @@ Here is the list of the elements of options tab:
 
   - **Label**: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. In the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.       
 
-  - **Type**: Drop-down with 2 options: text & file. By default text is selected.
+  - **Type**: Drop-down with 3 options: text, file & numeric. By default text is selected. If you choose “text” in front-office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers.
 
   - **Delete**: Button to delete the field. When you click on it, you have a modal to cancel or confirm the action.
 
