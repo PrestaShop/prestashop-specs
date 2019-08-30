@@ -79,9 +79,9 @@ Here is the list of the elements of basic settings tab:
 
 - **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
 
-- **Price tax incl**: When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+- **Price tax incl**: This field shouldn't be displayed if taxes are disabled in International > Taxes. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. This field shouldn't be displayed if taxes are disabled in International > Taxes.
 
-- **Tax rule**: Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
+- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes. Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
 
 - **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. 
 
@@ -274,15 +274,15 @@ Here is the list of the elements of pricing tab:
 
 - **(Retail) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 
-- **(Retail) price tax incl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
+- **(Retail) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International > Taxes. "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
 
-- **Tax rule**: Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
+- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes. Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 
 - **Manage tax rule**: Open in a new browser tab International > Taxes
 
 - **Display the "On sale!" flag on the product page, and on product listings**: When the checkbox is checked,, it displays a banner "PROMO !" (not linked to a possible promotion in progress) on the image of the product in the product listing and on the product page in front-office. 
 
-- **Final retail price banner**: Displays the final prices tax excl and tax incl. Prices are updated when they are modified above.
+- **Final retail price banner**: Displays the final prices tax excl and tax incl (tax incl only if taxes are enabled in International > Taxes). Prices are updated when they are modified above.
 
 - **Price per unit tax excl**: By default, it’s set to 0.000000 You can fill the unit price if you sell products per unit. To separate decimals a dot or a comma can be used, both should work no matter the language. Displayed in the product page in front-office.
 
