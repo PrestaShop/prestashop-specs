@@ -42,6 +42,7 @@ Tshirt Green L: 10
 
 In front-office the M filter shouldn't be displayed except if the customer checked the availabiliy filter "out of stock".
 If another product is available in M size, then the "M" filter is displayed but the product "Tshirt" will not appear after checking it.
+When "Product stock filter" filter is OFF in facetedsearch template, then show products in stock AND products out of stock but available for order
 
 
 **Hide filter values when no product is matching option**
