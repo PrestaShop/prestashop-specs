@@ -1,6 +1,6 @@
 **Availability options**
 
-There are 3 options in the module configuration when the availability filter is enabled:
+There are 3 options in the module configuration when the availability filter is **enabled**:
 - Display in stock products: Yes / No 
 
 If the option is set to Yes, display in FO “In stock”: Product quantity > 0
@@ -22,7 +22,7 @@ If the option is set to Yes, display in FO “Out of stock”: Product quantity 
 By default it should be on No
 
 
-These 3 options should also be displayed when the availability filter is disabled:
+These 3 options should also be displayed when the availability filter is **disabled**:
 
 - Display in stock products: Yes / No
 
