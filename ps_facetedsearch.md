@@ -22,27 +22,27 @@ If the option is set to Yes, display in FO “Out of stock”: Product quantity 
 By default it should be on No
 
 
-**Stocks of products & filters in front-office**
+These 3 options should also be displayed when the availability filter is disabled:
 
-When a product is out of stock and not available for order, the filter is not displayed.
+- Display in stock products: Yes / No
 
-Example:
+If the option is set to Yes, display in FO products with quantity > 0
 
-Tshirt Red S: 0 and available for order
+Should be on Yes by default
 
-Tshirt Green S: 0 and available for order
 
-Tshirt Red M: -2 and not available for order
+- Display available products: Yes / No
 
-Tshirt Green M: -2 and not available for order
+If the option is set to Yes, display in FO products with quantity <= 0 but available for order
 
-Tshirt Red L: 10
+Should be on Yes by default
 
-Tshirt Green L: 10
 
-In front-office the M filter shouldn't be displayed except if the customer checked the availabiliy filter "out of stock".
-If another product is available in M size, then the "M" filter is displayed but the product "Tshirt" will not appear after checking it.
-When "Product stock filter" filter is OFF in facetedsearch template, then show products in stock AND products out of stock but available for order
+- Display out of stock products: Yes / No
+
+If the option is set to Yes, display in FO products with quantity <= 0 but not available for order
+
+Should be on No by default
 
 
 **Hide filter values when no product is matching option**
