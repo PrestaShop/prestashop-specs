@@ -1,16 +1,18 @@
-# SPECIFICATIONS SHIPPING > CARRIERS  - Add new/Edit
+# SPECIFICATIONS - SHIPPING > CARRIERS > Add new/Edit
 
 Status : 
-- [x] Draft
-- [] To be reviewed
+- [x] Draft WIP
+- [ ] To be reviewed
 - [ ] Reviewed 
-- [ ] Waiting for changes 
+	- [ ] Waiting for changes 
 - [ ] Ready
 
 # What
 The Add new/Edit Carrier page allows users to create and edit carriers.
 
 # Specifications
+As of Sept 9th 2019
+
 ##  Elements in the page
 ### Logo Block
 Logo block: There is a logo block on the left of the page. The title is TITLE. It contains a thumbnail of the image uploaded as logo.
@@ -22,7 +24,7 @@ Default status - Edit: WIP
 There 4 tabs in this page, following the carrier creation process.
 
 #### 1 General Settings
-Carrier name: Text field. Required field. Tooltip on Label hover.
+**Carrier name:** Text field. Required field. Tooltip on Label hover.
 Default status - Add New: field is empty
 Default status - Edit: WIP
 
@@ -45,7 +47,7 @@ Default status - Add New: Field is empty. The text entered should be a URL to be
 Default status - Edit: WIP
 
 
-### 2 Shipping locations and costs
+#### 2 Shipping locations and costs
 
 Add handling costs: Switch YES/NO. Tooltip on Label hover.
 	Default status - Add New: Set on NO
@@ -180,12 +182,13 @@ Navigation through tabs: WIP
 
 # Errors on the page
 WIP
+
 # Behaviors / User stories
 WIP
+
 Nice to have next:
 Save field input when reloading
-# Bugs related to the page to fix
- https://github.com/PrestaShop/PrestaShop/issues/15214
+
 
 
 
