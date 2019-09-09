@@ -62,11 +62,11 @@ Related Bug to fix -> https://github.com/PrestaShop/PrestaShop/issues/15214
 
 Billing: Radio buttons. 
 2 options: 
-According to total price
-According to total weight
+- According to total price
+- According to total weight
 
 	Default status - Add New: “According to total price” is selected
-Default status - Edit: WIP
+	Default status - Edit: WIP
 
 When selecting an option it adapts the text and the unit of measure in the “Ranges” table.
 When “according to total price”, text in the first two columns is “Will be applied when the price is selected” and the unit of the fields is the default currency used symbol (ex: €, $, ¥)
@@ -134,7 +134,7 @@ Default status - Edit: WIP
 
 Maximum package weight (defaut unit): Text field. Tooltip on Label hover. The value must be an integer, 0 or empty is considered ignored.
 	Default status - Add New: empty field
-Default status - Edit: WIP
+	Default status - Edit: WIP
 
 Group access: Table. Mark the groups that are allowed to access this carrier. Tooltip on Label hover.
 3 columns:
