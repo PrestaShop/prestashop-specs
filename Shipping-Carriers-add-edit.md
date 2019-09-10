@@ -176,8 +176,13 @@ When on the last tab, the button “Previous” should not be clickable.
 # Errors on the page
 WIP
 
+# Hooks
+WIP
+
 # Behaviors / User stories
 WIP
+
+
 
 
 
