@@ -75,7 +75,7 @@ Here is the list of the elements of basic settings tab:
 
 - **Description**: The text can be formatted thanks to the TinyMCE editor
 
-- **Quantity**: This field is not displayed for a product with combinations. If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product). When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters > Products settings. If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product). When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
 
@@ -165,7 +165,7 @@ The second tab name changes depending on the type of product selected :
 
 Here is the list of the elements of quantities tab:
 
-- **Quantity**: When you update the field in quantities tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. When you update the field in quantities tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 
@@ -181,7 +181,11 @@ Here is the list of the elements of quantities tab:
  3) **Decrement both**: The pack and the products contained in the pack are decremented.
  4) **Default**: Can be one of the 3 values above, it depends on what is selected in Shop parameters > Products > Default pack stock management.
 
-- **Availability preferences, behavior when out of stock: 3 radios buttons**: 
+- **Availability preferences, behavior when out of stock:**
+
+This field is not displayed if stock management is disabled in Shop parameters > Products settings.
+
+3 radios buttons: 
  1) **Deny orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
  2) **Allow orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
  3) **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
@@ -199,7 +203,7 @@ Here is the list of the elements of quantities tab:
 
 Here is the list of the elements of virtual product tab:
 
-- **Quantity**: When you update the field in virtual product tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. When you update the field in virtual product tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 
@@ -224,7 +228,12 @@ Here is the list of the elements of virtual product tab:
 
   - **Download file**: Once the file uploaded and clicking on Save, you can download your file.
 
-- **Availability preferences, behavior when out of stock**: 3 radios buttons: 
+- **Availability preferences, behavior when out of stock:**
+
+This field is not displayed if stock management is disabled in Shop parameters > Products settings.
+
+3 radios buttons: 
+
  1) **Deny orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
  2) **Allow orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
  3) **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
