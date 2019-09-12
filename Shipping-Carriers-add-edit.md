@@ -179,6 +179,8 @@ WIP
 # Hooks
 WIP
 
+# MultiStore behaviors
+
 # Behaviors / User stories
 WIP
 
