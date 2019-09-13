@@ -367,7 +367,7 @@ If the meta description field is empty, the product description is displayed. If
 
 - **Information message**: Friendly URLs are currently disabled. To enable it, go to SEO and URLs. Friendly URLs are currently enabled. To disable it, go to SEO and URLs. SEO and URLs link is opened in a new tab.
 
-- **Indexation by search engines**: Yes / No. By default it should be on “Yes”. If seted on “Yes”, the product URL is indexed. If seted on “No”, product URL isn’t indexed.
+- **Indexation by search engines**: Yes / No. By default it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, product URL isn’t indexed.
 
 - **Redirection when offline**: Dropdown with 5 options:
  1) **Permanent redirection to a category (301)**: When my product is offline, I choose a category to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
