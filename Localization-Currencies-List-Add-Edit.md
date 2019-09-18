@@ -125,11 +125,13 @@ The user can choose from a drop list from our currency database (CDLR) or select
 
 ![new currency](img/new_currency.PNG)
       
-Choosing a currency from the drop list will fill all the inputs automatically and make the ISO code uneditable.
+Choosing a currency from the drop list will fill all the inputs automatically and make the ISO and the numeric iso code uneditable and greyed.
 
 If the user edits the currency chosen in the drop list just before saving , the currency will be marked as “Edited” on the Currencies Page.
 
-And by checking “Create new”, the user has to fill all the inputs by himself and choose an new unique ISO code.
+When creating a new currency, the iso numeric code field is hidden and it enables the code iso field if it was disabled. The user has to fill all the inputs by himself and choose an new unique ISO code.
+
+If the user selects a currency from droplist but clicks on the new currency the fields remain pre-filled but the droplist displays "--" instead of the selected currency.
 
 ![add new currency](img/add_new_currency.PNG)
 
