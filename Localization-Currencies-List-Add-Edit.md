@@ -67,11 +67,6 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
 
 [https://projects.invisionapp.com/d/main#/console/16335086/338742836/preview](https://projects.invisionapp.com/d/main%23/console/16335086/338742836/preview&sa=D&ust=1549966668646000)
 
-# CASES
-## Failing cases
-
-## Error/Warning case:
-
 # ISSUES RELATED
 
  - [ ] #9714
@@ -83,18 +78,8 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
  - [ ] #9885
  - [ ] #11690
 
-# ACCEPTANCE CRITERIA
-
-To be completed with QA and developers.
-
-Given... [a context],
-
-when... [users does something],
-
-then... [what the user should observe]
-
 * * *
-# Currency adding and editing
+# Currency adding, editing and deleting
 **Localization > Currencies > Edit/Add Page**
 
 # USER STORY
@@ -114,8 +99,7 @@ The merchant just has to find right paiement module adapted to their new currenc
 
 The 1rst improvements features of the Page Add Currency and Edit Currency in Page Currencies of Localization Category allow:
 
- - Add an official new currency with the CLDR or create a custom
-   currency. 
+ - Add an official new currency from the CLDR or create a custom currency. 
  - Edit a currency (this is new in 1.7)
 
 Add/Edit currency inputs:
@@ -178,6 +162,11 @@ On the Currencies Page, every edited currency will be mark as “edited” next 
 ![list currencies](img/list_currency.PNG)
 
 NB: after the migration, the activation exchange rate is on the bottom of the list.
+
+## Delete a currency
+
+If I delete a currency, the currency should be hide from the BO's currency list but it must be kept to display the orders made in the deleted currency.
+If no orders have been made with the currency, the currency can be definitely deleted.
 
 # DESIGN
 
