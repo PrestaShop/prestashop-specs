@@ -159,3 +159,8 @@ Long sleeves (406)
 
 Without sleeves (625)
 
+**Display of attribute group in front-office**
+
+When you create an attribute in back-office, you have to fill the name and the public name.
+As a customer, in front-office I want to see the public name of the attribute group.
+
