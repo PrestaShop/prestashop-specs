@@ -65,7 +65,7 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
 
 # DESIGN
 
-[https://projects.invisionapp.com/d/main#/console/16335086/338742836/preview](https://projects.invisionapp.com/d/main%23/console/16335086/338742836/preview&sa=D&ust=1549966668646000)
+[https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens](https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens)
 
 # ISSUES RELATED
 
@@ -172,7 +172,7 @@ If no orders have been made with the currency, the currency can be definitely de
 
 # DESIGN
 
-[https://projects.invisionapp.com/d/main#/console/16335086/338742836/preview](https://projects.invisionapp.com/d/main#/console/16335086/338742836/preview)
+[https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens/338742836](https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens/338742836)
 
 # CASES
 
