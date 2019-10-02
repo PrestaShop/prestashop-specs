@@ -418,6 +418,8 @@ Here is the list of the elements of options tab:
 
 - **UPC barcode**: Field, only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. 
 
+- **MPN**: Field, numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer. 
+
 - **Add a customization field**: You can click several times on this button to add multiple customization fields. Fields are displayed on the product page in front-office. When you click on it that opens a form with the following fields:
 
   - **Label**: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. In the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.       
@@ -588,6 +590,8 @@ If you don’t complete this field and click on Apply, you have an error message
 - **EAN-13 or JAN barcode**: Varchar field but only numbers are accepted. It should have maximum 13 characters. If you try to enter more than 13 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”
 
 - **UPC barcode**: Varchar field but only numbers are accepted. It should have maximum 12 characters. If you try to enter more than 12 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”
+
+- **MPN**: Varchar field, numbers and characters are accepted. It should have maximum 40 characters. If you try to enter more than 40 chars, an error message should be displayed under the field: “This value is too long. It should have 40 characters or less.” 
 
 - **Add a customization field**: 
 
