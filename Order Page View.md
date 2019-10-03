@@ -1,3 +1,4 @@
+
 **Specifications for the order view page for 1.7.7 - 2019**
 
 # **User Story:**
@@ -18,11 +19,11 @@ As merchant managing order is essential for my e-commerce, I need to be able to:
 
 The Add order page _(Orders > Orders > View button)_ is expected to be migrated to Symfony for the 1.7.7 version and will be reworked for better user experience.
 
-Some new specifications for the new design is in progress but to avoid any features regressions. We need to specify the whole behaviour of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
+Some new specifications for the new design are in progress but to avoid any features regressions. We need to specify the whole behaviour of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
 
 **Related issue**:
 
-[](https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing)[https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing)
+[https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing)
 
 **WHAT**
 
@@ -39,13 +40,13 @@ Thus, this project aims at specifying the new behaviours for every scenario a me
 
 **Orders > Orders > View order**
 
-The user access to the order view page by either clicking on **the order’s row** or on **the view button**.
+The user access to the order view page by either clicking on **the order’s row** or **the view button**.
 
 **Generic page operation - Order view**
 
-On the header, we have **the order’s reference, customer’s name, total price in black backgorund, the date and the hour**.
+On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
 
-## I.  **Action panel**
+## I. **Action panel**
 
 **Bellow the panel’s header**, we have all the order's action button:
 
@@ -55,10 +56,10 @@ On the header, we have **the order’s reference, customer’s name, total price
 -   **Partial refund button**
 -   **Standard Refund**
 -   **Return products button**
--  **Resend confirmation order**
+-   **Resend confirmation order**
 -   **Cancel button**
 
-1. **Print order button**
+1.  **Print order button**
 
 Opens the Print page of the browser with the order’s content.
 
@@ -66,41 +67,39 @@ Opens the Print page of the browser with the order’s content.
 
 [pdf file result 2/2](https://invis.io/YKTGGFZAMCB#/386350136_Order_Details_-_Print_Order_2)
 
-2. **View invoice show**
+1.  **View invoice show**
 
-If the current or new order status as **the generation of the invoice activated** then **the button is shown or** the user generates it manually.
+If the current or new order status as **the generation of the invoice activated,**  **the button is shown or** the user generates it manually.
 
 When the user clicks on the button, it downloads the invoice.
 
-3.  **View delivery slip**
+1.  **View delivery slip**
 
 If the current or new order status as **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
 
-4.  **Partial refund button**
+1.  **Partial refund button**
 
-If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost.
-He must select the quantity of the product conserned for the refunded and then write refund amount choosed by product rows.
-The maximun refundable amount is writen bellow all the amount input in tax included.
+If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
 [Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
 
-**After the validation a partial refund,** a new column is added with quantity previously selected and the amound entered.
+**After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
 
-  5.  **Return products button**
+1.  **Return products button**
 
-If the current or new order status of order considered **as shipped and the merchandising return is activated** then **the button is shown. If the user clicks the button** then table product change as for Partial Refund. The user can edit the product quantity to be return by entering the number or by checking the checkbox to selecte all the quantity. If the user choose the checkbox, the input is prefilled the quantity.
+If the current or new order status of order considered **as shipped and the merchandising return is activated,**  **the button is shown. If the user clicks the button** then table product change as for Partial Refund. The user can edit the product quantity to be returned by entering the number or by checking the checkbox to select all the quantity. If the user chooses the checkbox, the input is prefilled the quantity.
 
 [Return Product screen]
 
-**Before validating the return products**, the user can choose to re-stock generate a voucher generate a credit slip by checking the checkboxes or Repay shipping costs.
+**Before validating the return products**, the user can choose to re-stock generate, to generate a voucher or generate a credit slip by checking the checkboxes or Repay shipping costs.
 
-6.  **Resend confirmation order**
+1.  **Resend confirmation order**
 
 By clicking on the button, it resends the email confirmation order after validating the confirmation popup.
 
-7.  **Cancel products button**
+1.  **Cancel products button**
 
 **The cancel products button on the order action** is shown when **the merchandise return** is activated and **the status is not on payment accepted.**
 
@@ -112,69 +111,71 @@ Below the order actions, the user can manage the order status on **the status ta
 
 **Each tab has a notification number of the row’s number of their table.**
 
-## II.  **Customer panel**
+## II. **Customer panel**
 
-The customer panel displayed on the left of the product list has **the customer’s title, name, last name and customer reference** . To se the full customer description, you can click on **View full details** that redirects to his customer page in an other page.
+The customer panel displayed on the left of the product list has **the customer’s title, name, last name and customer reference.** To see the full customer description, you can click on **View full details** that redirect to his customer page on another page.
 
 Customer panel is divided into 3 parts:
 
--  Customer card regrouping the customer’s information
--  Shipping and Invoice address
--  Private customer note
+-   Customer card regrouping the customer’s information
+-   Shipping and Invoice address
+-   Private customer note
 
 **Customer card** displays :
--  **the email on a “mailto” link**
-- **date of the account registered**
-- **valid orders placed on a black background**
--  **total spend since registration on a black background.**
+
+-   **the email on a “mailto” link**
+-   **date of the account registered**
+-   **valid orders placed on a black background**
+-   **total spend since registration on a black background.**
 
 **Shipping and Invoice address**
 
-Each adress has **button** to update or change it. The button opens a list to select the user wants to edit or update it.
+Each address has **a button** to update or change it. The button opens a list to select the user wants to edit or update it.
 
 [Edit/Change adresse behaviours](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
 
 **The edit address redirects to the edit address page of the selected address**. After saving any edit of the fields of the address form, **the user is redirected on the order** that he was editing in the first place.
 
-And **change address** opens the popin that allows the user to choose the new adress form a droplist.
+And **change address** opens the popin that allows the user to choose the new address form a droplist.
 
 [Popin - Change address](https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress)
 
-**Private customer note** is closed by default when it is empty and open bu default when filled. To add a note when it is empty, the user has to click on the + button and has to press on save button to save it.
+**Private customer note** is closed by default when it is empty and open bu default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
 
-## III.  **Messages panel**
+## III. **Messages panel**
 
-Bellow the customer panel, you have the messages panel. **The total of exchanged message** is displayed next to the panel's title.
+Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
 
-**Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date and the content’s message. The private message** is displayed with dark background and a specfic icon for the sender pic.
+**Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
 
-Bellow the messages displayed, the user can **Chosose a standard message** to send. **all predefined messages** of the **order messages page** is available in a droplist to select the message to prefill **the message input text**. By default, there is no prefilled message so the droplist shows “-”. The link named **"configure predefined messages ->"**  below the droplist is available to open on a new browser's tab **the order messages page** to access to the predefined messages.
+Bellow the messages displayed, the user can **choose a standard message** to send. **all predefined messages** of the **order messages page** are available in a droplist to select the message to prefill **the message input text**. By default, there is no prefilled message so the droplist shows “-”. The link named **"configure predefined messages ->"** below the droplist is available to open on a new browser's tab **the order messages page** to access to the predefined messages.
 
 After selecting the droplist selection, the prefilled text is still editable.
 
 **A checkbox** is available to choose **to write a private message hidden from the customer.**
 
-Customizing the prefilled message, writing the message from scratch or using the prefilled message, the user send it by clicking on **Send message**. It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
+Customizing the prefilled message, writing the message from scratch or using the prefilled message, the user sends it by clicking on **Send message**. It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
 
-**To see all the past messages**, there is the possibility to click on the right of the send message button on **View full conversation** to open on popup.
+**To see all the past messages**, there is the possibility to click on the right of the send message button on **View full conversation** to open on a popup.
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
-## IV.  **Product panel**
+## IV. **Product panel**
 
 Bellow the action button on the right, the product panel displays **the order’s products into the table list** showing:
--  **the product’s image,**
-- **product name (composed of the name, combination name and reference),**
-- **stock location,** if one of the product has one
-- **base price with tax included,**
-- **quantity,**
-- **available quantity,**
-- **total with tax included,**
-- **and 2 action button edit and delete.**
+
+-   **the product’s image,**
+-   **product name (composed of the name, combination name and reference),**
+-   **stock location,** if one of the product has one
+-   **base price with tax included,**
+-   **quantity,**
+-   **available quantity,**
+-   **total with tax included,**
+-   **and 2 action button edit and delete.**
 
 **The quantity** is coloured in a dark grey background if there are more than 2 quantities.
 
@@ -184,16 +185,15 @@ Bellow the action button on the right, the product panel displays **the order’
 
 **The Delete button removes the product for the list.**
 
-**A confirmation pop-up appears after clicking on the Update button or on the Delete button.**
+**A confirmation pop-up appears after clicking on the Update button or the Delete button.**
 
 At the end of the table list, there are **2 buttons**:
 
--   **Add a product:** add a row on the table list with a search bar on the product name column. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax exclueded or tax inclueded and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, available quantity label becomes red. 
-The product is added in the product table and to the order after **pressing on the add button** if the there is enough quantity otherwise an warning error is shown.
+-   **Add a product:** add a row on the table list with a search bar on the product name column. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button** if the there is enough quantity otherwise a warning error is shown.
 
-[Add a product old design but same behaviors]()
+[Add a product old design but the same behaviours](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
--   **Add a new discount**: opens a popin to create your new voucher between the Pourcentage, the Amount (taxes included) and Free shipping type. 
+-   **Add a new discount**: opens a popin to create your new voucher between the Pourcentage, the Amount (taxes included) and Free shipping type.
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
@@ -201,7 +201,7 @@ The vouchers will be added on the table list displaying the discount name, value
 
 [Carts rules list](https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied)
 
-**If the order status is considered as paid**, eitheir on adding a product or adding a discount adding, the user as to specify on **which generated invoices it will be applied.**
+**If the order status is considered as paid**, either on adding a product or adding a discount adding, the user as to specify on **which generated invoices it will be applied.**
 
 The bottom of the product panel resume in a list all the order:
 
@@ -217,17 +217,17 @@ Bellow the totals, a warning is displayed to warn the user that **for this custo
 All the tabs are located in the same panel bellow the products list.
 
 1.  **Status tab**
-    
+
 The table **list of the latest order status** is displayed composed:
 
--   **The status with associated colored**
+-   **The status with associated coloured**
 -   **date and hour**
 -   **The editor**
 -   **Button to resend the email to the customer**
 
 On the bottom, a drop list of all the status available is shown to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
 
-2.  **Documents tab**
+1.  **Documents tab**
 
 The document tab **regrouped all the document** as invoices and delivery slips **in a table**. The table displays **the date, document type, reference and the amount.** The reference is a clickable link to download the document.
 
@@ -238,8 +238,7 @@ Each table’s rows as 2 possible **button actions**:
 
 **If there is no document**, **a button is available to generate an invoice** with all the information saved so far in the order.
 
-
-3.  **Shipping tab**
+1.  **Shipping tab**
 
 The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number and edit button.**
 
@@ -249,12 +248,11 @@ The edit shipping button on each row can edit the information in a popin. You ca
 
 [Edit shipping details](https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit)
 
-4.  **Merchandising returns tab**
+1.  **Merchandising returns tab**
 
-The merchandise return tab lists **the date, the tracking number, the type, Carrier (which is the return status) and the quantity**.
-When the merchandise return is disable the tab displayed: "no merchandise returned yet".
+The merchandise return tab lists **the date, the tracking number, the type, Carrier (which is the return status) and the quantity**. When the merchandise return is disabled the tab displayed: "no merchandise returned yet".
 
-5.  **Payment panel**
+1.  **Payment panel**
 
 The payment section displays all the transactions made in the order from the payment’s module or the manual inputs.
 
@@ -264,7 +262,7 @@ To fill a payment transaction, the user has **to select the date, one payment me
 
 **A red warning is shown** if the filled amount is inferior or superior of the order’s total comparing the total of the transactions and order’s total.
 
-After adding, the user can display **all the details of the transaction by pressing Detail button**. It will show below the arrow **the number, brand, expiration date and  owner of the credit card** for any payment module.
+After adding, the user can display **all the details of the transaction by pressing the Detail button**. It will show below the arrow **the number, brand, expiration date and owner of the credit card** for any payment module.
 
 **If the order’s status** is considered **as paid then before adding a transaction** the user has to specify in **which generated invoices from a droplist** it will be added.
 
