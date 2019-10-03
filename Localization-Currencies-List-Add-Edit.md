@@ -172,7 +172,7 @@ If no orders have been made with the currency, the currency can be definitely de
 
 # DESIGN
 
-[https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens/338742836](https://projects.invisionapp.com/share/SAPYJZCCR6K#/screens/338742836)
+[https://invis.io/SAPYJZCCR6K#/338742836_Edit_Currency](https://invis.io/SAPYJZCCR6K#/338742836_Edit_Currency)
 
 # CASES
 
