@@ -45,7 +45,7 @@ The user access to the order view page by either clicking on **the order’s row
 
 On the header, we have **the order’s reference, customer’s name, total price in black backgorund, the date and the hour**.
 
-1.  **Action panel**
+## I.  **Action panel**
 
 **Bellow the panel’s header**, we have all the order's action button:
 
@@ -58,29 +58,33 @@ On the header, we have **the order’s reference, customer’s name, total price
 -  **Resend confirmation order**
 -   **Cancel button**
 
-1.  **Print order button**
+1. **Print order button**
 
 Opens the Print page of the browser with the order’s content.
 
-1.  **View invoice show**
+2. **View invoice show**
 
 If the current or new order status as **the generation of the invoice activated** then **the button is shown or** the user generates it manually.
 
 When the user clicks on the button, it downloads the invoice.
 
-1.  **View delivery slip**
+3.  **View delivery slip**
 
 If the current or new order status as **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
 
-1.  **Partial refund button**
+4.  **Partial refund button**
 
-If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund total amount by choosing how many products will be refunded of the order or selecting on each product rows how much is going to be refunded. The shipping amount is also refundable by selecting the amount
+If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost.
+He must select the quantity of the product conserned for the refunded and then write refund amount choosed by product rows.
+The maximun refundable amount is writen bellow all the amount input in tax included.
 
-**Before validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
+**Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
-[INSERT SCREEN]
+[Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
 
-1.  **Return products button**
+**After the validation a partial refund,** a new column is added with quantity previously selected and the amound entered.
+
+  5.  **Return products button**
 
 If the current or new order status of order considered **as shipped and the merchandising return is activated** then **the button is shown. If the user clicks the button** then table product change to edit the return product quantity individually by entering the number or the checkbox if it is for all the quantity.
 
@@ -88,11 +92,11 @@ If the current or new order status of order considered **as shipped and the merc
 
 **Before validating the return products**, the user can choose to re-stock generate a voucher generate a credit slip by checking the checkboxes or Repay shipping costs.
 
-1.  **Resend confirmation order**
+6.  **Resend confirmation order**
 
 By clicking on the button, it resends the email confirmation order.
 
-1.  **Cancel products button**
+7.  **Cancel products button**
 
 **The cancel products button on the order action** is shown when **the merchandise return** is activated and **the status is not on payment accepted.**
 
@@ -104,60 +108,7 @@ Below the order actions, the user can manage the order status on **the status ta
 
 **Each tab has a notification number of the row’s number of their table.**
 
-All the tabs are located in the same panel bellow the products list.
-
-1.  **Status tab**
-    
-
-The table **list of the latest order status** is displayed composed:
-
--   **The status with associated colored**
--   **date and hour**
--   **The editor**
--   **Button to resend the email to the customer**
-
-On the bottom, a drop list of all the status available is shown to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status as invoice generation.
-
-1.  **Documents tab**
-
-The document tab **regrouped all the document** as invoices and delivery slips **in a table**. The table displays **the date, document type, reference and the amount.** The reference is a clickable link to download the document.
-
-Each table’s rows as 2 possible **button actions**:
-
--   **Enter payment: it redirects to the payment panel to fill the transaction.**
--   **Add note/Edit note: it displays a text input that can be saved or cancel. The saved note will be integrated into the related document.**
-
-**If there is no document**, **a button is available to generate an invoice** with all the information saved so far in the order.
-
-
-1.  **Shipping tab**
-
-The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number and edit button.**
-
-The edit shipping button on each row can edit the information in a popin. You can edit the text input the tracking number and in the drop list the carrier method.
-
-1.  **Merchandising returns tab**
-
-The merchandise return tab lists the date, the tracking number, the type, Carrier (which is the return status) and the quantity.
-When the merchandise return is disable the tab displayed: "no merchandise returned yet"
-
-1.  **Payment panel**
-
-The payment section displays all the transactions made in the order from the payment’s module or the manual inputs.
-
-The table shows **the date and hours, the payment method, the transaction ID, the amount with the currency and the button detail.**
-
-To fill a payment transaction, the user has **to select the date, one payment method from a droplist, the amount and currency then press the add button. The amount** can be a **positive or negative value**.
-
-**A red warning is shown** if the filled amount is inferior or superior of the order’s total comparing the total of the transactions and order’s total.
-
-After adding, the user can display **all the details of the transaction by pressing Detail button**. It will show below the arrow **the number, brand, expiration date and  owner of the credit card** for any payment module.
-
-**If the order’s status** is considered **as paid then before adding a transaction** the user has to specify in **which generated invoices from a droplist** it will be added.
-
-When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
-
-1.  **Customer panel**
+## II.  **Customer panel**
 
 The customer panel displayed on the left of the product list has **the customer’s title, name, last name and customer reference** . To se the full customer description, you can click on **View full details** that redirects to his customer page in an other page.
 
@@ -183,7 +134,7 @@ Below the drop list, **the selected address** is displayed with an Edit **button
 
 **Private customer note**  is displayed on the **plus button**. It shows the private customer note, that can be edited.
 
-1.  **Messages panel**
+## III.  **Messages panel**
 
 Bellow the customer panel, you have the messages panel.
 
@@ -203,7 +154,7 @@ After customizing the prefilled message, writing the message from scratch or usi
 
 **To see all the past messages**, there is the possibility to click on the left of the send message button on **View full conversation** to open on a new browser's tab **the customer service page of the customer**.
 
-1.  **Product panel**
+## IV.  **Product panel**
 
 Bellow the action button on the right, the product panel displays **the order’s products into the table list** showing:
 -  **the product’s image,**
@@ -245,3 +196,58 @@ The bottom of the product panel resume in a list all the order:
 -   **Total** in black background
 
 On the left, a warning is displayed to warn the user that **for this customer group, prices are displayed as Tax excluded** and **that Merchandise returns are disabled.**
+
+## V. Tabs panel
+
+All the tabs are located in the same panel bellow the products list.
+
+1.  **Status tab**
+    
+
+The table **list of the latest order status** is displayed composed:
+
+-   **The status with associated colored**
+-   **date and hour**
+-   **The editor**
+-   **Button to resend the email to the customer**
+
+On the bottom, a drop list of all the status available is shown to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status as invoice generation.
+
+2.  **Documents tab**
+
+The document tab **regrouped all the document** as invoices and delivery slips **in a table**. The table displays **the date, document type, reference and the amount.** The reference is a clickable link to download the document.
+
+Each table’s rows as 2 possible **button actions**:
+
+-   **Enter payment: it redirects to the payment panel to fill the transaction.**
+-   **Add note/Edit note: it displays a text input that can be saved or cancel. The saved note will be integrated into the related document.**
+
+**If there is no document**, **a button is available to generate an invoice** with all the information saved so far in the order.
+
+
+3.  **Shipping tab**
+
+The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number and edit button.**
+
+The edit shipping button on each row can edit the information in a popin. You can edit the text input the tracking number and in the drop list the carrier method.
+
+4.  **Merchandising returns tab**
+
+The merchandise return tab lists the date, the tracking number, the type, Carrier (which is the return status) and the quantity.
+When the merchandise return is disable the tab displayed: "no merchandise returned yet"
+
+5.  **Payment panel**
+
+The payment section displays all the transactions made in the order from the payment’s module or the manual inputs.
+
+The table shows **the date and hours, the payment method, the transaction ID, the amount with the currency and the button detail.**
+
+To fill a payment transaction, the user has **to select the date, one payment method from a droplist, the amount and currency then press the add button. The amount** can be a **positive or negative value**.
+
+**A red warning is shown** if the filled amount is inferior or superior of the order’s total comparing the total of the transactions and order’s total.
+
+After adding, the user can display **all the details of the transaction by pressing Detail button**. It will show below the arrow **the number, brand, expiration date and  owner of the credit card** for any payment module.
+
+**If the order’s status** is considered **as paid then before adding a transaction** the user has to specify in **which generated invoices from a droplist** it will be added.
+
+When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
