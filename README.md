@@ -188,10 +188,10 @@
 		<summary>Customers</summary>
 	<ul>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
+			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Customers-Customers.md">List Page</a>
 		</li>
 		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
+			<a href="#">Add/Edit Page</a>
 		</li>
 	</ul>
 	</details>
@@ -286,7 +286,7 @@
 		</li>
 	</ul>
 	</details>
-	
+
 </details>
 <br>
 
