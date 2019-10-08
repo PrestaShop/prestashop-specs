@@ -1,6 +1,6 @@
 # SPECIFICATIONS - CATALOG > BRANDS & SUPPLIERS > SUPPLIERS TAB
 
-###Grid
+### Grid
 _SupplierGridDefinitionFactory.php_
 Default action in the button: View
 Other available actions in the menu: Edit, Delete

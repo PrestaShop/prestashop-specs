@@ -1,6 +1,6 @@
 # SPECIFICATIONS - ADVANCED PARAMETERS > DATABASE > SQL MANAGER
 
-###Grid
+### Grid
 Default action in the button: Export
 Other available actions in the menu: View, Edit, Delete
 Row action: View

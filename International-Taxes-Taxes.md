@@ -1,6 +1,6 @@
 # SPECIFICATIONS - INTERNATIONAL > TAXES > TAXES TAB
 
-###Grid
+### Grid
 _TaxGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete

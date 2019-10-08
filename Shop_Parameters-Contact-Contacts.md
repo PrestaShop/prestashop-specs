@@ -1,6 +1,6 @@
 # SPECIFICATIONS - SHOP PARAMETERS > CONTACT > CONTACTS TAB
 
-###Grid
+### Grid
 _ContactGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete

@@ -1,6 +1,6 @@
 # SPECIFICATIONS - CATALOG - BRANDS & SUPPLIERS - BRANDS
 
-###Grid Brands
+### Grid Brands
 _ManufacturerGridDefinitionFactory.php_
 Default action in the button: View
 Other available actions in the menu: Edit, Delete
@@ -10,7 +10,7 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 
 
-###Grid Adresses
+### Grid Adresses
 _ManufacturerAddressGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete

@@ -1,6 +1,6 @@
 # SPECIFICATIONS - SHOP PARAMETERS > TRAFFIC & SEO > SEO & URLS
 
-###Grid
+### Grid
 _MetaGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete

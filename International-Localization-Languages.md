@@ -1,6 +1,6 @@
 # SPECIFICATIONS - INTERNATIONAL > LOCALIZATION > LANGUAGES
 
-###Grid
+### Grid
 _LanguageGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete

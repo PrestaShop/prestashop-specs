@@ -1,6 +1,6 @@
 # SPECIFICATIONS - ADVANCED PARAMETERS > TEAM > PROFILES TAB
 
-###Grid
+### Grid
 _ProfileGridDefinitionFactory.php_
 Default action in the button: Edit
 Other available actions in the menu: Delete
