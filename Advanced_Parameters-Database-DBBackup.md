@@ -6,3 +6,5 @@ Other available actions in the menu: Delete
 Row action: View
 
 Row action does not apply to the checkbox column.
+
+
