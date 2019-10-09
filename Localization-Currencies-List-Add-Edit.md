@@ -35,6 +35,14 @@ It’s the second part of the page currency adding and edition. It has the langu
 
 # DETAILED SPECIFICATION
 
+## Grid
+_CurrencyGridDefinitionFactory.php_
+Default action in the button: Edit
+Other available actions in the menu: Delete
+Row action: Edit
+
+Row action does not apply to columns with enable/disable actions.
+
 ## Add a currency
 
 When the page is loaded, the currency symbol on the language list will be displayed with X.
@@ -84,13 +92,13 @@ The decimals and thousands separating format are defined by the CLDR, so for eac
 
 # USER STORY
 
-As a merchant on the Currencies Page in Localization, I want to add a new official currency or a custom one not provided by Prestashop. 
+As a merchant on the Currencies Page in Localization, I want to add a new official currency or a custom one not provided by Prestashop.
 
 # WHY
 
-The 1.6 had a custom currency creation but was limited to the international needs. Therefore on the 1.7, it was removed to prepare the development of a bigger feature more complete. 
+The 1.6 had a custom currency creation but was limited to the international needs. Therefore on the 1.7, it was removed to prepare the development of a bigger feature more complete.
 
-The Unicode CLDR (Common Locale Data Repository) is a database containing the convention of different languages as format date, currencies and more shared by the biggest companies. It will be the main source to provide the best currencies pre-configuration to the merchant. 
+The Unicode CLDR (Common Locale Data Repository) is a database containing the convention of different languages as format date, currencies and more shared by the biggest companies. It will be the main source to provide the best currencies pre-configuration to the merchant.
 
 **This features allows the merchant to have all the currency (cryptocurrencies, local currencies...) that he needs and responds to every customers expectations.
 The merchant just has to find right paiement module adapted to their new currency.**
@@ -99,7 +107,7 @@ The merchant just has to find right paiement module adapted to their new currenc
 
 The 1rst improvements features of the Page Add Currency and Edit Currency in Page Currencies of Localization Category allow:
 
- - Add an official new currency from the CLDR or create a custom currency. 
+ - Add an official new currency from the CLDR or create a custom currency.
  - Edit a currency (this is new in 1.7)
 
 Add/Edit currency inputs:
@@ -112,7 +120,7 @@ Add/Edit currency inputs:
 
 The Symbol, Currency name, ISO code and Exchange rate are mandatory to save an official currency or a custom one.
 
-# OLD SPECIFICATION 
+# OLD SPECIFICATION
 
 - #10058
 - #11690
@@ -124,7 +132,7 @@ The Symbol, Currency name, ISO code and Exchange rate are mandatory to save an o
 The user can choose from a drop list from our currency database (CDLR) or select the checkbox “Create new” to make a custom currency.
 
 ![new currency](img/new_currency.PNG)
-      
+
 Choosing a currency from the drop list will fill all the inputs automatically and make the ISO and the numeric iso code uneditable and greyed.
 
 If the user edits the currency chosen in the drop list just before saving , the currency will be marked as “Edited” on the Currencies Page.
@@ -141,14 +149,14 @@ Warning wording: “This ISO code already exists. You cannot create two states w
 
 Ajouter un commentaire en dessous de ISO qu’il s’agit d’une valeure unique
 
-**Edit a currency** 
+**Edit a currency**
 
 After clicking on editing one of the currency in the list, the Edit Page is open with all the inputs already filled from the currency selected.
 
 All the following fields can be edited:
 
-- Currency name 
-- Currency Symbol 
+- Currency name
+- Currency Symbol
 - ISO code (only for custom currencies)
 - Decimals (2 by default)
 - Exchange rate (1 by default)
@@ -176,7 +184,7 @@ If no orders have been made with the currency, the currency can be definitely de
 
 # CASES
 
-## Error/Warning case: 
+## Error/Warning case:
 
 Saving with an ISO code already existing in the database
 
