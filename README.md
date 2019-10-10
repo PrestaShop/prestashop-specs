@@ -1,3 +1,11 @@
+# About PrestaShop specifications
+The goal of this project is to make PrestaShop specifications accessible to all.
+
+[Learn more about the PrestaShop project](https://github.com/PrestaShop/PrestaShop)
+
+More coming soon
+
+
 <details>
 	<summary>General FO</summary>
 <br>
