@@ -11,6 +11,6 @@ The flags and the white area are not linked.
 On hover, the white area deploys vertically to reveal the "Quick view" link.
 The "Quick view" link opens a modal to preview the product.
 
-![Product thumbnail hover](/img/theme-classic-product-thumbnail-hover.png)
+![Product thumbnail hover](/img/theme-classic-product-thumbnail-hover-quick-view.png)
 
 ![Product preview](/img/theme-classic-product-preview.png)
