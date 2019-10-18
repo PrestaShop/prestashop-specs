@@ -56,20 +56,25 @@ A currency symbol position (right, left with or without space) saved for a langu
 A wording is provided to explain that the format part changes will be applied for all the currencies.
 
 _Format setting on the bottom of the currency form._
-![image3](img/List_preview_format_currencies.png)
+![Format setting on the bottom of the currency form](/img/List_preview_format_currencies.png)
 
 _Pop-in after the click on edit when no symbol was filled._
-![image2](img/Popin_edit_format_currency_with_no_symbol.PNG)
+![Pop-in after the click on edit when no symbol was filled](/img/Popin_edit_format_currency_with_no_symbol.PNG)
 
 The merchant can reset the format of a language by clicking on the reset button next to the edit button.
 
+By clicking save on the popin, it will save the edit currency form (the form on the top of the language table) as well.
+
 ## Edit a currency
 
-All the inputs is full filled by saved data. So when the user edits the format, a pop-in will open in which the user can change the symbol and its position on the price display through a radio button.
+All the inputs is full filled by saved data from the currency to be edited. So when the user edits the format, a pop-in will open in which the user can change the symbol and its position on the price display through a radio button.
 
-![image1](img/Edit_Popin_edit_format_currency.png)
+_Pop-in full filled with the yen currency data._
+![Pop-in full filled with the yen currency data](/img/Edit_Popin_edit_format_currency.png)
 
 The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted display. The currency symbol in the radio is also displaying the symbol of currency that the user is editing.
+
+By clicking save on the popin, it will save the edit currency form (the form on the top of the language table) as well.
 
 # DESIGN
 
@@ -129,25 +134,23 @@ The Symbol, Currency name, ISO code and Exchange rate are mandatory to save an o
 
 ## Add a currency
 
-The user can choose from a drop list from our currency database (CDLR) or select the checkbox “Create new” to make a custom currency.
+To add an currency, the user can choose from a drop list from our currency database (CDLR) or select the checkbox “Create new” to make a custom currency.
 
-![new currency](img/new_currency.PNG)
+![new currency](/img/new_currency.PNG)
 
 Choosing a currency from the drop list will fill all the inputs automatically and make the ISO and the numeric iso code uneditable and greyed.
 
-If the user edits the currency chosen in the drop list just before saving , the currency will be marked as “Edited” on the Currencies Page.
+If the user edits the currency chosen in the drop list just before saving, the currency will be marked as “Edited” on the Currencies Page.(cf see the Currencies Page section)
 
 When creating a new currency, the iso numeric code field is hidden and it enables the code iso field if it was disabled. The user has to fill all the inputs by himself and choose an new unique ISO code.
 
-If the user selects a currency from droplist but clicks on the new currency the fields remain pre-filled but the droplist displays "--" instead of the selected currency.
+If the user selects a currency from droplist but clicks on the new currency checkbox, the fields remain pre-filled but the droplist displays "--" instead of the selected currency.
 
-![add new currency](img/add_new_currency.PNG)
+![add new currency](/img/add_new_currency.PNG)
 
-A warning should be display, if the user choose to create his own custom currency and choose an ISO code already existing. The ISO code is an unique value used as the identification of the currency.
+A warning is displayed, if the user choose to create his own currency by clicking on the checkbox and choose an already existing ISO code. The ISO code is an unique value used as the identification of the currency. The message warns the user that if he wants to use the currency (displays the currency name from the ISO code) from the ISO that he must select it from the droplist and if he still wants to create his own currency that he must find ISO code that is not used by any currencies.
 
-Warning wording: “This ISO code already exists. You cannot create two states with the same ISO code.” in Admin/International/Notification”
-
-Ajouter un commentaire en dessous de ISO qu’il s’agit d’une valeure unique
+Warning wording: “WIP” in Admin/International/Notification”
 
 **Edit a currency**
 
@@ -163,13 +166,13 @@ All the following fields can be edited:
 
 Bellow these fields, a reset button is available to put back the initial content of all the fields. The button is hidden for custom currency.
 
-![edit currency](img/edit_currency.PNG)
+![edit currency](/img/edit_currency.PNG)
 
 ## Currencies Page
 
 On the Currencies Page, every edited currency will be mark as “edited” next to their name on the currencies list.
 
-![list currencies](img/list_currency.PNG)
+![list currencies](/img/list_currency.PNG)
 
 NB: after the migration, the activation exchange rate is on the bottom of the list.
 
