@@ -63,18 +63,24 @@ _Pop-in after the click on edit when no symbol was filled._
 
 The merchant can reset the format of a language by clicking on the reset button next to the edit button.
 
-By clicking save on the popin, it will save the edit currency form (the form on the top of the language table) as well.
+The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted the display. Any updates on the symbol input will update the 4 propositions on the radio button.
+
+By clicking "Apply" on the popin, it will save the format currency and updates the language format table with the new format.
 
 ## Edit a currency
 
-All the inputs is full filled by saved data from the currency to be edited. So when the user edits the format, a pop-in will open in which the user can change the symbol and its position on the price display through a radio button.
+All the inputs is full filled by saved data from the currency to be edited. So when the user edits the format, a pop-in will open in which the user can change the currency format. The symbol and its position on the price display can be edited with an text input for the symbol and through a radio button with 4 propositions:
+- just in front of the amount, X999.99
+- in front with a space between the symbol and the amount, X 999.99
+- just after the amount, 999.99X
+- ater the amount with a space between them, 999.99 X
 
 _Pop-in full filled with the yen currency data._
 ![Pop-in full filled with the yen currency data](/img/Edit_Popin_edit_format_currency.png)
 
-The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted display. The currency symbol in the radio is also displaying the symbol of currency that the user is editing.
+The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted the display. Any updates on the symbol input will update the 4 propositions on the radio button.
 
-By clicking save on the popin, it will save the edit currency form (the form on the top of the language table) as well.
+By clicking "Apply" on the popin, it will save the format currency and updates the language format table with the new format.
 
 # DESIGN
 
@@ -150,9 +156,15 @@ If the user selects a currency from droplist but clicks on the new currency chec
 
 A warning is displayed, if the user choose to create his own currency by clicking on the checkbox and choose an already existing ISO code. The ISO code is an unique value used as the identification of the currency. The message warns the user that if he wants to use the currency (displays the currency name from the ISO code) from the ISO that he must select it from the droplist and if he still wants to create his own currency that he must find ISO code that is not used by any currencies.
 
-Warning wording: “WIP” in Admin/International/Notification”
+Warning wording: 
+“Oops... it looks like this ISO code already exists. If you are :
+- trying to create a new currency, you must type a different ISO code
+- trying to modify the %currency% currency, just go back to the list and edit it”
+(Admin.International.Notification)
 
-**Edit a currency**
+Clicking on the save button, it saves the new currency and redirects to Currencies List. The cancel button redirects to Currencies List but does'nt save the currency.
+
+## Edit a currency
 
 After clicking on editing one of the currency in the list, the Edit Page is open with all the inputs already filled from the currency selected.
 
@@ -165,6 +177,8 @@ All the following fields can be edited:
 - Exchange rate (1 by default)
 
 Bellow these fields, a reset button is available to put back the initial content of all the fields. The button is hidden for custom currency.
+
+Clicking on the save button, it saves the new currency and redirects to Currencies List. The cancel button redirects to Currencies List but does'nt save the currency.
 
 ![edit currency](/img/edit_currency.png)
 
