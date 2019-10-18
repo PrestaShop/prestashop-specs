@@ -119,12 +119,19 @@ Categ 2 level 1 position 3
 - **Cover image**: You can click on an uploaded image to assign it as cover image. There is necessarily a cover image. There can be only one cover image. If you upload many images by pressing Ctrl, the first image selected is the cover image. It’s the image displayed in product list in front-office. You can change the cover image by clicking on an image, check the checkbox “cover image” and click on Save. If it was checked for another image, then it’s unchecked.
 
 - **Zoom**: You can zoom on an uploaded image by clicking on it and click on “Zoom”. The image is open in its default size. You can close it by clicking on the cross, outside the image or pressing ESC key.
+Merchants should be able to navigate between several images in zoom view to have an easy last check before saving the page.
 
 - **Delete**: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.
 
-- **Bulk actions**: (issue #12773) You can select many images with the checkbox. After selecting more than one image, the frame on the right is displayed with: 
-caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save. 
-A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
+- **Bulk actions**: (issue #12773) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:
+  - The number of images selected
+  - An "Unselect all" link to unselect images and close the frame
+  - The "zoom" button to open the first image of the list zoomed
+  - A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
+  - The cross to close the frame and unselect images
+  - Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save. 
+
+If more than one image is selected the checkbox "cover" disappears
 
 - **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” field should be also disabled (currently it’s not). When you select a feature, both fields (pre-defined & customized value) are enabled.
 
