@@ -122,7 +122,7 @@ Categ 2 level 1 position 3
 
 - **Delete**: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.
 
-- **Bulk actions**: (issue #12773) You can press CTRL+Select many images. After selecting more than one image, the frame on the right is displayed with: 
+- **Bulk actions**: (issue #12773) You can select many images with the checkbox. After selecting more than one image, the frame on the right is displayed with: 
 caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save. 
 A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
 
