@@ -166,7 +166,7 @@ All the following fields can be edited:
 
 Bellow these fields, a reset button is available to put back the initial content of all the fields. The button is hidden for custom currency.
 
-![edit currency](/img/edit_currency.PNG)
+![edit currency](/img/edit_currency.png)
 
 ## Currencies Page
 
