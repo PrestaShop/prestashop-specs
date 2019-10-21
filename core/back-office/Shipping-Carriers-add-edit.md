@@ -1,12 +1,5 @@
 # SPECIFICATIONS - SHIPPING > CARRIERS > Add new/Edit
 
-Status :
-- [x] Draft WIP
-- [ ] To be reviewed
-- [ ] Reviewed
-	- [ ] Waiting for changes
-- [ ] Complete
-
 # What
 The Add new/Edit Carrier page allows users to create and edit carriers.
 
