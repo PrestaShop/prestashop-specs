@@ -112,7 +112,8 @@ Categ 2 level 1 position 3
 
 - **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.” You can click in the entire zone to open the selector or you can drop one or many images in the entire zone. When there is already an image, you can click only on the frame with the “+” to open the selector. 
 
-- **Image order**: You move the images in the product sheet, the order is well changed in front-office
+- **Image order**: You can move the images in the product sheet, the order is well changed in front-office.
+The drag icon isn't displayed when many images are selected and you can't move many images
 
 - **Image caption**: You can click on an uploaded image and add a caption. You can put a caption by language. The caption is displayed in front-office when you hover the thumbnail image according to the selected language.  
 
