@@ -164,7 +164,7 @@ When you add a feature with a customized value, the feature is added in all lang
 The second tab name changes depending on the type of product selected : 
 - **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#quantities-tab">Quantities</a>** for a standard product without combinations or a pack
 - **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#virtual-product-tab">Virtual product</a>** for a virtual product.
-- **Combinations** for a standard product with combination
+- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#combinations-tab">Combinations</a>** for a standard product with combination
 
 <a id="quantities"></a>
 ### Quantities tab
@@ -251,6 +251,52 @@ This field is not displayed if stock management is disabled in Shop parameters >
 - **Label when out of stock (and back order allowed)**: If completed and product quantity is <= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+
+<a id="combinations"></a>
+### Combinations tab
+
+**As a merchant I want to be able to manage my products with combinations.**
+
+Here is the list of the elements of combinations tab:
+
+- **Search attributes**: I can search and select any existing attribute’s value by typing the value or the attribute’s private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>). I can also choose all the values of an attribute at once by typing the private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>) of the attribute: All. Elements in dropdown are highlighted when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). All results are displayed in the dropdown with a scrollbar (<a href="https://github.com/PrestaShop/PrestaShop/issues/9939">issue 9939</a>).
+When I select an attribute’s value in the search bar, the value is selected and in bold in the menu on the right. If I remove an attribute value in the search bar, the value is unchecked in the menu on the right.
+
+- **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. (issue 16100) When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
+
+- **Generate combinations**: After selecting one or many attributes’ values, I click on Generate. Combinations are displayed in the list.
+
+- **Combinations list**:
+Columns: Combinations,  impact on price (tax excl), final price (tax excl), quantity, reference (<a href="https://github.com/PrestaShop/PrestaShop/issues/16101">issue 16101</a>), actions (edit & delete action), default combination. 
+You can search and sort by for every column, except actions one. 
+In combinations field, you can search by attribute value. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16108">issue 16108</a>)
+When you change a value in the list it’s automatically saved. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16102">issue 16102</a>)
+Display a pagination system when there is more than 10 combinations (<a href="https://github.com/PrestaShop/PrestaShop/issues/16103">issue 16103</a>)
+
+- **Bulk actions**: I can select many combinations to change the following values in bulk.
+ 1) **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.  This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+ 2) **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+ 3) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here (positive or negative). Carriers that does not accept products greater than this weight are not displayed in front-office. To separate decimals a dot or a comma can be used, both should work no matter the language.
+ 4) **Impact on price (tax excl.)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+ 5) **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+ 6) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+ 7) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
+ 8) **Minimum quantity**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
+ 9) **Low stock level**: You can define a value and choose whether or not to receive an email when the product quantity is <= to this value.
+ 10) **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
+ 11) **Delete combinations**: If I remove all the combinations of a product, save and refresh the page, it becomes a simple product. 
+
+- **Availability preferences, behavior when out of stock**: 
+This part is not displayed if stock management is disabled in Shop parameters > Products settings. Instead there is a message “Stock management is disabled”
+
+- **3 radios buttons**: 
+ 1) Deny orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+ 2) Allow orders: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+ 3) Use default behavior (Deny orders or Allow orders): the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+
+- **Label when in stock**:  If completed and product quantity is > 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
+
+- **Label when out of stock (and back order allowed)**: If completed and product quantity is <= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 
 <a id="shipping"></a>
 ### Shipping tab
