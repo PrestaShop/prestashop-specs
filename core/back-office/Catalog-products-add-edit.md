@@ -79,14 +79,14 @@ Here is the list of the elements of basic settings tab:
 
 - **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
 
-- **Price tax incl**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330)
+- **Price tax incl**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>)
 
-- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
+- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
 
 - **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. 
 
 - **Select category**: Allows to associate categories to the product. A category is necessarily selected, it is impossible not to have one. When you create a new product, “Home” is selected.
-When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (issue 14052). When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
+When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
 
 - **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked. If you try to unselect all categories, you can’t do it for the last one.
 
@@ -124,7 +124,7 @@ Merchants should be able to navigate between several images in zoom view to have
 
 - **Delete**: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.
 
-- **Bulk actions**: (issue #12773) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:
+- **Bulk actions**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/12773">issue #12773</a>) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:
   - The number of images selected
   - An "Unselect all" link to unselect images and close the frame
   - The "zoom" button to open the first image of the list zoomed
@@ -148,11 +148,11 @@ When you add a feature with a customized value, the feature is added in all lang
 
 - **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
 
-- **Add a related product**: Search field to search a product. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (issue 14052). You can click on it to select it. It should not be possible to associate the same product with itself. It should not be possible to associate a product already associated to this product. You can have many associated products.
+- **Add a related product**: Search field to search a product. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). You can click on it to select it. It should not be possible to associate the same product with itself. It should not be possible to associate a product already associated to this product. You can have many associated products.
 
 - **Delete a related product**: The trash button is to delete all related products. When you click on it, you have a modal for cancel or confirm the action. If you want to delete only one associated product, you can click on the cross. When you click on it, you have a modal for cancel or confirm the action.
 
-- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (issue 14052). When you select a result, then the product name is inserted in the search bar.
+- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you select a result, then the product name is inserted in the search bar.
 
 **Pack quantity**<a id="packqty"></a>
 - **Pack add a product**: Button to add the product in the quantity specified to the pack.
@@ -215,7 +215,7 @@ Here is the list of the elements of virtual product tab:
 
 - **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 
-- **Stock location**: This field should not be displayed for a virtual product (issue 9323)
+- **Stock location**: This field should not be displayed for a virtual product (<a href="https://github.com/PrestaShop/PrestaShop/issues/9323">issue 9323</a>)
 
 - **Low stock level**: You can define a value and choose or not to receive an email when the product quantity is <= to this value.
 
@@ -262,7 +262,7 @@ Here is the list of the elements of combinations tab:
 - **Search attributes**: I can search and select any existing attribute’s value by typing the value or the attribute’s private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>). I can also choose all the values of an attribute at once by typing the private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>) of the attribute: All. Elements in dropdown are highlighted when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). All results are displayed in the dropdown with a scrollbar (<a href="https://github.com/PrestaShop/PrestaShop/issues/9939">issue 9939</a>).
 When I select an attribute’s value in the search bar, the value is selected and in bold in the menu on the right. If I remove an attribute value in the search bar, the value is unchecked in the menu on the right.
 
-- **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. (issue 16100) When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
+- **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16100">issue 16100</a>) When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
 
 - **Generate combinations**: After selecting one or many attributes’ values, I click on Generate. Combinations are displayed in the list.
 
@@ -278,7 +278,7 @@ Display a pagination system when there is more than 10 combinations (<a href="ht
  2) **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
  3) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here (positive or negative). Carriers that does not accept products greater than this weight are not displayed in front-office. To separate decimals a dot or a comma can be used, both should work no matter the language.
  4) **Impact on price (tax excl.)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
- 5) **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+ 5) **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
  6) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
  7) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
  8) **Minimum quantity**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
@@ -318,11 +318,11 @@ Cost price: It’s used for margin calculations. To separate decimals a dot or a
 
 - **Impact on price (tax excl.)**: This value is added to the product price tax excl. When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
-- **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes issue (15330). This value is added to the product price tax incl. When a value is filled, the impact on price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+- **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). This value is added to the product price tax incl. When a value is filled, the impact on price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
-- **Final retail price**: Displays the final price tax excl and tax incl. (issue 15416) Both final prices are updated when you modify the impact on price tax excl or tax incl. 
+- **Final retail price**: Displays the final price tax excl and tax incl. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15416">issue 15416</a>) Both final prices are updated when you modify the impact on price tax excl or tax incl. 
 
-- **Ecotax (tax incl.)**: (issue 15059) This field is displayed if the “ecotax” option is enabled in International > Taxes. The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
+- **Ecotax (tax incl.)**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/15059">issue 15059</a>) This field is displayed if the “ecotax” option is enabled in International > Taxes. The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
 
 - **Impact on price per unit (tax excl.)**: This value is added to the product price per unit in Pricing tab. You can fill it if you sell products per unit. To separate decimals a dot or a comma can be used, both should work no matter the language. Displayed in the product page in front-office.
 
@@ -335,7 +335,7 @@ Cost price: It’s used for margin calculations. To separate decimals a dot or a
 - **UPC barcode**: Only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
 - **MPN**: Numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
-- **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (issue 13479)
+- **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (<a href="https://github.com/PrestaShop/PrestaShop/issues/13479">issue 13479</a>)
 
 <a id="shipping"></a>
 ### Shipping tab
@@ -365,7 +365,7 @@ Here is the list of the elements of shipping tab:
 
 - **Additional shipping fees**: By default, it’s filled with 0.000000 The amount is added to the total shipping cost according to the carrier selected in front-office. 
 
-- **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (issue 11379) Only the selected carriers can be displayed in FO. There is an information message under all the checkboxes: “If no carrier is selected then all the carriers will be available for customers orders”
+- **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (<a href="https://github.com/PrestaShop/PrestaShop/issues/11379">issue 11379</a>) Only the selected carriers can be displayed in FO. There is an information message under all the checkboxes: “If no carrier is selected then all the carriers will be available for customers orders”
 
 <a id="pricing"></a>
 ### Pricing tab
@@ -376,9 +376,9 @@ Here is the list of the elements of pricing tab:
 
 - **(Retail) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 
-- **(Retail) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330). "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
+- **(Retail) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). "ecotax included" is displayed only if the “ecotax” option is enabled in International > Taxes. Except for a virtual product. When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated. 
 
-- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue 15330). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
+- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 
 - **Manage tax rule**: Open in a new browser tab International > Taxes
 
@@ -390,7 +390,7 @@ Here is the list of the elements of pricing tab:
 
 - **Unity field**: There is a placeholder: “Per kilo, per litre”. You can fill the name of the unit. Displayed in the product page in front-office next to the unit price
 
-- **Ecotax tax incl**: This field is displayed if the “ecotax” option is enabled in International > Taxes. Except for a virtual product this field shouldn’t be displayed (issue 15038). The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
+- **Ecotax tax incl**: This field is displayed if the “ecotax” option is enabled in International > Taxes. Except for a virtual product this field shouldn’t be displayed (<a href="https://github.com/PrestaShop/PrestaShop/issues/15038">issue 15038</a>). The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
 
 - **Net turnover excluding tax**: This information is displayed when the ecotax is enabled and if it is not a virtual product. It’s the amount of Price (tax excl.) - ecotax (tax incl.).
 It is taken into account for the calculations instead of the field "Price (tax excl.)" when ecotax tax incl field is different from 0. This value is recalculated when the merchant will change one of the following fields: Price (tax excl.) ecotax included, Price (tax incl.) ecotax included & Ecotax (tax incl.) 
@@ -406,13 +406,13 @@ This button opens a form with the following fields :
   
   - **Groups**: Drop down with all customers groups. You can select one group or select “all groups”, so that the specific price is available for all customers groups.. By default, “all groups” is selected.
 
-  - **Customers**: There is a placeholder: “All customers”. If no customer is selected, the specific price is available for all customers. You can search a customer by name, lastname or email. Enabled customers with corresponding name, lastname or email address are displayed under the field. When you search a customer, results are highlighted in dropdown when using keyboard and hover with mouse (issue 14052). If you enter something and no results are found, when you click outside the field, what has been entered is deleted. You can click, to select it. You can select only one customer. You can remove it by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
+  - **Customers**: There is a placeholder: “All customers”. If no customer is selected, the specific price is available for all customers. You can search a customer by name, lastname or email. Enabled customers with corresponding name, lastname or email address are displayed under the field. When you search a customer, results are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). If you enter something and no results are found, when you click outside the field, what has been entered is deleted. You can click, to select it. You can select only one customer. You can remove it by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
 
-  - **Combinations**: This drop down is displayed only for a product with combinations. All the combinations are listed. You can select one combination or select “apply to all combinations”, so that the specific price is available for all combinations. By default, “Apply to all combinations” is selected. Display the following information message under the field: Note that if you want to base a quantity discount on a product, it will apply to all of its combinations. Go in Shop Parameters > Product Settings to modify it (issue 12363).
+  - **Combinations**: This drop down is displayed only for a product with combinations. All the combinations are listed. You can select one combination or select “apply to all combinations”, so that the specific price is available for all combinations. By default, “Apply to all combinations” is selected. Display the following information message under the field: Note that if you want to base a quantity discount on a product, it will apply to all of its combinations. Go in Shop Parameters > Product Settings to modify it (<a href="https://github.com/PrestaShop/PrestaShop/issues/12363">issue 12363</a>).
 
-  - **Available from**: Datefield. The specific price is applied only from the selected date and hour. When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (improvement 11329). If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.
+  - **Available from**: Datefield. The specific price is applied only from the selected date and hour. When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (<a href="https://github.com/PrestaShop/PrestaShop/issues/11329">improvement 11329</a>). If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.
 
-  - **Available to**: Datefield. The specific price is applied until the selected date and hour.. When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (improvement 11329). If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.
+  - **Available to**: Datefield. The specific price is applied until the selected date and hour.. When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (<a href="https://github.com/PrestaShop/PrestaShop/issues/11329">improvement 11329</a>). If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.
 
   - **Starting at**: Quantity from which the specific price is applied. By default, it’s set to 1. In front-office the specific price isn’t displayed if this quantity isn’t reached.
 
@@ -448,7 +448,7 @@ This button opens a form with the following fields :
 Here is the list of the elements of SEO tab:
 
 - **SEO preview**: It is a preview of your search engine result, it allows to see how your product page will appear in search engines results. If the meta title field is empty, the product name is displayed. If I edit the product name and if there is nothing in the meta title field, it’s displayed directly in the preview. If I change the name of the product, the preview will not change until the meta title field is complete. 
-If the meta description field is empty, the product description is displayed. If I click on Basic Settings, change the description, save, refresh the page and return to SEO, the description of the preview has changed. When you start to complete meta title, meta description  and friendly URL fields, it’s displayed directly in the preview. The preview is displayed in the selected language. (Issue 14984)
+If the meta description field is empty, the product description is displayed. If I click on Basic Settings, change the description, save, refresh the page and return to SEO, the description of the preview has changed. When you start to complete meta title, meta description  and friendly URL fields, it’s displayed directly in the preview. The preview is displayed in the selected language. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14984">Issue 14984</a>)
 
 - **Meta title**: There is a placeholder: “To have a different title from the product name, enter it here.” This data is displayed in the code of the page in the <title> tag. If the field is empty, the product name will be used. A counter indicates the number of characters used on 70 characters recommended. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
 
@@ -531,7 +531,7 @@ Here is the list of the elements of options tab:
 
   - **Description**: Field with the description of the document, displayed in front-office
 
-  - **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. There is a checkbox allowing to check/uncheck all the files (issue 9790)
+  - **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. There is a checkbox allowing to check/uncheck all the files (<a href="https://github.com/PrestaShop/PrestaShop/issues/9790">issue 9790</a>)
 When the checkbox is checked, the file is displayed on the product page (attachments tab) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog > Files.
 
   - **Cancel**: Button to close the form
@@ -543,7 +543,7 @@ When the checkbox is checked, the file is displayed on the product page (attachm
   - **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office. 
 
   - **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears.
-When there is only one supplier checked, the default supplier radio button is automatically checked (issue 9580)
+When there is only one supplier checked, the default supplier radio button is automatically checked (<a href="https://github.com/PrestaShop/PrestaShop/issues/8580">issue 9580</a>)
 When there are many suppliers checked, it’s not mandatory to select a default supplier. You can save without choosing a default supplier.
 
  - **Supplier reference(s)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
