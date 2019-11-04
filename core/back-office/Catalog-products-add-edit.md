@@ -16,9 +16,9 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 
 ## SPECIFICATIONS
 
-<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#product-creation-edition">The first step is to detail the behavior of each field per tab when creating / editing a product.</a>
+<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#product-creation-edition">The first step is to detail the behavior of each field per tab when creating / editing a product.</a>
 
-<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#errors">The second step of this document is to detail the type of each fields and error messages per tab.</a>
+<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#errors">The second step of this document is to detail the type of each fields and error messages per tab.</a>
 
 The third step is to detail the multistore behavior.
 
@@ -162,9 +162,9 @@ When you add a feature with a customized value, the feature is added in all lang
 ### Second tab
 
 The second tab name changes depending on the type of product selected : 
-- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#quantities-tab">Quantities</a>** for a standard product without combinations or a pack
-- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#virtual-product-tab">Virtual product</a>** for a virtual product.
-- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md#combinations-tab">Combinations</a>** for a standard product with combination
+- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#quantities-tab">Quantities</a>** for a standard product without combinations or a pack
+- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#virtual-product-tab">Virtual product</a>** for a virtual product.
+- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#combinations-tab">Combinations</a>** for a standard product with combination
 
 <a id="quantities"></a>
 ### Quantities tab
