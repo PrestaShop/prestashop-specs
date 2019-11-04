@@ -298,6 +298,45 @@ This part is not displayed if stock management is disabled in Shop parameters > 
 
 - **Label when out of stock (and back order allowed)**: If completed and product quantity is <= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 
+**Edit combinations**:
+
+- **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
+
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.  This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+
+- **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+
+- **Min. quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
+
+- **Référence**: The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
+
+- **Stock location**: You can indicate where the product is located in the warehouse
+Low stock level: You can define a value and choose whether or not to receive an email when the product quantity is <= to this value.
+
+- **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
+Cost price: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.
+
+- **Impact on price (tax excl.)**: This value is added to the product price tax excl. When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+
+- **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes issue (15330). This value is added to the product price tax incl. When a value is filled, the impact on price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+
+- **Final retail price**: Displays the final price tax excl and tax incl. (issue 15416) Both final prices are updated when you modify the impact on price tax excl or tax incl. 
+
+- **Ecotax (tax incl.)**: (issue 15059) This field is displayed if the “ecotax” option is enabled in International > Taxes. The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
+
+- **Impact on price per unit (tax excl.)**: This value is added to the product price per unit in Pricing tab. You can fill it if you sell products per unit. To separate decimals a dot or a comma can be used, both should work no matter the language. Displayed in the product page in front-office.
+
+- **Impact on weight**: This value is added to the product weight configured in Shipping tab. Carriers that does not accept products greater than this total weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
+
+- **ISBN code**: Only numbers are accepted. The International Standard Book Number (ISBN) is used to identify books and other publications. The ISBN is displayed in product details tab of the front-office and change accordingly to the selected combination.
+
+- **EAN-13 or JAN barcode**: Only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.
+
+- **UPC barcode**: Only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
+
+- **MPN**: Numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
+- **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (issue 13479)
+
 <a id="shipping"></a>
 ### Shipping tab
 
