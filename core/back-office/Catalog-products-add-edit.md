@@ -134,7 +134,7 @@ Merchants should be able to navigate between several images in zoom view to have
 
 If more than one image is selected the checkbox "cover" disappears
 
-- **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” field should be also disabled (currently it’s not). When you select a feature, both fields (pre-defined & customized value) are enabled.
+- **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” field should be also disabled (currently it’s not). When you select a feature, both fields (pre-defined & customized value) are enabled. The features and the associated values are displayed in product details tab of the front-office. 
 
 - **Feature pre-defined value**: Drop-down with all compositions of the selected feature. If you select a pre-defined value, the customized value should be disabled
 because a feature can’t have both. When you add a feature with a pre-defined value, it’s added in all languages enabled.
@@ -144,7 +144,7 @@ When you add a feature with a customized value, the feature is added in all lang
 
 - **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
 
-- **Add a brand**: Drop-down with all brands enabled. The brand is displayed in the product page in front-office in product details tab. When you add a brand, it’s added in all languages enabled.
+- **Add a brand**: Drop-down with all brands enabled. The brand is displayed in the product page in front-office in product details tab. When you add a brand, it’s added in all languages enabled. The logo of the brand is displayed in product details tab of the front-office if the brand has a logo, otherwise the name of the brand is displayed.
 
 - **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
 
