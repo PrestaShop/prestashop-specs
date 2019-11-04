@@ -26,7 +26,7 @@ The third step is to detail the multistore behavior.
 ## 1.	Product creation / edition on Back office
 
 <a id="alltabs"></a>
-### Elements in all tabs
+### Elements in all tabs [<a href="https://github.com/PrestaShop/PrestaShop/issues/14770">EPIC</a>]
 
 **As a merchant I want to always see some elements when I create or edit a product.**
 
@@ -61,7 +61,7 @@ Only the name in the default language must be filled, if the product name is not
 - **Add new product**: When you click on this button, it saves and opens a new empty product page. Keyboard shortcut: ALT + SHIFT + P
 
 <a id="basicsettings"></a>
-### Basic settings tab
+### Basic settings tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14763">EPIC</a>]
 
 **As a merchant I want to be able to complete the basic information of my products.**
 
@@ -167,7 +167,7 @@ The second tab name changes depending on the type of product selected :
 - **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#combinations-tab">Combinations</a>** for a standard product with combination
 
 <a id="quantities"></a>
-### Quantities tab
+### Quantities tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14771">EPIC</a>]
 
 **As a merchant I want to be able to manage my products quantities.**
 
@@ -205,7 +205,7 @@ This field is not displayed if stock management is disabled in Shop parameters >
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
 
 <a id="virtualproduct"></a>
-### Virtual product tab
+### Virtual product tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14772">EPIC</a>]
 
 **As a merchant I want to be able to manage my virtual products.**
 
@@ -253,7 +253,7 @@ This field is not displayed if stock management is disabled in Shop parameters >
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
 
 <a id="combinations"></a>
-### Combinations tab
+### Combinations tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14773">EPIC</a>]
 
 **As a merchant I want to be able to manage my products with combinations.**
 
@@ -338,7 +338,7 @@ Cost price: It’s used for margin calculations. To separate decimals a dot or a
 - **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (<a href="https://github.com/PrestaShop/PrestaShop/issues/13479">issue 13479</a>)
 
 <a id="shipping"></a>
-### Shipping tab
+### Shipping tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14774">EPIC</a>]
 
 **As a merchant I want to be able to manage carriers information for my products.**
 
@@ -368,7 +368,7 @@ Here is the list of the elements of shipping tab:
 - **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (<a href="https://github.com/PrestaShop/PrestaShop/issues/11379">issue 11379</a>) Only the selected carriers can be displayed in FO. There is an information message under all the checkboxes: “If no carrier is selected then all the carriers will be available for customers orders”
 
 <a id="pricing"></a>
-### Pricing tab
+### Pricing tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14775">EPIC</a>]
 
 **As a merchant I want to be able to manage the prices of my products**
 
@@ -441,7 +441,7 @@ This button opens a form with the following fields :
 - **Apply to all products**:	Checkbox to apply the same priorities for all products.
 
 <a id="seo"></a>
-### SEO tab
+### SEO tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14776">EPIC</a>]
 
 **As a merchant I want to be able to manage my SEO information for my products.**
 
@@ -479,7 +479,7 @@ Permanent redirection (301) = Permanently display another product or category in
 Temporary redirection (302) = Temporarily display another product or category instead.
 
 <a id="options"></a>
-### Options tab
+### Options tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14777">EPIC</a>]
 
 **As a merchant I want to be able to manage the options for my products.**
 
