@@ -88,6 +88,8 @@ If the current or new order status of order considered **as paid** then **the bu
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
+When the status "Refunded" is applied to the order, the refund amount is decuted to the total spended by the customer since registration and the number of valid orders placed decreases by 1. 
+
 [Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
 
 **After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
