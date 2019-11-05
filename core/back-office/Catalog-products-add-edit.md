@@ -164,7 +164,7 @@ When you add a feature with a customized value, the feature is added in all lang
 The second tab name changes depending on the type of product selected : 
 - **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#quantities-tab">Quantities</a>** for a standard product without combinations or a pack
 - **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#virtual-product-tab">Virtual product</a>** for a virtual product.
-- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#combinations-tab">Combinations</a>** for a standard product with combination
+- **<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/core/back-office/Catalog-products-add-edit.md#combinations">Combinations</a>** for a standard product with combination
 
 <a id="quantities"></a>
 ### Quantities tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14771">EPIC</a>]
