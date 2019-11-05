@@ -108,15 +108,16 @@ By clicking on the button, it resends the email confirmation order after validat
 
 1.  **Cancel products button**
 
-**The cancel products button on the order action** is shown when **the merchandise return** is activated and **the status is not on payment accepted.**
+Feature that is going to be removed
+~~**The cancel products button on the order action** is shown when **the merchandise return** is activated and **the status is not on payment accepted.**~~
 
-A new column is added to the product list to select which product will be cancelled Cancel products. On the bottom right of the products list, the button Products Cancels is available to cancel the selected products.
+~~A new column is added to the product list to select which product will be cancelled Cancel products. On the bottom right of the products list, the button Products Cancels is available to cancel the selected products.~~
 
-The **button deletes** the **selected products** and changes the status as **Cancelled**.
+~~The **button deletes** the **selected products** and changes the status as **Cancelled**.~~
 
-Below the order actions, the user can manage the order status on **the status tab**, the documents generation and information in **the document tab**, the shipping activities in **the shipping tab** and the returns on **the merchandise returns tab.**
+~~Below the order actions, the user can manage the order status on **the status tab**, the documents generation and information in **the document tab**, the shipping activities in **the shipping tab** and the returns on **the merchandise returns tab.**~~
 
-**Each tab has a notification number of the row’s number of their table.**
+~~**Each tab has a notification number of the row’s number of their table.**~~
 
 ## II. **Customer panel**
 
