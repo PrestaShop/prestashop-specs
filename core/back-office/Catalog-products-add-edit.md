@@ -544,7 +544,7 @@ When the checkbox is checked, the file is displayed on the product page (attachm
 
   - **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears.
 When there is only one supplier checked, the default supplier radio button is automatically checked (<a href="https://github.com/PrestaShop/PrestaShop/issues/8580">issue 9580</a>)
-When there are many suppliers checked, it’s not mandatory to select a default supplier. You can save without choosing a default supplier.
+When there are many suppliers checked, you can change the default supplier.
 
  - **Supplier reference(s)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
 
