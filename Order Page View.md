@@ -186,9 +186,9 @@ Bellow the action button on the right, the product panel displays **the order’
 
 **The quantity** is coloured in a dark grey background if there are more than 2 quantities.
 
-**The edit button** allows the user to edit the excluded and included base price and quantity by pressing the **Update button** to save the modification or **Cancel button** to drop it.
-
+**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
 **While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
+The **Update button** to save the modification or **Cancel button** to drop it.
 
 **The Delete button removes the product for the list.**
 
@@ -217,7 +217,7 @@ The bottom of the product panel resume in a list all the order:
 -   **Taxes**
 -   **Total** in black background
 
-Bellow the totals, a warning is displayed to warn the user that **for this customer group, prices are displayed as Tax excluded** and **that Merchandise returns are disabled.**
+Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
 ## V. Tabs panel
 
