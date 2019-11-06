@@ -71,9 +71,9 @@ Here is the list of the elements of basic settings tab:
 
 - **Reference**: The reference is displayed in the product details part in front-office.
 
-- **Summary**: The text can be formatted thanks to the TinyMCE editor
+- **Summary**: The text can be formatted thanks to the TinyMCE editor (<a href="https://github.com/PrestaShop/PrestaShop/issues/14985">improvement 14985</a>)
 
-- **Description**: The text can be formatted thanks to the TinyMCE editor
+- **Description**: The text can be formatted thanks to the TinyMCE editor (<a href="https://github.com/PrestaShop/PrestaShop/issues/14985">improvement 14985</a>)
 
 - **Quantity**: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters > Products settings. If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product). When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
@@ -83,18 +83,18 @@ Here is the list of the elements of basic settings tab:
 
 - **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
 
-- **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. 
+- **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed and highlighted (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052"> issue 14052</a>) under and you can click on it. 
 
 - **Select category**: Allows to associate categories to the product. A category is necessarily selected, it is impossible not to have one. When you create a new product, “Home” is selected.
 When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
 
 - **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked. If you try to unselect all categories, you can’t do it for the last one.
 
-- **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories. I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. Categories are sorted by level and position:
-Categ 1 level 1 position 1
-Categ 3 level 1 position 2
-Categ 2 level 1 position 3
-   Categ 2-2 level 2 position 1
+- **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories (<a href="https://github.com/PrestaShop/PrestaShop/issues/14955">issue 14955</a>). I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. When I click on "expend" the whole tree is opened. Categories are sorted by level AND position:            
+Categ 1 level 1 position 1     
+Categ 3 level 1 position 2       
+Categ 2 level 1 position 3    
+   Categ 2-2 level 2 position 1           
    Categ 2-1 level 2 position 2
 
 - **Main category**: Radio button to select the main category of the product. There can only be one. The main category is the one that will be in the product URL, before the product name (http://domain_name/shop_folder/main_category/id-product_friendly_url.html) and in the breadcrumb in front-office you have all parent categories up to the main one.
@@ -104,10 +104,10 @@ Categ 2 level 1 position 3
 - **New category name**: Allows to create quickly a new category. Alphanumeric field. Maximum 128 characters. Invalid characters are: <>;=#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”
 
 - **Parent of the category**: Drop-down with all categories enabled, sorted by level and position:
-Categ 1 level 1 position 1
-Categ 3 level 1 position 2
-Categ 2 level 1 position 3
-   Categ 2-2 level 2 position 1
+Categ 1 level 1 position 1     
+Categ 3 level 1 position 2         
+Categ 2 level 1 position 3          
+   Categ 2-2 level 2 position 1            
    Categ 2-1 level 2 position 2
 
 - **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.” You can click in the entire zone to open the selector or you can drop one or many images in the entire zone. When there is already an image, you can click only on the frame with the “+” to open the selector. 
@@ -328,6 +328,8 @@ Cost price: It’s used for margin calculations. To separate decimals a dot or a
 
 - **Impact on weight**: This value is added to the product weight configured in Shipping tab. Carriers that does not accept products greater than this total weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
 
+- **Impact on additional shipping fees**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/11305">Improvement 11305</a>) By default, it’s filled with 0.000000 This amount is added to the additional shipping fees configured in Shipping tab for the product. The total is added to the total shipping cost according to the carrier selected in front-office.
+
 - **ISBN code**: Only numbers are accepted. The International Standard Book Number (ISBN) is used to identify books and other publications. The ISBN is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
 - **EAN-13 or JAN barcode**: Only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.
@@ -335,7 +337,9 @@ Cost price: It’s used for margin calculations. To separate decimals a dot or a
 - **UPC barcode**: Only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
 - **MPN**: Numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
-- **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (<a href="https://github.com/PrestaShop/PrestaShop/issues/13479">issue 13479</a>)
+
+- **Images**: All the images uploaded in basic settings tab are displayed. The cover image chosen in basic settings tab is automatically selected as default image when the combination is created. You can choose another default image for the combination. You can have only one "default" image per combination (<a href="https://github.com/PrestaShop/PrestaShop/issues/13479">issue 13479</a>)     
+When you hover an image, the caption configured in basic settings tab should be displayed (<a href="https://github.com/PrestaShop/PrestaShop/issues/9936">improvement 9936</a>)
 
 <a id="shipping"></a>
 ### Shipping tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14774">EPIC</a>]
@@ -365,7 +369,9 @@ Here is the list of the elements of shipping tab:
 
 - **Additional shipping fees**: By default, it’s filled with 0.000000 The amount is added to the total shipping cost according to the carrier selected in front-office. 
 
-- **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (<a href="https://github.com/PrestaShop/PrestaShop/issues/11379">issue 11379</a>) Only the selected carriers can be displayed in FO. There is an information message under all the checkboxes: “If no carrier is selected then all the carriers will be available for customers orders”
+- **Available carriers**: Checkbox with all carriers with the id of the carrier, the name and the delay (<a href="https://github.com/PrestaShop/PrestaShop/issues/11379">issue 11379</a>)            
+By default all available carriers should be checked and displayed in Frontoffice. If a carrier isn't checked, it's not displayed in front-office. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15377">issue 15377</a>)           
+A bulk action allow to select / unselect all carriers 
 
 <a id="pricing"></a>
 ### Pricing tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14775">EPIC</a>]
@@ -454,13 +460,16 @@ If the meta description field is empty, the product description is displayed. If
 
 - **Meta description**: There is a placeholder: “To have a different description than your product summary in search results pages, write it here.” This data is displayed in the code of the page in the <meta name="description"> tag. If the field is empty, the product description will be used. A counter indicates the number of characters used on 160 characters recommended. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
 
-- **Friendly URL**: This field is automatically field when you enter the product name. The spaces are replaced by dashes. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. 
+- **Friendly URL**: This field is automatically field when you enter the product name. The spaces are replaced by dashes. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.           
+When many languages are installed, if I fill the product name only for the default language, I want the friendly-url field to be automatically filled in other languages with the same content as in default language (<a href="https://github.com/PrestaShop/PrestaShop/issues/15936">improvement 15936</a>)
+
+- **Indexation by search engines**: Yes / No toggle. When set on Yes, the product is indexed. Otherwise it's not.
 
 - **Reset URL**: This buttons allows to reset the friendly URL field as it was before the last change. 
 
 - **Information message**: Friendly URLs are currently disabled. To enable it, go to SEO and URLs. Friendly URLs are currently enabled. To disable it, go to SEO and URLs. SEO and URLs link is opened in a new tab.
 
-- **Indexation by search engines**: Yes / No. By default it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, product URL isn’t indexed.
+- **Indexation by search engines**: Yes / No. By default it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, product URL isn’t indexed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14317">improvement 14317</a>)
 
 - **Redirection when offline**: Dropdown with 5 options:
  1) **Permanent redirection to a category (301)**: When my product is offline, I choose a category to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
@@ -517,7 +526,7 @@ Here is the list of the elements of options tab:
 
   - **Label**: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. In the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.       
 
-  - **Type**: Drop-down with 3 options: text, file & numeric. By default text is selected. If you choose “text” in front-office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers.
+  - **Type**: Drop-down with 3 options: text, file & numeric. By default text is selected. If you choose “text” in front-office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers (<a href="https://github.com/PrestaShop/PrestaShop/issues/11795">improvement 11795</a>)
 
   - **Delete**: Button to delete the field. When you click on it, you have a modal to cancel or confirm the action.
 
