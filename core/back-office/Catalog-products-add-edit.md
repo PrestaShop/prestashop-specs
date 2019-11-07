@@ -68,7 +68,8 @@ A drop-down next to the field is displayed when there are several languages inst
 
 Here is the list of the elements of basic settings tab:
 
-- **Combinations**: If you have selected standard product in the drop-down, you have 2 radios buttons: simple product or product with combinations. If product with combination is selected, under the two radio buttons, there is a “combinations” link. When you click on it, you switch to combinations tab. If product with combinations was selected & combinations were generated,  when I change for simple product, a modal is displayed alerting all combinations will be deleted and ask to confirm or cancel the action. 
+- **Combinations**: If you have selected standard product in the drop-down, you have 2 radios buttons: simple product or product with combinations.    
+If product with combination is selected, under the two radio buttons, there is a “combinations” link. When you click on it, you switch to combinations tab. If product with combinations was selected & combinations were generated,  when I change for simple product, a modal is displayed alerting all combinations will be deleted and ask to confirm or cancel the action. 
 
 - **Reference**: The reference is displayed in the product details part in front-office.
 
@@ -78,22 +79,36 @@ A drop-down next to the field is displayed when there are several languages inst
 - **Description**: The text can be formatted thanks to the TinyMCE editor (<a href="https://github.com/PrestaShop/PrestaShop/issues/14985">improvement 14985</a>)            
 A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)
 
-- **Quantity**: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters > Products settings. If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product). When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters > Products settings.         
+If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product).         
+When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated.      
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.          
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
 
-- **Price tax incl**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>)
+- **Price tax incl**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).       
+When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.       
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. 
 
-- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed. If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated. Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
+- **Tax rule**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).          
+Drop-down with all tax rules enabled and a “no tax” option. When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.       
+If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in pricing tab is also updated.      
+Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab. 
 
-- **Search category**: Search field to search a category. You can search by category name. When you start typing, if there are results, they are displayed and highlighted (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052"> issue 14052</a>) under and you can click on it. 
+- **Search category**: Search field to search a category. You can search by category name.       
+When you start typing, if there are results, they are displayed and highlighted (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052"> issue 14052</a>) under and you can click on it. 
 
-- **Select category**: Allows to associate categories to the product. A category is necessarily selected, it is impossible not to have one. When you create a new product, “Home” is selected.
-When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
+- **Select category**: Allows to associate categories to the product. A category is necessarily selected, it is impossible not to have one. When you create a new product, “Home” is selected.      
+When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>).         
+When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
 
-- **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked. If you try to unselect all categories, you can’t do it for the last one.
+- **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”. You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked.            
+If you try to unselect all categories, you can’t do it for the last one.
 
-- **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories (<a href="https://github.com/PrestaShop/PrestaShop/issues/14955">issue 14955</a>). I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. When I click on "expend" the whole tree is opened. Categories are sorted by level AND position:            
+- **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories (<a href="https://github.com/PrestaShop/PrestaShop/issues/14955">issue 14955</a>).         
+I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories.    
+When I click on "expend" the whole tree is opened. Categories are sorted by level AND position:            
 Categ 1 level 1 position 1     
 Categ 3 level 1 position 2       
 Categ 2 level 1 position 3    
@@ -104,7 +119,9 @@ Categ 2 level 1 position 3
 
 - **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 
-- **New category name**: Allows to create quickly a new category. Alphanumeric field. Maximum 128 characters. Invalid characters are: <>;=#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”
+- **New category name**: Allows to create quickly a new category.      
+The name will be the same in all languages.      
+Alphanumeric field. Maximum 128 characters. Invalid characters are: <>;=#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”
 
 - **Parent of the category**: Drop-down with all categories enabled, sorted by level and position:
 Categ 1 level 1 position 1     
@@ -120,43 +137,50 @@ The drag icon isn't displayed when many images are selected and you can't move m
 
 - **Image caption**: You can click on an uploaded image and add a caption. You can put a caption by language. The caption is displayed in front-office when you hover the thumbnail image according to the selected language.  
 
-- **Cover image**: You can click on an uploaded image to assign it as cover image. There is necessarily a cover image. There can be only one cover image. If you upload many images by pressing Ctrl, the first image selected is the cover image. It’s the image displayed in product list in front-office. You can change the cover image by clicking on an image, check the checkbox “cover image” and click on Save. If it was checked for another image, then it’s unchecked.
+- **Cover image**: You can click on an uploaded image to assign it as cover image. There is necessarily a cover image. There can be only one cover image.     
+If you upload many images, the first image selected is the cover image.          
+It’s the image displayed in product list in front-office. You can change the cover image by clicking on an image, check the checkbox “cover image” and click on Save. If it was checked for another image, then it’s unchecked.
 
-- **Zoom**: You can zoom on an uploaded image by clicking on it and click on “Zoom”. The image is open in its default size. You can close it by clicking on the cross, outside the image or pressing ESC key.
+- **Zoom**: You can zoom on an uploaded image by clicking on it and click on “Zoom”. The image is open in its default size. You can close it by clicking on the cross, outside the image or pressing ESC key.       
 Merchants should be able to navigate between several images in zoom view to have an easy last check before saving the page.
 
 - **Delete**: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.
 
-- **Bulk actions**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/12773">issue #12773</a>) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:
+- **Bulk actions**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/12773">issue #12773</a>) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:       
   - The number of images selected
   - An "Unselect all" link to unselect images and close the frame
   - The "zoom" button to open the first image of the list zoomed
   - A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
   - The cross to close the frame and unselect images
-  - Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save. 
-
+  - Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.           
 If more than one image is selected the checkbox "cover" disappears
 
-- **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” field should be also disabled (currently it’s not). When you select a feature, both fields (pre-defined & customized value) are enabled. The features and the associated values are displayed in product details tab of the front-office. 
+- **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)         
+When you select a feature, both fields (pre-defined & customized value) are enabled. The features and the associated values are displayed in product details tab of the front-office. 
 
-- **Feature pre-defined value**: Drop-down with all compositions of the selected feature. If you select a pre-defined value, the customized value should be disabled
-because a feature can’t have both. When you add a feature with a pre-defined value, it’s added in all languages enabled.
+- **Feature pre-defined value**: Drop-down with all compositions of the selected feature. If you select a pre-defined value, the customized value should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)       
+When you add a feature with a pre-defined value, it’s added in all languages enabled.
 
-- **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both.
+- **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)
 When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.      
 A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)
 
 - **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
 
-- **Add a brand**: Drop-down with all brands enabled. The brand is displayed in the product page in front-office in product details tab. When you add a brand, it’s added in all languages enabled. The logo of the brand is displayed in product details tab of the front-office if the brand has a logo, otherwise the name of the brand is displayed.
+- **Add a brand**: Drop-down with all brands enabled.      
+The brand is displayed in the product page in front-office in product details tab. When you add a brand, it’s added in all languages enabled. The logo of the brand is displayed in product details tab of the front-office if the brand has a logo, otherwise the name of the brand is displayed.
 
 - **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
 
-- **Add a related product**: Search field to search a product. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). You can click on it to select it. It should not be possible to associate the same product with itself. It should not be possible to associate a product already associated to this product. You can have many associated products.
+- **Add a related product**: Search field to search a product. You can search by product name or product reference.     
+When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). You can click on it to select it.      
+It should not be possible to associate the same product with itself or to associate the same product several times (<a href="https://github.com/PrestaShop/PrestaShop/issues/9960">issue 9960</a>)       
+You can have many associated products.
 
 - **Delete a related product**: The trash button is to delete all related products. When you click on it, you have a modal for cancel or confirm the action. If you want to delete only one associated product, you can click on the cross. When you click on it, you have a modal for cancel or confirm the action.
 
-- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you select a result, then the product name is inserted in the search bar.
+- **Pack search for a product**: Select Pack of products as product type in the drop-down. A search field to search a product is displayed. You can search by product name or product reference. When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). When you select a result, then the product name is inserted in the search bar.    
+You shouldn't be able to add the same product several times to the pack. If the product is already in the pack, you shouldn't see it in the results (<a href="https://github.com/PrestaShop/PrestaShop/issues/9617">issue 9617</a>)
 
 **Pack quantity**<a id="packqty"></a>
 - **Pack add a product**: Button to add the product in the quantity specified to the pack.
@@ -177,11 +201,13 @@ The second tab name changes depending on the type of product selected :
 
 Here is the list of the elements of quantities tab:
 
-- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. When you update the field in quantities tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. When you update the field in quantities tab, the same field in basic settings tab is updated.    
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.     
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 
-- **Stock location**: This field should not be displayed for a virtual product.
+- **Stock location**: This field should not be displayed for a virtual product (<a href="https://github.com/PrestaShop/PrestaShop/issues/9623">issue 9623</a>)
 
 - **Low stock level**: You can define a value and choose or not to receive an email when the product quantity is <= to this value.
 
@@ -217,7 +243,10 @@ A drop-down next to the field is displayed when there are several languages inst
 
 Here is the list of the elements of virtual product tab:
 
-- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. When you update the field in virtual product tab, the same field in basic settings tab is updated. The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings.    
+When you update the field in virtual product tab, the same field in basic settings tab is updated.    
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.    
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 
@@ -270,23 +299,32 @@ Here is the list of the elements of combinations tab:
 - **Search attributes**: I can search and select any existing attribute’s value by typing the value or the attribute’s private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>). I can also choose all the values of an attribute at once by typing the private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>) of the attribute: All. Elements in dropdown are highlighted when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). All results are displayed in the dropdown with a scrollbar (<a href="https://github.com/PrestaShop/PrestaShop/issues/9939">issue 9939</a>).
 When I select an attribute’s value in the search bar, the value is selected and in bold in the menu on the right. If I remove an attribute value in the search bar, the value is unchecked in the menu on the right.
 
-- **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16100">issue 16100</a>) When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
+- **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16100">issue 16100</a>)     
+When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
 
 - **Generate combinations**: After selecting one or many attributes’ values, I click on Generate. Combinations are displayed in the list.
 
 - **Combinations list**:
-Columns: Combinations,  impact on price (tax excl), final price (tax excl), quantity, reference (<a href="https://github.com/PrestaShop/PrestaShop/issues/16101">issue 16101</a>), actions (edit & delete action), default combination. 
-You can search and sort by for every column, except actions one. 
-In combinations field, you can search by attribute value. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16108">issue 16108</a>)
-When you change a value in the list it’s automatically saved. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16102">issue 16102</a>)
+Columns: Combinations, impact on price (tax excl), final price (tax excl), quantity, reference (<a href="https://github.com/PrestaShop/PrestaShop/issues/16101">issue 16101</a>), actions (edit & delete action), default combination.     
+You can search and sort by for every column, except actions one.    
+In combinations field, you can search by attribute value. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16108">issue 16108</a>)    
+When you change a value in the list it’s automatically saved. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16102">issue 16102</a>)    
 Display a pagination system when there is more than 10 combinations (<a href="https://github.com/PrestaShop/PrestaShop/issues/16103">issue 16103</a>)
 
 - **Bulk actions**: I can select many combinations to change the following values in bulk.
- 1) **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.  This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+ 1) **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings.   
+The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.     
+This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
  2) **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 
- 3) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here (positive or negative). Carriers that does not accept products greater than this weight are not displayed in front-office. To separate decimals a dot or a comma can be used, both should work no matter the language.
- 4) **Impact on price (tax excl.)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
- 5) **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+ 3) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here (positive or negative).    
+Carriers that does not accept products greater than this weight are not displayed in front-office.     
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+ 4) **Impact on price (tax excl.)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen.   
+To separate decimals a dot or a comma can be used, both should work no matter the language.   
+When you change it, the same field in pricing tab is also updated.
+ 5) **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).    
+When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.    
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
  6) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
  7) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
  8) **Minimum quantity**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
@@ -312,7 +350,9 @@ A drop-down next to the field is displayed when there are several languages inst
 
 - **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
 
-- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.  This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+- **Quantity**: This field is not displayed if stock management is disabled in Shop parameters > Products settings.    
+The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters > Product settings is set to yes.    
+This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
 - **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
 
@@ -324,27 +364,39 @@ A drop-down next to the field is displayed when there are several languages inst
 Low stock level: You can define a value and choose whether or not to receive an email when the product quantity is <= to this value.
 
 - **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
-Cost price: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.
 
-- **Impact on price (tax excl.)**: This value is added to the product price tax excl. When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+- **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.
+
+- **Impact on price (tax excl.)**: This value is added to the product price tax excl.    
+When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen.    To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
 - **Impact on price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>). This value is added to the product price tax incl. When a value is filled, the impact on price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
-- **Final retail price**: Displays the final price tax excl and tax incl. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15416">issue 15416</a>) Both final prices are updated when you modify the impact on price tax excl or tax incl. 
+- **Final retail price**: Displays the final price tax excl and tax incl. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15416">issue 15416</a>)     
+Both final prices are updated when you modify the impact on price tax excl or tax incl. 
 
-- **Ecotax (tax incl.)**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/15059">issue 15059</a>) This field is displayed if the “ecotax” option is enabled in International > Taxes. The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
+- **Ecotax (tax incl.)**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/15059">issue 15059</a>) This field is displayed if the “ecotax” option is enabled in International > Taxes.     
+The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax” 
 
-- **Impact on price per unit (tax excl.)**: This value is added to the product price per unit in Pricing tab. You can fill it if you sell products per unit. To separate decimals a dot or a comma can be used, both should work no matter the language. Displayed in the product page in front-office.
+- **Impact on price per unit (tax excl.)**: This value is added to the product price per unit in Pricing tab. You can fill it if you sell products per unit.     
+To separate decimals a dot or a comma can be used, both should work no matter the language. Displayed in the product page in front-office.
 
-- **Impact on weight**: This value is added to the product weight configured in Shipping tab. Carriers that does not accept products greater than this total weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
+- **Impact on weight**: This value is added to the product weight configured in Shipping tab.    
+Carriers that does not accept products greater than this total weight are not displayed in front-office.    
+The weight unit displayed next to the field is the one defined in International > Localization.    
+To separate decimals a dot or a comma can be used, both should work no matter the language.
 
-- **Impact on additional shipping fees**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/11305">Improvement 11305</a>) By default, it’s filled with 0.000000 This amount is added to the additional shipping fees configured in Shipping tab for the product. The total is added to the total shipping cost according to the carrier selected in front-office.
+- **Impact on additional shipping fees**: (<a href="https://github.com/PrestaShop/PrestaShop/issues/11305">Improvement 11305</a>)     
+By default, it’s filled with 0.000000     
+This amount is added to the additional shipping fees configured in Shipping tab for the product. The total is added to the total shipping cost according to the carrier selected in front-office.
 
 - **ISBN code**: Only numbers are accepted. The International Standard Book Number (ISBN) is used to identify books and other publications. The ISBN is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
-- **EAN-13 or JAN barcode**: Only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.
+- **EAN-13 or JAN barcode**: Only numbers are accepted.     
+This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
-- **UPC barcode**: Only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
+- **UPC barcode**: Only numbers are accepted.     
+This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries. The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
 
 - **MPN**: Numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
 
@@ -360,17 +412,31 @@ This tab is not displayed for a virtual product.
 
 Here is the list of the elements of shipping tab:
 
-- **Width**: By default it’s filled with 0. I set the width, carriers that does not accept products greater than this width are not displayed in front-office. The dimension unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language. 
+- **Width**: By default it’s filled with 0.    
+I set the width, carriers that does not accept products greater than this width are not displayed in front-office.    
+The dimension unit displayed next to the field is the one defined in International > Localization.    
+To separate decimals a dot or a comma can be used, both should work no matter the language. 
 
-- **Height**: By default it’s filled with 0. I set the height, carriers that does not accept products greater than this height are not displayed in front-office. The dimension unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
+- **Height**: By default it’s filled with 0.    
+I set the height, carriers that does not accept products greater than this height are not displayed in front-office.    
+The dimension unit displayed next to the field is the one defined in International > Localization.     
+To separate decimals a dot or a comma can be used, both should work no matter the language.
 
-- **Depth**: By default it’s filled with 0. I set the depth, carriers that does not accept products greater than this depth are not displayed in front-office. The dimension unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
+- **Depth**: By default it’s filled with 0.     
+I set the depth, carriers that does not accept products greater than this depth are not displayed in front-office.     
+The dimension unit displayed next to the field is the one defined in International > Localization.     
+To separate decimals a dot or a comma can be used, both should work no matter the language.
 
-- **Weight**: By default it’s filled with 0. I set the weight, carriers that does not accept products greater than this weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International > Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
+- **Weight**: By default it’s filled with 0.     
+I set the weight, carriers that does not accept products greater than this weight are not displayed in front-office.    
+The weight unit displayed next to the field is the one defined in International > Localization.     
+To separate decimals a dot or a comma can be used, both should work no matter the language.
 
 - **Delivery time**: 3 radio buttons: 
  1) **None**: No delivery time is displayed on the product page in front-office
- 2) **Default delivery time**: If the product is in stock, the value filled in Shop parameters > Products settings > “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters > Products settings > “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters > Products settings in a new browser tab next to the radio button label. 
+ 2) **Default delivery time**: If the product is in stock, the value filled in Shop parameters > Products settings > “Delivery time of in-stock products” is displayed on the product page in front-office.     
+ If the product is out of stock but orders are allowed, the value filled in Shop parameters > Products settings > “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office.     
+There is an “edit” link that opens Shop parameters > Products settings in a new browser tab next to the radio button label. 
  3) **Specific delivery time to this product**: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.
 
 - **Delivery time of in-stock products**: There is a placeholder: “Delivered within 3-4 days” and a subtitle under the field: “Leave empty to disable.” A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed.        
