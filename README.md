@@ -1,670 +1,160 @@
 # About PrestaShop specifications
+
 The goal of this project is to make the PrestaShop specifications accessible to all.
 
 [Learn more about the PrestaShop project](https://github.com/PrestaShop/PrestaShop)
 
 More coming soon
 
+General FO  
+  
+General BO  
+text  
+  
+UI Kit
 
-<details>
-	<summary>General FO</summary>
-<br>
-</details>
-<br>
+*  [Symfony Migration](https://github.com/PrestaShop/prestashop-specs/blob/master/symfony-migration.md)
 
-<details>
-<summary>General BO</summary>
-<br>
-	<details>
-		<summary>text</summary>
-		<br>
-	</details>
-		<br>
-  	<details>
-		<summary>UI Kit</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/symfony-migration.md">Symfony Migration</a>
-		</li>
-</details>
-<br>
+  
+ \* \* \*Dashboard  
+  
+Orders  
+Orders
 
-* * *
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-	<summary>Dashboard</summary>
-<br>
-</details>
-<br>
+Invoices
 
-<details>
-<summary>Orders</summary>
-<br>
-	<details>
-		<summary>Orders</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Invoices</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Credit Slips</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Delivery Slips</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Shopping Carts</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-<summary>Products</summary>
-<br>
-	<details>
-		<summary>Products</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md">Add / edit product page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Categories</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Monitoring</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Attributes & Features</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Brands & Suppliers</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Files</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Discounts</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">Cart rules</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/catalog-price-rules.md">Catalog Price rules</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Stocks</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+Credit Slips
 
-<details>
-<summary>Customers</summary>
-<br>
-	<details>
-		<summary>Customers</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Customers-Customers.md">List Page</a>
-		</li>
-		<li>
-			<a href="#">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Addresses</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-<summary>Customer Service</summary>
-<br>
-	<details>
-		<summary>Customer Service</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Order Messages</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Merchandise Returns</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+Delivery Slips
 
-<details>
-<summary>Stats
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-<summary>Modules</summary>
-<br>
-	<details>
-		<summary>Module Catalog</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Module Manager</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Modules</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/ps_facetedsearch.md">Faceted search</a>
-		</li>
-	</ul>
-	</details>
+Shopping Carts
 
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-<summary>Design</summary>
-<br>
-	<details>
-		<summary>Theme & Logo</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/theme-logo.md">Theme and Logo</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Theme Catalog</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Pages</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Positions</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Image Settings</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Link Widget</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+  
+Products  
+Products
 
-<details>
-<summary>Shipping</summary>
-<br>
-	<details>
-		<summary>Carriers</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Preferences</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+*  [Add / edit product page](https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md)
 
-<details>
-<summary>Payment</summary>
-<br>
-	<details>
-		<summary>Payment Methods</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Preferences</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+Categories
 
-<details>
-<summary>International</summary>
-<br>
-	<details>
-		<summary>Localization</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/blob/master/Localization-Currencies-List-Add-Edit.md">Currencies</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Locations</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Taxes</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Translations</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-<details>
-<summary>Shop Parameters</summary>
-<br>
-	<details>
-		<summary>General</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Order Settings</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Product Settings</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Customer Settings</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Contact</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Traffic & SEO</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Search</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Merchant Expertise</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+Monitoring
 
-<details>
-<summary>Advanced Parameters</summary>
-<br>
-	<details>
-		<summary>Information</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Performance</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Administration</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>E-mail</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Import</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Team</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Database</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Logs</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-	<details>
-		<summary>Webservice</summary>
-	<ul>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-List.md">List Page</a>
-		</li>
-		<li>
-			<a href="https://github.com/PrestaShop/prestashop-specs/Order-Add.md">Add/Edit Page</a>
-		</li>
-	</ul>
-	</details>
-</details>
-<br>
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Attributes & Features
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Brands & Suppliers
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Files
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Discounts
+
+*  [Cart rules](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Catalog Price rules](https://github.com/PrestaShop/prestashop-specs/blob/master/catalog-price-rules.md)
+
+Stocks
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+  
+Customers  
+Customers
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/blob/master/Customers-Customers.md)
+*  [Add/Edit Page](./)
+
+Addresses
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+  
+Customer Service  
+Customer Service
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Order Messages
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Merchandise Returns
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+  
+Stats  
+Modules  
+Module Catalog
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Module Manager
+
+*  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
+*  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
+
+Modules
+
+*  [Faceted search](https://github.com/PrestaShop/prestashop-specs/blob/master/ps_facetedsearch.md)
+
+&lt;/details&gt;   
+
+
+Design   
+ Theme & Logo Theme Catalog Pages Positions Image Settings Link Widget &lt;/details&gt;   
+
+
+Shipping   
+ Carriers Preferences &lt;/details&gt;   
+
+
+Payment   
+ Payment Methods Preferences &lt;/details&gt;   
+
+
+International   
+ Localization Locations Taxes Translations &lt;/details&gt;   
+
+
+Shop Parameters   
+ General Order Settings Product Settings Customer Settings Contact Traffic & SEO Search Merchant Expertise &lt;/details&gt;   
+
+
+Advanced Parameters   
+ Information Performance Administration E-mail Import Team Database Logs Webservice &lt;/details&gt;   
+
+

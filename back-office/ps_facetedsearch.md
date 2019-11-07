@@ -1,49 +1,46 @@
+# ps\_facetedsearch
+
 **Availability options**
 
 There are 3 options in the module configuration when the availability filter is **enabled**:
-- Display in stock products: Yes / No 
 
-If the option is set to Yes, display in FO “In stock”: Product quantity > 0
+* Display in stock products: Yes / No 
 
-By default it should be on Yes
-
-
-- Display available products: Yes / No
-
-If the option is set to Yes, display in FO “Available”: Product quantity <= 0 & available for order
+If the option is set to Yes, display in FO “In stock”: Product quantity &gt; 0
 
 By default it should be on Yes
 
+* Display available products: Yes / No
 
-- Display out of stock products: Yes / No
+If the option is set to Yes, display in FO “Available”: Product quantity &lt;= 0 & available for order
 
-If the option is set to Yes, display in FO “Out of stock”: Product quantity <= 0 & not available for order
+By default it should be on Yes
+
+* Display out of stock products: Yes / No
+
+If the option is set to Yes, display in FO “Out of stock”: Product quantity &lt;= 0 & not available for order
 
 By default it should be on No
 
-
 These 3 options should also be displayed when the availability filter is **disabled**:
 
-- Display in stock products: Yes / No
+* Display in stock products: Yes / No
 
-If the option is set to Yes, display in FO products with quantity > 0
-
-Should be on Yes by default
-
-
-- Display available products: Yes / No
-
-If the option is set to Yes, display in FO products with quantity <= 0 but available for order
+If the option is set to Yes, display in FO products with quantity &gt; 0
 
 Should be on Yes by default
 
+* Display available products: Yes / No
 
-- Display out of stock products: Yes / No
+If the option is set to Yes, display in FO products with quantity &lt;= 0 but available for order
 
-If the option is set to Yes, display in FO products with quantity <= 0 but not available for order
+Should be on Yes by default
+
+* Display out of stock products: Yes / No
+
+If the option is set to Yes, display in FO products with quantity &lt;= 0 but not available for order
 
 Should be on No by default
-
 
 **Hide filter values when no product is matching option**
 
@@ -59,13 +56,11 @@ _Material_
 
 `Glass`
 
-
 _Steel look_
 
 `Polished`
 
 `Brushed`
-
 
 _Glass look_
 
@@ -73,19 +68,17 @@ _Glass look_
 
 `Ugly`
 
-
 Desired behavior
 
 You select `Steel` - Filter _Glass look_ should get hidden.
 
 You select `Glass` - Filter _Steel look_ should get hidden.
 
-You select `Nice` or  `Ugly` - `Steel` option should get hidden.
+You select `Nice` or `Ugly` - `Steel` option should get hidden.
 
-You select `Polished` or  `Brushed` - `Glass` option should get hidden.
+You select `Polished` or `Brushed` - `Glass` option should get hidden.
 
-<a id="sorting"></a>
-**Sorting of brands in front-office**
+ **Sorting of brands in front-office**
 
 In front-office, if brands starts with a character, so sort by ascending alphabetical order.
 
@@ -97,27 +90,27 @@ Example, in brackets the number of result:
 
 Size
 
-38 (50)
+38 \(50\)
 
-40 (20)
+40 \(20\)
 
-42 (100)
+42 \(100\)
 
 Size
 
-10 cm (50)
+10 cm \(50\)
 
-30 cm (20)
+30 cm \(20\)
 
-40 cm (100)
+40 cm \(100\)
 
 Brands
 
-Adidas (291)
+Adidas \(291\)
 
-Converses (625)
+Converses \(625\)
 
-Nike (406)
+Nike \(406\)
 
 **Sorting of attributes values in front-office**
 
@@ -137,30 +130,29 @@ Example, in brackets the number of result:
 
 Size
 
-1,6 (50)
+1,6 \(50\)
 
-10 (20)
+10 \(20\)
 
-11,2 (100)
+11,2 \(100\)
 
 Size
 
-10 cm (50)
+10 cm \(50\)
 
-30 cm (20)
+30 cm \(20\)
 
-40 cm(100)
+40 cm\(100\)
 
 Sleeves
 
-Short sleeves (291)
+Short sleeves \(291\)
 
-Long sleeves (406)
+Long sleeves \(406\)
 
-Without sleeves (625)
+Without sleeves \(625\)
 
 **Display of attribute group in front-office**
 
-When you create an attribute in back-office, you have to fill the name and the public name.
-As a customer, in front-office I want to see the public name of the attribute group.
+When you create an attribute in back-office, you have to fill the name and the public name. As a customer, in front-office I want to see the public name of the attribute group.
 
