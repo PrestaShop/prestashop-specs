@@ -191,7 +191,7 @@ Bellow the action button on the right, the product panel displays **the order’
 **The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
 
 The merchant is warn if he edits the price of product with a specific price or an catalog price rule.
-![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.jpg)
+![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
 **While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
 The **Update button** to save the modification or **Cancel button** to drop it.
