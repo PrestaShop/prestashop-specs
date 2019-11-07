@@ -231,6 +231,9 @@ Below the totals, a warning message is displayed to warn the user that **for thi
 
 All the tabs are located in the same panel bellow the products list.
 
+The label "Wrapping gift" and "Recycled packaging" are only shown when the feature are present in the order. It must be shown on all the tabs.
+![Wrapping and recycled packing are included in the order](/img/wrapping_recycled_on.png)
+
 1.  **Status tab**
 
 The table **list of the latest order status** is displayed composed:
@@ -263,8 +266,6 @@ The edit shipping button on each row can edit the information in a popin. You ca
 
 [Edit shipping details](https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit)
 
-The label "Wrapping gift" and "Recycled packaging" are only shown when the feature are present in the order.
-![Wrapping and recycled packing are included in the order](/img/wrapping_recycled_on.png)
 
 4.  **Merchandising returns tab**
 
