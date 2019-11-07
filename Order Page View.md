@@ -189,6 +189,10 @@ Bellow the action button on the right, the product panel displays **the order’
 **The quantity** is coloured in a dark grey background if there are more than 2 quantities.
 
 **The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
+
+The merchant is warn if he edits the price of product with a specific price or an catalog price rule.
+![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.jpg)
+
 **While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
 The **Update button** to save the modification or **Cancel button** to drop it.
 
@@ -216,6 +220,8 @@ The bottom of the product panel resume in a list all the order:
 
 -   **Products total with taxes excluded**
 -   **Total shipping**
+-   **Discount** if there is any cart rule applied 
+-   **Wrapping** if there is wrapping option in the order
 -   **Taxes**
 -   **Total** in black background
 
@@ -256,6 +262,9 @@ The carrier table shows **the date, the carrier, the weight, the shipping cost, 
 The edit shipping button on each row can edit the information in a popin. You can edit the text input the tracking number and in the drop list the carrier method.
 
 [Edit shipping details](https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit)
+
+The label "Wrapping gift" and "Recycled packaging" are only shown when the feature are present in the order.
+![Wrapping and recycled packing are included in the order](/img/wrapping_recycled_on.png)
 
 4.  **Merchandising returns tab**
 
