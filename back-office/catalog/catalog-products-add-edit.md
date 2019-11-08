@@ -319,7 +319,7 @@ Here is the list of the elements of options tab:
 
 * **Product name**: Mandatory alphanumeric field. It should have minimum 3 characters and maximum 128. If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” Prohibited characters are: ={}&lt;&gt;;\# If you enter an invalid character, an error message is displayed under the field: ”This value is not valid.” If it’s not filled in the default language, when you save, a message “This value should not be blank.” is displayed under the field 
 
-  **Basic settings tab**
+### Basic settings tab <a id="basicsettings"></a>
 
 * **Reference**: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message \(currently they are not\).
 * **Summary**: Long text editor with tiny MCE. By default, maximum 800 characters \(can be changed in Shop parameters &gt; Products &gt; Max size of short description\). A counter indicates the number of characters remaining. If you enter more characters than the number allowed and save, an error is displayed “This value is too long. It should have XX characters or less.”
