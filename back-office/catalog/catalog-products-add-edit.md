@@ -28,7 +28,7 @@ The third step is to detail the multistore behavior.
 
 Some elements are displayed in all tabs. Here is the list of those elements :
 
-* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name” Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
+* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”  Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language.  A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 * **Product type**: Drop-down with 3 : Standard product, Pack of products, Virtual product. Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
 * **Sales**: This link redirect to Stats &gt; product detail and is open in a new browser tab
 * **Product list**: Link that displays the list of all products filtered as in the catalog, with their id, name, price, quantity. If you click on the id or the name, you arrive on the product page in basic settings tab. If you click on the price, you arrive on the product page in pricing tab. If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.
@@ -64,11 +64,17 @@ Here is the list of the elements of basic settings tab:
 * **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 * **New category name**: Allows to create quickly a new category. The name will be the same in all languages. Alphanumeric field. Maximum 128 characters. Invalid characters are: &lt;&gt;;=\#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”
 * **Parent of the category**: Drop-down with all categories enabled, sorted by level and position:       
-Categ 1 level 1 position 1     
-Categ 3 level 1 position 2    
-Categ 2 level 1 position 3        
-Categ 2-2 level 2 position 1      
-Categ 2-1 level 2 position 2
+
+  Categ 1 level 1 position 1     
+
+  Categ 3 level 1 position 2    
+
+  Categ 2 level 1 position 3        
+
+  Categ 2-2 level 2 position 1      
+
+  Categ 2-1 level 2 position 2
+
 * **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.” You can click in the entire zone to open the selector or you can drop one or many images in the entire zone. When there is already an image, you can click only on the frame with the “+” to open the selector.
 * **Image order**: You can move the images in the product sheet, the order is well changed in front-office. The drag icon isn't displayed when many images are selected and you can't move many images
 * **Image caption**: You can click on an uploaded image and add a caption. You can put a caption by language. The caption is displayed in front-office when you hover the thumbnail image according to the selected language.
@@ -81,7 +87,7 @@ Categ 2-1 level 2 position 2
   * The "zoom" button to open the first image of the list zoomed
   * A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
   * The cross to close the frame and unselect images
-  * Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.           
+  * Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.
 
     If more than one image is selected the checkbox "cover" disappears
 * **Add a feature**: Drop-down with all features. If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\) When you select a feature, both fields \(pre-defined & customized value\) are enabled. The features and the associated values are displayed in product details tab of the front-office.
@@ -123,9 +129,9 @@ Here is the list of the elements of quantities tab:
 
 This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
 
-3 radios buttons:       
-1\) **Deny orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.       
-2\) **Allow orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.            
+3 radios buttons:  
+1\) **Deny orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  
+2\) **Allow orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.  
 3\) **Use default behavior \(Deny orders or Allow orders\)**: the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
 
 * **Label when in stock**: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
@@ -151,15 +157,14 @@ Here is the list of the elements of virtual product tab:
   * **Number of days**: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “The product deadline is in the past.”
   * **Delete file**: Once the file uploaded and clicking on Save, you can delete the file. When you click on “delete this file”, a modal is displayed to cancel or confirm the action. If you confirm the deletion, the file is deleted and “delete file” and “download file” actions are replaced by the browse file field.
   * **Download file**: Once the file uploaded and clicking on Save, you can download your file.
-  
 * **Availability preferences, behavior when out of stock:**
 
 This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
 
 3 radios buttons:
 
-1\) **Deny orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.      
-2\) **Allow orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.       
+1\) **Deny orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  
+2\) **Allow orders**: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.  
 3\) **Use default behavior \(Deny orders or Allow orders\)**: the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
 
 * **Label when in stock**: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
@@ -176,24 +181,16 @@ Here is the list of the elements of combinations tab:
 * **Select attributes**: When no combinations have been generated yet, attributes private names are opened and values displayed. If combinations are already generated, attributes are collapsed and values are not displayed. \([issue 16100](https://github.com/PrestaShop/PrestaShop/issues/16100)\) When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”. When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.
 * **Generate combinations**: After selecting one or many attributes’ values, I click on Generate. Combinations are displayed in the list.
 * **Combinations list**: Columns: Combinations, impact on price \(tax excl\), final price \(tax excl\), quantity, reference \([issue 16101](https://github.com/PrestaShop/PrestaShop/issues/16101)\), actions \(edit & delete action\), default combination. You can search and sort by for every column, except actions one. In combinations field, you can search by attribute value. \([issue 16108](https://github.com/PrestaShop/PrestaShop/issues/16108)\) When you change a value in the list it’s automatically saved. \([issue 16102](https://github.com/PrestaShop/PrestaShop/issues/16102)\) Display a pagination system when there is more than 10 combinations \([issue 16103](https://github.com/PrestaShop/PrestaShop/issues/16103)\)
-* **Bulk actions**: I can select many combinations to change the following values in bulk:     
-1\) **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.      
-2\) **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.      
-3\) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here \(positive or negative\). Carriers that does not accept products greater than this weight are not displayed in front-office. To separate decimals a dot or a comma can be used, both should work no matter the language.      
-4\) **Impact on price \(tax excl.\)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.      
-5\) **Impact on price \(tax incl.\)**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.     
-6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.      
-7\) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.      
-8\) **Minimum quantity**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”    
-9\) **Low stock level**: You can define a value and choose whether or not to receive an email when the product quantity is &lt;= to this value.      
-10\) **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.     
-11\) **Delete combinations**: If I remove all the combinations of a product, save and refresh the page, it becomes a simple product.
-
+* **Bulk actions**: I can select many combinations to change the following values in bulk: 1\) **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings. The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes. This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”. 2\) **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language. 3\) **Impact on weight**: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here \(positive or negative\). Carriers that does not accept products greater than this weight are not displayed in front-office. To separate decimals a dot or a comma can be used, both should work no matter the language. 4\) **Impact on price \(tax excl.\)**: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. 5\) **Impact on price \(tax incl.\)**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\). When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen. To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated. 6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product. 7\) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination. 8\) **Minimum quantity**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.” 9\) **Low stock level**: You can define a value and choose whether or not to receive an email when the product quantity is &lt;= to this value. 10\) **Send me an email when the quantity is below or equals this level**: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value. 11\) **Delete combinations**: If I remove all the combinations of a product, save and refresh the page, it becomes a simple product.
 * **Availability preferences, behavior when out of stock**: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead there is a message “Stock management is disabled”
 * **3 radios buttons**:      
-1\) Deny orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.     
-2\) Allow orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.      
-3\) Use default behavior \(Deny orders or Allow orders\): the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+
+  1\) Deny orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.     
+
+  2\) Allow orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.      
+
+  3\) Use default behavior \(Deny orders or Allow orders\): the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+
 * **Label when in stock**: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders. A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 
@@ -233,9 +230,13 @@ Here is the list of the elements of shipping tab:
 * **Depth**: By default it’s filled with 0. I set the depth, carriers that does not accept products greater than this depth are not displayed in front-office. The dimension unit displayed next to the field is the one defined in International &gt; Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
 * **Weight**: By default it’s filled with 0. I set the weight, carriers that does not accept products greater than this weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International &gt; Localization. To separate decimals a dot or a comma can be used, both should work no matter the language.
 * **Delivery time**: 3 radio buttons:       
-1\) **None**: No delivery time is displayed on the product page in front-office           
-2\) **Default delivery time**: If the product is in stock, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters &gt; Products settings in a new browser tab next to the radio button label.               
-3\) **Specific delivery time to this product**: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.
+
+  1\) **None**: No delivery time is displayed on the product page in front-office           
+
+  2\) **Default delivery time**: If the product is in stock, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters &gt; Products settings in a new browser tab next to the radio button label.               
+
+  3\) **Specific delivery time to this product**: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.
+
 * **Delivery time of in-stock products**: There is a placeholder: “Delivered within 3-4 days” and a subtitle under the field: “Leave empty to disable.” A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Delivery time of out-of-stock products with allowed orders**: There is a placeholder: “Delivered within 5-7 days” and a subtitle under the field: “Leave empty to disable.” A drop-down next to the field is displayed when there are several languages installed and enabled. It allows to choose in which language the field is displayed. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Additional shipping fees**: By default, it’s filled with 0.000000 The amount is added to the total shipping cost according to the carrier selected in front-office.
@@ -306,10 +307,15 @@ Here is the list of the elements of SEO tab:
 Here is the list of the elements of options tab:
 
 * **Visibility**: Drop-down with 4 options. By default, everywhere is selected.       
-1\) **Everywhere**: The product is displayed in the catalog \(categories\) and can be found if you search for it.      
-2\) **Catalog only**: The product is displayed in the catalog \(categories\) and can’t be found if you search for it.      
-3\) **Search only**: The product is not displayed in the catalog \(categories\) and can be found if you search for it.      
-4\) **Nowhere**: The product is not displayed in the catalog \(categories\) and can’t be found if you search for it.     
+
+  1\) **Everywhere**: The product is displayed in the catalog \(categories\) and can be found if you search for it.      
+
+  2\) **Catalog only**: The product is displayed in the catalog \(categories\) and can’t be found if you search for it.      
+
+  3\) **Search only**: The product is not displayed in the catalog \(categories\) and can be found if you search for it.      
+
+  4\) **Nowhere**: The product is not displayed in the catalog \(categories\) and can’t be found if you search for it.     
+
 * **Available for order**: Checkbox checked by default. If you uncheck it, the add to cart button is disabled in the product page in front-office and the “show price” checkbox is displayed \(checked\).
 * **Show price**: This checkbox appears when you unselect “available for order” checkbox and it’s checked. If you uncheck it, the product price isn’t displayed on the product page and product lists in front-office.
 * **Web only**: Checkbox not checked by default. When checked and when the product is “available for order” OR “show price” is checked, a label “Online only” is displayed on the product page and product lists in front-office.
@@ -346,7 +352,7 @@ Here is the list of the elements of options tab:
 
 ## 2.    Type of each field & errors message <a id="errors"></a>
 
-**As a merchant I want to know if there are errors when I complete a field.** 
+**As a merchant I want to know if there are errors when I complete a field.**
 
 ### Elements in all tabs <a id="errorsalltabs"></a>
 
