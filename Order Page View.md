@@ -185,7 +185,10 @@ Bellow the action button on the right, the product panel displays **the order’
 -   **total with tax included,**
 -   **and 2 action button edit and delete.**
 
-**The list displays 20 products before starting the scrolling**
+**The pagination of the list starts when there are more than 8 products**
+
+[Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
+
 **The quantity** is coloured in a dark grey background if there are more than 2 quantities.
 
 **The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
