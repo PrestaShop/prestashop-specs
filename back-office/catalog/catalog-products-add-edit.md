@@ -167,7 +167,8 @@ You can have many associated products.
 If you want to delete only one associated product, you can click on the cross. When you click on it, you have a modal for cancel or confirm the action.
 * **Pack search for a product**: Select Pack of products as product type in the drop-down.       
 A search field to search a product is displayed. You can search by product name or product reference.       
-When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse \([issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\).       
+When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse \([issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\)
+If you try to search another product that is alreay a pack, it shouldn't be displayed in the dropdown because you can't add a pack in a pack.
 When you select a result, then the product name is inserted in the search bar.       
 You shouldn't be able to add the same product several times to the pack. If the product is already in the pack, you shouldn't see it in the results \([issue 9617](https://github.com/PrestaShop/PrestaShop/issues/9617)\)
 
