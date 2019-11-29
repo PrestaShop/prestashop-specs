@@ -102,22 +102,6 @@ If the current or new order status of order considered **as shipped and the merc
 
 **Before validating the return products**, the user can choose to re-stock generate, to generate a voucher or generate a credit slip by checking the checkboxes or Repay shipping costs.
 
-7.  **Resend confirmation order**
-
-By clicking on the button, it resends the email confirmation order after validating the confirmation popup.
-
-1.  **Cancel products button**
-
-Feature that is going to be removed
-~~**The cancel products button on the order action** is shown when **the merchandise return** is activated and **the status is not on payment accepted.**~~
-
-~~A new column is added to the product list to select which product will be cancelled Cancel products. On the bottom right of the products list, the button Products Cancels is available to cancel the selected products.~~
-
-~~The **button deletes** the **selected products** and changes the status as **Cancelled**.~~
-
-~~Below the order actions, the user can manage the order status on **the status tab**, the documents generation and information in **the document tab**, the shipping activities in **the shipping tab** and the returns on **the merchandise returns tab.**~~
-
-~~**Each tab has a notification number of the row’s number of their table.**~~
 
 ## II. **Customer panel**
 
@@ -185,7 +169,20 @@ Bellow the action button on the right, the product panel displays **the order’
 -   **total with tax included,**
 -   **and 2 action button edit and delete.**
 
+**When the product has customization**, a row is added bellow the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
+
+[popin displaying the products from the pack](/img/customization.png)
+
+**When the product is pack of product**, a link is added bellow the product name to show all the product in an popin. 
+
+[Link in the product row](/img/view20%pack20%content.png)
+
+By pressing on the link "View pack content", it opens the products from the pack in a popin:
+
+[Popin displaying the products from the pack](/img/pack20%content.png)
+
 **The pagination of the list starts when there are more than 8 products**
+**The stock location column is hidden** only when none of the products has a stock location only on the website. The column is only displayed at the corresponding pagination. If only a product on page 2 of the list has a stock location then the stock location column appears on page 2 and hidden in the other pages.
 
 [Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
 
