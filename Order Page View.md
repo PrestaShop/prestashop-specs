@@ -55,9 +55,9 @@ On the header, we have **the order’s reference, customer’s name, total price
 -   **View invoice show button**
 -   **View delivery slip button**
 -   **Partial refund button**
--   **Standard Refund**
+-   **Standard Refund* button*
 -   **Return products button**
--   **Resend confirmation order**
+-   **Cancel products button**
 -   **Cancel button**
 
 1.  **Update the order status**
@@ -136,11 +136,21 @@ After refunding, it shows on a column "Refunded", the quantity and the price of 
 
 8.  **Return products button**
 
-If the current or new order status of order considered **as shipped and the merchandising return is activated,**  **the button is shown. If the user clicks the button** then table product change as for Partial Refund. The user can edit the product quantity to be returned by entering the number or by checking the checkbox to select all the quantity. If the user chooses the checkbox, the input is prefilled the quantity.
+Return product only **appears when the merchandise returns are activated and the order is considered as paid** and **disappears when the order is considered as shipped.**
 
-[Return Product screen]
+When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
-**Before validating the return products**, the user can choose to re-stock generate, to generate a voucher or generate a credit slip by checking the checkboxes or Repay shipping costs.
+A quantity must be selected to refund a product. 
+A product can be return if it has been re-stock before by another process has standard, cancel or partial refund button.
+A product can't be refund multiple times. 
+
+Before refunding the products, the user can choose to generate a credit slip and/or voucher or/and re-stock. 
+
+![before return product](https://user-images.githubusercontent.com/43613217/69962213-cd385280-150d-11ea-8eca-1e245e5e408f.png)
+
+After returning the products, it shows on a column "Return" and "Refund" with the return quantity and the price of the refund per products if a generated slip was checked in the option.
+
+![after return product](https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png)
 
 
 ## II. **Customer panel**
