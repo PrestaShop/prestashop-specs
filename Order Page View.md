@@ -86,6 +86,8 @@ If the current or new order status as **the generation of the delivery slip** th
 
 If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
 
+By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimun 1 quantity.
+
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
 When the status "Refunded" is applied to the order, the refund amount is deducted to the total spended by the customer since registration and the number of valid orders placed decreases by 1. 
@@ -94,7 +96,45 @@ When the status "Refunded" is applied to the order, the refund amount is deducte
 
 **After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
 
-6.  **Return products button**
+6. **Cancel products button** 
+
+
+The cancel button only is shown by default on the creation of an order. 
+The button **disappears** when the order is **considered as paid**
+
+When pressing the button, the product list takes the full with of the page and the column cancel is added. 
+On the column cancel, a checkbox and quantity input is displayed. Checking the checkbox will prefill the quantity input with the quantity of the product ordered.
+The quantity input can still be editable.
+
+Pressing the button cancel will reduce the quantity of the products selected if there still some left otherwise it deletes the product from the list.
+
+![before cancel button](https://user-images.githubusercontent.com/43613217/69956873-85abc980-1501-11ea-9a02-33365caa01fe.png)
+
+To cancel products at least one of the product must be selected.
+
+**When all the products are cancelled, the status automatically changes for "Canceled".**
+
+7. **Standard products button**
+
+Standard refund only **appears when the merchandise returns are activated and the order is considered as paid** and **disappears when the order is considered as shipped.**
+
+When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
+
+A quantity must be selected to refund a product. 
+
+Before refunding the products, the user can choose to generate a credit slip and/or voucher.
+**See if you can add the button restock**
+
+![before standard refund](https://user-images.githubusercontent.com/43613217/69959536-ad9e2b80-1507-11ea-9441-ec63cce2c0dd.png)
+
+When all the products are refunded order status change to Refunded.
+A product can't be refund multiple times. 
+
+After refunding, it shows on a column "Refunded", the quantity and the price of the refund per products.
+
+![after standard refund](https://user-images.githubusercontent.com/43613217/69959612-e211e780-1507-11ea-945a-934fe5441d37.png)
+
+8.  **Return products button**
 
 If the current or new order status of order considered **as shipped and the merchandising return is activated,**  **the button is shown. If the user clicks the button** then table product change as for Partial Refund. The user can edit the product quantity to be returned by entering the number or by checking the checkbox to select all the quantity. If the user chooses the checkbox, the input is prefilled the quantity.
 
