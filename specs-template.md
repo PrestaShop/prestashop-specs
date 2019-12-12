@@ -24,7 +24,7 @@ For Instance before the Intro there will be a ~INTRO~.
 
 **Specifications for the order view page for 1.7.7 - 2019**
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ INTRO ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~INTRO~~~~~~~~~~~
 
 # **User Story:**
 
@@ -71,7 +71,7 @@ The user access to the order view page by either clicking on **the order’s row
 
 On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ FEATURE ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~FEATURE~~~~~~~~~~~~~
 ## I. **Action panel**
 
 **Bellow the panel’s header**, we have all the order's action button:
@@ -178,7 +178,7 @@ After returning the products, it shows on a column "Return" and "Refund" with th
 
 ![after return product](https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png)
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ FEATURE ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~FEATURE~~~~~~~~~~~~~
 ## II. **Customer panel**
 
 The customer panel displayed on the left of the product list has **the customer’s title, name, last name and customer reference.** To see the full customer description, you can click on **View full details** that redirect to his customer page on another page.
@@ -212,7 +212,7 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ FEATURE ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~FEATURE~~~~~~~~~~~~~
 ## III. **Messages panel**
 
 Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
@@ -233,7 +233,7 @@ Customizing the prefilled message, writing the message from scratch or using the
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ FEATURE ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~FEATURE~~~~~~~~~~~~~
 ## IV. **Product panel**
 
 Bellow the action button on the right, the product panel displays **the order’s products into the table list** showing:
@@ -305,7 +305,7 @@ The bottom of the product panel resume in a list all the order:
 
 Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~ FEATURE ~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~FEATURE~~~~~~~~~~~~~
 ## V. Tabs panel
 
 All the tabs are located in the same panel bellow the products list.
@@ -369,7 +369,7 @@ When the status accepted (waiting for payment) you can change the currency of th
 
 ---
 
-# ~~~~~~~~~~~~~~~ TECH CHARACTERISTICS ~~~~~~~~~~~~~~~
+# ~~~~~~~TECH CHARACTERISTICS~~~~~~~~
 
 # SPECS PRODUCT PAGE
 
