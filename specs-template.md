@@ -369,7 +369,7 @@ When the status accepted (waiting for payment) you can change the currency of th
 
 ---
 
-# Template of Technical characteristics
+# ~~~~~~~~~~~~~~~ TECH CHARACTERISTICS ~~~~~~~~~~~~~~~
 
 # SPECS PRODUCT PAGE
 
