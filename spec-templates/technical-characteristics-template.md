@@ -15,7 +15,7 @@ This template presents how to write **technical characteristics** specs.
 It corresponds to the features' "Technical characteristics" int he schema below
 
 
-![specs structure](img/ps_specs_structure.jpg)
+![specs structure](../img/ps_specs_structure.jpg)
 
 ---
 ---

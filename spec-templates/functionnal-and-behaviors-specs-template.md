@@ -15,7 +15,7 @@ This template presents how to write a page **Intro, and features's Context, func
 It corresponds to the Page's "Intro" block and to the features' "Context+visual prototype", "functionnal specs and expected behaviors" in the schema below.
 
 
-![specs structure](img/ps_specs_structure.jpg)
+![specs structure](../img/ps_specs_structure.jpg)
 
 ---
 ---
