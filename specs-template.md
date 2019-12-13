@@ -20,7 +20,10 @@ For Instance before the Intro there will be a ~INTRO~.
 ---
 ---
 ---
-
+```
+  The following specs is about the Order View page.
+  To see the page in the software, go to Orders > click on an order.
+```
 
 **Specifications for the order view page for 1.7.7 - 2019**
 
@@ -368,6 +371,12 @@ When the status accepted (waiting for payment) you can change the currency of th
 
 
 ---
+---
+---
+```
+  The following specs is about the Prodcut Add/edit page.
+  To see the page in the software, go to Products > Edit a product or click on add a product.
+```
 
 # ~~~~~~~TECH CHARACTERISTICS~~~~~~~~
 
