@@ -67,16 +67,16 @@ By clicking "Apply" on the popin, it will save the format currency and updates t
 
 ### Edit a currency
 
-All the inputs is full filled by saved data from the currency to be edited. So when the user edits the format, a pop-in will open in which the user can change the currency format. The symbol and its position on the price display can be edited with an text input for the symbol and through a radio button with 4 propositions:
+All the inputs are full filled with saved data from the currency to be edited. So when the user edits the format, a pop-in will open in which the user can change the currency format. The symbol and its position on the price display can be edited with a text input for the symbol and through a radio button with 4 propositions:
 
 * just in front of the amount, X999.99
 * in front with a space between the symbol and the amount, X 999.99
 * just after the amount, 999.99X
-* ater the amount with a space between them, 999.99 X
+* after the amount with a space between them, 999.99 X
 
 _Pop-in full filled with the yen currency data._ ![Pop-in full filled with the yen currency data](../.gitbook/assets/edit_popin_edit_format_currency.png)
 
-The decimals and thousands separating format are defined by the CLDR, so for each language, the radio have an adapted the display. Any updates on the symbol input will update the 4 propositions on the radio button.
+The decimals and thousands separating format are defined by the CLDR, so for each language, the radio has an adapted the display. Any updates on the symbol input will update the 4 propositions on the radio button.
 
 By clicking "Apply" on the popin, it will save the format currency and updates the language format table with the new format.
 
@@ -109,7 +109,7 @@ The 1.6 had a custom currency creation but was limited to the international need
 
 The Unicode CLDR \(Common Locale Data Repository\) is a database containing the convention of different languages as format date, currencies and more shared by the biggest companies. It will be the main source to provide the best currencies pre-configuration to the merchant.
 
-**This features allows the merchant to have all the currency \(cryptocurrencies, local currencies...\) that he needs and responds to every customers expectations. The merchant just has to find right paiement module adapted to their new currency.**
+**These features allows the merchant to have all the currency \(cryptocurrencies, local currencies...\) that he needs and responds to every customer's expectation. The merchant just has to find right paiement module adapted to their new currency.**
 
 ## SPECIFICATION
 
@@ -145,7 +145,7 @@ Choosing a currency from the drop list will fill all the inputs automatically an
 
 If the user edits the currency chosen in the drop list just before saving, the currency will be marked as “Edited” on the Currencies Page.\(cf see the Currencies Page section\)
 
-When creating a new currency, the iso numeric code field is hidden and it enables the code iso field if it was disabled. The user has to fill all the inputs by himself and choose an new unique ISO code.
+When creating a new currency, the iso numeric code field is hidden and it enables the code iso field if it was disabled. The user has to fill all the inputs by himself and choose a new unique ISO code.
 
 If the user selects a currency from droplist but clicks on the new currency checkbox, the fields remain pre-filled but the droplist displays "--" instead of the selected currency.
 
@@ -160,7 +160,7 @@ Warning wording: “Oops... it looks like this ISO code already exists. If you a
 
   \(Admin.International.Notification\)
 
-Clicking on the save button, it saves the new currency and redirects to Currencies List. The cancel button redirects to Currencies List but does'nt save the currency.
+Clicking on the save button, it saves the new currency and redirects to Currencies List. The cancel button redirects to Currencies List but doesn't save the currency.
 
 ### Edit a currency
 
@@ -182,15 +182,18 @@ Clicking on the save button, it saves the new currency and redirects to Currenci
 
 ### Currencies Page
 
-On the Currencies Page, every edited currency will be mark as “edited” next to their name on the currencies list.
+On the Currencies Page, every edited currency will be marked as “edited” next to their name on the currencies list.
 
 ![list currencies](../.gitbook/assets/list_currency.PNG)
 
-NB: after the migration, the activation exchange rate is on the bottom of the list.
+When an alternative currency is added the icon user from material design next to the name to symbolize this currency was created by the merchant.
+
+
+NB: after the migration, the activation exchange rate is at the bottom of the list.
 
 ### Delete a currency
 
-If I delete a currency, the currency should be hide from the BO's currency list but it must be kept to display the orders made in the deleted currency. If no orders have been made with the currency, the currency can be definitely deleted.
+If I delete a currency, the currency should be hidden from the BO's currency list but it must be kept to display the orders made in the deleted currency. If no orders have been made with the currency, the currency can be definitely deleted.
 
 ## DESIGN
 
