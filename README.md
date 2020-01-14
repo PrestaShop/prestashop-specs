@@ -1,24 +1,42 @@
-# About PrestaShop specifications
+## About PrestaShop-specs
 
-The goal of this project is to make the PrestaShop specifications accessible to all.
+PrestaShop-specs aims at making the [PrestaShop](https://github.com/PrestaShop/PrestaShop) specifications accessible to all and to build an history for future users.
 
-[Learn more about the PrestaShop project](https://github.com/PrestaShop/PrestaShop)
+This repository contains the specifications of the PrestaShop software.
+Those specifications are used by the Core development team at PrestaShop and all contributors who want to participate to the project.
+It is maintained by the PrestaShop Product team.
 
-More coming soon
+Contributions are welcome!
 
-General FO  
-  
-General BO  
-text  
-  
+
+## How to use
+
+
+
+## Structure
+
+
+## Contributing
+
+
+
+## Learn more about PrestaShop
+
+
+
+General FO
+
+General BO
+text
+
 UI Kit
 
 *  [Symfony Migration](https://github.com/PrestaShop/prestashop-specs/blob/master/symfony-migration.md)
 
-  
- \* \* \*Dashboard  
-  
-Orders  
+
+ \* \* \*Dashboard
+
+Orders
 Orders
 
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
@@ -44,8 +62,8 @@ Shopping Carts
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
 *  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-  
-Products  
+
+Products
 Products
 
 *  [Add / edit product page](https://github.com/PrestaShop/prestashop-specs/blob/master/Catalog-products-add-edit.md)
@@ -85,8 +103,8 @@ Stocks
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
 *  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-  
-Customers  
+
+Customers
 Customers
 
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/blob/master/Customers-Customers.md)
@@ -97,8 +115,8 @@ Addresses
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
 *  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-  
-Customer Service  
+
+Customer Service
 Customer Service
 
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
@@ -114,9 +132,9 @@ Merchandise Returns
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
 *  [Add/Edit Page](https://github.com/PrestaShop/prestashop-specs/Order-Add.md)
 
-  
-Stats  
-Modules  
+
+Stats
+Modules
 Module Catalog
 
 *  [List Page](https://github.com/PrestaShop/prestashop-specs/Order-List.md)
@@ -131,30 +149,30 @@ Modules
 
 *  [Faceted search](https://github.com/PrestaShop/prestashop-specs/blob/master/ps_facetedsearch.md)
 
-&lt;/details&gt;   
+&lt;/details&gt;
 
 
-Design   
- Theme & Logo Theme Catalog Pages Positions Image Settings Link Widget &lt;/details&gt;   
+Design
+ Theme & Logo Theme Catalog Pages Positions Image Settings Link Widget &lt;/details&gt;
 
 
-Shipping   
- Carriers Preferences &lt;/details&gt;   
+Shipping
+ Carriers Preferences &lt;/details&gt;
 
 
-Payment   
- Payment Methods Preferences &lt;/details&gt;   
+Payment
+ Payment Methods Preferences &lt;/details&gt;
 
 
-International   
- Localization Locations Taxes Translations &lt;/details&gt;   
+International
+ Localization Locations Taxes Translations &lt;/details&gt;
 
 
-Shop Parameters   
- General Order Settings Product Settings Customer Settings Contact Traffic & SEO Search Merchant Expertise &lt;/details&gt;   
+Shop Parameters
+ General Order Settings Product Settings Customer Settings Contact Traffic & SEO Search Merchant Expertise &lt;/details&gt;
 
 
-Advanced Parameters   
- Information Performance Administration E-mail Import Team Database Logs Webservice &lt;/details&gt;   
+Advanced Parameters
+ Information Performance Administration E-mail Import Team Database Logs Webservice &lt;/details&gt;
 
 
