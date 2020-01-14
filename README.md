@@ -248,4 +248,4 @@ Advanced Parameters
 
 ## Learn more about PrestaShop
 
-You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Dàocumentation](http://doc.prestashop.com/).
+You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](http://doc.prestashop.com/).
