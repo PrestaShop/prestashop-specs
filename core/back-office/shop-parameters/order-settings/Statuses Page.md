@@ -21,7 +21,7 @@ The **order statuses** list displays all the order statuses with their :
 *   **email template,**
 *   **edit button.**
 
-![Order statuses list](img/list order statuses.png)
+![Order statuses list](/img/list order statuses.png)
 
 The default status or the status added by modules can’t be deleted.
 
@@ -59,7 +59,7 @@ The order statuses can be displayed on:
 *   Customer Thread Page in Orders and messages timeline block
 *   Order History Page
 
-![Order status form](img/edit the order status.png)
+![Order status form](/img/edit the order status.png)
 
 # **Return status**
 
@@ -76,13 +76,13 @@ The default status or the status added by modules can’t be deleted.
 
 It is possible to research the return status by ID or Name.
 
-![Return statuse list](img/list return statuses.png)
+![Return statuse list](/img/list return statuses.png)
 
 **The first return status generated** in the return workflow is **“Waiting for confirmation”** when the customer creates return demand in the Front Office. 
 
 **Adding or Editing a return status** allows the user to add or edit **the status name** input text on any back-office language and **the label color** with a color picker or directly into the input text with the hexadecimal code. 
 
-![Add new return status](img/creating an return status.png)
+![Add new return status](/img/creating an return status.png)
 
 **The return status can be displayed on:**
 *   the Order Follow page in Front Office customer account,
@@ -91,3 +91,5 @@ It is possible to research the return status by ID or Name.
 *   the Merchandise Returns Edit Page.
 
 **Adding new** return status will add new return status on the Merchandise Returns Edit Page return status droplist.
+
+
