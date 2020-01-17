@@ -92,4 +92,24 @@ It is possible to research the return status by ID or Name.
 
 **Adding new** return status will add new return status on the Merchandise Returns Edit Page return status droplist.
 
+**MISSING PART TO BE COMPLETED**
+SPECIFICATIONS
+
+Errors messages
+In which cases there should be an error message ?
+Multilanguage
+Which fields are multilingual ?
+Multistore
+How should it work when multistore is enabled ?
+Permissions
+What should happen if I don’t have view, add, edit, delete right ?
+Empty state
+What should be displayed if the table is empty ?
+MBO
+what should be displayed or not when mbo is installed or uninstalled ?
+
+ACCEPTANCE TESTS
+check page on RTL
+check page with multistore
+check page with multilanguage
 
