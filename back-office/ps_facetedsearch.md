@@ -2,17 +2,16 @@
 
 The faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.
 
-The module displays a block on category pages with navigation filters. This navigation allows the customer to define cumulative criteria to filter some products in the category, by giving step by step more details to reduce the number of products showcased in the page. It's an excellent tool for clients who know what they want (color, price, etc.) but don't know how to find it. 
-
-When configuring the module, there are 4 sections displayed : 
-
-Displays a block with layered navigation filters. Layered navigation enables the customer to define cumulative criteria to filter category products, little by little providing more details in order to reduce the number of displayed products. This is a great tool for customers who know the details of what they want (color, condition, price range...), but are unsure how to find it.
+The module displays a block on category pages with layered navigation filters. Layered navigation enables the customer to define cumulative criteria to filter category products, little by little providing more details in order to reduce the number of displayed products. This is a great tool for customers who know the details of what they want (color, condition, price range...), but are unsure how to find it.
 
 When configuring the module, you are presented with 4 sections:
 
 **- Index and caches** : this module heavily relies on database index and its own content cache.
+
 **- Existing filter templates** : A filter template is the kind of navigation to which the customer has access to.
+
 **- Build your own filter template** : You can build various templates, which will serve as the basis for what the customer sees.
+
 **- Configuration** : You can further detail the way this module operates.
 
 
