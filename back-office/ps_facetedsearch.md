@@ -2,6 +2,10 @@
 
 The faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.
 
+This module has been massively reworked and keeps evolving frequently. This master issue (EPIC) allows to track the status of the module and follow its improvements : https://github.com/PrestaShop/PrestaShop/issues/9684
+
+Introduction
+
 The module displays a block on category pages with layered navigation filters. Layered navigation enables the customer to define cumulative criteria to filter category products, little by little providing more details in order to reduce the number of displayed products. This is a great tool for customers who know the details of what they want (color, condition, price range...), but are unsure how to find it.
 
 When configuring the module, you are presented with 4 sections:
