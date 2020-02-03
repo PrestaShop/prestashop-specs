@@ -7,7 +7,7 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 ### **Display unavailable product attributes on the product page.**
 
-**If this preference active the product's combination will remain visible in the shop.** A message will indicate that the product is no longer available in the chosen option, and invite customers to choose another combination. 
+**If this preference active, the product's combination will remain visible in the shop.** A message will indicate that the product is no longer available in the chosen option, and invite customers to choose another combination. 
 
 Example: The "iPod Shuffle" is no longer available in "Blue" in our shop. 
 
@@ -38,5 +38,3 @@ For example, the 'White' attribute and the related product won't be displayed in
 | M | Black | Yes |
 
 but S, M and Black are still displayed.
-
-
