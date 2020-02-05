@@ -9,7 +9,7 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 **When this option is enabled, unavailable products' combinations remain visible in the shop.** A message indicates that the product is no longer available in the chosen option, and invites customers to choose another combination. 
 
-Example: The "iPod Shuffle" is no longer available in "Blue" in our shop. 
+Example: the product "iPod Shuffle" is no longer available in the "Blue" attribute in our shop. 
 
 **If this preferenc is active and you enabled the "Allow ordering of out-of-stock products" option**, then they will be able to add the unavailable combination to their carts.
  
