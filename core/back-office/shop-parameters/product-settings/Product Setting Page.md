@@ -26,7 +26,7 @@ For example, the "XS" attribute and the related product are not displayed in the
 
 but the "S", "M", and "L" attributes remain displayed.
  
-Also, **if the preferentce is disable and the value of an attribute has no product in all possible combinations**, the combination of the products no longer available will be hidden.
+Also, **when this option is disabled and if the value of an attribute has no product in all possible combinations**, the combination of the products that are no longer available is hidden.
  
 For example, the "White" attribute and the related product are not displayed in the following case:
 
