@@ -15,7 +15,7 @@ Example: the product "iPod Shuffle" is no longer available in the "Blue" attribu
  
 **When this option is disabled and if the products have one single attribute**, their combinations are no longer available and the attribute is hidden.
  
-For example, the XS attribute and the related product won't be displayed in the following case:
+For example, the "XS" attribute and the related product are not displayed in the following case:
 
 | Size  |  In stock |
 |---|---|
