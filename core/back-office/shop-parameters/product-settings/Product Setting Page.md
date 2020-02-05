@@ -7,7 +7,7 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 ### **Display unavailable product attributes on the product page.**
 
-**If this preference active, the product's combination will remain visible in the shop.** A message will indicate that the product is no longer available in the chosen option, and invite customers to choose another combination. 
+**When this option is enabled, unavailable products' combinations remain visible in the shop.** A message indicates that the product is no longer available in the chosen option, and invites customers to choose another combination. 
 
 Example: The "iPod Shuffle" is no longer available in "Blue" in our shop. 
 
