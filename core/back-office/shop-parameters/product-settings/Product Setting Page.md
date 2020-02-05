@@ -30,7 +30,7 @@ Also, **if the preferentce is disable and the value of an attribute has no produ
  
 For example, the 'White' attribute and the related product won't be displayed in the following case:
 
-| Size  | Color | Has Stock |
+| Size  | Color | In Stock |
 |---|---|---|
 | S  | White  | No |
 | S | Black | Yes  |
