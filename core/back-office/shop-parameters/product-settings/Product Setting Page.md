@@ -13,7 +13,7 @@ Example: the product "iPod Shuffle" is no longer available in the "Blue" attribu
 
 **When this option is enabled as well as the "Allow ordering out-of-stock products" option**, the customers are able to add unavailable combinations to their cart.
  
-**If the preferentce is disable and if the product has a single attribute**, the combination of the products no longer available and the attribute will be hidden 
+**When this option is disabled and if the products have one single attribute**, their combinations are no longer available and the attribute is hidden.
  
 For example, the XS attribute and the related product won't be displayed in the following case:
 
