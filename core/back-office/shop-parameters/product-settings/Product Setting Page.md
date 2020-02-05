@@ -24,7 +24,7 @@ For example, the XS attribute and the related product won't be displayed in the 
 | M  | Yes  |
 | L  | Yes  |
 
-but S, M, and L  are still displayed:
+but the "S", "M", and "L" attributes remain displayed.
  
 Also, **if the preferentce is disable and the value of an attribute has no product in all possible combinations**, the combination of the products no longer available will be hidden.
  
