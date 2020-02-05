@@ -11,7 +11,7 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 Example: the product "iPod Shuffle" is no longer available in the "Blue" attribute in our shop. 
 
-**If this preferenc is active and you enabled the "Allow ordering of out-of-stock products" option**, then they will be able to add the unavailable combination to their carts.
+**When this option is enabled as well as the "Allow ordering out-of-stock products" option**, the customers are able to add unavailable combinations to their cart.
  
 **If the preferentce is disable and if the product has a single attribute**, the combination of the products no longer available and the attribute will be hidden 
  
