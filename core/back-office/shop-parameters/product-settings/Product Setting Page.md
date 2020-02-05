@@ -28,7 +28,7 @@ but the "S", "M", and "L" attributes remain displayed.
  
 Also, **if the preferentce is disable and the value of an attribute has no product in all possible combinations**, the combination of the products no longer available will be hidden.
  
-For example, the 'White' attribute and the related product won't be displayed in the following case:
+For example, the "White" attribute and the related product are not displayed in the following case:
 
 | Size  | Color | In Stock |
 |---|---|---|
