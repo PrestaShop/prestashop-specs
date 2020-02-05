@@ -37,4 +37,4 @@ For example, the 'White' attribute and the related product won't be displayed in
 | M | White | No |
 | M | Black | Yes |
 
-but S, M and Black are still displayed.
+but the "S", "M", and "Black" attributes remain displayed.
