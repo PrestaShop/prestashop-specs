@@ -17,7 +17,7 @@ Example: the product "iPod Shuffle" is no longer available in the "Blue" attribu
  
 For example, the XS attribute and the related product won't be displayed in the following case:
 
-| Size  |  Has stock |
+| Size  |  In stock |
 |---|---|
 | XS  | No  |
 | S  | Yes  |
