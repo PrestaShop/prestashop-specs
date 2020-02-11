@@ -55,10 +55,9 @@ On the header, we have **the order’s reference, customer’s name, total price
 -   **View invoice show button**
 -   **View delivery slip button**
 -   **Partial refund button**
--   **Standard Refund* button*
+-   **Standard Refund button**
 -   **Return products button**
 -   **Cancel products button**
--   **Cancel button**
 
 1.  **Update the order status**
 
@@ -96,11 +95,19 @@ When the status "Refunded" is applied to the order, the refund amount is deducte
 
 **After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
 
+## **The button standard refund, partial refund and return product are displayed if merchandise return is enable.**
+| **Button** | **Why** | **What is does** | **When it is displayed** | **When it is hidden** | **Option** | **Summarise Behaviours** |
+| --- | --- | --- | --- | --- | --- | --- |
+| [**Cancel products**](https://github.com/PrestaShop/PrestaShop/issues/16650) | To Cancel a wrong order | It deletes the products (or reduce the quantity). It also changes the order status to &quot;Canceled&quot; when all the products are canceled. | At the creation of an orderandMerchandise return is **enabled** | When the order is considered as paid |   | Select the products to cancel then their quantity. Press on the cancel products to confirm. |
+| [**Standard refund**](https://github.com/PrestaShop/PrestaShop/issues/16653) | To refund products, before it is sent to the customer (the products are still in the stock) | Refund by voucher or by credit slip of the total amount of products | When the order is considered as **paid** andMerchandise return is **enabled** | When the order is considered as shipped | - Generate a credit slip- Generate voucher- Repay shipping costs (option appears if you select to generate a voucher or a credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
+| [**Partial Refund**](https://github.com/PrestaShop/PrestaShop/issues/15820) | To refund any amount of products and/or the shipping cost | Refund by voucher and restock | When the order is considered as **paid**   | Never | - Restock products- Generate a voucher | Select the quantity and amount of the refund per product, the amount of the refund for shipping cost. Select the refund options then press on Partial refund to confirm |
+| [**Return products**](https://github.com/PrestaShop/PrestaShop/issues/16654) | To refund the returned products and restock | Refund the total price of the products, the shipping cost and restock the returned products | Order is considered as **paid** and **shipped** andMerchandise return is **enabled** | Never | - Restock products- Generate credit slip- Generate a voucher- Repay shipping costs (option appears if you select generate a voucher or credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
+
 6. **Cancel products button** 
 
 
 The cancel button only is shown by default on the creation of an order. 
-The button **disappears** when the order is **considered as paid**
+The button **is hidden** when the order is **considered as paid**
 
 When pressing the button, the product list takes the full with of the page and the column cancel is added. 
 On the column cancel, a checkbox and quantity input is displayed. Checking the checkbox will prefill the quantity input with the quantity of the product ordered.
@@ -116,7 +123,7 @@ To cancel products at least one of the product must be selected.
 
 7. **Standard products button**
 
-Standard refund only **appears when the merchandise returns are activated and the order is considered as paid** and **disappears when the order is considered as shipped.**
+Standard refund only **is displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
 When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
@@ -136,7 +143,7 @@ After refunding, it shows on a column "Refunded", the quantity and the price of 
 
 8.  **Return products button**
 
-Return product only **appears when the merchandise returns are activated and the order is considered as paid** and **disappears when the order is considered as shipped.**
+Return product only **is diplayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
 When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
