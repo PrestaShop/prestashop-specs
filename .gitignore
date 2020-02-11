@@ -1,4 +1,5 @@
-.DS_Store
+# Ignore Mac system files
+.DS_store
 
 ## Directory-based project format:
 .idea/
