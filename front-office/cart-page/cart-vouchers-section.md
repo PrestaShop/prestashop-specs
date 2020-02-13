@@ -19,5 +19,5 @@ The string of the cart rule name as entered in BO in Cart Rule>Information tab.
 This discount can either be:
 * The string "Free Shipping" if the cart rule has no actions other than free shipping.
 * The amount of reduction in all other cases (when cart rule has actions other than free shipping).
-This amount is also a string equal to the concatenation of 3 parts: Minus sign, the amount number, and the currency (e.g -3.75$).
+This amount is also a string equal to the concatenation of 3 parts: Minus sign, the amount number, and the currency (e.g -3.75$). (reference = https://github.com/PrestaShop/PrestaShop/issues/16842#issuecomment-581948719)
 
