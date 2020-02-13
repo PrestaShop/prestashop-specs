@@ -1,11 +1,11 @@
 # SPECS LISTING PRODUCT PAGE
 
 
-## Multistore
+## 1.    When there is 0 products
 
-## 1.    When there is no products
+The empty state card appears ONLY when there is no value (by default or created). It can also reappear IF the merchant decides to remove every existing value in the table.
 
-
+https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
 
 ## 2.    Header
 
@@ -115,7 +115,7 @@ When a category is selected:
 - A column position is added in the table between status and actions with a "Rearrange" button (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/17412">17412</a>) allowing to change the position of the products in the selected category.
 
 
-## 3. Rearrange button
+## 4. Rearrange button
 
 When I click on it:
 
@@ -126,7 +126,7 @@ When I click on it:
 - I can change the position of the products in the category by clicking on the line or on the icon
 
 
-## 4. Changing the position of products
+## 5. Changing the position of products
 
 When I click on the icon or on the line, the checkbox is checked and the product is selected (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/15291">15291</a>)
 
@@ -144,5 +144,8 @@ When I click on "Save & refresh":
 
 - If searchs were done before changing positions, they are keeped
 
+## 6. Deleting products
 
-## 5. Multistore
+If on the last page I delete all products, I should return to the first page (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/14713">14713</a>), it's the same behavior as other listing
+
+## 7. Multistore
