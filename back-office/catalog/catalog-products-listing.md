@@ -1,10 +1,17 @@
 # SPECS LISTING PRODUCT PAGE
 
-## 1.    Header
+
+## Multistore
+
+## 1.    When there is no products
+
+
+
+## 2.    Header
 
 In the header, there is "New product" button allowing to open the form to create a new product
 
-## 2.    Top of the listing
+## 3.    Top of the listing
 
 ### Settings wheel
 When I click on it, you have 4 options:
@@ -28,27 +35,6 @@ There are two buttons:
 4) Export to SQL Manager
 
 When I click on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
-
-### Filter by categories drop-down
-
-I can click on each parent category to folds / unfolds its subcategories.
-
-There is a radio button allowing to select a category. 
-
-When a category is selected, only products belonging to this category or to a subcateogry of this one are displayed. And the name of the selected category is displayed between brackets in the dropdown.
-
-There are 3 links in the dropdown:
-1) Expand
-
-When I click on it, the whole category tree is opened
-
-2) Collapse
-
-When I click on it, it folds the whole category tree
-
-3) Unselect
-
-When I click on it, if a category was selected, it's no longer selected
 
 ### Bulk actions drop-down
 
@@ -82,6 +68,81 @@ The selected products are duplicated
 
 4) Delete selection
 
+When I click on it, a modal is opened asking to confirm or cancel the action
+
+The action can be canceled if you click on the cross or on the close button. 
+
+When I click on "Delete now" button, a modal is opened with a progress bar
+
+The modal can be closed with the cross or the close button. If the modal is closed during the process, the action is still done
+
+The selected products are deleted
+
+
 ### Select all checkbox
 
-When I check the box, all the products displayed on the page are selected.
+When I check the box, all the products displayed on the page are selected or unselected.
+
+
+### Filter by categories drop-down
+
+I can click on each parent category to folds / unfolds its subcategories.
+
+There are 3 links in the dropdown:
+1) Expand
+
+When I click on it, the whole category tree is opened
+
+2) Collapse
+
+When I click on it, it folds the whole category tree
+
+3) Unselect
+
+When I click on it, if a category was selected, it's no longer selected
+
+-----
+
+There is a radio button allowing to select a category. 
+
+When a category is selected:
+- Only products belonging to this category or to a subcateogry of this one are displayed 
+
+- The name of the selected category is displayed between brackets in the dropdown
+
+- If a sort and / or searchs were done on a column, they are still applied after selecting a category
+
+- A column position is added in the table between status and actions with a "Rearrange" button (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/17412">17412</a>) allowing to change the position of the products in the selected category.
+
+
+## 3. Rearrange button
+
+When I click on it:
+
+- If sort and / or searchs were done they are removed and products are sorted by position in the selected category.
+
+- The rearrange button becomes a "Save & refresh" disabled button
+
+- I can change the position of the products in the category by clicking on the line or on the icon
+
+
+## 4. Changing the position of products
+
+When I click on the icon or on the line, the checkbox is checked and the product is selected (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/15291">15291</a>)
+
+When I change the position of one or many products:
+
+- Products checkboxes are disabled
+
+- Its new position is indicated in red in the listing
+
+- The "Save & refresh" button is enabled
+
+When I click on "Save & refresh":
+
+- New positions are saved and a confirmation message is displayed "Products successfully sorted"
+
+- If searchs were done before changing positions, they are keeped
+
+
+## 5. Multistore
