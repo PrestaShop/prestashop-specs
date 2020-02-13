@@ -28,6 +28,7 @@ The reduction amount is the unit price tax included of the cheapest product in c
 
 reduction amount = (unit price of cheapest product tax inc) * percent / 100
 
+reference: https://github.com/PrestaShop/PrestaShop/issues/16842#issuecomment-582458637
 
 #####Example of cart:
 <br>
