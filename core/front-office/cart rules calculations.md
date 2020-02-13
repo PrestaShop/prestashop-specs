@@ -1,4 +1,4 @@
-# SPECIFICATIONS - CORE - FRONT OFFICE - CART RULE AMOUNT CALCULATIONS
+# SPECIFICATIONS - CART RULE AMOUNT CALCULATIONS
 
 A cart rule can contain 1 or many cart actions. The amount of a cart rule is the sum of amounts resulting from each action
 
@@ -30,7 +30,7 @@ reduction amount = (unit price of cheapest product tax inc) * percent / 100
 
 reference: https://github.com/PrestaShop/PrestaShop/issues/16842#issuecomment-582458637
 
-#####Example of cart:
+#####Example of cart:-
 <br>
 product1 10$ qty=10<br>
 product2 20$ qty=1<br>
