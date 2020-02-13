@@ -30,12 +30,12 @@ reduction amount = (unit price of cheapest product tax inc) * percent / 100
 
 
 #####Example of cart:
+<br>
 product1 10$ qty=10<br>
 product2 20$ qty=1<br>
 product3 10$ qty=1<br>
 
 Then the amount of reduction is 10$. 
-
 
 
 ### Percent from specific product
@@ -45,6 +45,8 @@ The discount amount is calculated based on the unit price tax included of the se
 reduction amount = (unit price of specific product tax inc) * percent / 100
 
 #####Example of cart:
+<br>
+
 product_1 10$ qty=10<br>
 selectedproduct_1 20$ qty=5<br>
 product_3 10$ qty=1<br>
@@ -59,10 +61,11 @@ Selected products means products that are selected in cart rule and exists in cu
 
 reduction amount = (sum of unit prices tax inc of selected products) * percent / 100
 
-#####Example of cart:<br>
+#####Example of cart:
+<br>
 Let's assume we have active cart rule with percent reduction on selection of products. Products are: X, Y, Z.
 
-and a cart like:
+and a cart like:<br>
 
 product_A  10$ qty=10<br>
 product_X 20$ qty=5<br>
