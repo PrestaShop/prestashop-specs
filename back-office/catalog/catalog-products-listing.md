@@ -86,6 +86,8 @@ After checking the box, all the products displayed on the page are selected or u
 
 ### Filter by categories drop-down
 
+If a category name is >= 30 chars, it's truncated to not broke the display (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/9551">9551</a>)
+
 It's possible to click on each parent category to folds / unfolds its subcategories.
 
 There are 3 links in the dropdown:
@@ -144,18 +146,18 @@ After clicking on "Save & refresh":
 
 - If searchs were done before changing positions, they are keeped
 
-## 6. Deleting products
-
-If on the last page all products are deleted, I should return to the first page (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/14713">14713</a>), it's the same behavior as other listing
-
-## 7. Listing
+## 6. Listing
 
 ### Columns
 
 There are 10 columns:
 - ID product: it's possible to sort by id asc or desc and search by id min & max 
 
+If anything other than a number is filled in min or max field, the field becomes red and the value is removed (issue <a href=""> 11167</a>)
+
 - Image: it's not possible to sort or search on this column
+
+The alt of the image is the caption saved in the product page, if the caption is empty the alt is the name of the product in the current language (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/10236">10236</a>)
 
 - Name: it's possible to sort by name asc or desc and search by name
 
@@ -169,9 +171,14 @@ There are 10 columns:
 
 - Quantity: it's possible to sort by quantity asc or desc and search by quantity min & max
 
+If anything other than a number is filled in min or max field, the field becomes red and the value is removed (issue <a href=""> 11167</a>)
+
 - Status: it's possible to sort by status asc or desc and select a status in the dropdown
 
 - Actions: it's possible to edit a product, preview, duplicate or delete
+
+Sorts should work after duplicating products and changing page (isse <a href="https://github.com/PrestaShop/PrestaShop/issues/14175
+">14175</a>)
 
 Below, the same behavior as others listing:
 
@@ -213,7 +220,7 @@ If the product is virtual, open it in the same browser tab on the virtual produc
 
 If the product is standard without combinations or a pack, open it in the same browser tab on the quantities tab
 
-## 8. Multistore
+## 7. Multistore
 
 When "all shops" is selected, all the products should be displayed (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/9613">9613</a>)
 
@@ -222,3 +229,11 @@ When a group of shops is selected, only the products belonging to the shops of t
 When a specific shop is selected, only the products belonging of this shop are displayed
 
 After selecting another shop than the current, I should return to the first page (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/9612">9612</a>)
+
+## 8. Deleting products
+
+If on the last page all products are deleted, I should return to the first page (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/14713">14713</a>), it's the same behavior as other listing
+
+## 9. Deleted categories and products associated
+
+When I delete the main category of product A, then if product A is re-associated with category B, then category B must become the "default category" for product A (issue <a href="https://github.com/PrestaShop/PrestaShop/issues/9811">9811</a>)
