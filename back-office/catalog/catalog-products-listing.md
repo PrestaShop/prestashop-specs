@@ -180,6 +180,8 @@ If anything other than a number is filled in min or max field, the field becomes
 Sorts should work after duplicating products and changing page (isse <a href="https://github.com/PrestaShop/PrestaShop/issues/14175
 ">14175</a>)
 
+### Search
+
 Below, the same behavior as others listing:
 
 By default, the search button is disabled. It becomes enabled when something is filled in a search field.
