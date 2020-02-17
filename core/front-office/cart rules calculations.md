@@ -1,4 +1,4 @@
-# SPECIFICATIONS - CART RULE AMOUNT CALCULATIONS (till 1.7.6.3)
+# SPECIFICATIONS - DISCOUNT CALCULATIONS (till 1.7.6.3)
 
 A cart rule can contain 1 or many cart actions. The amount of a cart rule is the sum of amounts resulting from each action
 
