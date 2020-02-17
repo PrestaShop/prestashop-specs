@@ -1,13 +1,12 @@
-# SPECIFICATIONS - CART RULE AMOUNT CALCULATIONS
+# SPECIFICATIONS - CART RULE AMOUNT CALCULATIONS (till 1.7.6.3)
 
 A cart rule can contain 1 or many cart actions. The amount of a cart rule is the sum of amounts resulting from each action
 
-
 The possible cart rule actions are:
-* Free shipping reduction
-* Percent reduction
-* Amount reduction
-* Free gift reduction
+* Free shipping reduction.
+* Percent reduction.
+* Amount reduction.
+* Free gift reduction.
 
 ## Free Shipping action
 
@@ -32,27 +31,33 @@ reference: https://github.com/PrestaShop/PrestaShop/issues/16842#issuecomment-58
 
 #####Example of cart:-
 <br>
+Let's assume we have 1 active cart rule with percentage reduction 10% on the cheapest product.
+
+and a cart like:<br>
 product1 10$ qty=10<br>
 product2 20$ qty=1<br>
 product3 10$ qty=1<br>
 
-Then the amount of reduction is 10$. 
+Then the amount of reduction is 1$. 
 
 
 ### Percent from specific product
 If a cart rule has percentage reduction on a specific product X, and the current cart contains X, then the percentage discount is applied.
 The discount amount is calculated based on the unit price tax included of the selected product in cart. The equation is quite the same as in cheapest product.
 
-reduction amount = (unit price of specific product tax inc) * percent / 100
+reduction amount = (final price of specific product tax inc) * percent / 100
 
 #####Example of cart:
 <br>
+Let's assume we have 1 active cart rule with percentage reduction 10% on specific product :product_X
 
+and a cart like:<br>
 product_1 10$ qty=10<br>
-selectedproduct_1 20$ qty=5<br>
+selected_X 20$ qty=5<br>
 product_3 10$ qty=1<br>
 
-Then the amount of reduction is 20$.
+Then the amount of reduction is 10$.
+
 
 ### Percent from selection of products
 
@@ -60,14 +65,13 @@ Then the amount of reduction is 20$.
 The reduction amount is calculated based on the sum of unit prices, tax included, of the selected products.
 Selected products means products that are selected in cart rule and exists in current cart. It is like a set of `specific product` s.
 
-reduction amount = (sum of unit prices tax inc of selected products) * percent / 100
+reduction amount = (sum of final prices tax inc of selected products) * percent / 100
 
 #####Example of cart:
 <br>
-Let's assume we have active cart rule with percent reduction on selection of products. Products are: X, Y, Z.
+Let's assume we have 1 active cart rule with percent reduction 10% on selection of products. Products are: X, Y, Z.
 
 and a cart like:<br>
-
 product_A  10$ qty=10<br>
 product_X 20$ qty=5<br>
 product_B 10$ qty=1<br>
@@ -80,6 +84,16 @@ Then the amount of reduction is 30$.
 The reduction amount is calculated based of the whole order total tax included.
 <br>
 reduction amount = (whole order products total tax inc ) * percent / 100
+
+Let's assume we have 1 active cart rule with percent reduction 1% on whole order.
+
+and a cart like:<br>
+product_1  10$ qty=10<br>
+product_2 20$ qty=5<br>
+product_3 10$ qty=1<br>
+product_4 10$ qty=20<br>
+
+Then the amount of reduction is 41$.
 
 ## Amount reduction action
 
