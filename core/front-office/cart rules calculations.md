@@ -29,7 +29,7 @@ reduction amount = (unit price of cheapest product tax inc) * percent / 100
 
 reference: https://github.com/PrestaShop/PrestaShop/issues/16842#issuecomment-582458637
 
-#####Example of cart:-
+##### Example of cart:-
 <br>
 Let's assume we have 1 active cart rule with percentage reduction 10% on the cheapest product.
 
@@ -47,7 +47,7 @@ The discount amount is calculated based on the final price tax included of the s
 
 reduction amount = (n * unit price of specific product tax inc) * percent / 100
 
-#####Example of cart:
+##### Example of cart:
 <br>
 Let's assume we have 1 active cart rule with percentage reduction 10% on specific product :product_X
 
@@ -67,7 +67,7 @@ Selected products means products that are selected in cart rule and exists in cu
 
 reduction amount = (sum of final prices tax inc of selected products) * percent / 100
 
-#####Example of cart:
+##### Example of cart:
 <br>
 Let's assume we have 1 active cart rule with percent reduction 10% on selection of products. Products are: X, Y, Z.
 
@@ -85,6 +85,7 @@ This one is simple. The reduction amount is calculated based of the whole order 
 <br>
 reduction amount = (whole order products total tax inc ) * percent / 100
 
+##### Example of cart:
 Let's assume we have 1 active cart rule with percent reduction 1% on whole order.
 
 and a cart like:<br>
