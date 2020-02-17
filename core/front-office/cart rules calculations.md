@@ -111,3 +111,14 @@ Reduction amount of this action is a fixed amount. The reduction of this action 
 
 ## Free Gift action
 [TODO]
+
+
+# Preparation for 1.7.8
+https://github.com/PrestaShop/PrestaShop/issues/17665
+1. What if customer choose big amount of specific product?
+2. what if this specific product is only sold from X quantities ?
+3. what if this specific product has a specific price per unit ?
+
+
+
+
