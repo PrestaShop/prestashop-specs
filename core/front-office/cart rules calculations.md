@@ -1,10 +1,10 @@
-# SPECIFICATIONS - DISCOUNT CALCULATIONS (till 1.7.6.3)
+# CART RULES SPECS - DISCOUNT CALCULATIONS (till 1.7.6.3)
 
-A cart rule can contain 1 or many cart actions. The amount of a cart rule is the sum of amounts resulting from each action
+A cart rule can contain one or many cart rule actions. The final discount amount of a cart rule is the sum of amounts resulting from each action.
 
 The possible cart rule actions are:
 * Free shipping reduction.
-* Percent reduction.
+* Percentage reduction.
 * Amount reduction.
 * Free gift reduction.
 
@@ -12,18 +12,18 @@ The possible cart rule actions are:
 
 [TODO]
 
-## Percent reduction action
-If the cart rule contains "Percent reduction", the amount of this reduction depends on 4 types:
+## Percentage reduction
+If the cart rule contains "Percentage reduction", the amount of this reduction depends on 4 types:
 
-* Percent from cheapest product.
-* Percent from whole order.
-* Percent from specific product.
-* Percent from selection of products.
+* Percentage from cheapest product.
+* Percentage from whole order.
+* Percentage from a specific product.
+* Percentage from a selection of products.
 
 
-### Percent from cheapest product
+### Percentage from the cheapest product
 
-The reduction amount is the unit price tax included of the cheapest product in cart. In other words, if multiple products has the cheapest price or quantity of product with cheapest price is more than 1, the reduction is the price of one product(quantity=1). 
+The reduction amount is calculated from the unit price tax included of the cheapest product in cart. In other words, if multiple products has the cheapest price, or quantity of product with cheapest price is more than 1,then the reduction is based on the price of one product(quantity=1). 
 
 reduction amount = (unit price of cheapest product tax inc) * percent / 100
 
@@ -43,9 +43,9 @@ Then the amount of reduction is 1$.
 
 ### Percent from specific product
 If a cart rule has percentage reduction on a specific product X, and the current cart contains X, then the percentage discount is applied.
-The discount amount is calculated based on the unit price tax included of the selected product in cart. The equation is quite the same as in cheapest product.
+The discount amount is calculated based on the final price tax included of the selected product in cart. In other words, if cart contains product_X with quantity n, then discount is on n items.
 
-reduction amount = (final price of specific product tax inc) * percent / 100
+reduction amount = (n * unit price of specific product tax inc) * percent / 100
 
 #####Example of cart:
 <br>
@@ -62,8 +62,8 @@ Then the amount of reduction is 10$.
 ### Percent from selection of products
 
 
-The reduction amount is calculated based on the sum of unit prices, tax included, of the selected products.
-Selected products means products that are selected in cart rule and exists in current cart. It is like a set of `specific product` s.
+The reduction amount is calculated based on the sum of final prices, tax included, of the selected products.
+Selected products means products that are selected in cart rule and exists in current cart. It can be seen as a  group of `specific product` s.  In other words, if product_X and product_Y exist in cart with n and m quantities respectively, then the reduction amount is based on n and m (n* unit price of product_X and m* unit price of product_X).
 
 reduction amount = (sum of final prices tax inc of selected products) * percent / 100
 
@@ -72,7 +72,7 @@ reduction amount = (sum of final prices tax inc of selected products) * percent 
 Let's assume we have 1 active cart rule with percent reduction 10% on selection of products. Products are: X, Y, Z.
 
 and a cart like:<br>
-product_A  10$ qty=10<br>
+product_A 10$ qty=10<br>
 product_X 20$ qty=5<br>
 product_B 10$ qty=1<br>
 product_Z 10$ qty=20<br>
@@ -81,7 +81,7 @@ Then the amount of reduction is 30$.
 
 ### Percent from whole order
 
-The reduction amount is calculated based of the whole order total tax included.
+This one is simple. The reduction amount is calculated based of the whole order total, tax included.
 <br>
 reduction amount = (whole order products total tax inc ) * percent / 100
 
