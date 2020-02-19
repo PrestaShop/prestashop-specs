@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 # Ignore Mac system files
 .DS_store
-=======
-.DS_Store
->>>>>>> master
+
+## Directory-based project format:
+.idea/
+
+
