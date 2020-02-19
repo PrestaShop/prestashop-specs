@@ -144,7 +144,8 @@ The image is open in its default size. You can close it by clicking on the cross
   * Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.
 
     If more than one image is selected the checkbox "cover" disappears
-* **Add a feature**: Drop-down with all features.       
+* **Add a feature**: By default the selected option is "Choose a feature".
+Others options in the drop-down are all features.       
 If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you select a feature, both fields \(pre-defined & customized value\) are enabled.       
 The features and the associated values are displayed in product details tab of the front-office.
@@ -155,7 +156,9 @@ When you add a feature with a pre-defined value, it’s added in all languages e
 When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.       
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
-* **Add a brand**: Drop-down with all brands enabled.       
+* **Add a brand**: 
+By default the selected option is "Choose a brand". \([issue 9678](https://github.com/PrestaShop/PrestaShop/issues/9678)\)
+Others options in the drop-down are all the brands enabled.       
 The brand is displayed in the product page in front-office in product details tab. The logo of the brand is displayed if the brand has a logo, otherwise the name of the brand is displayed.      
 When you add a brand, it’s added in all languages enabled. 
 * **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
