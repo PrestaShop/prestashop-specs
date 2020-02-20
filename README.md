@@ -104,8 +104,8 @@ The `Front-office` directory list the pages in the Front-office and shared behav
 
 ## How to contribute
 
-To be completed soon
-
+Contributions are welcome!
+To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) page.
 
 ## Learn more about PrestaShop
 
