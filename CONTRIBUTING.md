@@ -25,7 +25,7 @@ Examples: Fixing typos, improving the syntax, add visuals, add more details, etc
 We add and complete the specifications progressively, thus some features specifications are missing for the moment.
 You can add the specifications to these existing features.
 These specs should define the current behaviors in the latest Stable version.
-To do so you can follow the structure used on the template at the end of the end of this page, and see some examples in the repository or in the [templates folder](/specs-templates).
+To do so you can follow the structure used on the template at the end of the end of this page, and see some examples in the repository or in the [templates folder](/spec-templates).
 
 
 ### Adding specs for new features
