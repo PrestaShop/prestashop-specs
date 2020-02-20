@@ -55,7 +55,7 @@ These specifications are located here in this repository `github.com/PrestaShop/
 So in each development issue should be a link to the correponding specification.
 
 
-### Process when working on a new feature or an improvement
+### Process when working on a new feature
 
 Considered the use of the git data model detailed in the previous part, the specification must be added to the corresponding file (or files) through a Pull Request.
 If the file related to this feature doesn't exist yet, it should be created.
