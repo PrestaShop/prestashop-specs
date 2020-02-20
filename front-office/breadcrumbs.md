@@ -6,3 +6,4 @@
 - Previous levels will be underline on hover to show that they are clickable
 
 ## POSITION AND PLACEMENT RULES
+- Keep the same position
