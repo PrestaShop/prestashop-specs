@@ -2,7 +2,8 @@
 
 PrestaShop is an open-source e-commerce solution. Everyone is welcome and even encouraged to contribute with their own improvements to the specifications.
 
-**This repository is dedicated to the specifications of the PrestaShop project.**
+**This repository is dedicated to the specifications of the PrestaShop project.** 
+
 To contribute to the source code, see the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop).
 
 
@@ -24,7 +25,7 @@ Examples: Fixing typos, improving the syntax, add visuals, add more details, etc
 We add and complete the specifications progressively, thus some features specifications are missing for the moment.
 You can add the specifications to these existing features.
 These specs should define the current behaviors in the latest Stable version.
-To do so you can follow the structure used on the template at the end of the end of this page, and see some examples in the repository or in the [templates folder]().
+To do so you can follow the structure used on the template at the end of the end of this page, and see some examples in the repository or in the [templates folder](/specs-templates).
 
 
 ### Adding specs for new features
