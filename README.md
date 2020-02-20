@@ -55,7 +55,7 @@ These specifications are located here in this repository `github.com/PrestaShop/
 So in each development issue should be a link to the correponding specification.
 
 
-### Process when working on a new feature or an improvement
+### Process when working on a new feature
 
 Considered the use of the git data model detailed in the previous part, the specification must be added to the corresponding file (or files) through a Pull Request.
 If the file related to this feature doesn't exist yet, it should be created.
@@ -104,8 +104,8 @@ The `Front-office` directory list the pages in the Front-office and shared behav
 
 ## How to contribute
 
-To be completed soon
-
+Contributions are welcome!
+To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) page.
 
 ## Learn more about PrestaShop
 
