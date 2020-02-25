@@ -52,18 +52,20 @@ These development issues are located in the [PrestaShop repository](https://gith
 In order to complete the task, most of the time, a developer needs specifications.
 These specifications are located here in this repository `github.com/PrestaShop/prestahop-specs`.
 
-So in each development issues we add a link to the correponding specification.
+So in each development issue should be a link to the correponding specification.
 
 
-### Process when working on a new feature or an improvement
+### Process when working on a new feature
 
-If the development issue is about a new feature, then the specifications must be written and validated by the Product team first.
+Considered the use of the git data model detailed in the previous part, the specification must be added to the corresponding file (or files) through a Pull Request.
+If the file related to this feature doesn't exist yet, it should be created.
 
-Following the use of PR detailed in the previous part, the specification must be added to the corresponding file (or files), a PR can then be made.
-The link in the development issue must be send to the specifications **in the PR**.
+The specifications must then be validated by the Product team before the development begins.
+
+Once the specs are validated, the link to this PR must then be addded in the development issue, so the developer can easily find the specifications associated with the issue.
 
 The specifications' PR can only be merged once the development is done, and merged into the PrestaShop develop branch in the repo `PrestaShop/PrestaShop`.
-This rule avoid to have specifications for features that are not available anymore. The specifications must correspond to the latest Stable version available.
+This rule is made to avoid having published specifications for features that are not available yet. The published specifications must correspond to the latest Stable version available.
 
 ![Management of PrestaShop specifications](/img/prestashop-specs-management.jpg)
 
@@ -77,7 +79,7 @@ Then add a link in the development issue to the specification in the master bran
 
 - If the specification doesn't exist
 Then, first you need to validate with the Product team what is the right behavior that should be specified.
-Then, you need to follow the same process as for a new feature or improvement, by creating a PR. The difference is that here the PR can be merge directly.
+Then, you can follow the same process as for a new feature or improvement, by creating a PR. The difference is that here the PR will be merge directly after validation as the specified behavior should be in the latest Stable version.
 
 
 ## Specification structure
@@ -88,7 +90,7 @@ This is the main template to follow to write specifications.
 
 When possible, each file corresponds to a page.
 
-When not possible, template can be adadpted, but it is important to have all the information listed in the template.
+When not possible, template can be adapted, but it is important to have the information listed in the template as possible.
 
 
 ## Repository tree
@@ -99,6 +101,11 @@ The `Back-office` (BO) directory mostly follows the back-office structure. Most 
 
 The `Front-office` directory list the pages in the Front-office and shared behaviors throughout the pages.
 
+
+## How to contribute
+
+Contributions are welcome!
+To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) page.
 
 ## Learn more about PrestaShop
 
