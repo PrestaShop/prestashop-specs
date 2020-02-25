@@ -1,4 +1,4 @@
-
+# Ignore Mac system files
 .DS_Store
 
 ## Directory-based project format:
