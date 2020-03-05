@@ -1,14 +1,22 @@
 Orders > Orders > Add new / edit order
 
 As a merchant, when I want to add an Order manually in my Shop.
+Creating a new order is divided in 6 steps:
 
+- Customer selection
+- Customers' old orders and carts
+- Order cart
+- Vouchers
+- Address
+- Payment and status configuration
 
-2) Search for a customer:
-This search bar allows to find a customer. (you can search if you tape 4 letters minimum) 
-    -       If you don’t find a customer : a notification “No customers found” appears  
+## I. Customer selection
+
+The search
+If you don’t find a customer : a notification “No customers found” appears  
 If you find a customer (or several) this section appears with the customers matching with your search. 
 
-1) Details button 
+2) Details button 
 You can click on Details button you will have a pop up with an iframe of the customer details available in  settings > customer settings > customers 
      2) Choose button 
 If you click on Choose button the page content is transformed : 
@@ -31,21 +39,12 @@ Basket
 In basic state, this section is empty but if you use product from the section carts and orders then on the section basket you will be able to update price/quantity/currency/language 
 You can also search for a product select a combination update its quantity and add it to the basket.
 
-Vouchers 
+## Vouchers 
 Here you can search for a voucher, add it or delete it. You can also create a voucher thanks to an iframe of voucher page. 
 
-Addresses 
+## Addresses 
 Here you can define addresses for delivery and invoice  
 And even create a new address thanks to an iframe of the page addresses>add new 
-
-
-
-
-
-
-
-
-
 
 3) Add a customer
 You can add a customer if you click on the button add a customer. It will open an iframe. If you create a customer here then you will have a page to create an order where the customer created is selected (check step The customer that you choosed is highlighted in green )
