@@ -32,7 +32,12 @@ The card's footer has 2 buttons:
 - **Details button** that redirected the customer page. 
 - **Choose button** that allow the merchant to proceed to the next step. The customer card is highlighted in green. 
 
-The 50 last order and cart are displayed in tabs
+**Choose button** displays the **50 lastest orders and carts** are displayed into tabs They can be hidden by pressing the **arrow**.
+
+**Carts tab** displays table with the customer's cart ID, date and total tax included.
+**Orders tab** displays table with the customer's order ID, date, total paid tax included or excluded (depending of group configuration), payment method and status.
+
+Each olds cards and orders used a base for the new order by pressing the button **Use**
 
 nd a section appears with carts and orders, basket, vouchers and addresses.  
 
