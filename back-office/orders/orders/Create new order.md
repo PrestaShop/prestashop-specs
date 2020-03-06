@@ -12,17 +12,29 @@ Creating a new order is divided in 6 steps:
 
 ## I. Customer selection
 
-The search
-If you don’t find a customer : a notification “No customers found” appears  
-If you find a customer (or several) this section appears with the customers matching with your search. 
+To selected the customer, the merchant has to type any character chain that is contained in customer's first name, last name or email. 
 
-2) Details button 
-You can click on Details button you will have a pop up with an iframe of the customer details available in  settings > customer settings > customers 
-     2) Choose button 
-If you click on Choose button the page content is transformed : 
+If you don’t find a customer on the search, **a warning notification “No customers found” is displayed**.  
 
-The customer that you chose is highlighted in green.  
-And a section appears with carts and orders, basket, vouchers and addresses.  
+**Add new customer button** next to search input in case the customer does not exist in the merchant database.
+
+The search can return multiples customer.
+Each matching customer is **displayed on a card** with the customer's :
+
+- first name,
+- last name,
+- ID, 
+- email, 
+- date of birth.
+
+The card's footer has 2 buttons: 
+
+- **Details button** that redirected the customer page. 
+- **Choose button** that allow the merchant to proceed to the next step. The customer card is highlighted in green. 
+
+The 50 last order and cart are displayed in tabs
+
+nd a section appears with carts and orders, basket, vouchers and addresses.  
 
 Customer selected
 This section highlights the customer chosen before. Here you can have details as before and if you click on change then the search bar appears again and lets you search for another customer. 
