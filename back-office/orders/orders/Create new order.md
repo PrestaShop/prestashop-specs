@@ -3,8 +3,7 @@ Orders > Orders > Add new / edit order
 As a merchant, when I want to add an Order manually in my Shop.
 Creating a new order is divided in 6 steps:
 
-- Customer selection
-- Customers' old orders and carts
+- Customer selection with his/her old orders and carts
 - Order cart
 - Vouchers
 - Address
@@ -16,7 +15,7 @@ To selected the customer, the merchant has to type any character chain that is c
 
 If you don’t find a customer on the search, **a warning notification “No customers found” is displayed**.  
 
-**Add new customer button** next to search input in case the customer does not exist in the merchant database.
+**Add new customer button** next to search input opens the page **Add new customer** in case the customer does not exist in the merchant database.
 
 The search can return multiples customer.
 Each matching customer is **displayed on a card** with the customer's :
@@ -30,34 +29,20 @@ Each matching customer is **displayed on a card** with the customer's :
 The card's footer has 2 buttons: 
 
 - **Details button** that redirected the customer page. 
-- **Choose button** that allow the merchant to proceed to the next step. The customer card is highlighted in green. 
+- **Choose button** that allow the merchant to proceed to the next step. It selects the customer for the Order and highlight his/her card in green. **The search bar and "Add new customer" button** are not displayed anymore. **Choose button** is changed into **Change button**.
 
-**Choose button** displays the **50 lastest orders and carts** are displayed into tabs They can be hidden by pressing the **arrow**.
+**Choose button** displays the **50 lastest orders and carts** into 2 tabs. The tabs are displayed by default and can be not displayed by pressing the **arrow**.
 
-**Carts tab** displays table with the customer's cart ID, date and total tax included.
-**Orders tab** displays table with the customer's order ID, date, total paid tax included or excluded (depending of group configuration), payment method and status.
+**Carts tab** displays table with the customer's cart ID, date and total tax included sorted by ID in descending order
+**Orders tab** displays table with the customer's order ID, date, total paid tax included or excluded (depending of group configuration), payment method and status sorted by ID in descending order.
 
-Each olds cards and orders used a base for the new order by pressing the button **Use**
+Each olds carts and orders can be previewed by pressing on the **Details button** or used as a base for the new order by pressing the button **Use**. The **Use button** clears all fulfilled inputs and selected options to replace them with the data from the old cart or order.
 
-nd a section appears with carts and orders, basket, vouchers and addresses.  
+**Change button** can be press at anytime in the order creation. It displays **the search bar and "Add new customer" button** to select an new customer in a new blank order (clears all fulfilled inputs and selected options).
 
-Customer selected
-This section highlights the customer chosen before. Here you can have details as before and if you click on change then the search bar appears again and lets you search for another customer. 
-Carts and orders 
+## I. The order cart
 
-It’s a simple listing of last carts/last orders of the customer
-For last carts, it   Id’s, date, total value and buttons details/use
-For last orders, it shows: id’s, date, numbers of products, total paid, payment method, status and buttons details/use
 
-you can click on details to have an iframe showing the order page or you can click on use. 
-if you click on use, it will display products from the orders on the Basket section
-Basket 
-
-In basic state, this section is empty but if you use product from the section carts and orders then on the section basket you will be able to update price/quantity/currency/language 
-You can also search for a product select a combination update its quantity and add it to the basket.
-
-## Vouchers 
-Here you can search for a voucher, add it or delete it. You can also create a voucher thanks to an iframe of voucher page. 
 
 ## Addresses 
 Here you can define addresses for delivery and invoice  
