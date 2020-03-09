@@ -33,30 +33,36 @@ The card's footer has 2 buttons:
 
 **Choose button** displays the **50 lastest orders and carts** into 2 tabs. The tabs are displayed by default and can be not displayed by pressing the **arrow**.
 
-**Carts tab** displays table with the customer's cart ID, date and total tax included sorted by ID in descending order
+**Carts tab** displays table with the customer's cart ID, date and total tax included sorted by ID in descending order.
+
 **Orders tab** displays table with the customer's order ID, date, total paid tax included or excluded (depending of group configuration), payment method and status sorted by ID in descending order.
 
 Each olds carts and orders can be previewed by pressing on the **Details button** or used as a base for the new order by pressing the button **Use**. The **Use button** clears all fulfilled inputs and selected options to replace them with the data from the old cart or order.
+
+!!!!ADD SPECIFIC ON WHAT IS CLEARED AND REPLACED!!!!
 
 **Change button** can be press at anytime in the order creation. It displays **the search bar and "Add new customer" button** to select an new customer in a new blank order (clears all fulfilled inputs and selected options).
 
 ## I. The order cart
 
-serach bar
-(ref, name or other)
+After selectiong the customer, the merchand can configure his customer cart.
+A serach bar is displayed to add product in the cart. The search returns one product that is the closest to the product name or reference.
 
-Combinaison (product with price)
+If the product has combintaion, it displays **all the combination available into a droplist**. 
+Before adding the product in a cart, the user has to fulfill the quantity wanted (by default the quantity is set to 1). 
 
-Quantity
-quantity left in stock
+Below the input, a label displays the product stock.
 
-**Add cart button**
-Price tax inlcuded or excluded ?
-product table with product image, description, reference, base price, quantity and total price & remove button 
-Warning "price are without taxes" allways displayed
+Pressing the button **"Add to cart" button**, add into the prodcut table below the button.
 
-Change the currency and language
+**The product table** displays for each product, the product image, description, reference, base price without tax, quantity and total price without tax.
+Each product line has a **"Remove button"** to delete the product from the cart.
 
+**Warning "price are without taxes" is displayed** below the product table.
+
+In the cart block, the marchant can configure the order currency and language.
+The currency dropdown updates base price and the total price in the product table. 
+Editing the 
 
 ## Addresses 
 Here you can define addresses for delivery and invoice  
