@@ -42,6 +42,20 @@ Each olds carts and orders can be previewed by pressing on the **Details button*
 
 ## I. The order cart
 
+serach bar
+(ref, name or other)
+
+Combinaison (product with price)
+
+Quantity
+quantity left in stock
+
+**Add cart button**
+Price tax inlcuded or excluded ?
+product table with product image, description, reference, base price, quantity and total price & remove button 
+Warning "price are without taxes" allways displayed
+
+Change the currency and language
 
 
 ## Addresses 
