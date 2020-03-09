@@ -61,8 +61,7 @@ Each product line has a **"Remove button"** to delete the product from the cart.
 **Warning "price are without taxes" is displayed** below the product table.
 
 In the cart block, the marchant can configure the order currency and language.
-The currency dropdown updates base price and the total price in the product table. 
-Editing the 
+The currency dropdown updates base price and the total price in the product table. Changing the currency convert the new base price if it was edited. 
 
 ## Addresses 
 Here you can define addresses for delivery and invoice  
