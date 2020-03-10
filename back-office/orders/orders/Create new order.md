@@ -64,10 +64,10 @@ Each product line has a **"Remove button"** to delete the product from the cart.
 
 The base price modification edits in the last configured currency and updates the total multipliant
 
-If the quantity fulfilled is higher than the stck quantity, an error warning is displayed: "There are not enough products in stock". 
+If the quantity fulfilled is higher than the stock quantity, an error warning is displayed: "There are not enough products in stock". 
 If the edited values is negative, it displays an error: "Positive product quantity is required".
 
-A edition in base price or quantity updates the total by multiplying the unit price by the quantity.
+A edition in base price or quantity updates the total by multiplying the base price by the quantity.
 
 **In the cart block, the marchant can configure the order currency and language. By default, the language and the currency are set from the shop default language and the shop default currency.**
 
