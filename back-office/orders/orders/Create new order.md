@@ -60,8 +60,18 @@ Each product line has a **"Remove button"** to delete the product from the cart.
 
 **Warning "price are without taxes" is displayed** below the product table.
 
-In the cart block, the marchant can configure the order currency and language.
-The currency dropdown updates base price and the total price in the product table. Changing the currency convert the new base price if it was edited. 
+**The base price and the quantity are editeable.** 
+
+The base price modification edits in the last configured currency and updates the total multipliant
+
+If the quantity fulfilled is higher than the stck quantity, an error warning is displayed: "There are not enough products in stock". 
+If the edited values is negative, it displays an error: "Positive product quantity is required".
+
+A edition in base price or quantity updates the total by multiplying the unit price by the quantity.
+
+**In the cart block, the marchant can configure the order currency and language. By default, the language and the currency are set from the shop default language and the shop default currency.**
+
+The currency dropdown converts the base price and the total price in the product table in the new currency. If the base price was edited before converting the currency, it converts the base price from the edited base price.
 
 ## Addresses 
 Here you can define addresses for delivery and invoice  
