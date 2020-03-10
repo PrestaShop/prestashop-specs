@@ -43,7 +43,7 @@ Each olds carts and orders can be previewed by pressing on the **Details button*
 
 **Change button** can be press at anytime in the order creation. It displays **the search bar and "Add new customer" button** to select an new customer in a new blank order (clears all fulfilled inputs and selected options).
 
-## I. The order cart
+## II. The order cart
 
 After selectiong the customer, the merchand can configure his customer cart.
 A serach bar is displayed to add product in the cart. The search returns one product that is the closest to the product name or reference.
@@ -73,7 +73,17 @@ A edition in base price or quantity updates the total by multiplying the base pr
 
 The currency dropdown converts the base price and the total price in the product table in the new currency. If the base price was edited before converting the currency, it converts the base price from the edited base price.
 
-## Addresses 
+## III. Voucher
+
+search bar
+add new voucher
+voucher tabe (nae, description value and delete button)
+
+## IV. Order's Addresses 
+
+- Dropdown 
+- Edit 
+Add new address
 Here you can define addresses for delivery and invoice  
 And even create a new address thanks to an iframe of the page addresses>add new 
 
