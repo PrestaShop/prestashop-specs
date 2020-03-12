@@ -1,4 +1,6 @@
-**Cart Rule when 2 vouchers applied to a cart has free shipping.**
+## Cart Rule 
+
+**when 2 vouchers applied to a cart has free shipping.**
 
 2 vouchers should be applied but the shipping should be deducted once. 
 
