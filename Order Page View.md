@@ -177,6 +177,12 @@ Customer panel is divided into 3 parts:
 -   **valid orders placed on a black background**
 -   **total spend since registration on a black background.**
 
+When a customer is deleted:
+
+The customer information such as **the email, the date of the account registered, the valid orders placed, the total spend since registration**, shipping and invoice address drop-down button and the private note block are not displayed. 
+
+The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redict to the full details customer page.
+
 **Shipping and Invoice address**
 
 Each address has **a button** to update or change it. The button opens a list to select the user wants to edit or update it.
