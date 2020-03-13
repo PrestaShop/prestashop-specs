@@ -58,6 +58,7 @@ On the header, we have **the order’s reference, customer’s name, total price
 -   **Standard Refund button**
 -   **Return products button**
 -   **Cancel products button**
+-   **Next/Previous button**
 
 1.  **Update the order status**
 
@@ -158,6 +159,15 @@ Before refunding the products, the user can choose to generate a credit slip and
 After returning the products, it shows on a column "Return" and "Refund" with the return quantity and the price of the refund per products if a generated slip was checked in the option.
 
 ![after return product](https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png)
+
+9.  **Next/Previous button**
+
+![arrows next/prev](INSERT IMG)
+
+Pressing the left arrow opens the order next older order. 
+Pressing the right arrow opens the order next recent order. 
+If the first order (the oldest one) is opened, the left arrow is disabled.
+If the last order (the newest one) is opened, the right arrow is disabled.
 
 
 ## II. **Customer panel**
