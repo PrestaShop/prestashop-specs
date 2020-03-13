@@ -279,7 +279,7 @@ At the end of the table list, there are **2 buttons**:
 
 [Add a product old design but the same behaviours](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
--   **Add a new discount**: opens a popin to create your new voucher between the Pourcentage, the Amount (taxes included) and Free shipping type.
+-   **Add a new discount**: opens a popin to create your new cart rule between the pourcentage, the amount (taxes included) and Free shipping type. The value of the discount can't be greater than the total amount of the invoice, a negative value or 0.
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
