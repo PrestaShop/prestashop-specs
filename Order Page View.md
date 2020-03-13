@@ -195,7 +195,8 @@ The customer name is changed to **"Deteled customer"**. It removes the icon acco
 
 **Shipping and Invoice address**
 
-Each address has **a button** to update or change it. The button opens a list to select the user wants to edit or update it.
+Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
+Editing an address actually creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.
 
 [Edit/Change adresse behaviours](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
 
