@@ -28,7 +28,7 @@ If I filled something in a tab and I change the product type (from example from 
 
 **As a merchant I want to always see some elements when I create or edit a product.**
 
-Some elements are displayed in all tabs. Here is the list of those elements :
+Some elements are displayed in all tabs. Here is the list of those elements 
 
 * **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.       
 Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language.      
@@ -582,7 +582,7 @@ Here is the list of the elements of options tab:
   * **Choose files**: You can browse and choose files
   * **Title**: Field with the title of the document, displayed in front-office
   * **Description**: Field with the description of the document, displayed in front-office
-  * **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. There is a checkbox allowing to check/uncheck all the files \([issue 9790](https://github.com/PrestaShop/PrestaShop/issues/9790)\) When the checkbox is checked, the file is displayed on the product page \(attachments tab\) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog &gt; Files.
+  * **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. When the checkbox is checked, the file is displayed on the product page \(attachments tab\) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog &gt; Files.
   * **Cancel**: Button to close the form
 * **Suppliers**: This part is displayed only if you have created and enabled at least one supplier. Indicating the product's supplier is not really important for customers, but it may turn out to be an essential part for the merchant’s internal management, not least when managing stock: the merchant simply needs to know who he bought the product from.
   * **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool \(see Shop Parameters &gt; Products settings\), the values you define \(price, references\) will be used in supply orders.”
