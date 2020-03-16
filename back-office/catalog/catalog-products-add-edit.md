@@ -22,6 +22,8 @@ The third step is to detail the multistore behavior.
 
 ## 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>
 
+If I filled something in a tab and I change the product type (from example from virtual to standard), whether I saved or not, then what I had filled in the tab (example virtual product tab) is kept for the fields which are displayed again in the equivalent tab (for example quantity for a standard product)
+
 ### Elements in all tabs \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14770)\]
 
 **As a merchant I want to always see some elements when I create or edit a product.**
