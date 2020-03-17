@@ -320,6 +320,8 @@ A drop-down next to the field is displayed when there are several languages inst
 
 **Edit combinations**:
 
+* **Next combination button**: It allows to navigate between combinations. It doesn't appear for the last combination. There should be an autosave each time the user click on the button.
+* **Previous combination button**: It allows to navigate between combinations. It doesn't appear for the first combination. There should be an autosave each time the user click on the button.
 * **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
