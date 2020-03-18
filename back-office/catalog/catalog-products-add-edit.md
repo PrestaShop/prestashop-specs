@@ -488,7 +488,7 @@ This button opens a form with the following fields :
   * **Apply**: When you click on it, the specific price is created and you have a success message “Settings updated”.
   * **Cancel**: If you click on Cancel, the form with all specific prices fields is closed. If you click again on Add a specific price, every fields are reseted to their default values.
 * **List of specific prices & catalog price rules**: You see the specific price with all the details: rule, combination, currency, country, group, customer, fixed price, impact, period, from, actions \(delete, update\). Rule column contains “--” for a specific price.             
-Here are also listed the catalog prices rules. Rule column contains the name of the catalog price rule.          
+Here are also listed the catalog prices rules that apply to this product. Rule column contains the name of the catalog price rule.          
 Actions edit & delete are not displayed for a catalog price rule.
 * **Edit a specific price**: You can edit an existing specifice price. It opens a modal with all the fields described above. You can close the modal by clicking on the cross, on cancel or pushing ESC key. You can save your changes by clicking on Apply. A success message “Settings updated” is displayed.
 * **Delete a specific price**: You can delete a specific price by clicking on the trash. When you click on it, you have a modal to cancel or confirm the action.
