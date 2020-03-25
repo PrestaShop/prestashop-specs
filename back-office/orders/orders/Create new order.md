@@ -88,16 +88,22 @@ Some specific cases can occur and need to be detailed, especially when gift prod
 
 Below are listed all different behaviours :
 
+
 **- Adding a cart rule with conditions that the cart does not reach**
+
 When trying to add a cart rule to the manually created order, there should be a check on the conditions of this cart rule. If the current cart does not reach the expected conditions, there should be an error message stating that the order does not reach the required amount to use this voucher.
 
+
 **- Adding a cart rule with a classic discount (amount or percentage or free shipping)**
+
 When adding a cart rule with a discoun or free shipping voucher, there is no impact on the cart but a new line is added in the Cart rule block with information about the voucher :
 - The voucher name
 - The voucher description
 - The value of the discount (tax included)
+
  
 **- Adding a cart rule with a gift product (different than products already in the cart)**
+
 When adding a cart rule with a free product that is different than products already available in the cart, the newly created cart rule is displayed in the voucher block with a few information :
 - The voucher name
 - The voucher description
@@ -105,15 +111,19 @@ When adding a cart rule with a free product that is different than products alre
 
 The gifted product is also automatically added to the cart with base price and price replaced with “Gift”. 
 It is not possible to remove it directly from the cart. There is no “Remove” button for gift products. It is only possible to remove it by removing the associated cart rule.
+
  
 **- Adding a cart rule with a gift product + discount on the cart**
+
 When a voucher effect is "Free Gift" + something else (Free shipping, Amount discount or percent discount), the voucher should be displayed only once, with the value information adding all discounts together. For instance, if the voucher offers a 10€ discount (tax included) + a free product with a 5€ unit value (tax included), then the value column of the voucher should display 15€.
 
 In the meantime, the gifted product is automatically added to the cart with base price and price replaced with “Gift” (just as in the scenario above). 
 
 It is not possible to remove it directly from the cart. There is no “Remove” button for gift products. It is only possible to remove it by removing the associated cart rule.
+
  
 **- Adding several cart rules with always the same gift product**
+
 In the same manual order, when adding several vouchers that offer the same product (with same combinations) as a gift, there should be only one line for the product with the quantity updated with all gifted products. It works the same way as in the cart details (when choosing an already existing cart)
  
 Base price and prices are replaced with “Gift”. 
@@ -122,8 +132,10 @@ When removing a voucher, it should remove one quantity from the products.
 It is not possible to remove the product directly from the cart. There is no “Remove” button for gift products. It is only possible to remove it by removing the associated cart rule.
 
 It is not possible change the quantity (increase / decrease) of a product when all units are gift products. 
+
  
 **- Adding a gift product which is already available as a paid product in the cart**
+
 Example : adding the "Best is yet to come Mug" once as a paid item, and four times as a gift (with 4 different vouchers). 
 Current situation (bug) : There is one line for each mug in the cart, with a quantity set to "5" each time, instead of being set to "1" for each. When I create the order, the total quantity for the mug is OK (5 products, and not 25).
 
@@ -135,7 +147,9 @@ There is no remove button for products which have both paid and gift units. To r
 
 The price should be calculated by summing all values together. For example if there is one product being paid (price 10€), and 2 products offered, then the final indicated price should be 10€.
  
+ 
 **- Adding a paid product which is already available as a gift product in the cart**
+
 Example : If I already have a gifted product in my cart (with quantity "1"), and I want to add the same product but paid this time. This scenario can only occurs if I already had a product in my cart.
 Current bugs : 
 - when I try to add the same product, but paid, an error is displayed "Same product quantity is already in cart" and nothing is added.
@@ -147,14 +161,19 @@ This means that when adding a product which is already in the cart, this should 
 
 Same scenarios when removing products / vouchers and changing quantities.
  
+ 
 **- Deleting a paid product**
+
 Deleting a paid product is very easy, a Remove button is available to remove one or several quantities of a paid product. 
 Current bug : if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.
 
 If I have a paid product, and the same product, but gifted, in my cart, I should not have a Remove button available on the product line. The remove button only appears when there is no longer gift products on the same product line.
  
+ 
 **- Deleting a gift product**
+
 You are not allowed to delete a gift product from the cart, it’s only possible by removing the associated cart rule.
+
 
 
 ## IV. Order's Addresses 
