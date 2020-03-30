@@ -97,12 +97,16 @@ When the status "Refunded" is applied to the order, the refund amount is deducte
 **After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
 
 ## **The button standard refund, partial refund and return product are displayed if merchandise return is enable.**
-| **Button** | **Why** | **What is does** | **When it is displayed** | **When it is hidden** | **Option** | **Summarise Behaviours** |
+| **Button** | **Why** | **What is does** | **When is it displayed** | **When is it hidden** | **Option** | **Summarise Behaviours** |
 | --- | --- | --- | --- | --- | --- | --- |
 | [**Cancel products**](https://github.com/PrestaShop/PrestaShop/issues/16650) | To Cancel a wrong order | It deletes the products (or reduce the quantity). It also changes the order status to &quot;Canceled&quot; when all the products are canceled. | At the creation of an orderandMerchandise return is **enabled** | When the order is considered as paid |   | Select the products to cancel then their quantity. Press on the cancel products to confirm. |
 | [**Standard refund**](https://github.com/PrestaShop/PrestaShop/issues/16653) | To refund products, before it is sent to the customer (the products are still in the stock) | Refund by voucher or by credit slip of the total amount of products | When the order is considered as **paid** andMerchandise return is **enabled** | When the order is considered as shipped | - Generate a credit slip- Generate voucher- Repay shipping costs (option appears if you select to generate a voucher or a credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
 | [**Partial Refund**](https://github.com/PrestaShop/PrestaShop/issues/15820) | To refund any amount of products and/or the shipping cost | Refund by voucher and restock | When the order is considered as **paid**   | Never | - Restock products- Generate a voucher | Select the quantity and amount of the refund per product, the amount of the refund for shipping cost. Select the refund options then press on Partial refund to confirm |
 | [**Return products**](https://github.com/PrestaShop/PrestaShop/issues/16654) | To refund the returned products and restock | Refund the total price of the products, the shipping cost and restock the returned products | Order is considered as **paid** and **shipped** andMerchandise return is **enabled** | Never | - Restock products- Generate credit slip- Generate a voucher- Repay shipping costs (option appears if you select generate a voucher or credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
+
+If this order has been partially paid by voucher. The merchant can refund either by selecting the total amount of the selected products or this total minus the amount of the vouchers.
+
+ 
 
 6. **Cancel products button** 
 
@@ -262,7 +266,7 @@ By pressing on the link "View pack content", it opens the products from the pack
 
 **The quantity** is coloured in a dark grey background if there are more than 2 quantities.
 
-**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
+**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe. The product quantity can be edited. Increasing or decreasing will update the stock available quantity. 
 
 The merchant is warn if he edits the price of product with a specific price or an catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
@@ -276,11 +280,11 @@ The **Update button** to save the modification or **Cancel button** to drop it.
 
 At the end of the table list, there are **2 buttons**:
 
--   **Add a product:** add a row on the table list with a search bar on the product name column. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button** if the there is enough quantity otherwise a warning error is shown (except if the stock parameter allows to sell without stocks).
+-   **Add a product:** add a row on the table list with a search bar on the product name column. The merchant can search any enable product. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greather than 0; if the quantity is less than or equal to the quantity available. Otherwise a warning error is shown (except if the stock parameter allows to sell without stocks).
 
 [Add a product old design but the same behaviours](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
--   **Add a new discount**: opens a popin to create your new cart rule between the pourcentage, the amount (taxes included) and Free shipping type. The value of the discount can't be greater than the total amount of the invoice, a negative value or 0.
+-   **Add a new discount**: opens a popin to create your new cart rule between the pourcentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
@@ -360,3 +364,5 @@ After adding, the user can display **all the details of the transaction by press
 **If the order’s status** is considered **as paid then before adding a transaction** the user has to specify in **which generated invoices from a droplist** it will be added.
 
 When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
+
+If the shop has different currencies, a droplist of shop's currencies is displayed to change the order currency. The change rate is based the latest conversion rate save by the shop.
