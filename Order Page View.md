@@ -19,7 +19,7 @@ As merchant managing order is essential for my e-commerce, I need to be able to:
 
 The Add order page _(Orders > Orders > View button)_ is expected to be migrated to Symfony for the 1.7.7 version and will be reworked for better user experience.
 
-Some new specifications for the new design are in progress but to avoid any features regressions. We need to specify the whole behaviour of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
+Some new specifications for the new design are in progress but to avoid any features regressions. We need to specify the whole behavior of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
 
 **Related issue**:
 
@@ -27,7 +27,7 @@ Some new specifications for the new design are in progress but to avoid any feat
 
 **WHAT**
 
-Thus, this project aims at specifying the new behaviours for every scenario a merchant could be dealing with the order management. This specification should specifically define :
+Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with the order management. This specification should specifically define :
 
 -   Order (order status, invoices, cancellation)
 -   Customer (customer card and addresses)
@@ -84,29 +84,32 @@ If the current or new order status as **the generation of the delivery slip** th
 
 5.  **Partial refund button**
 
-If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
+If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write a refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
 
-By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimun 1 quantity.
+By default, the quantity input has 0 prefilled. To validate a partial refund, the user must as selected a minimum of 1 quantity.
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
-When the status "Refunded" is applied to the order, the refund amount is deducted to the total spended by the customer since registration and the number of valid orders placed decreases by 1. 
+When the status "Refunded" is applied to the order, the refund amount is deducted to the total spent by the customer since registration and the number of valid orders placed decreases by 1. 
 
 [Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
 
 **After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
 
-## **The button standard refund, partial refund and return product are displayed if merchandise return is enable.**
+## **The button standard refund, partial refund and return product are displayed if merchandise return is enabled.**
 | **Button** | **Why** | **What is does** | **When is it displayed** | **When is it hidden** | **Option** | **Summarise Behaviours** |
 | --- | --- | --- | --- | --- | --- | --- |
-| [**Cancel products**](https://github.com/PrestaShop/PrestaShop/issues/16650) | To Cancel a wrong order | It deletes the products (or reduce the quantity). It also changes the order status to &quot;Canceled&quot; when all the products are canceled. | At the creation of an orderandMerchandise return is **enabled** | When the order is considered as paid |   | Select the products to cancel then their quantity. Press on the cancel products to confirm. |
+| [**Cancel products**](https://github.com/PrestaShop/PrestaShop/issues/16650) | To Cancel a wrong order | It deletes the products (or reduce the quantity). It also changes the order status to **Canceled** when all the products are canceled. | At the creation of an order and merchandise return is **enabled** | When the order is considered as paid |   | Select the products to cancel then their quantity. Press on the cancel products to confirm. |
 | [**Standard refund**](https://github.com/PrestaShop/PrestaShop/issues/16653) | To refund products, before it is sent to the customer (the products are still in the stock) | Refund by voucher or by credit slip of the total amount of products | When the order is considered as **paid** or **at least one payment** is linked to the order and Merchandise return is **enabled** | When the order is considered as shipped | - Generate a credit slip- Generate voucher- Repay shipping costs (option appears if you select to generate a voucher or a credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
 | [**Partial Refund**](https://github.com/PrestaShop/PrestaShop/issues/15820) | To refund any amount of products and/or the shipping cost | Refund by voucher and restock | When the order is considered as **paid** or **at least one payment** is linked to the order | Never | - Restock products- Generate a voucher | Select the quantity and amount of the refund per product, the amount of the refund for shipping cost. Select the refund options then press on Partial refund to confirm |
-| [**Return products**](https://github.com/PrestaShop/PrestaShop/issues/16654) | To refund the returned products and restock | Refund the total price of the products, the shipping cost and restock the returned products | Order is considered as **paid** or **at least one payment** is linked to the order and **shipped** andMerchandise return is **enabled** | Never | - Restock products- Generate credit slip- Generate a voucher- Repay shipping costs (option appears if you select generate a voucher or credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
+| [**Return products**](https://github.com/PrestaShop/PrestaShop/issues/16654) | To refund the returned products and restock | Refund the total price of the products, the shipping cost and restock the returned products | Order is considered as **paid** or **at least one payment** is linked to the order and **shipped** and merchandise return is **enabled** | Never | - Restock products- Generate credit slip- Generate a voucher- Repay shipping costs (option appears if you select generate a voucher or credit slip) | Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm. |
 
 If this order has been partially paid by voucher. The merchant can refund either by selecting the total amount of the selected products or this total minus the amount of the vouchers.
 
- 
+It used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied on the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
+
+To harmonize the behaviors, we put the specific custom edition into the partial refund button and set return product button with straightforward options. The merchant can customize the voucher on the partial refund feature. 
+
 
 6. **Cancel products button** 
 
@@ -122,9 +125,9 @@ Pressing the button cancel will reduce the quantity of the products selected if 
 
 ![before cancel button](https://user-images.githubusercontent.com/43613217/69956873-85abc980-1501-11ea-9a02-33365caa01fe.png)
 
-To cancel products at least one of the product must be selected.
+To cancel products at least one of the products must be selected.
 
-**When all the products are cancelled, the status automatically changes for "Canceled".**
+**When all the products are canceled, the status automatically changes for "Canceled".**
 
 7. **Standard products button**
 
@@ -148,7 +151,7 @@ After refunding, it shows on a column "Refunded", the quantity and the price of 
 
 8.  **Return products button**
 
-Return product only **is diplayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
+Return product only **is displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
 When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
@@ -168,15 +171,15 @@ After returning the products, it shows on a column "Return" and "Refund" with th
 
 ![arrows next/prev](INSERT IMG)
 
-Pressing the left arrow opens the order next older order. 
-Pressing the right arrow opens the order next recent order. 
+Pressing the left arrow opens the next older order. 
+Pressing the right arrow opens the next recent order. 
 If the first order (the oldest one) is opened, the left arrow is disabled.
 If the last order (the newest one) is opened, the right arrow is disabled.
 
 
 ## II. **Customer panel**
 
-The customer panel displayed on the left of the product list has **the customer’s title, name, last name and customer reference.** To see the full customer description, you can click on **View full details** that redirect to his customer page on another page.
+The customer panel displayed on the left of the product list has **the customer’s title, name, last name, and customer reference.** To see the full customer description, you can click on **View full details** that redirect to his customer page on another page.
 
 Customer panel is divided into 3 parts:
 
@@ -195,14 +198,14 @@ When a customer is deleted:
 
 The customer information such as **the email, the date of the account registered, the valid orders placed, the total spend since registration**, shipping and invoice address drop-down button and the private note block are not displayed. 
 
-The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redict to the full details customer page.
+The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redirect to the full details customer page.
 
 **Shipping and Invoice address**
 
 Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
 Editing an address actually creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.
 
-[Edit/Change adresse behaviours](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
+[Edit/Change adresse behaviors](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
 
 **The edit address redirects to the edit address page of the selected address**. After saving any edit of the fields of the address form, **the user is redirected on the order** that he was editing in the first place.
 
@@ -218,7 +221,7 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
 
-**Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
+**Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date, and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
 
@@ -251,7 +254,7 @@ Bellow the action button on the right, the product panel displays **the order’
 
 [popin displaying the products from the pack](/img/customization.png)
 
-**When the product is pack of product**, a link is added bellow the product name to show all the product in an popin. 
+**When the product is a pack of product**, a link is added below the product name to show all the products in a popin. 
 
 [Link in the product row](/img/view20%pack20%content.png)
 
@@ -264,11 +267,11 @@ By pressing on the link "View pack content", it opens the products from the pack
 
 [Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
 
-**The quantity** is coloured in a dark grey background if there are more than 2 quantities.
+**The quantity** is colored in a dark grey background if there are more than 2 quantities.
 
-**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe. The product quantity can be edited. Increasing or decreasing will update the stock available quantity. 
+**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax. The product quantity can be edited. Increasing or decreasing will update the stock available quantity. 
 
-The merchant is warn if he edits the price of product with a specific price or an catalog price rule.
+The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
 **While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
@@ -280,15 +283,15 @@ The **Update button** to save the modification or **Cancel button** to drop it.
 
 At the end of the table list, there are **2 buttons**:
 
--   **Add a product:** add a row on the table list with a search bar on the product name column. The merchant can search any enable product. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greather than 0; if the quantity is less than or equal to the quantity available. Otherwise a warning error is shown (except if the stock parameter allows to sell without stocks).
+-   **Add a product:** add a row on the table list with a search bar on the product name column. The merchant can search for any enable product. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks).
 
-[Add a product old design but the same behaviours](https://github.com/PrestaShop/prestashop-specs/blob/master)
+[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
--   **Add a new discount**: opens a popin to create your new cart rule between the pourcentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
+-   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
-The vouchers will be added on the table list displaying the discount name, value and the delete button on the top of the summary order. The new discount created is added with the status deactivated on cart rule page with zero quantity.
+The vouchers will be added on the table list displaying the discount name, value and the delete button on the top of the summary order. The new discount created is added with the status deactivated on the cart rule page with zero quantity.
 
 [Carts rules list](https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied)
 
@@ -309,14 +312,14 @@ Below the totals, a warning message is displayed to warn the user that **for thi
 
 All the tabs are located in the same panel bellow the products list.
 
-The label "Wrapping gift" and "Recycled packaging" are only shown when the feature are present in the order. It must be shown on all the tabs.
+The label "Wrapping gift" and "Recycled packaging" are only shown when the feature is present in the order. It must be shown on all the tabs.
 ![Wrapping and recycled packing are included in the order](/img/wrapping_recycled_on.png)
 
 1.  **Status tab**
 
 The table **list of the latest order status** is displayed composed:
 
--   **The status with associated coloured**
+-   **The status with associated colored**
 -   **date and hour**
 -   **The editor**
 -   **Button to resend the email to the customer**
@@ -336,7 +339,7 @@ Each table’s rows as 2 possible **button actions**:
 
 3.  **Shipping tab**
 
-The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number and edit button.**
+The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number, and edit button.**
 
 [Shipping tab](https://invis.io/YKTGGFZAMCB#/381874233__Order_Details_-_Shipping)
 
@@ -351,13 +354,13 @@ The merchandise return tab lists **the date, the tracking number, the type, Carr
 
 5.  **Payment panel**
 
-The payment section displays all the transactions made in the order from the payment’s module or the manual inputs.
+The payment section displays all the transactions made in the order from the payment module or the manual inputs.
 
 The table shows **the date and hours, the payment method, the transaction ID, the amount with the currency and the button detail.**
 
 To fill a payment transaction, the user has **to select the date, one payment method from a droplist, the amount and currency then press the add button. The amount** can be a **positive or negative value**.
 
-**A red warning is shown** if the filled amount is inferior or superior of the order’s total comparing the total of the transactions and order’s total.
+**A red warning is shown** if the filled amount is inferior or superior to the order’s total comparing the total of the transactions and order’s total.
 
 After adding, the user can display **all the details of the transaction by pressing the Detail button**. It will show below the arrow **the number, brand, expiration date and owner of the credit card** for any payment module.
 
@@ -365,4 +368,4 @@ After adding, the user can display **all the details of the transaction by press
 
 When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
 
-If the shop has different currencies, a droplist of shop's currencies is displayed to change the order currency. The change rate is based the latest conversion rate save by the shop.
+If the shop has different currencies, a droplist of shop's currencies is displayed to change the order currency. The change rate is based on the latest conversion rate save by the shop.
