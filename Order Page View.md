@@ -74,29 +74,16 @@ Opens the Print page of the browser with the order’s content.
 
 3.  **View invoice show**
 
-If the current or new order status as **the generation of the invoice activated,**  **the button is shown or** the user generates it manually.
-
-When the user clicks on the button, it downloads the invoice.
+The Invoice can be downloaded if the current or new order status has **the generation of the invoice activated** or if the user has generated it manually.
 
 4.  **View delivery slip**
 
-If the current or new order status as **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
+If the current or new order status has **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
 
-5.  **Partial refund button**
+5. Summary of the standard refund, partial refund and return product feature
 
-If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write a refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
+## **Merchandise return has to be enabled if the merchant want to use the standard refund, partial refund and return product feature**
 
-By default, the quantity input has 0 prefilled. To validate a partial refund, the user must as selected a minimum of 1 quantity.
-
-**Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
-
-When the status "Refunded" is applied to the order, the refund amount is deducted to the total spent by the customer since registration and the number of valid orders placed decreases by 1. 
-
-[Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
-
-**After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
-
-## **The button standard refund, partial refund and return product are displayed if merchandise return is enabled.**
 | **Button** | **Why** | **What is does** | **When is it displayed** | **When is it hidden** | **Option** | **Summarise Behaviours** |
 | --- | --- | --- | --- | --- | --- | --- |
 | [**Cancel products**](https://github.com/PrestaShop/PrestaShop/issues/16650) | To Cancel a wrong order | It deletes the products (or reduce the quantity). It also changes the order status to **Canceled** when all the products are canceled. | At the creation of an order and merchandise return is **enabled** | When the order is considered as paid |   | Select the products to cancel then their quantity. Press on the cancel products to confirm. |
@@ -106,15 +93,26 @@ When the status "Refunded" is applied to the order, the refund amount is deducte
 
 If this order has been partially paid by voucher. The merchant can refund either by selecting the total amount of the selected products or this total minus the amount of the vouchers.
 
-It used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied on the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
-
+Before 1.7.7, it used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied on the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
 To harmonize the behaviors, we put the specific custom edition into the partial refund button and set return product button with straightforward options. The merchant can customize the voucher on the partial refund feature. 
 
+6.  **Partial refund button**
 
-6. **Cancel products button** 
+If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refund and then enter a seleced refund amount per product line. The maximum refundable amount is written bellow all the amount input in tax included.
 
+By default, the quantity input has 0 prefilled. To validate a partial refund, the user must have selected a minimum of 1 quantity.
 
-The cancel button only is shown by default on the creation of an order. 
+**Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
+
+[Partial Refund screen](https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund)
+
+**After the validation a partial refund,** a new column is added with quantity previously selected and the amount entered.
+
+When the status "Refunded" is applied to the order, the refund amount is deducted to the total spent by the customer since registration and the number of valid orders placed decreases by 1. 
+
+7. **Cancel products button** 
+
+The cancel button is only displayed by default on the creation of an order. 
 The button **is hidden** when the order is **considered as paid**
 
 When pressing the button, the product list takes the full with of the page and the column cancel is added. 
@@ -129,29 +127,29 @@ To cancel products at least one of the products must be selected.
 
 **When all the products are canceled, the status automatically changes for "Canceled".**
 
-7. **Standard products button**
+**When the status "Canceled" is applied to the order, the quantity of products in the order is returned to stock.**
 
-Standard refund only **is displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
+8. **Standard products button**
+
+Standard refund **is only isplayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
 When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
-A quantity must be selected to refund a product. 
+A quantity grether than 0 must be selected to refund a product. 
 
-Before refunding the products, the user can choose to generate a credit slip and/or voucher.
-**See if you can add the button restock**
+Before refunding the products, the user can choose to generate a credit slip and/or voucher. The merchant can choose to restock the products
 
 ![before standard refund](https://user-images.githubusercontent.com/43613217/69959536-ad9e2b80-1507-11ea-9441-ec63cce2c0dd.png)
 
-When all the products are refunded order status change to Refunded.
 A product can't be refund multiple times. 
 
 After refunding, it shows on a column "Refunded", the quantity and the price of the refund per products.
 
 ![after standard refund](https://user-images.githubusercontent.com/43613217/69959612-e211e780-1507-11ea-945a-934fe5441d37.png)
 
-8.  **Return products button**
+9.  **Return products button**
 
-Return product only **is displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
+Return product **is only displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
 When the user presses the button a column "Refund" is added with a checkbox and the input quantity.
 
@@ -167,7 +165,7 @@ After returning the products, it shows on a column "Return" and "Refund" with th
 
 ![after return product](https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png)
 
-9.  **Next/Previous button**
+10.  **Next/Previous button**
 
 ![arrows next/prev](INSERT IMG)
 
@@ -225,15 +223,17 @@ Bellow the customer panel, you have the messages panel. **The total of the excha
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
 
-Bellow the messages displayed, the user can **choose a standard message** to send. **all predefined messages** of the **order messages page** are available in a droplist to select the message to prefill **the message input text**. By default, there is no prefilled message so the droplist shows “-”. The link named **"configure predefined messages ->"** below the droplist is available to open on a new browser's tab **the order messages page** to access to the predefined messages.
+Bellow the messages displayed, the user can **choose a standard message** to send. **all predefined messages** of the **order messages page** are available in a droplist to select the message to prefill **the message input text**. By default, there is no prefilled message so the droplist shows “-”. The link named **"configure predefined messages"** below the droplist is available redirect to**the order messages page** to access to the predefined messages.
 
 After selecting the droplist selection, the prefilled text is still editable.
 
 **A checkbox** is available to choose **to write a private message hidden from the customer.**
 
-Customizing the prefilled message, writing the message from scratch or using the prefilled message, the user sends it by clicking on **Send message**. It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
+Using the prefilled message, writing the message from scratch, the user sends it by clicking on **Send message** . It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
 
-**To see all the past messages**, there is the possibility to click on the right of the send message button on **View full conversation** to open on a popup.
+The maximum of character in the text input is 1200 char.
+
+**To see all the past messages**, the merchant can click on **View full conversation** to open on a popup.
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
@@ -263,7 +263,7 @@ By pressing on the link "View pack content", it opens the products from the pack
 [Popin displaying the products from the pack](/img/pack20%content.png)
 
 **The pagination of the list starts when there are more than 8 products**
-**The stock location column is hidden** only when none of the products has a stock location only on the website. The column is only displayed at the corresponding pagination. If only a product on page 2 of the list has a stock location then the stock location column appears on page 2 and hidden in the other pages.
+**The stock location column is hidden** only when none of the products has a stock location. The column is only displayed at the corresponding pagination. If only a product on page 2 of the list has a stock location then the stock location column appears on page 2 and hidden in the other pages.
 
 [Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
 
@@ -274,8 +274,8 @@ By pressing on the link "View pack content", it opens the products from the pack
 The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
-**While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
-The **Update button** to save the modification or **Cancel button** to drop it.
+**While editing the quantity, the total updates automatically**..
+The **Update button** saves the modification and **Cancel button** drops it.
 
 **The Delete button removes the product for the list.**
 
@@ -295,9 +295,9 @@ The vouchers will be added on the table list displaying the discount name, value
 
 [Carts rules list](https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied)
 
-**If the order status is considered as paid**, either on adding a product or adding a discount adding, the user as to specify on **which generated invoices it will be applied.**
+**If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices it will be applied.**
 
-The bottom of the product panel resume in a list all the order:
+The below the product panel, there is the order's summary:
 
 -   **Products total with taxes excluded**
 -   **Total shipping**
@@ -324,7 +324,7 @@ The table **list of the latest order status** is displayed composed:
 -   **The editor**
 -   **Button to resend the email to the customer**
 
-On the bottom, a drop list of all the status available is shown to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
+On the bottom, a drop list of all the status available is displayed to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
 
 2.  **Documents tab**
 
