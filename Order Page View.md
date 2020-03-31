@@ -21,10 +21,6 @@ The Add order page _(Orders > Orders > View button)_ is expected to be migrated 
 
 Some new specifications for the new design are in progress but to avoid any features regressions. We need to specify the whole behavior of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
 
-**Related issue**:
-
-[https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1wfwQRJ28cXQmhGDZcW05RpD12HZ2Em3_bVvR1r9_m_k/edit?usp=sharing)
-
 **WHAT**
 
 Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with the order management. This specification should specifically define :
