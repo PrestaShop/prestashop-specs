@@ -276,8 +276,8 @@ By pressing on the link "View pack content", it opens the products from the pack
 The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
-**While editing the quantity, the total updates automatically**..
-The **Update button** saves the modification and **Cancel button** drops it.
+**While editing the quantity, the total price will be updated multipling quantity with the base price.**
+The **Update button** saves the modification and **Cancel button** drops them.
 
 **The Delete button removes the product for the list.**
 
