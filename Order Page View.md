@@ -76,7 +76,7 @@ The Invoice can be downloaded if the current or new order status has **the gener
 
 If the current or new order status has **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
 
-5. Summary of the standard refund, partial refund and return product feature
+5. **Summary of the standard refund, partial refund and return product feature**
 
 ## **Merchandise return has to be enabled if the merchant want to use the standard refund, partial refund and return product feature**
 
@@ -227,7 +227,7 @@ After selecting the droplist selection, the prefilled text is still editable.
 
 Using the prefilled message, writing the message from scratch, the user sends it by clicking on **Send message** . It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
 
-The maximum of character in the text input is 1200 char.
+The maximum of character in the text input is 1200 char. If the merchant manages to send a message of more than 1200 characters, the message is not sent and the warning message "This field cannot be longer than 1200 characters" is displayed.
 
 **To see all the past messages**, the merchant can click on **View full conversation** to open on a popup.
 
