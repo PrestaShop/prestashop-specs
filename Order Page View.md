@@ -194,6 +194,12 @@ The customer information such as **the email, the date of the account registered
 
 The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redirect to the full details customer page.
 
+If the customer is a guest:
+The fields "account registered" and "total spent" are hidden.
+Below the customer name, "Guest" in grey (Open sans semibold 14px #6C868E) is displayed.
+
+The button to transform a guest inoto a customer is removed. The feature is still available on the customer page. The order is not the place to handle customer management. It was removed to not encourage the merchant to transform Guest to a Customer account by letting a button on the order page.
+
 **Shipping and Invoice address**
 
 Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
