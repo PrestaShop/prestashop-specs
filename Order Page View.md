@@ -96,7 +96,7 @@ To harmonize the behaviors, we put the specific custom edition into the partial 
 
 If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refund and then enter a seleced refund amount per product line. The maximum refundable amount is written bellow all the amount input in tax included.
 
-By default, the quantity entered has 0 pre-filled. To validate a partial refund, the user must have selected a minimum quantity of 1. The maximum refund is set per total of products. The limitation of the refund does not take into account the amount paid by the customer partial or total of the order. 
+By default, the entered quantity has 0 pre-filled. To release a partial refund, the user must have selected a minimum quantity of 1. The maximum refund is determined by the product totals. The limitation of the refund does not take into account the amount paid whether it is partially or totally paid by the customer. 
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
