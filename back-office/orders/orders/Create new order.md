@@ -75,12 +75,8 @@ The currency dropdown converts the base price and the total price in the product
 
 ## III. Voucher
 
-search bar
-add new voucher
-voucher table (name, description value and delete button)
-
 When creating a manual order in the back-office, the merchant can :
-- Add paid products 
+- Add products to sell or product already sold 
 - Add cart rules associated with the cart 
 - Define all elements of the order (address, order status, type of payment, etc.)
 
