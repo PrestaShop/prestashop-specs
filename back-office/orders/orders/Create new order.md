@@ -39,7 +39,7 @@ The card's footer has 2 buttons:
 
 Each old cart and order can be previewed by pressing on the **Details button** or used as a base for the new order by pressing the button **Use**. The **Use button** clears all fulfilled inputs and selected options to replace them with the data from the old cart or order.
 
-!!!!ADD SPECIFIC ON WHAT IS CLEARED AND REPLACED!!!!
+ADD SPECIFIC ON WHAT IS CLEARED AND REPLACED
 
 **Change button** can be pressed at anytime in the order creation. It displays **the search bar and "Add new customer" button** to select an new customer in a new blank order (clears all fulfilled inputs and selected options).
 
@@ -170,15 +170,11 @@ If I have a paid product, and the same product, but gifted, in my cart, I should
 
 You are not allowed to delete a gift product from the cart, it’s only possible by removing the associated cart rule.
 
-
-
 ## IV. Order's Addresses 
 
-- Dropdown 
-- Edit 
-Add new address
-Here you can define addresses for delivery and invoice  
-And even create a new address thanks to an iframe of the page addresses > add new 
+The Addresses block displays 2 droplists: for the delivery adress and for the invoice.
+The droplist displays all the adresse related to the customer. 
+
 
 3) Add a customer
 You can add a customer if you click on the button "add a customer". It will open an iframe. If you create a customer here then you will have a page to create an order where the customer created is selected (check step The customer that you chose is highlighted in green)
