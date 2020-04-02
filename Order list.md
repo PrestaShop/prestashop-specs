@@ -1,11 +1,11 @@
 # SPECS LISTING ORDER PAGE
 
 
-## 1.    When there is 0 commandes
+## 1.    When there are 0 orders
 
-The empty state card appears ONLY when there is no value (by default or created). It can also reappear IF the merchant decides to remove every existing value in the table.
+[WAINTING FOR DESIGN]
 
-https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
+The empty state card appears ONLY when there is no value (by default or created).
 
 ## 2.    Header
 
@@ -26,7 +26,7 @@ After clicking on it, the is a redirection to the import page in advanced parame
 
 3) Show SQL query
 
-After clicking on it, the sql query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
 There are two buttons:
 - Close: After clicking on it, the modal is closed
@@ -38,7 +38,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ### Bulk actions drop-down
 
-This dropdown is enabled only if many orders are selected, otherwise it's disabled.
+This dropdown is enabled only if many orders are selected, otherwise, it's disabled.
 
 There are 2 options:
 
@@ -46,7 +46,7 @@ There are 2 options:
 
 After clicking on it, a modal opens and displays a drop-down list of order statuses.
 
-Pressing the button "Updates status" will apply the status on the selected orders.
+Pressing the button "Updates status" will apply the status to the selected orders.
 
 2) **Open in a new tabs**
 
@@ -71,10 +71,10 @@ When the mouse hovers over command, the symbol of the drop-down list is displaye
 When the user clicks only the down arrow, it will display the order preview. The order preview is composed of the invoice details information, shipping details, information, Carrier details information (Carrier name + Tracking ID when available) and the product list. 
 The opened order line becomes blueish.
 
-![Capture d’écran 2019-10-16 à 10 35 46](https://user-images.githubusercontent.com/27484094/66902352-d1152180-f000-11e9-8214-5a24c7cc8653.png)
+![Capture d’écran 2019-10-16 à 10 35 46](https://user-images.githubusercontent.com/27484094/66902352-d1152180-f000-11e9-8214-5a24c7cc8653.png)
 
-The product list displays on each line the product name, reference, stock location, quantity, taxes price and total price for the product.
-The total price follows the customer group configuration. If the customer group displays with or without tax will, it impacts the amount in the total column and add the related label "tax ecluded" or "tax included".
+The product list displays on each line the product name, reference, stock location, quantity, tax price and total price for the product.
+The total price follows the customer group configuration. If the customer group displays with or without tax will, it impacts the amount in the total column and add the related label "tax excluded" or "tax included".
 
 The list can only be displayed for a maximum of 10 products. 
 If the order contains more than 10 products, the remaining products are counted and displayed in the "..." button (X more)" button at the end of the list. 
@@ -91,16 +91,16 @@ The preview has to be easily customizable for modules and specifics development
 
 - **Delivery**: it's possible to filter by Country
 
-- **Customer (Customer First and Last name)**: it's possible search or to sort by alphabetic order
+- **Customer (Customer First and Last name)**: it's possible to search or to sort by alphabetic order
 
-- **Total**: The total is diplayed with tax included in the currency paid by the customer. it's possible to sort it by asc or desc or to search a specfic amount.
+- **Total**: The total is displayed with tax included in the currency paid by the customer. it's possible to sort it by asc or desc or to search a specific amount.
 
 - **Payment**: it's possible to sort by quantity asc or desc and search by quantity min & max
 
-- **Status**: it's possible filter by the status.
+- **Status**: it's possible to filter by the status.
 
 When the mouse hovers over command, the symbol of the drop-down list is displayed in the label of the status of the command next to the status name.
-When the user clicks anywhere on the label the drop-down list, all statuses is displayed.
+When the user clicks anywhere on the label the drop-down list, all statuses are displayed.
 Selecting one of the order statuses updates the order status with the one selected.
 
 - **Date**: it's possible to sort the date by asc or desc or select a specific period.
@@ -137,5 +137,4 @@ When "all shops" is selected, all the orders should be displayed from all the sh
 
 When a group of shops is selected, only the orders belonging to the shops of this group are displayed.
 
-When a specific shop is selected, only the orders belonging of this shop are displayed.
-
+When a specific shop is selected, only the orders belonging to this shop are displayed.
