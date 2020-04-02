@@ -124,7 +124,7 @@ Add/Edit currency inputs:
 * Symbol \*  \(mandatory\)
 * ISO code \*  \(mandatory\)
 * Decimals
-* Exchange rate \(1.00 by default\)
+* Exchange rate \(1.00 by default if it is an alternative currency\)
 
 The Symbol, Currency name, ISO code and Exchange rate are mandatory to save an official currency or a custom one.
 
@@ -171,10 +171,10 @@ All the following fields can be edited:
 * Currency name
 * Currency Symbol
 * ISO code \(only for custom currencies\)
-* Decimals \(2 by default\)
-* Exchange rate \(1 by default\)
+* Decimals \(2 by default \)
+* Exchange rate \(1 by default if it is an alternative currency\)
 
-Bellow these fields, a reset button is available to put back the initial content of all the fields. The button is hidden for custom currency.
+Bellow the language listing, a reset button is available to put back the initial content of all the fields. The merchant has to accept the modal confirmation to restore the configuration. The button is hidden for custom currency.
 
 Clicking on the save button, it saves the new currency and redirects to Currencies List. The cancel button redirects to Currencies List but does'nt save the currency.
 
