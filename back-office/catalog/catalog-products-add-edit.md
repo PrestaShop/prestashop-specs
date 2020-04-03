@@ -22,7 +22,11 @@ The third step is to detail the multistore behavior.
 
 ## 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>
 
-If I filled something in a tab and I change the product type (from example from virtual to standard), whether I saved or not, then what I had filled in the tab (example virtual product tab) is kept for the fields which are displayed again in the equivalent tab (for example quantity for a standard product)
+If I filled something in a tab and I try to click on another tab, a silent autosave is done:
+When we detect a click on another tab, we trigger the save. If it works, we open the new tab and display a success message "Update successfull". If it fails, we display a warning message to user: "Unable to update settings"
+\([issue 18461](https://github.com/PrestaShop/PrestaShop/issues/18461)\)  
+
+If I filled something in a tab and I change the product type (from example from virtual to standard), then what I had filled in the tab (example virtual product tab) is kept for the fields which are displayed again in the equivalent tab (for example quantity for a standard product)
 
 ### Elements in all tabs \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14770)\]
 
@@ -320,8 +324,8 @@ A drop-down next to the field is displayed when there are several languages inst
 
 **Edit combinations**:
 
-* **Next combination button**: It allows to navigate between combinations. It doesn't appear for the last combination. There should be an autosave each time the user click on the button.
-* **Previous combination button**: It allows to navigate between combinations. It doesn't appear for the first combination. There should be an autosave each time the user click on the button.
+* **Next combination button**: It allows to navigate between combinations. It doesn't appear for the last combination. There should be an autosave each time the user click on the button. \([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
+* **Previous combination button**: It allows to navigate between combinations. It doesn't appear for the first combination. There should be an autosave each time the user click on the button.\([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
 * **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
