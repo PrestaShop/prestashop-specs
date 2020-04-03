@@ -16,7 +16,7 @@ The **order statuses** list displays all the order statuses with their :
 *   **name with their color label,**
 *   **icon (to be removed after migration since it is not used anymore),**
 *   **send email to the customer,**
-*   **delivery,**
+*   **in transit,**
 *   **invoice,**
 *   **email template,**
 *   **edit button.**
@@ -49,7 +49,7 @@ When **enabled**, a** drop-down menu appears on the bottom of the option** to le
 *   **Attach a delivery slip PDF to an email**. Send an email to the customer with the delivery slip in PDF format attached.
 *   **Set the order as shipped.** Be careful: once an order is set as "shipped", it cannot be set back to the previous status.
 *   **Set the order as paid.** Same here: once an order is set as "paid", it cannot be set back to the previous status.
-*   **Show delivery PDF.** Displays the delivery PDF. **(Need an investigation of the impact on the core, the wording seems wrong. The option is more telling that the label impact the product location,as to say that the product is out of the stock)**
+*   **Set the order as in transit.** Displays the delivery PDF.
 
 Next to the label name and email template preview, there is a drop-down to select the language the user want to edit or view the information.
 
