@@ -23,7 +23,7 @@ The third step is to detail the multistore behavior.
 ## 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>
 
 If I filled something in a tab and I try to click on another tab, a silent autosave is done:
-When we detect a click on another tab, we trigger the save. If it works, we open the new tab and display a success message "Update successfull". If it fails, we display a warning message to user: "Unable to update settings"
+When we detect a click on another tab, we trigger the save. If it works, we open the new tab and display a success message "Settings successfully saved". If it fails, we display a warning message to user: "Settings cannot be saved"
 \([issue 18461](https://github.com/PrestaShop/PrestaShop/issues/18461)\)  
 
 If I filled something in a tab and I change the product type (from example from virtual to standard), then what I had filled in the tab (example virtual product tab) is kept for the fields which are displayed again in the equivalent tab (for example quantity for a standard product)
