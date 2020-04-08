@@ -27,15 +27,18 @@ As you can see in the second example above, both categories and products can hav
 For products, categories and CMS pages, this is done directly in their own configuration page. For all other pages, friendly urls can be updated in Traffic & SEO > SEO & URLs.
 
 When rewriting the URL after the ID (of the product, the category, or the page), there should be an automatic redirection to the canonical URL. So if a link is :
-entered without www, it should redirect to www IF it is domain shop is correctly defined with www.
-entered with the wrong link rewrite text, it should redirect to the correct link. 
+- entered without www, it should redirect to www IF it is domain shop is correctly defined with www.
+- entered with the wrong link rewrite text, it should redirect to the correct link. 
 Nevertheless, there are some specific behaviours for products (with and without combinations), which are detailed in the paragraph dedicated to products below.
+
+When editing in the back-office the rewriting part of the element (category, cms, product, etc.) and refreshing the page on front-office, there should be an automatic redirection to the new URL with the new rewriting. 
+For product with combinations, there should be an automatic redirection to the same combination with the new rewriting.
 
 2 specific cases : 
 - When changing primary domain name, the friendly urls should be automatically reindexed. The #11375 issue related to this has been fixed in 1.7.5.0.
 - When using multishop, it should correctly redirect to the subdomain.
 
-* _Schema of PrestaShop URL (displayed only if friendly URLs are enabled)_
+_Schema of PrestaShop URL (displayed only if friendly URLs are enabled)_
 
 By default, route to pages are the following :
 - Route to products : {category:/}{id}{-:id_product_attribute}-{rewrite}{-:ean13}.html
