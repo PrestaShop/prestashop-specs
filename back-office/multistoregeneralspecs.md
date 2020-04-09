@@ -10,6 +10,7 @@ Thus, this project aims at specifying the current and expected behaviour when th
 
 ### Shop association block
 
+The shop association block is displayed when you add or edit something.<br/>
 The shop association block displays all groups and all shops.<br/>
 Checkboxes allows to select / unselect groups and shops.<br/>
 It's possible to expand / collapse the wall tree and expand / collapse each group<br/>
@@ -65,7 +66,7 @@ Checkboxes allow:
 - to enabled selected fields / toggles
 - to apply a different configuration for the selected store or group
 - to submit only the selected fields / toggles
-- the merchant to see which parameters have a different value for the selected store or group
+- the merchant to see which parameters have different(s) value(s) for the selected store or group
 
 **Configurations pages with checkboxes**
 
