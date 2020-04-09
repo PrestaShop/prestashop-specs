@@ -8,6 +8,70 @@ Thus, this project aims at specifying the current and expected behaviour when th
 
 ## SPECIFICATIONS
 
+### Shop & shop group color
+
+While creating a shop or a group, the user can select a color thanks to a colorpicker.<br/>
+This color will be displayed in the multistore header for the selected shop or shop group.<br/>
+This color will be also displayed before the name of each shop / group in the context drop-down.
+
+**Shop creation**
+
+The colorpicker with the label "Shop color" is displayed under the "Shop name" field.
+There is tooltip for this colorpicker: "Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600")’ in Admin.Catalog.Help
+"It will apply to the multistore header to underline your shop context."
+
+**Shop group creation**
+
+The colorpicker with the label "Shop group color" is displayed under the "Shop group name" field.
+There is tooltip for this colorpicker: "Current tooltip: ‘Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600").’ in Admin.Catalog.Help
+"It will only apply to this group of shops, each store keeps its individual color."
+
+
+### Multistore header
+
+On each pages, when the multistore feature is enabled and if many shops are created, a multistore header is displayed.<br/>
+The multistore header contains many things listed below:
+
+**Color**
+This header takes the color of the selected context:<br/>
+- The all shops context is blue and this color can't be changed by the user.<br/>
+- The shop group color can be configured while creating the group<br/>
+- The shop color can be configured while creating the shop.
+
+**Name of the selected context**
+The name of the selected context is displayed, it can be:
+- All shops
+- A shop group name
+- A shop name
+
+**View my shop link**
+When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
+
+**Context drop-down**
+
+In the multistore header, there is a context drop-down allowing to select the context.
+
+In the drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
+There is a placeholder: "Search shop name"<br/>
+As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
+The results are displayed in a frame below the search field. <br/>
+The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
+If the user choose one of the listed results, it is automatically written in the search field and selected as context.
+
+The options listed in this drop-down are:
+- All shops with a link to select it as context
+- The shop groups names with a link to select the group as context
+- The shops names with a link to select the shop as context
+
+The colors of the shop and of the shop groups are displayed before each options.
+
+If the shop URL is configured, a "view my shop" link is displayed after each shop name.<br/>
+It opens the front-office of the corresponding shop.
+
+If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
+It opens the store page edition.
+
+
 ### Shop association block
 
 The shop association block is displayed when you add or edit something.<br/>
@@ -59,6 +123,7 @@ The category will be associated only with the shop selected.
 
 Checkboxes are displayed in a specific shop context and in a group context <br/>
 They are not displayed in all shops context <br/>
+They are displayed before each fields / toggles / parameters unless if an exception is defined in the specs of the page<br/>
 When checkboxes are not selected, the fields or toggles are disabled.
 
 Checkboxes allow:
@@ -68,8 +133,11 @@ Checkboxes allow:
 - to submit only the selected fields / toggles
 - the merchant to see which parameters have different(s) value(s) for the selected store or group
 
-An information message is displayed on all pages where there are checkboxes, to indicate what they are used for.
-This information message can be closed and will not be displayed again after.
+A bulk checkbox allows to select / unselect all checkboxes.
+
+An information message is displayed on all pages where there are checkboxes, to indicate what they are used for.<br/>
+This information message can be closed and will not be displayed again after.<br/>
+"If you want to apply specific settings to a store or a group of shops, you need to select the parameter to modify, bring your modifications and then save."
 
 **Configurations pages with checkboxes**
 
@@ -103,3 +171,24 @@ This information message can be closed and will not be displayed again after.
 -  Orders > Invoices
 -  Orders > Credit Slips
 -  Orders > Delivery Slips
+
+
+### Specific settings drop-down
+
+This drop-down is displayed only in all shops context and only for parameters that have been customized in one or many specific shops.
+
+**Search bar**
+In the specific settings drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
+There is a placeholder: "Search shop name"<br/>
+As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
+The results are displayed in a frame below the search field. <br/>
+The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
+If the user choose one of the listed results, it is automatically written in the search field and selected as context.
+
+In the specific settings drop-down there are:
+- The shop groups names with a link to select it as context
+- The shops names with a link to select it as context
+
+Next to each shop name, there is a mention:
+- Inherited if the parameter has the same value as in all shops
+- Customized if the parameter has a different value in a shop
