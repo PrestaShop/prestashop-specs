@@ -33,18 +33,21 @@ On each pages, when the multistore feature is enabled and if many shops are crea
 The multistore header contains many things listed below:
 
 **Color**
+
 This header takes the color of the selected context:<br/>
 - The all shops context is blue and this color can't be changed by the user.<br/>
 - The shop group color can be configured while creating the group<br/>
 - The shop color can be configured while creating the shop.
 
 **Name of the selected context**
+
 The name of the selected context is displayed, it can be:
 - All shops
 - A shop group name
 - A shop name
 
 **View my shop link**
+
 When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
 
 **Context drop-down**
@@ -178,6 +181,7 @@ This information message can be closed and will not be displayed again after.<br
 This drop-down is displayed only in all shops context and only for parameters that have been customized in one or many specific shops.
 
 **Search bar**
+
 In the specific settings drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
 There is a placeholder: "Search shop name"<br/>
 As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
