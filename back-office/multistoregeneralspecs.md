@@ -68,6 +68,9 @@ Checkboxes allow:
 - to submit only the selected fields / toggles
 - the merchant to see which parameters have different(s) value(s) for the selected store or group
 
+An information message is displayed on all pages where there are checkboxes, to indicate what they are used for.
+This information message can be closed and will not be displayed again after.
+
 **Configurations pages with checkboxes**
 
 -  Advanced Parameters > Administration
