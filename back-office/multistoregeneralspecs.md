@@ -10,22 +10,9 @@ Thus, this project aims at specifying the current and expected behaviour when th
 
 ### Shop & shop group color
 
-While creating a shop or a group, the user can select a color thanks to a colorpicker.<br/>
+While creating a shop or a group, the user can select a color as described in the specs to setup the multistore<br/>
 This color will be displayed in the multistore header for the selected shop or shop group.<br/>
-This color will be also displayed before the name of each shop / group in the context drop-down.
-
-**Shop creation**
-
-The colorpicker with the label "Shop color" is displayed under the "Shop name" field.
-There is tooltip for this colorpicker: "Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600")’ in Admin.Catalog.Help
-"It will apply to the multistore header to underline your shop context."
-
-**Shop group creation**
-
-The colorpicker with the label "Shop group color" is displayed under the "Shop group name" field.
-There is tooltip for this colorpicker: "Current tooltip: ‘Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600").’ in Admin.Catalog.Help
-"It will only apply to this group of shops, each store keeps its individual color."
-
+It will be also displayed before the name of each shop / group in the context drop-down.
 
 ### Multistore header
 
