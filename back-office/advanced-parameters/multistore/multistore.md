@@ -1,6 +1,6 @@
 # SPECS TO SETUP THE MULTISTORE
 
-As a merchant I need to be able to create many store
+As a merchant I need to be able to create many stores
 
 ## WHAT
 
