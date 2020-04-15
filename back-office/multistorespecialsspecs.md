@@ -65,7 +65,7 @@ But a language can be created for only one shop or a group with the shop associa
 - Advanced parameters > Multistore > Add new shop
 - Advanced parameters > Multistore > Add new URL
 
-### List of pages for specific case 4) If a group or a specific shop is selected, some fields are disabled and don’t have checkboxes allowing to enable them
+### List of pages & fields for specific case 4) If a group or a specific shop is selected, some fields are disabled and don’t have checkboxes allowing to enable them
 
 - Design > Images settings<br/>
 List of these fields: 
@@ -80,3 +80,28 @@ List of these fields:
   - Time zone
   - Language identifier
   - Country identifier
+  
+- Shop parameters > General > General<br/>
+List of these fields: 
+  - Increase front-office security
+  - Enable multistore
+  
+- Shop parameters > Traffic & SEO > Referrers<br/>
+List of these fields: 
+  - Save direct traffic?
+  
+- Advanced parameters > Administration<br/>
+List of these fields: 
+  - Automatically check for module updates
+  - Check the coolie’s IP address
+  - Lifetime of front office cookies
+  - Lifetime of back office cookies
+  
+- Advanced parameters > Team > Employees<br/>
+List of these fields: 
+  - Memorize the language used in admin panel forms
+  - Password regeneration
+  
+- Advanced parameters > Database > SQL Manager<br/>
+List of these fields: 
+  - Select your default file encoding
