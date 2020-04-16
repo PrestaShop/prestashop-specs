@@ -25,8 +25,9 @@ Display an information message on these pages: "Note that this page is available
 4)  If a group or a specific shop is selected, some fields are disabled and don’t have checkboxes allowing to enable them. <br/>
 A message is displayed when the user hovers these fields: "You can modify this parameter in all shops context only. Switch context to enable it."
 
-5) The action is not possible or the listing isn't accessible in all shops or in a group context.<br/>
-A specific information message is displayed in these pages
+5) The page isn't displayed in all shops or in a group context.<br/>
+The page is displayed only when a specific shop is selected<br/>
+Display an information message on these pages: "Note that this page is available in a single shop context only. Switch context to work on it."
 
 ### List of pages for specific case 1) "Add new” actions only enabled in a specific shop context
 
@@ -105,3 +106,9 @@ List of these fields:
 - Advanced parameters > Database > SQL Manager<br/>
 List of these fields: 
   - Select your default file encoding
+  
+### List of pages for specific case 5) The page is displayed only when a specific shop is selected
+
+- Design > Position
+- Payment > Payment methods
+- Payment > Preferences
