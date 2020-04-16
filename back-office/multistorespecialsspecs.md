@@ -9,7 +9,7 @@ Here is the specials behaviors. You can find general specs in back-office/multis
 
 ### List of specific cases
 
-There are the 4 main specific cases:
+There are the 5 main specific cases:
 
 1) “Add new” action is not possible (button disabled) in all shops or in a group context, this action is only enabled in a specific shop context.<br/>
 Display a message when the user hovers the "add new" button: "You can use this feature in a single shop context only. Switch context to enable it."
@@ -112,3 +112,21 @@ List of these fields:
 - Design > Position
 - Payment > Payment methods
 - Payment > Preferences
+
+### Other pages with specific behaviors
+
+- International > Translations<br/>
+Translations are not related to the shop and are changed for all shops, no matter the shop selected in the context.<br/>
+When a language is added, it’s only for the shop(s) selected in the context.<br/>
+When a language is exported, it’s not related to the shop selected as it’s for the theme selected<br/>
+When a language is copied, it’s not related to the shop selected as it’s for the theme selected<br/>
+
+- Shop parameters > Traffic & SEO > SEO & URLs > Pages listing<br/>
+When all shops or a group is selected, the listing isn’t displayed and an information message is displayed: “Note that the list of your pages is available in a single shop context only. Switch context to work on it.”
+
+- Shop parameters > Traffic & SEO > SEO & URLs > Set shop URL block<br/>
+A message is displayed: “The multistore option is enabled. If you want to change the URL of your shop, you must go to the "Multistore" page under the "Advanced Parameters" menu.”
+
+- Advanced parameters > Email > Test your email configuration block<br/>
+If a group or a specific shop is selected, the field “Send a test email to” is enabled and don’t have checkbox.
+
