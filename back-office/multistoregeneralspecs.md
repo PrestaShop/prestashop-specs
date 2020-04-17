@@ -23,8 +23,12 @@ The multistore header contains many things listed below:
 
 This header takes the color of the selected context:<br/>
 - The all shops context is blue and this color can't be changed by the user.<br/>
-- The shop group color can be configured while creating the group<br/>
-- The shop color can be configured while creating the shop.
+- The shop group color can be configured while creating or editing the group<br/>
+- The shop color can be configured while creating or editing the shop.
+
+If the shop or the group selected doesn't have yet a color configured, the default color is grey.<br/>
+In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition.<br/>
+The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refresh or return on this page later.
 
 **Name of the selected context**
 
@@ -53,13 +57,16 @@ The options listed in this drop-down are:
 - The shop groups names with a link to select the group as context
 - The shops names with a link to select the shop as context
 
-The colors of the shop and of the shop groups are displayed before each options.
+The colors of each shops and groups are displayed before each options.<br/>
+When the user hovers the color, a tooltip is displayed "edit color"<br/>
+The user can click on the color to change it<br/>
+It opens the store's or group's page edition.
 
 If the shop URL is configured, a "view my shop" link is displayed after each shop name.<br/>
 It opens the front-office of the corresponding shop.
 
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
-It opens the store page edition.
+It opens the store's page edition.
 
 
 ### Shop association block
