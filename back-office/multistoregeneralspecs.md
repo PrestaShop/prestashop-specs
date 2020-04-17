@@ -133,7 +133,7 @@ Checkboxes allow:
 A bulk checkbox allows to select / unselect all checkboxes.
 
 An information message is displayed on all pages where there are checkboxes, to indicate what they are used for.<br/>
-This information message can be closed and will not be displayed again after.<br/>
+The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refresh or return on this page later.<br/>
 "If you want to apply specific settings to a store or a group of shops, you need to select the parameter to modify, bring your modifications and then save."
 
 **Configurations pages with checkboxes**
