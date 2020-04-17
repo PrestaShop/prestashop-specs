@@ -273,6 +273,8 @@ By pressing on the link "View pack content", it opens the products from the pack
 
 **The edit button** allows the user to edit the excluded and included base price and quantity. If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax. The product quantity can be edited. Increasing or decreasing will update the stock available quantity. 
 
+Add rule min quantity
+
 The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
@@ -286,6 +288,8 @@ The **Update button** saves the modification and **Cancel button** drops them.
 At the end of the table list, there are **2 buttons**:
 
 -   **Add a product:** add a row on the table list with a search bar on the product name column. The merchant can search for any enable product. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks).
+
+Add rule min quantity
 
 [Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
