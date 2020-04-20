@@ -27,7 +27,7 @@ This header takes the color of the selected context:<br/>
 - The shop color can be configured while creating or editing the shop.
 
 If the shop or the group selected doesn't have yet a color configured, the default color is grey.<br/>
-In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition.<br/>
+In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition: "Customize your multistore header, follow the link to pick a color for this shop context" in Admin.Navigation.Header<br/>
 The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refresh or return on this page later.
 
 **Name of the selected context**
