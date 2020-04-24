@@ -52,7 +52,7 @@ A shop must be in a group and can only be in one group.
 
 When a shop is created, many fields are displayed:
 - Shop name
-- Shop color: colorpicker **only from 1.7.8**
+- Shop color: colorpicker **only from 1.7.8** <br/>
 There is tooltip for this colorpicker: "Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600")’ in Admin.Catalog.Help<br/>
 "It will apply to the multistore header to underline your shop context."
 - Shop group: Allow to select the shop group of the shop
