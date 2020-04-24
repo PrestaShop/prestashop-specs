@@ -3,40 +3,40 @@
 
 # **User Story:**
 
-# As a merchant, I need to be able to manage all my orders online and manual one.
+# As a merchant, I need to be able to manage all my orders processed on my website.
 
-As merchant managing order is essential for my e-commerce, I need to be able to:
+As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
 
--   Check the order’s product to prepare it
+-   Check the order’s products to prepare it
 -   Manage the order’s progress,
 -   Edit the customer information or send him messages,
--   To print his invoice,
+-   Print his invoice,
 -   Handle payment methods,
--   to follow my shipping through activities,
--   Returns and refunds
+-   Follow my shipping through activities,
+-   Manage returns and refunds
 
 **WHY**
 
-The Add order page _(Orders > Orders > View button)_ is expected to be migrated to Symfony for the 1.7.7 version and will be reworked for better user experience.
+The order view page _(Orders > Orders > View button)_ is expected to be migrated to Symfony for the 1.7.7 version and will be reworked for improved merchant productivity and user experience.
 
-Some new specifications for the new design are in progress but to avoid any features regressions. We need to specify the whole behavior of this page to make it easier to compare the new scenario and avoid any new bugs and regressions.
+Some new specifications for the new design are in progress but to avoid any feature regressions in the future, we need to specify the whole behaviour of this page to make it easier to compare the new scenarios and avoid any new bugs and regressions.
 
 **WHAT**
 
-Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with the order management. This specification should specifically define :
+Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with in the order management. This specification should specifically define :
 
--   Order (order status, invoices, cancellation)
+-   Order management (order status, invoices, cancellation)
+-   Product & voucher related to the order
 -   Customer (customer card and addresses)
--   Paiement
+-   Payment & Shipping management
 -   Messages
--   Refund
--   Product & voucher
+-   Refund types and scenarios
 
 **SPECIFICATIONS**
 
 **Orders > Orders > View order**
 
-The user access to the order view page by either clicking on **the order’s row** or **the view button**.
+The user gets access to the order view page by either clicking on **the order’s row** or **the view button**.
 
 **Generic page operation - Order view**
 
@@ -44,7 +44,7 @@ On the header, we have **the order’s reference, customer’s name, total price
 
 ## I. **Action panel**
 
-**Bellow the panel’s header**, we have all the order's action button:
+**Below the panel’s header**, we have all the order's action button:
 
 -   **Update the order status**
 -   **Print order button**
