@@ -18,7 +18,7 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 
 [The second step of this document is to detail the type of each fields and error messages per tab.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#errors)
 
-The third step is to detail the multistore behavior.
+[The third step is to detail the multistore behavior.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#multistore)
 
 ## 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>
 
@@ -722,4 +722,285 @@ Here is the list of the elements of options tab:
 * **Table of suppliers**:
   * **Supplier reference**: Alphanumeric field. It should have maximum 65 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 65 characters or less.” Prohibited characters are: &lt;&gt;={}; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”
   * **Price \(tax excl.\)**: Decimal field. If you enter more than 20 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+  
+  ## 3. Multistore fields <a id="multistore"></a>
+  
+Below is the list of all fields by tabs with the current multishop behavior (it can be used in multishop / it cannot be used / it's broken) and the expected multishop behavior
 
+### Elements in all tabs
+
+* **Product name**: 
+* **Product type**: 
+* **Sales**: 
+* **Product list**:
+* **Help**: 
+* **Delete**: 
+* **Preview**: 
+* **Online**: 
+* **Offline**:     
+* **Duplicate**: 
+* **Add new product**: 
+
+### Basic settings tab 
+
+* **Simple product or with combinations**: 
+* **Reference**: 
+* **Summary**: 
+* **Description**: 
+* **Quantity**: 
+* **Price tax excl**: 
+* **Price tax incl**: 
+* **Tax rule**: 
+* **Search category**: 
+* **Select category**: 
+* **Unselect category**: 
+* **Category tree**:   
+* **Main category**: 
+* **Create a new category**: 
+* **New category name**: 
+* **Parent of the category**:  
+
+* **Image upload**: 
+* **Image order**: 
+* **Image caption**: 
+* **Cover image**: 
+* **Zoom**: 
+* **Delete**: 
+
+* **Add a feature**: 
+* **Feature pre-defined value**:
+* **Feature customized value**: 
+* **Delete feature**: 
+* **Add a brand**: 
+* **Delete a brand**: 
+* **Add a related product**: 
+* **Delete a related product**:
+* **Pack search for a product**: 
+
+**Pack quantity**
+
+* **Pack add a product**: 
+* **Pack delete a product**: 
+
+### Second tab
+
+### Quantities tab
+
+* **Quantity**: 
+* **Minimum quantity for sale**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Pack quantities**: 
+
+1\) **Decrement pack only**: 
+2\) **Decrement products in pack only**:      
+3\) **Decrement both**: 
+4\) **Default**:   
+
+* **Availability preferences, behavior when out of stock:**
+
+3 radios buttons:      
+
+1\) **Deny orders**:     
+2\) **Allow orders**: .        
+3\) **Use default behavior \(Deny orders or Allow orders\)**: 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+* **Availability date**: 
+
+### Virtual product tab
+
+* **Quantity**: 
+* **Minimum quantity for sale**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Associated files ?**: 
+  * **Browse file**: 
+  * **File name**: 
+  * **Number of allowed download**: 
+  * **Expiration date**: 
+  * **Number of days**: 
+  * **Delete file**: 
+  * **Download file**: 
+* **Availability preferences, behavior when out of stock:**
+
+3 radios buttons:
+
+1\) **Deny orders**: 
+2\) **Allow orders**: 
+3\) **Use default behavior \(Deny orders or Allow orders\)**: 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+* **Availability date**:
+
+### Combinations tab 
+
+* **Search attributes**: 
+* **Select attributes**: 
+* **Generate combinations**: 
+* **Combinations list**: 
+* **Bulk actions**:  
+
+1\) **Quantity**:           
+2\) **Cost price**:     
+3\) **Impact on weight**:      
+4\) **Impact on price (tax excl.)**: 
+5\) **Impact on price (tax incl.)**: 
+6\) **Availability date**:    
+7\) **Reference**:    
+8\) **Minimum quantity**: 
+9\) **Low stock level**: 
+10\) **Send me an email when the quantity is below or equals this level**:      
+11\) **Delete combinations**: 
+
+* **Availability preferences, behavior when out of stock**: 
+* **3 radios buttons**:      
+
+  1\) Deny orders: 
+  2\) Allow orders: 
+  3\) Use default behavior \(Deny orders or Allow orders\): 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+
+**Edit combinations**:
+
+* **Quantity**: 
+* **Availability date**: 
+* **Min. quantity for sale**: 
+* **Référence**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Impact on price \(tax excl.\)**: 
+* **Impact on price \(tax incl.\)**: 
+* **Final retail price**: 
+* **Ecotax \(tax incl.\)**:      
+* **Impact on price per unit \(tax excl.\)**: 
+* **Impact on weight**: 
+* **Impact on additional shipping fees**: 
+* **ISBN code**: 
+* **EAN-13 or JAN barcode**: 
+* **UPC barcode**: 
+* **MPN**:    
+* **Images**: 
+
+### Shipping tab 
+
+* **Width**: 
+* **Height**: 
+* **Depth**:  
+* **Weight**:     
+* **Delivery time**:    
+
+  1\) **None**:          
+  2\) **Default delivery time**:   
+  3\) **Specific delivery time to this product**: 
+  
+* **Delivery time of in-stock products**:
+* **Delivery time of out-of-stock products with allowed orders**: 
+* **Additional shipping fees**:
+* **Available carriers**: 
+
+### Pricing tab 
+
+* **\(Retail\) price tax excl ecotax included**: 
+* **\(Retail\) price tax incl ecotax included**: 
+* **Tax rule**: 
+* **Manage tax rule**: 
+* **Display the "On sale!" flag on the product page, and on product listings**:
+* **Final retail price banner**: 
+* **Price per unit tax excl**: 
+* **Unity field**: 
+* **Ecotax tax incl**: 
+* **Net turnover excluding tax**: 
+* **Cost price tax excl**:      
+* **Add a specific price**: 
+  * **Currencies**: 
+  * **Countries**: 
+  * **Groups**: 
+  * **Customers**: 
+  * **Combinations**: 
+  * **Available from**: 
+  * **Available to**: 
+  * **Starting at**: 
+  * **Product price tax excl**:
+  * **Leave initial price**: 
+  * **Apply a discount of**: 
+  * **Apply a discount in**:
+  * **Apply a discount**:
+  * **Apply**: 
+  * **Cancel**: 
+* **List of specific prices & catalog price rules**: 
+* **Edit a specific price**: 
+* **Delete a specific price**:
+* **Priorities**: 
+* **Apply to all products**:
+
+### SEO tab
+
+* **SEO preview**: 
+* **Meta title**: 
+* **Meta description**: 
+* **Friendly URL**: 
+* **Indexation by search engines**: 
+* **Reset URL**: 
+* **Information message**: 
+* **Indexation by search engines**: 
+* **Redirection when offline**: 
+Dropdown with 5 options:         
+
+1\) **Permanent redirection to a category \(301\)**:        
+2\) **Temporary redirection to a category \(302\)**:     
+3\) **Permanent redirection to a product \(301\)**:          
+4\) **Temporary redirection to a product \(302\)**:    
+5\) **No redirection \(404\)**: 
+
+* **Target category**: 
+* **Target product**: 
+
+### Options tab 
+
+* **Visibility**: Drop-down with 4 options.  
+
+  1\) **Everywhere**:      
+  2\) **Catalog only**:     
+  3\) **Search only**:     
+  4\) **Nowhere**:      
+
+* **Available for order**: 
+* **Show price**: 
+* **Web only**: 
+* **Tags**: 
+* **Condition**: 
+* **Display condition on product page**: 
+* **ISBN**: 
+* **EAN-13 or JAN barcode**: 
+* **UPC barcode**: 
+* **MPN**: 
+* **Add a customization field**:
+  * **Label**: 
+  * **Type**:
+  * **Delete**: 
+  * **Required**: 
+* **Attach a new file**: 
+  * **Choose files**: 
+  * **Title**: 
+  * **Description**: 
+  * **Add**: 
+  * **Cancel**: 
+* **Suppliers**: 
+  * **Information message about suppliers**: 
+  * **Choose the suppliers associated with this product**: 
+  * **Default supplier**: 
+  * **Supplier reference\(s\)**: 
+  * **Information message about supplier reference\(s\)**: 
+  * **Table of suppliers**:
+    * **The product name**: 
+    * **Supplier reference**: 
+    * **Price \(tax excl.\)**: 
+    * **Currency**: 
