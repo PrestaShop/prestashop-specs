@@ -241,26 +241,26 @@ The maximum of character in the text input is 1200 char. If the merchant manages
 
 ## IV. **Product panel**
 
-Bellow the action button on the right, the product panel displays **the order’s products into the table list** showing:
+Below the action button on the right, the product panel displays **the order’s products into the table list** showing:
 
 -   **the product’s image,**
--   **product name (composed of the name, combination name and reference),**
--   **stock location,** if one of the product has one
+-   **product name (with its name, combination name and reference),**
+-   **stock location,** if one of the products has one
 -   **base price with tax included,**
 -   **quantity,**
 -   **available quantity,**
 -   **total with tax included,**
--   **and 2 action button edit and delete.**
+-   **and 2 action buttons : edit and delete.**
 
-**When the product has customization**, a row is added bellow the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
+**When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
 [popin displaying the products from the pack](/img/customization.png)
 
-**When the product is a pack of product**, a link is added below the product name to show all the products in a popin. 
+**When the product is a pack of products**, a link is added below the product name to show all the products in a popin. 
 
 [Link in the product row](/img/view20%pack20%content.png)
 
-By pressing on the link "View pack content", it opens the products from the pack in a popin:
+By pressing on the link "View pack content", it shows all the products from the pack in a popin:
 
 [Popin displaying the products from the pack](/img/pack20%content.png)
 
@@ -269,9 +269,51 @@ By pressing on the link "View pack content", it opens the products from the pack
 
 [Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
 
-**The quantity** is colored in a dark grey background if there are more than 2 quantities.
+**The quantity** is colored in a dark grey background if there are at least 2 quantities.
 
-**The edit button** allows the user to edit the excluded and included base price and quantity. If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax. The product quantity can be edited. Increasing or decreasing will update the stock available quantity. 
+**Possible actions**
+In an existing order (until it gets the order status “Processing in progress”), it is possible to perform actions on the order’s products and discounts. Merchants can : 
+- add new products to the order
+- Remove products from the order
+- Modify elements of existing products
+- add new cart rules to the order
+
+
+1) Add new products 
+
+When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
+- the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
+- the quantity
+The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+
+- Offer free shipping for this product
+- Associate the product to an existing or new invoice
+
+[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
+
+
+**Specific scenario** : adding a product which is already available in the order
+When the merchant wants to add more quantities of the same product, there are 2 options :
+- Edit the product quantity to add some items
+- Add a new product with the same reference as the one already in the order
+In this second scenario, a new product line will be created, resulting in 2 different lines for the same product. 
+
+2) Remove products from the order
+
+Deleting one or several products is very easy : a remove icon is available to remove one or several quantities of a paid product. Current bug : if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.
+ 
+**Specific scenarios** : when a product in the cart is a gift product (from a cart rule)
+Note that it is not possible to delete a gift product from the cart, it’s only possible by removing the associated cart rule.
+
+Furthermore, If the merchant has a paid product, and the same product, but gifted, in the cart, he should not have a Remove button available on the product line. The remove button only appears when there is no longer gift products on the same product line.
+
+**A confirmation pop-up appears after clicking on the Delete button.**
+
+3) Edit products already in the order
+
+When clicking on the edit button of a product line, the user is allowed to edit :
+- The product base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax. ex : If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax.
+- The quantity of the product. Behaviours are the same as when merchants add new products. Increasing or decreasing will update the stock available quantity. 
 
 The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
@@ -279,15 +321,21 @@ The merchant is warned if he edits the price of the product with a specific pric
 **While editing the quantity, the total price will be updated multipling quantity with the base price.**
 The **Update button** saves the modification and **Cancel button** drops them.
 
-**The Delete button removes the product for the list.**
 
-**A confirmation pop-up appears after clicking on the Update button or the Delete button.**
+These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below : 
+- If the product has a specific price. In this situation, if applicable, then when adding this product to the order (or adding quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price should be applied.
 
-At the end of the table list, there are **2 buttons**:
+- If the product has a Minimum quantity for sale higher than 1, defined in the Product quantity tab. In this situation, when trying to add a product with less than the minimum quantity, an error will be displayed with the required minimum quantity. Then, when editing this quantity, the rule remains unchanged. 
 
--   **Add a product:** add a row on the table list with a search bar on the product name column. The merchant can search for any enable product. If the desired product has combinations, a drop list can appear below the search bar. After selecting the product, the user can edit if needed the base price tax excluded or tax included and the quantity. The quantity input is an input type number that decreases the available quantity when the user increases the quantity. If the quantity selected is higher than the stocks, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks).
+- If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order. 
 
-[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
+- If a cart rule is associated with a product :
+
+    1/ If the cart rule specifically applies a reduction on a product
+    2/ If the cart rule adds a free gift to the order
+
+
+4) Add a new cart rule
 
 -   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
 
@@ -298,6 +346,8 @@ The vouchers will be added on the table list displaying the discount name, value
 [Carts rules list](https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied)
 
 **If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices it will be applied.**
+
+
 
 The below the product panel, there is the order's summary:
 
