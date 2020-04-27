@@ -271,7 +271,8 @@ By pressing on the link "View pack content", it shows all the products from the 
 
 **The quantity** is colored in a dark grey background if there are at least 2 quantities.
 
-**Possible actions**
+**Possible actions:**
+
 In an existing order (until it gets the order status “Processing in progress”), it is possible to perform actions on the order’s products and discounts. Merchants can : 
 - add new products to the order
 - Remove products from the order
