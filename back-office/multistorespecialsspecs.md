@@ -130,3 +130,7 @@ A message is displayed: “The multistore option is enabled. If you want to chan
 - Advanced parameters > Email > Test your email configuration block<br/>
 If a group or a specific shop is selected, the field “Send a test email to” is enabled and don’t have checkbox.
 
+- Catalog > Products 
+
+- Catalog > Products > Add / edit
+
