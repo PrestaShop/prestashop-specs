@@ -726,20 +726,22 @@ Here is the list of the elements of options tab:
   ## 3. Multistore fields <a id="multistore"></a>
   
 Below is the list of all fields by tabs with the current multishop behavior (it can be used in multishop / it cannot be used / it's broken) and the expected multishop behavior
-- It can be used in multishop: The field may have the same or a different value between several stores
-- It cannot be used in multishop: The field has the same value between several stores
+- It can be used in multishop: The field or parameter may have the same or a different value between several stores
+- It cannot be used in multishop: The field or parameter has the same value between several stores
 - It's broken: There is an issue, the field isn't working as it should
 
 ### Elements in all tabs
 
 * **Product name**: It can be used in multishop
 * **Product type**: It cannot be used in multishop 
-* **Delete**: 
-* **Preview**: 
-* **Online**: 
-* **Offline**:     
-* **Duplicate**: 
-* **Add new product**: 
+* **Delete**: It can be used in multishop: the product is deleted only for the selected context (all shops / group / specific shop)
+* **Preview**: It can be used in multishop: the product is displayed in the selected shop
+* **Online / Offline**: It can be used in multishop: the product can be enabled for a shop and disabled for another
+* **Duplicate**: It can be used in multishop: the product is duplicated only in the selected shop. **This button is not displayed in all shops context.**
+* **Add new product**: It can be used in multishop: the product is added only for the selected context.<br/>
+You can't add or edit a product in a group context, only a message is displayed on the page: "You can't add or edit a product in this shop context: select a shop instead of a group of shops."<br/>
+When you add or edit a product in "all shops" context, an information message is displayed: "You are in a multistore context: any modification will impact all your shops, or each shop of the active group."
+
 
 ### Basic settings tab 
 
@@ -793,18 +795,18 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 * **Send me an email when the quantity is below or equals this level**: 
 * **Pack quantities**: 
 
-1\) **Decrement pack only**: 
-2\) **Decrement products in pack only**:      
-3\) **Decrement both**: 
-4\) **Default**:   
+1) **Decrement pack only**: 
+2) **Decrement products in pack only**:      
+3) **Decrement both**: 
+4) **Default**:   
 
 * **Availability preferences, behavior when out of stock:**
 
 3 radios buttons:      
 
-1\) **Deny orders**:     
-2\) **Allow orders**: .        
-3\) **Use default behavior \(Deny orders or Allow orders\)**: 
+1) **Deny orders**:     
+2) **Allow orders**: .        
+3) **Use default behavior \(Deny orders or Allow orders\)**: 
 
 * **Label when in stock**: 
 * **Label when out of stock \(and back order allowed\)**: 
@@ -829,9 +831,9 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 
 3 radios buttons:
 
-1\) **Deny orders**: 
-2\) **Allow orders**: 
-3\) **Use default behavior \(Deny orders or Allow orders\)**: 
+1) **Deny orders**: 
+2) **Allow orders**: 
+3) **Use default behavior \(Deny orders or Allow orders\)**: 
 
 * **Label when in stock**: 
 * **Label when out of stock \(and back order allowed\)**: 
@@ -845,24 +847,24 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 * **Combinations list**: 
 * **Bulk actions**:  
 
-1\) **Quantity**:           
-2\) **Cost price**:     
-3\) **Impact on weight**:      
-4\) **Impact on price (tax excl.)**: 
-5\) **Impact on price (tax incl.)**: 
-6\) **Availability date**:    
-7\) **Reference**:    
-8\) **Minimum quantity**: 
-9\) **Low stock level**: 
-10\) **Send me an email when the quantity is below or equals this level**:      
-11\) **Delete combinations**: 
+1) **Quantity**:           
+2) **Cost price**:     
+3) **Impact on weight**:      
+4) **Impact on price (tax excl.)**: 
+5) **Impact on price (tax incl.)**: 
+6) **Availability date**:    
+7) **Reference**:    
+8) **Minimum quantity**: 
+9) **Low stock level**: 
+10) **Send me an email when the quantity is below or equals this level**:      
+11) **Delete combinations**: 
 
 * **Availability preferences, behavior when out of stock**: 
 * **3 radios buttons**:      
 
-  1\) Deny orders: 
-  2\) Allow orders: 
-  3\) Use default behavior \(Deny orders or Allow orders\): 
+  1) Deny orders: 
+  2) Allow orders: 
+  3) Use default behavior \(Deny orders or Allow orders\): 
 
 * **Label when in stock**: 
 * **Label when out of stock \(and back order allowed\)**: 
@@ -897,9 +899,9 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 * **Weight**:     
 * **Delivery time**:    
 
-  1\) **None**:          
-  2\) **Default delivery time**:   
-  3\) **Specific delivery time to this product**: 
+  1) **None**:          
+  2) **Default delivery time**:   
+  3) **Specific delivery time to this product**: 
   
 * **Delivery time of in-stock products**:
 * **Delivery time of out-of-stock products with allowed orders**: 
@@ -954,11 +956,11 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 * **Redirection when offline**: 
 Dropdown with 5 options:         
 
-1\) **Permanent redirection to a category \(301\)**:        
-2\) **Temporary redirection to a category \(302\)**:     
-3\) **Permanent redirection to a product \(301\)**:          
-4\) **Temporary redirection to a product \(302\)**:    
-5\) **No redirection \(404\)**: 
+1) **Permanent redirection to a category \(301\)**:        
+2) **Temporary redirection to a category \(302\)**:     
+3) **Permanent redirection to a product \(301\)**:          
+4) **Temporary redirection to a product \(302\)**:    
+5) **No redirection \(404\)**: 
 
 * **Target category**: 
 * **Target product**: 
@@ -967,10 +969,10 @@ Dropdown with 5 options:
 
 * **Visibility**: Drop-down with 4 options.  
 
-  1\) **Everywhere**:      
-  2\) **Catalog only**:     
-  3\) **Search only**:     
-  4\) **Nowhere**:      
+  1) **Everywhere**:      
+  2) **Catalog only**:     
+  3) **Search only**:     
+  4) **Nowhere**:      
 
 * **Available for order**: 
 * **Show price**: 
