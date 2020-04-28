@@ -732,11 +732,8 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 
 ### Elements in all tabs
 
-* **Product name**: 
-* **Product type**: 
-* **Sales**: 
-* **Product list**:
-* **Help**: 
+* **Product name**: It can be used in multishop
+* **Product type**: It cannot be used in multishop 
 * **Delete**: 
 * **Preview**: 
 * **Online**: 
@@ -746,10 +743,10 @@ Below is the list of all fields by tabs with the current multishop behavior (it 
 
 ### Basic settings tab 
 
-* **Simple product or with combinations**: 
-* **Reference**: 
-* **Summary**: 
-* **Description**: 
+* **Simple product or with combinations**: It can be used in multishop
+* **Reference**: It cannot be used in multishop 
+* **Summary**: It can be used in multishop
+* **Description**: It can be used in multishop
 * **Quantity**: 
 * **Price tax excl**: 
 * **Price tax incl**: 
