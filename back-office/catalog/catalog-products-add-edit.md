@@ -726,6 +726,9 @@ Here is the list of the elements of options tab:
   ## 3. Multistore fields <a id="multistore"></a>
   
 Below is the list of all fields by tabs with the current multishop behavior (it can be used in multishop / it cannot be used / it's broken) and the expected multishop behavior
+- It can be used in multishop: The field may have the same or a different value between several stores
+- It cannot be used in multishop: The field has the same value between several stores
+- It's broken: There is an issue, the field isn't working as it should
 
 ### Elements in all tabs
 
