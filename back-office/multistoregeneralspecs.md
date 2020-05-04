@@ -82,16 +82,9 @@ The shop association block allows to choose for which store(s) you want to assoc
 When you add something, the shop(s) selected in the context are automatically checked in the shop association block.<br/>
 But it's possible to select / uncelect shops, no matter the context selected.
 
-When you edit something, you can unselect shops previously selected and therefore disassocate it from these shops.<br/>
-And you can also, select shops not previously selected and therefore associate it with these shops.
-
-Example:
-You want to add a category in all shops. You select all shops context and click on add category.<br/>
-In the shop association block, all stores are selected.<br/>
-You create the category. It will be associated with all stores.<br/>
-Finally you want this category in only one store.<br/>
-You edit the category (no matter the context) and you select only one store in the shop association block.<br/>
-The category will be associated only with the shop selected.
+When you edit something, you can unselect shop(s) previously selected and therefore disassocate it from these shops.<br/>
+And you can also, select shop(s) not previously selected and therefore associate it with these shops.<br/>
+If you unselect all the checkboxes (all the shops) and save, then a warning message is displayed: "Your changes will not be applied, if you want to delete this element for all your stores, you should do it from the listing" 
 
 **Add / edit pages with shop association block**
 
