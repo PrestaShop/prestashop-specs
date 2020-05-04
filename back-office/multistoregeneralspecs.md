@@ -84,7 +84,7 @@ But it's possible to select / uncelect shops, no matter the context selected.
 
 When you edit something, you can unselect shop(s) previously selected and therefore disassocate it from these shops.<br/>
 And you can also, select shop(s) not previously selected and therefore associate it with these shops.<br/>
-If you unselect all the checkboxes (all the shops) and save, then a warning message is displayed: "Your changes will not be applied, if you want to delete this element for all your stores, you should do it from the listing" 
+If you unselect all the checkboxes (all the shops) and save, then a warning message is displayed: "Your changes will not be applied, if you want to delete this element for all your stores, you should do it from the listing" **only from 1.7.8**
 
 **Add / edit pages with shop association block**
 
