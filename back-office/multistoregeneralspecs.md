@@ -109,6 +109,22 @@ If you unselect all the checkboxes (all the shops) and save, then a warning mess
 - Advanced parameters > Webservice > Add / edit
 
 
+### Actions in the lisitngs (grids)
+
+**Delete action**
+
+If an element (category, attribute, feature ...) is associated with several shops, then if I delete it from the listing, it will be disassociated for the selected context(s) and deleted if the all shops context is selected. 
+
+**Enable/disable**
+
+Work in progress
+
+**Position column**
+
+If the listing has a position column, then it should be displayed only in a specific shop context.
+Changing the position of a block is possible only in a specific shop context.
+
+
 ### Checkboxes
 
 Checkboxes are displayed in a specific shop context and in a group context <br/>
