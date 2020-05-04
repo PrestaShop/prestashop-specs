@@ -34,10 +34,10 @@ If I filled something in a tab and I change the product type (from example from 
 
 Some elements are displayed in all tabs. Here is the list of those elements 
 
-* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.       
-Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language.      
+* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.<br/> 
+Only the name in the employee language must be filled. If the name of the product is not indicated for the other languages, after saving the name of the product in the employee's language is retrieved and displayed for all the other languages. <br/>
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed.      
-If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
+Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 * **Product type**: Drop-down with 3 : Standard product, Pack of products, Virtual product.       
 Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
 * **Sales**: This link redirect to Stats &gt; product detail and is open in a new browser tab
