@@ -1,8 +1,9 @@
-## Specifications for Catalog Price rule page
+# Specifications for Catalog Price rule page
 
 User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
 
-**WHY** 
+### WHY
+
 The Add/edit catalog price rule page \(Catalog &gt; Discounts &gt; Catalog price rules\) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours \(especially for complex rules\) are not well specified which may introduce regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test every scenario and avoid any new bugs.
 
 Furthermore, we have identified different issues and bugs related to this page that we should fix during the migration :
@@ -12,19 +13,20 @@ Furthermore, we have identified different issues and bugs related to this page t
 - #9977
 - #9867
 
-**WHAT** 
+### WHAT
+
 Thus, this project aims at specifying the current and expected behaviour for every scenario a merchant could be dealing with when creating a specific type of discount for his/her customers. This specification should specifically define : 
 - Condition groups behaviour and compatibility 
 - Compatibility between rules 
 - Discounts display on front office
 
-**SPECIFICATIONS**
+### SPECIFICATIONS
 
 The first step of this document is to detail global and generic expected behaviour for this page, both on back office and front office. The second step gives a specific definition of scenarios and behaviours involving conditions groups. The last step details specs for cases with several rules.
 
 ## Generic page operation
 
-**Rule creation / edition on Back office
+### Rule creation / edition on Back office
 
 When creating or editing a catalog price rule, the first step is to create the generic conditions of the rules. Some conditions or elements are mandatory, others are optional, according to the expected target audience. Here is the list of those elements :
 
@@ -37,14 +39,15 @@ When creating or editing a catalog price rule, the first step is to create the g
 - From / to : the user can choose to create a temporary discount, with a start date and/or an end date. When clicking on one field, the merchant is able to configure the day, month and year but also the hour and minute. Those 2 fields are optional. 
 - Reduction type : the discount can be either in amount \(-X€\) or in percentage \(-X%\). By default the discount is preconfigured in amount.
 
-Note : there are currently 2 issues when choosing the percentage type. 
-1- It does not take into account if it is tax included or excluded. When choosing the percentage type, we should remove the option tax included / excluded, as it is for cart rules. 
-2- It is possible to create a percentage discount &gt; 100%. I think we should limit it to 100%.
+_Note : there are currently 2 issues when choosing the percentage type._
+
+1. It does not take into account if it is tax included or excluded. When choosing the percentage type, we should remove the option tax included / excluded, as it is for cart rules. 
+2. It is possible to create a percentage discount &gt; 100%. I think we should limit it to 100%.
 
 - Reduction with or without taxes : the discount can be considered tax excluded \(expected by default\) or tax included. 
 - Reduction : in this field, the merchant needs to define the discount value. This is a mandatory field, by default its value is 0.
 
-**Impact on Front office**
+### Impact on Front office
 
 - Discount applied on quantity = 1
 
@@ -70,7 +73,7 @@ If the initial price has been modified, it modifies the final price on each prod
 
 Adding one or several condition groups Once the basic conditions have been defined, it is possible to add one or several other condition groups to refine the rule. When clicking on “Add a new condition group”, a new block “Condition Group 1” is added above.
 
-Those conditions are related to : 
+**Those conditions are related to :**
 - Category : the merchant can choose to apply discount only on products which belong to the chosen category. 
 - Brand : the merchant can choose to apply a discount on a specific brand only 
 - Supplier : same as above 
@@ -89,7 +92,7 @@ There does not seem to be any restriction in the number of condition groups whic
 
 Note : currently, it is possible to create a condition group even though no criterion is selected, which does not make sense. We should disable the ‘Add a new condition group’ CTA when the current group is empty.
 
-**Adding several rules**
+### Adding several rules
 
 Currently when several rules apply to the same product, it seems that there are different behaviours. We need to clarify them.
 
@@ -105,7 +108,7 @@ When I select a product which complies both rules, this happens in Front office 
 
 The save 10€ label is automatically displayed, which is the expected behaviour. The discount grid is displayed on the product page according to “Rule 2” which is the expected behaviour.
 
-Results : If I add only one product, I will get a 10€ discount. If I add 2 products, then the discount will be of 5€ for each product. There is no combination of both rules.
+**Results :** If I add only one product, I will get a 10€ discount. If I add 2 products, then the discount will be of 5€ for each product. There is no combination of both rules.
 
 Ex 2 : Same example but with 2 rules with the same minimum quantity. After a few tests, it seems that only the oldest rule will apply to the product. Other rules will have no effect on the product. Shouldn’t this be explained in the rules listing ?
 
