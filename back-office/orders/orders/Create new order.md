@@ -178,3 +178,15 @@ The droplist displays all the adresse related to the customer.
 
 3) Add a customer
 You can add a customer if you click on the button "add a customer". It will open an iframe. If you create a customer here then you will have a page to create an order where the customer created is selected (check step The customer that you chose is highlighted in green)
+
+
+## V. Payment and status configuration
+
+#### Describe the bug
+
+When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
+
+#### Expected behaviour
+
+When the user selects a payment method, it does not affect the list. The default value of the status droplist is "Choose a status" or empty value (wording still to be defined). 
+So to create the order, the user has to select an order status. An error message is thrown if the user has not chosen a status.
