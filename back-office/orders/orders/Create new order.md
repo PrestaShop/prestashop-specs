@@ -188,5 +188,9 @@ When the user chooses a payment method, the create order page assigns an automat
 
 #### Expected behaviour
 
-When the user selects a payment method, it does not affect the list. The default value of the status droplist is "Choose a status" or empty value (wording still to be defined). 
-So to create the order, the user has to select an order status. An error message is thrown if the user has not chosen a status.
+
+The default value of the payment method in the droplist is "Choose a payment method" or empty value (wording still to be defined). When the user selects a payment method, it does not affect the list. 
+The default value of the status droplist is "Choose a status" or empty value (wording still to be defined). 
+So to create the order, the user has to select an order status. An error message is thrown if the user has not chosen a status or payment method.
+
+
