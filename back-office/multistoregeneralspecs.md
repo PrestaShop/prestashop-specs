@@ -117,10 +117,10 @@ If an element (category, attribute, feature ...) is associated with several shop
 
 **Enable/disable**
 
-Work in progress
+If an element (category, attribute, feature ...) is associated with several shops, then if I enable or disable it from the listing, the action will be done for the store(s) with which the item is associated and not only for the selected context. 
+When the user hovers the enable/disable icon, a tooltip is displayed "This action will be applied to the store(s) with which the item is associated" (**from 1.7.8**)
 
-**Position column**
-
+**Position column (from 1.7.8)**
 If the listing has a position column, then it should be displayed only in a specific shop context.
 Changing the position of a block is possible only in a specific shop context.
 
