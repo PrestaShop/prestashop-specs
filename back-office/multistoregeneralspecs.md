@@ -84,7 +84,7 @@ But it's possible to select / uncelect shops, no matter the context selected.
 
 When you edit something, you can unselect shop(s) previously selected and therefore disassocate it from these shops.<br/>
 And you can also, select shop(s) not previously selected and therefore associate it with these shops.<br/>
-If the merchant unselect all the checkboxes (all the shops), then an alert message in red is displayed above or below the shop association block to inform of the obligation to have at least one shop checked: "You should select at least one shop to be able to save" + the save button is disabled. **only from 1.7.8**
+If the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed above or below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. **only from 1.7.8**
 
 **Add / edit pages with shop association block**
 
@@ -118,7 +118,7 @@ If an element (category, attribute, feature ...) is associated with several shop
 **Enable/disable**
 
 If an element (category, attribute, feature ...) is associated with several shops, then if I enable or disable it from the listing, the action will be done for the store(s) with which the item is associated and not only for the selected context. 
-When the user hovers the enable/disable icon, a tooltip is displayed "This action will be applied to the store(s) with which the item is associated" (**from 1.7.8**)
+When the user hovers the enable/disable icon, a tooltip is displayed "It will apply to all stores associated with this item" (**from 1.7.8**)
 
 **Position column (from 1.7.8)**
 If the listing has a position column, then it should be displayed only in a specific shop context.
