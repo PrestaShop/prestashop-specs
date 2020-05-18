@@ -84,7 +84,7 @@ But it's possible to select / uncelect shops, no matter the context selected.
 
 When you edit something, you can unselect shop(s) previously selected and therefore disassocate it from these shops.<br/>
 And you can also, select shop(s) not previously selected and therefore associate it with these shops.<br/>
-If the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed above or below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. **only from 1.7.8**
+If the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. **only from 1.7.8**
 
 **Add / edit pages with shop association block**
 
