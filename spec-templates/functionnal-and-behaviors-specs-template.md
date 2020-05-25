@@ -252,11 +252,11 @@ Bellow the action button on the right, the product panel displays **the order’
 
 **When the product is pack of product**, a link is added bellow the product name to show all the product in an popin.
 
-[Link in the product row](/img/view20%pack20%content.png)
+[Link in the product row](/img/view-pack-content.png)
 
 By pressing on the link "View pack content", it opens the products from the pack in a popin:
 
-[Popin displaying the products from the pack](/img/pack20%content.png)
+[Popin displaying the products from the pack](/img/pack-content.png)
 
 **The pagination of the list starts when there are more than 8 products**
 **The stock location column is hidden** only when none of the products has a stock location only on the website. The column is only displayed at the corresponding pagination. If only a product on page 2 of the list has a stock location then the stock location column appears on page 2 and hidden in the other pages.
