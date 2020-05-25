@@ -98,7 +98,7 @@ In this case, wordings are sourced by analyzing all the theme's files. Since thi
 
 Translations are sourced from XLF files within the theme in its `translations/{locale_code}` directory, one per domain. These files may or may not be present.
 
-User-edited translations are stored in database. To avoid collisions, theme translations must be kept associated to the theme they belong. If a theme redefines a Core translation (ie. same domain, same wording), then the redefined translation should only be used when the FO is using that theme (eg. in case of multishop with different themes for each shop, each theme should use the its own translation even if they both use the same given wording/domain pair).
+User-edited translations are stored in database. To avoid collisions, theme translations must be kept associated to the theme they belong. If a theme redefines a Core translation (ie. same domain, same wording), then the redefined translation should only be used when the FO is using that theme (eg. in case of multishop with different themes for each shop, each theme should use the its own translation even if they both use the same given wording/domain pair). Redefined core translations should only be saved if they're different than the ones defined when not in the theme's context.
 
 ##### Installed module translations
 
