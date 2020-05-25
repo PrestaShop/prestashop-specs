@@ -97,7 +97,7 @@ When not possible, template can be adapted, but it is important to have the info
 
 The repository has 4 main directories, `back-office`, `front-office`, `broader-topics` and `modules`.
 
-- The `back-office` directory mostly follows the back-office structure. Most files contains the specifications for a BO page.
+- The `back-office` directory mostly follows the back office structure. Most files contain the specifications for a BO page.
 
 - The `front-office` directory lists the pages in the front office and shared behaviors throughout the pages.
 
