@@ -99,7 +99,7 @@ The repository has 4 main directories, `back-office`, `front-office`, `broader-t
 
 - The `back-office` directory mostly follows the back-office structure. Most files contains the specifications for a BO page.
 
-- The `front-office` directory list the pages in the front-office and shared behaviors throughout the pages.
+- The `front-office` directory lists the pages in the front office and shared behaviors throughout the pages.
 
 - The `broader-topics` directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO.
 
