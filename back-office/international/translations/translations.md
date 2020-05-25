@@ -10,7 +10,7 @@
 
 ## Modify translations section
 
-This section can be used the user can modify all translations from PrestaShop.
+This section allows the user to modify all translations used in PrestaShop.
 
 In order to modify translations, the user must first choose which translation type they want to edit, then the language they want to edit it for (eg. French).
 
