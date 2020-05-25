@@ -18,18 +18,18 @@ The translation types are as follows:
 
 - Back office translations
 - Front office translations
-- Installed module translations
+- Installed modules translations
 - Email translations
 - Other translations
 
-Once you click on the "Edit" button, you go to the translation interface.
+Once you click on the "Modify" button, you go to the translation interface.
 
 ### Particular cases
 
 - When the user chooses "Front office translations", a list of all the installed themes except "classic" + a special item called "Core translations" is displayed as well.
-- When the user chooses "Installed module translations", a list of all the installed modules is displayed as well.
-- When the user chooses "Email translations", a list containing "Subject" and "Message body" is displayed as well.
-  - If the user chooses "Message body", a list of all the installed themes + "Core" is displayed as well.
+- When the user chooses "Installed modules translations", a list of all the installed modules is displayed as well.
+- When the user chooses "Email translations", a list containing "Subject" and "Body" is displayed as well.
+  - If the user chooses "Body", a list of all the installed themes + "Core" is displayed as well.
   - This type sends the user to the legacy translation interface instead of the one described below.
 
 ### Translation interface
@@ -48,7 +48,7 @@ Admin
 └── Global
 ```
 
-The tree above represents the following tranlsation domains:
+The tree above represents the following translation domains:
 
 - Admin.Actions
 - Admin.AdvParameters.Feature
@@ -88,7 +88,7 @@ If the same wording is translated in both core files and database, the database 
 
 This translation type has two different subcases:
 
-**i. If the user chooses "Core translations"**
+**i. If the user chooses "Core translations".**
 
 The behavior is exactly like "back office translations", only that translation domains are filtered by domains starting with **"Shop"** instead.
 
