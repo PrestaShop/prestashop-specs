@@ -6,7 +6,7 @@
 - Translations: wordings translated to a given language.
 - Translation domain: named logic group of wordings. Any given wording is attached to one and only one translation domain. Two identical wordings attached to two different translation domains are considered as two different wordings.
 - Translation catalogue: A collection of translation domains containing translations for a given language, stored physically in a support like files or on a database.
-- Default catalogue: The master translation catalogue that contains the wordings but not its translations.
+- Default catalogue: The master translation catalogue that contains the wordings but not its translations. It's [included in the GitHub project](https://github.com/PrestaShop/PrestaShop/tree/1.7.6.0/app/Resources/translations/default).
 
 ## Modify translations section
 
