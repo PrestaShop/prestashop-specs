@@ -197,3 +197,35 @@ In the specific settings drop-down there are:
 Next to each shop name, there is a mention:
 - "Inherited" if the parameter has the same value as in all shops
 - "Customized" if the parameter has a different value in a shop
+
+**Configurations pages with specific settings drop-down**
+
+-  Advanced Parameters > Administration
+-  Advanced Parameters > Email
+-  Advanced Parameters > Team > Employees
+-  Advanced Parameters > Database > SQL Manager
+-  Advanced Parameters > Database > Backup
+-  Advanced Parameters > Logs
+-  Advanced Parameters > Webservice
+-  Shop Parameters > General > Preferences
+-  Shop Parameters > General > Maintenance
+-  Shop Parameters > Order Setting
+-  Shop Parameters > Product Settings
+-  Shop Parameters > Customer Settings > Customers
+-  Shop Parameters > Customer Settings > Groups
+-  Shop Parameters > Contact > Stores
+-  Shop Parameters > Traffic & SEO > SEO & URLs
+-  Shop Parameters > Search
+-  International > Localization > Localization
+-  International > Localization > Geolocation
+-  International > Location > Countries
+-  International > Taxes > Taxes
+-  Shipping > Preferences
+-  Design > Theme & Logo > Theme & Logo
+-  Design > Email Theme 
+-  Design > Image Settings
+-  Customer Service > Customer Service
+-  Customer Service > Merchandise Returns
+-  Orders > Invoices
+-  Orders > Credit Slips
+-  Orders > Delivery Slips
