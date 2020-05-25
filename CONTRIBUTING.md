@@ -79,7 +79,7 @@ Example:
 `orders-orders-list.md`
 
 
-This allows to easily where the page is located, especially as some pages have the same name but are located in different places, with a totally different purpose.
+This allows to easily spot where the page is located, especially as some pages have the same name but are located in different places, with a totally different purpose.
 
 ### tree organization
 When submitting a PR, please locate the file in the corresponding folder. If you are not sure, don't worry, the product team will rewiew it.
@@ -93,6 +93,5 @@ Example: `orders-orders-list-quick-preview.png`
 ## What does it mean to be a contributor?
 Using Github to contribute allows to identify contributors to the specifications project thanks to their Github profile. Any Commit and Pull Request indicates and store its auhtor.
 It is a way to officialy prove your contribution.
-
 
 
