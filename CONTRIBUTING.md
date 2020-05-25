@@ -2,7 +2,7 @@
 
 PrestaShop is an open-source e-commerce solution. Everyone is welcome and even encouraged to contribute with their own improvements to the specifications.
 
-**This repository is dedicated to the specifications of the PrestaShop project.** 
+**This repository is dedicated to the specifications of the PrestaShop project.**
 
 To contribute to the source code, see the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop).
 
@@ -68,6 +68,26 @@ This is a ticket-tracker for PrestaShop-specs, and the best place to write a sug
 That's it: you have contributed to this open source project! Congratulations!
 
 Thank you for your help in making PrestaShop even better!
+
+
+## Rules to follow when creating specs
+### File Naming
+Use dashes `-` for separators in images names and use lowercase.To help navigating through specifications please follow the structure:
+`{{parent category}}-{{parent category}}-{{page name}}`
+Example:
+`catalog-products-add-edit.md`
+`orders-orders-list.md`
+
+
+This allows to easily where the page is located, especially as some pages have the same name but are located in different places, with a totally different purpose.
+
+### tree organization
+When submitting a PR, please locate the file in the corresponding folder. If you are not sure, don't worry, the product team will rewiew it.
+
+
+### images naming
+Use dashes `-` for separators in images names and use lowercase. Follow the pages structure. Indicate the feature name in the image.
+Example: `orders-orders-list-quick-preview.png`
 
 
 ## What does it mean to be a contributor?
