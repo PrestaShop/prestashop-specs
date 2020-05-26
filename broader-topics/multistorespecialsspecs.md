@@ -18,7 +18,7 @@ Display a message when the user hovers the "add new" button: "You can use this f
 In this case, the element is added for all shops, no matter the context selected<br/>
 Display an information message on these pages: "Note that this feature is available in all shops context only. It will be added to all your stores."
 
-3) The page can be displayed only in all shops context, the others contexts are not displayed<br/>
+3) The page can be displayed only in all shops context, the others contexts are not displayed in the header<br/>
 If the user was on another page in a specific shop context or in a group context, the all shops context is automatically selected when he/she arrives on one of theses pages.<br/>
 Display an information message on these pages: "Note that this page is available in all shops context only, this is why your context has just switched."
 
