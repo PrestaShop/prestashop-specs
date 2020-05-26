@@ -152,7 +152,7 @@ The user can close the information message. The message is closed only for the s
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
--  Shop Parameters > General > Preferences
+-  Shop Parameters > General > General
 -  Shop Parameters > General > Maintenance
 -  Shop Parameters > Order Setting
 -  Shop Parameters > Product Settings
@@ -207,7 +207,7 @@ Next to each shop name, there is a mention:
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
--  Shop Parameters > General > Preferences
+-  Shop Parameters > General > General
 -  Shop Parameters > General > Maintenance
 -  Shop Parameters > Order Setting
 -  Shop Parameters > Product Settings
