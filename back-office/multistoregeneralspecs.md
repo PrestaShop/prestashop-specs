@@ -160,6 +160,7 @@ The user can close the information message. The message is closed only for the s
 -  Shop Parameters > Customer Settings > Groups
 -  Shop Parameters > Contact > Stores
 -  Shop Parameters > Traffic & SEO > SEO & URLs
+-  Shop parameters > Traffic & SEO > Referrers
 -  Shop Parameters > Search
 -  International > Localization > Localization
 -  International > Localization > Geolocation
@@ -215,6 +216,7 @@ Next to each shop name, there is a mention:
 -  Shop Parameters > Customer Settings > Groups
 -  Shop Parameters > Contact > Stores
 -  Shop Parameters > Traffic & SEO > SEO & URLs
+-  Shop parameters > Traffic & SEO > Referrers
 -  Shop Parameters > Search
 -  International > Localization > Localization
 -  International > Localization > Geolocation
