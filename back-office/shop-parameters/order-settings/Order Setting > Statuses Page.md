@@ -95,10 +95,9 @@ It is possible to research the return status by ID or Name.
 Note that it is not possible to delete default return statuses such as Waiting for confirmation, Package received, etc. These PrestaShop return statuses can only be modified.
 
 
-**MISSING PART OF SPECIFICATIONS TO BE COMPLETED**
+# **Specific cases**
 
-- Specific cases 
-When deleting an order status or a return status, there is currently no check on the order database, to ensure that there is no order currently using this status. This can provoke errors and exceptions, on several pages : 
+When deleting an order status or a return status, there is currently no check on the order database, to ensure that there is no order currently using this status. This can provoke errors and exceptions (as described on the following issue : https://github.com/PrestaShop/PrestaShop/issues/19098), on several pages : 
   - the order history page in FO (exception)
   - the Order detail page in BO (exception)
   - the order listing page in BO (no exception, but the status is not displayed)
@@ -114,6 +113,13 @@ For order listing and detail pages in B0, this means that when a user deletes a 
 For the order history page in FO, it will stay transparent for the user, as the deleted status will still be displayed in the customer's order history.
 
 For the customer page, this improvement fixes the exception while having no other impact on the page.
+
+
+
+
+
+**MISSING PART OF SPECIFICATIONS TO BE COMPLETED**
+
 
 
 - Errors messages - In which cases there should be an error message ?
