@@ -47,6 +47,7 @@ We expect contributors to follow these instructions:
 5. Change the files in your branch. Make sure they meet our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards).
 6. Push the changed branch to your fork in your GitHub account.
 7. Create a pull request for your changes on the PrestaShop project. If you need help to make a pull request, read the GitHub help page about [creating pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+8. Wait for one of the product managers to either include your change in the codebase or comment on possible adjustments to its content.
 
 
 ### If you don't, you can also either
