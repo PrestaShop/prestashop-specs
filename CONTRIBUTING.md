@@ -41,7 +41,7 @@ We expect contributors to follow these instructions:
 ### If you feel comfortable working with Git and forking the project
 
 1. Create your GitHub account, if you do not have one already.
-2. Clone your fork to your local machine.
+2. Fork the PrestaShop project to your Github account.
 3. Create a branch in your local clone for your changes.
 4. Change the files in your branch. Make sure they meet our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards).
 5. Push the changed branch to your fork in your GitHub account.
@@ -71,4 +71,3 @@ Thank you for your help in making PrestaShop even better!
 ## What does it mean to be a contributor?
 
 Using GitHub to contribute allows to identify contributors to the specifications project thanks to their GitHub profile. Any commit and/or pull request created indicate and store its auhtor. It is a way to officially prove your contribution.
-
