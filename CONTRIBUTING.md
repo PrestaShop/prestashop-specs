@@ -42,7 +42,7 @@ We expect contributors to follow these instructions:
 
 1. Create your GitHub account, if you do not have one already.
 2. Fork the PrestaShop project to your Github account.
-3. Create a branch in your local clone for your changes.
+3. Clone your fork to your local machine.
 4. Change the files in your branch. Make sure they meet our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards).
 5. Push the changed branch to your fork in your GitHub account.
 6. Create a pull request for your changes on the PrestaShop project. If you need help to make a pull request, read the GitHub help page about creating pull requests.
