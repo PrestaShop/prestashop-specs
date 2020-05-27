@@ -21,7 +21,7 @@ Examples: you can fix typos, optimize the syntax, add visuals, more details, etc
 
 ### Add missing specifications
 
-We add and complete the specifications progressively, although a lot is missing for the moment. You can trust us, we know.
+We add and complete the specifications progressively, although a lot is missing for the moment. You can trust us, we are aware of it.
 
 So you might want to write specifications for these existing features. Here, specifications are to defined the current behavior in the latest stable version of PrestaShop.
 
@@ -71,6 +71,5 @@ Thank you for your help in making PrestaShop even better!
 ## What does it mean to be a contributor?
 
 Using GitHub to contribute allows to identify contributors to the specifications project thanks to their GitHub profile. Any commit and/or pull request created indicate and store its auhtor. It is a way to officially prove your contribution.
-
 
 
