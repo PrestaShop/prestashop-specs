@@ -18,20 +18,26 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 
 [The second step of this document is to detail the type of each fields and error messages per tab.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#errors)
 
-The third step is to detail the multistore behavior.
+[The third step is to detail the multistore behavior.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#multistore)
 
 ## 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>
+
+If I filled something in a tab and I try to click on another tab, a silent autosave is done:
+When we detect a click on another tab, we trigger the save. If it works, we open the new tab and display a success message "Settings successfully saved". If it fails, we display a warning message to user: "Settings cannot be saved"
+\([issue 18461](https://github.com/PrestaShop/PrestaShop/issues/18461)\)  
+
+If I filled something in a tab and I change the product type (from example from virtual to standard), then what I had filled in the tab (example virtual product tab) is kept for the fields which are displayed again in the equivalent tab (for example quantity for a standard product)
 
 ### Elements in all tabs \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14770)\]
 
 **As a merchant I want to always see some elements when I create or edit a product.**
 
-Some elements are displayed in all tabs. Here is the list of those elements :
+Some elements are displayed in all tabs. Here is the list of those elements 
 
-* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.       
-Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language.      
+* **Product name**: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.<br/> 
+Only the name in the employee language must be filled. If the name of the product is not indicated for the other languages, after saving the name of the product in the employee's language is retrieved and displayed for all the other languages. <br/>
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed.      
-If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
+Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.
 * **Product type**: Drop-down with 3 : Standard product, Pack of products, Virtual product.       
 Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.
 * **Sales**: This link redirect to Stats &gt; product detail and is open in a new browser tab
@@ -318,6 +324,8 @@ A drop-down next to the field is displayed when there are several languages inst
 
 **Edit combinations**:
 
+* **Next combination button**: It allows to navigate between combinations. It doesn't appear for the last combination. There should be an autosave each time the user click on the button. \([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
+* **Previous combination button**: It allows to navigate between combinations. It doesn't appear for the first combination. There should be an autosave each time the user click on the button.\([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
 * **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
@@ -484,7 +492,7 @@ This button opens a form with the following fields :
   * **Apply**: When you click on it, the specific price is created and you have a success message “Settings updated”.
   * **Cancel**: If you click on Cancel, the form with all specific prices fields is closed. If you click again on Add a specific price, every fields are reseted to their default values.
 * **List of specific prices & catalog price rules**: You see the specific price with all the details: rule, combination, currency, country, group, customer, fixed price, impact, period, from, actions \(delete, update\). Rule column contains “--” for a specific price.             
-Here are also listed the catalog prices rules. Rule column contains the name of the catalog price rule.          
+Here are also listed the catalog prices rules that apply to this product. Rule column contains the name of the catalog price rule.          
 Actions edit & delete are not displayed for a catalog price rule.
 * **Edit a specific price**: You can edit an existing specifice price. It opens a modal with all the fields described above. You can close the modal by clicking on the cross, on cancel or pushing ESC key. You can save your changes by clicking on Apply. A success message “Settings updated” is displayed.
 * **Delete a specific price**: You can delete a specific price by clicking on the trash. When you click on it, you have a modal to cancel or confirm the action.
@@ -580,7 +588,7 @@ Here is the list of the elements of options tab:
   * **Choose files**: You can browse and choose files
   * **Title**: Field with the title of the document, displayed in front-office
   * **Description**: Field with the description of the document, displayed in front-office
-  * **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. There is a checkbox allowing to check/uncheck all the files \([issue 9790](https://github.com/PrestaShop/PrestaShop/issues/9790)\) When the checkbox is checked, the file is displayed on the product page \(attachments tab\) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog &gt; Files.
+  * **Add**: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name & Type. When the checkbox is checked, the file is displayed on the product page \(attachments tab\) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog &gt; Files.
   * **Cancel**: Button to close the form
 * **Suppliers**: This part is displayed only if you have created and enabled at least one supplier. Indicating the product's supplier is not really important for customers, but it may turn out to be an essential part for the merchant’s internal management, not least when managing stock: the merchant simply needs to know who he bought the product from.
   * **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool \(see Shop Parameters &gt; Products settings\), the values you define \(price, references\) will be used in supply orders.”
@@ -714,4 +722,289 @@ Here is the list of the elements of options tab:
 * **Table of suppliers**:
   * **Supplier reference**: Alphanumeric field. It should have maximum 65 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 65 characters or less.” Prohibited characters are: &lt;&gt;={}; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”
   * **Price \(tax excl.\)**: Decimal field. If you enter more than 20 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+  
+  ## 3. Multistore fields <a id="multistore"></a>
 
+**WORK IN PROGRESS**
+
+Below is the list of all fields by tabs with the current multishop behavior (it can be used in multishop / it cannot be used / it's broken) and the expected multishop behavior
+- It can be used in multishop: The field or parameter may have the same or a different value between several stores
+- It cannot be used in multishop: The field or parameter has the same value between several stores
+- It's broken: There is an issue, the field isn't working as it should
+
+### Elements in all tabs
+
+* **Product name**: It can be used in multishop
+* **Product type**: It cannot be used in multishop 
+* **Delete**: It can be used in multishop: the product is deleted only for the selected context (all shops / group / specific shop)
+* **Preview**: It can be used in multishop: the product is displayed in the selected shop
+* **Online / Offline**: It can be used in multishop: the product can be enabled for a shop and disabled for another
+* **Duplicate**: It can be used in multishop: the product is duplicated only in the selected shop. **This button is not displayed in all shops context.**
+* **Add new product**: It can be used in multishop: the product is added only for the selected context.<br/>
+You can't add or edit a product in a group context, only a message is displayed on the page: "You can't add or edit a product in this shop context: select a shop instead of a group of shops."<br/>
+When you add or edit a product in "all shops" context, an information message is displayed: "You are in a multistore context: any modification will impact all your shops, or each shop of the active group."
+
+
+### Basic settings tab 
+
+* **Simple product or with combinations**: It can be used in multishop
+* **Reference**: It cannot be used in multishop 
+* **Summary**: It can be used in multishop
+* **Description**: It can be used in multishop
+* **Quantity**: 
+* **Price tax excl**: 
+* **Price tax incl**: 
+* **Tax rule**: 
+* **Search category**: 
+* **Select category**: 
+* **Unselect category**: 
+* **Category tree**:   
+* **Main category**: 
+* **Create a new category**: 
+* **New category name**: 
+* **Parent of the category**:  
+
+* **Image upload**: 
+* **Image order**: 
+* **Image caption**: 
+* **Cover image**: 
+* **Zoom**: 
+* **Delete**: 
+
+* **Add a feature**: 
+* **Feature pre-defined value**:
+* **Feature customized value**: 
+* **Delete feature**: 
+* **Add a brand**: 
+* **Delete a brand**: 
+* **Add a related product**: 
+* **Delete a related product**:
+* **Pack search for a product**: 
+
+**Pack quantity**
+
+* **Pack add a product**: 
+* **Pack delete a product**: 
+
+### Second tab
+
+### Quantities tab
+
+* **Quantity**: 
+* **Minimum quantity for sale**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Pack quantities**: 
+
+1) **Decrement pack only**: 
+2) **Decrement products in pack only**:      
+3) **Decrement both**: 
+4) **Default**:   
+
+* **Availability preferences, behavior when out of stock:**
+
+3 radios buttons:      
+
+1) **Deny orders**:     
+2) **Allow orders**: .        
+3) **Use default behavior \(Deny orders or Allow orders\)**: 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+* **Availability date**: 
+
+### Virtual product tab
+
+* **Quantity**: 
+* **Minimum quantity for sale**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Associated files ?**: 
+  * **Browse file**: 
+  * **File name**: 
+  * **Number of allowed download**: 
+  * **Expiration date**: 
+  * **Number of days**: 
+  * **Delete file**: 
+  * **Download file**: 
+* **Availability preferences, behavior when out of stock:**
+
+3 radios buttons:
+
+1) **Deny orders**: 
+2) **Allow orders**: 
+3) **Use default behavior \(Deny orders or Allow orders\)**: 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+* **Availability date**:
+
+### Combinations tab 
+
+* **Search attributes**: 
+* **Select attributes**: 
+* **Generate combinations**: 
+* **Combinations list**: 
+* **Bulk actions**:  
+
+1) **Quantity**:           
+2) **Cost price**:     
+3) **Impact on weight**:      
+4) **Impact on price (tax excl.)**: 
+5) **Impact on price (tax incl.)**: 
+6) **Availability date**:    
+7) **Reference**:    
+8) **Minimum quantity**: 
+9) **Low stock level**: 
+10) **Send me an email when the quantity is below or equals this level**:      
+11) **Delete combinations**: 
+
+* **Availability preferences, behavior when out of stock**: 
+* **3 radios buttons**:      
+
+  1) Deny orders: 
+  2) Allow orders: 
+  3) Use default behavior \(Deny orders or Allow orders\): 
+
+* **Label when in stock**: 
+* **Label when out of stock \(and back order allowed\)**: 
+
+**Edit combinations**:
+
+* **Quantity**: 
+* **Availability date**: 
+* **Min. quantity for sale**: 
+* **Référence**: 
+* **Stock location**: 
+* **Low stock level**: 
+* **Send me an email when the quantity is below or equals this level**: 
+* **Impact on price \(tax excl.\)**: 
+* **Impact on price \(tax incl.\)**: 
+* **Final retail price**: 
+* **Ecotax \(tax incl.\)**:      
+* **Impact on price per unit \(tax excl.\)**: 
+* **Impact on weight**: 
+* **Impact on additional shipping fees**: 
+* **ISBN code**: 
+* **EAN-13 or JAN barcode**: 
+* **UPC barcode**: 
+* **MPN**:    
+* **Images**: 
+
+### Shipping tab 
+
+* **Width**: 
+* **Height**: 
+* **Depth**:  
+* **Weight**:     
+* **Delivery time**:    
+
+  1) **None**:          
+  2) **Default delivery time**:   
+  3) **Specific delivery time to this product**: 
+  
+* **Delivery time of in-stock products**:
+* **Delivery time of out-of-stock products with allowed orders**: 
+* **Additional shipping fees**:
+* **Available carriers**: 
+
+### Pricing tab 
+
+* **\(Retail\) price tax excl ecotax included**: 
+* **\(Retail\) price tax incl ecotax included**: 
+* **Tax rule**: 
+* **Manage tax rule**: 
+* **Display the "On sale!" flag on the product page, and on product listings**:
+* **Final retail price banner**: 
+* **Price per unit tax excl**: 
+* **Unity field**: 
+* **Ecotax tax incl**: 
+* **Net turnover excluding tax**: 
+* **Cost price tax excl**:      
+* **Add a specific price**: 
+  * **Currencies**: 
+  * **Countries**: 
+  * **Groups**: 
+  * **Customers**: 
+  * **Combinations**: 
+  * **Available from**: 
+  * **Available to**: 
+  * **Starting at**: 
+  * **Product price tax excl**:
+  * **Leave initial price**: 
+  * **Apply a discount of**: 
+  * **Apply a discount in**:
+  * **Apply a discount**:
+  * **Apply**: 
+  * **Cancel**: 
+* **List of specific prices & catalog price rules**: 
+* **Edit a specific price**: 
+* **Delete a specific price**:
+* **Priorities**: 
+* **Apply to all products**:
+
+### SEO tab
+
+* **SEO preview**: 
+* **Meta title**: 
+* **Meta description**: 
+* **Friendly URL**: 
+* **Indexation by search engines**: 
+* **Reset URL**: 
+* **Information message**: 
+* **Indexation by search engines**: 
+* **Redirection when offline**: 
+Dropdown with 5 options:         
+
+1) **Permanent redirection to a category \(301\)**:        
+2) **Temporary redirection to a category \(302\)**:     
+3) **Permanent redirection to a product \(301\)**:          
+4) **Temporary redirection to a product \(302\)**:    
+5) **No redirection \(404\)**: 
+
+* **Target category**: 
+* **Target product**: 
+
+### Options tab 
+
+* **Visibility**: Drop-down with 4 options.  
+
+  1) **Everywhere**:      
+  2) **Catalog only**:     
+  3) **Search only**:     
+  4) **Nowhere**:      
+
+* **Available for order**: 
+* **Show price**: 
+* **Web only**: 
+* **Tags**: 
+* **Condition**: 
+* **Display condition on product page**: 
+* **ISBN**: 
+* **EAN-13 or JAN barcode**: 
+* **UPC barcode**: 
+* **MPN**: 
+* **Add a customization field**:
+  * **Label**: 
+  * **Type**:
+  * **Delete**: 
+  * **Required**: 
+* **Attach a new file**: 
+  * **Choose files**: 
+  * **Title**: 
+  * **Description**: 
+  * **Add**: 
+  * **Cancel**: 
+* **Suppliers**: 
+  * **Information message about suppliers**: 
+  * **Choose the suppliers associated with this product**: 
+  * **Default supplier**: 
+  * **Supplier reference\(s\)**: 
+  * **Information message about supplier reference\(s\)**: 
+  * **Table of suppliers**:
+    * **The product name**: 
+    * **Supplier reference**: 
+    * **Price \(tax excl.\)**: 
+    * **Currency**: 

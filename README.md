@@ -95,11 +95,17 @@ When not possible, template can be adapted, but it is important to have the info
 
 ## Repository tree
 
-The repository has 3 main directories, Back-office, Front-office and images.
+The repository has 4 main directories, `back-office`, `front-office`, `broader-topics` and `modules`.
 
-The `Back-office` (BO) directory mostly follows the back-office structure. Most files contains the specifications for a BO page.
+- The `back-office` directory mostly follows the back office structure. Most files contain the specifications for a BO page.
 
-The `Front-office` directory list the pages in the Front-office and shared behaviors throughout the pages.
+- The `front-office` directory lists the pages in the front office and shared behaviors throughout the pages.
+
+- The `broader-topics` directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO.
+
+- The `modules` directory includes all specifications for modules.
+
+`img` is used to store images used in the specs and `specs-templates` to store the templates.
 
 
 ## How to contribute
