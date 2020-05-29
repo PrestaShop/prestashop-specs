@@ -29,6 +29,10 @@ A message is displayed when the user hovers these fields: "You can modify this p
 The page is displayed only when a specific shop is selected<br/>
 Display an information message on these pages: "Note that this page is available in a single shop context only. Switch context to work on it."
 
+6) The page isn't displayed in a group context.<br/>
+The page is displayed only when a specific shop or all shops is selected<br/>
+Display an information message on these pages: "Note that this page is available in a single shop or in all shops context. Switch context to work on it."
+
 ### List of pages for specific case 1) "Add new” actions only enabled in a specific shop context
 
 - Order > Order > Add new order
@@ -112,6 +116,12 @@ List of these fields:
 - Design > Position
 - Payment > Payment methods
 - Payment > Preferences
+- Catalog > Stocks > Stocks
+- Catalog > Stocks > Mouvements
+
+### List of pages for specific case 6) The page is displayed only when a specific shop or all shops is selected
+
+- Catalog > Products > Add / edit product
 
 ### Other pages with specific behaviors
 
