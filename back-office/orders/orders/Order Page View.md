@@ -429,6 +429,8 @@ The below the product panel, there is the order's summary:
 -   **Taxes**
 -   **Total** in black background
 
+Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
+
 ## V. Tabs panel
 
 All the tabs are located in the same panel bellow the products list.
