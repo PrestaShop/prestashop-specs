@@ -25,12 +25,49 @@ Some new specifications for the new design are in progress but to avoid any feat
 
 Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with in the order management. This specification should specifically define :
 
--   Order management (order status, invoices, cancellation)
--   Product & voucher related to the order
--   Customer (customer card and addresses)
--   Payment & Shipping management
--   Messages
--   Refund types and scenarios
+I. Action panel
+
+1. Update the order status
+2. Print order button
+3. View invoice show button
+4. View delivery slip button
+5. Summary of the standard refund, partial refund and return product feature
+6. Partial refund button
+7. Standard Refund button
+8. Return products button
+9. Cancel products button
+10. Next/Previous button
+
+II. Customer panel
+
+1. Deleted customer
+2. Guest customer
+3. Shipping and Invoice address
+4. Private customer note
+
+III. Messages panel
+
+1. Messages display
+2. Predefined messages
+3. Sending messages
+
+IV. Products panel
+
+1. Product list
+2. Add new products 
+3. Remove products from the order
+4. Edit products already in the order
+5. Cart rule list
+6. Add a new cart rule
+7. Invoice generation
+8. Order Summary
+
+V. Tabs panel
+
+1.  Status tab
+2.  Documents tab
+3.  Shipping tab
+4.  Merchandising returns tab
 
 **SPECIFICATIONS**
 
@@ -188,11 +225,15 @@ Customer panel is divided into 3 parts:
 -   **valid orders placed on a black background**
 -   **total spend since registration on a black background.**
 
+1. **Deleted customer**
+
 When a customer is deleted:
 
 The customer information such as **the email, the date of the account registered, the valid orders placed, the total spend since registration**, shipping and invoice address drop-down button and the private note block are not displayed.
 
 The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redirect to the full details customer page.
+
+2. **Guest customer**
 
 If the customer is a guest:
 The fields "account registered" and "total spent" are hidden.
@@ -200,7 +241,7 @@ Below the customer name, "Guest" in grey (Open sans semibold 14px #6C868E) is di
 
 The button to transform a guest inoto a customer is removed. The feature is still available on the customer page. The order is not the place to handle customer management. It was removed to not encourage the merchant to transform Guest to a Customer account by letting a button on the order page.
 
-**Shipping and Invoice address**
+3. **Shipping and Invoice address**
 
 Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
 Editing an address actually creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.
@@ -213,6 +254,8 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 [Popin - Change address](https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress)
 
+4. **Private customer note**
+
 **Private customer note** is closed by default when it is empty and open bu default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
@@ -221,27 +264,36 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
 
+1. Messages display
+
 **Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date, and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
-
-Bellow the messages displayed, the user can **choose a standard message** to send. **all predefined messages** of the **order messages page** are available in a droplist to select the message to prefill **the message input text**. By default, there is no prefilled message so the droplist shows “-”. The link named **"configure predefined messages"** below the droplist is available redirect to**the order messages page** to access to the predefined messages.
-
-After selecting the droplist selection, the prefilled text is still editable.
-
-**A checkbox** is available to choose **to write a private message hidden from the customer.**
-
-Using the prefilled message, writing the message from scratch, the user sends it by clicking on **Send message** . It sends the email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
-
-The maximum of character in the text input is 1200 char. If the merchant manages to send a message of more than 1200 characters, the message is not sent and the warning message "This field cannot be longer than 1200 characters" is displayed below the text input.
 
 **To see all the past messages**, the merchant can click on **View full conversation** to open on a popup.
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
-## IV. **Product panel**
+2. Predifined messages
 
-Below the action button on the right, the product panel displays **the order’s products into the table list** showing:
+Bellow the messages displayed, the user can **choose a order message** to send into the a droplist contanning **the predefined messages** of the **order messages page**. Selecting the message prefills **the message input text**. By default, there is no prefilled message so the droplist shows “-”. below the droplist, the link named **"configure predefined messages"** is available. It redirects to**the order messages page** to access to the predefined messages.
+
+After selecting the droplist selection, the prefilled text is still editable.
+
+3. Sending messages
+
+**A checkbox** is available to choose **to write a private message hidden from the customer.**
+
+Using the prefilled message or writing the message from scratch, the user sends it by clicking on **Send message** . It sends the message by email and adds the message on the front-office on the message section of **the order historic page and an email** as presented on the screenshots below.
+
+The maximum of character in the text input is 1200 char. If the merchant manages to send a message of more than 1200 characters, the message is not sent and the warning message "This field cannot be longer than 1200 characters" is displayed below the text input.
+
+
+## IV. **Products panel**
+
+1. Product list
+
+Below the actions button and on the right of customer panel, the product panel displays **the order’s products into the table list** showing:
 
 -   **the product’s image,**
 -   **product name (with its name, combination name and reference),**
@@ -251,7 +303,7 @@ Below the action button on the right, the product panel displays **the order’s
 -   **available quantity,**
 -   **total with tax included,**
 -   **and 2 action buttons : edit and delete.**
-
+-
 **When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
 [popin displaying the products from the pack](/img/customization.png)
@@ -279,19 +331,19 @@ In an existing order (until it gets the order status “Processing in progress�
 - Modify elements of existing products
 - add new cart rules to the order
 
+Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
-1) Add new products
+2. Add new products 
 
 When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
 - the quantity
-The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The=++ product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
 
 - Offer free shipping for this product
 - Associate the product to an existing or new invoice
 
 [Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
-
 
 **Specific scenario** : adding a product which is already available in the order
 When the merchant wants to add more quantities of the same product, there are 2 options :
@@ -299,7 +351,7 @@ When the merchant wants to add more quantities of the same product, there are 2 
 - Add a new product with the same reference as the one already in the order
 In this second scenario, a new product line will be created, resulting in 2 different lines for the same product.
 
-2) Remove products from the order
+3. Remove products from the order
 
 Deleting one or several products is very easy : a remove icon is available to remove one or several quantities of a paid product. Current bug : if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.
 
@@ -310,7 +362,7 @@ Furthermore, If the merchant has a paid product, and the same product, but gifte
 
 **A confirmation pop-up appears after clicking on the Delete button.**
 
-3) Edit products already in the order
+4. Edit products already in the order
 
 When clicking on the edit button of a product line, the user is allowed to edit :
 - The product base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax. ex : If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax.
@@ -335,8 +387,21 @@ These rules apply for all types of products, with or without combinations. Never
     1/ If the cart rule specifically applies a reduction on a product
     2/ If the cart rule adds a free gift to the order
 
+5. Cart rule list
 
-4) Add a new cart rule
+The below the product panel, there is the order's summary:
+
+-   **Products total with taxes excluded**
+-   **Total shipping**
+-   **Discount** if there is any cart rule applied 
+-   **Wrapping** if there is wrapping option in the order
+-   **Taxes**
+-   **Total** in black background
+
+Condition of cart rule:
+-	temporal discount does not affe
+
+6. Add a new cart rule
 
 -   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
 
@@ -348,8 +413,13 @@ The vouchers will be added on the table list displaying the discount name, value
 
 **If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices it will be applied.**
 
+7. Invoice generation
 
+**Specific snenarios**:
+When a new invoice is created with free shipping, a discount is generated at the value of the shipping cost with the name:"[gGenerated] CartRule for Free Shipping".
+On the invoice, the discount is not diplayed. It only displays the free shipping in Shipping Costs.
 
+8. Order Summary
 The below the product panel, there is the order's summary:
 
 -   **Products total with taxes excluded**
@@ -358,8 +428,6 @@ The below the product panel, there is the order's summary:
 -   **Wrapping** if there is wrapping option in the order
 -   **Taxes**
 -   **Total** in black background
-
-Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
 ## V. Tabs panel
 
