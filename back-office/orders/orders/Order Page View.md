@@ -303,7 +303,7 @@ Below the actions button and on the right of customer panel, the product panel d
 -   **available quantity,**
 -   **total with tax included,**
 -   **and 2 action buttons : edit and delete.**
--
+
 **When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
 [popin displaying the products from the pack](/img/customization.png)
@@ -327,8 +327,8 @@ By pressing on the link "View pack content", it shows all the products from the 
 
 In an existing order (until it gets the order status “Processing in progress”), it is possible to perform actions on the order’s products and discounts. Merchants can :
 - add new products to the order
-- Remove products from the order
-- Modify elements of existing products
+- remove products from the order
+- modify elements of existing products
 - add new cart rules to the order
 
 Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
