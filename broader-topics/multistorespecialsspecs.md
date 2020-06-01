@@ -61,6 +61,7 @@ But a carrier can be created for only one shop or a group with the shop associat
 But a language can be created for only one shop or a group with the shop association block.
 - Shop parameters > Order settings > Statuses
 - Shop parameters > Order settings > Statuses > Add new order status & add new order return status
+- Advanced parameters > Performance
 - Advanced parameters > Team > Profiles
 - Advanced parameters > Team > Permissions
 - Advanced parameters > Multistore > AdminShopGroup
