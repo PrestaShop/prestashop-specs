@@ -264,7 +264,7 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
 
-1. Messages display
+1. **Messages display**
 
 **Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date, and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
 
@@ -274,13 +274,13 @@ Bellow the customer panel, you have the messages panel. **The total of the excha
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
-2. Predifined messages
+2. **Predifined messages**
 
 Bellow the messages displayed, the user can **choose a order message** to send into the a droplist contanning **the predefined messages** of the **order messages page**. Selecting the message prefills **the message input text**. By default, there is no prefilled message so the droplist shows “-”. below the droplist, the link named **"configure predefined messages"** is available. It redirects to**the order messages page** to access to the predefined messages.
 
 After selecting the droplist selection, the prefilled text is still editable.
 
-3. Sending messages
+3. **Sending messages**
 
 **A checkbox** is available to choose **to write a private message hidden from the customer.**
 
@@ -291,7 +291,7 @@ The maximum of character in the text input is 1200 char. If the merchant manages
 
 ## IV. **Products panel**
 
-1. Product list
+1. **The Product list**
 
 Below the actions button and on the right of customer panel, the product panel displays **the order’s products into the table list** showing:
 
@@ -333,7 +333,7 @@ In an existing order (until it gets the order status “Processing in progress�
 
 Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
-2. Add new products 
+2. **Add new products** 
 
 When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
@@ -349,9 +349,10 @@ The quantity input is an input type number that decreases the stock left when th
 When the merchant wants to add more quantities of the same product, there are 2 options :
 - Edit the product quantity to add some items
 - Add a new product with the same reference as the one already in the order
-In this second scenario, a new product line will be created, resulting in 2 different lines for the same product.
+In this second scenario, a new product line will be created, resulting in 2 different lines for the same product. And when the same product is added on an order, it is set at the price of the first product added. 
 
-3. Remove products from the order
+
+3. **Remove products from the order**
 
 Deleting one or several products is very easy : a remove icon is available to remove one or several quantities of a paid product. Current bug : if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.
 
@@ -362,7 +363,7 @@ Furthermore, If the merchant has a paid product, and the same product, but gifte
 
 **A confirmation pop-up appears after clicking on the Delete button.**
 
-4. Edit products already in the order
+4. **Edit products already in the order**
 
 When clicking on the edit button of a product line, the user is allowed to edit :
 - The product base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax. ex : If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax.
@@ -378,7 +379,7 @@ The **Update button** saves the modification and **Cancel button** drops them.
 These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below :
 - If the product has a specific price. In this situation, if applicable, then when adding this product to the order (or adding quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price should be applied.
 
-- If the product has a Minimum quantity for sale higher than 1, defined in the Product quantity tab. In this situation, when trying to add a product with less than the minimum quantity, an error will be displayed with the required minimum quantity. Then, when editing this quantity, the rule remains unchanged.
+- If the product has a Minimum quantity for sale higher than 1, defined in the Product quantity tab. In this situation, when trying to add a product with less than the minimum quantity, an error will be displayed with the required minimum quantity. Then, by editing this quantity, the merchant can enter any quantity, the verification is done only when adding. 
 
 - If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order.
 
@@ -387,7 +388,7 @@ These rules apply for all types of products, with or without combinations. Never
     1/ If the cart rule specifically applies a reduction on a product
     2/ If the cart rule adds a free gift to the order
 
-5. Cart rule list
+5. **Cart rule list**
 
 The below the product panel, there is the order's summary:
 
@@ -401,7 +402,7 @@ The below the product panel, there is the order's summary:
 Condition of cart rule:
 -	temporal discount does not affe
 
-6. Add a new cart rule
+6. **Add a new cart rule**
 
 -   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
 
@@ -413,13 +414,13 @@ The vouchers will be added on the table list displaying the discount name, value
 
 **If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices it will be applied.**
 
-7. Invoice generation
+7. **Invoice generation**
 
 **Specific snenarios**:
 When a new invoice is created with free shipping, a discount is generated at the value of the shipping cost with the name:"[gGenerated] CartRule for Free Shipping".
 On the invoice, the discount is not diplayed. It only displays the free shipping in Shipping Costs.
 
-8. Order Summary
+8. **Order Summary**
 The below the product panel, there is the order's summary:
 
 -   **Products total with taxes excluded**
