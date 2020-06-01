@@ -44,6 +44,8 @@ Display an information message on these pages: "Note that this page is available
 - Design > Images settings > Add new image type
 - International > Locations > States > Add new state
 - International > Taxes > Taxes > Add new tax
+- Shop parameters > Order settings > Statuses > Add new order status
+- Shop parameters > Order settings > Statuses > Add new order return status
 - Shop parameters > Customer settings > Titles > Add new title
 - Shop parameters > Traffic & SEO > SEO & URLs > Add new page
 - Shop parameters > Traffic & SEO > Search engines > Add new search engine
@@ -55,12 +57,9 @@ Display an information message on these pages: "Note that this page is available
 
 ### List of pages for specific case 3) The page can be displayed only in all shops context
 
-- Shipping > Carriers > Add new carrier <br/>
-But a carrier can be created for only one shop or a group with the shop association block.
 - International > Localization > Languages <br/>
 But a language can be created for only one shop or a group with the shop association block.
 - Shop parameters > Order settings > Statuses
-- Shop parameters > Order settings > Statuses > Add new order status & add new order return status
 - Advanced parameters > Performance
 - Advanced parameters > Team > Profiles
 - Advanced parameters > Team > Permissions
