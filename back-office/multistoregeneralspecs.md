@@ -68,6 +68,9 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's page edition.
 
+If the user tries to change context without having saved, a modal appears: "You are about to switch context. Do you want to save your modifications before?" with 2 CTA: "Save" and "Cancel"
+If the user clicks on "Save", then modifications are saved and the context is changed for the one selected
+If the user clicks on "Cancel", then modifications are not saved and the context is changed for the one selected
 
 ### Shop association block
 
