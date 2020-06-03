@@ -339,13 +339,19 @@ When clicking on Add a product, it adds a row on the table list with a search ba
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
 - the quantity
 The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The=++ product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+The minimum quantity of a product is determined by all the products of the order regardless of whether the products are separated between invoices. It allow a merchant to add a product on another invoice because the minimum quantity is respected on in the order.
+Edting the quantity of the product to a quantity less than the minimum quantity required is authorised,  the responsibility belongs to the merchant.
 
 - Offer free shipping for this product
 - Associate the product to an existing or new invoice
 
+When I add a product with a discount to an order, the discount is also added. If the discount is update the order remains the same.
+
+**Specific scenario**: Adding a product recalculates all discounts and the total price. So if I have a discount linked to a specific product for example at 40%. Then I change the discount to 50% discount. Finally, I add a new product, the discount will update and 50% discount will be applied to the order.
+
 [Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
-**Specific scenario** : adding a product which is already available in the order
+**Specific scenario**: adding a product which is already available in the order
 When the merchant wants to add more quantities of the same product, there are 2 options :
 - Edit the product quantity to add some items
 - Add a new product with the same reference as the one already in the order
@@ -374,7 +380,6 @@ The merchant is warned if he edits the price of the product with a specific pric
 
 **While editing the quantity, the total price will be updated multipling quantity with the base price.**
 The **Update button** saves the modification and **Cancel button** drops them.
-
 
 These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below :
 - If the product has a specific price. In this situation, if applicable, then when adding this product to the order (or adding quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price should be applied.
