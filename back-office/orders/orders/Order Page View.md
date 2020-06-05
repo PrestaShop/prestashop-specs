@@ -339,8 +339,15 @@ When clicking on Add a product, it adds a row on the table list with a search ba
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
 - the quantity
 The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The=++ product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+
 The minimum quantity of a product is determined by all the products of the order regardless of whether the products are separated between invoices. It allow a merchant to add a product on another invoice because the minimum quantity is respected on in the order.
 Edting the quantity of the product to a quantity less than the minimum quantity required is authorised,  the responsibility belongs to the merchant.
+
+For example, when I add a product A with a minimum quantity, if the quantity of the new product A and the current quantity are equal to or greater than the product is added. Otherwise, an error is launched: "Error! Minimum quantity of X must be added", X quantity missing to be equal to the required minimum quantity.
+
+specific scenario:
+An product when it is allowed be ordered out of stock can be added to an order.
+
 
 - Offer free shipping for this product
 - Associate the product to an existing or new invoice
@@ -351,8 +358,7 @@ When I add a product with a discount to an order, the discount is also added. If
 
 **Specific scenario**: Adding a product recalculates all discounts and the total price. So if I have a discount linked to a specific product for example at 40%. Then I change the discount to 50% discount. Finally, I add a new product, the discount will update and 50% discount will be applied to the order.
 
-**Specifique scenarios**:
-A product added in an order with a discount attached to it is added in the order as well. 
+**Specific scenarios**:A product added in an order with a discount attached to it is added in the order as well. 
 
 - In the case of a discount on the total of the order, if I add a second time this product, the discount should not be added and avoid the accumulation of discount. 
 
