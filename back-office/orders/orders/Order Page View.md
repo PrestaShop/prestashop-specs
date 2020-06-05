@@ -347,9 +347,18 @@ Edting the quantity of the product to a quantity less than the minimum quantity 
 
 When I add a product with a discount to an order, the discount is also added. If the discount is update the order remains the same.
 
+[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
+
 **Specific scenario**: Adding a product recalculates all discounts and the total price. So if I have a discount linked to a specific product for example at 40%. Then I change the discount to 50% discount. Finally, I add a new product, the discount will update and 50% discount will be applied to the order.
 
-[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
+**Specifique scenarios**:
+A product added in an order with a discount attached to it is added in the order as well. 
+
+- In the case of a discount on the total of the order, if I add a second time this product, the discount should not be added and avoid the accumulation of discount. 
+
+- In the case of reduction to a specific product of a fixed amount, the discount is applied only once despite the number of quantities of the same product in the cart and the total per user strictly greater than 1.
+
+- In the case of a discount to a specific product by percentage, the discount applies to the total amount of the product taking into account the quantity, i.e. the discount = quantity of the product * %. But only applies once in the basket even if the merchant can still use the discount on other carts (total user for each user > 0).
 
 **Specific scenario**: adding a product which is already available in the order
 When the merchant wants to add more quantities of the same product, there are 2 options :
@@ -390,7 +399,7 @@ These rules apply for all types of products, with or without combinations. Never
 
 - If a cart rule is associated with a product :
 
-    1/ If the cart rule specifically applies a reduction on a product
+    1/ If the cart rule specifically applies a reduction on a product, it uses the rule defined for when the product is added in the order.
     2/ If the cart rule adds a free gift to the order
 
 5. **Cart rule list**
