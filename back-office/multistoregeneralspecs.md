@@ -15,11 +15,13 @@ This color will be displayed in the multistore header for the selected shop or s
 It will be also displayed before the name of each shop / group in the context drop-down.
 
 ### Multistore header (only from 1.7.8)
+DESIGN:https://invis.io/QPWKQY5DV79#/410364467_All_Shops_0
 
 On each page, when the multistore feature is enabled and if many shops are created, a multistore header is displayed.<br/>
 The multistore header contains many things listed below:
 
 **Color (only from 1.7.8)**
+DESIGN: https://invis.io/QPWKQY5DV79#/412654655_Contexte_Candy
 
 This header takes the color of the selected context:<br/>
 - The all shops context is blue and this color can't be changed by the user.<br/>
@@ -42,6 +44,7 @@ The name of the selected context is displayed, it can be:
 When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
 
 **Context drop-down**
+DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
 
 In the multistore header, there is a context drop-down allowing to select the context.
 
@@ -61,6 +64,7 @@ The colors of each shop and group are displayed before each option.<br/>
 When the user hovers the color, a tooltip is displayed "edit color"<br/>
 The user can click on the color to change it<br/>
 It opens the store's or group's page edition.
+The selected context as a check icon in front of the name. On hover, the check is replaced by the color with the tooltip. 
 
 If the shop URL is configured, a "view my shop" link is displayed after each shop name.<br/>
 It opens the front-office of the corresponding shop.
@@ -68,7 +72,8 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's page edition.
 
-**Behavior when wwitching context**
+**Behavior when switching context**
+DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
 
 If the user tries to change context without having saved, a modal appears: "You are about to switch context. Do you want to save your modifications before?" with 2 CTA: "Save" and "Cancel"
 If the user clicks on "Save", then modifications are saved and the context is changed for the one selected
@@ -131,6 +136,7 @@ Changing the position of a block is possible only in a specific shop context.
 
 
 ### Checkboxes
+DESIGN: https://invis.io/QPWKQY5DV79#/410364470_Contexte_1_Yes
 
 Checkboxes are displayed in a specific shop context and in a group context <br/>
 They are not displayed in all shops context <br/>
@@ -184,6 +190,7 @@ The user can close the information message. The message is closed only for the s
 
 
 ### Specific settings drop-down (only from 1.7.8)
+DESIGN: https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown
 
 This drop-down is displayed only in all shops context and only for parameters that have been customized in one or many specific shops.
 
