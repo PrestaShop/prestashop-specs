@@ -24,11 +24,11 @@ The multistore header contains many things listed below:
 DESIGN: https://invis.io/QPWKQY5DV79#/412654655_Contexte_Candy
 
 This header takes the color of the selected context:<br/>
-- The all shops context is blue and this color can't be changed by the user.<br/>
+- The all shops context is blue #25B9D8 and this color can't be changed by the user.<br/>
 - The shop group color can be configured while creating or editing the group<br/>
 - The shop color can be configured while creating or editing the shop.
 
-If the shop or the group selected doesn't have yet a color configured, the default color is grey.<br/>
+If the shop or the group selected doesn't have yet a color configured, the default color is light grey #EBEBEB.<br/>
 In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition: "Customize your multistore header, follow the link to pick a color for this shop context" in Admin.Navigation.Header<br/>
 The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refreshes or returns to this page later.
 
