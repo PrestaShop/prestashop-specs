@@ -137,4 +137,6 @@ The behavior is exactly like "back office translations", but using only the doma
 
 This feature allows the user to export translations in a given language for a given theme. When the user selects the theme/language pair and clicks on "Export", a zip file is generated and downloaded. 
 
-The generated zip contains a collection of XLF files, one per domain, which is composed of all the front office translations (core + theme). If a core translation is redefined by the theme, then the theme one is used.
+The generated zip contains a collection of XLF files, one per domain, which is composed of all the theme's wordings (ie. all wordings found in the theme files), translated to the chosen langue.
+
+Note: Exported translations should be loaded differently compared to the translation interface. In difference with the latter, where non-translated wordings are empty, exported translations should never be empty. If the translation is not defined, use the original wording as translation.
