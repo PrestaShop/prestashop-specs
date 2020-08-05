@@ -37,6 +37,15 @@ Everytime we decide to build a new feature, we must write specifications to guid
 
 We expect contributors to follow these instructions:
 
+### If you want to edit directly into GitHub
+
+**Edit a file directly in GitHub:**
+
+1. Create your GitHub account, if you do not have one already.
+2. Browse to the target file.
+3. Click the "Edit" button, make your changes in the editor, then click on "Propose File Change". GitHub will automatically create a new fork and branch on your own GitHub account, then suggest to create a pull request to PrestaShop.
+4. Once the pull request submitted, just wait for a product manager to come back to you. :-)
+
 
 ### If you feel comfortable working with Git and forking the project
 
@@ -48,16 +57,6 @@ We expect contributors to follow these instructions:
 6. Push the changed branch to your fork in your GitHub account.
 7. Create a pull request for your changes on the PrestaShop project. If you need help to make a pull request, read the GitHub help page about [creating pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 8. Wait for one of the product managers to either include your change in the codebase or comment on possible adjustments to its content.
-
-
-### If you don't, you can also either
-
-**Edit a file directly in GitHub:**
-
-1. Create your GitHub account, if you do not have one already.
-2. Browse to the target file.
-3. Click the "Edit" button, make your changes in the editor, then click on "Propose File Change". GitHub will automatically create a new fork and branch on your own GitHub account, then suggest to create a pull request to PrestaShop.
-4. Once the pull request submitted, just wait for a product manager to come back to you. :-)
 
 
 **Submit an issue using GitHub:**
