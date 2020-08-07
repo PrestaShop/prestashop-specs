@@ -44,7 +44,7 @@ We expect contributors to follow these instructions:
 1. Create your GitHub account, if you do not have one already.
 2. Browse to the target file.
 3. Click the "Edit" button, make your changes in the editor, then click on "Propose File Change". GitHub will automatically create a new fork and branch on your own GitHub account, then suggest to create a pull request to PrestaShop.
-4. Once the pull request submitted, just wait for a product manager to come back to you. :-)
+4. Once the pull request is submitted, just wait for a product manager to come back to you. :-)
 
 
 ### If you feel comfortable working with Git and forking the project
