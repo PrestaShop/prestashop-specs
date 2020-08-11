@@ -32,7 +32,7 @@ Once you click on the "Modify" button, you go to the translation interface.
   - If the user chooses "Body", a list of all the installed themes + "Core" is displayed as well.
   - This type sends the user to the legacy translation interface instead of the one described below.
 
-### Translation interface
+## Translation interface
 
 This interface displays two columns. In the left, there's a tree of translation domains according to the translation type the user chose before. 
 
@@ -62,18 +62,18 @@ The user can edit translations by filling out the fields, and save them.
 
 On the top of the page, there's a search box. When the user searches for a wording, the list is filtered, meaning that wordings not matching the search expression are no longer shown on the list and domains containing no matching wording are grayed out.
 
-#### Translation sources & storage
+### Translation sources & storage
 
 This section covers where wordings are sourced from and where translations are stored to according to the translation type chosen.
 
-##### Generalities
+#### Generalities
 
 Usually and unless specified otherwise:
 
 - Wordings are sourced from XLF files stored somewhere, one file per translation domain.
 - User-edited translations are stored in the database
 
-##### Back office translations
+#### Back office translations
 
 Wordings are sourced from the Core's _default catalogue_, which is stored as physical XLF files (one per translation domain) in `app/Resources/translations/default`. This catalogue is to be filtered by keeping only the translation domains whose name starts with **"Admin"**.
 
@@ -84,7 +84,7 @@ Translations are retrieved from two sources:
 
 If the same wording is translated in both core files and database, the database translation is shown.
 
-##### Front office translations
+#### Front office translations
 
 This translation type has two different subcases:
 
@@ -100,7 +100,7 @@ Translations are sourced from XLF files within the theme in its `translations/{l
 
 User-edited translations are stored in database. To avoid collisions, theme translations must be kept associated to the theme they belong. If a theme redefines a Core translation (ie. same domain, same wording), then the redefined translation should only be used when the FO is using that theme (eg. in case of multishop with different themes for each shop, each theme should use the its own translation even if they both use the same given wording/domain pair). Redefined core translations should only be saved if they're different than the ones defined when not in the theme's context.
 
-##### Installed module translations
+#### Installed module translations
 
 Note: modules have to opt-in for this feature (see [documentation](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/#translating-your-module)).
 
@@ -119,17 +119,17 @@ Translations are retrieved from a list of sources:
 4. The module's legacy files: PHP translation files for the chosen language, stored within the module in the `translations/` directory, one per language code.
 5. The database: if translations were customized previously through this interface.
 
-##### Email translations (subject)
+#### Email translations (subject)
 
 The behavior is exactly like "back office translations", but using only the domain called **"Emails.Subject"**.
 
-##### Email translations (body)
+#### Email translations (body)
 
 The behavior is exactly like "back office translations", but using only the domain called **"Emails.Body"**.
 
 After saving the translations, the email templates must be regenerated for the translated language.
 
-##### Other translations
+#### Other translations
 
 The behavior is exactly like "back office translations", but using only the domain called **"messages"**.
 
