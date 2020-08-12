@@ -91,4 +91,3 @@ Example: `orders-orders-list-quick-preview.png`
 ## What does it mean to be a contributor?
 
 Using GitHub to contribute allows to identify contributors to the specifications project thanks to their GitHub profile. Any commit and/or pull request created indicate and store its auhtor. It is a way to officially prove your contribution.
-=======
