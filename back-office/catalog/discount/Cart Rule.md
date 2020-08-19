@@ -12,4 +12,6 @@ Then
 
 Free shipping is applied once with a 5 % discount and a gift.
 
+---
+
 **When a discount is applied for the cheapest product** then the discount summary displays the value of the discount and not the percentage.
