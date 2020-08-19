@@ -66,6 +66,9 @@ Keyboard shortcut: ALT + SHIFT + P
 
 **As a merchant I want to be able to complete the basic information of my products.**
 
+It is necessary to save the basic settings tab informations in order to access the combinaition tab. Until saved, other tabs are disabled with a tooltip on hover. 
+Here are the mockup of the disabled tabs behavior: https://invis.io/3RWZILBJWQH#/414747857_Disabled_Tabs___Tooltip
+
 Here is the list of the elements of basic settings tab:
 
 * **Combinations**: If you have selected standard product in the drop-down, you have 2 radios buttons: simple product or product with combinations.      
@@ -324,9 +327,8 @@ A drop-down next to the field is displayed when there are several languages inst
 
 **Edit combinations**:
 
-* **Next combination button**: It allows to navigate between combinations. It doesn't appear for the last combination. There should be an autosave each time the user click on the button. \([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
-* **Previous combination button**: It allows to navigate between combinations. It doesn't appear for the first combination. There should be an autosave each time the user click on the button.\([improvement 18462](https://github.com/PrestaShop/PrestaShop/issues/18462)\)
-* **Back to product button**: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.
+Edit combination now opens a modal, see mockups here: https://invis.io/3RWZILBJWQH#/414747859_Edit_Comb-_Modale_Top
+
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
 This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
@@ -608,6 +610,10 @@ When there is a default supplier, the cost price value is equal to the default s
 **As a merchant I want to know if there are errors when I complete a field.**
 
 ### Elements in all tabs <a id="errorsalltabs"></a>
+
+* **Errors in tabs behavior**: When one or several inputs are incorrect, an error message appears on top of the tabs and a red dot notification appears next to the name of the tabs containing errors. 
+Here is the mockup of errors behavior for tabs: https://invis.io/3RWZILBJWQH#/414747858_Error_Message___Notifications
+
 
 * **Product name**: Mandatory alphanumeric field. It should have minimum 3 characters and maximum 128. If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” Prohibited characters are: ={}&lt;&gt;;\# If you enter an invalid character, an error message is displayed under the field: ”This value is not valid.” If it’s not filled in the default language, when you save, a message “This value should not be blank.” is displayed under the field 
 
