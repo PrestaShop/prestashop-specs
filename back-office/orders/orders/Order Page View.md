@@ -259,7 +259,7 @@ When all the products in the order are virtual products, only the invoice addres
 
 4. **Private customer note**
 
-**Private customer note** is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
+**Private customer note** saves or displays a note for the corresponding customer. The same note will be share for all the orders from the same customer. It is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
 
@@ -480,7 +480,7 @@ The table **list of the latest order status** is displayed composed:
 
 Below the list, a drop list of all the status available is displayed to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
 
-On the bottom of the bock, there is the **Order comment**. It is closed by default when it is empty and open when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
+On the bottom of the bock, there is the **Order comment**. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 2.  **Documents tab**
 
