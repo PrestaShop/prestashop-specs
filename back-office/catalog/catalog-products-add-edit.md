@@ -66,7 +66,7 @@ Keyboard shortcut: ALT + SHIFT + P
 
 **As a merchant I want to be able to complete the basic information of my products.**
 
-It is necessary to save the basic settings tab informations in order to access the other tabs. Until saved, other tabs are disabled with a tooltip on hover. 
+It is necessary to save the basic settings tab informations in order to access the combinaition tab. Until saved, other tabs are disabled with a tooltip on hover. 
 Here are the mockup of the disabled tabs behavior: https://invis.io/3RWZILBJWQH#/414747857_Disabled_Tabs___Tooltip
 
 Here is the list of the elements of basic settings tab:
