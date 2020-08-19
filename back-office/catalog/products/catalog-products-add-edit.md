@@ -62,7 +62,7 @@ Keyboard shortcut: ALT + SHIFT + Q
 * **Add new product**: When you click on this button, it saves and opens a new empty product page.       
 Keyboard shortcut: ALT + SHIFT + P
 
-When merchant leave the product page for a product that have never been saved, a pop up is displayed to confirm the action. If the merchant confirms then the product is deleted otherwise the merchant stay on the product page.
+When merchant leaves the product page for a product that have never been saved, a pop up is displayed to confirm the action. If the merchant confirms then the product is deleted otherwise the merchant stay on the product page.
 
 ### Basic settings tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14763)\]
 
