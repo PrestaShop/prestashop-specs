@@ -78,6 +78,7 @@ The user gets access to the order view page by either clicking on **the order’
 **Generic page operation - Order view**
 
 On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
+All date and time formats are defined according to CLDR and the display language.
 
 ## I. **Action panel**
 
@@ -254,9 +255,11 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 [Popin - Change address](https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress)
 
+When all the products in the order are virtual products, only the invoice address is displayed.
+
 4. **Private customer note**
 
-**Private customer note** is closed by default when it is empty and open bu default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
+**Private customer note** is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
 
@@ -338,40 +341,47 @@ Below the totals, a warning message is displayed to warn the user that **for thi
 When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
 - the quantity
-The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The=++ product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
 
-The minimum quantity of a product is determined by all the products of the order regardless of whether the products are separated between invoices. It allow a merchant to add a product on another invoice because the minimum quantity is respected on in the order.
-Edting the quantity of the product to a quantity less than the minimum quantity required is authorised,  the responsibility belongs to the merchant.
+When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): "Your product is already present in your order.".
+
+**Specific scenario**: When the merchant wants to add more quantities of the same product, he has to edit the product quantity to add some items.
+
+-   **Product minimum quantity**
+
+The minimum quantity of a product is determined by all the products of the order regardless of whether the products are separated between invoices. It allows a merchant to add a product on another invoice because the minimum quantity is respected in the order.
+Editing the quantity of the product to a quantity less than the minimum quantity required is authorised, the responsibility belongs to the merchant.
 
 For example, when I add a product A with a minimum quantity, if the quantity of the new product A and the current quantity are equal to or greater than the product is added. Otherwise, an error is launched: "Error! Minimum quantity of X must be added", X quantity missing to be equal to the required minimum quantity.
 
-specific scenario:
-An product when it is allowed be ordered out of stock can be added to an order.
+A product allowed to be ordered out of stock can be added to an order without complying with the minimum quantity rule.
 
+-   **Product associated to cart rule**
 
-- Offer free shipping for this product
-- Associate the product to an existing or new invoice
-
-When I add a product with a discount to an order, the discount is also added. If the discount is update the order remains the same.
-
-[Add a product old design but the same behaviors](https://github.com/PrestaShop/prestashop-specs/blob/master)
-
-**Specific scenario**: Adding a product recalculates all discounts and the total price. So if I have a discount linked to a specific product for example at 40%. Then I change the discount to 50% discount. Finally, I add a new product, the discount will update and 50% discount will be applied to the order.
-
-**Specific scenarios**:A product added in an order with a discount attached to it is added in the order as well. 
+When I add a product associated with a discount to an order, the discount is also added. 
 
 - In the case of a discount on the total of the order, if I add a second time this product, the discount should not be added and avoid the accumulation of discount. 
 
 - In the case of reduction to a specific product of a fixed amount, the discount is applied only once despite the number of quantities of the same product in the cart and the total per user strictly greater than 1.
 
-- In the case of a discount to a specific product by percentage, the discount applies to the total amount of the product taking into account the quantity, i.e. the discount = quantity of the product * %. But only applies once in the basket even if the merchant can still use the discount on other carts (total user for each user > 0).
+If the discount is updated the order remains the same.
 
-**Specific scenario**: adding a product which is already available in the order
-When the merchant wants to add more quantities of the same product, there are 2 options :
-- Edit the product quantity to add some items
-- Add a new product with the same reference as the one already in the order
-In this second scenario, a new product line will be created, resulting in 2 different lines for the same product. And when the same product is added on an order, it is set at the price of the first product added. 
+-   **Cart rule behaviors**
 
+**Specific scenario**: Adding a product recalculates all discounts and the total price. So if the merchant has a discount linked to a specific product for example at 40%. Then he changes the discount to 50% discount. Finally, he add a new product, the discount will update and 50% discount will be applied to the order.
+
+**Specific scenarios**: A product added in an order with a discount attached to it is added in the order as well. 
+
+In the case of a discount to a specific product by percentage, the discount applies to the total amount of the product taking into account the quantity, i.e. the discount = quantity of the product * %. But only applies once in the basket even if the merchant can still use the discount on other carts (total user for each user > 0).
+
+-   **Multi invoices behaviors**
+
+When I add a product when a invoice is already generated, the merchant can choose to: 
+- Offer free shipping for this product or apply the shipping cost
+- Associate the product to an existing or new invoice
+
+When the order has several invoices, it is possible to add an already existing product in the order if they are related to a different invoice.
+There is only one possible price per product even if they are from different invoices. Therefore, if a product is added with a different price in another invoice, the price will be updated on the first invoice. To avoid confusion, a pop-up window will be displayed before the addition to confirm that the action may have an impact on the other order.
 
 3. **Remove products from the order**
 
@@ -380,7 +390,7 @@ Deleting one or several products is very easy : a remove icon is available to re
 **Specific scenarios** : when a product in the cart is a gift product (from a cart rule)
 Note that it is not possible to delete a gift product from the cart, it’s only possible by removing the associated cart rule.
 
-Furthermore, If the merchant has a paid product, and the same product, but gifted, in the cart, he should not have a Remove button available on the product line. The remove button only appears when there is no longer gift products on the same product line.
+Furthermore, If the merchant has a paid product, and the same product, but gifted, in the cart, he should not have a Remove button available on the product line. The remove button only appears when there are no longer gift products on the same product line.
 
 **A confirmation pop-up appears after clicking on the Delete button.**
 
@@ -393,7 +403,7 @@ When clicking on the edit button of a product line, the user is allowed to edit 
 The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
-**While editing the quantity, the total price will be updated multipling quantity with the base price.**
+**While editing the quantity, the total price will be updated multiplying quantity with the base price.**
 The **Update button** saves the modification and **Cancel button** drops them.
 
 These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below :
@@ -432,7 +442,7 @@ The vouchers will be added on the table list displaying the discount name, value
 
 [Carts rules list](https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied)
 
-**If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices it will be applied.**
+**If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices will be applied.**
 
 7. **Invoice generation**
 
@@ -468,7 +478,9 @@ The table **list of the latest order status** is displayed composed:
 -   **The editor**
 -   **Button to resend the email to the customer**
 
-On the bottom, a drop list of all the status available is displayed to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
+Below the list, a drop list of all the status available is displayed to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
+
+On the bottom of the bock, there is the **Order comment**. It is closed by default when it is empty and open when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 2.  **Documents tab**
 
@@ -513,3 +525,18 @@ After adding, the user can display **all the details of the transaction by press
 When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
 
 If the shop has different currencies, a droplist of shop's currencies is displayed to change the order currency. The change rate is based on the latest conversion rate save by the shop.
+
+## VI. Sources
+
+Steps to display:
+
+- Activate multistore
+- Create a new shop group, which does not share nor customers, nor available quantities to sell
+- Create a new shop in this group (importing datas from the main shop)
+- Go to FO, make an order (without registering), there should be the "Sources" block on this order on BO now
+
+It displays the date and from where the user came from.
+
+
+## VI. Links
+
