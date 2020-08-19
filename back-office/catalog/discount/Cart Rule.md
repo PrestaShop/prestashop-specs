@@ -11,3 +11,5 @@ If I applied 2 vouchers in a cart:
 Then 
 
 Free shipping is applied once with a 5 % discount and a gift.
+
+**When a voucher discounting the cheapest product** display the value of the discount and not the percentage.
