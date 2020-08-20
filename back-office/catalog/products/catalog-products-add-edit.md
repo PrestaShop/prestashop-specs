@@ -598,15 +598,17 @@ Here is the list of the elements of options tab:
   * **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool \(see Shop Parameters &gt; Products settings\), the values you define \(price, references\) will be used in supply orders.”
   * **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office.
   * **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears. When there is only one supplier checked, the default supplier radio button is automatically checked \([issue 9580](https://github.com/PrestaShop/PrestaShop/issues/8580)\) When there are many suppliers checked, you can change the default supplier.
-When there is a default supplier, the cost price value is equal to the default supplier price. 
+When there is a default supplier, the cost price is the default supplier price when there is a conflit price conflit from different supplier for the same product.
   * **Supplier reference\(s\)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
-  * **Information message about supplier reference\(s\)**: “You can specify product reference\(s\) for each associated supplier. Click "Save" after changing selected suppliers to display the associated product references.”
-  * **Table of suppliers**:
+  * **Information message about supplier reference\(s\)**: “You can specify product reference\(s\) for each associated supplier. Click "Save" after changing selected suppliers to display the associated product references.”  
+  * **Supplier dropdown**: A dropdown list appears to select the supplier for which the merchant wants to change supplier costs for his products.
+  * **Products list**:
     * **The product name**: Display the product name
     * **Supplier reference**: Field to specify the product reference for each supplier. 
     * **Price \(tax excl.\)**: Field to specify the product price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
-
+    The Product list has a pagination to navigate throught the combinaition.
+    
 ## 2.    Type of each field & errors message <a id="errors"></a>
 
 **As a merchant I want to know if there are errors when I complete a field.**
