@@ -182,6 +182,12 @@ You can add a customer if you click on the button "add a customer". It will open
 
 ## V. Payment and status configuration
 
+### Send an email to the customer with the link to process the payment
+
+This button allows to send an email to the customer with the link to process the payment
+It's not related to the payment method selected.
+The link opens the front-office with the cart corresponding to the order created.
+
 #### Describe the bug
 
 When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
