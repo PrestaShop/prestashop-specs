@@ -185,7 +185,7 @@ Once an address has been associated with an order it can never be changed any mo
 
 So when we update an address, we check if it has been associated yet with an order, if it's not we can simply edit it regularly. If delivery and invoice address are the same both are updated.
 
-If ther merchant tries to edit an address (invoice or delivery) already associated with an order, PrestaShop detects that and instead of editing the exisitng address, it copies the existing address, apply the modification and reassign the order's delivery or invoice address with the newly created address, while the former one is soft deleted (marked as "deleted" in database). This avoids having 10 visible addresses per customer each times he changes it.
+If the merchant tries to edit an address (invoice or delivery) already associated with an order, PrestaShop detects that and instead of editing the exisitng address, it copies the existing address, apply the modification and reassign the order's delivery or invoice address with the newly created address, while the former one is soft deleted (marked as "deleted" in database). This avoids having 10 visible addresses per customer each times he changes it.
 
 When delivery and invoice addressses are the same and the merchant edits one of them (let's say delivery address), we can't assume that the merchant actually wanted to update both addresses at a time. So only the delivery address will change. The merchant could however select the new address as the invoice address (it should be selectable in the list).
 
