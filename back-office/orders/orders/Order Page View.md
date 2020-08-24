@@ -273,6 +273,8 @@ Bellow the customer panel, you have the messages panel. **The total of the excha
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
 
+If the merchant has added a message to the order during the creation, the message is displayed here as a private message
+
 **To see all the past messages**, the merchant can click on **View full conversation** to open on a popup.
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
