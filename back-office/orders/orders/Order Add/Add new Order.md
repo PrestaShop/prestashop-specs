@@ -157,6 +157,19 @@ This means that when adding a product which is already in the cart, this should 
 
 Same scenarios when removing products / vouchers and changing quantities.
  
+**- Adding a cart rule with free shipping**
+
+If I add to the order a free shipping cart rule (with code) limited to a specific carrier, then the cart rule should be automatically removed if the specific carrier isn't selected anymore.
+
+If I select a carrier associated to a free shipping cart rule without code, then the voucher should be added automatically to the order when the carrier is selected. And should be automatically removed when the carrier isn't selected anymore.
+
+The value of the voucher should be the same as the value of the carrier (if the carrier is concerned by the cart rule). 
+Example:
+Carrier A = 10€
+Carrier B = 15€
+Cart rule = free shipping for if carrier A or carrier B is selected
+If I select carrier A, then the voucher value is 10€
+If I select carrier B, the the voucher value is 15€
  
 **- Deleting a paid product**
 
