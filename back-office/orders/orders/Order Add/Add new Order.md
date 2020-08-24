@@ -182,6 +182,9 @@ You can add a customer if you click on the button "add a customer". It will open
 
 ## V. Payment and status configuration
 
+### Order message
+The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
+
 #### Describe the bug
 
 When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
