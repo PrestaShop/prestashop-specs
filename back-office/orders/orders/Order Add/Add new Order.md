@@ -209,6 +209,12 @@ A soft "deleted" address can be used in the cart / order.
 ### Order message
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
 
+### Send an email to the customer with the link to process the payment
+
+This button allows to send an email to the customer with the link to process the payment
+It's not related to the payment method selected.
+The link opens the front-office with the cart corresponding to the order created.
+
 #### Describe the bug
 
 When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
