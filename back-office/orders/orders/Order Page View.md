@@ -273,6 +273,8 @@ Bellow the customer panel, you have the messages panel. **The total of the excha
 
 [Messages Panel](https://invis.io/YKTGGFZAMCB#/378991321__Order_Details)
 
+If the merchant has added a message to the order during the creation, the message is displayed here as a private message
+
 **To see all the past messages**, the merchant can click on **View full conversation** to open on a popup.
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
@@ -343,7 +345,9 @@ When clicking on Add a product, it adds a row on the table list with a search ba
 - the quantity
 The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
 
-When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): "Your product is already present in your order.".
+When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): "This product is already in your order, please edit the quantity instead."
+
+When I have multi invoice and I add the product to an invoice that already contains the product, the addition is blocked by displaying the following error message "This product is already in the invoice #number, please edit the quantity instead." localized in Admin.Notifications.Error
 
 **Specific scenario**: When the merchant wants to add more quantities of the same product, he has to edit the product quantity to add some items.
 
