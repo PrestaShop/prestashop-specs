@@ -209,6 +209,9 @@ A soft "deleted" address can be used in the cart / order.
 ### Order message
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
 
+Invalid characters are: <>{}
+When you save, if your order message contains an invalid character, an error notification should be displayed “The order message given is invalid”.
+
 ### Send an email to the customer with the link to process the payment
 
 This button allows to send an email to the customer with the link to process the payment
