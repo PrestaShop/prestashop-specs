@@ -206,21 +206,29 @@ A soft "deleted" address can be used in the cart / order.
 
 ## V. Payment and status configuration
 
+
 ### Order message
+
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
 
 Invalid characters are: <>{}
 When you save, if your order message contains an invalid character, an error notification should be displayed “The order message given is invalid”.
 
+
 ### Send an email to the customer with the link to process the payment
 
 This button allows to send an email to the customer with the link to process the payment
 It's not related to the payment method selected.
-The link opens the front-office with the cart corresponding to the order created.
+
+Next to this button is a hyperlink to allow the user to proceed to the payment directly in the front office. Clicking this hyperlink opens a new tab that redirects the user to the payment step of the checkout process for this order - the user does not need to fill all the personal information, addresses, or shipping method but he must be able to navigate through those previous steps before going back to the payment.
+
+Processing the payment of this order through the checkout in the front office immediately creates the order in the back office. As a consequence, the user is not creating a new order anymore and must go in the Orders > Orders section of his/her back office to reach this order.
+
 
 #### Describe the bug
 
 When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
+
 
 #### Expected behaviour
 
