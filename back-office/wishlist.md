@@ -3,7 +3,7 @@
 ## Feature 1: Add to favorites 
 
 ### US 1: Add a product to a favorites list
-##### As a logged-in user, I can add a product to my favourites from the product sheet or any other navigation page with product blocks in a favourites list
+##### As a logged-in user, I can add a product to my favorites from the product sheet or any other navigation page with product blocks in a favorites list
 Several cases: 
 - Connected users 
 - Non logged-in users 
