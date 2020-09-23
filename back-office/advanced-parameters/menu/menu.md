@@ -10,7 +10,7 @@ This page was removed in 1.7.0 because users were deleting menu entries but did 
 
 ## SPECS
 
-The behavior in 1.7.X was:
+The behavior in 1.7.X is:
 
 No "menu" tab in the BO menu (as in 1.7.x)
 
