@@ -17,7 +17,7 @@ Only logged-in users can add a product to their favorites - provided they click 
 
 
 Which products can be added to favorites? 
-All products can be added as favourites:  
+All products can be added as favorites:  
 - Products in and out of stock  
 - Standard products
 - Products with combinations
