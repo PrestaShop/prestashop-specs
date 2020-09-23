@@ -16,7 +16,7 @@ Only logged-in users can add a product to their favorites - provided they click 
 ![wishlist screen 1](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-1.png)
 
 
-Which products can be added to favourites? 
+Which products can be added to favorites? 
 All products can be added as favourites:  
 - products in and out of stock  
 - product packs
