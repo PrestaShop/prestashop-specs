@@ -11,7 +11,7 @@ Several cases:
 
 Functional rules: 
 What type of users can add products to their favorites?  
-Only logged-in users can add a product to their favourites - provided they click on the heart on the product sheet or a product block from a navigation page
+Only logged-in users can add a product to their favorites - provided they click on the heart on the product sheet or a product block from a navigation page
 
 ![wishlist screen 1](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-1.png)
 
