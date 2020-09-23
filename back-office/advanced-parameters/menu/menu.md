@@ -6,7 +6,7 @@ For the history, this page was present in 1.6 and allowed to add, edit, delete, 
 
 ![capture d'écran_2791](https://user-images.githubusercontent.com/13449658/93895714-6c724480-fcf0-11ea-8527-544737685059.png)
 
-This page was deleted in 1.7.0 because merchants were removing menus and then didn't know how to re-add them because don't know how to find th the controller name.
+This page was removed in 1.7.0 because users were deleting menu entries but did not know how to re-add them with the controller name.
 
 ## SPECS
 
