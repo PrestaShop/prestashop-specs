@@ -3,7 +3,7 @@
 ## Feature 1: Add to favorites 
 
 ### US 1: Add a product to a favorites list
-##### As a logged-in user, I can add a product to my favorites from the product sheet or any other navigation page with product blocks in a favorites list
+##### As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites list
 Several cases: 
 - Connected users 
 - Non logged-in users 
@@ -38,7 +38,7 @@ Product information (stocks, prices, etc.) is variable and must be updated each 
 Rules for quantities when adding to favorites :
 - If the user has chosen a quantity > 1 the product added in favorites has the same quantity as the one on the product sheet
 - By default, the product is added to the favourites by unit, unless the product can only be purchased with a minimum of X units, in which case, the product is added to the favourites with its minimum quantity
-- If the product is out of stock: it is saved in favorites with the stock noted as 0
+- If the product is out of stock: it is saved in favorites with 0 product quantity
 
 Products with variations:
 - When a user adds a product from a list page (where they cannot select a variation), the product added to the wishlist is the "base" product. That is, the product is added with its default variation and quantity.  
@@ -58,7 +58,7 @@ For a logged-in user, when clicking on the heart, a pop-in is displayed offering
 -	a new list that can be created by clicking Create New wishlist
 ![wishlist screen 3](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-3.png)
 
-The user can only select one list at a time.  
+The user can only select one list.  
 
 What happens in each case?
 1.	When no list has been created: the logged-in user has the option to add the item(s) to the default list or create a new list  
