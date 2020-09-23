@@ -7,7 +7,7 @@
 Several cases: 
 - Connected users 
 - Non logged-in users 
-- Products with variations & customisations
+- Products with combinations & customizations
 
 Functional rules: 
 What type of users can add products to their favourites?  
