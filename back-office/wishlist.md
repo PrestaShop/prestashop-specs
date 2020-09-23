@@ -23,7 +23,7 @@ All products can be added as favorites:
 - Products with combinations
 - product packs
 - virtual products
-- customisable products (text or file)
+- customizable products (text or file)
 
 What product information do I need to retrieve for favourites?
 All product information:  
