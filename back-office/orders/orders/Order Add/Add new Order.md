@@ -188,10 +188,6 @@ You are not allowed to delete a gift product from the cart, it’s only possible
 The Addresses block displays 2 droplists: for the delivery adress and for the invoice.
 The droplist displays all the adresse related to the customer. 
 
-3) Add a customer
-You can add a customer if you click on the button "add a customer". It will open an iframe. If you create a customer here then you will have a page to create an order where the customer created is selected (check step The customer that you chose is highlighted in green)
-
-
 **Editing an address**
 
 Once an address has been associated with an order it can never be changed any more because any update for future orders would also affect previous ones.
