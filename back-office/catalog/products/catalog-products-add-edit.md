@@ -231,7 +231,7 @@ This field is not displayed if stock management is disabled in Shop parameters &
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.           
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ### Virtual product tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14772)\]
 
@@ -270,7 +270,7 @@ This field is not displayed if stock management is disabled in Shop parameters &
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.          
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ### Combinations tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14773)\]
 
@@ -308,7 +308,7 @@ When you change it, the same field in pricing tab is also updated.
 5\) **Impact on price \(tax incl.\)**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.       
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.       
-6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.       
+6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.       
 7\) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.       
 8\) **Minimum quantity**: In front-office \(product page & quick-view\), this value is indicated in the quantity field.     
 When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”       
@@ -334,7 +334,7 @@ Edit combination now opens a modal, see mockups here: https://invis.io/3RWZILBJW
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
 This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 * **Min. quantity for sale**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 * **Référence**: The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
 * **Stock location**: You can indicate where the product is located in the warehouse 
