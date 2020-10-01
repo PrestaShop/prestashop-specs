@@ -40,7 +40,7 @@ Rules for quantities when adding to favorites :
 - By default, the product is added to the favorites by unit, unless the product can only be purchased with a minimum of X units, in which case, the product is added to the favorites with its minimum quantity
 - If the product is out of stock: it is saved in favorites with 0 product quantity
 
-Products with variations:
+Products with combinations:
 - When a user adds a product from a list page (where they cannot select a variation), the product added to the wishlist is the "base" product. That is, the product is added with its default variation and quantity.  
 - If the user selects a variation in the product sheet, then this variation is added, not the "basic" product
 
