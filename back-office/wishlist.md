@@ -151,7 +151,7 @@ Products with several options:
 - if I delete my product from a product listing (where I don't have any variation options), it deletes the product with the defaultvariation  
 
 ### US 4: Add a favorite product to the cart  
-##### As a logged-in user, I can add a favourite product to the shopping basket
+##### As a logged-in user, I can add a favorite product to the shopping cart
 
 Specific case:
 -	custom product that cannot be added directly to the basket from the list of favourite products
