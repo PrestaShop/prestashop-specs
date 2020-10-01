@@ -86,7 +86,7 @@ Special login pop-up features:
 -	the user is then asked to select the favorites list in which he/she wants to save the product.
 
 ### US 2: View my favorite products  
-##### As a logged-in user, I can view and sort my favourite products
+##### As a logged-in user, I can view and sort my favorite products
 
 Functional rules:  
 What type of users can add products to their favourites?
