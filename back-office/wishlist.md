@@ -136,7 +136,7 @@ Different cases:
 - from a favorites list
 
 Functional rules:
-I can modify the quantity, the variations and the customisation of all my favourite products (in stock, out of stock) by clicking on the Pencil in my favourite products list.
+I can modify the quantity, the combinations and the customization of all my favorite products (in stock, out of stock) by clicking on the Pencil in my favorite products list.
 
 When I click on the Pencil, I am redirected to the product sheet to make my modifications. Once the changes are made, you will have to click on the heart to add the new product as a favourite. At this point, the new quantity, variation and/or customisation will overwrite the original product in the favourites list.
 
