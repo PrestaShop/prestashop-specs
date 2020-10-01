@@ -182,7 +182,7 @@ When clicking on the CTA, the user is redirected to the product sheet in order t
 
 Only non-customized products, with stock or without stock - but with the option to add to the cart, can be added to the cart. If the product is out of stock and if order of out of stock products is denied, the user will not be able to add it to the shopping cart, as is currently the case in the PrestaShop Core.
 
-## Feature 2: Storing favourites - Create and manage your favourites lists
+## Feature 2: Storing favorites - Create and manage your favorites lists
 ### US 5: Create a list 
 ##### As a logged-in user, I can create a favorites list in the "Wishlists" area in My Account by clicking on "Create Favorites List" 
 
