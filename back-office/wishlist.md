@@ -212,7 +212,7 @@ Steps for creating a list:
 
 
 ### US 6: Renaming/modifying/deleting a list 
-##### As a logged-in user, I can edit a favourites list that has been created, unless it is the default favourites list. 
+##### As a logged-in user, I can edit a favorites list that has been created, unless if it is the default favorites list. 
 
 Functional rules: 
 All lists except the default list can be edited 
