@@ -120,7 +120,7 @@ In all three cases, keep the discount price in mind
 Please note that if a product is deleted or deactivated from the catalog, the product automatically disappears from the list.  
 
 For each product, you have to go back to the information listed in US n°1.
-As a logged-in user, I can see how many unique favourite products are in a list.  
+As a logged-in user, I can see how many unique favorite products are in a list.  
 
 What type of users can add products to their favourites?
 Only logged-in users, since the Favourites list is displayed in My Account.  
