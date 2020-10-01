@@ -142,7 +142,7 @@ When I click on the Pencil, I am redirected to the product sheet to make my modi
 
 ![wishlist screen 10](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-10.png)
 
-I can permanently remove a favourite product from the list by clicking on remove and a pop-up appears confirming that the product has been removed from the list.  
+I can permanently remove a favorite product from the list by clicking on remove and a pop-up appears confirming that the product has been removed from the list.  
 
 You can remove a product from the favourites directly within the product sheet or a product listing, by clicking on the heart (which becomes empty).  
 
