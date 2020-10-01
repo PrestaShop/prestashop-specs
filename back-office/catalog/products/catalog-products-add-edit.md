@@ -429,6 +429,9 @@ When you change it, the same field in basic settings tab is also updated.
 When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 When you change it, the same field in basic settings tab is also updated.
+* **\(Retail\) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
+When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.      
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 * **\(Retail\) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
 "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
