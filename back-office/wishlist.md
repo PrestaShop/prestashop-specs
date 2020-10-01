@@ -180,7 +180,7 @@ When clicking on the CTA, the user is redirected to the product sheet in order t
 
 ![wishlist screen 14](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-14.png)
 
-Only non-custom products, with stock or without stock - but with the option to add to the basket, can be added to the basket. If the product is out of stock and has been set up to not receive out-of-stock orders, the user will not be able to add it to the shopping basket, as is currently the case in the PrestaShop Core.
+Only non-customized products, with stock or without stock - but with the option to add to the cart, can be added to the cart. If the product is out of stock and if order of out of stock products is denied, the user will not be able to add it to the shopping cart, as is currently the case in the PrestaShop Core.
 
 ## Feature 2: Storing favourites - Create and manage your favourites lists
 ### US 5: Create a list 
