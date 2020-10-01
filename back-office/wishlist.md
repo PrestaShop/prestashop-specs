@@ -204,7 +204,7 @@ Functional rules:
 Steps for creating a list:
 1.	Log in 
 2.	Click on the heart to add the product to your favorites
-3.	A "box" is displayed with all the favourite lists.
+3.	A "box" is displayed with all the favorite lists.
 4.	Click on "Create a new list"
 5.	A pop-up appears with a field for the List Name to be created
 6.	Click on "Create a new list" to validate the creation of the list (you can cancel if you decide that you do not wish to create a new list)
