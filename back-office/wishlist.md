@@ -37,7 +37,7 @@ Product information (stocks, prices, etc.) is variable and must be updated each 
 
 Rules for quantities when adding to favorites :
 - If the user has chosen a quantity > 1 the product added in favorites has the same quantity as the one on the product sheet
-- By default, the product is added to the favourites by unit, unless the product can only be purchased with a minimum of X units, in which case, the product is added to the favourites with its minimum quantity
+- By default, the product is added to the favorites by unit, unless the product can only be purchased with a minimum of X units, in which case, the product is added to the favorites with its minimum quantity
 - If the product is out of stock: it is saved in favorites with 0 product quantity
 
 Products with variations:
