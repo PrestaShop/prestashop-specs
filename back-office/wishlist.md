@@ -287,7 +287,7 @@ A multi-language field for each field allows to translate them
 
 ![wishlist screen 21](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-21.png)
 
-##### As a seller, I can view statistics regarding favourites 
+##### As a seller, I can view statistics regarding favorites 
 
 ![wishlist screen 22](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-22.png)
 
