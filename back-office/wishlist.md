@@ -157,7 +157,7 @@ Specific case:
 -	custom product that cannot be added directly to the basket from the list of favourite products
 
 Functional rules:
-A logged-in user can add one of their favourites to the basket, except custom products (with stock or without stock but with the possibility to be added to the cart), by clicking on Add to cart.
+A logged-in user can add one of their favorites to the cart, except customized products (with stock or out of stock but with the possibility to be added to the cart/allow order option), by clicking on Add to cart.
 
 ![wishlist screen 11](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-11.png)
 
