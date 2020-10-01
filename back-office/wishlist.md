@@ -231,7 +231,7 @@ b.	Share the list
 
 ![wishlist screen 16](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-16.png)
 
-When a user changes the name of the list and clicks on Rename, the pop-up window disappears and an information message is displayed in their favourites list indicating that the name change has been taken into account (the growl message). 
+When a user changes the name of the list and clicks on Rename, the pop-up window disappears and an information message is displayed in their favorites list indicating that the name change has been taken into account (the growl message). 
 
 To delete a list, simply click on the recycle bin icon, a validation pop-up appears, once the action is confirmed, the list is deleted
 
