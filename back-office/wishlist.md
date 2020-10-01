@@ -93,7 +93,7 @@ What type of users can add products to their favorites?
 A logged-in user
 
 For non-logged-in users:  
-Non-logged-in users cannot access their favourites list  
+Non-logged-in users cannot access their favorites list  
 
 For logged-in users:  
 As a logged-in user, I can access my favourite products by:  
