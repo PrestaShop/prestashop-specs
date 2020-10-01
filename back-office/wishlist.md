@@ -96,7 +96,7 @@ For non-logged-in users:
 Non-logged-in users cannot access their favorites list  
 
 For logged-in users:  
-As a logged-in user, I can access my favourite products by:  
+As a logged-in user, I can access my favorite products by:  
 - Going to my account  
 - Clicking on "Wishlists"
 ![wishlist screen 6](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-6.png)
