@@ -41,7 +41,7 @@ Rules for quantities when adding to favorites :
 - If the product is out of stock: it is saved in favorites with 0 product quantity
 
 Products with combinations:
-- When a user adds a product from a list page (where they cannot select a variation), the product added to the wishlist is the "base" product. That is, the product is added with its default variation and quantity.  
+- When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
 - If the user selects a variation in the product sheet, then this variation is added, not the "basic" product
 
 Customisable products
