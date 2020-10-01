@@ -89,7 +89,7 @@ Special login pop-up features:
 ##### As a logged-in user, I can view and sort my favorite products
 
 Functional rules:  
-What type of users can add products to their favourites?
+What type of users can add products to their favorites?
 A logged-in user
 
 For non-logged-in users:  
