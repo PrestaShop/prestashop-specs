@@ -266,7 +266,7 @@ a user who accesses the shared link cannot modify the products, they can only ad
 
 Once a user has copied the link, the "Copy link" CTA changes to "Link copied" and the user can close the pop-up. 
 
-For a default list, to share the list, simply click on the share icon and the pop-up is displayed with a path to share the list.
+To share the default list, simply click on the share icon and a pop-up is displayed with a path to share the list.
 
 ![wishlist screen 18](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-18.png)
 
