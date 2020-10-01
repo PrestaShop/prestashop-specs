@@ -283,7 +283,7 @@ A user does not need to be logged in to view the shared link > an "ephemeral" pa
 - Title 
 - Create a list CTA
 
-A multi-language field for each field
+A multi-language field for each field allows to translate them
 
 ![wishlist screen 21](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-21.png)
 
