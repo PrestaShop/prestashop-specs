@@ -30,7 +30,7 @@ All product information:
 - Price excl. VAT or incl. VAT + special offers,  
 - Photos,  
 - Quantity (selected by the customer),  
-- Variations,
+- Combinations,
 - Customisation (if the product can be customised)
 
 Product information (stocks, prices, etc.) is variable and must be updated each time the Favorites page is loaded.
