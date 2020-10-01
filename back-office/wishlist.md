@@ -250,7 +250,7 @@ For the default favorites list, the recycle bin icon and the three little dots a
 Functional rules:
 To share a list you need to: 
 1.	Go to "My Account"
-2.	Click on "My Favourites" 
+2.	Click on "My Favorites" 
 3.	The created lists will be displayed
 4.	By clicking on the three small dots, a small box appears that allows you to: 
 a.	Rename the list
