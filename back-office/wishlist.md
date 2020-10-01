@@ -239,7 +239,7 @@ To delete a list, simply click on the recycle bin icon, a validation pop-up appe
 
 When the user confirms that they want to delete the list, an info message is displayed to inform the user that the list has been successfully deleted. 
 
-For a default favourites list, the recycle bin icon and the three little dots disappear and we only have the share button, see below
+For the default favorites list, the recycle bin icon and the three little dots are not dislayed and we only have the share button, see below
 
 ![wishlist screen 18](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-18.png)
 
