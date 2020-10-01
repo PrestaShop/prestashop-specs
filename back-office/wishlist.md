@@ -279,7 +279,7 @@ A user does not need to be logged in to view the shared link > an "ephemeral" pa
 ## Feature 3: Bookmarks - Back office
 ### US 8: Set up the module and view statistics 
 ##### As a seller, I can modify the wording 
-- Name of my Favourites section 
+- Name of my Favorites section 
 - Title 
 - Create a list CTA
 
