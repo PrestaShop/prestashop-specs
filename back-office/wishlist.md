@@ -147,7 +147,7 @@ I can permanently remove a favorite product from the list by clicking on remove 
 You can remove a product from the favourites directly within the product sheet or a product listing, by clicking on the heart (which becomes empty).  
 
 Products with several options:
-- if I delete my product from the product sheet: the product with variations X and quantity Y will be deleted
+- if I delete my product from the product sheet: the product with combinations X and quantity Y will be deleted
 - if I delete my product from a product listing (where I don't have any variation options), it deletes the product with the defaultvariation  
 
 ### US 4: Add a favourite product to the basket  
