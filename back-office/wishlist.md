@@ -188,7 +188,7 @@ Only non-customized products, with stock or without stock - but with the option 
 
 Functional rules:
 Who can benefit from this feature?
-Only logged-in users can create a favourites list
+Only logged-in users can create a favorites list
 1.	Click on New wishlist
 2.	A pop-in appears with a text field to fill in the name of the desired list. 
 3.	Option to cancel a list creation 
