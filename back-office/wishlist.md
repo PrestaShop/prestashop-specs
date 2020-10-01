@@ -62,7 +62,7 @@ The user can only select one list.
 
 What happens in each case?
 1.	When no list has been created: the logged-in user has the option to add the item(s) to the default list or create a new list  
-2.	When at least one list has been created: the logged-in user has the option to add the item(s) to the default favourites list, their existing lists or a new list.
+2.	When at least one list has been created: the logged-in user has the option to add the item(s) to the default favorites list, their existing lists or a new list.
 3.	When more than X lists have been created: the logged-in user can scroll down to see all the lists created.
 
 A maximum of 100 lists is allowed.
