@@ -69,7 +69,7 @@ A maximum of 100 lists is allowed.
 
 The heart is filled in once the product is added to a favourites list  
 
-Favourites heart for variations: in the list pages, the heart will not be filled in if the default variation is not selected
+Favorites heart for combinations: in the list pages, the heart will not be filled in if the default combination is not selected
 ![wishlist screen 4](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-4.png)
 
 If the user clicks on the filled-in heart again, the product is removed from the wishlist. If the product is deleted the seller, it should no longer appear in the users' favourites lists.
