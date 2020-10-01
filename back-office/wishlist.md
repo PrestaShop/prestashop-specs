@@ -280,8 +280,8 @@ Functional rules:
 A user does not need to be logged in to view the shared link > an "ephemeral" page is created with a product listing outside the users account, without the option to delete or modify the list > model need 
 
 ## Feature 3: Bookmarks - Back office
-### US 8: Set up the module and view statistics 
-##### As a seller, I can modify the wording 
+### US 8: Set up the module and view statistics in back office 
+##### As a seller, I can modify the wording in back office 
 - Name of my Favorites section 
 - Title 
 - Create a list CTA
@@ -290,7 +290,7 @@ A multi-language field for each field allows to translate them
 
 ![wishlist screen 21](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-21.png)
 
-##### As a seller, I can view statistics regarding favorites 
+##### As a seller, I can view statistics regarding favorites in back office 
 
 ![wishlist screen 22](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-22.png)
 
@@ -308,7 +308,7 @@ A "Refresh" CTA; when a user changes the timing, they will have to click on Refr
 
 For each product, you should provide: 
 - Product image
-- a clickable product title that refers the user to the product sheet
+- a clickable product title that refers the user to the product sheet in back office
 - product reference 
 - Category
 - Price excl. VAT 
