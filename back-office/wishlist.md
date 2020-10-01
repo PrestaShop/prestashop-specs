@@ -138,7 +138,7 @@ Different cases:
 Functional rules:
 I can modify the quantity, the combinations and the customization of all my favorite products (in stock, out of stock) by clicking on the Pencil in my favorite products list.
 
-When I click on the Pencil, I am redirected to the product sheet to make my modifications. Once the changes are made, you will have to click on the heart to add the new product as a favourite. At this point, the new quantity, variation and/or customisation will overwrite the original product in the favourites list.
+When I click on the Pencil, I am redirected to the product sheet to make my modifications. Once the changes are made, you will have to click on the heart to add the new product as a favorite. At this point, the new quantity, combination and / or customization will overwrite the original product in the favorites list.
 
 ![wishlist screen 10](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-10.png)
 
