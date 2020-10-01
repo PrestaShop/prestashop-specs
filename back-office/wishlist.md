@@ -227,7 +227,7 @@ b.	Share the list
 5.	Click on Rename
 6.	A pop-up opens with a pre-filled text field with the title to be modified. 
 7.	A Rename CTA is used to validate the action and close the pop-up 
-8.	An Undo CTA cancels the action and closes the pop-up 
+8.	An "Cancel" CTA cancels the action and closes the pop-up 
 
 ![wishlist screen 16](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-16.png)
 
