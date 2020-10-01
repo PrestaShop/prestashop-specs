@@ -184,7 +184,7 @@ Only non-customized products, with stock or without stock - but with the option 
 
 ## Feature 2: Storing favourites - Create and manage your favourites lists
 ### US 5: Create a list 
-##### As a logged-in user, I can create a favourites list in the Favourites area in My Account by clicking on "Create Favourites List" 
+##### As a logged-in user, I can create a favorites list in the "Wishlists" area in My Account by clicking on "Create Favorites List" 
 
 Functional rules:
 Who can benefit from this feature?
