@@ -51,7 +51,7 @@ Customizable products
 
 Logged-in user:  
 For a logged-in user, when clicking on the heart, a pop-in is displayed offering them the option to add this product to:  
--	the default favourites list
+-	the default favorites list
 -	one of the previously created lists (if the user does not have a previously created list, the default list is displayed - see below > the pop-up has a min. size),
 ![wishlist screen 2](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-2.png)
 
