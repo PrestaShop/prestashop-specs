@@ -44,7 +44,7 @@ Products with combinations:
 - When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
 - If the user selects a combination in the product sheet, then this combination is added, not the "default" product combination
 
-Customisable products
+Customizable products
 - If the user has selected the desired customisation before adding the item to their favorites, the product is will be added with the selected customisation
 - If the user has not selected a customisation before adding the product to their favorites, the product is added to the wishlist without any type of customisation.  
 - in both cases, they will not be able to add this product to the basket without going back to the product sheet (see US Add to basket)  
