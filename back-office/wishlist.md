@@ -310,7 +310,7 @@ For each product, you should provide:
 - Product image
 - a clickable product title that refers the user to the product sheet in back office
 - product reference 
-- Category
+- Main category
 - Price excl. VAT 
 - Quantity available 
 - a conversion rate (= the number of times the product has been purchased after being listed as a favorite) 
