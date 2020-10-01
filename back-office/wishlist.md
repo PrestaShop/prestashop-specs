@@ -169,7 +169,7 @@ If the product is Out of stock and cannot be added to the cart:
 
 If order of out of stock products is denied and if the selected combination is out of stock and if there are other available combination (in stock or out of stock with allowed order) for the same product: 
 -	a message tells the user that the product is available in other options "Product available with different options"
--	the product image and the Add to basket CTA are greyed out 
+-	the product image and the Add to cart CTA are disabled
 
 ![wishlist screen 13](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-13.png)
 
