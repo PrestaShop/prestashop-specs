@@ -117,7 +117,7 @@ I can view the products and I can sort them as follows:
 In all three cases, keep the discount price in mind  
 ![wishlist screen 9](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-9.png)
 
-Please note that if a product is deleted or deactivated from the catalogue, the product automatically disappears from the list.  
+Please note that if a product is deleted or deactivated from the catalog, the product automatically disappears from the list.  
 
 For each product, you have to go back to the information listed in US n°1.
 As a logged-in user, I can see how many unique favourite products are in a list.  
