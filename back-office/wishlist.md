@@ -113,6 +113,7 @@ I can view the products and I can sort them as follows:
 - Last added (default sorting)  
 - Price highest to lowest
 - Price lowest to highest 
+
 In all three cases, keep the discount price in mind  
 ![wishlist screen 9](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-9.png)
 
