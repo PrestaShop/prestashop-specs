@@ -67,7 +67,7 @@ What happens in each case?
 
 A maximum of 100 lists is allowed.
 
-The heart is filled in once the product is added to a favourites list  
+The heart is filled in once the product is added to a favorites list  
 
 Favorites heart for combinations: in the list pages, the heart will not be filled in if the default combination is not selected
 ![wishlist screen 4](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-4.png)
