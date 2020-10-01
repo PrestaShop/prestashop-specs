@@ -101,7 +101,7 @@ As a logged-in user, I can access my favorite products by:
 - Clicking on "Wishlists"
 ![wishlist screen 6](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-6.png)
 
-- I come to the page with the favourites lists (+create lists)
+- I come to the page with all my favorites lists (default one + created lists)
 ![wishlist screen 7](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-7.png)
 
 - When I click on one of the lists, it brings me to a page that lists my previously added products  
