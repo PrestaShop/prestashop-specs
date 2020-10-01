@@ -75,7 +75,7 @@ Favorites heart for combinations: in the list pages, the heart will not be fille
 If the user clicks on the filled-in heart again, the product is removed from the wishlist. If the product is deleted by the seller, it should no longer appear in the users' favorites lists.
 
 For a non-logged-in user:
-For a non-logged-in user: when they click on the heart, a login pop-up opens informing them that they need to be logged in to add a product to their favourites:
+For a non-logged-in user: when they click on the heart, a login pop-up opens informing them that they need to be logged in to add a product to their favorites:
 ![wishlist screen 5](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-5.png)
 
 
