@@ -133,7 +133,7 @@ Different cases:
 - Products in stock
 - Products out of stock
 - from the product sheet
-- from a favourites list
+- from a favorites list
 
 Functional rules:
 I can modify the quantity, the variations and the customisation of all my favourite products (in stock, out of stock) by clicking on the Pencil in my favourite products list.
