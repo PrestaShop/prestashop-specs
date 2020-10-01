@@ -203,7 +203,7 @@ Once the list has been created, it will appear at the bottom of the lists
 Functional rules:
 Steps for creating a list:
 1.	Log in 
-2.	Click on the heart to add the product to your favourites
+2.	Click on the heart to add the product to your favorites
 3.	A "box" is displayed with all the favourite lists.
 4.	Click on "Create a new list"
 5.	A pop-up appears with a field for the List Name to be created
