@@ -65,7 +65,7 @@ What happens in each case?
 2.	When at least one list has been created: the logged-in user has the option to add the item(s) to the default favorites list, their existing lists or a new list.
 3.	When more than X lists have been created: the logged-in user can scroll down to see all the lists created.
 
-A maximum of 100 lists is allowed.
+There is no list limit
 
 The heart is filled in once the product is added to a favorites list  
 
