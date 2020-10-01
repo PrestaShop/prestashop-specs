@@ -47,7 +47,7 @@ Products with combinations:
 Customizable products
 - If the user has selected the desired customisation before adding the item to their favorites, the product is will be added with the selected customisation
 - If the user has not defined a customization before adding the product to their favorites, the product is added to the wishlist without any customization.  
-- in both cases, they will not be able to add this product to the basket without going back to the product sheet (see US Add to basket)  
+- in both cases, they will not be able to add this product to the cart without going back to the product sheet (see US Add to cart)  
 
 Logged-in user:  
 For a logged-in user, when clicking on the heart, a pop-in is displayed offering them the option to add this product to:  
