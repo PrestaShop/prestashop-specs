@@ -308,7 +308,7 @@ For each product, you should provide:
 - Category
 - Price excl. VAT 
 - Quantity available 
-- a conversion rate (= the number of times the product has been purchased after being listed as a favourite) 
+- a conversion rate (= the number of times the product has been purchased after being listed as a favorite) 
 
 You can display the results: 
 -	for that day, 
