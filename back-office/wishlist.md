@@ -42,7 +42,7 @@ Rules for quantities when adding to favorites :
 
 Products with combinations:
 - When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
-- If the user selects a variation in the product sheet, then this variation is added, not the "basic" product
+- If the user selects a combination in the product sheet, then this combination is added, not the "default" product combination
 
 Customisable products
 - If the user has selected the desired customisation before adding the item to their favorites, the product is will be added with the selected customisation
