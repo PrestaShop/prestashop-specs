@@ -161,7 +161,7 @@ A logged-in user can add one of their favourites to the basket, except custom pr
 
 ![wishlist screen 11](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-11.png)
 
-If the product is Out of stock and cannot be added to the basket: 
+If the product is Out of stock and cannot be added to the cart: 
 -	a message is displayed informing the user that the product is no longer available: "Product out of stock".
 -	the "Add to basket" CTA is greyed out and the product cannot be added to the basket
 
