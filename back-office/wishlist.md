@@ -292,7 +292,7 @@ A multi-language field for each field allows to translate them
 ![wishlist screen 22](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-22.png)
 
 available statistics: 
-Provide a cache for queries with calculations for large catalogues! (some sellers have more than 30,000 products)
+Provide a cache for queries with calculations for large catalogs! (some sellers have more than 30,000 products)
 
 Here are the caches you need, depending on the timing: 
 -	All time & Year: 1 month cache
