@@ -265,6 +265,7 @@ b.	Share the list
 ![wishlist screen 19](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-19.png)
 
 a user who accesses the shared link cannot modify the products, they can only add them to their shopping basket (if enabled) > Read-only view 
+It is not an option in the module configuration.
 
 Once a user has copied the link, the "Copy link" CTA changes to "Link copied" and the user can close the pop-up. 
 
