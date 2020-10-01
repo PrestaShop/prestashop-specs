@@ -150,7 +150,7 @@ Products with several options:
 - if I delete my product from the product sheet: the product with combinations X and quantity Y will be deleted
 - if I delete my product from a product listing (where I don't have any variation options), it deletes the product with the defaultvariation  
 
-### US 4: Add a favourite product to the basket  
+### US 4: Add a favorite product to the cart  
 ##### As a logged-in user, I can add a favourite product to the shopping basket
 
 Specific case:
