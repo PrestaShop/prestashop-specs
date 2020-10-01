@@ -611,7 +611,7 @@ When there is a default supplier, the cost price is the default supplier price w
   * **Products list**:
     * **The product name**: Display the product name
     * **Supplier reference**: Field to specify the product reference for each supplier. 
-    * **Price \(tax excl.\)**: Field to specify the product price for each supplier.
+    * **Cost price \(tax excl.\)**: Field to specify the cost product price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
     The Product list has a pagination to navigate throught the combinaition.
     
