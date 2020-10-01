@@ -83,7 +83,7 @@ When clicking on "Sign in", the user is redirected to the login page. Once the c
 
 Special login pop-up features:
 -	add a go-back setting to the URL so that, once the user is logged in, they are redirected to the page they were on (any page)
--	the user is then asked to select the favourites list in which he/she wants to save the product.
+-	the user is then asked to select the favorites list in which he/she wants to save the product.
 
 ### US 2: View my favourite products  
 ##### As a logged-in user, I can view and sort my favourite products
