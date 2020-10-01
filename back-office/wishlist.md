@@ -318,4 +318,4 @@ PS: contrary to the model, no filter is needed for the year and "All time" becau
 
 2.	Total number of created and active lists (still online) 
 
-+	Retrieve customers' favourites lists to put them in the customer page > update the layout 
++	Retrieve customers' favorites lists to put them in the customer page > update the layout 
