@@ -109,6 +109,8 @@ As a logged-in user, I can access my favorite products by:
 - The number of products in the list is displayed to the left of the list name  
 This means that it accounts for all the idproduct-idproduct allocated
 For example, if there are 3 variations of the same product it counts as 3 products.
+In the case of a product pack, this counts as 1 pack and not the number of products in the pack
+
 ![wishlist screen 8](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-8.png)
 
 I can view the products and I can sort them as follows:  
