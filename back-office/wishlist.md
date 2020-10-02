@@ -166,7 +166,7 @@ I add the black and the white to one of my favorite list and tt will be impossib
 ##### As a logged-in user, I can add a favorite product to the shopping cart
 
 Specific case:
--	custom product that cannot be added directly to the basket from the list of favourite products
+-	customized products cannot be added directly to the cart from the list of favorite products
 
 Functional rules:
 A logged-in user can add one of their favorites to the cart, except customized products (with stock or out of stock but with the possibility to be added to the cart/allow order option), by clicking on Add to cart.
