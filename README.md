@@ -50,7 +50,7 @@ Everytime a developper works on PrestaShop, he/she is assigned or self-assigned 
 These development issues are located in the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop) `github.com/PrestaShop/PrestaShop`.
 
 In order to complete the task, most of the time, a developer needs specifications.
-These specifications are located here in this repository `github.com/PrestaShop/prestahop-specs`.
+These specifications are located here in this repository `github.com/PrestaShop/prestashop-specs`.
 
 So in each development issue should be a link to the correponding specification.
 
