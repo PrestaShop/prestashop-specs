@@ -37,10 +37,10 @@ As merchant managing order is essential for my e-commerce, I need to be able to:
 
 -   Check the order’s product to prepare it
 -   Manage the order’s progress,
--   Edit the customer information or send him messages,
+-   Edit the customer information or send him/her messages,
 -   To print his invoice,
 -   Handle payment methods,
--   to follow my shipping through activities,
+-   To follow my shipping through activities,
 -   Returns and refunds
 
 **WHY**
@@ -55,7 +55,7 @@ Thus, this project aims at specifying the new behaviours for every scenario a me
 
 -   Order (order status, invoices, cancellation)
 -   Customer (customer card and addresses)
--   Paiement
+-   Payment
 -   Messages
 -   Refund
 -   Product & voucher
@@ -79,7 +79,7 @@ On the header, we have **the order’s reference, customer’s name, total price
 -   **Print order button**
 -   **View invoice show button**
 -   **View delivery slip button**
--   **Partial refund button**
+-   **Partial Refund button**
 -   **Standard Refund* button*
 -   **Return products button**
 -   **Cancel products button**
@@ -244,13 +244,13 @@ Bellow the action button on the right, the product panel displays **the order’
 -   **quantity,**
 -   **available quantity,**
 -   **total with tax included,**
--   **and 2 action button edit and delete.**
+-   **and two action buttons edit and delete.**
 
-**When the product has customization**, a row is added bellow the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
+**When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
 [popin displaying the products from the pack](/img/customization.png)
 
-**When the product is pack of product**, a link is added bellow the product name to show all the product in an popin.
+**When the product is a pack of products**, a link is added bellow the product name to show all the product in an popin.
 
 [Link in the product row](/img/view-pack-content.png)
 
@@ -263,14 +263,14 @@ By pressing on the link "View pack content", it opens the products from the pack
 
 [Pagination design](https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609)
 
-**The quantity** is coloured in a dark grey background if there are more than 2 quantities.
+**The quantity** is coloured in a dark grey background if it is 2 or higher.
 
 **The edit button** allows the user to edit the excluded and included base price and quantity. If the user edit an amount in the input without taxe it will insert the amount plus the product taxes in the input with taxe automatically. And vice versa, if the user edit an amount in the input with taxe it will insert the amount less the product taxes in the input without taxe.
 
-The merchant is warn if he edits the price of product with a specific price or an catalog price rule.
+The merchant is warned if he edits the price of product with a specific price or an catalog price rule.
 ![Warning on the edition of a product with specific price](/img/Warning_on_the_edition_product_specific_price_catalog.PNG)
 
-**While editing the quantity, the total updates itself** to let know to the user impact price that it will have.
+**While editing the quantity, the total updates itself** to let the user know the impact price that it will have.
 The **Update button** to save the modification or **Cancel button** to drop it.
 
 **The Delete button removes the product for the list.**
