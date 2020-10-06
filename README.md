@@ -12,7 +12,7 @@ These specifications might help:
 - the team maintaining the project, in order to know why some product decisions have been made and to have an overview of the current state of the software,
 - anyone who is interested in the project and want to know it better.
 
-The repository is mainained by the [Product team](https://github.com/orgs/PrestaShop/teams/prestashop-product-team/members) at PrestaShop.
+The repository is maintained by the [Product team](https://github.com/orgs/PrestaShop/teams/prestashop-product-team/members) at PrestaShop.
 
 For the moment not all specifications are in this repository. They will be created and added progressively. Contributions are Welcome!
 
@@ -52,7 +52,7 @@ These development issues are located in the [PrestaShop repository](https://gith
 In order to complete the task, most of the time, a developer needs specifications.
 These specifications are located here in this repository `github.com/PrestaShop/prestahop-specs`.
 
-So in each development issue should be a link to the correponding specification.
+So in each development issue should be a link to the corresponding specification.
 
 
 ### Process when working on a new feature
@@ -62,9 +62,9 @@ If the file related to this feature doesn't exist yet, it should be created.
 
 The specifications must then be validated by the Product team before the development begins.
 
-Once the specs are validated, the link to this PR must then be addded in the development issue, so the developer can easily find the specifications associated with the issue.
+Once the specs are validated, the link to this PR must then be added in the development issue, so the developer can easily find the specifications associated with the issue.
 
-The specifications' PR can only be merged once the development is done, and merged into the PrestaShop develop branch in the repo `PrestaShop/PrestaShop`.
+The specifications' PR can only be merged once the development is done, and merged into the PrestaShop develop branch in the repository `PrestaShop/PrestaShop`.
 This rule is made to avoid having published specifications for features that are not available yet. The published specifications must correspond to the latest Stable version available.
 
 ![Management of PrestaShop specifications](/img/prestashop-specs-management.jpg)
@@ -79,7 +79,7 @@ Then add a link in the development issue to the specification in the master bran
 
 - If the specification doesn't exist
 Then, first you need to validate with the Product team what is the right behavior that should be specified.
-Then, you can follow the same process as for a new feature or improvement, by creating a PR. The difference is that here the PR will be merge directly after validation as the specified behavior should be in the latest Stable version.
+Then, you can follow the same process as for a new feature or improvement, by creating a PR. The difference is that here the PR will be merged directly after validation as the specified behavior should be in the latest Stable version.
 
 
 ## Specification structure
@@ -115,4 +115,4 @@ To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) pag
 
 ## Learn more about PrestaShop
 
-You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](http://doc.prestashop.com/).
+You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](https://doc.prestashop.com/).
