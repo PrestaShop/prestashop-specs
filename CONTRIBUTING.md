@@ -53,10 +53,10 @@ We expect contributors to follow these instructions:
 2. Fork the PrestaShop project to your Github account.
 3. Clone your fork to your local machine.
 4. Create a branch in your local clone for your changes.
-5. Change the files in your branch. Make sure they meet our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards).
+5. Change the files in your branch.
 6. Push the changed branch to your fork in your GitHub account.
 7. Create a pull request for your changes on the PrestaShop project. If you need help to make a pull request, read the GitHub help page about [creating pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-8. Wait for one of the product managers to either include your change in the codebase or comment on possible adjustments to its content.
+8. Wait for one of the product managers to either include your change in the repository or comment on possible adjustments to its content.
 
 
 **Submit an issue using GitHub:**
@@ -90,4 +90,4 @@ Example: `orders-orders-list-quick-preview.png`
 
 ## What does it mean to be a contributor?
 
-Using GitHub to contribute allows to identify contributors to the specifications project thanks to their GitHub profile. Any commit and/or pull request created indicate and store its auhtor. It is a way to officially prove your contribution.
+Using GitHub to contribute allows to identify contributors to the specifications project thanks to their GitHub profile. Any commit and/or pull request created indicate and store its author. It is a way to officially prove your contribution.
