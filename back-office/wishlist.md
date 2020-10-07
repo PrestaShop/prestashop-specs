@@ -46,7 +46,7 @@ Products with combinations:
 
 Customizable products : 
 No matter if the user has filled his customization or not, when he adds his customizable product to his favorites, it will be saved without his customization. 
-If it is a product with a mandatory customisation then the user will not be able  to add this product to the cart without going back to the product sheet (see US Add to cart) > he will have to click on the CTA Customize in order to be redirected to the product sheet, fill in the customisation and then add it to the basket. 
+If it is a product with a required customization then the user will not be able to add this product to the cart without going back to the product sheet (see US Add to cart) > he will have to click on the CTA Customize in order to be redirected to the product sheet, fill in the customization and then add it to the cart. 
 
 Since the customisation is not registered in the wishlist, it will not be possible to add the same product twice but with different customisations. The product will only appear once in the wishlist. 
 
