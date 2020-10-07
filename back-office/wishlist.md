@@ -153,7 +153,7 @@ You can remove a product from the favorites directly within the product sheet or
 
 Products with several options:
 - if I delete my product from the product sheet: the product with combinations X and quantity Y will be deleted
-- if I delete my product from a product listing (where I don't have any variation options), it deletes only the product with the defaultvariation. Anyway, if I have added a declination as a favourite, then the product block in the listing will not have the heart filled. The heart is filled only if the merchant has added the product with its default declination. 
+- if I delete my product from a product listing (where I don't have any combination options), it deletes only the product with the default combination if it was added. Otherwise, if I have added a combination as a favorite that isn't the default one, then the product block in the listing will not have the heart filled. The heart is filled only if the merchant has added the product with its default combination. 
 
 Exemple : if I didn't added the product with the default combination in my favorite list
 For example I have a tshirt with following combinations:
