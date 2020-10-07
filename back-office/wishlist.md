@@ -186,7 +186,7 @@ If order of out of stock products is denied and if the selected combination is o
 ![wishlist screen 13](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-13.png)
 
 For a customized product :
-* If the customization is required and if the customization isn't defined (it is still not defined since it is impossible to save the customisation as a wishlist), the user will not be able to add this product to the cart directly from the favorites list. The "Add to cart" CTA is replaced by "Customize". When clicking on the CTA, the user is redirected to the product sheet in order to customise the product, and if it is already filled in, they can add this product as a favorite. 
+* If the customization is required and as the customization is always not defined (since it is impossible to save the customization as a wishlist), the user will not be able to add this product to the cart directly from the favorites list. The "Add to cart" CTA is replaced by "Customize". When clicking on the CTA, the user is redirected to the product sheet in order to customize the product, and if it is already filled in, they can add this product to the cart. 
 * If the customization is not required, the product can be added to the cart directly.
 ![wishlist screen 14](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-14.png)
 
