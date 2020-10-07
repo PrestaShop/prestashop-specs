@@ -169,7 +169,7 @@ Specific case:
 -	customized products cannot be added directly to the cart from the list of favorite products
 
 Functional rules:
-A logged-in user can add one of their favorites to the cart, except customized products (with stock or out of stock but with the possibility to be added to the cart/allow order option), by clicking on Add to cart.
+A logged-in user can add one of their favorites to the cart (except customized products) if the product is in stock or out of stock but with the allow order option checked), by clicking on Add to cart.
 
 ![wishlist screen 11](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-11.png)
 
