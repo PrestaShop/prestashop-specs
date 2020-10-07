@@ -59,7 +59,7 @@ For a logged-in user, when clicking on the heart, a pop-in is displayed offering
 -	a new list that can be created by clicking Create New wishlist
 ![wishlist screen 3](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-3.png)
 
-The user can only select one list.  
+The user can only select one list, so the product can be added to only one list.  
 
 What happens in each case?
 1.	When no list has been created: the logged-in user has the option to add the item(s) to the default list or create a new list  
