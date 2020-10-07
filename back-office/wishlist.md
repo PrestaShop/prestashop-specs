@@ -211,7 +211,7 @@ Only logged-in users can create a favorites list
 
 Once the list has been created, it will appear at the bottom of the lists 
 
-##### As a logged-in user, I can create a favorites list in the product sheet or from the product blocks (in the navigation pages)
+##### As a logged-in user, I can create a favorites list from the product sheet or from any other product listing page with product blocks
 
 Functional rules:
 Steps for creating a list:
