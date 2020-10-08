@@ -1,9 +1,11 @@
-## **Specification of the Product Setting Page**
+# **Specification of the Product Setting Page**
 
 ## Grid
 
 _CustomerGridDefinitionFactory.php_ Default action in the button: Edit Other available actions in the menu: View, Delete Row action: View
 Row action does not apply to the ID's checkbox column and to columns with enable/disable actions.
+
+## Product page
 
 ### **Display unavailable product attributes on the product page.**
 
@@ -38,3 +40,9 @@ For example, the "White" attribute and the related product are not displayed in 
 | M | Black | Yes |
 
 but the "S", "M", and "Black" attributes remain displayed.
+
+## Products stock
+
+**Enable stock management & Allow ordering of out-of-stock products**
+
+When I set "enable stock management" to "NO", then "Allow ordering of out of stock products" activates itself automatically if it was not and becomes unclickable.
