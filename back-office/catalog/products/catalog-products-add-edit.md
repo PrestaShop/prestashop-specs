@@ -422,7 +422,13 @@ A bulk action allow to select / unselect all carriers
 **As a merchant I want to be able to manage the prices of my products**
 
 Here is the list of the elements of pricing tab:
-
+* **Retail price (tax excl.)**: When a value is filled, the retail price (tax incl.) field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When the merchant changes it, the same field in the Basic settings tab is also updated.
+* **Retail price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue [#15330](https://github.com/PrestaShop/PrestaShop/issues/15330)).
+When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When the merchant changes it, the same field in the Basic settings tab is also updated.
 * **\(Retail\) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
 When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.      
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
@@ -432,13 +438,13 @@ When a value is filled, the price tax excl field is calculated automatically acc
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
 Drop-down with all tax rules enabled and a “no tax” option.          
-When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.               
+When the merchant changes it, the price (tax incl.) is updated. And the “tax rule” field in the Basic settings tab is also changed.               
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 * **Manage tax rule**: Open in a new browser tab International &gt; Taxes
 * **Display the "On sale!" flag on the product page, and on product listings**: When the checkbox is checked, it displays a banner "PROMO !" \(not linked to a possible promotion in progress\) on the image of the product in the product listing and on the product page in front-office.
 * **Final retail price banner**: Displays the final prices tax excl and tax incl \(tax incl only if taxes are enabled in International &gt; Taxes\).           
 Prices are updated when they are modified above. 
-* **Price per unit tax excl**: By default, it’s set to 0.000000            
+* **Retail price per unit (tax excl.)**: By default, it’s set to 0.000000            
 You can fill the unit price if you sell products per unit.            
 To separate decimals a dot or a comma can be used, both should work no matter the language.        
 Displayed in the product page in front-office.
@@ -450,7 +456,7 @@ Displayed in the product page in front-office next to the unit price
 It’s the amount of Price \(tax excl.\) - ecotax \(tax incl.\).       
 It is taken into account for the calculations instead of the field "Price \(tax excl.\)" when ecotax tax incl field is different from 0.         
 This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\)
-* **Cost price tax excl**: By default, it’s set to 0.000000      
+* **Cost price (tax excl.)**: By default, it’s set to 0.000000      
 It’s used for margin calculations.          
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 * **Add a specific price**: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.     
@@ -606,7 +612,7 @@ When there is a default supplier, the cost price is the default supplier price w
   * **Products list**:
     * **The product name**: Display the product name
     * **Supplier reference**: Field to specify the product reference for each supplier. 
-    * **Price \(tax excl.\)**: Field to specify the product price for each supplier.
+    * **Cost price \(tax excl.\)**: Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
     The Product list has a pagination to navigate throught the combinaition.
     
@@ -701,12 +707,12 @@ Here is the mockup of errors behavior for tabs: https://invis.io/3RWZILBJWQH#/41
 
 ### Pricing tab <a id="errorspricing"></a>
 
-* **Price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
-* **Price tax incl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Retail price (tax excl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Retail price (tax incl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Price per unit tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Unity field**: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”
 * **Ecotax tax incl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
-* **Cost price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Cost price (tax excl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Add a specific price:**
   * **Starting at**: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed under the field “This value is not valid”. If you enter a number with decimal \(ex 30,5 or 30.5\) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error should be displayed “This value is not valid.”
   * **Impact on product price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
