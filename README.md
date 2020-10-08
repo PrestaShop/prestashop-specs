@@ -95,17 +95,17 @@ When not possible, template can be adapted, but it is important to have the info
 
 ## Repository tree
 
-The repository has 4 main directories, `back-office`, `front-office`, `broader-topics` and `modules`.
+The repository contains 4 main directories: `back-office`, `broader-topics`, `front-office`, and `modules`.
 
-- The `back-office` directory mostly follows the back office structure. Most files contain the specifications for a BO page.
+- The [`back-office`](https://github.com/PrestaShop/prestashop-specs/tree/master/back-office) directory mostly follows the back office structure. Most files contain the specifications for a BO page, e.g. the product page.
 
-- The `front-office` directory lists the pages in the front office and shared behaviors throughout the pages.
+- The [`broader-topics`](https://github.com/PrestaShop/prestashop-specs/tree/master/broader-topics) directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO, e.g. the SEO strategy throughout the software.
 
-- The `broader-topics` directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO.
+- The [`front-office`](https://github.com/PrestaShop/prestashop-specs/tree/master/front-office) directory lists the pages in the front office and shared behaviors throughout the pages, e.g. the product images.
 
-- The `modules` directory includes all specifications for modules.
+- The [`modules`](https://github.com/PrestaShop/prestashop-specs/tree/master/modules) directory includes all specifications for built-in (“native”) modules, e.g. the Faceted Search module.
 
-`img` is used to store images used in the specs and `specs-templates` to store the templates.
+Note that [`img`](https://github.com/PrestaShop/prestashop-specs/tree/master/img) is used to store images used in the specs and [`specs-templates`](https://github.com/PrestaShop/prestashop-specs/tree/master/spec-templates) to store the templates.
 
 
 ## How to contribute
