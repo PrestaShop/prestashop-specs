@@ -12,7 +12,7 @@ These specifications might help:
 - the team maintaining the project, in order to know why some product decisions have been made and to have an overview of the current state of the software,
 - anyone who is interested in the project and want to know it better.
 
-The repository is maintained by the [Product team](https://github.com/orgs/PrestaShop/teams/prestashop-product-team/members) at PrestaShop.
+The repository is maintained by the [Product team](https://github.com/orgs/PrestaShop/teams/product-team/members) at PrestaShop.
 
 For the moment not all specifications are in this repository. They will be created and added progressively. Contributions are Welcome!
 
