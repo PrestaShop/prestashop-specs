@@ -45,4 +45,4 @@ but the "S", "M", and "Black" attributes remain displayed.
 
 **Enable stock management & Allow ordering of out-of-stock products**
 
-When I set "enable stock management" to "NO", then "Allow ordering of out of stock products" activates itself automatically if it was not and being not clickable.
+When I set "enable stock management" to "NO", then "Allow ordering of out of stock products" activates itself automatically if it was not and becomes unclickable.
