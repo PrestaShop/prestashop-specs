@@ -207,7 +207,9 @@ The shipping price is displayed according to the carrier selected and the free s
 A free shipping toggle is displayed. By default free shipping are disabled. If it's enabled then, the shipping price is 0,00. 
 
 If gift wrapping option is enabled in Shop parameters > Order settings, then a checkbox "Gift wrapping" and a field "Gift wrapping message" are displayed.
-If recycled packaging option is enabled in Shop parameters > Order settings, then a checkbox "Recycled packaging" is displayed 
+If recycled packaging option is enabled in Shop parameters > Order settings, then a checkbox "Recycled packaging" is displayed.
+
+Checking the checkbox of the gift wrapping or the recycled packaging will display the corresponding label in the order view page (cf V. Tabs panel).
 
 ## VI. Payment and status configuration
 
