@@ -160,7 +160,7 @@ For example I have a tshirt with following combinations:
 * Red (default combination)
 * Black
 * White
-I add the black and the white to one of my favorite list and tt will be impossible to remove the product from the wishlist because it is not be considered as a favorite product (the heart is empty). 
+I add the black and the white to one of my favorite list. It will be impossible to remove these products of the wishlist from the product list because the heart is empty
 
 ### US 4: Add a favorite product to the cart  
 ##### As a logged-in user, I can add a favorite product to the shopping cart
