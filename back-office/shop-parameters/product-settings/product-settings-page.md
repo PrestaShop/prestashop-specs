@@ -30,7 +30,9 @@ Only numbers should be typed in the field. If the input contains specific charac
 
 **Force update of friendly URL.** A friendly URL is generated from the product name. By default, it is disabled. Enabling this option will **automatically regenerate it every time the merchant modifies and saves a product name** - and automatically update the friendly URL field in the 'SEO' tab of the product page.
 
-**Default activation status.** By default, it is disabled. If enabled, this option will **turn online the products the merchant creates**. As a consequence, the products will be set as active in the 'Status' column in the Catalog > Products listing.
+**Default activation status.** By default, it is disabled. If enabled, this option will **turn online the products the merchant creates** manually in the Catalog > Products page. As a consequence, manually created products will be set as active in the 'Status' column in the Catalog > Products listing.
+
+As mentioned by the tooltip, _Enable this option if you want to activate by default all your manually created new products._, it does not apply to the products added via the import feature in Advanced Parameters > Import, cf. _to do_ issue #[13841](https://github.com/PrestaShop/PrestaShop/issues/13841).
 
 
 ## Product page
@@ -46,7 +48,7 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 
 _As a merchant, I want to be able to manage my unavailable product combinations._
 
-**Display unavailable product attributes on the product page.** By default, it is enabled.
+**Display unavailable attributes on the product page.** By default, it is enabled. And the tooltip should be _If an attribute is not available in every product combination, it will not be displayed._, cf. _1.7.8_ issue #[17447](https://github.com/PrestaShop/PrestaShop/issues/17447).
 
 **When this option is enabled, unavailable products' combinations remain visible in the shop**. A message on the FO product page indicates the product is no longer available in the chosen option and invites customers to choose another combination: _Product available with different options_. 
 
@@ -94,6 +96,10 @@ _As a merchant, I want to be able to display the discounted price or the discoun
 ## Products stock
 
 [TO BE COMPLETED]
+
+**Enable stock management.** When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
+
+
 
 
 ## Pagination
