@@ -85,5 +85,27 @@ All the enabled CMS pages are listed in the drop-down.
 ## Gift
 
 ### Offer gift wrapping
+
+This toggle is on No by default.
+
+When enabled, a checkbox "I would like my order to be gift wrapped" is displayed in front-office during the checkout at the shipping step.
+A checkbox "gift" is also displayed during the order creation in back-office at the shipping step, see the [specs here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)
+
 ### Gift-wrapping price
+
+By default this field is set to 0.00
+
+The merchant can enter the gift wrapping price (taxes excluded).
+
+If the value is > 0.00, it's displayed in front-office during the checkout at the shipping step:"(additional cost of €X.XX tax incl.)"
+
+### Gift-wrapping tax
+
+This drop-down lists all the enabled tax rules and allows the merchant to select the tax rule that will be applied on the gift wrapping price.
+
 ### Offer recycled packaging
+
+This toggle is on No by default.
+
+When enabled, a checkbox "I would like to receive my order in recycled packaging." is displayed in front-office during the checkout at the shipping step.
+A checkbox "Recycled packaging" is also displayed during the order creation in back-office at the shipping step, see the [specs here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)
