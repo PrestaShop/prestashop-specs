@@ -72,7 +72,7 @@ This option isn't working, see issue https://github.com/PrestaShop/PrestaShop/is
 This toggle is on Yes by default.
 
 When enabled, the terms and conditions are displayed in front-office during the checkout at the payment step.
-To validated the order the customer has to check the box. Otherwise, the "place order" button is disabled.
+To validate the order, the customer has to check the box. Otherwise, the "place order" button is disabled.
 
 When disabled, the terms and conditions are not displayed in front-office at the payment step.
 
