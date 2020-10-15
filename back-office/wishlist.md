@@ -286,7 +286,7 @@ It is not an option in the module configuration.
 
 Once a user has copied the link, the "Copy link" CTA changes to "Link copied" and the user can close the pop-up. 
 
-To share the default list, simply click on the share icon and a pop-up is displayed with a path to share the list.
+To share the default list, just click on the share icon. It should display the sharing link in a pop-up window.
 
 ![wishlist screen 18](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-18.png)
 
