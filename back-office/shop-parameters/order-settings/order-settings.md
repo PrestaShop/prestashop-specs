@@ -11,7 +11,7 @@ When enabled, a summary is displayed in the Front-Office during the checkout, at
 ![order final summary](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Order_final_summary.png)
 
 
-This way, the customer can verify before the payment all the informations: the delivery address, the invoice address, the selected shipping method & its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost and the order total.
+This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method & its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.
 
 ### Enable guest checkout
 
