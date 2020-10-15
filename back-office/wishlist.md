@@ -152,8 +152,8 @@ I can permanently remove a favorite product from the list by clicking on remove 
 You can remove a product from the favorites directly within the product sheet or a product listing, by clicking on the heart (which becomes empty).  
 
 Products with several options:
-- if I delete my product from the product sheet: the product with combinations X and quantity Y will be deleted
-- if I delete my product from a product listing (where I don't have any combination options), it deletes only the product with the default combination if it was added. Otherwise, if I have added a combination as a favorite that isn't the default one, then the product block in the listing will not have the heart filled. The heart is filled only if the merchant has added the product with its default combination. 
+- If I delete my product from a product page, the product with combinations X and quantity Y will be removed.
+- If I delete my product from a listing page (where there are no combination options), it removes only the product with the default combination - if it ever was added. If I have added any combination that is not the default one, then the product block in the listing does not display the full heart icon. It is full only if I have added the product with its default combination. 
 
 Exemple : if I didn't added the product with the default combination in my favorite list
 For example I have a tshirt with following combinations:
