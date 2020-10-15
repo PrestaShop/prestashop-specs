@@ -41,8 +41,8 @@ Rules for quantities when adding to favorites:
 - If the product is out of stock (stock = 0 ou stock < 0) with denying order option: it is saved in favorites with 1 product quantity but the product block is disabled and the visitor cannot add the product to the cart.
 
 Products with combinations:
-- When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
-- If the user selects a combination in the product sheet, then this combination is added, not the "default" product combination
+- When a user adds a product from a listing page (where he/she cannot select any combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
+- If the user selects a combination from the product page, then this combination is added and not the "default" product combination.
 
 Customizable products: 
 - Whether the user has filled his customization or not, when he adds a customizable product to his favorites, it is saved without the customization. 
