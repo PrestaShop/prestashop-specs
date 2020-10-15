@@ -342,7 +342,7 @@ PS: contrary to the model, no filter is needed for the year and "All time" becau
 
 +	Retrieve customers' favorites lists to put them in the customer page > update the layout 
 
-## Multishop rules 
+## Multistore behavior 
 If the multistore feature is enabled and in the case of multi-shops in the same "default" group where the customers, the available quantity for sale and the orders are not shared: 
 - Wishlists will be different between stores in this group and will not be shared
 - the statistics table in the back office will be different depending on if  you are in shop A or shop B. It will not be a question of having global statistics including data from shop A and shop B.
