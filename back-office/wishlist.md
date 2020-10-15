@@ -176,9 +176,9 @@ A logged-in user can add one of their favorites to the cart (except customized p
 
 ![wishlist screen 11](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-11.png)
 
-If the product is Out of stock with the option "Deny order" and cannot be added to the cart: 
+If the product is out of stock with the option "Deny order" and therefore cannot be added to the cart: 
 -	a message is displayed informing the user that the product is no longer available: "Product out of stock".
--	the "Add to cart" CTA is disable and the product cannot be added to cart
+-	the "Add to cart" CTA is disabled and the product cannot be added to the cart
 
 ![wishlist screen 12](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-12.png)
 
