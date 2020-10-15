@@ -6,7 +6,7 @@
 ##### As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites list
 Several cases: 
 - Connected users 
-- Non logged-in users 
+- Non-logged-in users 
 - Products with combinations & customizations
 
 Functional rules: 
