@@ -31,7 +31,7 @@ All product information:
 - Photos,  
 - Quantity (selected by the customer),  
 - Combinations,
-- Customization (if the product can be customised)
+- Customization (if the product can be customized).
 
 Product information (stocks, prices, etc.) is variable and must be updated each time the Favorites page is loaded.
 
