@@ -21,9 +21,9 @@ All products can be added as favorites:
 - Products in and out of stock  
 - Standard products
 - Products with combinations
-- product packs
-- virtual products
-- customizable products (text or file)
+- Product packs
+- Virtual products
+- Customizable products (text or file)
 
 What product information do I need to retrieve for favorites?
 All product information:  
