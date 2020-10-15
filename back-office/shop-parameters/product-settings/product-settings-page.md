@@ -83,7 +83,7 @@ but the S, M, and black attributes remain displayed.
 
 _As a merchant, I want to be able to parameter my products' attributes._
 
-**Display the "Add to cart" button when a product has attributes.** By default, it is enabled. Display or hide the "Add to cart" button on category pages for products that have attributes forcing customers to see product details.
+**Display the "Add to cart" button when a product has attributes.** By default, it is enabled. Display or hide the 'Add to cart' button on category pages for products that have attributes forcing customers to see product details.
 
 **Separator of attribute anchor on the product links.** When a product has many attributes, the merchant can **select a separator between the hyphen (-) and the comma (,)**. By default, it is the hyphen. It appears on shopping carts in the front office, invoices, merchandise returns, and order details pages, cf. issue #[19636](https://github.com/PrestaShop/PrestaShop/issues/19636).
 
@@ -95,11 +95,41 @@ _As a merchant, I want to be able to display the discounted price or the discoun
 
 ## Products stock
 
-[TO BE COMPLETED]
+_As a merchant, I want to be able to manage my product pages according to the available stock._
 
-**Enable stock management.** When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
+**Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below, :no_entry_sign: _Product available with different options_. On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
 
+**Enable stock management.** It allows basic stock management options and features: merchants can set the current quantity of a product and let PrestaShop lower it for each order, or re-stock it for each canceled or returned order. By default, this feature is enabled.
 
+When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
+
+**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed just below the 'Add to cart' button of the product page. 
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+
+**Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' is enabled**. It should be displayed just below the 'Add to cart' button of the product page.
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+
+**Label of out-of-stock products with denied backorders.** ???
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+
+**Delivery time of in-stock products.** ???
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+
+**Delivery time of out-of-stock products with allowed backorders.** ???
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+
+**Default pack stock management.** In case they sell packs of products, merchants can **select how to update the stock** among 3 different possibilities:
+
+- _Decrement pack only._ When a pack is sold, only the stock for the pack is impacted.</br>
+- _Decrement products in pack only._ When a pack is sold, only the stock for each product is impacted.</br>
+- _Decrement both._ When a pack is sold, both the stock for the pack and the stock for each product are impacted.
+
+Note: this parameter can also be set for each pack in the 'Quantities' tab of their own product page.
 
 
 ## Pagination
