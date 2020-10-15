@@ -336,7 +336,7 @@ You can display the results:
 -	for that day, 
 -	for the current month 
 
-PS: contrary to the model, no filter is needed for the year and "All time" because the loading time is too long
+PS: as opposed to the model, no filter is needed for the year and "All time" because the loading time is too long
 
 2.	Total number of created and active lists (still online) 
 
