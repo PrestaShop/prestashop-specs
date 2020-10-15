@@ -71,7 +71,8 @@ Users can create as many lists as they want.
 
 The heart icon turns full once the product added to a favorites list.
 
-Favorites heart for combinations: in the list pages, the heart will not be filled in if the default combination is not selected
+Heart icon for combinations: in the listing pages, the heart will not be full if the default combination is not selected.
+
 ![wishlist screen 4](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-4.png)
 
 If the user clicks on the filled-in heart again, the product is removed from the wishlist. If the product is deleted by the seller, it should no longer appear in the users' favorites lists.
