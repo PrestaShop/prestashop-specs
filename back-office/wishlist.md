@@ -132,8 +132,6 @@ As a logged-in user, I can see how many unique favorite products are in a list.
 What type of users can add products to their favorites?
 Only logged-in users, since the Favorites list is displayed in My Account.  
 
-When I access the page with the my favorites lists, I can see the number of products in each of the lists.  
-
 ### US 3: Edit and/or delete a favorite product
 ##### As a logged-in user, I can edit and/or delete a favorite product  
 Different cases:
