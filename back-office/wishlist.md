@@ -107,7 +107,7 @@ As a logged-in user, I can access my favorite products by:
 - I arrive on the page with all my favorites lists (default one + created lists)
 ![wishlist screen 7](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-7.png)
 
-- When I click on one of the lists, it brings me to a page that lists my previously added products  
+- Selecting one of these lists brings me to a new page that lists my previously added favorite products  
 
 - The number of products in the list is displayed to the left of the list name  
 This means that it accounts for all the idproduct allocated
