@@ -193,10 +193,13 @@ For a customized product :
 * If the customization is not required, the product can be added to the cart directly.
 ![wishlist screen 14](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-14.png)
 
-Only non-customized products, with stock or out of stock with allow order option, can be added to the cart. If the product is out of stock and if order of out of stock products is denied, the user will not be able to add it to the shopping cart, as is currently the case in the PrestaShop Core.
+Only non-customized products, with stock or out of stock with allow order option, can be added to the cart. If the product is out of stock and if the "order out of stock products" option is denied, the user will not be able to add it to the shopping cart, as it is currently the case in the PrestaShop Core.
 
-Specific case : Let's say order of out of stock product is denied. There are 2 products in stock. I add 2 products to my favorite and they are ordered by someone else, so the stock is 0 (I stayed on my favorite page and didn't refresh the page, so the button is enabled)
-If I click on the add to cart button, the products are added to cart. When the user go to cart page, an error message is displayed "The product is no longer available in this quantity."
+Specific case: Let's say the "order out of stock products" option is denied and there are 2 products left in stock. I add 2 products as my favorites and continue shopping. Meanwhile, the 2 products are ordered by another customer. 
+
+Stock for those 2 products is now 0 but I stayed on my favorite page and did not refresh the page, so the add to cart button is still enabled.
+
+If I click the add to cart button, the 2 products are added to the cart but when I go on the cart details page, an error message is displayed, "The product is no longer available in this quantity.".
 
 ## Feature 2: Storing favorites - Create and manage your favorites lists
 ### US 5: Create a list 
