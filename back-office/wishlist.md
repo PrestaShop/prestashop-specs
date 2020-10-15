@@ -50,13 +50,14 @@ Customizable products:
 
 Since the customization is not registered in the wishlist, it will not be possible to add the same product twice but with different customizations. The product only appears once in the wishlist. 
 
-Logged-in user:  
-For a logged-in user, when clicking on the heart, a pop-in is displayed offering them the option to add this product to:  
--	the default favorites list
--	one of the previously created lists (if the user does not have a previously created list, the default list is displayed - see below > the pop-up has a min. size),
+Logged-in users:  
+For a logged-in user, clicking on the heart icon displays an in-page pop-up that offers the option to add this product to:  
+-	the default favorites list,
+-	a previously created list (if the user does not have created lists previously, the default list is displayed - see below > the pop-up has a min. size),
+
 ![wishlist screen 2](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-2.png)
 
--	a new list that can be created by clicking Create New wishlist
+-	a new list that can be created by clicking 'Create New wishlist'.
 ![wishlist screen 3](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-3.png)
 
 The user can only select one list, so the product can be added to only one list.  
