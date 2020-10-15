@@ -155,12 +155,15 @@ Products with several options:
 - If I delete my product from a product page, the product with combinations X and quantity Y will be removed.
 - If I delete my product from a listing page (where there are no combination options), it removes only the product with the default combination - if it ever was added. If I have added any combination that is not the default one, then the product block in the listing does not display the full heart icon. It is full only if I have added the product with its default combination. 
 
-Exemple : if I didn't added the product with the default combination in my favorite list
-For example I have a tshirt with following combinations:
+Example: I did not add the product with the default combination to my favorites list
+
+For instance, I have a tee-shirt in the following combinations:
+
 * Red (default combination)
 * Black
 * White
-I add the black and the white to one of my favorite list. It will be impossible to remove these products of the wishlist from the product list because the heart is empty
+
+I add the _black_ and the _white_ combinations to my favorites. Both products cannot be removed from the listing page since the heart icon is empty.
 
 ### US 4: Add a favorite product to the cart  
 ##### As a logged-in user, I can add a favorite product to the shopping cart
