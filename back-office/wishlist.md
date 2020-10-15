@@ -182,7 +182,7 @@ If the product is out of stock with the option "Deny order" and therefore cannot
 
 ![wishlist screen 12](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-12.png)
 
-If order of out of stock products is denied and if the selected combination is out of stock and if there are other available combination (in stock or out of stock with allowed order) for the same product: 
+If the "order out of stock products" option is denied and if the selected combination is out of stock and if there are other available combinations (in stock or out of stock with allowed order) for the same product:
 -	a message tells the user that the product is available in other options "Product available with different options"
 -	the product image and the Add to cart CTA are disabled
 
