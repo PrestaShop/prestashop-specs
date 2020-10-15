@@ -35,10 +35,10 @@ All product information:
 
 Product information (stocks, prices, etc.) is variable and must be updated each time the Favorites page is loaded.
 
-Rules for quantities when adding to favorites :
-- If the user has chosen a quantity > 1 the product added in favorites has the same quantity as the one on the product sheet
-- By default, the product is added to the favorites by unit, unless the product can only be purchased with a minimum of X units, in which case, the product is added to the favorites with its minimum quantity
-- If the product is out of stock (stock = 0 ou stock < 0) with deny order option: it is saved in favorites with 1 product quantity but the product block is disabled and the visitor cannot add the product to the cart  
+Rules for quantities when adding to favorites:
+- If the user chooses a quantity > 1, the product added in favorites has the same quantity as the one on the product sheet.
+- By default, the product is added to the favorites singly. If the product can only be purchased with a minimum of X units, then the product is added to the favorites with its minimum quantity.
+- If the product is out of stock (stock = 0 ou stock < 0) with denying order option: it is saved in favorites with 1 product quantity but the product block is disabled and the visitor cannot add the product to the cart.
 
 Products with combinations:
 - When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
