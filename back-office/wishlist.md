@@ -73,7 +73,7 @@ The heart icon turns full once the product added to a favorites list.
 
 Heart icon for combinations: in the listing pages, the heart will not be full if the default combination is not selected.
 
-![wishlist screen 4](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-4.png)
+![wishlist screen 23](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-23.PNG)
 
 If the user clicks on the full heart again, the product is removed from the wishlist. And if the product is deleted by the seller meanwhile, it should no longer appear in the user's favorites lists.
 
