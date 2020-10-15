@@ -63,7 +63,7 @@ For a logged-in user, clicking on the heart icon displays an in-page pop-up that
 The user can only select one list, so the product can be added to only one list.  
 
 What happens in each case?
-1.	When no list has been created: the logged-in user has the option to add the item(s) to the default list or create a new list  
+1.	When no list has already been created: the logged-in user can add the item(s) to the default favorites list or create a new list.
 2.	When at least one list has been created: the logged-in user can add the item(s) to the default favorites list, one of the existing lists, or create a new list.
 3.	When more than X lists have been created: the logged-in user can scroll down to see all the lists created.
 
