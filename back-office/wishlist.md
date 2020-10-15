@@ -77,16 +77,16 @@ Heart icon for combinations: in the listing pages, the heart will not be full if
 
 If the user clicks on the full heart again, the product is removed from the wishlist. And if the product is deleted by the seller meanwhile, it should no longer appear in the user's favorites lists.
 
-For a non-logged-in user:
-For a non-logged-in user: when they click on the heart, a login pop-up opens informing them that they need to be logged in to add a product to their favorites:
+Non-logged-in users:
+For a non-logged-in user: clicking on the heart icon displays an in-page pop-up that informs he/she must log in to proceed.
+
 ![wishlist screen 5](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-5.png)
 
+When clicking on "Sign in", the user is redirected to the login page. Once the connection is made, the user is redirected to his/her product or listing page.
 
-When clicking on "Sign in", the user is redirected to the login page. Once the connection is made, the user is directly redirected to the page they were on.
-
-Special login pop-up features:
--	add a go-back setting to the URL so that, once the user is logged in, they are redirected to the page they were on (any page)
--	the user is then asked to select the favorites list in which he/she wants to save the product.
+Special login features:
+-	add a go-back setting to the URL so that, once the user is logged in, he/she can be redirected to the page he/she was on (any page)
+-	the user is then asked to select the favorites list in which he/she wants to save the product
 
 ### US 2: View my favorite products  
 ##### As a logged-in user, I can view and sort my favorite products
