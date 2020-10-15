@@ -59,7 +59,7 @@ If the value is > 0.00 and not reached in the shopping cart front-office, then a
 
 This toggle is on Yes by default.
 
-When enabled, the shipping costs are automatically updated when the merchant edit an order and when the price of the order exceeds the carrier's range.
+When enabled, the shipping costs are automatically updated when the merchant edit an order, even if the price of the order exceeds the carrier's range.
 
 ### Delayed shipping
 
