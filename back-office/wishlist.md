@@ -137,8 +137,8 @@ Only logged-in users, since the Favorites list is displayed in My Account.
 Different cases:
 - Products in stock
 - Products out of stock
-- from the product sheet
-- from a favorites list
+- From the product sheet
+- From a favorites list
 
 Functional rules:
 I can modify the quantity, the combinations and the customization of all my favorite products (in stock, out of stock) by clicking on the Pencil in my favorite products list.
