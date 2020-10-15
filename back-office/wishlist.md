@@ -141,7 +141,7 @@ Different cases:
 - From a favorites list
 
 Functional rules:
-I can modify the quantity, the combinations and the customization of all my favorite products (in stock, out of stock) by clicking on the Pencil in my favorite products list.
+I can modify the quantity, the combinations, and the customizations of all my favorites (in stock and out of stock) by clicking on the pencil icon.
 
 When I click on the Pencil, I am redirected to the product sheet to make my modifications. Once the changes are made, you will have to click on the heart to add the new product as a favorite. At this point, the new quantity, combination and / or customization will overwrite the original product in the favorites list.
 
