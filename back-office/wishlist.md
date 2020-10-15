@@ -93,7 +93,7 @@ Special login features:
 
 Functional rules:  
 What type of users can add products to their favorites?
-A logged-in user
+Logged-in users only.
 
 For non-logged-in users:  
 As a non-logged-in user, I cannot access my favorite products.
