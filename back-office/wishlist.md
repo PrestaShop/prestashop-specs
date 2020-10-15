@@ -344,7 +344,7 @@ PS: contrary to the model, no filter is needed for the year and "All time" becau
 
 ## Multishop rules 
 In the case of a multi-shop without a shop group : 
-- the wishlists will be different 
+- Wishlists will be different between stores in this group and will not be shared
 - the statistics table in the back office will be different depending on if  you are in shop A or shop B. It will not be a question of having global statistics including data from shop A and shop B.
 
 If the multistore feature is enabled and in the case of multi-shops in the same group where the customers, the available quantity for sale and the orders are shared: 
