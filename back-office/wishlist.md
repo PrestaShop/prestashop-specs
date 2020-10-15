@@ -75,7 +75,7 @@ Heart icon for combinations: in the listing pages, the heart will not be full if
 
 ![wishlist screen 4](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-4.png)
 
-If the user clicks on the filled-in heart again, the product is removed from the wishlist. If the product is deleted by the seller, it should no longer appear in the users' favorites lists.
+If the user clicks on the full heart again, the product is removed from the wishlist. And if the product is deleted by the seller meanwhile, it should no longer appear in the user's favorites lists.
 
 For a non-logged-in user:
 For a non-logged-in user: when they click on the heart, a login pop-up opens informing them that they need to be logged in to add a product to their favorites:
