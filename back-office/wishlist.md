@@ -149,8 +149,6 @@ When I click on the pencil icon, I am redirected to the product page to make my 
 
 I can permanently remove a favorite product from the list by clicking on remove and a pop-up appears confirming that the product has been removed from the list.  
 
-You can remove a product from the favorites directly within the product sheet or a product listing, by clicking on the heart (which becomes empty).  
-
 Products with several options:
 - If I delete my product from a product page, the product with combinations X and quantity Y will be removed.
 - If I delete my product from a listing page (where there are no combination options), it removes only the product with the default combination - if it ever was added. If I have added any combination that is not the default one, then the product block in the listing does not display the full heart icon. It is full only if I have added the product with its default combination. 
