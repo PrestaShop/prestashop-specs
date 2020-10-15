@@ -44,11 +44,11 @@ Products with combinations:
 - When a user adds a product from a list page (where they cannot select a combination), the product added to the wishlist is the "default" product combination. That is, the product is added with its default combination and quantity.  
 - If the user selects a combination in the product sheet, then this combination is added, not the "default" product combination
 
-Customizable products : 
-No matter if the user has filled his customization or not, when he adds his customizable product to his favorites, it will be saved without his customization. 
-If it is a product with a required customization then the user will not be able to add this product to the cart without going back to the product sheet (see US Add to cart) > he will have to click on the CTA Customize in order to be redirected to the product sheet, fill in the customization and then add it to the cart. 
+Customizable products: 
+- Whether the user has filled his customization or not, when he adds a customizable product to his favorites, it is saved without the customization. 
+- If the product requires customization, then the user will not be able to add this product to cart without going back to the product page (see US Add to cart) > he will have to click on the CTA 'Customize in order' to be redirected to the product page, fill in the customization, and add it to cart.
 
-Since the customisation is not registered in the wishlist, it will not be possible to add the same product twice but with different customisations. The product will only appear once in the wishlist. 
+Since the customization is not registered in the wishlist, it will not be possible to add the same product twice but with different customizations. The product only appears once in the wishlist. 
 
 Logged-in user:  
 For a logged-in user, when clicking on the heart, a pop-in is displayed offering them the option to add this product to:  
