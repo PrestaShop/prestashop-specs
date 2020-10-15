@@ -109,7 +109,7 @@ As a logged-in user, I can access my favorite products by:
 
 - Selecting one of these lists brings me to a new page that lists my previously added favorite products  
 
-- The number of products in the list is displayed to the left of the list name  
+- I can know how many favorites a list contains: the number is indicated in brackets next to the list name.  
 This means that it accounts for all the idproduct allocated
 For example, if there are 3 variations of the same product it counts as 3 products.
 In the case of a product pack, this counts as 1 pack and not the number of products in the pack
