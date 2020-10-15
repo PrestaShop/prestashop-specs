@@ -78,7 +78,7 @@ When disabled, the terms and conditions are not displayed in front-office at the
 
 ### Page for terms and conditions
 
-This drop-down is enabled if the terms of service is enabled, and is disabled (not clickable) if the terms of service is disabled.
+This drop-down is enabled if the terms of service are enabled - it is disabled (not clickable) if the terms of service are disabled.
 When enabled, the merchant can select the page corresponding to the terms and conditions.
 All the enabled CMS pages are listed in the drop-down.
 
