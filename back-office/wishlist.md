@@ -277,7 +277,7 @@ b.	Share the list
 9.	Click on "Share List" 
 10.	A pop-up with a share link will appear 
 11.	Click on "Copy link" to copy it (so we can close the pop-up window and share the link)
-12.	Click "Cancel" to close thee pop-up 
+12.	Click "Cancel" to close the pop-up 
 
 ![wishlist screen 19](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-19.png)
 
