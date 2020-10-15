@@ -97,7 +97,7 @@ By default this field is set to 0.00
 
 The merchant can enter the gift wrapping price (taxes excluded).
 
-If the value is > 0.00, it's displayed in front-office during the checkout at the shipping step:"(additional cost of €X.XX tax incl.)"
+If the value is > 0.00, it's displayed in front-office during the checkout at the shipping step:"(additional cost of €X.XX tax incl.)" and it's displayed also in the invoice
 
 ### Gift-wrapping tax
 
