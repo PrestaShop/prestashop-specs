@@ -111,7 +111,7 @@ As a logged-in user, I can access my favorite products by:
 
 - I can know how many favorites a list contains: the number is indicated in brackets next to the list name.  
 This means that it accounts for all the idproduct allocated
-For example, if there are 3 variations of the same product it counts as 3 products.
+For example, if there are 3 combinations of the same product it counts as 3 products.
 In the case of a product pack, this counts as 1 pack and not the number of products in the pack
 
 ![wishlist screen 8](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-8.png)
