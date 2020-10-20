@@ -15,7 +15,7 @@ For security reasons, some types of queries are not allowed: UPDATE, DELETE, CRE
 
 <!--- Historicly, the secure keys or passwords was hidden (***********). but it can be fully done since with an alias the keys and passwords can be displayed --->
 
-The SQL Manager page displays 2 messages:
+At fistt, the SQL Manager page displays 2 messages:
 - Alert info:
 
   "How do I create a new SQL query?
@@ -29,13 +29,25 @@ The SQL Manager page displays 2 messages:
 
 "When saving the query, only the "SELECT" SQL statement is allowed."
 
+Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name and actions columns.
+The request's actions allow to download the request's result into a CSV file, view the request's result in the page, delete the request and edit it.
+
+When the user view the SQL request with no result, a warning is displayed: "This SQL query has no result."
+
+### Settings
+
+Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be.
+
 ### Add new SQL query
 
-Creating a new query
-As usual, the "Add new SQl query" button leads to the creation form. It has two main fields:
+Creating a new query is divided into 3 sections: 
 
-SQL query name. Make the name as long and descriptive as necessary.
-SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
+- The SQL foom with 2 inputs : 
+
+    - SQL query name. Make the name as long and descriptive as necessary.
+    - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
+ The cancel button redirects the user to the SQL Manager list without saving any information 
+ The save button save the SQL name and request and redirects the merchant to the list with the new request saved.
 
 
 Additionally, the "List of MySQL Tables" section helps you explore the database, and makes it easier for you to build your queries. It gives you a handy and clickable selector of all the currently available database tables. Select a table to make PrestaShop display its attributes and types, then click "Add attribute to SQL query" to send its name into the "Request" field.
@@ -52,6 +64,4 @@ View. Performs the query, and has it displayed in an HTML table, right within th
 Edit. You can edit a query as often as necessary, in order to refine it and get better results.
 Delete. Once a query is not used anymore (or simply because it does not work), you can delete it by clicking this button and confirming your choice.
 
-### Settings
 
-Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be.
