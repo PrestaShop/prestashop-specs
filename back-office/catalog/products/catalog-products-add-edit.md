@@ -157,7 +157,7 @@ The image is open in its default size. You can close it by clicking on the cross
     If more than one image is selected the checkbox "cover" disappears
 * **Add a feature**: By default the selected option is "Choose a feature".
 All the features are displayed in the drop-down and are sorted by position ASC.
-If there are several features with the same name, then the position of the feature is displayed before its name 
+If there are several features with the same name, then the ID of the feature is displayed before its name 
 If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you select a feature, both fields \(pre-defined & customized value\) are enabled.       
 The features and the associated values are displayed in product details tab of the front-office.
