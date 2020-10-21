@@ -170,7 +170,8 @@ A drop-down next to the field is displayed when there are several languages inst
 * **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
 * **Add a brand**: 
 By default the selected option is "Choose a brand". \([issue 9678](https://github.com/PrestaShop/PrestaShop/issues/9678)\)
-Others options in the drop-down are all the brands enabled.       
+All the brands enabled are displayed in the drop-down.
+If there are several brands with the same name, then the ID of the brand is displayed before its name.
 The brand is displayed in the product page in front-office in product details tab. The logo of the brand is displayed if the brand has a logo, otherwise the name of the brand is displayed.      
 When you add a brand, it’s added in all languages enabled. 
 * **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
