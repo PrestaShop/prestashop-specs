@@ -161,7 +161,8 @@ If there are several features with the same name, then the ID of the feature is 
 If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you select a feature, both fields \(pre-defined & customized value\) are enabled.       
 The features and the associated values are displayed in product details tab of the front-office.
-* **Feature pre-defined value**: Drop-down with all compositions of the selected feature.      
+* **Feature pre-defined value**: All the values of the selected feature are displayed in the drop-down and are sorted by name ASC.      
+If there are several features' values with the same name, then the ID of the feature's value is displayed before its name 
 If you select a pre-defined value, the customized value should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you add a feature with a pre-defined value, it’s added in all languages enabled.
 * **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)      
