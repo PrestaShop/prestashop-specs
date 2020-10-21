@@ -94,7 +94,8 @@ When a value is filled, the price tax excl field is calculated automatically acc
 To separate decimals a dot or a comma can be used, both should work no matter the language.       
 When you change it, the same field in pricing tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
-Drop-down with all tax rules enabled and a “no tax” option.       
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
 When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.      
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.       
 When you change it, the same field in pricing tab is also updated.      
@@ -440,7 +441,8 @@ To separate decimals a dot or a comma can be used, both should work no matter th
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
-Drop-down with all tax rules enabled and a “no tax” option.          
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
 When the merchant changes it, the price (tax incl.) is updated. And the “tax rule” field in the Basic settings tab is also changed.               
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 * **Manage tax rule**: Open in a new browser tab International &gt; Taxes
