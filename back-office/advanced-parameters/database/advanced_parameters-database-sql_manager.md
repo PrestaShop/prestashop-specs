@@ -5,7 +5,7 @@ The SQL manager is a complex feature, which should be reserved for technical peo
 ## 1.7.8 Version 
 
 The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be an not installed module.
-The module will be downloadable for merchants who need it and have the required skills.
+The module will be downloadable for users who need it and have the required skills.
 The feature to hide the password or the secure key will be removed since we can't fully hide them since with an alias the keys or passwords can be displayed.
 
 ## 1.7.7.0 Version
