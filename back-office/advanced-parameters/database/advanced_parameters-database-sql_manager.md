@@ -54,9 +54,12 @@ Creating a new query is divided into 3 sections:
 
     - SQL query name. Make the name as long and descriptive as necessary.
     - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
- The cancel button redirects the user to the SQL Manager list without saving any information.
+
+The cancel button redirects the user to the SQL Manager list without saving any information.
  
- The save button saves the SQL query name, the SQL query and redirects the user to the list with the new SQL query saved. If the user saves a request that has not the authorized query type (defined in the list bellow), an error is displayed : "Your request is not authorised, please try a SELECT type request", the query is not saved and the user stays on the page with the error displayed.
+The save button saves the SQL query name, the SQL query and redirects the user to the list adding the new SQL query saved with the success alert: "Successful creation.".
+
+If the user saves a request that has not the authorized query type (defined in the list bellow), an error is displayed : "Your request is not authorised, please try a SELECT type request", the query is not saved and the user stays on the page with the error displayed.
 
 The list of unauthorized request types:
 'DELETE', 'ALTER', 'INSERT', 'REPLACE', 'CREATE', 'TRUNCATE', 'OPTIMIZE', 'GRANT', 'REVOKE', 'SHOW', 'HANDLER',
