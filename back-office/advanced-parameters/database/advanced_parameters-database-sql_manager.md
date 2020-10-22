@@ -32,7 +32,7 @@ At first, the SQL Manager page displays 2 messages:
 
 ### SQL Manager List
 
-Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, and action columns.
+Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query and actions columns.
 The request's actions allow us to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
 To summarize the actions cab be:
 - Export. Performs the query, and have it downloaded by you in CSV format.
@@ -59,4 +59,3 @@ Creating a new query is divided into 3 sections:
 
 
 On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. Select a table to make PrestaShop display its attributes and types on the list of attributes for this MySQL table, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name or table name into the SQL query field.
-
