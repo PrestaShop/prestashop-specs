@@ -81,11 +81,22 @@ If product with combinations was selected & combinations were generated, when I 
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Description**: The text can be formatted thanks to the TinyMCE editor \([improvement 14985](https://github.com/PrestaShop/PrestaShop/issues/14985)\)       
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Quantity**: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
+* **Quantity**: 
+
+**1.7.7.0**:
+This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
 If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
 When you update the field in basic settings tab, the same field in quantities \(for a standard product\) / virtual product tab is updated.       
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
 This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+
+**1.7.8.0**:
+The quantity is now only a text that displays the quantity. The quantity can not be updated through the basic setting tab.
+This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
+If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+
 * **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.       
 To separate decimals a dot or a comma can be used, both should work no matter the language.      
 When you change it, the same field in pricing tab is also updated.
@@ -213,6 +224,11 @@ Here is the list of the elements of quantities tab:
 When you update the field in quantities tab, the same field in basic settings tab is updated.        
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
 This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+
+On top of the quantity input, the page has the following wording (new wording integrated by the issue #19454): 
+"We advise you to modify the quantity directly in the [1]Catalog > Stocks[/1] section of the back office to avoid stock imbalance." in Admin.Notifications.Warning.
+The link redirects to the stock page on another tab with the product displayed/loaded.
+
 * **Minimum quantity for sale**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 * **Stock location**: This field should not be displayed for a virtual product \([issue 9623](https://github.com/PrestaShop/PrestaShop/issues/9623)\)
 * **Low stock level**: You can define a value and choose or not to receive an email when the product quantity is &lt;= to this value.
