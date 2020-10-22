@@ -94,7 +94,8 @@ When a value is filled, the price tax excl field is calculated automatically acc
 To separate decimals a dot or a comma can be used, both should work no matter the language.       
 When you change it, the same field in pricing tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
-Drop-down with all tax rules enabled and a “no tax” option.       
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
 When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.      
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.       
 When you change it, the same field in pricing tab is also updated.      
@@ -156,11 +157,13 @@ The image is open in its default size. You can close it by clicking on the cross
 
     If more than one image is selected the checkbox "cover" disappears
 * **Add a feature**: By default the selected option is "Choose a feature".
-Others options in the drop-down are all features.       
+All the features are displayed in the drop-down and are sorted by position ASC.
+If there are several features with the same name, then the ID of the feature is displayed before its name 
 If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you select a feature, both fields \(pre-defined & customized value\) are enabled.       
 The features and the associated values are displayed in product details tab of the front-office.
-* **Feature pre-defined value**: Drop-down with all compositions of the selected feature.      
+* **Feature pre-defined value**: All the values of the selected feature are displayed in the drop-down and are sorted by name ASC.      
+If there are several features' values with the same name, then the ID of the feature's value is displayed before its name 
 If you select a pre-defined value, the customized value should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you add a feature with a pre-defined value, it’s added in all languages enabled.
 * **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)      
@@ -169,7 +172,8 @@ A drop-down next to the field is displayed when there are several languages inst
 * **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
 * **Add a brand**: 
 By default the selected option is "Choose a brand". \([issue 9678](https://github.com/PrestaShop/PrestaShop/issues/9678)\)
-Others options in the drop-down are all the brands enabled.       
+All the brands enabled are displayed in the drop-down.
+If there are several brands with the same name, then the ID of the brand is displayed before its name.
 The brand is displayed in the product page in front-office in product details tab. The logo of the brand is displayed if the brand has a logo, otherwise the name of the brand is displayed.      
 When you add a brand, it’s added in all languages enabled. 
 * **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
@@ -437,7 +441,8 @@ To separate decimals a dot or a comma can be used, both should work no matter th
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
-Drop-down with all tax rules enabled and a “no tax” option.          
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
 When the merchant changes it, the price (tax incl.) is updated. And the “tax rule” field in the Basic settings tab is also changed.               
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 * **Manage tax rule**: Open in a new browser tab International &gt; Taxes
