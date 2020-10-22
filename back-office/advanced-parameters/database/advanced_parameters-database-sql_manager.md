@@ -3,7 +3,9 @@
 The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.
 
 ## 1.7.8 Version 
-The page is going to be migrated into a module. The module will be downloadable for merchants who need it.
+
+The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be an not installed module.
+The module will be downloadable for merchants who need it and have the required skills.
 The feature to hide the password or the secure key will be removed since we can't fully hide them since with an alias the keys or passwords can be displayed.
 
 ## 1.7.7.0 Version
@@ -51,8 +53,9 @@ Creating a new query is divided into 3 sections:
 
     - SQL query name. Make the name as long and descriptive as necessary.
     - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
- The cancel button redirects the user to the SQL Manager list without saving any information 
- The save button saves the SQL name and request and redirects the merchant to the list with the new request saved.
+ The cancel button redirects the user to the SQL Manager list without saving any information.
+ 
+ The save button saves the SQL name and request and redirects the merchant to the list with the new request saved. If the merchant saves a request that has not the authorized querie type, a error is displayed : "Your request is not authorised, please try a SELECT type request", the query is not saved and the user stays on the page with the displayed error.
 
 
 On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. Select a table to make PrestaShop display its attributes and types on the list of attributes for this MySQL table, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name or table name into the SQL query field.
