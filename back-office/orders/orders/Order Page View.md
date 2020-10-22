@@ -499,6 +499,8 @@ Each table’s rows as 2 possible **button actions**:
 
 3.  **Shipping tab**
 
+If there is a gift wrapping message for the order, it's displayed in the Shipping tab, before the table.
+
 The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number, and edit button.**
 
 [Shipping tab](https://invis.io/YKTGGFZAMCB#/381874233__Order_Details_-_Shipping)

@@ -200,7 +200,18 @@ When delivery and invoice addressses are the same and the merchant edits one of 
 
 A soft "deleted" address can be used in the cart / order.
 
-## V. Payment and status configuration
+## V. Shipping 
+
+The merchant can select the carrier through the drop-down. 
+The shipping price is displayed according to the carrier selected and the free shipping toggle. 
+A free shipping toggle is displayed. By default free shipping are disabled. If it's enabled then, the shipping price is 0,00. 
+
+If gift wrapping option is enabled in Shop parameters > Order settings, then a checkbox "Gift wrapping" and a field "Gift wrapping message" are displayed.
+If recycled packaging option is enabled in Shop parameters > Order settings, then a checkbox "Recycled packaging" is displayed.
+
+Checking the checkbox of the gift wrapping or the recycled packaging will display the corresponding label in the order view page (cf V. Tabs panel).
+
+## VI. Payment and status configuration
 
 ### Order message
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
