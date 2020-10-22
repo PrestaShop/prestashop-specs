@@ -4,7 +4,7 @@ The SQL manager is a complex feature, which should be reserved for technical peo
 
 ## 1.7.8 Version 
 
-The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be an not installed module.
+The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.
 The module will be downloadable for users who need it and have the required skills.
 The feature to hide the password or the secure key will be removed since we can't fully hide them since with an alias the keys or passwords can be displayed.
 
@@ -32,7 +32,7 @@ At first, the SQL Manager page displays 2 messages:
 
 ### SQL Manager List
 
-Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query and actions columns.
+Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
 The request's actions allow us to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
 To summarize the actions cab be:
 - Export. Executes the query, and downloaded the result in CSV format.
@@ -57,9 +57,9 @@ Creating a new query is divided into 3 sections:
 
 The cancel button redirects the user to the SQL Manager list without saving any information.
  
-The save button saves the SQL query name, the SQL query and redirects the user to the list adding the new SQL query saved with the success alert: "Successful creation.".
+The save button saves the SQL query name, the SQL query, and redirects the user to the list adding the new SQL query saved with the success alert: "Successful creation.".
 
-If the user saves a request that has not the authorized query type (defined in the list bellow), an error is displayed : "Your request is not authorised, please try a SELECT type request", the query is not saved and the user stays on the page with the error displayed.
+If the user saves a request that has not the authorized query type (defined in the list below), an error is displayed: "Your request is not authorized, please try a SELECT type request", the query is not saved and the user stays on the page with the error displayed.
 
 The list of unauthorized request types:
 'DELETE', 'ALTER', 'INSERT', 'REPLACE', 'CREATE', 'TRUNCATE', 'OPTIMIZE', 'GRANT', 'REVOKE', 'SHOW', 'HANDLER',
@@ -69,6 +69,6 @@ The list of unauthorized request types:
 'RESET', 'START', 'STOP', 'PURGE', 'EXECUTE', 'PREPARE', 'DEALLOCATE', 'LOCK', 'USING', 'DROP', 'FOR', 'UPDATE', 'BEGIN', 'BY', 'ALL', 'SHARE',
 'MODE', 'TO', 'KEY', 'DISTINCTROW', 'DISTINCT', 'HIGH_PRIORITY', 'LOW_PRIORITY', 'DELAYED', 'IGNORE', 'FORCE', 'STRAIGHT_JOIN',
 'SQL_SMALL_RESULT', 'SQL_BIG_RESULT', 'QUICK', 'SQL_BUFFER_RESULT', 'SQL_CACHE', 'SQL_NO_CACHE', 'SQL_CALC_FOUND_ROWS', 'WITH'.
-Each keywors are checked in the SQL query before saving it.
+Each keywords are checked in the SQL query before saving it.
 
 On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. Select a table to make PrestaShop display its attributes and types on the list of attributes for this MySQL table, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name or table name into the SQL query field.
