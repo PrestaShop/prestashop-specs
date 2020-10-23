@@ -217,7 +217,7 @@ Checking the checkbox of the gift wrapping or the recycled packaging will displa
 
 ### Total summary 
 
-This final section shows you all the final product price (the sum of the product prices only), total vouchers (the sum of the discounts accorded to the order), total shipping (total shipping price taxes included), total taxes, total with taxes excluded and the total with taxes included.
+This final section shows you all the final product price (the sum of the product prices only tax excluded), total vouchers (the sum of the discounts accorded to the order tax excluded), total shipping (total shipping price taxes excluded), total taxes, total with taxes excluded and the total with taxes included.
 
 ### Order message
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
