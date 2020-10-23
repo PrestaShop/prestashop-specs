@@ -61,6 +61,8 @@ This toggle is on Yes by default.
 
 When enabled, the shipping costs are automatically updated when the merchant edit an order, even if the price of the order exceeds the carrier's range.
 
+If there is an invoice, it's also updated.
+
 ### Delayed shipping
 
 This toggle is on No by default.
