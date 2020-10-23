@@ -11,9 +11,11 @@ Row action does not apply to the ID's checkbox column and to columns with enable
 
 _As a merchant, I want to be able to turn my online store into a products catalog._
 
-**Catalog mode.** A switch button allows the merchant to enable or disable the catalog mode. By default, it is disabled. Enabling this catalog mode **disables the shopping cart on the front office** and displays another field right below, labeled 'Show prices'. 
+**Catalog mode.** A switch button allows the merchant to enable or disable the catalog mode. By default, it is disabled. Enabling this catalog mode **disables the shopping cart on the front office** and displays another field right below, labeled 'Show prices'.
 
-**Show prices.** It should be displayed only when the catalog mode is enabled. By default, it is disabled, keeping the front office prices free. Enabling this option **adds the products' price and keeps the shopping cart unavailable in the front office**.
+It also impacts the customer account on the front office, turning off the 'Order history and details', 'Credit slips', and 'Merchandise returns' pages.
+
+**Show prices.** It should be displayed only when the catalog mode is enabled. By default, it is disabled and prices are not mentioned on the front office. Enabling this option **adds the products' price and keeps the shopping cart unavailable in the front office**.
 
 
 _As a merchant, I want to be able to set my products' general settings._
@@ -41,9 +43,9 @@ _As a merchant, I want to be able to handle my products' quantities._
 
 **Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the 'Product Details' section of the product page. Number of available items should be based on the selected attributes (= combination).
 
-**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right below the 'Add to cart' button in the product page. By default, it is set to 3 - typing 0 disables this feature.
+**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right below the 'Add to cart' button in the product page. If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
-Only numbers can be typed in the field, or added by using the arrows at the end of the field. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
+Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
 
 
 _As a merchant, I want to be able to manage my unavailable product combinations._
@@ -83,7 +85,9 @@ but the S, M, and black attributes remain displayed.
 
 _As a merchant, I want to be able to parameter my products' attributes._
 
-**Display the "Add to cart" button when a product has attributes.** By default, it is enabled. Display or hide the 'Add to cart' button on category pages for products that have attributes forcing customers to see product details.
+**Display the "Add to cart" button when a product has attributes.** Important note: this feature does not work with the Classic default theme. It has been removed from the front office in 1.7.x because many users added products to their cart without selecting a combination.
+
+It is still in the back office since it might work with other themes. By default, it is enabled. Display or hide the 'Add to cart' button on category pages for products that have attributes forcing customers to see product details.
 
 **Separator of attribute anchor on the product links.** When a product has many attributes, the merchant can **select a separator between the hyphen (-) and the comma (,)**. By default, it is the hyphen. It appears on shopping carts in the front office, invoices, merchandise returns, and order details pages, cf. issue #[19636](https://github.com/PrestaShop/PrestaShop/issues/19636).
 
@@ -97,21 +101,27 @@ _As a merchant, I want to be able to display the discounted price or the discoun
 
 _As a merchant, I want to be able to manage my product pages according to the available stock._
 
-**Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below, :no_entry_sign: _Product available with different options_. On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
+**Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
+
+1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
+
+2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a stendard product.
+ 
+ On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
 
 **Enable stock management.** It allows basic stock management options and features: merchants can set the current quantity of a product and let PrestaShop lower it for each order, or re-stock it for each canceled or returned order. By default, this feature is enabled.
 
 When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
 
-**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed just below the 'Add to cart' button of the product page. 
+**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed just below the 'Add to cart' button of the product page in the front office. 
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
-**Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' is enabled**. It should be displayed just below the 'Add to cart' button of the product page.
+**Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed just below the 'Add to cart' button of the product page in the front office.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
-**Label of out-of-stock products with denied backorders.** ???
+**Label of out-of-stock products with denied backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is disabled**. It should be displayed just below the 'Add to cart' button of the product page in the front office. By default, it is _Out-of-Stock_ (or its translation for other languages).
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
