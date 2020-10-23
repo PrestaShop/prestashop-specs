@@ -3,11 +3,12 @@ Orders > Orders > Add new order
 As a merchant, I want to be able to manually add an order to my back-office.
 Creating a new order is divided into 6 steps:
 
-- Customer selection with his/her old orders and carts
-- Order cart
-- Vouchers
-- Address
-- Payment and status configuration
+- I. Customer selection with his/her old orders and carts
+- II. Order cart
+- III. Vouchers
+- IV. Address
+- V. Summary
+- VI. Multistore
 
 ## I. Customer selection
 
@@ -234,3 +235,8 @@ The link opens the front-office with the cart corresponding to the order created
 The default value of the payment method and the status drop list in the droplist is "-- Choose --". 
 
 So to create the order, the user must select an order status and a payment method. An error message is thrown if the user has not chosen a status or payment method: "PLease, select an item in the list".
+
+## VI. Multstore
+
+On all the group shops, the button “add new order” is hidden. It’s only shown when you are in a specific shop.
+
