@@ -41,14 +41,14 @@ Each old cart and order can be previewed by pressing on the **Details button** o
 
 ADD SPECIFIC ON WHAT IS CLEARED AND REPLACED
 
-**Change button** can be pressed at any time in the order creation. It displays **the search bar and "Add new customer" button** to select an new customer in a new blank order (clears all fulfilled inputs and selected options).
+**Change button** can be pressed at any time in the order creation. It displays **the search bar and "Add new customer" button** to select a new customer in a new blank order (clears all fulfilled inputs and selected options).
 
 ## II. The order cart
 
 After selecting the customer, the merchant can configure his customer cart.
 A search bar is displayed to add a product to the cart. The search returns one product that is the closest to the product name or reference.
 
-If the product has combinations, it displays **all the combinations available inside a droplist**. 
+If the product has combinations, it displays **all the combinations available into a droplist**. 
 Before adding the product to a cart, the user has to fulfill the desired quantity (by default the quantity is set to 1). 
 
 Below the input, a label displays the product stock.
@@ -61,8 +61,6 @@ Each product line has a **"Remove button"** to delete the product from the cart 
 **Warning "prices are without taxes" is displayed** below the product table.
 
 **The base price and the quantity are editable.** 
-
-<---The base price modification edits in the last configured currency and updates the total multipliant --->
 
 If the quantity fulfilled is higher than the stock quantity, an error warning is displayed: "There are not enough products in stock". 
 If the edited value is negative, it displays an error: "Positive product quantity is required".
@@ -135,13 +133,13 @@ It is not possible to change the quantity (increase/decrease) of a product when 
 Example: adding the "Best is yet to come Mug" once as a paid item, and four times as a gift (with 4 different vouchers). 
 Current situation (bug): There is one line for each mug in the cart, with a quantity set to "5" each time, instead of being set to "1" for each. When I create the order, the total quantity for the mug is OK (5 products, and not 25).
 
-All identical products (same product with the same ID, exact same combinations) should be put together even though some are paid, some others are free. In the end, when transforming the cart in order, all products are grouped together. 
+All identical products (same product with the same ID with the same combinations) should be put together even though some are paid, some others are free. In the end, when transforming the cart in order, all products are grouped together. 
 
 In the cart when reducing the quantity it should remove only paid products. It means if for a product there are 3 quantities in the cart with 1 product being paid and 2 offered as gifts, the merchant should only be able to reduce one quantity related to the paid product. To remove free products, he should remove the related vouchers. 
 
 There is no remove button for products that have both paid and gift units. To remove the product, the merchant has to remove all cart rules related to gift products and then remove the paid product.
 
-The price should be calculated by summing all values together. For example, if there is one product being paid (price 10€), and 2 products offered, then the final indicated price should be 10€.
+The price should be calculated by summing all values from the paid products together. For example, if there is one product being paid (price 10€), and 2 products offered, then the final indicated price should be 10€.
  
  
 **- Adding a paid product which is already available as a gift product in the cart**
@@ -151,7 +149,7 @@ Current bugs :
 - when I try to add the same product but paid, an error is displayed "Same product quantity is already in cart" and nothing is added.
 - If I have two gifted products (same product), and then I try to add the same product but paid, the two gifted products are replaced by only one gifted product (and no paid product).
 
-Expected behavior: the same behavior as above should occur:” All identical products (same product with the same ID, exact same combinations) should be put together even though some are paid, some others are free. In the end, when transforming the cart in order, all products are grouped together.”
+Expected behavior: the same behavior as above should occur:” All identical products (same product with the same ID and the same combinations) should be put together even though some are paid, some others are free. In the end, when transforming the cart in order, all products are grouped together.”
 
 This means that when adding a product that is already in the cart, this should add one quantity to the product, and change the price accordingly.
 
@@ -198,7 +196,7 @@ Once an address has been associated with a completed order (created by the user 
 
 - When delivery and invoice addresses are the same and the merchant edits one of them, both of them will be edited.
 
-**Add new address
+**Add new address**
 
 Below the addresses, there is a button “add new address” that allows the user through pop-in of the address to add a new address. Once the new address is saved, the address is added into the addresses droplist for the address of the delivery and the invoice. 
 
@@ -206,12 +204,12 @@ Below the addresses, there is a button “add new address” that allows the use
 
 The merchant can select the carrier through the drop-down. 
 The shipping price is displayed according to the carrier selected and the free shipping toggle. 
-A free shipping toggle is displayed. By default free shipping is disabled. If it's enabled then, the shipping price is 0,00. 
+A free shipping toggle is displayed. By default free shipping is disabled. If it's enabled then, the shipping price is set 0,00. 
 
-If the gift wrapping option is enabled in Shop parameters > Order settings, then a checkbox "Gift wrapping" and a field "Gift wrapping message" are displayed.
-If the recycled packaging option is enabled in Shop parameters > Order settings, then a checkbox "Recycled packaging" is displayed.
+If the gift wrapping option is enabled in Shop parameters > Order settings, then a toggle "Gift wrapping" and a field "Gift wrapping message" are displayed.
+If the recycled packaging option is enabled in Shop parameters > Order settings, then a toggle "Recycled packaging" is displayed.
 
-Checking the checkbox of the gift wrapping or the recycled packaging will display the corresponding label on the order view page (cf V. Tabs panel).
+Enabling the gift wrapping or the recycled packaging will display the corresponding label on the order view page (cf V. Tabs panel).
 
 ## VI. Order's Summary
 
