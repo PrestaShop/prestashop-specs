@@ -82,6 +82,18 @@ This drop-down is enabled if the terms of service are enabled - it is disabled (
 When enabled, the merchant can select the page corresponding to the terms and conditions.
 All the enabled CMS pages are listed in the drop-down.
 
+### Default language for order documents
+
+https://github.com/PrestaShop/PrestaShop/issues/10258
+
+This drop-down let the merchant decide if he wants to use customer language or employee language to download delivery slips and invoices when preparing orders.
+
+Tooltip: "Select in what language you want to download invoices and delivery slips."
+
+This drop-down contains 2 options: Customer language / Logistician language
+
+By default, customer language is selected.
+
 ## Gift
 
 ### Offer gift wrapping
