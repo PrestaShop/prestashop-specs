@@ -213,7 +213,11 @@ If the recycled packaging option is enabled in Shop parameters > Order settings,
 
 Checking the checkbox of the gift wrapping or the recycled packaging will display the corresponding label on the order view page (cf V. Tabs panel).
 
-## VI. Payment and status configuration
+## VI. Order's Summary
+
+### Total summary 
+
+This final section shows you all the final product price (the sum of the product prices only), total vouchers (the sum of the discounts accorded to the order), total shipping (total shipping price taxes included), total taxes, total with taxes excluded and the total with taxes included.
 
 ### Order message
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
@@ -227,13 +231,8 @@ This button allows sending an email to the customer with the link to process the
 It's not related to the payment method selected.
 The link opens the front-office with the cart corresponding to the order created.
 
-#### Describe the bug
+### Payment and order status
 
-When the user chooses a payment method, the create order page assigns an automatic status defined by a hard-coded list in the code. When the payment module was not associated with a status in the create order page, the status "payment accepted" is assigned by default.
+The default value of the payment method and the status drop list in the droplist is "-- Choose --". 
 
-#### Expected behavior
-
-
-The default value of the payment method in the droplist is "Choose a payment method" or empty value (wording still to be defined). When the user selects a payment method, it does not affect the list. 
-The default value of the status droplist is "Choose a status" or empty value (wording still to be defined). 
-So to create the order, the user has to select an order status. An error message is thrown if the user has not chosen a status or payment method.
+So to create the order, the user must select an order status and a payment method. An error message is thrown if the user has not chosen a status or payment method: "PLease, select an item in the list".
