@@ -209,7 +209,7 @@ A free shipping toggle is displayed. By default free shipping is disabled. If it
 If the gift wrapping option is enabled in Shop parameters > Order settings, then a toggle "Gift wrapping" and a field "Gift wrapping message" are displayed.
 If the recycled packaging option is enabled in Shop parameters > Order settings, then a toggle "Recycled packaging" is displayed.
 
-Enabling the gift wrapping or the recycled packaging will display the corresponding label on the order view page (cf V. Tabs panel).
+Enabling the gift wrapping or the recycled packaging will display the corresponding label on the order view page (cf Specs Order view > V. Tabs panel).
 
 ## VI. Order's Summary
 
