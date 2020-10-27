@@ -57,7 +57,7 @@ Creating a new query is divided into 3 sections:
 
 The cancel button redirects the user to the SQL Manager list without saving any information.
  
-The save button saves the SQL query name, the SQL query, and redirects the user to the list adding the new SQL query saved with the success alert: "Successful creation.".
+The save button saves the SQL query name, the SQL query, and redirects the user to the list adding the new SQL query saved with the success alert: "SQL query was successfully saved."
 
 If the user saves a request that has not the authorized query type (defined in the list below), an error is displayed: "Error: only SELECT type queries are authorized.", the query is not saved and the user stays on the page with the error displayed.
 
