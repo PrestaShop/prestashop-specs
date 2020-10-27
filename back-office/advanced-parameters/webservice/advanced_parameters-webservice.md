@@ -10,9 +10,10 @@ Row action does not apply to the ID's checkbox column and columns with enable/di
 
 The "Add new webservice key" or "Edit webservice key" buttons redirect the user to the webservice key creation form. The form is composed of:
 
-- Key. A unique key. 
+- **Key**: A mandantory field limited to 32 character long that have to be unique. The webservice key can't be saved if the key is already used by another webservice account.
 
-You can either create your own or choose to use a generated one, for instance by clicking the "Generate!" button or by using any online key generator. Generated keys are most of the time safer because they are harder to guess.
+The user can fulfill the input or choose generated it by clicking the "Generate" button. Pressing the "Generate" button if a key is already enter will replace it with a new key gerenated.
+A generated keys are most of the time safer because they are harder to guess.
 
 - Key description. 
 
@@ -38,6 +39,9 @@ If saved when the user edits the web service key, all the information (list of I
 If the text area contains URLs and the user disables the "Host check", on the reactivation of the "Host check" the old URLs are displayed again in the text area. (Bonus, if it can't be done: the text area is cleared each time it is deactivated)
 
 Click "Save" when your key is ready.
+
+The webservice key can't be saved if the key is already used by another key.
+
 Click "Cancel" when your key is ready.
 
 **Missing wording or wording to be challenged**:
