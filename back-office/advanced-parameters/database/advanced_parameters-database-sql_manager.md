@@ -20,7 +20,7 @@ At first, the SQL Manager page displays 2 messages:
 - Information notification:
 
   "How do I create a new SQL query?
-    - Click "Add New".
+    - Click "Add new SQL query".
     - Fill in the fields and click "Save".
     - You can then view the query results by clicking on the Edit action in the dropdown menu
     - You can also export the query results as a CSV file by clicking on the Export button
