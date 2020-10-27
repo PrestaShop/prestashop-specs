@@ -52,7 +52,7 @@ Creating a new query is divided into 3 sections:
 
 - The SQL form has 2 following input fields:
 
-    - SQL query name. Make the name as long and descriptive as necessary.
+    - SQL query name. Users can type whatever name they need, there is no limitation in the number or the characters allowed.
     - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
 
 The cancel button redirects the user to the SQL Manager list without saving any information.
