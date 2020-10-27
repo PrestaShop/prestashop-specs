@@ -8,7 +8,7 @@ The page is going to be migrated into a module. The type of module is still to b
 The module will be downloadable for users who need it and have the required skills.
 The feature to hide the password or the secure key into '************' when the password is in the query results will be removed since we can't fully hide them since with an alias the keys or passwords can be displayed.
 
-## 1.7.7.0 Version
+## 1.7.7.x version
 
 This tool enables you to perform SQL queries directly on the PrestaShop database, and save them for use at any later time. 
 
