@@ -26,7 +26,7 @@ At first, the SQL Manager page displays 2 messages:
     - You can also export the query results as a CSV file by clicking on the Export button
 "
 
-- Alert warning:
+- Warning notification:
 
 "When saving the query, only the "SELECT" SQL statement is allowed."
 
