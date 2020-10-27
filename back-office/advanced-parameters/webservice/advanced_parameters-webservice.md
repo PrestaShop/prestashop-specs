@@ -10,24 +10,36 @@ Row action does not apply to the ID's checkbox column and columns with enable/di
 
 The "Add new webservice key" or "Edit webservice key" buttons redirect the user to the webservice key creation form. The form is composed of:
 
-- **Key**: A mandantory field limited to 32 character long that have to be unique. The webservice key can't be saved if the key is already used by another webservice account.
+- **Key***: A mandantory field limited to 32 character long that have to be unique. The webservice key can't be saved if the key is already used by another webservice account.
+
+_Help text_: "Webservice account key."
 
 The user can fulfill the input or choose generated it by clicking the "Generate" button. Pressing the "Generate" button if a key is already enter will replace it with a new key gerenated.
 A generated keys are most of the time safer because they are harder to guess.
 
-- Key description. 
+- **Key description**: Text area
 
 A reminder of who that key is for, and what it gives access to.
 
-- Status. 
+_Help text_: "Quick description of the key: who it is for, what permissions it has, etc."
 
-You can disable a key anytime. This enables you to only temporarily grant access to your data from a certain key.
+- **Status**: Toggle (YES/NON)
 
-- Permissions. 
+The toggle enabled temporarily grant access to the data for anyone who has the right key.
 
-You do not have to share ALL your data with each key. You can choose among a wide array of permissions, either by section or by type of access. You might want some applications to only be able to view a handful of items, while some others (for instance, ones that you would use to manage the shop remotely) should be able to edit and delete just about everything. Choose wisely.
+On top of the tabale, an information notification i displayed : "Set the resource permissions for this key:".
 
-- Host check
+- **Permissions**: A check table
+the first axe is the ressources and the second axe is the permission's type.
+The permissions's type are: View (GET),Modify (PUT), Add (POST)	Delete (DELETE)	Fast view (HEAD).
+The ressources is retrieve automa
+
+The user can choose the access of permissions by section or permission's type. 
+
+The list of The user can grant all the permissions type for one resource by checking the checkbox All. He can grant all resource for one permission type.
+
+
+- **Host check**:
 
 A toggle "Host check" is displayed at the end of the form. By default, the toggle is disabled.
 If enabled, a text area "Host allowed" is displayed to enter all the allowed IPs. They must be split by a comma.
