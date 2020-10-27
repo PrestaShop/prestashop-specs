@@ -17,7 +17,7 @@ For instance, using this tool and your knowledge of SQL, you could create a reus
 For security reasons, some types of queries are not allowed: UPDATE, DELETE, CREATE TABLE, DROP, etc. In short, you can only read data (SELECT query).
 
 At first, the SQL Manager page displays 2 messages:
-- Alert info:
+- Information notification:
 
   "How do I create a new SQL query?
     - Click "Add New".
