@@ -10,9 +10,9 @@ The feature to hide the password or the secure key into '************' when the 
 
 ## 1.7.7.x version
 
-This tool enables you to perform SQL queries directly on the PrestaShop database, and save them for use at any later time. 
+SQL Manager is a feature that allows users with technical skills to create and handle SQL queries.
 
-For instance, using this tool and your knowledge of SQL, you could create a reusable query giving you an updated list of the clients who are subscribed to your newsletter or get a list of products in HTML or CSV format.
+For instance, using this tool allows the user to create a reusable query giving an updated list of the clients who are subscribed to your newsletter or get a list of products in HTML or CSV format.
 
 For security reasons, some types of queries are not allowed: UPDATE, DELETE, CREATE TABLE, DROP, etc. In short, you can only read data (SELECT query).
 
@@ -53,7 +53,7 @@ Creating a new query is divided into 3 sections:
 - The SQL form has 2 following input fields:
 
     - SQL query name. Users can type whatever name they need, there is no limitation in the number or the characters allowed.
-    - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
+    - SQL query. The SQL query itself. There is no restrictions on use of JOINs or other intricate selections (except for the unauthorized request types).
 
 The cancel button redirects the user to the SQL Manager list without saving any information.
  
