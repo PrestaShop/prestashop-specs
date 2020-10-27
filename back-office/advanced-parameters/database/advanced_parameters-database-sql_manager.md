@@ -71,4 +71,4 @@ The list of unauthorized request types:
 'SQL_SMALL_RESULT', 'SQL_BIG_RESULT', 'QUICK', 'SQL_BUFFER_RESULT', 'SQL_CACHE', 'SQL_NO_CACHE', 'SQL_CALC_FOUND_ROWS', 'WITH'.
 Each keywords are checked in the SQL query before saving it.
 
-On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. Select a table to make PrestaShop display its attributes and types on the list of attributes for this MySQL table, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name or table name into the SQL query field.
+On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. He/she should select a table to make PrestaShop display all its attributes and types in the list on the right, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name/table name into the SQL query field.
