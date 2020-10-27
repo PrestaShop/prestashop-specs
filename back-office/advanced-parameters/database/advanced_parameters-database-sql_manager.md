@@ -2,7 +2,7 @@
 
 The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.
 
-## 1.7.8 Version 
+## 1.7.8.x version 
 
 The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.
 The module will be downloadable for users who need it and have the required skills.
