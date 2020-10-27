@@ -4,7 +4,7 @@
 
 _WebserviceKeyDefinitionFactory.php_ Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
 
-Row action does not apply to the ID's checkbox column and to columns with enable/disable actions.
+Row action does not apply to the ID's checkbox column and columns with enable/disable actions.
 
 ## Add new / Edit webservice key
 
@@ -12,7 +12,7 @@ The "Add new webservice key" or "Edit webservice key" buttons redirect the user 
 
 - Key. A unique key. 
 
-You can either create your own, or choose to use a generated one, for instance by clicking the "Generate!" button or by using any online key generator. Generated keys are most of the time safer because they are harder to guess.
+You can either create your own or choose to use a generated one, for instance by clicking the "Generate!" button or by using any online key generator. Generated keys are most of the time safer because they are harder to guess.
 
 - Key description. 
 
@@ -37,8 +37,8 @@ If saved when the user edits the web service key, all the information (list of I
 
 If the text area contains URLs and the user disables the "Host check", on the reactivation of the "Host check" the old URLs are displayed again in the text area. (Bonus, if it can't be done: the text area is cleared each time it is deactivated)
 
-Click "Save" when you your key is ready.
-Click "Cancel" when you your key is ready.
+Click "Save" when your key is ready.
+Click "Cancel" when your key is ready.
 
 **Missing wording or wording to be challenged**:
 
