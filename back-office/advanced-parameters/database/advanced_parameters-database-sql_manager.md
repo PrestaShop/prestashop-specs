@@ -50,7 +50,7 @@ Select your default file encoding. You can configure the character encoding of t
 
 Creating a new query is divided into 3 sections: 
 
-- The SQL form with 2 following inputs : 
+- The SQL form has 2 following input fields:
 
     - SQL query name. Make the name as long and descriptive as necessary.
     - SQL query. The SQL query itself. You are free to perform JOINs or other intricate selections.
