@@ -34,7 +34,7 @@ At first, the SQL Manager page displays 2 messages:
 
 Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
 The request's actions allow users to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
-To summarize the actions cab be:
+Actions can be:
 - Export. Executes the query, and downloaded the result in CSV format.
 - View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface.
 
