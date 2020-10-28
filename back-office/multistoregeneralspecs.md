@@ -188,6 +188,11 @@ The user can close the information message. The message is closed only for the s
 -  Orders > Credit Slips
 -  Orders > Delivery Slips
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to select one or many fields / toggles to apply a different configuration for the selected store or group
+
+Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to see which fields / toggles have a different configuration for the selected store or group
 
 ### Specific settings drop-down (only from 1.7.8)
 DESIGN: https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown
