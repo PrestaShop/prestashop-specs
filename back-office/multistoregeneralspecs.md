@@ -243,3 +243,6 @@ Next to each shop name, there is a mention:
 -  Orders > Invoices
 -  Orders > Credit Slips
 -  Orders > Delivery Slips
+
+**User acceptance test**
+Given I am a merchant in a multistore context, when I am configuring my shops in "all shops" context then I want to know the parameters that have been customized in one or many specific shops and I want to be able to switch context 
