@@ -245,6 +245,7 @@ Next to each shop name, there is a mention:
 -  Orders > Delivery Slips
 
 **User acceptance test**
+
 Given I am a merchant in a multistore context, when I am configuring my shops in "all shops" context then I want to know the parameters that have been customized in one or many specific shops 
 
 Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops then I want to be able to switch context 
