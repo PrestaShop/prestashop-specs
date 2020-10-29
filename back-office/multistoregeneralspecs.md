@@ -14,6 +14,12 @@ From 1.7.8, while creating a shop or a group, the user can select a color as des
 This color will be displayed in the multistore header for the selected shop or shop group.<br/>
 It will be also displayed before the name of each shop / group in the context drop-down.
 
+**User acceptance test**
+
+Given I am a merchant, when I am creating a new shop then I want to be able to choose a color for my shop.
+
+Given I am a merchant, when I am creating a new shop group then I want to be able to choose a color for my shop group.
+
 ### Multistore header (only from 1.7.8)
 DESIGN:https://invis.io/QPWKQY5DV79#/410364467_All_Shops_0
 
@@ -32,6 +38,16 @@ If the shop or the group selected doesn't have yet a color configured, the defau
 In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition: "Customize your multistore header, follow the link to pick a color for this shop context" in Admin.Navigation.Header<br/>
 The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refreshes or returns to this page later.
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if I have define a color for it, then I want to see the color of the shop selected in the header
+
+Given I am a merchant in a multistore context, when I am in a shop group context in the back-office and if I have define a color for it, then I want to see the color of the shop group selected in the header
+
+Given I am a merchant in a multistore context, when I am in "all shops" context in the back-office then I want to see the header in blue #25B9D8
+
+Given I am a merchant in a multistore context, when I am in a specific shop context or in a shop group context in the back-office and if I haven't define any color for it, then I want to see the header in light grey #EBEBEB
+
 **Name of the selected context**
 
 The name of the selected context is displayed, it can be:
@@ -39,9 +55,17 @@ The name of the selected context is displayed, it can be:
 - A shop group name
 - A shop name
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the back-office, then I want to see the name of the context selected in the header
+
 **View my shop link**
 
 When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to click on the shop URL in the header to see the front-office.
 
 **Context drop-down**
 DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
