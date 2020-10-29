@@ -65,7 +65,7 @@ When a shop is selected, a link "view my shop" is displayed and opens the front-
 
 **User acceptance test**
 
-Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to click on the shop URL in the header to see the front-office.
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
 **Context drop-down**
 DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
@@ -96,12 +96,36 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's page edition.
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to search for a context
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to select the context
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to switch context
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure it.
+
 **Behavior when switching context**
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
 
 If the user tries to change context without having saved, a modal appears: "You are about to switch context. Do you want to save your modifications before?" with 2 CTA: "Save" and "Cancel"
 If the user clicks on "Save", then modifications are saved and the context is changed for the one selected
 If the user clicks on "Cancel", then modifications are not saved and the context is changed for the one selected
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the back-office and when I try to change context, if I have not saved my modifications then a modal is displayed with 2 choices: Save & Cancel.
+
+Given the modal displayed, when I click on Save, then my modifications are saved and the context is changed for the one selected.
+
+Given the modal displayed, when I click on Cancel, then my modifications are not saved and the context is changed for the one selected.
 
 ### Shop association block
 
