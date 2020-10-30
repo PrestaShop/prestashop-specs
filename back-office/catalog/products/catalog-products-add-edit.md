@@ -227,7 +227,7 @@ This value is decremented when an order is placed except if the order status is 
 
 On top of the quantity input, the page has the following wording (new wording integrated by the issue [#19454](https://github.com/PrestaShop/PrestaShop/issues/19454)): 
 "We advise you to modify the quantity directly in the [1]Catalog > Stocks[/1] section of the back office to avoid stock imbalance." in Admin.Notifications.Warning.
-The link redirects to the stock page on another tab with the product displayed/loaded.
+The link redirects to the stock page on another tab with the product displayed as it was already searched.
 
 * **Minimum quantity for sale**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 * **Stock location**: This field should not be displayed for a virtual product \([issue 9623](https://github.com/PrestaShop/PrestaShop/issues/9623)\)
