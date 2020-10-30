@@ -88,14 +88,29 @@ This field is not displayed for a product with combinations. This field is not d
 If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
 When you update the field in basic settings tab, the same field in quantities \(for a standard product\) / virtual product tab is updated.       
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
-This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+The quantity is decremented by the quantity of the product placed into an order. 
+The quantity is incremented back after been decremented for an order when the order of the product :
+- has been canceled. The status of the order is set to "Canceled"
+- has been partial refund with the check “Re-stock products” 
+- has been standard refund with the check “Re-stock products”
+- has been return with the check “Re-stock products”
+- has a payment error. The status of the order is set to "Payment error"
 
 **1.7.8.0**:
-The quantity is now only a text in semibold that displays the quantity. The quantity can not be updated through the basic setting tab.
-The quantity is not displayed for a product with combinations. The quantity is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
-If a simple product is selected, a “quantities” link should be displayed under the quantity field. Clicking on it will switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
+
+The quantity is not displayed for a product with combinations. 
+The quantity is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
+
+The quantity is now only a text in semibold that displays the quantity. The quantity can not be updated through the basic setting tab. 
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
-This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+
+This quantity is decremented by the quantity of the product placed into an order. 
+This quantity is incremented back after been decremented for an order when the order of the product :
+- has been canceled. The status of the order is set to "Canceled"
+- has been partial refund with the check “Re-stock products” 
+- has been standard refund with the check “Re-stock products”
+- has been return with the check “Re-stock products”
+- has a payment error. The status of the order is set to "Payment error"
 
 * **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.       
 To separate decimals a dot or a comma can be used, both should work no matter the language.      
