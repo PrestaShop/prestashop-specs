@@ -84,17 +84,18 @@ A drop-down next to the field is displayed when there are several languages inst
 * **Quantity**: 
 
 **1.7.7.0**:
+
 This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
 If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
 When you update the field in basic settings tab, the same field in quantities \(for a standard product\) / virtual product tab is updated.       
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
 The quantity is decremented by the quantity of the product placed into an order. 
 The quantity is incremented back after been decremented for an order when the order of the product :
-- has been canceled. The status of the order is set to "Canceled"
-- has been partial refund with the check “Re-stock products” 
-- has been standard refund with the check “Re-stock products”
-- has been return with the check “Re-stock products”
-- has a payment error. The status of the order is set to "Payment error"
+  - has been canceled. The status of the order is set to "Canceled"
+  - has been partial refunded with the check “Re-stock products” 
+  - has been standard refunded with the check “Re-stock products”
+  - has been returned with the check “Re-stock products”
+  - has a payment error. The status of the order is set to "Payment error"
 
 **1.7.8.0**:
 
@@ -106,11 +107,12 @@ The quantity is displayed in front-office if the option “Display available qua
 
 This quantity is decremented by the quantity of the product placed into an order. 
 This quantity is incremented back after been decremented for an order when the order of the product :
-- has been canceled. The status of the order is set to "Canceled"
-- has been partial refund with the check “Re-stock products” 
-- has been standard refund with the check “Re-stock products”
-- has been return with the check “Re-stock products”
-- has a payment error. The status of the order is set to "Payment error"
+  - has been canceled. The status of the order has been set to "Canceled" or the product removed from the order list through the cancel button.
+  - has been partial refunded with the check “Re-stock products” 
+  - has been standard refunded with the check “Re-stock products”
+  - has been returned with the check “Re-stock products”
+  - has a payment error. The status of the order is set to "Payment error"
+
 
 * **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.       
 To separate decimals a dot or a comma can be used, both should work no matter the language.      
