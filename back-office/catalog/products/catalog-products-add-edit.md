@@ -92,7 +92,7 @@ This value is decremented when an order is placed except if the order status is 
 
 **1.7.8.0**:
 The quantity is now only a text in semibold that displays the quantity. The quantity can not be updated through the basic setting tab.
-This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
+The quantity is not displayed for a product with combinations. The quantity is not displayed if stock management is disabled in Shop parameters &gt; Products settings.       
 If a simple product is selected, a “quantities” link should be displayed under the quantity field. Clicking on it will switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).       
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.          
 This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
