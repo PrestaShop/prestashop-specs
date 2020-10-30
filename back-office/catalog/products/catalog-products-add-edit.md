@@ -225,7 +225,7 @@ When you update the field in quantities tab, the same field in basic settings ta
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
 This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 
-On top of the quantity input, the page has the following wording (new wording integrated by the issue #19454): 
+On top of the quantity input, the page has the following wording (new wording integrated by the issue [#19454](https://github.com/PrestaShop/PrestaShop/issues/19454)): 
 "We advise you to modify the quantity directly in the [1]Catalog > Stocks[/1] section of the back office to avoid stock imbalance." in Admin.Notifications.Warning.
 The link redirects to the stock page on another tab with the product displayed/loaded.
 
