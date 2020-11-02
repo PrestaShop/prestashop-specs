@@ -546,3 +546,7 @@ It displays the date and from where the user came from.
 
 ## VI. Links
 
+
+## VIII. Multistore
+
+An order from a specific shop can be edited from a "All shop" context.
