@@ -309,7 +309,7 @@ Below the actions button and on the right of customer panel, the product panel d
 -   **total with tax included,**
 -   **and 2 action buttons : edit and delete.**
 
-The list of products is displayed in reverse chronological order of the date of addition. (The last products displayed first)
+The list of products is displayed in reverse chronological order of the date of addition (the last added products are displayed first).
 
 **When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
