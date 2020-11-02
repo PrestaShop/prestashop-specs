@@ -309,6 +309,8 @@ Below the actions button and on the right of customer panel, the product panel d
 -   **total with tax included,**
 -   **and 2 action buttons : edit and delete.**
 
+The list of products is displayed in reverse chronological order of the date of addition. (The last products displayed first)
+
 **When the product has customization**, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.
 
 [popin displaying the products from the pack](/img/customization.png)
@@ -342,8 +344,11 @@ Below the totals, a warning message is displayed to warn the user that **for thi
 
 When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
-- the quantity
-The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+- the quantity:
+The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red. 
+The product is added in the product table and to the order after **pressing on the add button**: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).
+
+When a product is successfully added to the order, a notification of success is displayed: "Waiting for wording".
 
 When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): "This product is already in your order, please edit the quantity instead."
 
@@ -544,5 +549,4 @@ Steps to display:
 It displays the date and from where the user came from.
 
 
-## VI. Links
-
+## VII. Links
