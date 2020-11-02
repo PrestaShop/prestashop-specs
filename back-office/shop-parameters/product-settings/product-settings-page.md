@@ -1,12 +1,6 @@
 # **SPECIFICATIONS - PRODUCT SETTINGS PAGE**
 
 
-## Grid
-
-_CustomerGridDefinitionFactory.php_ Default action in the button: Edit Other available actions in the menu: View, Delete Row action: View
-Row action does not apply to the ID's checkbox column and to columns with enable/disable actions.
-
-
 ## Products (general)
 
 _As a merchant, I want to be able to turn my online store into a products catalog._
@@ -85,9 +79,9 @@ but the S, M, and black attributes remain displayed.
 
 _As a merchant, I want to be able to parameter my products' attributes._
 
-**Display the "Add to cart" button when a product has attributes.** Important note: this feature does not work with the Classic default theme. It has been removed from the front office in 1.7.x because many users added products to their cart without selecting a combination.
+**Display the "Add to cart" button when a product has attributes.** Important note: this feature does not work with the Classic default theme. It has been removed from the front office in 1.7.x because many users added products to their cart without selecting a combination. A help text under the switch button notices users about it, `Note that this setting does not work with the default theme anymore.` in `Admin.Shopparameters.Help`.
 
-It is still in the back office since it might work with other themes. By default, it is enabled. Display or hide the 'Add to cart' button on category pages for products that have attributes forcing customers to see product details.
+It is still in the back office since it might work with other themes. By default, it sould be disabled. Display or hide the 'Add to cart' button on category pages for products that have attributes forcing customers to see product details.
 
 **Separator of attribute anchor on the product links.** When a product has many attributes, the merchant can **select a separator between the hyphen (-) and the comma (,)**. By default, it is the hyphen. It appears on shopping carts in the front office, invoices, merchandise returns, and order details pages, cf. issue #[19636](https://github.com/PrestaShop/PrestaShop/issues/19636).
 
