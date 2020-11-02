@@ -438,7 +438,7 @@ Condition of cart rule:
 
 6. **Add a new cart rule**
 
--   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
+-   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of the products (the shipping cost is not included).
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
