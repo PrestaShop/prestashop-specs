@@ -107,6 +107,16 @@ _As a merchant, I want to be able to manage my product pages according to the av
 
 When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
 
+**Display the "out of stock" label on the product's listing pages** It allows to display a label on the product's listing pages when a product is out of stock and can't be ordered. The toggle is on yes by default.
+
+The out of stock label should be displayed only if the product stock is <= 0 AND if the order of out of stock product is denied.
+
+If the product has combinations, the out of stock label should be displayed only if all combinations are out of stock (stock is <= 0 AND if the order of out of stock product is denied)
+
+If stock management is disabled, this toggle switches automatically on No and being disabled (not clickable).
+
+cf. _1.7.8_ issue #[21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
+
 **Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed just below the 'Add to cart' button of the product page in the front office. 
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
