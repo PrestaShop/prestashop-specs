@@ -22,7 +22,17 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 
 Only numbers should be typed in the field. If the input contains specific characters, an error notification is displayed: _The Max size of short description field is invalid_.
 
-**Quantity discounts based on.** It is a dropdown selector containing two options: **the merchant can decide to base all his quantity discounts per-product or per-combination**. By default, the products option is selected. Picking the combinations option will create quantity discounts based on several products.
+**Quantity discounts based on.** It is a dropdown selector containing two options: **the merchant can decide to base all his quantity discounts per-product or per-combination**. By default, the 'Products' option is selected, allowing quantity discounts based on several products. 
+
+If 'Products' is selected, then the discount (specific price or catalog price rule) is applied when the cart contains X products no matter the combinations added to the cart.
+
+If 'Combinations' is selected, then the discount (specific price or catalog price rule) is applied when the cart contains X products of the same combination.
+
+For example, the merchant has set a discount for 4 purchased items:
+
+With quantity discounts based per-product: the customer can buy 2 white and 2 black tee-shirts to benefit from the discount.
+ 
+With quantity discounts based per-combination: the customer needs to buy 4 blue tee-shirts to benefit from the discount. 
 
 **Force update of friendly URL.** A friendly URL is generated from the product name. By default, it is disabled. Enabling this option will **automatically regenerate it every time the merchant modifies and saves a product name** - and automatically update the friendly URL field in the 'SEO' tab of the product page.
 
