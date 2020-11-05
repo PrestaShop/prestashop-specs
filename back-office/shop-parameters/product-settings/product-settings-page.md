@@ -99,7 +99,7 @@ _As a merchant, I want to be able to manage my product pages according to the av
 
 1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
 
-2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a stendard product.
+2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a standard product.
  
  On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
 
@@ -155,4 +155,3 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 **Default order by.** Merchants can **select the criterion based on what their products should be listed** on category or product pages, e.g. the 'New Products' page: product name, product price, product creation date, product last modification date, position inside category, brand, product quantity, product reference. By default, it is by position inside category - see the 'Position' column in the Catalog > Categories page.
 
 **Default order method.** It **defines if products should be listed following an ascending (`.asc` in the URL) or a descending (`.desc` in the URL) order** on category or product pages, e.g. the 'New Products' page, cf. issue #[21312](https://github.com/PrestaShop/PrestaShop/issues/21312). By default, it is in ascending order.
-
