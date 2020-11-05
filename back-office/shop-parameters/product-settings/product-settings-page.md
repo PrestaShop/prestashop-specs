@@ -113,8 +113,6 @@ The out of stock label should be displayed only if the product stock is <= 0 AND
 
 If the product has combinations, the out of stock label should be displayed only if all combinations are out of stock (stock is <= 0 AND if the order of out of stock product is denied)
 
-If stock management is disabled, this toggle switches automatically on No and being disabled (not clickable).
-
 cf. _1.7.8_ issue #[21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 
 **Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed just below the 'Add to cart' button of the product page in the front office. 
