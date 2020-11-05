@@ -52,8 +52,8 @@ Given I am a merchant in a multistore context, when I am in a specific shop cont
 
 The name of the selected context is displayed, it can be:
 - All shops
-- A shop group name
-- A shop name
+- A shop group name (can be added / edited in Advanced parameters > Multistore)
+- A shop name (can be added in Advanced parameters > Multistore)
 
 **User acceptance test**
 
