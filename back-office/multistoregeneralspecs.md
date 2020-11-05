@@ -4,7 +4,7 @@ As a merchant I need to be able to correctly manage all my stores
 
 ## WHAT
 
-Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases in back-office/multistorespecialsspecs.md
+Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases in broader-topics/multistorespecialsspecs.md
 
 ## SPECIFICATIONS
 
