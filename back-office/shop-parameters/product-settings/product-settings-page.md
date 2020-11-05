@@ -105,7 +105,12 @@ _As a merchant, I want to be able to manage my product pages according to the av
 
 **Enable stock management.** It allows basic stock management options and features: merchants can set the current quantity of a product and let PrestaShop lower it for each order, or re-stock it for each canceled or returned order. By default, this feature is enabled.
 
-When setting this option to 'No', it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037).
+When setting this option to 'No':
+
+- it automatically enables the 'Allow ordering of out of stock products' feature above and prevents the user from switching this feature again, cf. _1.7.8_ issue #[21037](https://github.com/PrestaShop/PrestaShop/issues/21037);</br>
+- the 'Quantity' column is not displayed in the product listing (Catalog > Products);</br>
+- the 'Quantity' field is not displayed in the product page (Catalog > Products);</br>
+- the 'Available' column is not displayed in the order details page (Orders > Orders > View).
 
 **Display the "out of stock" label on the product's listing pages** It allows to display a label on the product's listing pages when a product is out of stock and can't be ordered. The toggle is on yes by default.
 
