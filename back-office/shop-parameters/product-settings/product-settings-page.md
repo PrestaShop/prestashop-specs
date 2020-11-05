@@ -99,6 +99,8 @@ It is still in the back office since it might work with other themes. By default
 _As a merchant, I want to be able to display the discounted price or the discount itself on my product pages._
 
 **Display discounted price.** By default, it is disabled.
+When it's enabled, in the volume discounts board, the new product price with the applied discount is displayed
+When it's disabled, in the volume discounts board, the discount is displayed
 
 
 ## Products stock
