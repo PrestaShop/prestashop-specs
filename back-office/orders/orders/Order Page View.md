@@ -80,6 +80,8 @@ The user gets access to the order view page by either clicking on **the order’
 On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
 All date and time formats are defined according to CLDR and the display language.
 
+Order documents like invoices and delivery slips are, by default, in the customer language. An option allows merchants to turn it into the logistician language in the Shop Parameters > Order Settings page, cf. issue #[10258](https://github.com/PrestaShop/PrestaShop/issues/10258).
+
 ## I. **Action panel**
 
 **Below the panel’s header**, we have all the order's action button:
