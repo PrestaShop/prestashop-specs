@@ -127,7 +127,9 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
-**Delivery time of in-stock products.** ???
+**Delivery time of in-stock products.** Merchants can indicate the delivery time of in-stock products. It should be displayed in the front office product page, under the price, if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products).
+
+By default the field is empty. Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
