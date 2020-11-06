@@ -102,8 +102,6 @@ Given I am a merchant in a multistore context, when I am in the multistore heade
 
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to select the context
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to switch context
-
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color
 
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected
@@ -299,6 +297,8 @@ Next to each shop name, there is a mention:
 
 **User acceptance test**
 
-Given I am a merchant in a multistore context, when I am configuring my shops in "all shops" context then I want to know the parameters that have been customized in one or many specific shops 
+Given I am a merchant in a multistore context, when I am configuring my shops in "all shops" context, then I want to know the parameters that have been customized in one or many specific shops 
 
-Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops then I want to be able to switch context 
+Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to search for a context
+
+Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to switch context 
