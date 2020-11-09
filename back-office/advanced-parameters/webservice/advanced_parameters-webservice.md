@@ -9,18 +9,18 @@ The list displays:
 - Status (yes or no). It can be edited from the list;
 - Check Host (yes or no). It can't be edited from the list, since it has to add the URL to save the changes.
 
-The bulk action can enable and diasable the status of the selection or deleted the selection. 
+The bulk action can enable and disable the status of the selection or delete the selection. 
 
 ## Add new / Edit webservice key
 
 The "Add new webservice key" or "Edit webservice key" buttons redirect the user to the webservice key creation form. The form is composed of:
 
-- **Key***: A mandantory field limited to 32 character long that have to be unique. The webservice key can't be saved if the key is already used by another webservice account.
+- **Key***: A mandatory field limited to 32 characters long that has to be unique. The webservice key can't be saved if the key is already used by another webservice account.
 
 _Help text_: "Webservice account key."
 
-The user can fulfill the input or choose generated it by clicking the "Generate" button. Pressing the "Generate" button if a key is already enter will replace it with a new key gerenated.
-A generated keys are most of the time safer because they are harder to guess.
+The user can fulfill the input or choose generated it by clicking the "Generate" button. Pressing the "Generate" button if a key is already entered will replace it with a new key generated.
+Generated keys are most of the time safer because they are harder to guess.
 
 - **Key description**: Text area
 
@@ -32,17 +32,17 @@ _Help text_: "Quick description of the key: who it is for, what permissions it h
 
 The toggle enabled temporarily grant access to the data for anyone who has the right key.
 
-On top of the tabale, an information notification is displayed : "Set the resource permissions for this key:".
+On top of the table, an information notification is displayed: "Set the resource permissions for this key:".
 
 - **Permissions**: A check table
-the first axe is the resources and the second axe is the permission's type.
-The permission's type are: View (GET),Modify (PUT), Add (POST)	Delete (DELETE)	Fast view (HEAD).
-The resources is retrieve automaticly.
+the first axis is the resources and the second axis is the permission type.
+The permission's type are View (GET), Modify (PUT), Add (POST), Delete (DELETE), and	Fast view (HEAD).
+The resources are retrieved automatically.
 
-The user can select a access permissions by selecting one resource and the wanted permission's type. 
+The user can select an authorized access permission by selecting one resource and the authorized permission's type. 
 
-The user can grant all the permission's types for one resource by checking the checkbox "All". It will check automatically all the permission's types.
-The user can as well grant all resources for one permission type by clicking on the title of colomn of the selected persmission.
+The user can grant all the permission's types for one resource by checking the checkbox "All". It will check automatically all the permission types.
+The user can as well grant all resources for one permission type by clicking on the title of the column of the selected permission.
 
 - **Host check**:
 
@@ -56,24 +56,21 @@ If saved when the user edits the web service key, all the information (list of I
 If the text area contains URLs and the user disables the "Host check", on the reactivation of the "Host check" the old URLs are displayed again in the text area. (Bonus, if it can't be done: the text area is cleared each time it is deactivated)
 
 
-By clicking on the "Save" button if the key input is fulfilled, the information are saved and the user is redirected to the list.
+By clicking on the "Save" button if the key input is fulfilled, the information is saved and the user is redirected to the list.
 
 The webservice key can't be saved if the key is already used by another key.
 
-By clicking "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
+By clicking on the "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
 
 ## Multistore
 
-The form add the shop assocation madatory fiedl when the multistore is enabled.
+The form adds the shop association mandatory field when the multistore is enabled.
 
 - **Shop association**: 
-All the group shops groups and their related shops are displayed into choice tree. The user can choose by checking the checkbox on which shop or group of shops the key can give access to.
+All the group shop groups and their related shops are displayed in the checkbox choice tree. The user can choose by checking the checkbox on which shop or group of shops the key can give access to.
 
 **Missing wording or wording to be challenged**:
 
 - Host check is it enough explicit
 - small text bellow the toggle "Host check"
 - small text bellow the text is "Host allowed" if needed
-
-
-
