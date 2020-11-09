@@ -2,9 +2,14 @@
 
 ## Grid
 
-_WebserviceKeyDefinitionFactory.php_ Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+The list displays:
 
-Row action does not apply to the ID's checkbox column and columns with enable/disable actions.
+- Key (text);
+- Key description (text);
+- Status (yes or no). It can be edited from the list;
+- Check Host (yes or no). It can't be edited from the list, since it has to add the URL to save the changes.
+
+The bulk action can enable and diasable the status of the selection or deleted the selection. 
 
 ## Add new / Edit webservice key
 
@@ -27,17 +32,17 @@ _Help text_: "Quick description of the key: who it is for, what permissions it h
 
 The toggle enabled temporarily grant access to the data for anyone who has the right key.
 
-On top of the tabale, an information notification i displayed : "Set the resource permissions for this key:".
+On top of the tabale, an information notification is displayed : "Set the resource permissions for this key:".
 
 - **Permissions**: A check table
-the first axe is the ressources and the second axe is the permission's type.
-The permissions's type are: View (GET),Modify (PUT), Add (POST)	Delete (DELETE)	Fast view (HEAD).
-The ressources is retrieve automa
+the first axe is the resources and the second axe is the permission's type.
+The permission's type are: View (GET),Modify (PUT), Add (POST)	Delete (DELETE)	Fast view (HEAD).
+The resources is retrieve automaticly.
 
-The user can choose the access of permissions by section or permission's type. 
+The user can select a access permissions by selecting one resource and the wanted permission's type. 
 
-The list of The user can grant all the permissions type for one resource by checking the checkbox All. He can grant all resource for one permission type.
-
+The user can grant all the permission's types for one resource by checking the checkbox "All". It will check automatically all the permission's types.
+The user can as well grant all resources for one permission type by clicking on the title of colomn of the selected persmission.
 
 - **Host check**:
 
@@ -50,14 +55,25 @@ If saved when the user edits the web service key, all the information (list of I
 
 If the text area contains URLs and the user disables the "Host check", on the reactivation of the "Host check" the old URLs are displayed again in the text area. (Bonus, if it can't be done: the text area is cleared each time it is deactivated)
 
-Click "Save" when your key is ready.
+
+By clicking on the "Save" button if the key input is fulfilled, the information are saved and the user is redirected to the list.
 
 The webservice key can't be saved if the key is already used by another key.
 
-Click "Cancel" when your key is ready.
+By clicking "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
+
+## Multistore
+
+The form add the shop assocation madatory fiedl when the multistore is enabled.
+
+- **Shop association**: 
+All the group shops groups and their related shops are displayed into choice tree. The user can choose by checking the checkbox on which shop or group of shops the key can give access to.
 
 **Missing wording or wording to be challenged**:
 
 - Host check is it enough explicit
 - small text bellow the toggle "Host check"
 - small text bellow the text is "Host allowed" if needed
+
+
+
