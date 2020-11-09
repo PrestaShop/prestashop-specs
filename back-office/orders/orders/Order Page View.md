@@ -552,7 +552,7 @@ It displays the date and from where the user came from.
 
 An order made from a specific shop can be edited from any shops. Even if the shop where the order is edited isn't in the same group as the shop where the order was made.
 
-In a multistore context, the next order and previous buttons work depending on the view of the shop or the group of shops the Back-Office is set.
+In a multistore context, the next and previous buttons for navigating between orders work according to the selected context in the back-office (specific shop, group of shops or all shops)
 If the order listing is filtered by a multistore group view then the user can navigate between orders in the order view page only from this shop group.
 If the order listing is filtered by a specific shop from the multistore setting then the user can navigate between orders in the order view page only from this shop.
 And if the order listing is set in "All shop" in the multistore setting then the user can navigate between orders in the order view page from all the shops.
