@@ -1,6 +1,8 @@
 # SPECIFICATIONS - ADVANCED PARAMETERS &gt; WEBSERVICE
 
-## Grid
+The listing page is composed of the list of the webservice keys and the configuration section.
+
+## The list of the webservice keys**
 
 The list displays:
 
@@ -10,6 +12,23 @@ The list displays:
 - Check Host (yes or no). It can't be edited from the list, since it has to add the URL to save the changes.
 
 The bulk action can enable and disable the status of the selection or delete the selection. 
+
+## Configuration
+
+The configuration section is composed of 2 toggles:
+
+- **Enable PrestaShop's webservice**: Toggle
+When the toggle is disabled, the PrestaShop's webservice will disable for all the key. The saved keys keep their current status even if they are enabled. 
+
+_Help text_: 
+Before activating the webservice, you must be sure to:
+1. Check that URL rewriting is available on this server.
+2. Check that the five methods GET, POST, PUT, DELETE, and HEAD are supported by this server.
+
+- **Enable CGI mode for PHP**: Toggle
+
+_Help text_: 
+Before choosing "Yes", check that PHP is not configured as an Apache module on your server.
 
 ## Add new / Edit webservice key
 
@@ -41,7 +60,7 @@ The resources are retrieved automatically.
 
 The user can select an authorized access permission by selecting one resource and the authorized permission's type. 
 
-The user can grant all the permission's types for one resource by checking the checkbox "All". It will check automatically all the permission types.
+The user can grant all the permission types for one resource by checking the checkbox "All". It will check automatically all the permission types.
 The user can as well grant all resources for one permission type by clicking on the title of the column of the selected permission.
 
 - **Host check**:
@@ -61,6 +80,7 @@ By clicking on the "Save" button if the key input is fulfilled, the information 
 The webservice key can't be saved if the key is already used by another key.
 
 By clicking on the "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
+
 
 ## Multistore
 
