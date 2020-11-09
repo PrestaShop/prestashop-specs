@@ -80,6 +80,8 @@ The user gets access to the order view page by either clicking on **the order’
 On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
 All date and time formats are defined according to CLDR and the display language.
 
+Order documents like invoices and delivery slips are, by default, in the customer language. An option allows merchants to turn it into the logistician language in the Shop Parameters > Order Settings page, cf. issue #[10258](https://github.com/PrestaShop/PrestaShop/issues/10258).
+
 ## I. **Action panel**
 
 **Below the panel’s header**, we have all the order's action button:
@@ -544,9 +546,14 @@ Steps to display:
 It displays the date and from where the user came from.
 
 
-## VI. Links
-
+## VII. Links
 
 ## VIII. Multistore
 
-An order from a specific shop can be edited from a "All shop" context.
+An order from a specific shop can be edited from any shops. Even if they are separeted from differents groups.
+
+In a multistore context, the next order and previous buttons work depending on the view of the shop or the group of shops the Back-Office is set.
+If the order listing is filtered by a multistore group view then the user can navigate between orders in the order view page only from this shop group.
+If the order listing is filtered by a specific shop from the multistore setting then the user can navigate between orders in the order view page only from this shop.
+And if the order listing is set in "All shop" in the multistore setting then the user can navigate between orders in the order view page from all the shops.
+
