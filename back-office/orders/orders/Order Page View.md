@@ -555,4 +555,4 @@ An order made from a specific shop can be edited from any shops. Even if the sho
 In a multistore context, the next and previous buttons for navigating between orders work according to the selected context in the back-office (specific shop, group of shops or all shops)
 If a specific shop group is selected as context in the order list, then the user can navigate between orders belonging only to this shop group in the order view page.
 If a specific shop is selected as context in the order list, then the user can navigate between orders belonging only to this shop in the order view page.
-And if the order listing is set in "All shop" in the multistore setting then the user can navigate between orders in the order view page from all the shops.
+If "All shops" is selected as context in the order list, then the user can navigate between orders from all the shops in the order view page.
