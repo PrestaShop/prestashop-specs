@@ -546,5 +546,13 @@ Steps to display:
 It displays the date and from where the user came from.
 
 
-## VI. Links
+## VII. Links
 
+## VIII. Multistore
+
+An order made from a specific shop can be edited from any shops. Even if the shop where the order is edited isn't in the same group as the shop where the order was made.
+
+In a multistore context, the next and previous buttons for navigating between orders work according to the selected context in the back-office (specific shop, group of shops or all shops)
+If a specific shop group is selected as context in the order list, then the user can navigate between orders belonging only to this shop group in the order view page.
+If a specific shop is selected as context in the order list, then the user can navigate between orders belonging only to this shop in the order view page.
+If "All shops" is selected as context in the order list, then the user can navigate between orders from all the shops in the order view page.
