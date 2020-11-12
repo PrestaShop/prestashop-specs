@@ -3,7 +3,7 @@
 
 ## General
 
-_As a user, I want to be able to turn my online store into a products catalog._
+[TO BE COMPLETED] 
 
 **Addons API stability channel.** Available **in development environment only**, starting from PrestaShop 1.7.8, cf. issue #[18273](https://github.com/PrestaShop/PrestaShop/issues/18273). It is a dropdown selector containing three options to **let the users choose what kind of stability level they want to use for their Addons modules**:
 
