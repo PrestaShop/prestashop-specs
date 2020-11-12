@@ -10,19 +10,19 @@ A table lists all the aliases defined by the merchant. He/she can add and edit a
 
 # Add an alias
 
-Clicking 'Add new alias' or on the '+' icon on the top right hand corner of the table should redirect to a new page, where two field are to be filled:
+Clicking 'Add new alias' or on the '+' icon on the top right-hand corner of the table should redirect to a new page, where there are two fields to fill:
 
-**Alias.** Users can **associate as many aliases as they want to a same result** as long as they seperate them by a comma. A tooltip is available for the field, `Enter each alias separated by a comma (e.g. 'prestshop,preztashop,prestasohp').` in `Admin.Shopparameters.Help`, followed by `Forbidden characters: <>;=#{}` in `Admin.Shopparameters.Help`.
+**Alias.** Users can **associate as many aliases as they want to the same result** as long as they separate them by a comma. A tooltip is available for the field, `Enter each alias separated by a comma (e.g. 'prestshop,preztashop,prestasohp').` in `Admin.Shopparameters.Help`, followed by `Forbidden characters: <>;=#{}` in `Admin.Shopparameters.Help`.
 
 If the input contains the forbidden characters mentioned in the tooltip (_<>;=#{}_), the user should stay on the page and see an error notification displayed: `%s is not a valid alias.` in `Admin.Shopparameters.Notification`.
 
-If the user saves the alias(es) without filling the _Result_ field, he/she should stay on the page and see an error notification displayed: `Aliases and results are both required.` in `Admin.Shopparameters.Notification`. If everything goes right, he/she should goes back to the table and see a success notification.
+If the user saves the alias(es) without filling the _Result_ field, he/she should stay on the page and see an error notification displayed: `Aliases and results are both required.` in `Admin.Shopparameters.Notification`. If everything goes right, he/she should go back to the table and see a success notification.
 
 **Result.** Users can **define the searching result matching the previously defined alias(es)**. A tooltip is available for the field, `Search this word instead.` in `Admin.Shopparameters.Help`.
 
 If the input contains forbidden characters (_<>;=#{}_), the user should stay on the page and see an error notification displayed: `%s is not a valid result.` in `Admin.Shopparameters.Notification`.
 
-If the user saves the result without filling the _Alias_ field, he/she should stay on the page and see an error notification displayed: `Aliases and results are both required.`in `Admin.Shopparameters.Notification`. If everything goes right, he/she should goes back to the table and see a success notification.
+If the user saves the result without filling the _Alias_ field, he/she should stay on the page and see an error notification displayed: `Aliases and results are both required.` in `Admin.Shopparameters.Notification`. If everything goes right, he/she should go back to the table and see a success notification.
 
 
 # Edit an alias
