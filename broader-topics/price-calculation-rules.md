@@ -82,5 +82,6 @@ Once the product price without tax and the tax value are defined, it is easy to 
 This will ensure the addition available on the invoice is always correct no matter how complex is the order. 
 
 2. Specific rule - with round on each item type
+
 If taxes are not used, the unit price tax excluded of each product is rounded before making calculations.
 If taxes are used, the unit price tax included of each product is rounded before making calculations.
