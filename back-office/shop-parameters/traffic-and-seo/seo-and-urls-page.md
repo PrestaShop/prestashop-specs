@@ -10,11 +10,22 @@ Row action does not apply to the ID's checkbox column.
 
 ## URLs set up
 
-[TO BE COMPLETED]
+**Friendly URL.** By default, this option is enabled. A friendly URL is generated from the page/item name, it is **available for all of the pages whose URL can be rewritten**:
+
+- product
+- category
+- attribute
+- feature
+- brand
+- supplier
+- page
+- page category
+
+A tooltip completes this feature, _Enable this option only if your server allows URL rewriting (recommended)._.
 
 **Force update of friendly URL.** At first, this option was only available for products, in the Shop Parameters > Product Settings page but it has been decided to make it available for all URLs. So it is now a SEO & URLs parameter to be found in this dedicated section of the back office, cf. _to do_ issue #[21386](https://github.com/PrestaShop/PrestaShop/issues/21386).
 
-A friendly URL is generated from the page/item name. By default, it is disabled. Enabling this option will **automatically regenerate it every time the merchant modifies it and saves a new name**. As a consequence, it automatically updates the friendly URL column in the 'SEO & URLs' listing of the page.
+By default, it is disabled. Enabling this option will **automatically regenerate the URL every time the merchant modifies it to save a new name**. As a consequence, it automatically updates the friendly URL column in the 'SEO & URLs' listing of the page.
 
 :pushpin: Example: the merchant edits the name of a product, he/she turns 'Mug the best is yet to come' into 'Mug the best has gone' - sad story, I know.
 
