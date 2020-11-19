@@ -44,8 +44,7 @@ Please note, when editing a standard product with combinations, you can’t chan
 * **Product list**: Link that displays the list of all products filtered as in the catalog, with their id, name, price, quantity.       
 If you click on the id or the name, you arrive on the product page in basic settings tab.       
 If you click on the price, you arrive on the product page in pricing tab.       
-If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.       
-When the quantity is equal or less than 0 the quantity is displayed with red backgound.
+If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.
 * **Help**: Link to display the help in the right menu.
 * **Delete**: Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 * **Preview**: When you click on this button, it saves and open a new browser tab with the product displayed in front-office.      
@@ -56,7 +55,7 @@ Keyboard shortcut: ALT + SHIFT + V
 * **Save**: Button to save all changes made in all tabs.      
 Keyboard shortcut: ALT + SHIFT + S.      
 If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
-* **Duplicate**: When you click on this button, it saves and duplicate the current product \(the duplicated product will be offline\). The duplicated product has all the product information (product associated, carriers configuration, associated suppliers, infromation of all the combinaition and the associated files) of the copied product.
+* **Duplicate**: When you click on this button, it saves and duplicate the current product \(the duplicated product will be offline\). The duplicated product must be exactly the same. 
 Keyboard shortcut: ALT + SHIFT + D      
 * **Go to catalog**: When you click on this button, it saves and redirect to catalog product list.      
 Keyboard shortcut: ALT + SHIFT + Q
