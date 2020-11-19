@@ -400,6 +400,8 @@ Furthermore, If the merchant has a paid product, and the same product, but gifte
 
 **A confirmation pop-up appears after clicking on the Delete button.**
 
+If the user deletes all the products, the order status remains the same.
+
 4. **Edit products already in the order**
 
 When clicking on the edit button of a product line, the user is allowed to edit :
