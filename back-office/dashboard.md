@@ -9,9 +9,9 @@ It says `You are using a PHP version that is not supported and this can affect y
 
 Users should be able to dismiss this warning notification when it pops up, but it will keep on appearing at each session until the PHP version is changed.
 
-With the multistore feature, the scenario is expected to be different from one shop to the other: the **notification is dismissed only for the selected context** and should not be redisplayed if the user refreshes or returns to the Dashboard page.
+Using the multistore feature, the scenario is expected to be different from one shop to the other: the **notification is dismissed only for the selected context** and should not be redisplayed if the user refreshes or returns to the Dashboard page.
 
-Expected behavior: if the user dismiss the warning notification for Shop 1, it should still be visible in Shop 2.
+Expected behavior: if the user dismisses the warning notification for Shop 1, it should still be visible in Shop 2.
 
 If, following this recommendation, the user updates the PHP version to use a supported one, when logging in again, he/she should be able to see a green success notification: `You are now running a supported PHP version.` in `Admin.Notifications.Success`.
 
