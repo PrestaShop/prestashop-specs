@@ -434,13 +434,8 @@ When the merchant changes it, the same field in the Basic settings tab is also u
 When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 When the merchant changes it, the same field in the Basic settings tab is also updated.
-* **\(Retail\) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
-When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.      
-To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
-* **\(Retail\) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
-"ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
-When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
-To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
+* **\(Retail\) price tax excl ecotax included**: It's the same field as Retail price (tax excl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field.     
+* **\(Retail\) price tax incl ecotax included**:  It's the same field as Retail price (tax incl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field.   
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
 Drop-down with all tax rules enabled and a “no tax” option. 
 If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
