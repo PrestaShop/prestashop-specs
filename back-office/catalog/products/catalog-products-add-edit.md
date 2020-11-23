@@ -434,8 +434,8 @@ When the merchant changes it, the same field in the Basic settings tab is also u
 When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 When the merchant changes it, the same field in the Basic settings tab is also updated.
-* **\(Retail\) price tax excl ecotax included**: It's the same field as Retail price (tax excl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field.     
-* **\(Retail\) price tax incl ecotax included**:  It's the same field as Retail price (tax incl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field.   
+* **\(Retail\) price tax excl ecotax included**: It's the same field as Retail price (tax excl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field. [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)     
+* **\(Retail\) price tax incl ecotax included**:  It's the same field as Retail price (tax incl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field. [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)   
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
 Drop-down with all tax rules enabled and a “no tax” option. 
 If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
@@ -456,7 +456,7 @@ Displayed in the product page in front-office next to the unit price
 * **Net turnover excluding tax**: This information is displayed when the ecotax is enabled and if it is not a virtual product. 
 It’s the amount of Price \(tax excl.\) - ecotax \(tax incl.\).       
 It is taken into account for the calculations instead of the field "Price \(tax excl.\)" when ecotax tax incl field is different from 0.         
-This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\)
+This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\). [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)
 * **Cost price (tax excl.)**: By default, it’s set to 0.000000      
 It’s used for margin calculations.          
 To separate decimals a dot or a comma can be used, both should work no matter the language.
