@@ -45,7 +45,7 @@ Please note, when editing a standard product with combinations, you can’t chan
 If you click on the id or the name, you arrive on the product page in basic settings tab.       
 If you click on the price, you arrive on the product page in pricing tab.       
 If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.       
-When the quantity is equal or less than 0 the quantity is displayed with red backgound.
+When the quantity is equal or less than 0 the quantity is displayed with a red background.
 * **Help**: Link to display the help in the right menu.
 * **Delete**: Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 * **Preview**: When you click on this button, it saves and open a new browser tab with the product displayed in front-office.      
