@@ -8,6 +8,15 @@ _MetaGridDefinitionFactory.php_ Default action in the button: Edit Other availab
 Row action does not apply to the ID's checkbox column.
 
 
+## SEO & URLs
+
+[TO BE COMPLETED]
+
+**Rewritten URL.** Should be available for all pages, even the _index_ which stands for the store's homepage.
+
+[TO BE COMPLETED]
+
+
 ## URLs set up
 
 **Friendly URL.** By default, this option is enabled. A friendly URL is generated from the page/item name, it is **available for all of the pages whose URL can be rewritten**:
