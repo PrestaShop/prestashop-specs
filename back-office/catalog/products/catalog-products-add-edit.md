@@ -56,7 +56,7 @@ Keyboard shortcut: ALT + SHIFT + V
 * **Save**: Button to save all changes made in all tabs.      
 Keyboard shortcut: ALT + SHIFT + S.      
 If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
-* **Duplicate**: When you click on this button, it saves and duplicate the current product \(the duplicated product will be offline\). The duplicated product has all the product information (product associated, carriers configuration, associated suppliers, infromation of all the combinaition and the associated files) of the copied product.
+* **Duplicate**: When you click on this button, it saves and duplicates the current product \(the duplicated product will be offline\). The duplicated product has all the product information (related products, shipping configuration, associated suppliers, combinations, associated and attached files) of the copied product.
 Keyboard shortcut: ALT + SHIFT + D      
 * **Go to catalog**: When you click on this button, it saves and redirect to catalog product list.      
 Keyboard shortcut: ALT + SHIFT + Q
