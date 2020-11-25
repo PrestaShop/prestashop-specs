@@ -19,7 +19,7 @@ Clicking 'Help' button on the top right-hand corner of the page should open a di
 ### Import a localization pack
 
 Using this section will give you the ability to import the desired country's localizations.</br>
-- If you select a country that you do not already have it inside your shop, it will import all localizations you selected for it.
+- If the user selects a country that is not already imported inside your shop, it will import all localizations content selected.
 - If the user selects a country that is already imported, it will update the localizations you selected content selected.
 
 **Localization pack you want to import**
