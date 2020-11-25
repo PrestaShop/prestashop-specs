@@ -15,7 +15,7 @@ During maintenance, the webservice remains enabled. Users with a key can still r
 
 A help text is available: `Allow IP addresses to access the store, even in maintenance mode. Use a comma to separate them (e.g. 42.24.4.2,127.0.0.1,99.98.97.96).` in `Admin.Shopparameters.Help`.
 
-**Custom maintenance text.** Users can **display a message on the maintenance page** by using a text editor. By default, the following message is displayed: `We are currently updating our shop and will be back really soon. Thanks for your patience.` in `Admin.Shopparameters.Feature`. Merchants can localize the label according to the store's available languages.
+**Custom maintenance text.** Users can **display a message on the maintenance page** by using a text editor. By default, the following message is displayed: `We are currently updating our shop and will be back really soon. Thanks for your patience.` in `Admin.Shopparameters.Feature`. Merchants can localize the message according to the store's available languages.
 
 It is limited to 21844 characters. If the input contains more than 21844 characters, an error notification should be displayed when clicking 'Save' (and prevent from saving): `%1$s is too long. Maximum length: %2$d` in `Admin.Notifications.Error`.
 
