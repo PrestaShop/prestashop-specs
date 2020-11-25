@@ -46,4 +46,4 @@ After any modifications applied on local CLDR files, the PrestaShop cache (back-
 
 **Import**
 
-The import button is shown to apply the 'Import a localization pack' options. Clicking on it might affect both FrontOffice and BackOffice or change the default price behaviours based on options chose from 'Content to import' and 'Download pack data' fields.
+Pressing the _Import_ button applies the 'Import a localization pack' options. Clicking on it might affect both FrontOffice and BackOffice or change the default price behaviors based on options chose from 'Content to import' and 'Download pack data' fields.
