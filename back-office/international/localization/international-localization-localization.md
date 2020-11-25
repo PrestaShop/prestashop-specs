@@ -1,6 +1,6 @@
 # GENERAL SPECS LOCALIZATION BACKOFFICE
 
-As a merchant I need to be able to manage my owl localization.
+As a merchant, I need to be able to manage my localizations to handle the importation packages, the language and the currency configuration of the Front-Office, the local units used by the shop.
 
 ## WHAT
 
