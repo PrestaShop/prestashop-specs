@@ -14,7 +14,6 @@ As a merchant, being able to manage localizations will help to have my own units
 
 ### Help button
 
-Clicking 'Help' button on the top right-hand corner of the page should open a dialog box containing help and guides regarding importing a localization pack, configuring localizations, modifying local units, and advanced parameters.
 
 ### Import a localization pack
 
