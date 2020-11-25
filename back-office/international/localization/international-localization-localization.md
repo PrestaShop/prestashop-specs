@@ -24,7 +24,7 @@ Using this section will give you the ability to import the desired country's loc
 
 **Localization pack you want to import**
 
-The list of countries will show up on clicking on it. It can be selected by:
+The _Localization pack you want to import_ droplist displays the list of countries displays by clicking on it. It can be selected by:
 - Searching the list via the search input field by typing the complete country name or part of it (at least one word).
 - Scrolling down the list and find the country which are sorted by their name (a-z).
 
