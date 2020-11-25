@@ -12,7 +12,6 @@ As a merchant, being able to manage localizations will help to have my own units
 
 ## SPECIFICATIONS
 
-### Help button
 
 
 ### Import a localization pack
