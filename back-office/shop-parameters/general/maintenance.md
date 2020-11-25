@@ -15,11 +15,11 @@ During maintenance, the webservice remains enabled. Users with a key can still r
 
 A help text is available: `IP addresses allowed to access the front office even if the shop is disabled. Please use a comma to separate them (e.g. 42.24.4.2,127.0.0.1,99.98.97.96).` in `Admin.Shopparameters.Help`.
 
-**Custom maintenance text.** Users can **display a message on the maintenance page**. By default, it is limited to 21844 characters. If the input contains more than 21844 characters, an error notification should be displayed when saving: `%1$s is too long. Maximum length: %2$d` in `Admin.Notifications.Error`.
+**Custom maintenance text.** Users can **display a message on the maintenance page** by using a text editor. By default, the following message is displayed: `We are currently updating our shop and will be back really soon. Thanks for your patience.` in `Admin.Shopparameters.Feature`. Merchants can localize the label according to the store's available languages.
 
-Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+It is limited to 21844 characters. If the input contains more than 21844 characters, an error notification should be displayed when clicking 'Save' (and prevent from saving): `%1$s is too long. Maximum length: %2$d` in `Admin.Notifications.Error`.
 
-No help text available, the placeholder indicates users why to fill this field: `Write a customized message for the customers to read when the store is disabled.` in `Admin.Shopparameters.Help`.
+A help text is available: `Display a customized message when the store is disabled.` in `Admin.Shopparameters.Help`.
 
 Clicking 'Save', users are expected to stay on this page and see a success notification, `Update successful` in `Admin.Notifications.Success`.
 
