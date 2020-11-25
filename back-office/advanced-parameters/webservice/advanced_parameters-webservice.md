@@ -9,7 +9,6 @@ The list displays:
 - Key (text);
 - Key description (text);
 - Status (yes or no). It can be edited from the list;
-- Check Host (yes or no). It can't be edited from the list, since it has to add the URL to save the changes.
 
 The bulk action can enable and disable the status of the selection or delete the selection. 
 
@@ -63,17 +62,6 @@ The user can select an authorized access permission by selecting one resource an
 The user can grant all the permission types for one resource by checking the checkbox "All". It will check automatically all the permission types.
 The user can as well grant all resources for one permission type by clicking on the title of the column of the selected permission.
 
-- **Host check**:
-
-A toggle "Host check" is displayed at the end of the form. By default, the toggle is disabled.
-If enabled, a text area "Host allowed" is displayed to enter all the allowed IPs. They must be split by a comma.
-
-If the user has enabled the "Host check" and saves the form without entering any IP, then an error is thrown, the user stays on the current page and the saving is canceled.
-
-If saved when the user edits the web service key, all the information (list of IPS allowed and the saved configuration) must be displayed.
-
-If the text area contains URLs and the user disables the "Host check", on the reactivation of the "Host check" the old URLs are displayed again in the text area. (Bonus, if it can't be done: the text area is cleared each time it is deactivated)
-
 
 By clicking on the "Save" button if the key input is fulfilled, the information is saved and the user is redirected to the list.
 
@@ -82,15 +70,10 @@ The webservice key can't be saved if the key is already used by another key.
 By clicking on the "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
 
 
-## Multistore
+### Multistore
 
 The form adds the shop association mandatory field when the multistore is enabled.
 
 - **Shop association**: 
 All the group shop groups and their related shops are displayed in the checkbox choice tree. The user can choose by checking the checkbox on which shop or group of shops the key can give access to.
 
-**Missing wording or wording to be challenged**:
-
-- Host check is it enough explicit
-- small text bellow the toggle "Host check"
-- small text bellow the text is "Host allowed" if needed
