@@ -156,7 +156,9 @@ The image is open in its default size. You can close it by clicking on the cross
   * The cross to close the frame and unselect images
   * Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.
 
-    If more than one image is selected the checkbox "cover" disappears
+    If more than one image is selected the checkbox "cover" disappears.
+    
+The **Features section** is displayed if the Feature option in the Advanced Parameters / Performance / Optional features page enables otherwise the section is hidden.
 * **Add a feature**: By default the selected option is "Choose a feature".
 All the features are displayed in the drop-down and are sorted by position ASC.
 If there are several features with the same name, then the ID of the feature is displayed before its name 
