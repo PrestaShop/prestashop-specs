@@ -101,26 +101,23 @@ When you change it, the price tax incl is updated. And the “tax rule” field 
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.       
 When you change it, the same field in pricing tab is also updated.      
 Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab.
-* **Search category**: Search field to search a category. You can search by category name.       
-When you start typing, if there are results, they are displayed and highlighted \( [issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\) under and you can click on it.
-* **Select category**: Allows to associate categories to the product.        
-A category is necessarily selected, it is impossible not to have one.       
-When you create a new product, “Home” is selected.       
-When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse \([issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\).       
-When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
-* **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”.       
-You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked.       
-If you try to unselect all categories, you can’t do it for the last one.
-* **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories \([issue 14955](https://github.com/PrestaShop/PrestaShop/issues/14955)\).       
-When I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. When I click on "expend" the whole tree is opened.       
+
+A category is necessarily selected, a product is always at least associated to one category.       
+When you create a new product, “Home” is selected.      
+* **Search category**: Allows to associate categories to the product. When the user searches a category, the results is displayed into a list that can be navigated using keyboard or hover with mouse \([issue 20331](https://github.com/PrestaShop/PrestaShop/issues/20331)\). The selected category by the user is add to **Associated categories** and is checked in the **Category tree.**
+* **Associated categories**: Displays all the associated categorie. Each category can be removed by clicking on the cross button next to it. Removing a category uncheck the category on the tree. The last category can't be removed.
+* **Category tree**: When the user creates a new product, the tree is open for the first 2 levels of categories \([issue 14955](https://github.com/PrestaShop/PrestaShop/issues/14955)\).       
+When the user clicks on "collapse" it folds the whole tree. The user can also click on each parent to folds / unfolds its subcategories. When the user clicks on "expend" the whole tree is opened.       
 Categories are sorted by level AND position:       
 Categ 1 level 1 position 1       
 Categ 3 level 1 position 2       
 Categ 2 level 1 position 3       
 Categ 2-2 level 2 position 1       
-Categ 2-1 level 2 position 2       
+Categ 2-1 level 2 position 2
+On the left of the category's name is display a checkbox, if it is checked then the category is associated to the product.
 * **Main category**: Radio button to select the main category of the product. There can only be one.           
 The main category is the one that will be in the product URL, before the product name and in the breadcrumb in front-office you have all parent categories up to the main one.
+If the category flaged as main category is unselected in the tree or removed from the associated category, the associated category with the hightest position on the tree will be assgned automaticaly the main categoty.
 * **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 * **New category name**: Allows to create quickly a new category.       
 The name will be the same in all languages.        
