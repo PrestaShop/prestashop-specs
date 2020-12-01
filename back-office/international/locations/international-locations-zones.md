@@ -48,4 +48,48 @@ There is an action button at the end of each row which displays the _Edit_ butto
 Clicking on the _Bulk actions_ button on the bottom left-handed side of the table will give the user the ability to perform bulk actions for selected zones (using the check boxes). The user can:
 - Select all/Unselect all: This button will select/unselect all check boxes next to each zone row on the table.
 - Enable selection/Disable selection: This button will enable/disable the selected zones using the check boxes next to each zone row.
-- Delete selected: This button will delete the selected zones using the check boxes next to each row. Clicking on this button will remove the selected zones from shop, `_db_prefix_zone`, and `_db_prefix_zone_shop` databases as well.
+- Delete selected: This button will delete the selected zones using the check boxes next to each row. Clicking on this button will remove the selected zones from shop, `_db_prefix_zone`, and `_db_prefix_zone_shop` tables as well.
+
+### ADD NEW ZONE
+
+Clicking on _Add new zone_ button will redirect the user to the new page which they can add a custom zone.
+
+**Name**
+
+The _Name_ field defines the zone's name for each language. This can be change later using the 'Zones' table on International > Locations > Zones page (back-office/international/international-locations-zones.md).
+
+**Active**
+
+The _Active_ field displays a YES/NO toggle button to define if the new zone should be activated on shop or not. By default, this option is set on YES. This can be change later using the 'Zones' table on International > Locations > Zones page (back-office/international/international-locations-zones.md).
+
+**Cancel**
+
+Clicking on _Cancel_ button will ignor the input fields and return to the International > Locations > Zones page (back-office/international/international-locations-zones.md) without impacting on database.
+
+**Save**
+
+Clicking on _Save_ button will insert the data from 'ZONES' fields into `_db_prefix_zone`, and `_db_prefix_zone_shop` tables and return to International > Locations > Zones page (back-office/international/international-locations-zones.md).
+
+### EDIT ZONE
+
+Clicking on _Edit_ button will redirect the user to the new page which they can edit a zone.
+
+**Name**
+
+The _Name_ field defines the zone's name for each language. The user can modify the name of the zone for each language separately.
+
+**Active**
+
+The _Active_ field displays a YES/NO toggle button to define if the zone should be activated on shop or not. By default, it display the current status of the selected zone.
+
+**Cancel**
+
+Clicking on _Cancel_ button will ignor the input fields and return to the International > Locations > Zones page (back-office/international/international-locations-zones.md) without impacting on database.
+
+**Save**
+
+Clicking on _Save_ button will modify the data from `_db_prefix_zone`, and `_db_prefix_zone_shop` tables for the selected zone and replace them with the new data received from 'ZONES' field and return to International > Locations > Zones page (back-office/international/international-locations-zones.md).
+
+### DELETE ZONE
+
+Clicking on _Delete_ button will `drop` the selected zone from `_db_prefix_zone`, and `_db_prefix_zone_shop` tables by searching and finding it from the zone 'ID' and return to International > Locations > Zones page (back-office/international/international-locations-zones.md). It returns a green successful message if the `drop` process is done well, otherwise it returns a red error containing the error message on the top of the page.
