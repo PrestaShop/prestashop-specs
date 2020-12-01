@@ -113,11 +113,11 @@ Categ 1 level 1 position 1
 Categ 3 level 1 position 2       
 Categ 2 level 1 position 3       
 Categ 2-2 level 2 position 1       
-Categ 2-1 level 2 position 2
-On the left of the category's name is display a checkbox, if it is checked then the category is associated to the product.
+Categ 2-1 level 2 position 2       
+On the left of the category's name is display a checkbox, if it is checked then the category is associated to the product. The last category can't be removed unchecked.
 * **Main category**: Radio button to select the main category of the product. There can only be one.           
 The main category is the one that will be in the product URL, before the product name and in the breadcrumb in front-office you have all parent categories up to the main one.
-If the category flaged as main category is unselected in the tree or removed from the associated category, the associated category with the hightest position on the tree will be assgned automaticaly the main categoty.
+If the category flaged as main category is unchecked in the tree or removed from the associated category, the associated category with the hightest position on the tree will be assgned automaticaly the main categoty.
 * **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 * **New category name**: Allows to create quickly a new category.       
 The name will be the same in all languages.        
@@ -128,8 +128,8 @@ When you save, if your category name contains an invalid character, an error mes
   Categ 3 level 1 position 2          
   Categ 2 level 1 position 3             
   Categ 2-2 level 2 position 1          
-  Categ 2-1 level 2 position 2      
-
+  Categ 2-1 level 2 position 2           
+If the list has elements with the same name, the lists displays the all the categaries with their ID. (ID - Name_category).
 * **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”      
 You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.       
 When there is already an image, you can click only on the frame with the “+” to open the selector.
