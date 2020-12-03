@@ -1,0 +1,23 @@
+# SPECIFICATIONS - CUSTOMERS SERVICE > CUSTOMERS SERVICE PAGE
+
+## STATS
+
+**Pending discussion threads**
+
+**Average response time**
+
+**Message per thread**
+
+## WEBMASTER
+
+## CUSTOMER SERVICE
+
+## MEANING OF STATUS
+
+## STATISTICS
+
+## CUSTOMER SERVICE
+
+## CONTACT OPTIONS
+
+## CUSTOMER SERVICE OPTIONS
