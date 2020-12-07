@@ -222,7 +222,9 @@ It's not related to the payment method selected.
 
 Next to this button is a hyperlink to allow the user to proceed to the payment directly in the front office. Clicking this hyperlink opens a new tab that redirects the user to the payment step of the checkout process for this order - the user does not need to fill all the personal information, addresses, or shipping method but he must be able to navigate through those previous steps before going back to the payment.
 
-Processing the payment of this order through the checkout in the front office immediately creates the order in the back office. As a consequence, the user is not creating a new order anymore and must go in the Orders > Orders section of his/her back office to reach this order.
+Processing the payment through the checkout in the front office automatically creates the order and adds it to the orders listing in the back office. As a consequence, the merchant does not have to complete the ongoing creation of the new order.
+
+If the payment is not processed right away, the merchant must keep on completing the creation form in the back office and click 'Create new order' to add it to the orders listing.
 
 
 #### Describe the bug
@@ -236,5 +238,4 @@ When the user chooses a payment method, the create order page assigns an automat
 The default value of the payment method in the droplist is "Choose a payment method" or empty value (wording still to be defined). When the user selects a payment method, it does not affect the list. 
 The default value of the status droplist is "Choose a status" or empty value (wording still to be defined). 
 So to create the order, the user has to select an order status. An error message is thrown if the user has not chosen a status or payment method.
-
 
