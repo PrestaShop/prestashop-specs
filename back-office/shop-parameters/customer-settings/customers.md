@@ -11,13 +11,12 @@ _As a merchant, I want to be able to define my preferences to manage my customer
 
 **Password reset delay.** Merchants can **prevent customers from generating new passwords too often**. It limits the frequency at which a customer can generate a new password for his/her account. By default, it is set at 360 minutes (= 6 hours). A tooltip is available: `Minimum time required between two requests for a password reset.` in `Admin.Shopparameters.Help`.
 
-**Enable B2B mode.** It is disabled by default. The B2B mode brings a handful of new features to your store. Customers are no longer considered as individuals but as companies, and therefore some new options appear: 
-The customer profile has new fields related to professional information (Duns number in the USA, SIRET number in France, CNPJ number in Brazil, etc.),
-Prices can be masked to specific groups,
-Prices can be managed on a per-customer basis for the whole catalog or per category,
-Invoices can be generated manually,
-etc.
-Activate or deactivate B2B mode. When this option is enabled, B2B features will be made available.
+**Enable B2B mode.** It is disabled by default since supposed to be activated when selling to other companies. Here are the features this setting should trigger when enabled:
+
+- New fields are available in the customer profile ('Company', 'SIRET', 'APE', 'Website', 'Allowed outstanding amount', 'Maximum number of payment days', and 'Risk rating');
+- A Customers > Outstanding page is available.
+
+A tooltip is available: `Activate or deactivate B2B mode. When this option is enabled, B2B features will be made available.` in `Admin.Shopparameters.Help`.
 
 **Ask for birth date.** By default, it is enabled, meaning the **customer's birth date is asked when he/she is checking out**. It displays a 'Birthdate' optional field in the very first step of the checkout funnel, the _Personal information_ step. A tooltip is available: `Display or not the birth date field.` in  `Admin.Shopparameters.Help`.
 
