@@ -5,21 +5,24 @@ _As a merchant, I want to be able to define my customers._
 
 ## Listing
 
-Table options:
+As usual, four tables options are displayed on the top-right hand corner as icons: 
 
 - Add new<br>
 - Refresh list<br>
 - Show SQL query<br>
 - Export to SQL manager<br>
 
-checkbox
-ID
-Social title
-Gender
-Image
+By default, the table is divided into the following columns:
 
-Search
-Edit / Delete
+- ID<br>
+- Social title<br>
+- Gender<br>
+- Image<br>
+
+Searching fields are available for users to narrow down their search. 
+
+At the beginning of each line is a checkbox while, at the end of each line, two actions can be selected: _Edit_ and _Delete_. Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', or 'Delete selected'.
+
 
 ## Add/Edit form
 
