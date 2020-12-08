@@ -2,19 +2,41 @@
 
 ## STATS
 
-**Pending discussion threads**
+There are 3 indicators displayed:
 
-**Average response time**
+- Pending discussion threads
+- Average response time 30 days
+- Message per thread 30 days
 
-**Message per thread**
+Theses indicators can be refreshed by clicking on the refresh icon.
 
-## WEBMASTER
+## CONTACTS BLOCKS
 
-## CUSTOMER SERVICE
+There are as many blocks as there are contacts in Shop parameters > Contact > Contact.
+
+For each block, the description filled for the contact (in Shop parameters > Contact > Contact) is displayed.
+
+The number of messages for the contact are displayed. If there is no message, then "No new messages" is displayed.
 
 ## MEANING OF STATUS
 
+There are 4 status:
+
+- Open
+- Closed
+- Pending 1
+- Pending 2
+
 ## STATISTICS
+
+There are 6 indicators displayed:
+
+- Total threads 
+- Threads pending 
+- Total number of customer messages 
+- Total number of employee messages 
+- Unread threads 
+- Closed threads 
 
 ## CUSTOMER SERVICE
 
