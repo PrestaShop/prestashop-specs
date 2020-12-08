@@ -18,7 +18,11 @@ Theses indicators can be refreshed by clicking on the refresh icon.
 
 ## CONTACTS BLOCKS
 
-There are as many blocks as there are contacts in Shop parameters > Contact > Contact.
+Each contact added in in Shop parameters > Contact > Contact has its own block.
+
+With these blocks, the users can quickly see if a there are new messages (that have not yet been read). 
+
+By default, there are two blocks, and adding more contacts will add more blocks.
 
 For each block, the description filled for the contact (in Shop parameters > Contact > Contact) is displayed.
 
@@ -28,7 +32,7 @@ If there is no message, then "No new messages" is displayed.
 
 ## MEANING OF STATUS
 
-There are 4 status:
+A simple reminder of the 4 status that can be applied to a discussion thread:
 
 - Open
 - Closed
@@ -37,7 +41,7 @@ There are 4 status:
 
 ## STATISTICS
 
-There are 5 indicators displayed:
+An overview of the global activity of the customer service since the beginning with 5 indicators displayed:
 
 - Total threads 
 - Threads pending 
@@ -95,6 +99,12 @@ The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected messages are deleted, a successfull message is displayed "The selection has been successfully deleted."
 
 ### Listing
+
+**The messages sent through the contact form in front-office are only listed here if the contact has the "Save messages?" option enabled.**
+
+This setting can be changed in Shop parameters > Contact > Contact, when editing the contacts.
+
+If the option is disabled for the contact that the customer chooses, the message is simply sent to the contact's email address, and is not stored in PrestaShop.
 
 #### Select all / unselect all checkbox
 
@@ -211,7 +221,9 @@ If a sort and/or a search have been done, they should be keeped after changing p
 
 ## CONTACT OPTIONS
 
-**Allow file uploading**: This toggle allows the merchant to choose if he/she wants to allow his/her visitors to upload files through the contact form.
+The user can edit 2 options, which apply to all contacts:
+
+1) **Allow file uploading**: This toggle allows the merchant to choose if he/she wants to allow his/her visitors to upload files through the contact form.
 
 It's enabled by default.
 
@@ -219,7 +231,7 @@ When enabled, an optional field "Attachment" is displayed in the front-office's 
 
 A tooltip is available: "Allow customers to upload files using the contact page."
 
-**Default message**: This field allows the merchant to enter a default message that will be pre-filled while responding to a message.
+2) **Default message**: This field allows the merchant to enter a default message that will be pre-filled while responding to a message.
 
 By default this field is filled with the following message: 
 
@@ -235,3 +247,32 @@ A drop-down next to the field is displayed when there are several languages inst
 Also, in the case of multilanguage, if an error occurs, then the user must be warned in the message which language is problematic.
 
 ## CUSTOMER SERVICE OPTIONS
+
+This section enables the user to precisely configure PrestaShop's access to his/her email server through its IMAP interface. 
+The user needs to properly configure his/her IMAP settings, so that PrestaShop can retrieve the customer's answers to emails that were sent from the customer service tool. 
+
+**IMAP URL**
+
+**IMAP port**
+
+**IMAP user**
+
+**IMAP password**
+
+**Delete messages**
+
+**Create new threads**
+
+**IMAP options (/pop3)**
+
+**IMAP options (/norsh)**
+
+**IMAP options (/ssl)**
+
+**IMAP options (/validate-cert)**
+
+**IMAP options (/novalidate-cert)**
+
+**IMAP options (/tls)**
+
+**IMAP options (/notls)**
