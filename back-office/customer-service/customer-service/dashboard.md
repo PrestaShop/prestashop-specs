@@ -265,7 +265,7 @@ Also, in the case of multilanguage, if an error occurs, then the user must be wa
 
 ### Multistore
 
-See more about checkboxes and specific settings drop-down [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
+In a multistore context, the options listed above have checkboxes and specific settings drop-down, take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
 
 ## CUSTOMER SERVICE OPTIONS
 
@@ -326,7 +326,7 @@ A tooltip is available: "Do not user start-TLS to encrypt the session, even with
 
 ### Multistore
 
-See more about checkboxes and specific settings drop-down [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
+In a multistore context, the options listed above have checkboxes and specific settings drop-down, take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
 
 ### SAVE BUTTON
 
