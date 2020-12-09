@@ -265,7 +265,7 @@ A tooltip is available: "User to use to connect to your IMAP server."
 
 **IMAP password:** This fields is an input type password and allows to enter the IMAP password.
 
-A tooltip is available: "Password to user to connecto to your IMAP server."
+A tooltip is available: "Password to use to connect to your IMAP server."
 
 **Delete messages:** If this toggle is enabled, messages on the server will be deleted as soon as PrestaShop has retrieved them. 
 
