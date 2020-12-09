@@ -76,19 +76,19 @@ There is 5 options:
 
 1) Mark as "opened"
 
-After clicking on it, the status of the selected messages are changed for "opened" and a successfull message is displayed "The status of the selection has been successfully changed."
+After clicking on it, the status of the selected messages are changed for "opened" and a successfull message is displayed: "Update successful"
 
 2) Mark as "closed"
 
-After clicking on it, the status of the selected messages are changed for "closed" and a successfull message is displayed "The status of the selection has been successfully changed."
+After clicking on it, the status of the selected messages are changed for "closed" and a successfull message is displayed: "Update successful"
 
 3) Mark as "pending 1"
 
-After clicking on it, the status of the selected messages are changed for "pending 1" and a successfull message is displayed "The status of the selection has been successfully changed."
+After clicking on it, the status of the selected messages are changed for "pending 1" and a successfull message is displayed: "Update successful"
 
 4) Mark as "pending 2"
 
-After clicking on it, the status of the selected messages are changed for "pending 2" and a successfull message is displayed "The status of the selection has been successfully changed."
+After clicking on it, the status of the selected messages are changed for "pending 2" and a successfull message is displayed: "Update successful"
 
 5) Delete selection
 
