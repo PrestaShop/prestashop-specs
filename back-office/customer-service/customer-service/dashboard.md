@@ -263,7 +263,7 @@ A tooltip is available: "Port to use to connect to your IMAP server."
 
 A tooltip is available: "User to use to connect to your IMAP server."
 
-**IMAP password:** This fields allows to enter the IMAP password.
+**IMAP password:** This fields is an input type password and allows to enter the IMAP password.
 
 A tooltip is available: "Password to user to connecto to your IMAP server."
 
