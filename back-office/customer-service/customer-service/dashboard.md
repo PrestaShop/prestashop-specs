@@ -302,3 +302,22 @@ A tooltip is available: "Force use of start-TLS to encrypt the seesion, and reje
 **IMAP options (/notls)** If this toggle is enabled, PrestaShop will not use StartTLS to encrypt the session, even with servers that support it.
 
 A tooltip is available: "Do not user start-TLS to encrypt the session, even with servers that support it."
+
+### SAVE BUTTON
+
+When clicking on save, if all settings have well been saved, then a successfull message is displayed: "The settings have been successfully updated."
+
+If all IMAP fields are not filled and if you click on save, then the following information message is displayed: "IMAP configuration is not correct"
+
+If all IMAP fields are filled and if IMAP is not installed on the server, then the following information message is displayed after clicking on Save: "imap is not installed on this server"
+
+
+## Sync
+
+This block is displayed if all IMAP fields are filled
+
+**Run Sync** 
+
+A tooltip is available: "Click to synchronize mail automatically"
+
+**Run Sync button** This button allows to synchronize mail automatically
