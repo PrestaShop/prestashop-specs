@@ -267,38 +267,38 @@ A tooltip is available: "User to use to connect to your IMAP server."
 
 A tooltip is available: "Password to user to connecto to your IMAP server."
 
-**Delete messages:** This yes/no toggle allows to choose if messages will be deleted after synchronisation.
+**Delete messages:** If this toggle is enabled, messages on the server will be deleted as soon as PrestaShop has retrieved them. 
 
 A tooltip is available: "Delete messages after synchronization. If you do not enable this option, the synchronization will take more time."
 
-**Create new threads:** This yes/no toggle allows to choose if new threads will be created for unrecognized emails.
+**Create new threads:** If this toggle is enabled, this will create new threads for unrecognized e-mails.
 
 A tooltip is available: "Create new threads for unrecognized emails."
 
-**IMAP options (/pop3):** This yes/no toggle allows to choose if POP3 will be used.
+**IMAP options (/pop3):** If this toggle is enabled, POP3 will be used instead of IMAP.
 
 A tooltip is available: "Use POP3 instead of IMAP."
 
-**IMAP options (/norsh):** This yes/no toggle allows to choose if RSH or SSH will be used to establish a preauthenticated IMAP sessions.
+**IMAP options (/norsh):** If this toggle is enabled, the connection to the email server will not pre-authenticated.
 
 A tooltip is available: "Do not use RSH or SSH to establish a preauthenticated IMAP sessions."
 
-**IMAP options (/ssl):**  This yes/no toggle allows to choose if the Secure Socket Layer (TLS/SSL) will be used to encrypt the session.
+**IMAP options (/ssl):**  If this toggle is enabled, the connection to the email server will not be encrypted. 
 
 A tooltip is available: "Use the Secure Socket Layer (TLS/SSL) to encrypt the session."
 
-**IMAP options (/validate-cert):** his yes/no toggle allows to choose if certificates will be validated from the TLS/SSL server.
+**IMAP options (/validate-cert):** If this toggle is enabled, PrestaShop will force the validation of the server's TLS/SSL certificate.
 
 A tooltip is available: "Validate certificates from the TLS/SSL server."
 
-**IMAP options (/novalidate-cert):** This yes/no toggle allows to choose if certificates will not be validated from the TLS/SSL server.
+**IMAP options (/novalidate-cert):** If this toggle is enabled, PrestaShop will never try to validate the server's TLS/SSL certificate. This is essential for servers with self-signed certificates.
 
 A tooltip is available: "Do not validate certificates from the TLS/SSL server. This is only needed if a server uses self-signed certificates."
 
-**IMAP options (/tls):** This yes/no toggle allows to choose if start-TLS is used to encrypt the session.
+**IMAP options (/tls):** If this toggle is enabled, PrestaShop will force the use of StartTLS to encrypt the connection. Servers that do not support StartTLS will be rejected.
 
 A tooltip is available: "Force use of start-TLS to encrypt the seesion, and reject connection to servers that do not support it."
 
-**IMAP options (/notls)** This yes/no toggle allows to choose if start-TLS is not used to encrypt the session.
+**IMAP options (/notls)** If this toggle is enabled, PrestaShop will not use StartTLS to encrypt the session, even with servers that support it.
 
 A tooltip is available: "Do not user start-TLS to encrypt the session, even with servers that support it."
