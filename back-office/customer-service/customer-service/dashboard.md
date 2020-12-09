@@ -106,6 +106,23 @@ This setting can be changed in Shop parameters > Contact > Contact, when editing
 
 If the option is disabled for the contact that the customer chooses, the message is simply sent to the contact's email address, and is not stored in PrestaShop.
 
+#### Multistore
+
+Only the messages created in the selected store or store group (through the context) are displayed.
+
+Example, let's say I have the following confiuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+  
+If I select group 1 as context, then the messages created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the messages created in Shop A will be displayed.
+
+If I select all shops as context, then the messages created in Shop A, Shop B and Shop C will be displayed.
+
 #### Select all / unselect all checkbox
 
 After checking the box, all the messages displayed on the page are selected or unselected.
@@ -310,7 +327,6 @@ When clicking on save, if all settings have well been saved, then a successfull 
 If all IMAP fields are not filled and if you click on save, then the following information message is displayed: "IMAP configuration is not correct"
 
 If all IMAP fields are filled and if IMAP is not installed on the server, then the following information message is displayed after clicking on Save: "imap is not installed on this server"
-
 
 ## Sync
 
