@@ -263,6 +263,10 @@ A drop-down next to the field is displayed when there are several languages inst
 
 Also, in the case of multilanguage, if an error occurs, then the user must be warned in the message which language is problematic.
 
+### Multistore
+
+See more about checkboxes and specific settings drop-down [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
+
 ## CUSTOMER SERVICE OPTIONS
 
 This section enables the user to precisely configure PrestaShop's access to his/her email server through its IMAP interface. 
@@ -319,6 +323,10 @@ A tooltip is available: "Force use of start-TLS to encrypt the seesion, and reje
 **IMAP options (/notls)** If this toggle is enabled, PrestaShop will not use StartTLS to encrypt the session, even with servers that support it.
 
 A tooltip is available: "Do not user start-TLS to encrypt the session, even with servers that support it."
+
+### Multistore
+
+See more about checkboxes and specific settings drop-down [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
 
 ### SAVE BUTTON
 
