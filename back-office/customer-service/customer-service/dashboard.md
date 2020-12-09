@@ -251,28 +251,54 @@ Also, in the case of multilanguage, if an error occurs, then the user must be wa
 This section enables the user to precisely configure PrestaShop's access to his/her email server through its IMAP interface. 
 The user needs to properly configure his/her IMAP settings, so that PrestaShop can retrieve the customer's answers to emails that were sent from the customer service tool. 
 
-**IMAP URL**
+**IMAP URL:** This fields allows to enter the IMAP Url.
 
-**IMAP port**
+A tooltip is available: "URL for your IMAP server (ie.:mail.server.com)."
 
-**IMAP user**
+**IMAP port:** This fields allows to enter the IMAP port.
 
-**IMAP password**
+A tooltip is available: "Port to use to connect to your IMAP server."
 
-**Delete messages**
+**IMAP user:** This fields allows to enter the IMAP user.
 
-**Create new threads**
+A tooltip is available: "User to use to connect to your IMAP server."
 
-**IMAP options (/pop3)**
+**IMAP password:** This fields allows to enter the IMAP password.
 
-**IMAP options (/norsh)**
+A tooltip is available: "Password to user to connecto to your IMAP server."
 
-**IMAP options (/ssl)**
+**Delete messages:** This yes/no toggle allows to choose if messages will be deleted after synchronisation.
 
-**IMAP options (/validate-cert)**
+A tooltip is available: "Delete messages after synchronization. If you do not enable this option, the synchronization will take more time."
 
-**IMAP options (/novalidate-cert)**
+**Create new threads:** This yes/no toggle allows to choose if new threads will be created for unrecognized emails.
 
-**IMAP options (/tls)**
+A tooltip is available: "Create new threads for unrecognized emails."
 
-**IMAP options (/notls)**
+**IMAP options (/pop3):** This yes/no toggle allows to choose if POP3 will be used.
+
+A tooltip is available: "Use POP3 instead of IMAP."
+
+**IMAP options (/norsh):** This yes/no toggle allows to choose if RSH or SSH will be used to establish a preauthenticated IMAP sessions.
+
+A tooltip is available: "Do not use RSH or SSH to establish a preauthenticated IMAP sessions."
+
+**IMAP options (/ssl):**  This yes/no toggle allows to choose if the Secure Socket Layer (TLS/SSL) will be used to encrypt the session.
+
+A tooltip is available: "Use the Secure Socket Layer (TLS/SSL) to encrypt the session."
+
+**IMAP options (/validate-cert):** his yes/no toggle allows to choose if certificates will be validated from the TLS/SSL server.
+
+A tooltip is available: "Validate certificates from the TLS/SSL server."
+
+**IMAP options (/novalidate-cert):** This yes/no toggle allows to choose if certificates will not be validated from the TLS/SSL server.
+
+A tooltip is available: "Do not validate certificates from the TLS/SSL server. This is only needed if a server uses self-signed certificates."
+
+**IMAP options (/tls):** This yes/no toggle allows to choose if start-TLS is used to encrypt the session.
+
+A tooltip is available: "Force use of start-TLS to encrypt the seesion, and reject connection to servers that do not support it."
+
+**IMAP options (/notls)** This yes/no toggle allows to choose if start-TLS is not used to encrypt the session.
+
+A tooltip is available: "Do not user start-TLS to encrypt the session, even with servers that support it."
