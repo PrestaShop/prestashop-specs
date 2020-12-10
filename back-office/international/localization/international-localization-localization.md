@@ -53,7 +53,7 @@ Using this section will give the user the ability to change default localization
 
 **Default language**
 
-The _Default language_ droplist displays the languages that are already imported to the shop by user from 'Content to import' section. By default it shows the language that user defined on PrestaShop installation process. Changing it will change the language that is selected by default on FrontOffice (front-office).
+The _Default language_ droplist displays the languages that are already imported to the shop by the user from 'Content to import' section. By default, it shows the language the user has defined during the PrestaShop installation process. Changing it will change the language that is selected by default on the front office.
 
 **Set language from browser**
 
