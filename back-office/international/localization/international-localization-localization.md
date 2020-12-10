@@ -89,7 +89,7 @@ The _Weight unit_ provides a text field for the user to change the default weigh
 
 **Distance unit**
 
-The _Distance unit_ provides a text field for the user to change default distance unit on shop. The user can type any local unit for distance such as km for kilometers, mi for miles or unit in their own local country/language.
+The _Distance unit_ provides a text field for the user to change the default distance unit for the shop. The user can type any local unit for distance such as 'km' for kilometers, 'mi' for miles, or unit in their own local country/language.
 
 **Volume unit**
 
