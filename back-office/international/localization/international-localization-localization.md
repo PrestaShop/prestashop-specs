@@ -97,7 +97,7 @@ The _Volume unit_ provides a text field for the user to change the default volum
 
 **Dimension unit**
 
-The Dimension unit_ provides a text field for the user to change default dimension unit on shop. The user can type any local unit for dimentsion such as cm for centimeters, in for inches or unit in their own local country/language.
+The Dimension unit_ provides a text field for the user to change the default dimension unit for the shop. The user can type any local unit for dimension such as 'cm' for centimeters, 'in' for inches, or unit in their own local country/language.
 
 **Save**
 
