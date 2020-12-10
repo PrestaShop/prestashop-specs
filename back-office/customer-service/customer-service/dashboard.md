@@ -7,6 +7,12 @@ https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&scaling=min-zoom
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&scaling=min-zoom
 
+## MESSAGES NOTIFICATIONS
+
+When a new messages is sent, then it's displayed in the notifications in the header.
+
+If you click on it, the thread is opened (view page) and all the messages notifications are removed.
+
 ## STATS
 
 There are 3 indicators displayed:
