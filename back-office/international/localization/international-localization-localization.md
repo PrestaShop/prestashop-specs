@@ -85,7 +85,7 @@ Using this section will able the user to change the default local units such as 
 
 **Weight unit**
 
-The _Weight unit_ provides a text field for the user to change default weight unit on shop. The user can type any local unit for weight such as kg for kilograms, g for grams or unit in their own local country/language.
+The _Weight unit_ provides a text field for the user to change the default weight unit for the shop. The user can type any local unit for weight such as 'kg' for kilograms, 'g' for grams, or unit in their own local country/language.
 
 **Distance unit**
 
