@@ -41,7 +41,7 @@ Checking this content affects the display of prices on both the back office (bac
 
 The _Download pack data_ toggle displays a YES/NO toggle button which is set to 'YES' by default. If 'YES' is set, the localizations that are selected on 'Content to import' section will be downloaded from prestashop.com CLDR directory and override the local CLDR localizations. If set to 'NO' it will use the local CLDR localizations (localization/CLDR/core/common/main/country-code.xml, localization/CLDR/core/common/main/country-code_COUNTRY-ISO-CODE.xml). The local CLDR localizations can be modified manually by modifying the local files mentioned.
 
-After any modifications applied on local CLDR files, the PrestaShop cache (back-office/advanced-parameters/performance/clear-cache.md) must be cleared to be shown.
+After any modifications applied to local CLDR files, the PrestaShop cache (back-office/advanced-parameters/performance/clear-cache.md) must be cleared to be shown.
 
 **Import**
 
