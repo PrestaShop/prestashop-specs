@@ -69,7 +69,7 @@ The _Set default country from browser language_ toggle displays a 'YES/NO' toggl
 
 **Default currency**
 
-The _Default currency_ droplist displays the currencies that are already imported to the shop by user from 'Content to import' section. By default, it shows the currency based on default country selected on PrestaShop process. Changing it will change the currency that is selected by default on FrontOffice (front-office).
+The _Default currency_ droplist displays the currencies that are already imported to the shop by the user from 'Content to import' section. By default, it shows the currency based on the default country selected during the PrestaShop process. Changing it will change the currency that is selected by default on FrontOffice (front-office).
 
 **Time zone**
 
