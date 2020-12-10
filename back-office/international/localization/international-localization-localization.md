@@ -57,7 +57,7 @@ The _Default language_ droplist displays the languages that are already imported
 
 **Set language from browser**
 
-The _Set language from browser_ toggle displays a 'YES/NO' toggle button which is set to 'YES' by default. If 'YES' is set, the default language will be changed based on user's default browser langauage automatically on FrontOffice (front-office).
+The _Set language from browser_ toggle displays a 'YES/NO' toggle button which is set to 'YES' by default. If 'YES' is set, the default language will be changed based on the user's default browser language automatically on FrontOffice (front-office).
 
 **Default country**
 
