@@ -65,7 +65,7 @@ The _Default country_ droplist displays the list of all countries. The user can 
 
 **Set default country from browser language**
 
-The _Set default country from browser language_ toggle displays a 'YES/NO' toggle button which is set to 'YES' by default. If 'YES' is set, the default country on FrontOffice (front-office) will be selected automatically based on user's default browser language.
+The _Set default country from browser language_ toggle displays a 'YES/NO' toggle button which is set to 'YES' by default. If 'YES' is set, the default country on FrontOffice (front-office) will be selected automatically based on the user's default browser language.
 
 **Default currency**
 
