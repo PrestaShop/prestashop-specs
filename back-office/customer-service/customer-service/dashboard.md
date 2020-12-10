@@ -1,10 +1,11 @@
 # SPECIFICATIONS - CUSTOMERS SERVICE > CUSTOMERS SERVICE PAGE
 
 ## MOCKUPS
-https://projects.invisionapp.com/d/main?origin=v7#/console/20267309/425376946/preview?scrollOffset=0
-https://projects.invisionapp.com/d/main?origin=v7#/console/20267309/425548149/preview?scrollOffset=0
-https://projects.invisionapp.com/d/main?origin=v7#/console/20267309/425548150/preview?scrollOffset=0
-https://projects.invisionapp.com/d/main?origin=v7#/console/20267309/425549455/preview?scrollOffset=0
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&scaling=min-zoom
 
 ## STATS
 
