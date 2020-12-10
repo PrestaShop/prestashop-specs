@@ -109,7 +109,7 @@ Using this section will define the local country and its language where the serv
 
 **Language identifier**
 
-The _Language identifier_ field allows user to set the local language of the country that their server is located. This field must be filled with language iso code in lowercase using the 'ISO 639-1' standard.
+The _Language identifier_ field allows the user to set the local language of the country where the server is located. This field must be filled with the language ISO code in lowercase using the 'ISO 639-1' standard.
 
 **Country identifier**
 
