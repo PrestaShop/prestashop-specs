@@ -61,7 +61,7 @@ The _Set language from browser_ toggle displays a 'YES/NO' toggle button which i
 
 **Default country**
 
-The _Default country_ droplist displays the full list of all countries. The user can select the default country selected on FrontOffice (front-office) from droplist or typing at least one word using the search field on the top of droplist.
+The _Default country_ droplist displays the list of all countries. The user can select the default country selected on FrontOffice (front-office) from droplist or typing at least one word using the search field on the top of droplist.
 
 **Set default country from browser language**
 
