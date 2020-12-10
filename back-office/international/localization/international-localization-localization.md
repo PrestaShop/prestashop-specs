@@ -4,7 +4,7 @@ As a merchant, I need to be able to manage my localizations to handle the import
 
 ## WHAT
 
-Thus, in this project we aim at the current and expected behaviours when we add, edit or delete localizations.
+In this page, we aim at describing the current and expected behaviors when we add, edit, or delete localizations.
 
 ## WHY
 
