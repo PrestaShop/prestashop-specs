@@ -93,7 +93,7 @@ The _Distance unit_ provides a text field for the user to change the default dis
 
 **Volume unit**
 
-The _Volume unit_ provides a text field for the user to change default volume unit on shop. The user can type any local unit for volume such as L for liter, gal for galon or unit in their own local country/language.
+The _Volume unit_ provides a text field for the user to change the default volume unit for the shop. The user can type any local unit for volume such as 'L' for liter, 'gal' for gallon, or unit in their own local country/language.
 
 **Dimension unit**
 
