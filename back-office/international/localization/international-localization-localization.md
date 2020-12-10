@@ -34,7 +34,7 @@ The contents to import are listed as check-boxes to be selected:
 - Currencies (checked by default)
 - Languages (checked by default)
 - Units (e.g. weight, volume, distance) (checked by default)
-- Change the behavior of the price display for groups (un-cheked by default)
+- Change the behavior of the price display for groups (un-checked by default)
 By checking the 'Change the behavior of the price display for groups' the behaviour of displaying prices will be affected on both BackOffice (back-office/international/locations/Countries.md, back-office/shop-parameters/customer-settings/groups.md) and FrontOffice (front-office/product-page.md, front-office/products/list.md, front-office/Discounts). This option will override the default behaviour for selected country if you already have it inside the shop.
 
 **Download pack data**
