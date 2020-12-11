@@ -16,7 +16,7 @@ If the ecotax is filled in the back-office for a product, then it's displayed in
 
 ## HOW DOES THE ECOTAX WORK
 
-The ecotax is already included in the product price tax excluded. So, the merchant always fills the product price with the ecotax included, and then specify the amount of the ecotax included in the product price. 
+The ecotax is already included in the product's price, tax excluded. The ecotax field in the product page exists exclusively to provide information about the amount of ecotax that is already included in the product's price.
 
 The ecotax is provided for information purposes and does not affect the final price because it is already included in it.
 
