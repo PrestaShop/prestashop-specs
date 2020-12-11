@@ -14,7 +14,7 @@ However, ecotax only applies for physical products, so it should never be displa
 
 If the ecotax is filled in the back-office for a product, then it's displayed in the front-office product page under the product price: “Including €X.XX for ecotax”. 
 
-## HOW THE ECOTAX WORKS ?
+## HOW DOES THE ECOTAX WORK
 
 The ecotax is already included in the product price tax excluded. So, the merchant always fills the product price with the ecotax included, and then specify the amount of the ecotax included in the product price. 
 
