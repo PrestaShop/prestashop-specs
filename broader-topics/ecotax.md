@@ -5,7 +5,7 @@
 The ecotax is a contribution to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. 
 It’s paid by the customer. Then it’s donated by the seller to a collection agency. The amount of the ecotax is fixed and does not depend on the product price.
 
-## WHERE IS THE ECOTAX IN PRESTASHOP ?
+## WHERE IS THE ECOTAX IN PRESTASHOP
 
 The ecotax can be toggled in the "Tax Options" section from the _International > Taxes_ page.
 Once enabled, a new drop-down is displayed with all the tax rules displayed and allows the merchant to choose the VAT that will be applied on the ecotax.
