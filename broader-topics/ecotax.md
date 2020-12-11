@@ -32,6 +32,7 @@ VAT 20% = 2€
 
 Product price tax incl with ecotax: 12€
 
+> As you can see, the ecotax is already included in the price, so it has no impact in the calculation.
 
 Ecotax tax excl: 2€
 
