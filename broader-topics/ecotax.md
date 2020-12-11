@@ -8,7 +8,7 @@ It’s paid by the customer. Then it’s donated by the seller to a collection a
 ## WHERE IS THE ECOTAX IN PRESTASHOP
 
 The ecotax can be toggled in the "Tax Options" section from the _International > Taxes_ page.
-Once enabled, a new drop-down is displayed with all the tax rules displayed and allows the merchant to choose the VAT that will be applied on the ecotax.
+Once enabled, a new drop-down is displayed containing all the tax rules, allowing the merchant to choose the VAT rate that will be applied on the ecotax.
 If the ecotax is enabled, then a field is displayed in the Back Office's "add / edit product" page, so that the merchant can input the amount of included ecotax in the product's price.
 However, ecotax only applies for physical products, so it should never be displayed for virtual products. 
 
