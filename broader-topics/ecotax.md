@@ -26,7 +26,7 @@ The ecotax is provided for information purposes and does not affect the final pr
 
 The ecotax is subject to VAT, at the rate applicable to the product.
 
-The ecotax can never be reduced. The ecotax must also be applied in the case of products offered.
+The ecotax amount has to be paid in full by the customer and can never be reduced. The ecotax (and its VAT amount if applicable) must also be displayed and paid in the case of a gift product.
 
 ## Example
 
