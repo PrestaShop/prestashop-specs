@@ -24,7 +24,7 @@ The ecotax is already included in the product's price, tax excluded. The ecotax 
 
 The ecotax is provided for information purposes and does not affect the final price because it is already included in it.
 
-The ecotax is subject to VAT, at the rate applicable to the product.
+The ecotax is subject to VAT at the same rate applicable to the product.
 
 The ecotax amount has to be paid in full by the customer and can never be reduced. The ecotax (and its VAT amount if applicable) must also be displayed and paid in the case of a gift product.
 
