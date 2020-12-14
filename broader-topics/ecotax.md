@@ -2,8 +2,12 @@
 
 ## WHAT IS THE ECOTAX
 
-The ecotax is a contribution to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. 
-It’s paid by the customer. Then it’s donated by the seller to a collection agency. The amount of the ecotax is fixed and does not depend on the product price.
+The ecotax is a contribution in France to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. 
+The ecotax is not a tax per se, but a fixed mandatory contribution (the actual term is "eco-participation") that must be paid by the customer.
+Then it’s donated by the seller to a collection agency. 
+
+The amount of the ecotax is fixed and does not depend on the product price.
+The ecotax is subject to VAT.
 
 ## WHERE IS THE ECOTAX IN PRESTASHOP
 
