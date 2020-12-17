@@ -25,7 +25,7 @@ Images are uploaded right where they need to appear, on the page concerned, they
 
 ## PrestaShop
 
-Below is the list of the pages where images can be uploaded:
+Below is the list of the BO pages where images can be uploaded:
 
 - Brands
 - Categories
@@ -44,8 +44,15 @@ As for modules, images are requested for:
 - Image Slider
 - Block Reassurance
 
+Regarding the FO, images can be uploaded though:
+
+- Contact form
+- Customized product page
+
 
 ## Add SVG & WEBP support
+
+### Back office & modules
 
 **SVG.** Decision has been made to first focus on all images upload available in the back office, except for the favicon and the email logos in the Design > Theme & Logo page.
 
@@ -56,3 +63,8 @@ Favicons are a specific case using precise image formats and it should be addres
 Favicons are a specific case using precise image formats and it should be addressed later. Same for the email and PDF documents that do not enough support WebP images for now.
 
 
+### Front office 
+
+Customers can upload images in two places in the front office: in the contact form and on a customized product page. Images formats allowed are: .png, .jpg, and .gif. Expected behavior should be to **add the .svg format to this list** since one of its great advantages is that it allows resizing with limited loss of quality.
+
+As for the .webp format, it does not seem very relevant to add it to this list. Indeed, **the use case is not adapted** to poor email support nor prone to improving performance.
