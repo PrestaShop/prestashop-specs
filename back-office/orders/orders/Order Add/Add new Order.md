@@ -218,25 +218,38 @@ Enabling the gift wrapping or the recycled packaging will display the correspond
 
 This final section shows you all the final product price (the sum of the product prices only tax excluded), total vouchers (the sum of the discounts accorded to the order tax excluded), total shipping (total shipping price taxes excluded), total taxes, total with taxes excluded and the total with taxes included.
 
+
 ### Order message
+
 The merchant can add a message to the order. After the creation, the message is displayed in the "Messages" panel of the order detail page as a private message: with a dark background and the specific icon for the sender pic.
 
 Invalid characters are: <>{}
 When you save, if your order message contains an invalid character, an error notification should be displayed “The order message given is invalid”.
 
+
 ### Send an email to the customer with the link to process the payment
 
 This button allows sending an email to the customer with the link to process the payment
 It's not related to the payment method selected.
-The link opens the front-office with the cart corresponding to the order created.
+
+Next to this button is a hyperlink to allow the user to proceed to the payment directly in the front office. Clicking this hyperlink opens a new tab that redirects the user to the payment step of the checkout process for this order - the user does not need to fill all the personal information, addresses, or shipping method but he must be able to navigate through those previous steps before going back to the payment.
+
+Processing the payment through the checkout in the front office automatically creates the order and adds it to the orders listing in the back office. As a consequence, the merchant does not have to complete the ongoing creation of the new order.
+
+If the payment is not processed right away, the merchant must keep on completing the creation form in the back office and click 'Create new order' to add it to the orders listing.
+
 
 ### Payment and order status
+
+#### Expected behaviour
 
 The default value of the payment method and the status drop list in the droplist is "-- Choose --". 
 
 So to create the order, the user must select an order status and a payment method. An error message is thrown if the user has not chosen a status or payment method: "PLease, select an item in the list".
 
+
 ## VI. Multstore
 
 On all the group shops, the button “add new order” is hidden. It’s only shown when you are in a specific shop.
+
 
