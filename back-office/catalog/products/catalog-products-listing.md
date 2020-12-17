@@ -210,6 +210,8 @@ A message is displayed "Product successfully deleted"
 
 ### Links
 
+- Image: Open the product in the same browser tab and on the basic settings tab 
+
 - Name: Open the product in the same browser tab and on the basic settings tab
 
 - Price tax excluded: Open the product in the same browser tab on the pricing tab

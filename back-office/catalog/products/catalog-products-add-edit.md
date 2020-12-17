@@ -94,7 +94,8 @@ When a value is filled, the price tax excl field is calculated automatically acc
 To separate decimals a dot or a comma can be used, both should work no matter the language.       
 When you change it, the same field in pricing tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
-Drop-down with all tax rules enabled and a “no tax” option.       
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
 When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.      
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.       
 When you change it, the same field in pricing tab is also updated.      
@@ -156,11 +157,13 @@ The image is open in its default size. You can close it by clicking on the cross
 
     If more than one image is selected the checkbox "cover" disappears
 * **Add a feature**: By default the selected option is "Choose a feature".
-Others options in the drop-down are all features.       
+All the features are displayed in the drop-down and are sorted by position ASC.
+If there are several features with the same name, then the ID of the feature is displayed before its name 
 If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you select a feature, both fields \(pre-defined & customized value\) are enabled.       
 The features and the associated values are displayed in product details tab of the front-office.
-* **Feature pre-defined value**: Drop-down with all compositions of the selected feature.      
+* **Feature pre-defined value**: All the values of the selected feature are displayed in the drop-down and are sorted by name ASC.      
+If there are several features' values with the same name, then the ID of the feature's value is displayed before its name 
 If you select a pre-defined value, the customized value should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)       
 When you add a feature with a pre-defined value, it’s added in all languages enabled.
 * **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both \([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306)\)      
@@ -169,7 +172,8 @@ A drop-down next to the field is displayed when there are several languages inst
 * **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
 * **Add a brand**: 
 By default the selected option is "Choose a brand". \([issue 9678](https://github.com/PrestaShop/PrestaShop/issues/9678)\)
-Others options in the drop-down are all the brands enabled.       
+All the brands enabled are displayed in the drop-down.
+If there are several brands with the same name, then the ID of the brand is displayed before its name.
 The brand is displayed in the product page in front-office in product details tab. The logo of the brand is displayed if the brand has a logo, otherwise the name of the brand is displayed.      
 When you add a brand, it’s added in all languages enabled. 
 * **Delete a brand**: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.
@@ -231,7 +235,7 @@ This field is not displayed if stock management is disabled in Shop parameters &
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.           
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ### Virtual product tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14772)\]
 
@@ -270,7 +274,7 @@ This field is not displayed if stock management is disabled in Shop parameters &
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.          
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ### Combinations tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14773)\]
 
@@ -308,7 +312,7 @@ When you change it, the same field in pricing tab is also updated.
 5\) **Impact on price \(tax incl.\)**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.       
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.       
-6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.       
+6\) **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.       
 7\) **Reference**: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.       
 8\) **Minimum quantity**: In front-office \(product page & quick-view\), this value is indicated in the quantity field.     
 When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”       
@@ -334,7 +338,7 @@ Edit combination now opens a modal, see mockups here: https://invis.io/3RWZILBJW
 * **Quantity**: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.      
 The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.       
 This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
-* **Availability date**: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+* **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 * **Min. quantity for sale**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
 * **Référence**: The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
 * **Stock location**: You can indicate where the product is located in the warehouse 
@@ -422,7 +426,13 @@ A bulk action allow to select / unselect all carriers
 **As a merchant I want to be able to manage the prices of my products**
 
 Here is the list of the elements of pricing tab:
-
+* **Retail price (tax excl.)**: When a value is filled, the retail price (tax incl.) field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When the merchant changes it, the same field in the Basic settings tab is also updated.
+* **Retail price (tax incl.)**: This field shouldn't be displayed if taxes are disabled in International > Taxes (issue [#15330](https://github.com/PrestaShop/PrestaShop/issues/15330)).
+When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When the merchant changes it, the same field in the Basic settings tab is also updated.
 * **\(Retail\) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
 When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.      
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
@@ -431,14 +441,15 @@ To separate decimals a dot or a comma can be used, both should work no matter th
 When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
 To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
-Drop-down with all tax rules enabled and a “no tax” option.          
-When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.               
+Drop-down with all tax rules enabled and a “no tax” option. 
+If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
+When the merchant changes it, the price (tax incl.) is updated. And the “tax rule” field in the Basic settings tab is also changed.               
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.
 * **Manage tax rule**: Open in a new browser tab International &gt; Taxes
 * **Display the "On sale!" flag on the product page, and on product listings**: When the checkbox is checked, it displays a banner "PROMO !" \(not linked to a possible promotion in progress\) on the image of the product in the product listing and on the product page in front-office.
 * **Final retail price banner**: Displays the final prices tax excl and tax incl \(tax incl only if taxes are enabled in International &gt; Taxes\).           
 Prices are updated when they are modified above. 
-* **Price per unit tax excl**: By default, it’s set to 0.000000            
+* **Retail price per unit (tax excl.)**: By default, it’s set to 0.000000            
 You can fill the unit price if you sell products per unit.            
 To separate decimals a dot or a comma can be used, both should work no matter the language.        
 Displayed in the product page in front-office.
@@ -450,7 +461,7 @@ Displayed in the product page in front-office next to the unit price
 It’s the amount of Price \(tax excl.\) - ecotax \(tax incl.\).       
 It is taken into account for the calculations instead of the field "Price \(tax excl.\)" when ecotax tax incl field is different from 0.         
 This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\)
-* **Cost price tax excl**: By default, it’s set to 0.000000      
+* **Cost price (tax excl.)**: By default, it’s set to 0.000000      
 It’s used for margin calculations.          
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 * **Add a specific price**: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.     
@@ -597,6 +608,7 @@ Here is the list of the elements of options tab:
 * **Suppliers**: This part is displayed only if you have created and enabled at least one supplier. Indicating the product's supplier is not really important for customers, but it may turn out to be an essential part for the merchant’s internal management, not least when managing stock: the merchant simply needs to know who he bought the product from.
   * **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool \(see Shop Parameters &gt; Products settings\), the values you define \(price, references\) will be used in supply orders.”
   * **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office.
+When several suppliers are associated with a product, uncheking one of them should delete the related data while keeping the values of the other suppliers intact.
   * **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears. When there is only one supplier checked, the default supplier radio button is automatically checked \([issue 9580](https://github.com/PrestaShop/PrestaShop/issues/8580)\) When there are many suppliers checked, you can change the default supplier.
 When there is a default supplier, the cost price is the default supplier price when there is a conflit price conflit from different supplier for the same product.
   * **Supplier reference\(s\)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
@@ -605,7 +617,7 @@ When there is a default supplier, the cost price is the default supplier price w
   * **Products list**:
     * **The product name**: Display the product name
     * **Supplier reference**: Field to specify the product reference for each supplier. 
-    * **Price \(tax excl.\)**: Field to specify the product price for each supplier.
+    * **Cost price \(tax excl.\)**: Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
     The Product list has a pagination to navigate throught the combinaition.
     
@@ -700,12 +712,12 @@ Here is the mockup of errors behavior for tabs: https://invis.io/3RWZILBJWQH#/41
 
 ### Pricing tab <a id="errorspricing"></a>
 
-* **Price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
-* **Price tax incl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Retail price (tax excl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Retail price (tax incl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Price per unit tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Unity field**: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”
 * **Ecotax tax incl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
-* **Cost price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
+* **Cost price (tax excl.)**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.
 * **Add a specific price:**
   * **Starting at**: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed under the field “This value is not valid”. If you enter a number with decimal \(ex 30,5 or 30.5\) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error should be displayed “This value is not valid.”
   * **Impact on product price tax excl**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.

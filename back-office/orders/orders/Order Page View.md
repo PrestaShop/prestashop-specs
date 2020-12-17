@@ -80,6 +80,8 @@ The user gets access to the order view page by either clicking on **the order’
 On the header, we have **the order’s reference, customer’s name, total price in black background, the date and the hour**.
 All date and time formats are defined according to CLDR and the display language.
 
+Order documents like invoices and delivery slips are, by default, in the customer language. An option allows merchants to turn it into the logistician language in the Shop Parameters > Order Settings page, cf. issue #[10258](https://github.com/PrestaShop/PrestaShop/issues/10258).
+
 ## I. **Action panel**
 
 **Below the panel’s header**, we have all the order's action button:
@@ -398,6 +400,8 @@ Furthermore, If the merchant has a paid product, and the same product, but gifte
 
 **A confirmation pop-up appears after clicking on the Delete button.**
 
+If the user deletes all the products, the order status remains the same.
+
 4. **Edit products already in the order**
 
 When clicking on the edit button of a product line, the user is allowed to edit :
@@ -438,7 +442,7 @@ Condition of cart rule:
 
 6. **Add a new cart rule**
 
--   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of this order.
+-   **Add a new discount**: opens a popin to create your new cart rule between the percentage, the amount (taxes included) and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of the products (the shipping cost is not included).
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 
@@ -499,6 +503,8 @@ Each table’s rows as 2 possible **button actions**:
 
 3.  **Shipping tab**
 
+If there is a gift wrapping message for the order, it's displayed in the Shipping tab, before the table.
+
 The carrier table shows **the date, the carrier, the weight, the shipping cost, the tracking number, and edit button.**
 
 [Shipping tab](https://invis.io/YKTGGFZAMCB#/381874233__Order_Details_-_Shipping)
@@ -542,5 +548,13 @@ Steps to display:
 It displays the date and from where the user came from.
 
 
-## VI. Links
+## VII. Links
 
+## VIII. Multistore
+
+An order made from a specific shop can be edited from any shops. Even if the shop where the order is edited isn't in the same group as the shop where the order was made.
+
+In a multistore context, the next and previous buttons for navigating between orders work according to the selected context in the back-office (specific shop, group of shops or all shops)
+If a specific shop group is selected as context in the order list, then the user can navigate between orders belonging only to this shop group in the order view page.
+If a specific shop is selected as context in the order list, then the user can navigate between orders belonging only to this shop in the order view page.
+If "All shops" is selected as context in the order list, then the user can navigate between orders from all the shops in the order view page.

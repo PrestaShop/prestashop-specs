@@ -31,7 +31,7 @@ When a shop group is created, many fields are displayed:
 - Shop group name
 - Shop group color: colorpicker **only from 1.7.8**<br/>
 There is tooltip for this colorpicker: ‘Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600").’ in Admin.Catalog.Help <br/>
-"It will only apply to this group of shops, each store keeps its individual color."
+"It will only be applied to this group of shops, each store keeps its individual color."
 - Share customers: Yes / No <br/>
 Once this option is enabled, the shops in this group will share customers. <br/>
 If a customer registers in any one of these shops, the account will automatically be available in the others shops of this group.<br/>
@@ -57,7 +57,7 @@ Please note, you cannot have 2 stores with the same name in the same store group
 You cannot have 2 stores with the same name in the same store group."
 - Shop color: colorpicker **only from 1.7.8** <br/>
 There is tooltip for this colorpicker: "Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600")’ in Admin.Catalog.Help<br/>
-"It will apply to the multistore header to underline your shop context."
+"It will be applied to the multistore header to underline your shop context."
 - Shop group: Allow to select the shop group of the shop
 - Category root: Allow to select the root category of the shop.
 - Associated categories: Allow to select the categories that will be associated with the store <br/>

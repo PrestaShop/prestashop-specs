@@ -12,7 +12,7 @@ These specifications might help:
 - the team maintaining the project, in order to know why some product decisions have been made and to have an overview of the current state of the software,
 - anyone who is interested in the project and want to know it better.
 
-The repository is mainained by the [Product team](https://github.com/orgs/PrestaShop/teams/prestashop-product-team/members) at PrestaShop.
+The repository is maintained by the [Product team](https://github.com/orgs/PrestaShop/teams/product-team/members) at PrestaShop.
 
 For the moment not all specifications are in this repository. They will be created and added progressively. Contributions are Welcome!
 
@@ -50,22 +50,18 @@ Everytime a developper works on PrestaShop, he/she is assigned or self-assigned 
 These development issues are located in the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop) `github.com/PrestaShop/PrestaShop`.
 
 In order to complete the task, most of the time, a developer needs specifications.
-These specifications are located here in this repository `github.com/PrestaShop/prestahop-specs`.
+These specifications are located here in this repository `github.com/PrestaShop/prestashop-specs`.
 
-So in each development issue should be a link to the correponding specification.
+So in each development issue should be a link to the corresponding specification.
 
 
 ### Process when working on a new feature
 
-Considered the use of the git data model detailed in the previous part, the specification must be added to the corresponding file (or files) through a Pull Request.
-If the file related to this feature doesn't exist yet, it should be created.
+Considered the use of the git data model detailed in the previous part, the specification must be added to the corresponding file (or files) through a Pull Request. If the file related to this feature does not exist yet, it should be created.
 
-The specifications must then be validated by the Product team before the development begins.
+Specifications must be validated by the core team (product, dev, and QA) and merged before the development begins. Once the specs are validated, the link to this PR must then be added in the development issue, so the developer can easily find the specifications associated with the issue.
 
-Once the specs are validated, the link to this PR must then be addded in the development issue, so the developer can easily find the specifications associated with the issue.
-
-The specifications' PR can only be merged once the development is done, and merged into the PrestaShop develop branch in the repo `PrestaShop/PrestaShop`.
-This rule is made to avoid having published specifications for features that are not available yet. The published specifications must correspond to the latest Stable version available.
+The specifications' PR must then be merged into the PrestaShop develop branch in the repository `PrestaShop/PrestaShop`, the development phase can start. If any behavior is redefined during this phase, specs must be updated accordingly.
 
 ![Management of PrestaShop specifications](/img/prestashop-specs-management.jpg)
 
@@ -79,7 +75,7 @@ Then add a link in the development issue to the specification in the master bran
 
 - If the specification doesn't exist
 Then, first you need to validate with the Product team what is the right behavior that should be specified.
-Then, you can follow the same process as for a new feature or improvement, by creating a PR. The difference is that here the PR will be merge directly after validation as the specified behavior should be in the latest Stable version.
+Then, you can follow the same process as for a new feature or improvement, by creating a PR.
 
 
 ## Specification structure
@@ -95,17 +91,17 @@ When not possible, template can be adapted, but it is important to have the info
 
 ## Repository tree
 
-The repository has 4 main directories, `back-office`, `front-office`, `broader-topics` and `modules`.
+The repository contains 4 main directories: `back-office`, `broader-topics`, `front-office`, and `modules`.
 
-- The `back-office` directory mostly follows the back office structure. Most files contain the specifications for a BO page.
+- The [`back-office`](https://github.com/PrestaShop/prestashop-specs/tree/master/back-office) directory mostly follows the back office structure. Most files contain the specifications for a BO page, e.g. the product page.
 
-- The `front-office` directory lists the pages in the front office and shared behaviors throughout the pages.
+- The [`broader-topics`](https://github.com/PrestaShop/prestashop-specs/tree/master/broader-topics) directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO, e.g. the SEO strategy throughout the software.
 
-- The `broader-topics` directory covers all topics and behaviours shared throughout the software, and that are not limited to the BO or FO.
+- The [`front-office`](https://github.com/PrestaShop/prestashop-specs/tree/master/front-office) directory lists the pages in the front office and shared behaviors throughout the pages, e.g. the product images.
 
-- The `modules` directory includes all specifications for modules.
+- The [`modules`](https://github.com/PrestaShop/prestashop-specs/tree/master/modules) directory includes all specifications for built-in (“native”) modules, e.g. the Faceted Search module.
 
-`img` is used to store images used in the specs and `specs-templates` to store the templates.
+Note that [`img`](https://github.com/PrestaShop/prestashop-specs/tree/master/img) is used to store images used in the specs and [`specs-templates`](https://github.com/PrestaShop/prestashop-specs/tree/master/spec-templates) to store the templates.
 
 
 ## How to contribute
@@ -115,4 +111,4 @@ To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) pag
 
 ## Learn more about PrestaShop
 
-You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](http://doc.prestashop.com/).
+You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](https://doc.prestashop.com/).
