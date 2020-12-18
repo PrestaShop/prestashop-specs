@@ -33,7 +33,12 @@ By default, the table is divided into the following columns:
 - Show prices<br>
 - Creation date<br>
 
-Searching fields are available for users to narrow down their search. 
+To allow users to narrow down their search, searching and/or sorting options are available according to the columns:
+
+Input searching fields are available for ID, Group name, Discount (%), Members
+Drop-down with 2 selectable options (Yes, No) is available for Show prices column
+Date pickers (From and to) are available for Creation date column
+Sorting ASC & DESC are available for ID, Group name, Discount (%), Members and Creation date columns
 
 At the beginning of each line is a checkbox while, at the end of each line, 3 actions can be selected: _Edit_, _View_, and _Delete_. Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', or 'Delete selected'.
 
