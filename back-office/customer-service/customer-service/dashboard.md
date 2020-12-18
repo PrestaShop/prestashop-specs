@@ -101,7 +101,7 @@ After clicking on it, the status of the selected messages are changed for "pendi
 
 4) Mark as "pending 2"
 
-After clicking on it, the status of the selected messages are changed for "pending 2" and a successfull message is displayed: "Update successful"
+After clicking on it, the status of the selected messages are changed for "pending 2" and a successful message is displayed: "Update successful"
 
 5) Delete selection
 
