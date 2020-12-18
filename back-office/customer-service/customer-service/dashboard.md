@@ -9,7 +9,7 @@ https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service
 
 ## MESSAGES NOTIFICATIONS
 
-When a new message is sent by the customer and/or by the merchant, then it's displayed in the notifications in the header.
+When a new message is sent by a customer or a visitor, then it's displayed in the notifications (bell) in the header.
 
 If you click on it, the thread is opened (view page) and all the messages notifications are removed.
 
