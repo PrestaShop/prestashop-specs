@@ -191,7 +191,7 @@ It's possible to sort by message asc or desc and search by messages
 
 9) Private
 
-The customer's message is displayed and truncated if it contains more than 40 chars.
+An icon is displayed according to the privacy of the message: a cross if the message is not private (sent to the customer) and a tick if the message is private (not sent to the customer)
 
 It's possible to sort by privacy asc or desc and search by selecting the privacy through the drop-down, where 2 options are listed: "yes" and "no".
 
