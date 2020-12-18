@@ -1,10 +1,15 @@
 # SPECIFICATIONS - CUSTOMERS SERVICE > CUSTOMERS SERVICE PAGE
 
 ## MOCKUPS
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&scaling=min-zoom
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&scaling=min-zoom
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&scaling=min-zoom
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&scaling=min-zoom
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&scaling=min-zoom
 
 ## MESSAGES NOTIFICATIONS
