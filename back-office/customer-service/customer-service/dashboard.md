@@ -167,7 +167,7 @@ It's possible to sort by type asc or desc and search by selecting the type throu
 
 5) Language
 
-The language selected by the customer in front-office while sending the message is displayed.
+The language selected by the customer in the front office or the employee in the back office while sending the message is displayed.
 
 It's possible to sort by language asc or desc and search by selecting the language through the drop-down, where all enabled languages are displayed.
 
