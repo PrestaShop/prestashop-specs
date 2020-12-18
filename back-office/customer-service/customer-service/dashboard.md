@@ -223,7 +223,7 @@ After clicking on it, a modal is opened asking to confirm or cancel the action: 
 
 The action can be canceled by clicking on the cross or on the cancel button.
 
-After clicking on "Delete" button, the message is deleted and a successfull message is displayed "Successful deletion."
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
 
 #### Search
 
