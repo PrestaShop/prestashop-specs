@@ -35,7 +35,7 @@ Each contact type added in Shop parameters > Contact > Contact has its own block
 
 With these blocks, the users can quickly see if there are new messages (that have not yet been read).
 
-By default, there are two blocks, and adding more contacts will add more blocks.
+By default, there are two blocks matching the default contacts _Webmaster_ and _Customer service_. Adding more contacts will add more blocks.
 
 For each block, the description filled for the contact (in Shop parameters > Contact > Contact) is displayed.
 
