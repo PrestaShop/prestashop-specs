@@ -247,7 +247,7 @@ The merchant can select the number of messages displayed through a drop-down: 20
 
 When there are more results than the number selected, the merchant can navigate through pages.
 
-If a sort and/or a search have been done, they should be keeped after changing page.
+If a sort and/or a search have been done, results should be kept when moving on to the next page.
 
 ## CONTACT OPTIONS
 
