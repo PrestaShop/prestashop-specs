@@ -26,6 +26,7 @@ As usual, four tables options are displayed on the top-right hand corner as icon
 
 By default, the table is divided into the following columns:
 
+- ID<br>
 - Group name<br>
 - Discount (%)<br>
 - Members<br>
