@@ -159,9 +159,9 @@ It's possible to sort by customer asc or desc and search by customer (firstname 
 The customer's email address is displayed.
 It's possible to sort by email asc or desc and search by email
 
-4) Type
+4) Type (contact)
 
-The type of the messsage selected by the customer in the contact form is displayed.
+The type of the messsage (contact) selected by the customer in the contact form is displayed.
 
 It's possible to sort by type asc or desc and search by selecting the type through the drop-down, where all contacts' title are displayed.
 
