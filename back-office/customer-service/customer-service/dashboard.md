@@ -97,7 +97,7 @@ After clicking on it, the status of the selected messages are changed for "close
 
 3) Mark as "pending 1"
 
-After clicking on it, the status of the selected messages are changed for "pending 1" and a successfull message is displayed: "Update successful"
+After clicking on it, the status of the selected messages are changed for "pending 1" and a successful message is displayed: "Update successful"
 
 4) Mark as "pending 2"
 
