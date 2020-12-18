@@ -141,7 +141,7 @@ By default, the table is divided into the following columns:
 
 - ID<br>
 - Social title<br>
-- First names<br>
+- First name<br>
 - Last name<br>
 - Email address<br>
 - Date of birth<br>
