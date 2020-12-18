@@ -132,7 +132,11 @@ A warning notification, _None_, is displayed by default if the customers group h
 ### Members of this customer group
 
 A wording is supposed to explicit how group members are displayed: `Limited to the first 100 customers.` and `Please use filters to narrow your search.` in `Admin.Shopparameters.Feature`.
+As usual, four tables options are displayed on the top-right hand corner as icons: 
 
+- Refresh list<br>
+- Show SQL query<br>
+- Export to SQL manager<br>
 By default, the table is divided into the following columns:
 
 - ID<br>
