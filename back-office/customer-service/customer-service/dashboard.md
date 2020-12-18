@@ -41,7 +41,7 @@ For each block, the description filled for the contact (in Shop parameters > Con
 
 The number of **opened** messages for the contact are displayed: "X new message(s)" with a link opening the first message.
 
-If there is no message, then "No new messages" is displayed.
+If there is no message, then "No new message" is displayed.
 
 ## MEANING OF STATUS
 
