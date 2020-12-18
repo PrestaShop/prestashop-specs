@@ -79,7 +79,7 @@ There are two buttons:
 
 2) Export to SQL Manager
 
-After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manage
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
 ### Bulk actions drop-down
 
