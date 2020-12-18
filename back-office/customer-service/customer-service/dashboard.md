@@ -113,7 +113,7 @@ After clicking on "Delete" button, the selected messages are deleted, a successf
 
 ### Listing
 
-**The messages sent through the contact form in front-office are only listed here if the contact has the "Save messages?" option enabled.**
+**The messages sent through the contact form in the front office are only listed here if the contact ('Webmaster' or 'Customer service', for example) has the "Save messages?" option enabled.**
 
 This setting can be changed in Shop parameters > Contact > Contact, when editing the contacts.
 
