@@ -152,6 +152,8 @@ It's possible to sort by id asc or desc and search by id.
 
 The firstname and lastname are displayed if the customer was logged in while sending the message. Otherwise, "--" is displayed.
 
+When it is the merchant, customer service, or any other contact, who writes to a customer, the customer's first name and last name are displayed too.
+
 It's possible to sort by customer asc or desc and search by customer (firstname and/or lastname)
 
 3) Email
