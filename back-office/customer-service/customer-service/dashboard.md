@@ -272,7 +272,7 @@ Customer service"
 
 A tooltip is available: "Please fill out the message fields that appear by default when you answer a thread on the customer service page"
 
-A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed and customizing the message according to the customer's language.
 
 Also, in the case of multilanguage, if an error occurs, then the user must be warned in the message which language is problematic.
 
