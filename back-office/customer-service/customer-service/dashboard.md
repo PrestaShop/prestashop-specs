@@ -343,7 +343,7 @@ In a multistore context, the options listed above have [checkboxes](https://gith
 
 ### SAVE BUTTON
 
-When clicking on save, if all settings have well been saved, then a successfull message is displayed: "The settings have been successfully updated."
+When clicking on save, if all settings have well been saved, then a successful message is displayed: "The settings have been successfully updated."
 
 If all IMAP fields are not filled and if you click on save, then the following information message is displayed: "IMAP configuration is not correct"
 
