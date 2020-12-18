@@ -58,7 +58,10 @@ Users can select which group designates the 3 following customers profiles:
 
 Users should click 'Save' to update their default groups' settings. If all settings are properly saved, then a successful message is displayed: `The settings have been successfully updated.` in `Admin.Notifications.Success`.
 
+In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19366)
+In all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318)
 
+Take a look at the specs [here](https://github.com/PrestaShop/prestashop-specs/blob/b912faba2d354ec41851fd37b5c97e89350a3b79/back-office/multistoregeneralspecs.md)
 ## Add form
 
 Clicking 'Add new group' redirects to a form.
