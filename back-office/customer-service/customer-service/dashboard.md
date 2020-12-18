@@ -93,7 +93,7 @@ After clicking on it, the status of the selected messages are changed for "opene
 
 2) Mark as "closed"
 
-After clicking on it, the status of the selected messages are changed for "closed" and a successfull message is displayed: "Update successful"
+After clicking on it, the status of the selected messages are changed for "closed" and a successful message is displayed: "Update successful"
 
 3) Mark as "pending 1"
 
