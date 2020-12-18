@@ -261,6 +261,9 @@ It's enabled by default.
 
 When enabled, an optional field "Attachment" is displayed in the front-office's contact form and a "choose file" CTA allows to select a file.
 
+Only the following extension are accepted: pdf, txt, png, jpg, gif, zip.
+Otherwise, an error notfication is displayed: "Bad file extension".
+
 A tooltip is available: "Allow customers to upload files using the contact page."
 
 2) **Default message**: This field allows the merchant to enter a default message that will be pre-filled while responding to a message.
