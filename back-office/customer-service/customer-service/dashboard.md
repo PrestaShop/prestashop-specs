@@ -253,7 +253,7 @@ If a sort and/or a search have been done, results should be kept when moving on 
 
 ## CONTACT OPTIONS
 
-The user can edit 2 options, which apply to all contacts:
+The user can edit 2 options, which apply to all customers / visitors:
 
 1) **Allow file uploading**: This toggle allows the merchant to choose if he/she wants to allow his/her visitors to upload files through the contact form.
 
