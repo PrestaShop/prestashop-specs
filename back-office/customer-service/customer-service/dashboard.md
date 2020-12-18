@@ -33,7 +33,7 @@ Theses indicators can be refreshed by clicking on the refresh icon.
 
 Each contact type added in Shop parameters > Contact > Contact has its own block if the 'Save messages?' setting is enabled.
 
-With these blocks, the users can quickly see if a there are new messages (that have not yet been read). 
+With these blocks, the users can quickly see if there are new messages (that have not yet been read).
 
 By default, there are two blocks, and adding more contacts will add more blocks.
 
