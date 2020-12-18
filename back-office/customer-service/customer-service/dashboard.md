@@ -70,7 +70,7 @@ When clicking on it, two options are displayed:
 
 1) Show SQL query
 
-After clicking on it, the sql query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
 There are two buttons:
 
