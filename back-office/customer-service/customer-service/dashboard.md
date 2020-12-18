@@ -109,7 +109,7 @@ After clicking on it, a modal is opened asking to confirm or cancel the action: 
 
 The action can be canceled by clicking on the cross or on the cancel button.
 
-After clicking on "Delete" button, the selected messages are deleted, a successfull message is displayed "The selection has been successfully deleted."
+After clicking on "Delete" button, the selected messages are deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ### Listing
 
