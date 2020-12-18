@@ -56,7 +56,7 @@ Users can select which group designates the 3 following customers profiles:
 
 **Customers group.** By default, it is 'Customer' but merchants can use the dropdown selector to choose any group. A tooltip is available: `The group defined for your identified registered customers.` in `Admin.Shopparameters.Help`.
 
-Users should click 'Save' to update their default groups' settings.
+Users should click 'Save' to update their default groups' settings. If all settings are properly saved, then a successful message is displayed: `The settings have been successfully updated.` in `Admin.Notifications.Success`.
 
 
 ## Add form
