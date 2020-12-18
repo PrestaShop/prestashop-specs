@@ -25,7 +25,7 @@ There are 3 indicators displayed:
 
 - Pending discussion threads
 - Average response time for 30 days in hours
-- Message per thread for 30 days
+- Messages per thread for 30 days
 
 Theses indicators can be refreshed by clicking on the refresh icon.
 
