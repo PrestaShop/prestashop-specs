@@ -123,7 +123,7 @@ If the option is disabled for the contact that the customer chooses, the message
 
 Only the messages created in the selected store or store group (through the context) are displayed.
 
-Example, let's say I have the following confiuration:
+For example, let's say I have the following configuration:
 - Group 1
   - Shop A
   - Shop B
