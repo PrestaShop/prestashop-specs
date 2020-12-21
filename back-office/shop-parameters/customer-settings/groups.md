@@ -83,7 +83,7 @@ A help text is available: `Invalid characters:` in `Admin.Shopparameters.Help`. 
 
 A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed and customizing the title according to the customer's language.
 
-**Discount.** With this option, merchants can **set a discount for all group members**. A discount in the context of a customers group is expected to apply to all the store's catalog. A help text is available: `Automatically apply this value as a discount on all products for members of this customer group.` in `Admin.Shopparameters.Help`.
+**Discount.** With this option, merchants can **set a discount for all group members**. A discount in the context of a customers group is expected to apply to all the store's catalog. It directly impacts the price and lowers it. A help text is available: `Automatically apply this value as a discount on all products for members of this customer group.` in `Admin.Shopparameters.Help`.
 
 Only numbers can be typed in the field. If the merchant tries to save letters or a negative value, then he should stay on this page and get an error notification right below the field: `The discount value is incorrect (must be a percentage).` in `Admin.Shopparameters.Notification`.
 
