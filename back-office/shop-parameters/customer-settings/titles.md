@@ -25,7 +25,8 @@ Input searching fields are available for ID, Social title columns
 Drop-down with 3 selectable options (Male, Female, Neutral) is available for Gender column
 Sorting ASC & DESC are available for ID and title columns
 
-At the beginning of each line is a checkbox while, at the end of each line, two actions can be selected: _Edit_ and _Delete_. Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', or 'Delete selected'.
+At the beginning of each line is a checkbox while, at the end of each line, two actions can be done: _Edit_ and _Delete_. The main action is _Edit_ and it can be performed by clicking on the line.
+Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', or 'Delete selected'.
 
 
 ## Add/Edit form
