@@ -9,7 +9,7 @@ _As a merchant, I want to be able to turn my store offline to perform maintenanc
 
 During maintenance, the webservice remains enabled. Users with a key can still retrieve data. If need be, the webservice is to disable in Advanced Parameters > Webservice.
 
-**Enable store for logged-in employees.** By default, this setting is enabled. When an employee is logged in, his/her **IP address should automatically be allowed to access the front office**, even if the shop is disabled, cf. _to do_ issue #[18823](https://github.com/PrestaShop/PrestaShop/issues/18932). A help text is available: `Allow logged-in employees to access the store, even in maintenance mode.` in `Admin.Shopparameters.Help`.
+**Enable store for logged-in employees.** By default, this setting is enabled. When an employee is logged in, his/her **IP address should automatically be allowed to access the front office**, even if the shop is disabled, cf. _to do_ issue #[18932](https://github.com/PrestaShop/PrestaShop/issues/18932). A help text is available: `Allow logged-in employees to access the store, even in maintenance mode.` in `Admin.Shopparameters.Help`.
 
 **Maintenance IP.** It **allows specific IP addresses to access the store even if it is disabled**. Clicking `Add my IP` should automatically fetch the IP address of the current computer. Users can add as many IP addresses as they need as long as separated with commas (,).
 
