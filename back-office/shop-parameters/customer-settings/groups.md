@@ -98,7 +98,7 @@ An information notification id displayed: `Caution: The discount applied to a ca
 **Discount (%).** Only numbers can be typed in the field. If the merchant tries to save letters or a negative value, then he should stay on this modal window and get an error notification right below the field: `The discount value is incorrect (must be a percentage).` in `Admin.Shopparameters.Notification`.
 
 Clicking 'Add' saves preferences. It displays the category discount(s) in the 'Edit' form, just below the 'Category discount' field, with the following information: route to the category, discount value, and a 'Delete' button. If a user deletes a discount, the line simply disappears.
-
+Clicking on the close icon or anywhere outside the modal cancels the action.
 
 ### Authorized modules
 
