@@ -65,7 +65,10 @@ Users should click 'Save' to update their default groups' settings. If all setti
 
 In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19366).
 
-In all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318)
+
+### All shops context
+
+In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318).
 
 Take a look at the specs [here](https://github.com/PrestaShop/prestashop-specs/blob/b912faba2d354ec41851fd37b5c97e89350a3b79/back-office/multistoregeneralspecs.md)
 ## Add form
