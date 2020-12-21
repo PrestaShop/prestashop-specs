@@ -102,7 +102,7 @@ Clicking on the close icon or anywhere outside the modal cancels the action.
 
 ### Authorized modules
 
-With this setting, **merchants can authorize or prevent members of this group to access and use some of the shop's modules**. A list of all the store's enabled modules is displayed with a switch button to enable or disable each module. By default, all modules are enabled.
+With this setting, **merchants can authorize or prevent members of this group to access and use some of the shop's modules**. A list of all the store's installed modules is displayed with a switch button to enable or disable each module. By default, all modules are enabled.
 
 Two actions are available at the end of the page: _Save_ and _Cancel_. When saving, the user gets redirected to the Shop Parameters > Customer Settings > Groups page with a success notification: 'Successful update.'.
 
