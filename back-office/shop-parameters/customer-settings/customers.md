@@ -18,6 +18,6 @@ _As a merchant, I want to be able to define my preferences to manage my customer
 
 A tooltip is available: `Activate or deactivate B2B mode. When this option is enabled, B2B features will be made available.` in `Admin.Shopparameters.Help`.
 
-**Ask for birth date.** By default, it is enabled, meaning the **customer's birth date is asked when he/she is checking out**. It displays a 'Birthdate' optional field in the very first step of the checkout funnel, the _Personal information_ step. A tooltip is available: `Display or not the birth date field.` in  `Admin.Shopparameters.Help`.
+**Ask for birth date.** By default, it is enabled, meaning the **customer's birth date is asked when he/she is checking out**. In the front-office, it displays a 'Birthdate' optional field in the very first step of the checkout funnel, the _Personal information_ step, and in the _Information_ section of the personal account. A tooltip is available: `Display or not the birth date field.` in  `Admin.Shopparameters.Help`.
 
 **Enable partner offers.** It should be disabled by default. Merchants must have **agreed with their business partners to suggest their customers to subscribe their newsletters** in the meantime. It displays a 'Receive offers from our partners' checkbox in the very first step of the checkout funnel, the _Personal information_ step. A tooltip is available: `Optional check box for affiliate links` in  `Admin.Shopparameters.Help`.
