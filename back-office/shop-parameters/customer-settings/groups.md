@@ -70,7 +70,7 @@ Clicking 'Add new group' redirects to a form.
 
 A help text is available: `Invalid characters:` in `Admin.Shopparameters.Help`. It applies to the following characters, _<>={}_. If the input contains one of those specific characters, an error notification is displayed: `The %s field is invalid.` in `Admin.Notifications.Error`.
 
-Mandatory field. Merchants can localize the label according to the store's available languages.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed and customizing the title according to the customer's language.
 
 **Discount.** With this option, merchants can **set a discount for all group members**. A discount in the context of a customers group is expected to apply to all the store's catalog. A help text is available: `Automatically apply this value as a discount on all products for members of this customer group.` in `Admin.Shopparameters.Help`.
 
