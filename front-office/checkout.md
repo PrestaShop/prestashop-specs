@@ -5,6 +5,10 @@
 
 ## Personal information step
 
+**Company.** Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters > Customers Settings section of the back office. It should **indicate the name of the company** processing the order.
+
+**Identification number.** Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters > Customers Settings section of the back office. It **stands for the SIRET** of the company.
+
 **Birthdate.** If the merchant has enabled the 'Ask for birth date' option in the Customer Settings > Customers page of the back office, then the customers should be able to see this optional date field during the checkout. A placeholder is here to help customers know how to fill in this field, 'MM/DD/YYYY', and a help text is displayed just below the field to give an example: `(E.g.: %date_format%)` (with the date '05/31/1970' taken as a model) in `Shop.Forms.Help`.
 
 Only numbers and the slash (/) punctuation mark can be typed in the field. Month and day numbers cannot be reversed. Otherwise an error notification is displayed when attempting to save: `Format should be %s.` (with the same date '05/31/1970' taken as a model) in `Shop.Forms.Error`.
