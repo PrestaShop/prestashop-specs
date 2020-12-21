@@ -60,3 +60,10 @@ Leaving this field empty sets the default value.
 Only numbers should be typed in the field. If the input contains specific characters, an error notification is displayed: `Width and height must be numeric values.` in `Admin.Shopparameters.Notification`.
 
 Leaving this field empty sets the default value.
+
+
+## Multistore behavior
+
+As the Add/Edit form does not display any shop association block, **when merchants add a social title, it is added to all shops** - no matter the context selected. So all social titles should be listed here, be it an all shops, a group, or a specific shop context.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
