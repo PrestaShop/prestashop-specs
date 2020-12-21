@@ -19,7 +19,11 @@ By default, the table is divided into the following columns:
 - Gender<br>
 - Image<br>
 
-Searching fields are available for users to narrow down their search. 
+To allow users to narrow down their search, searching and/or sorting options are available according to the columns:
+
+Input searching fields are available for ID, Social title columns
+Drop-down with 3 selectable options (Male, Female, Neutral) is available for Gender column
+Sorting ASC & DESC are available for ID and title columns
 
 At the beginning of each line is a checkbox while, at the end of each line, two actions can be selected: _Edit_ and _Delete_. Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', or 'Delete selected'.
 
@@ -55,4 +59,3 @@ Leaving this field empty sets the default value.
 Only numbers should be typed in the field. If the input contains specific characters, an error notification is displayed: `Width and height must be numeric values.` in `Admin.Shopparameters.Notification`.
 
 Leaving this field empty sets the default value.
-
