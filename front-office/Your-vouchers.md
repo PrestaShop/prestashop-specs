@@ -25,3 +25,7 @@ If the voucher is composed of differents cart rules' actions, it aggregates the 
 Ex: if the voucher reduced 20 euro tax excluded, add free shipping and give The adventure begins: Dimension - 40x60cm as gift, the Value column displays: "€20.00 VAT excluded + Free shipping + Affiche encadrée The adventure begins: Dimension - 40x60cm"
 - Cumulative, if the voucher is not Cumulative, it displays "No" otherwise displays "Yes". 
 - Expiration date, displays the expiration date of the voucher.
+
+__Voucher displayed on the Your voucher page.__
+
+![Voucher](https://github.com/PrestaShop/prestashop-specs/blob/master/img/list_vouchers_FO.png)
