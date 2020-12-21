@@ -80,6 +80,10 @@ Only numbers can be typed in the field. If the merchant tries to save letters or
 
 **Show prices.** By default, all **customers can view the prices**. If set to 'No', it activates the catalog mode for this group of customers: they should not be able to get the prices when browsing the front office nor have any shopping cart. It also impacts the customer account on the front office, turning off the 'Order history and details', 'Credit slips', and 'Merchandise returns' pages. A help text is available: `Need to hide prices for all groups? Save time, enable catalog mode in Product Settings instead.` in `Admin.Shopparameters.Help`.
 
+**Shop association.** The shop association block is displayed when the multistore is enabled and if several shops are configured.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block
+
 
 ## Edit form
 
