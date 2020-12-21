@@ -64,6 +64,10 @@ Leaving this field empty sets the default value.
 
 ## Multistore behavior
 
-As the Add/Edit form does not display any shop association block, **when merchants add a social title, it is added to all shops** - no matter the context selected. So all social titles should be listed here, be it an all shops, a group, or a specific shop context.
+As the Add/Edit form does not display any shop association block, **when merchants add a social title, it is added to all shops** - no matter the context selected. 
+
+An information message should be displayed at the top of the page to inform the user of this behavior: "Note that this feature is available in all shops context only. It will be added to all your stores." (_See issue [#19415](https://github.com/PrestaShop/PrestaShop/issues/19415)_
+
+So all social titles should be displayed in the listing, be it an all shops, a group, or a specific shop context.
 
 :point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
