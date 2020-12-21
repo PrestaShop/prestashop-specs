@@ -36,7 +36,7 @@ Clicking 'Add new social title' and editing an existing social title redirects t
 
 If the input contains specific characters (<>;=#{}_), an error notification is displayed: `Invalid characters:` in `Admin.Global`.
 
-Merchants can localize the label according to the store's available languages.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed and customizing the title according to the customer's language.
 
 **Gender.** As titles may apply to both male and female customers, or neither, three radio buttons allow merchants to **specify to which category the title applies**. By default, the 'Male' gender is selected.
 
