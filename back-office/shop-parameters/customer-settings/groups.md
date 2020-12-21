@@ -152,7 +152,11 @@ By default, the table is divided into the following columns:
 - Registration date<br>
 - Enabled
 
-Searching fields are available for users to narrow down their search. 
+To allow users to narrow down their search, searching and/or sorting options are available according to the columns:
+
+Input searching fields are available for ID, Social title, First name, Last name and Email address columns
+Date pickers are available (from and to) for Date of birth and Registration date columns
+Sorting ASC & DESC are available for ID, Social title, First name, Last name, Email address, Date of birth and registration date columns
 
 At the beginning of each line is a checkbox while, at the end of each line, an 'Edit' button can be clicked, redirecting to the Customer dedicated page in the Customers > Customers section of the back office. Checkboxes play with the 'Bulk actions' selector that allows either to 'Select all', 'Unselect all', 'Enable selection', or 'Disable selection'.
 
