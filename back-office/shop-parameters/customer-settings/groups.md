@@ -70,7 +70,9 @@ In a specific shop context or in a group context, the options listed above shoul
 
 In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318).
 
-Take a look at the specs [here](https://github.com/PrestaShop/prestashop-specs/blob/b912faba2d354ec41851fd37b5c97e89350a3b79/back-office/multistoregeneralspecs.md)
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/b912faba2d354ec41851fd37b5c97e89350a3b79/back-office/multistoregeneralspecs.md
+
+
 ## Add form
 
 Clicking 'Add new group' redirects to a form.
