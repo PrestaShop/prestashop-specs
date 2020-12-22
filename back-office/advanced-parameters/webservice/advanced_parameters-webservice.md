@@ -30,6 +30,12 @@ There are 3 options in the bulk-action drop-down:
 - Disable selection
 - Delete selected
 
+After clicking on "Delete selected", a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected webservice keys are deleted, a successful message is displayed "The selection has been successfully deleted."
+
 ### Lisitng
 
 The list displays:
@@ -47,7 +53,12 @@ To allow users to narrow down their search, searching and/or sorting options are
 - Sorting by ascending and descending order components are available for the 'Key' and 'Enabled' columns.
 
 The main action is _Edit_ and it can be performed by clicking on the line.
-The second action is _Delete_
+
+The second action is _Delete_. After clicking on it, a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
 
 #### Multistore
 
