@@ -3,14 +3,42 @@
 The listing page is composed of the list of the webservice keys and the configuration section.
 
 
-## The list of the webservice keys
+## Webservice
+
+### Add new webservice
+
+A button "Add new webservice" allows to create a new webservice key and redirects to the add page.
+
+### Information message
+
+An information message is displayed: "It is preferable to use SSL (https:) for webservice calls, as it avoids the "man in the middle" type security issues."
+
+### Settings wheel
+
+Three tables options are displayed as icons on the top-right hand corner of the listing: 
+
+- Refresh list<br>
+- Show SQL query<br>
+- Export to SQL manager<br>
+
+### Bulk action
+
+A checkbox allows to select all / unselect all keys.
+
+There are 3 options in the bulk-action drop-down:
+- Enable selection
+- Disable selection
+- Delete selected
+
+### Lisitng
 
 The list displays:
 
-- Checkboxes;
+- Checkboxes (for bulk actions);
 - Key (text);
 - Key description (text);
-- Status (yes or no). It can be edited from the list;
+- Enabled (yes or no). It can be edited from the list;
+- Actions
 
 To allow users to narrow down their search, searching and/or sorting options are available according to the columns:
 
@@ -18,15 +46,25 @@ To allow users to narrow down their search, searching and/or sorting options are
 - A drop-down selector with 2 _Yes_ and _No_ options is available for 'Enabled' column;
 - Sorting by ascending and descending order components are available for the 'Key' and 'Enabled' columns.
 
-The bulk action can enable and disable the selection or delete the selection.
+The main action is _Edit_ and it can be performed by clicking on the line.
+The second action is _Delete_
 
-Four tables options are displayed as icons on the top-right hand corner of the listing: 
+#### Multistore
 
-- Add new<br>
-- Refresh list<br>
-- Show SQL query<br>
-- Export to SQL manager<br>
+Only the keys created in the selected store or store group (through the context) are displayed.
 
+For example, let's say I have the following configuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+
+If I select group 1 as context, then the keys created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the keys created in Shop A will be displayed.
+
+If I select all shops as context, then the keys created in Shop A, Shop B and Shop C will be displayed.
 
 ## Configuration
 
@@ -47,6 +85,13 @@ Before choosing "Yes", check that PHP is not configured as an Apache module on y
 
 A 'Save' button is available at the end of the page. When saving, the user is supposed to stay on this page and see a success notification: `Update successful` in `Admin.Notifications.Success`.
 
+### Multistore behavior
+
+In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19359) 
+
+In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19312)
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
 
 ## Add new / Edit webservice key
 
@@ -89,10 +134,25 @@ The webservice key can't be saved if the key is already used by another key. Use
 By clicking on the "Cancel" button, all the fulfilled information is aborted and the user is redirected to the list. 
 
 
-### Multistore
+### Multistore behavior
 
-The form adds the shop association mandatory field when the multistore is enabled.
+**Shop association block**
 
-- **Shop association**: 
-All the group shop groups and their related shops are displayed in the checkbox choice tree. The user can choose by checking the checkbox on which shop or group of shops the key can give access to.
+The shop association block is displayed when you add or edit something.
+The shop association block displays all groups and all shops.
+Checkboxes allow to select / unselect groups and shops.
+It's possible to expand / collapse the wall tree and expand / collapse each group
+If you select / unselect a group, all shops of this group are selected / unselected
+
+The shop association block allows to choose for which store(s) you want to associate or disassocate the current webservice key.
+
+When you add a webservice key, the shop(s) selected in the context are automatically checked in the shop association block.
+But it's possible to select / uncelect shops, no matter the context selected.
+
+When you edit a webservice key, you can unselect shop(s) previously selected and therefore disassocate it from these shops.
+And you can also, select shop(s) not previously selected and therefore associate it with these shops.
+
+Selecting at least a shop is mandatory, if the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. only from 1.7.8
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block
 
