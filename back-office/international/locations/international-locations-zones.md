@@ -61,7 +61,13 @@ The search will be performed on the `_db_prefix_zone` database table and the res
 
 **Action Button**
 
-There is an action button at the end of each row which displays the _Edit_ button by default. Clicking on edit button will navigate the user to the 'Zone' edit page. There is a button with 'carret-down' icon next to the 'Edit' button that displays the _Delete_ button on click. Clicking on _Delete_ button will remove the zone from shop, `_db_prefix_zone`, and `_db_prefix_zone_shop` databases as well.
+There is an action button at the end of each row which displays the _Edit_ button by default. Clicking on edit button will navigate the user to the 'Zone' edit page. The _Edit_ action can also be performed by clicking on the line. The second action that can be performed is the _Delete_ one. Clicking on _Delete_ button will remove the zone from shop, `_db_prefix_zone`, and `_db_prefix_zone_shop` databases as well.
+
+After clicking on _Delete_, a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#17082](https://github.com/PrestaShop/PrestaShop/issues/17082))
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
 
 **Bulk actions**
 
