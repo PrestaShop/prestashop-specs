@@ -30,17 +30,56 @@ At first, the SQL Manager page displays 2 messages:
 
 "When saving the query, only the "SELECT" SQL statement is allowed."
 
-### SQL Manager List
+### SQL Manager
 
-Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
+#### Settings wheel
+
+When clicking on it, three options are displayed:
+
+1) Refresh list
+
+After clicking on it, the page is reloaded. Sorts and searches are keeped.
+
+2) Show SQL query
+
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+
+- Close: After clicking on it, the modal is closed
+- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+3) Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+#### Bulk actions
+
+Clicking on the _Bulk actions_ button will give the user the ability to perform bulk actions for selected sql queries (using the check boxes). The user can:
+- Select all/Unselect all: This button will select/unselect all check boxes next to each row on the table.
+- Delete selected: This button will delete the selected sql queries. 
+After clicking on "Delete selected", a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected webservice keys are deleted, a successful message is displayed "The selection has been successfully deleted."
+
+#### Listing
+
+The page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
 The request's actions allow users to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
-Actions can be:
-- Export. Executes the query, and downloaded the result in CSV format.
-- View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface.
 
+Actions can be:
+- View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface. This is the main action and it can be performed by clicking on the line.
 When the user views the SQL request with no result, a warning is displayed: "This SQL query has no result."
+- Export. Executes the query, and downloaded the result in CSV format.
 - Edit. The user can edit a query as often as necessary, to refine it and get better results.
 - Delete. Once a query is not used anymore (or simply because it does not work), you can delete it by clicking this button and confirming your choice.
+After clicking on _Delete_, a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" 
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
 
 #### Multistore behavior
 
