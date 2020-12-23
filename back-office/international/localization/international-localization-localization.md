@@ -47,6 +47,13 @@ After any modifications applied to local CLDR files, the PrestaShop cache (back-
 
 Pressing the _Import_ button applies the 'Import a localization pack' options. Clicking on it might affect both FrontOffice and BackOffice or change the default price behaviors based on options chose from 'Content to import' and 'Download pack data' fields.
 
+#### Multistore behavior
+
+States will be imported for all shops, no matter the context selected.
+Taxes will be imported for all shops, no matter the context selected. Taxes rules will be imported for the selected shop(s) in the context.
+Currencies will be imported for the selected shop(s) in the context.
+Languages will be imported for all shops, no matter the context selected.
+
 ### Configuration
 
 Using this section will give the user the ability to change default localization configuration such as default langiage, country, and currency. Changing this configuration will override the default behaviours.
