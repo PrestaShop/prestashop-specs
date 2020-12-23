@@ -56,7 +56,7 @@ The _Enabled_ column displays the user if a zone is enabled or disabled on their
 
 **Search boxes**
 
-By using the _Search boxes_ on the second row, the user can search and sort the zones based on _ID Number_, _Zone Names_, and/or _Enabled/Disabled Zones_. The search process will start by pressing the 'Enter' button or clicking on the 'Search' button at the end of the second row.
+By using the _Search boxes_ on the second row, the user can search the zones based on _ID Number_, _Zone Names_, and/or _Enabled/Disabled Zones_. The search process will start by pressing the 'Enter' button or clicking on the 'Search' button at the end of the second row.
 The search will be performed on the `_db_prefix_zone` database table and the result will be sent to the zones controller.
 
 **Action Button**
