@@ -1,8 +1,8 @@
-# Specifications for Catalog Price rule page
+# SPECIFICATIONS - CATALOG > DISCOUNTS > CATALOG PRICE RULES
 
 User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
 
-### WHY
+## WHY
 
 The Add/edit catalog price rule page \(Catalog &gt; Discounts &gt; Catalog price rules\) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours \(especially for complex rules\) are not well specified which may introduce regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test every scenario and avoid any new bugs.
 
@@ -13,24 +13,25 @@ Furthermore, we have identified different issues and bugs related to this page t
 - #9977
 - #9867
 
-### WHAT
+## WHAT
 
 Thus, this project aims at specifying the current and expected behaviour for every scenario a merchant could be dealing with when creating a specific type of discount for his/her customers. This specification should specifically define : 
 - Condition groups behaviour and compatibility 
 - Compatibility between rules 
 - Discounts display on front office
 
-### SPECIFICATIONS
+## SPECIFICATIONS
 
 The first step of this document is to detail global and generic expected behaviour for this page, both on back office and front office. The second step gives a specific definition of scenarios and behaviours involving conditions groups. The last step details specs for cases with several rules.
 
-## Generic page operation
+### Catalog price rules list
 
-### Rule creation / edition on Back office
+### Catalog price rule creation / edition on Back office
 
 When creating or editing a catalog price rule, the first step is to create the generic conditions of the rules. Some conditions or elements are mandatory, others are optional, according to the expected target audience. Here is the list of those elements :
 
 - Name : this is a mandatory field - every rules need to have a name. 
+- Shop: If multistore is enabled and if several shops are configured, this drop-down allows to select to which store the catalog price rule will be associated - by default, the first shop created is selected.
 - Currency : the merchant can choose to apply the rule only on one of his/her currencies enabled on the website \(or all currencies\) - this is an optional criterion 
 - Country : same as above, the merchant can choose all countries or only one of the enabled countries as a target audience - this is an optional criterion 
 - Group : same as above, the merchant can choose only one or all created customer groups - this is an optional criterion 
