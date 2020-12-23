@@ -64,12 +64,24 @@ The action can be canceled by clicking on the cross or on the cancel button.
 
 After clicking on "Delete" button, the selected webservice keys are deleted, a successful message is displayed "The selection has been successfully deleted."
 
-#### Listing
+#### Columns
 
-The page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
-The request's actions allow users to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
+The page displays the SQL Manager list with the following columns:
 
-Actions can be:
+1) ID
+
+It's possible to sort by id asc or desc and search by id.
+
+2) SQL query name
+
+It's possible to sort by SQL query name asc or desc and search by SQL query name.
+
+3) SQL query 
+
+It's possible to sort by SQL query asc or desc and search by SQL query.
+
+4) Actions 
+
 - View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface. This is the main action and it can be performed by clicking on the line.
 When the user views the SQL request with no result, a warning is displayed: "This SQL query has no result."
 - Export. Executes the query, and downloaded the result in CSV format.
