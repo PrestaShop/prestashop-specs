@@ -25,7 +25,7 @@ Finally, **the key element is the user story**. Feel free to add it whenever it 
 
 - [ ] **Helper cards**, if there are any.
 
-- [ ] **Empty spaces**, if there are any.
+- [ ] **Empty states**, appears only when there is no value, they should be specified if there are any.
 
 - [ ] **Components**, describe the nature of the feature: table, drop-down selector, input field, button, etc.
 
