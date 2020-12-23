@@ -18,6 +18,26 @@ As a merchant, being able to manage zones will help to have my own subregions an
 
 The _ZONES_ section displays a table of current zones (both enabled and disabled) to the user with the ability to add, edit, and/or delete them.
 
+#### Settings wheel
+
+When clicking on it, three options are displayed:
+
+1) Refresh list
+
+After clicking on it, the page is reloaded. Sorts and searches are keeped.
+
+2) Show SQL query
+
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+
+- Close: After clicking on it, the modal is closed
+- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+3) Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 **Check boxes**
 
 By using the _Check boxes_ next to each row of the first column, the user can select the desired 'zones' to apply the 'bulk actions' using the 'Bulk actions' button on the bottom left-handed side of the table.
