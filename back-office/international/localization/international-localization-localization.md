@@ -117,7 +117,12 @@ The Dimension unit_ provides a text field for the user to change the default dim
 **Save**
 
 Pressing the _Save_ button applies the 'Local units' options. Clicking on it might affect both FrontOffice and BackOffice or change the default units based on fields filled from 'Local units' section.
+#### Multistore behavior
+In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19370) 
 
+In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19322)
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
 ### Advanced
 
 Using this section will define the local country and its language where the server is located.
