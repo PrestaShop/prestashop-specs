@@ -92,6 +92,12 @@ Clicking on the _Bulk actions_ button on the bottom left-handed side of the tabl
 - Enable selection/Disable selection: This button will enable/disable the selected zones using the check boxes next to each zone row.
 - Delete selected: This button will delete the selected zones using the check boxes next to each row. Clicking on this button will remove the selected zones from shop, `_db_prefix_zone`, and `_db_prefix_zone_shop` tables as well.
 
+After clicking on "Delete selected", a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected webservice keys are deleted, a successful message is displayed "The selection has been successfully deleted."
+
 ### ADD NEW ZONE
 
 Clicking on _Add new zone_ button will redirect the user to the new page which they can add a custom zone.
