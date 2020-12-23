@@ -138,3 +138,11 @@ The _Country identifier_ field allows the user to set the local country where th
 **Save**
 
 Pressing the _Save_ button applies the 'Advanced' options. Clicking on it might affect both FrontOffice and BackOffice or defines the default server's local language and country based on fields filled from 'Advanced' section.
+
+#### Multistore behavior
+
+In a specific shop context or in a group context, the options listed above doesn't have checkbox and are disabled with an information message displayed when the user hovers the fields: "You can modify this parameter in all shops context only. Switch context to enable it."
+
+In an all shops context, the options listed above doesn't have specific settings drop-down
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md
