@@ -85,7 +85,15 @@ The _Time zone_ droplist displays the full list of all standard time zones. The 
 **Save**
 
 Pressing the _Save_ button applies the 'Configuration' options. Clicking on it might affect both FrontOffice and BackOffice or change the default localization configuration based on options chose from 'Configuration' fields.
+#### Multistore behavior
 
+In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19370) except the "time zone" that doesn't have checkbox and that is disabled with an information message displayed when the user hovers the drop-down: "You can modify this parameter in all shops context only. Switch context to enable it."
+
+In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19322) except the "time zone".
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them
 ### Local units
 
 Using this section will able the user to change the default local units such as weight, distance, volume, and dimension.
