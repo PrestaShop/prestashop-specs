@@ -42,9 +42,21 @@ When the user views the SQL request with no result, a warning is displayed: "Thi
 - Edit. The user can edit a query as often as necessary, to refine it and get better results.
 - Delete. Once a query is not used anymore (or simply because it does not work), you can delete it by clicking this button and confirming your choice.
 
+#### Multistore behavior
+
+As SQL query can't be associated to specific shop(s) during the creation, so all the SQL query from all stores are listed, no matter the context selected.
+
 ### Settings
 
-Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be.
+Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be through the drop-down.
+
+#### Multistore behavior
+
+In a specific shop context or in a group context, the "default file encoding" doesn't have checkbox and is disabled with an information message displayed when the user hovers the drop-down: "You can modify this parameter in all shops context only. Switch context to enable it." (see issue [#19356](https://github.com/PrestaShop/PrestaShop/issues/19356))
+
+In an all shops context, the the "default file encoding" doesn't have specific settings drop-down.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them
 
 ### Add new SQL query
 
@@ -72,3 +84,11 @@ The list of unauthorized request types:
 Each keywords are checked in the SQL query before saving it.
 
 On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. He/she should select a table to make PrestaShop display all its attributes and types in the list on the right, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name/table name into the SQL query field.
+
+#### Multistore behavior
+
+This page has no shop association block. In this case, the sql query is added for all shops, no matter the context selected.
+
+To inform the merchants of this behavior, an information message is displayed on this page: "Note that this feature is available in all shops context only. It will be added to all your stores." (see issue [#19422](https://github.com/PrestaShop/PrestaShop/issues/19422))
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block
