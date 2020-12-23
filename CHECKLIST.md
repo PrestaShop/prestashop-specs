@@ -40,7 +40,13 @@ Finally, **the key element is the user story**. Feel free to add it whenever it 
 - [ ] **Notifications**, add the warning, success, error, and information notifications displayed.
 
 - [ ] **Issues**, link the related bugs or improvements it specified if there are any.
+- [ ] **RTL**, if the page has some specifics behaviors in a right-to-left language
 
+- [ ] **Search & sort**, tables columns often have search fields and sort, this should be specified for each column if there are.
+
+- [ ] **Bulk actions**, table columns often have bulk-actions drop-down, this should be specified if there are.
+
+- [ ] **Settings wheel**, tables often have a settings wheel with options, this should be specified if there are.
 
 ## Impacted pages
 
