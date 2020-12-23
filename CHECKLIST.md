@@ -23,7 +23,7 @@ Finally, **the key element is the user story**. Feel free to add it whenever it 
 
 - [ ] **Mockups**, if there are any links to share.
 
-- [ ] **Helper cards**, if there are any.
+- [ ] **Helper cards**, help merchants to have a better understanding of back office pages, they should be specified if there are any.
 
 - [ ] **Empty states**, appears only when there is no value, they should be specified if there are any.
 
