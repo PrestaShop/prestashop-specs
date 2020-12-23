@@ -69,6 +69,22 @@ The action can be canceled by clicking on the cross or on the cancel button.
 
 After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
 
+#### Multistore
+
+Only the zones created in the selected store or store group (through the context) are displayed in the list.
+
+For example, let's say I have the following configuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+
+If I select group 1 as context, then the zones created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the zones created in Shop A will be displayed.
+
+If I select all shops as context, then the zones created in Shop A, Shop B and Shop C will be displayed.
 **Bulk actions**
 
 Clicking on the _Bulk actions_ button on the bottom left-handed side of the table will give the user the ability to perform bulk actions for selected zones (using the check boxes). The user can:
