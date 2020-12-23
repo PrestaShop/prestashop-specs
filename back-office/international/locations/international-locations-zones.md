@@ -110,6 +110,21 @@ The _Name_ field defines the zone's name for each language. This can be change l
 
 The _Active_ field displays a YES/NO toggle button to define if the new zone should be activated on shop or not. By default, this option is set on YES. This can be change later using the 'Zones' table on International > Locations > Zones page (back-office/international/international-locations-zones.md).
 
+#### Multistore behavior 
+
+**Shop association block**
+
+The shop association block is displayed when you add or edit a zone. The shop association block displays all groups and all shops. Checkboxes allow to select / unselect groups and shops. It's possible to expand / collapse the wall tree and expand / collapse each group If you select / unselect a group, all shops of this group are selected / unselected
+
+The shop association block allows to choose for which store(s) you want to associate or disassocate the current zone.
+
+When you add a zone, the shop(s) selected in the context are automatically checked in the shop association block. But it's possible to select / uncelect shops, no matter the context selected.
+
+When you edit a zone, you can unselect shop(s) previously selected and therefore disassocate it from these shops. And you can also, select shop(s) not previously selected and therefore associate it with these shops.
+
+Selecting at least a shop is mandatory, if the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. only from 1.7.8
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block
 **Cancel**
 
 Clicking on _Cancel_ button will ignor the input fields and return to the International > Locations > Zones page (back-office/international/international-locations-zones.md) without impacting on database.
