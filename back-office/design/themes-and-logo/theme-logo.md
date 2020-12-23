@@ -58,6 +58,8 @@ All the themes imported are displayed here with a preview.
 
 A button "use this theme" is displayed for themes not currently used. After clicking on it, the current theme is switched with the one selected and "My current theme" is displayed for the theme used.
 
+A button "delete" is displayed for themes not currently used. After clicking on it, a modal is didsplayed: "Delete this theme ?". A button "Cancel" and a "cross" allows to cancel the deletion. A button "Yes" allows to confirm the deletion. A message "Successful deletion." is displayed to confirm the deletion.
+
 ### Multistore behavior
 
 The button "use this theme" is enabled only in a specific shop context.
