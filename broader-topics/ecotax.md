@@ -45,11 +45,11 @@ Ecotax VAT 20% = 0,40€
 Ecotax tax incl: 2,40€
 
 
-VAT paid by the merchant: 2 + 0,40 = 2,40€
+VAT paid by the merchant: 1,6 + 0,40 = 2,00€
 
 Ecotax paid by the merchant: 2€
 
-Earnings for the merchant: 12 - (2,40 + 2) = 7,60€
+Earnings for the merchant: 12 - (2,00 + 2) = 8,00€
 
 ### If there is a discount, it should be applied on the product price ecotax excluded
 
