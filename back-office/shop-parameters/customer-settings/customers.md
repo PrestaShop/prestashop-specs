@@ -14,6 +14,9 @@ _As a merchant, I want to be able to define my preferences to manage my customer
 **Enable B2B mode.** It is disabled by default since supposed to be activated when selling to other companies. Here are the features this setting should trigger when enabled:
 
 - New fields are available in the customer profile in the BO ('Company', 'SIRET', 'APE', 'Website', 'Allowed outstanding amount', 'Maximum number of payment days', and 'Risk rating') as well as in the FO, in both the _Information_ section of the personal account and the _Personal information_ step of the checkout funnel, as optional fields ('Company' and 'Identification number' standing for the 'SIRET' BO field);
+
+- Any customer profile card to be selected when creating an order in the BO should display the 'Company' information, cf _to do_ #[22643](https://github.com/PrestaShop/PrestaShop/issues/22643) issue;
+
 - A Customers > Outstanding page is available.
 
 A tooltip is available: `Activate or deactivate B2B mode. When this option is enabled, B2B features will be made available.` in `Admin.Shopparameters.Help`.
