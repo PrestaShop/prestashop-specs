@@ -5,7 +5,7 @@ _As a contributor, I want to know how to write complete specifications._
 
 _As a core team member, I want to deliver the most completed specifications in order to have accurate and qualitative development._
 
-Most of the time, **each file corresponds to a specific page or a tab**, whether it comes from the back office, the front office, or a module. It might happen to have a cross-functional feature to specify, defining wide behaviors and impacting many different pages.
+Most of the time, **each file corresponds to a specific page or a tab**, whether it comes from the back office, the front office, or a module. It might happen to have a cross-functional feature to specify, that defines wide behaviors and impacts many different pages.
 
 If the specifications template can be shaped depending on the feature, note that **this checklist applies in any case** as it allows everyone to lean on the most thorough specifications possible and therefore bring quality to the PrestaShop project.
 
@@ -40,9 +40,10 @@ Finally, **the key element is the user story**. Feel free to add it whenever it 
 - [ ] **Notifications**, add the warning, success, error, and information notifications displayed.
 
 - [ ] **Issues**, link the related bugs or improvements it specified if there are any.
-- [ ] **RTL**, if the page has some specifics behaviors in a right-to-left language
 
-- [ ] **Search & sort**, tables columns often have search fields and sort, this should be specified for each column if there are.
+- [ ] **RTL**, if the page has some specifics behaviors in a right-to-left language.
+
+- [ ] **Search & sort**, table columns often have search fields and sort, this should be specified for each column if there are.
 
 - [ ] **Bulk actions**, table columns often have bulk-actions drop-down, this should be specified if there are.
 
