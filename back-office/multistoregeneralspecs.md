@@ -4,7 +4,7 @@ As a merchant I need to be able to correctly manage all my stores
 
 ## WHAT
 
-Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases in back-office/multistorespecialsspecs.md
+Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases in broader-topics/multistorespecialsspecs.md
 
 ## SPECIFICATIONS
 
@@ -13,6 +13,12 @@ Thus, this project aims at specifying the current and expected behaviour when th
 From 1.7.8, while creating a shop or a group, the user can select a color as described in the specs to setup the multistore feature located  in back-office/advanced-parameters/multistore/multistore.md<br/>
 This color will be displayed in the multistore header for the selected shop or shop group.<br/>
 It will be also displayed before the name of each shop / group in the context drop-down.
+
+**User acceptance test**
+
+Given I am a merchant, when I am creating a new shop then I want to be able to choose a color for my shop.
+
+Given I am a merchant, when I am creating a new shop group then I want to be able to choose a color for my shop group.
 
 ### Multistore header (only from 1.7.8)
 DESIGN:https://invis.io/QPWKQY5DV79#/410364467_All_Shops_0
@@ -32,16 +38,34 @@ If the shop or the group selected doesn't have yet a color configured, the defau
 In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store's or group's page edition: "Customize your multistore header, follow the link to pick a color for this shop context" in Admin.Navigation.Header<br/>
 The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refreshes or returns to this page later.
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if I have define a color for it, then I want to see the color of the shop selected in the header
+
+Given I am a merchant in a multistore context, when I am in a shop group context in the back-office and if I have define a color for it, then I want to see the color of the shop group selected in the header
+
+Given I am a merchant in a multistore context, when I am in "all shops" context in the back-office then I want to see the header in blue #25B9D8
+
+Given I am a merchant in a multistore context, when I am in a specific shop context or in a shop group context in the back-office and if I haven't define any color for it, then I want to see the header in light grey #EBEBEB
+
 **Name of the selected context**
 
 The name of the selected context is displayed, it can be:
 - All shops
-- A shop group name
-- A shop name
+- A shop group name (can be added / edited in Advanced parameters > Multistore)
+- A shop name (can be added in Advanced parameters > Multistore)
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the back-office, then I want to see the name of the context selected in the header
 
 **View my shop link**
 
 When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
 **Context drop-down**
 DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
@@ -72,12 +96,34 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's page edition.
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to search for a context
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to select the context
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure it.
+
 **Behavior when switching context**
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
 
 If the user tries to change context without having saved, a modal appears: "You are about to switch context. Do you want to save your modifications before?" with 2 CTA: "Save" and "Cancel"
 If the user clicks on "Save", then modifications are saved and the context is changed for the one selected
 If the user clicks on "Cancel", then modifications are not saved and the context is changed for the one selected
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in the back-office and when I try to change context, if I have not saved my modifications then a modal is displayed with 2 choices: Save & Cancel.
+
+Given the modal displayed, when I click on Save, then my modifications are saved and the context is changed for the one selected.
+
+Given the modal displayed, when I click on Cancel, then my modifications are not saved and the context is changed for the one selected.
 
 ### Shop association block
 
@@ -159,7 +205,6 @@ The user can close the information message. The message is closed only for the s
 -  Advanced Parameters > Administration
 -  Advanced Parameters > Email
 -  Advanced Parameters > Team > Employees
--  Advanced Parameters > Database > SQL Manager
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
@@ -188,6 +233,11 @@ The user can close the information message. The message is closed only for the s
 -  Orders > Credit Slips
 -  Orders > Delivery Slips
 
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to select one or many fields / toggles to apply a different configuration for the selected store or group
+
+Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to see which fields / toggles have a different configuration for the selected store or group
 
 ### Specific settings drop-down (only from 1.7.8)
 DESIGN: https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown
@@ -216,7 +266,6 @@ Next to each shop name, there is a mention:
 -  Advanced Parameters > Administration
 -  Advanced Parameters > Email
 -  Advanced Parameters > Team > Employees
--  Advanced Parameters > Database > SQL Manager
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
@@ -243,3 +292,11 @@ Next to each shop name, there is a mention:
 -  Orders > Invoices
 -  Orders > Credit Slips
 -  Orders > Delivery Slips
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am configuring my shops in "all shops" context, then I want to know the parameters that have been customized in one or many specific shops 
+
+Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to search for a context
+
+Given I am a merchant in a multistore context configuring my shops in "all shops" context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to switch context 
