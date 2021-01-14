@@ -77,7 +77,7 @@ The button “Visit the theme catalog” redirects to this link: https://addons.
 
 ### Choose layouts 
 
-After clicking on choose layouts button, we end up on a different page: Design &gt; Theme & Logo &gt; Choose layouts
+Clicking the "Choose layouts" button opens a different page: Design > Theme & Logo > Choose layouts. Saving redirects me to the general Design > Theme & Logo page and displays a success notification: `Successful update.`.
 
 ### Reset to defaults
 
