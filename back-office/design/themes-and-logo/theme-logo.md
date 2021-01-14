@@ -82,7 +82,7 @@ Clicking the "Choose layouts" button opens a different page: Design > Theme & Lo
 ### Reset to defaults
 
 The button “reset to defaults” appear next to the “choose layouts” only if the debug mode is enabled.
-It allows to rest all modifications made on the page choose layouts.
+It resets all modifications made on the Design > Theme & Logo > Choose layouts page.
 
 ### Live from PrestaShop addons
 
