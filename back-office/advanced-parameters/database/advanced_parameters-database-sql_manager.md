@@ -96,7 +96,7 @@ After clicking on "Delete" button, the message is deleted and a successful messa
 
 #### Multistore behavior
 
-As SQL query can't be associated to specific shop(s) during the creation, so all the SQL query from all stores are listed, no matter the context selected.
+By default, a SQL query affects all shops. Since it can't be associated with any specific shop, all the SQL queries listed on this page are used in an all shops context.
 
 ### Settings
 
