@@ -1,4 +1,4 @@
-# SPECIFICATIONS -DESIGN > THEME & LOGO > THEME & LOGO
+# SPECIFICATIONS - DESIGN > THEME & LOGO > THEME & LOGO
 
 
 _As a merchant, I want to be able to set up my store's look._
@@ -82,4 +82,3 @@ It allows to rest all modifications made on the page choose layouts.
 ### Live from PrestaShop addons
 
 If MBO module is installed, on the footer this section will appear. Always on the bottom of the page
-
