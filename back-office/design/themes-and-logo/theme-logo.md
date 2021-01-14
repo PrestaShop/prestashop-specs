@@ -19,7 +19,7 @@ There are 4 buttons:
 
 1. 'Add new theme' button redirects to the Design > Theme & Logo > Add new theme page.
 
-2) Export current theme =&gt; Generate a zip of the current theme used at the root of theme file 
+2. 'Export current theme' button generates a zip file of the current theme used at the root of the theme file.
 
 3) Recommended modules and services =&gt; this button is displayed only if MBO module is intalled. Clicking on it displays a pop up with recommended modules. 
 
