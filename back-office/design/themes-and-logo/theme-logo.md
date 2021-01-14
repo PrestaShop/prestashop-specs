@@ -17,7 +17,7 @@ The page can have extra sections if:
 
 There are 4 buttons: 
 
-1) Add new theme bring to =&gt; Design &gt; Theme & Logo &gt; Add new theme 
+1. 'Add new theme' button redirects to the Design > Theme & Logo > Add new theme page.
 
 2) Export current theme =&gt; Generate a zip of the current theme used at the root of theme file 
 
