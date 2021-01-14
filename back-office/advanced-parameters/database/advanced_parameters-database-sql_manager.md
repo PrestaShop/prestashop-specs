@@ -56,7 +56,8 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 #### Bulk actions
 
 Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected SQL queries (using the checkboxes), or query - the button is clickable starting from one selected item. A user can:
-- Select all/Unselect all: This button will select/unselect all check boxes next to each row on the table.
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes beginning each row of the listing.
 - Delete selected: This button will delete the selected sql queries. 
 After clicking on "Delete selected", a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
 
