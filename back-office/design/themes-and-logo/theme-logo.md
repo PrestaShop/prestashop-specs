@@ -21,7 +21,7 @@ There are 4 buttons:
 
 2. 'Export current theme' button generates a zip file of the current theme used at the root of the theme file.
 
-3) Recommended modules and services =&gt; this button is displayed only if MBO module is intalled. Clicking on it displays a pop up with recommended modules. 
+3. 'Recommended modules and services' button is displayed only if the MBO module is installed. Clicking on it displays a pop up with recommended modules. 
 
 4) Help =&gt; open the help section on the page \(this section appear on many different pages
 
