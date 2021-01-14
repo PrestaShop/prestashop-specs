@@ -83,9 +83,9 @@ It's possible to sort by SQL query asc or desc and search by SQL query.
 
 4) Actions 
 
+- Export. Executes the query, and downloaded the result in CSV format.
 - View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface. This is the main action and it can be performed by clicking on the line.
 When the user views the SQL request with no result, a warning is displayed: "This SQL query has no result."
-- Export. Executes the query, and downloaded the result in CSV format.
 - Edit. The user can edit a query as often as necessary, to refine it and get better results.
 - Delete. Once a query is not used anymore (or simply because it does not work), you can delete it by clicking this button and confirming your choice.
 After clicking on _Delete_, a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" 
