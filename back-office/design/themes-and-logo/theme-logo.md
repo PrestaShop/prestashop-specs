@@ -34,7 +34,7 @@ In the menu there are 3 tabs:
 
 ## Adaptation to Right-to-Left languages
 
-This section appears if i have language who support RTL on my store \(like Arabic or Hebrew\) even if it’s not the language selected.
+This section appears if I have RTL languages on my store, like Arabic or Hebrew, even if they are not the default language selected.
 
 You can select a theme and generate a RTL stylesheet.
 
