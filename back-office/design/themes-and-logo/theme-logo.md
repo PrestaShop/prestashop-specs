@@ -3,8 +3,6 @@
 
 _As a merchant, I want to be able to set up my store's look._
 
-This page refers to the issue: \#10576 
-
 The page can have extra sections if:
 
  - several themes are installed;<br>
