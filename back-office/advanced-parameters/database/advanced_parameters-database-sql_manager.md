@@ -38,7 +38,7 @@ When clicking on it, three options are displayed:
 
 1) Refresh list
 
-After clicking on it, the page is reloaded. Sorts and searches are keeped.
+After clicking on it, the page is reloaded. Sorts and searches are kept.
 
 2) Show SQL query
 
