@@ -139,7 +139,7 @@ On the bottom left, the "List of MySQL Tables" gives the user a list of all the 
 
 #### Multistore behavior
 
-This page has no shop association block. In this case, the sql query is added for all shops, no matter the context selected.
+This page has no shop association block. By default, the SQL query is added for all shops, no matter the context selected.
 
 To inform the merchants of this behavior, an information message is displayed on this page: "Note that this feature is available in all shops context only. It will be added to all your stores." (see issue [#19422](https://github.com/PrestaShop/PrestaShop/issues/19422))
 
