@@ -5,7 +5,12 @@ _As a merchant, I want to be able to set up my store's look._
 
 This page refers to the issue: \#10576 
 
-The page can have extra sections if I have many themes installed, if I enable multistore feature, if I have languages who needs RTL features or if I have MBO module installed.
+The page can have extra sections if:
+
+ - several themes are installed;<br>
+ - the multistore feature is enabled;<br>
+ - RTL languages are enabled;<br>
+ - the MBO module is installed.
 
 
 ## Header
