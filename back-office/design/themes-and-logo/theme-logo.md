@@ -27,8 +27,11 @@ There are 4 buttons:
 
 In the menu there are 3 tabs: 
 
-- Theme and logo (current page) 
-- "Pages configuration" and "advanced customization" who come from the module Theme customization. IMPROVEMENT to do : If the module is disabled, hide those 2 pages from the menu \(on 1.7.5 it’s hidden\) Configuration of home page Advanced Personnalisation
+- "Theme and logo" (current page) 
+- "Pages configuration" (comes from the Theme Customization module)
+- "Advanced customization" (comes from the Theme Customization module)
+
+IMPROVEMENT to do: if the module is disabled, hide those 2 pages from the menu like in PrestaShop 1.7.5.x
 
 ## Adaptation to Right-to-Left languages
 
