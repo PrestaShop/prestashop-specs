@@ -21,7 +21,7 @@ There are 4 buttons:
 
 3. 'Recommended modules and services' button is displayed only if the MBO module is installed. Clicking on it displays a pop up with recommended modules. 
 
-4) Help =&gt; open the help section on the page \(this section appear on many different pages
+4. 'Help' button opens the contextual help panel of the page - this section appears on many different pages.
 
 ## Menu
 
