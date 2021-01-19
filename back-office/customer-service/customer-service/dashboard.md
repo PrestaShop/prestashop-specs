@@ -2,6 +2,8 @@
 
 ## MOCKUPS
 
+https://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593
+
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&scaling=min-zoom
 
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&scaling=min-zoom
