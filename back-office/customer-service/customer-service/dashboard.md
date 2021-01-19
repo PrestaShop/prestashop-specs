@@ -12,6 +12,8 @@ https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service
 
 https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&scaling=min-zoom
 
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&scaling=min-zoom
+
 ## MESSAGES NOTIFICATIONS
 
 When a new message is sent by a customer or a visitor, then it's displayed in the notifications (bell) in the header.
