@@ -170,6 +170,8 @@ It's possible to sort by email asc or desc and search by email
 
 The type of the messsage (contact) selected by the customer in the contact form is displayed.
 
+If the message is sent through the front-office: my account > order history > details > add a message, then there is no contact displayed & "--" is displayed.
+
 It's possible to sort by type asc or desc and search by selecting the type through the drop-down, where all contacts' title are displayed.
 
 5) Language
