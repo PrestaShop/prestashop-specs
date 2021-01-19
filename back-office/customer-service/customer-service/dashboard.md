@@ -118,6 +118,12 @@ After clicking on "Delete" button, the selected messages are deleted, a successf
 
 ### Listing
 
+The messages listed here, could be written through:
+
+- the order view page in the BO;
+- the order details page in the customer account in the FO;
+- the store's contact form.
+
 **The messages sent through the contact form in the front office are only listed here if the contact ('Webmaster' or 'Customer service', for example) has the "Save messages?" option enabled.**
 
 This setting can be changed in Shop parameters > Contact > Contact, when editing the contacts.
@@ -183,6 +189,8 @@ It's possible to sort by language asc or desc and search by selecting the langua
 6) Status
 
 The status of the message is displayed.
+
+It's possible to change the status of a message by clicking on the drop-down. After changing the status, a successful message is displayed "Update successful"
 
 It's possible to sort by status asc or desc and search by selecting the status through the drop-down, where all status are displayed.
 
