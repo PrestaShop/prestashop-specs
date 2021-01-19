@@ -17,7 +17,7 @@ The bulk action can enable and disable the status of the selection or delete the
 The configuration section is composed of 2 toggles:
 
 - **Enable PrestaShop's webservice**: Toggle
-When the toggle is disabled, the PrestaShop's webservice will disable for all the key. The saved keys keep their current status even if they are enabled. 
+When the toggle is disabled, the PrestaShop's webservice will be disabled for all the keys. The saved keys keep their current status even if they are enabled. 
 
 _Help text_: 
 Before activating the webservice, you must be sure to:
