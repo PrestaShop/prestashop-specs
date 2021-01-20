@@ -499,7 +499,7 @@ The table **list of the latest order status** is displayed composed:
 
 Below the list, a drop list of all the status available is displayed to update the current status through the **button Update Status** next to it. Updating the order status will trigger all the actions set by the order status.
 
-On the bottom of the bock, there is the **Order comment**. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press the save button to save it.
+On the bottom of the block, there is the **Order comment**. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press the save button to save it.
 
 2.  **Documents tab**
 
