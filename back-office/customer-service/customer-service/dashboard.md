@@ -369,9 +369,9 @@ In a multistore context, the options listed above have [checkboxes](https://gith
 
 When clicking on save, if all settings have well been saved, then a successful message is displayed: "The settings have been successfully updated."
 
-If all IMAP fields are not filled and if you click on save, then the following information message is displayed: "IMAP configuration is not correct"
+If all IMAP fields are not filled and if the user click on save, then the following error notification is displayed: "Unable to save settings, please fill in all IMAP fields to configure your customer service options." in _Admin.Catalog.Notification_.
 
-If all IMAP fields are filled and if IMAP is not installed on the server, then the following information message is displayed after clicking on Save: "imap is not installed on this server"
+If all IMAP fields are filled and if IMAP is not installed on the server, then the following warning notification is displayed after clicking on Save: "IMAP could not be installed on the server, check your configuration and try again."
 
 ## Sync
 
