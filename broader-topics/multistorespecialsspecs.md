@@ -33,6 +33,8 @@ Display an information message on these pages: "Note that this page is available
 The page is displayed only when a specific shop or all shops is selected<br/>
 Display an information message on these pages: "Note that this page is available in a single shop or in all shops context. Switch context to work on it."
 
+7) In all shops context, some fields don’t have specific settings drop-down as they can be configured only in all shops context and have the same value for all shops. <br/>
+
 ### List of pages for specific case 1) "Add new” actions only enabled in a specific shop context
 
 - Order > Order > Add new order
@@ -122,6 +124,47 @@ List of these fields:
 ### List of pages for specific case 6) The page is displayed only when a specific shop or all shops is selected
 
 - Catalog > Products > Add / edit product
+
+### List of pages & fields for specific case 7) In all shops context, some fields don’t have specific settings drop-down
+
+- Design > Images settings<br/>
+List of these fields: 
+  - Generate images based on one side of the source image
+  - Maximum file size of product customization pictures
+  - Product picture width
+  - Product picture height
+  - Generate high resolution images
+  
+- International > Localization > Localization<br/>
+List of these fields: 
+  - Time zone
+  - Language identifier
+  - Country identifier
+  
+- Shop parameters > General > General<br/>
+List of these fields: 
+  - Increase front-office security
+  - Enable multistore
+  
+- Shop parameters > Traffic & SEO > Referrers<br/>
+List of these fields: 
+  - Save direct traffic?
+  
+- Advanced parameters > Administration<br/>
+List of these fields: 
+  - Automatically check for module updates
+  - Check the coolie’s IP address
+  - Lifetime of front office cookies
+  - Lifetime of back office cookies
+  
+- Advanced parameters > Team > Employees<br/>
+List of these fields: 
+  - Memorize the language used in admin panel forms
+  - Password regeneration
+  
+- Advanced parameters > Database > SQL Manager<br/>
+List of these fields: 
+  - Select your default file encoding
 
 ### Other pages with specific behaviors
 

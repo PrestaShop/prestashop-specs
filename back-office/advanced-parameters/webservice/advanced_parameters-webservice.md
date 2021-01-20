@@ -82,6 +82,7 @@ If I select all shops as context, then the keys created in Shop A, Shop B and Sh
 The configuration section is composed of 2 toggles:
 
 - **Enable PrestaShop's webservice**: Toggle
+
 When the toggle is disabled, the PrestaShop's webservice will disable for all the keys. The saved keys keep their current status even if they are enabled. 
 
 _Help text_: 

@@ -205,7 +205,6 @@ The user can close the information message. The message is closed only for the s
 -  Advanced Parameters > Administration
 -  Advanced Parameters > Email
 -  Advanced Parameters > Team > Employees
--  Advanced Parameters > Database > SQL Manager
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
@@ -267,7 +266,6 @@ Next to each shop name, there is a mention:
 -  Advanced Parameters > Administration
 -  Advanced Parameters > Email
 -  Advanced Parameters > Team > Employees
--  Advanced Parameters > Database > SQL Manager
 -  Advanced Parameters > Database > Backup
 -  Advanced Parameters > Logs
 -  Advanced Parameters > Webservice
