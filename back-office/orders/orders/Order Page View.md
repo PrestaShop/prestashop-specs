@@ -400,7 +400,7 @@ There is only one possible price per product even if they are from different inv
 Deleting one or several products is very easy: a remove icon is available to remove one or several quantities of a paid product. 
 
 When a product is removed from the order, a notification is displayed: "The item was successfully removed." in Admin.Notifications.Error.
-Then the product list is refreshed behind the loading spinner to check if any gift product has to be removed as well. The user is redirected to the page where the user removed the product. If the removed product was on the last page, the user is redirected to the second-last page.
+Then the product list is refreshed behind the loading spinner to check if any gift product has to be removed as well. The user is redirected to the page where the user was when the product has been removed. If the removed product was on the last page, the user is redirected to the second-last page.
 
 Current bug: if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.
 
