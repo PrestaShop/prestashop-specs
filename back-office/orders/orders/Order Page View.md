@@ -249,7 +249,7 @@ The button to transform a guest into a customer is removed. The feature is still
 Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
 Editing an address creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.
 
-[Edit/Change Adresse behaviors](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
+[Edit/Change Addresse behaviors](https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress)
 
 **The edit address redirects to the edit address page of the selected address**. After saving any edit of the fields of the address form, **the user is redirected to the order** that he was editing in the first place.
 
