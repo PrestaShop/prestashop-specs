@@ -545,7 +545,7 @@ After adding, the user can display **all the details of the transaction by press
 
 When the status accepted (waiting for payment) you can change the currency of the order with a drop list.
 
-If the shop has different currencies, a droplist of the shop's currencies is displayed to change the order currency. The change rate is based on the latest conversion rate save by the shop.
+If the shop has different currencies, a droplist of the shop's currencies is displayed to change the order currency. The change rate is based on the latest conversion rate saved in the shop.
 
 ## VI. Sources
 
