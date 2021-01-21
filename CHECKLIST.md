@@ -27,7 +27,7 @@ Finally, **the key element is the user story**. Feel free to add it whenever it 
 
 - [ ] **Empty states**, appears only when there is no value, they should be specified if there are any.
 
-- [ ] **Components**, describe the nature of the feature: table, drop-down selector, input field, button, etc.
+- [ ] **Components**, describe the [feature type](https://devdocs.prestashop.com/1.7/development/components/): table, drop-down selector, input field, switch button, etc. preferably right after the name of the concerned feature.
 
 - [ ] **Default status**, indicate its default state: enable, disable, already filled, selected, etc.
 
