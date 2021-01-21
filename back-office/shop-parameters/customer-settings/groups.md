@@ -106,7 +106,7 @@ Merchants can **set a discount per-category for this given group of customers**.
 
 Two buttons at the top right-hand corner allow to 'Expand all' or 'Collapse all'. Clicking on 'Expand all' deploys all categories and subcategories and turns this button into 'Collapse all'. Clicking 'Collapse all' displays only the parent category, 'Home' by default.
 
-Only products that have the selected category as their default category should be affected by the discount. The expected behavior of a category discount works as followed: it prevails over any discount a member of this group could benefit from in this category. See notifications below.
+Only products that have the selected category (or any subcategory of the selected category) as their default category should be affected by the discount. The expected behavior of a category discount works as followed: it prevails over any discount a member of this group could benefit from in this category. See notifications below.
 
 An information notification id displayed: `Caution: The discount applied to a category does not stack with the overall reduction but instead replaces it.` in `Admin.Shopparameters.Notification`. Right below is a warning notification displayed: `Only products that have this category as the default category will be affected.` in `Admin.Shopparameters.Notification`.
 
