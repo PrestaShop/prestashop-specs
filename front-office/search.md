@@ -24,7 +24,7 @@ A search bar is available right below to allow visitors to try another query: `S
 
 ## 404 pages 
 
-If the visitor reaches an available page, the page should display the following message:
+If the visitor reaches an unavailable page, the page should display the following message:
 
 `This page could not be found` in `Shop.Theme.Global`</br>
 `Try to search our catalog, you may find what you are looking for!` in `Shop.Theme.Global`
