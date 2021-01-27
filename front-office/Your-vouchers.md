@@ -13,7 +13,7 @@ On the table below are listed all the different cases.
 | 5     | No   | No          | No                | No                | Yes                       |
 | 6     | Yes  | No          | Yes               | No                | No                        |
 
-When there is no voucher for the customer, the page displays: "You do not have any vouchers." 
+When there is no voucher for the customer, the page displays a notification: `You do not have any vouchers.` in `Shop.Notifications.Warning`.
 
 If the customer has vouchers, it is listed on the table with the following information:
 - The voucher's Code if there is any. It leaves a blank if it is a voucher with no code.
