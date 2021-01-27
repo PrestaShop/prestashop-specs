@@ -16,7 +16,7 @@ On the table below are listed all the different cases.
 When there is no voucher for the customer, the page displays: "You do not have any vouchers." 
 
 If the customer has vouchers, it is listed on the table with the following information:
-- the voucher's Code if there is any. It leaves a blank if it is a voucher with no code.
+- The voucher's Code if there is any. It leaves a blank if it is a voucher with no code.
 - The Description of the voucher. It stands for the name of the cart rule.
 - The Quantity available for the customer.
 - The voucher's Value.  
