@@ -129,7 +129,7 @@ When you save, if your category name contains an invalid character, an error mes
   Categ 2 level 1 position 3             
   Categ 2-2 level 2 position 1          
   Categ 2-1 level 2 position 2           
-If the list has elements with the same name, the lists displays the all the categaries with their ID. (ID - Name_category).
+If the list has elements with the same name, the lists displays all the categories with their ID. (ID - Name_category).
 * **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”      
 You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.       
 When there is already an image, you can click only on the frame with the “+” to open the selector.
