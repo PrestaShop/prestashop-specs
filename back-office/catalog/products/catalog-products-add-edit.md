@@ -117,7 +117,7 @@ Categ 2-1 level 2 position 2
 On the left of the category's name is display a checkbox, if it is checked then the category is associated to the product. The last category can't be removed unchecked.
 * **Main category**: Radio button to select the main category of the product. There can only be one.           
 The main category is the one that will be in the product URL, before the product name and in the breadcrumb in front-office you have all parent categories up to the main one.
-If the category flaged as main category is unchecked in the tree or removed from the associated category, the associated category with the hightest position on the tree will be assgned automaticaly the main categoty.
+If the category flagged as the main category is unchecked in the tree or removed from the associated category, the associated category with the highest position on the tree will automatically be assigned as the main category.
 * **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 * **New category name**: Allows to create quickly a new category.       
 The name will be the same in all languages.        
