@@ -4,7 +4,7 @@ A voucher is displayed if it follows specific restrictions:
 
 On the table below are listed all the different cases.
 
-| Cases | Code | Highlighted | Group restriction | User resctriction | Is Visible Voucher page ? |
+| Cases | Code | Highlighted | Group restriction | User restriction | Available in the FO vouchers page? |
 |-------|------|-------------|-------------------|-------------------|---------------------------|
 | 1     | X    | Yes         | X                 | X                 | Yes                       |
 | 2     | X    | X           | X                 | Yes               | Yes                       |
