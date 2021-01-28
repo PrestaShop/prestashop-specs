@@ -1,32 +1,45 @@
-# **SPECIFICATIONS -THEME & LOGO > THEME & LOGO PAGE**
+# SPECIFICATIONS - DESIGN > THEME & LOGO > THEME & LOGO
 
 
 _As a merchant, I want to be able to set up my store's look._
 
-**44 \| Design &gt; Theme & Logo &gt; Theme & Logo**
+The page can have extra sections if:
 
-This page refers to the issue: \#10576 The page can have extra sections if I have many themes installed, if I enable multi-store feature if I have languages who needs RTL features or if I have MBO module installed.
+ - several themes are installed;<br>
+ - the multistore feature is enabled;<br>
+ - RTL languages are enabled;<br>
+ - the MBO module is installed.
 
 
-## Basic state
+## Header
 
-### Header
+There are 4 buttons: 
 
-There are 4 button: Add new theme bring to =&gt; Design &gt; Theme & Logo &gt; Add new theme Export current theme =&gt; Generate a zip of the current theme used at the root of theme file Recommended modules =&gt; pop up recommended modules Help =&gt; open the help section on the page \(this section appear on many different pages
+1. 'Add new theme' button redirects to the Design > Theme & Logo > Add new theme page.
 
-### Menu
+2. 'Export current theme' button generates a zip file of the current theme used at the root of the theme file.
 
-In the menu there are 3 elements: Theme and logo page \(current page\) And those 2 pages who come from the module Theme customization. IMPROVEMENT to do : If the module is disabled, hide those 2 pages from the menu \(on 1.7.5 it’s hidden\) Configuration of home page Advanced Personnalisation
+3. 'Recommended modules and services' button is displayed only if the MBO module is installed. Clicking on it displays a pop up with recommended modules. 
 
-### Theme preview
+4. 'Help' button opens the contextual help panel of the page - this section appears on many different pages.
 
-This block show preview of the theme and if i click on it, it redirect me to my website
+## Menu
 
-### Choose layouts button
+In the menu there are 3 tabs: 
 
-After click on choose layouts button, we end up on a different page: Design &gt; Theme & Logo &gt; Choose layouts
+- "Theme and logo" (current page) 
+- "Pages configuration" (comes from the Theme Customization module)
+- "Advanced customization" (comes from the Theme Customization module)
 
-### Logo and favicons
+IMPROVEMENT to do: if the module is disabled, hide those 2 pages from the menu like in PrestaShop 1.7.5.x
+
+## Adaptation to Right-to-Left languages
+
+This section appears if I have RTL languages on my store, like Arabic or Hebrew, even if they are not the default language selected.
+
+You can select a theme and generate a RTL stylesheet.
+
+## Logo 
 
 IMPROVEMENT to do : when i import a logo it’s not resized it must be to avoid the breaking of the page
 
@@ -39,39 +52,41 @@ IMPROVEMENT to do : when i import a logo it’s not resized it must be to avoid 
 All logo images should be imported via the upload field, with the placeholder _Choose file(s)_ and the CTA _Browse_, all being clickable items opening the user's local files. Available logo images extensions are: .gif, .jpg, .jpeg, .jpe, .png, .svg.
 
 
-### Visit the theme catalog button
+### Multistore behavior
 
-The button “Visit the theme catalog” redirect to this link
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19375) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19327), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md)
 
+If I am in an all shops context or in a group of shops context, an information notification is displayed: `You must select a shop from the above list if you wish to choose a theme.`.
 
-## Theme installed
+The multistore yes / no toggle allowing to select all / unselect all checkboxes should be removed.
 
-If i import a theme and if i select a shop a section appear on the bottom of the page after hover, a button use this theme appear,on click, the current theme is switched with the one selected and the preview of theme +used change with the theme chosen.
+## My themes 
 
-If i don’t select a shop and i select the group of shop this appear instead of the theme section:
+All the themes imported are displayed here with a preview.
 
+A button "use this theme" is displayed for themes not currently used. After clicking on it, a modal is displayed: "Use this theme?". A button "Cancel" allows canceling the switch of the theme. A button "Yes" allows switching the theme. The current theme is switched with the one selected and "My current theme" is displayed for the theme used.
 
-## Multistore state
+A button "delete" is displayed for themes not currently used. After clicking on it, a modal is displayed: "Delete this theme?". A button "Cancel" allows canceling the deletion. A button "Yes" allows confirming the deletion. A message "Successful deletion." is displayed to confirm the deletion.
 
-If i activate multi store, multi store section will appear only if i click on a shop\(here: derek ortega or testshop\) or i select the group of shop\(here: default group\) \(except all shops\)
+### Multistore behavior
 
-1\) Selection: As said before i selected the shop “Derek Ortega” \(i could also select the group of shop but not “All shops”\) 2\) Multi store section: Multi store section appear on the page Theme & logo, If i click on yes it will check all checkbox of section 4 \(including logo/invoice&email logos/ favicons\) If i click on no, it will uncheck all checkbox of the section 4 and disable the add file button as seen section 5 \(including lbutton of add logo/invoice&email logos/ favicons\)
+The button "use this theme" is enabled only in a specific shop context.
 
+If "all shops" or a group of shops is selected as context, this button is disabled.
 
-## Debug mode
+### Visit the theme catalog 
 
-3\) Reset to defaults button: The button “reset to defaults” appear next to “choose layouts” button It allows to rest to default all modification made on the page choose layouts
+The button “Visit the theme catalog” redirects to this link: https://addons.prestashop.com/en/3-templates-prestashop?utm_source=back-office&utm_medium=theme-button&utm_campaign=back-office-EN&utm_content=download
 
+### Choose layouts 
 
-## RTL state
+Clicking the "Choose layouts" button opens a different page: Design > Theme & Logo > Choose layouts. Saving redirects me to the general Design > Theme & Logo page and displays a success notification: `Successful update.`.
 
-If i have language who support RTL on my store \(like Arabic or Hebrew\) even if it’s not the language selected, This section appear at the bottom of the page :
+### Reset to defaults
 
-You can select a theme and generate a RTL stylesheet.
+The button “reset to defaults” appear next to the “choose layouts” only if the debug mode is enabled.
+It resets all modifications made on the Design > Theme & Logo > Choose layouts page.
 
-If you have Multi Store + RTL language you have a yes/no button and checkbox next to “theme to adapt” and “generate rtl stylesheet” If you check no on multistore the next to element will be disabled but if you check yes on multistore or if you check the checkbox, elements will be enabled.
-
-## MBO
+### Live from PrestaShop addons
 
 If MBO module is installed, on the footer this section will appear. Always on the bottom of the page
-
