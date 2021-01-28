@@ -3,6 +3,16 @@
 
 _As a merchant, I want to be able to group my customers._
 
+## Summary
+
+1. [Customers groups listing](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#groups-listing)
+2. [Customers groups options](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#default-groups-options)
+3. [Customers groups multistore behavior](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#multistore-behavior)
+4. [Customers groups add form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#add-form)
+5. [Customers groups edit form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#edit-form)
+6. [Customers groups view form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#view-form)
+
+
 ## Information notification
 
 By default, a blue information notification is displayed on the top of the page:
@@ -64,7 +74,6 @@ Users should click 'Save' to update their default groups' settings. If all setti
 ### Specific shop or group context
 
 In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19366).
-
 
 ### All shops context
 
@@ -135,7 +144,6 @@ Merchants can find all settings in this part:
 - Price display method<br>
 - Show prices
 
-
 ### Current category discount
 
 A warning notification, _None_, is displayed by default if the customers group has no category discount. If there is one or several, it takes the form of a listing displaying the following information:
@@ -143,7 +151,6 @@ A warning notification, _None_, is displayed by default if the customers group h
 - Category<br>
 - Discount
 
- 
 ### Members of this customer group
 
 A wording is supposed to explicit how group members are displayed: `Limited to the first 100 customers.` and `Please use filters to narrow your search.` in `Admin.Shopparameters.Feature`.
