@@ -30,21 +30,85 @@ At first, the SQL Manager page displays 2 messages:
 
 "When saving the query, only the "SELECT" SQL statement is allowed."
 
-### SQL Manager List
+### SQL Manager
 
-Below the messages, the page displays the SQL Manager list with the request's ID, SQL query name, SQL query, and the actions columns.
-The request's actions allow users to download the request's result into a CSV file, view the request's result on the page, delete the request, and edit it.
-Actions can be:
+#### Settings wheel
+
+When clicking on it, three options are displayed:
+
+1) Refresh list
+
+After clicking on it, the page is reloaded. Sorts and searches are kept.
+
+2) Show SQL query
+
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+
+- Close: After clicking on it, the modal is closed
+- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+3) Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+#### Bulk actions
+
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected SQL queries (using the checkboxes), or query - the button is clickable starting from one selected item. A user can:
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes beginning each row of the listing.
+- Delete selected: This button will delete the selected sql queries. 
+After clicking on "Delete selected", a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected webservice keys are deleted, a successful message is displayed "The selection has been successfully deleted."
+
+#### Columns
+
+The page displays the SQL Manager list with the following columns:
+
+1) ID
+
+It's possible to sort by id asc or desc and search by id.
+
+2) SQL query name
+
+It's possible to sort by SQL query name asc or desc and search by SQL query name.
+
+3) SQL query 
+
+It's possible to sort by SQL query asc or desc and search by SQL query.
+
+4) Actions 
+
 - Export. Executes the query, and downloaded the result in CSV format.
-- View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface.
-
-When the user views the SQL request with no result, a warning is displayed: "This SQL query has no result."
+- View. Executes the query, and get the results displayed in an HTML table, right within the PrestaShop interface. This is the main action and it can be performed by clicking on the line.
+When the user views the SQL request with no result, an information message is displayed: "This SQL query has no result."
 - Edit. The user can edit a query as often as necessary, to refine it and get better results.
 - Delete. Once a query is not used anymore (or simply because it does not work), you can delete it by clicking this button and confirming your choice.
+After clicking on _Delete_, a modal with title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" 
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
+
+#### Multistore behavior
+
+By default, a SQL query affects all shops. Since it can't be associated with any specific shop, all the SQL queries listed on this page are used in an all shops context.
 
 ### Settings
 
-Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be.
+Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be through the drop-down.
+
+#### Multistore behavior
+
+In a specific shop context or in a group context, the "default file encoding" doesn't have checkbox and is disabled with an information message displayed when the user hovers the drop-down: "You can modify this parameter in all shops context only. Switch context to enable it." (see issue [#19356](https://github.com/PrestaShop/PrestaShop/issues/19356))
+
+In an all shops context, the the "default file encoding" doesn't have specific settings drop-down.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them
 
 ### Add new SQL query
 
@@ -72,3 +136,11 @@ The list of unauthorized request types:
 Each keywords are checked in the SQL query before saving it.
 
 On the bottom left, the "List of MySQL Tables" gives the user a list of all the available database tables. He/she should select a table to make PrestaShop display all its attributes and types in the list on the right, then click "Add attribute to SQL query" or "Add table name to SQL query" to send its attribute name/table name into the SQL query field.
+
+#### Multistore behavior
+
+This page has no shop association block. By default, the SQL query is added for all shops, no matter the context selected.
+
+To inform the merchants of this behavior, an information message is displayed on this page: "Note that this feature is available in all shops context only. It will be added to all your stores." (see issue [#19422](https://github.com/PrestaShop/PrestaShop/issues/19422))
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block

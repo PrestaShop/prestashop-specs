@@ -116,8 +116,10 @@ Translations are retrieved from a list of sources:
 
 1. The core: XLF translation files for the chosen language, stored in `app/Resources/translations/{locale_code}`, one per domain.
 2. The module: XLF translations files for the chosen language, stored within the module in the `translations/{locale_code}` directory, one per domain.
-4. The module's legacy files: PHP translation files for the chosen language, stored within the module in the `translations/` directory, one per language code.
-5. The database: if translations were customized previously through this interface.
+3. The module's legacy files: PHP translation files for the chosen language, stored within the module in the `translations/` directory, one per language code.
+4. The database: if translations were customized previously through this interface.
+
+If the same wording is translated in the core, the module files and the database, the database translation is shown.
 
 #### Email translations (subject)
 
@@ -132,6 +134,23 @@ After saving the translations, the email templates must be regenerated for the t
 #### Other translations
 
 The behavior is exactly like "back office translations", but using only the domain called **"messages"**.
+
+
+## Workflow
+
+Each source mentionned in the previous parts represents a level in the translation workflow:
+
+1. the default catalog is the translation basis;
+2. it is overwritten by the translation files when downloaded through a localization pack or this interface ('Add / Update a language' section);
+3. it is overwritten by the database if the translation has been customized, still through this interface ('Modify translations' section).
+
+It works the same for the modules that have their own translation files:
+
+1. the default catalog is the translation basis;
+2. it is overwritten by the translation files when downloaded through a localization pack or this interface ('Add / Update a language' section);
+3. it is overwritten by the module's translation files, cf _1.7.8_ issue [#14968](https://github.com/PrestaShop/PrestaShop/issues/14968).
+4. it is overwritten by the database if the translation has been customized, still through this interface ('Modify translations' section).
+
 
 ## Export translations section
 
