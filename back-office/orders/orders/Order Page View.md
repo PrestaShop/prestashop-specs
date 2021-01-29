@@ -527,7 +527,7 @@ The edit shipping button on each row can edit the information in a pop in. You c
 
 4.  **Merchandising returns tab**
 
-The merchandise return tab lists **the date, the tracking number, the type, Carrier (which is the return status), and the quantity**. When the merchandise return is disabled the tab displayed: "no merchandise returned yet".
+The merchandise return tab lists **the date, the type, the carrier (= return status), and the number (= return reference number)**. When the merchandise return is disabled the tab displayed: "no merchandise returned yet".
 
 5.  **Payment panel**
 
