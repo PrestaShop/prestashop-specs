@@ -188,7 +188,7 @@ Checkboxes are displayed in a specific shop context and in a group context <br/>
 They are not displayed in all shops context <br/>
 They are displayed before each fields / toggles / parameters unless if an exception is defined in the specs of the page<br/>
 When checkboxes are not selected, the fields or toggles are disabled.
-If a boxe was checked in a specific shop or group context, if I uncheck it and save, then the parameter takes the value defined for the group if configured or the value defined in all shops context.
+If a box was checked in a specific shop or group context, if I uncheck it and save, then the parameter takes the value defined for the group if configured or the value defined in all shops context.
 
 Checkboxes allow:
 - to select one or many fields / toggles
