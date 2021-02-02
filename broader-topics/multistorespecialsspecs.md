@@ -54,6 +54,7 @@ Display an information message on these pages: "Note that this page is available
 - Shop parameters > Search > Search > Add new alias
 - Shop parameters > Search > Tags > Add new tag
 - Advanced parameters > Team > Profiles > Add new profile
+- Advanced parameters > Team > Employees > Add / edit > Only for superadmin profile
 - Advanced parameters > Database > SQL Manager > Add new SQL query
 - Advanced parameters > Database > DB Backup > Create a new backup
 
