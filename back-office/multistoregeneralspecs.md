@@ -163,6 +163,7 @@ If the merchant unselect all the checkboxes (all the shops), then an error messa
 - Shop parameters > Contact > Stores > Add / edit
 - Shop parameters > Traffic & SEO > Referrers > Add / edit
 - Advanced parameters > Webservice > Add / edit
+- Advanced parameters > Team > Employees > Add / edit > Only for the default profiles (Logistician, Commercial, Translator) and the profiles created by the user.
 
 
 ### Actions in the lisitngs (grids)
