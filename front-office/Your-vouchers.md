@@ -1,6 +1,6 @@
 ## Rules of the displayed vouchers
 
-A voucher is displayed if it follows specific restrictions:
+Vouchers are displayed in the customer account in the front-office, according to their parameters:
 
 On the table below are listed all the different cases.
 
