@@ -1,4 +1,4 @@
-## Rules of the displayed vouchers
+## Rules of the vouchers displayed in the customer's account in front-office
 
 Vouchers are displayed in the customer account in the front-office, according to their parameters:
 
