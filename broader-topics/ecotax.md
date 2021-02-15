@@ -55,8 +55,11 @@ Earnings for the merchant: 12 - (2,00 + 2) = 8,00€
 ### If there is a discount, it should be applied on the product price ecotax excluded
 
 Considering the following informations:
-A - Produt price tax incl with ecotax: 10€
-B - Ecotax tax incl: 2€
+
+A - Produt price tax incl with ecotax: 12€
+
+B - Ecotax tax incl: 2,40€
+
 C - Rebate: 90%
 
-The final price will be: C X (A - B) + B = 0.1 X (10 - 2) + 2 = 2.8
+The final price will be: C X (A - B) + B = 0.1 X (12 - 2,40) + 2,40 = 3,36€
