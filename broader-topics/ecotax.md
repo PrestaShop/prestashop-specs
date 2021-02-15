@@ -62,4 +62,4 @@ B - Ecotax tax incl: 2,40€
 
 C - Rebate: 90%
 
-The final price will be: C X (A - B) + B = 0.1 X (12 - 2,40) + 2,40 = 3,36€
+The final price will be: C * (A - B) + B = 0,1 * (12 - 2,40) + 2,40 = 3,36€
