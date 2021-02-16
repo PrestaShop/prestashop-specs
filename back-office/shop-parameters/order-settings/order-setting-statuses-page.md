@@ -10,8 +10,23 @@ The Statuses page has:
 
 ## List
 
+*   **Bulk actions drop-down**
+
+This dropdown is enabled only if at least one order status is selected, otherwise it's disabled.
+
+There is 1 option:
+
+1) Delete selection
+
+After clicking on it, a modal is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected order statuses are deleted, a successful message is displayed "The selection has been successfully deleted."
+
 The **order statuses** list displays all the order statuses with their :
 
+*   **Checkbox:** The checkbox isn't displayed for the default order status and the status added by modules.
 *   **Id,**
 *   **name with their color label,**
 *   **icon (to be removed after migration since it is not used anymore),**
@@ -19,11 +34,27 @@ The **order statuses** list displays all the order statuses with their :
 *   **in transit,**
 *   **invoice,**
 *   **email template,**
-*   **edit button.**
+*   **Actions**
+
+There are two actions:
+
+- Edit, the main one:
+
+After clicking on it, the order status is opened in the same tab.
+This action can also be performed by clicking on the line.
+
+- Delete, the second one:
+
+This option isn't displayed for the default status and the status added by modules.
+
+After clicking on it, a modal is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
+
 
 ![Order statuses list](/img/list%20order%20statuses.png)
-
-The default status or the status added by modules can’t be deleted.
 
 ### Multistore behavior
 
@@ -87,9 +118,47 @@ So all order status should be displayed in the listing, be it an all shops, a gr
 
 ## List
 
-The **return statuses** list displays all the return statuses with their **id, name with their color label and edit button**. 
+*   **Bulk actions drop-down**
 
-By default, PrestaShop has the following return statuses: 
+This dropdown is enabled only if at least one order return status is selected, otherwise it's disabled.
+
+There is 1 option:
+
+1) Delete selection
+
+After clicking on it, a modal is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected order return statuses are deleted, a successful message is displayed "The selection has been successfully deleted."
+
+The **order return statuses** list displays all the return statuses with their:
+
+*   **Checkbox:** The checkbox isn't displayed for the default order return status.
+*   **Id,**
+*   **name with their color label,**
+*   **Actions**
+
+There are two actions:
+
+- Edit, the main one:
+
+After clicking on it, the order retunr status is opened in the same tab.
+This action can also be performed by clicking on the line.
+
+- Delete, the second one:
+
+This option isn't displayed for the default status and the status added by modules.
+
+After clicking on it, a modal is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the message is deleted and a successful message is displayed "Successful deletion."
+
+## Default order return statuses
+
+By default, PrestaShop has the following order return statuses: 
 *   id:1	Waiting for confirmation	
 *   id:2	Waiting for package	
 *   id:3	Package received	
@@ -106,11 +175,11 @@ It is possible to research the return status by ID or Name.
 
 ## Add / edit order return status
 
-**Adding or Editing a return status** allows the user to add or edit **the status name** input text on any back-office language and **the label color** with a color picker or directly into the input text with the hexadecimal code. 
+**Adding or Editing an order return status** allows the user to add or edit **the order return status name** input text on any back-office language and **the label color** with a color picker or directly into the input text with the hexadecimal code. 
 
 ![Add new return status](/img/creating%20an%20return%20status.png)
 
-**The return status can be displayed on:**
+**The order return status can be displayed on:**
 *   the Order Follow page in Front Office customer account,
 *   the Order View page in Back-Office on merchandise return tab, 
 *   the Merchandise Returns List Page,
