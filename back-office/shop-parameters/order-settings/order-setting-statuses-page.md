@@ -8,9 +8,9 @@ The Statuses page has:
 
 # **Order statuses**
 
+## List
+
 The **order statuses** list displays all the order statuses with their :
-
-
 
 *   **Id,**
 *   **name with their color label,**
@@ -25,13 +25,24 @@ The **order statuses** list displays all the order statuses with their :
 
 The default status or the status added by modules can’t be deleted.
 
+### Multistore behavior
+
+The whole listing page can be displayed only in all shops context, the others contexts are not displayed in the header.
+
+If the user was on another page in a specific shop context or in a group context, the all shops context is automatically selected when he/she arrives on the page.
+
+An information message is displayed at the top of the page: "Note that this page is available in all shops context only, this is why your context has just switched." (_See issue [#19495](https://github.com/PrestaShop/PrestaShop/issues/19495)_)
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md
+
+## Add / edit order status
+
 When **adding a new order status or editing an order status**, the user can fulfill the information below:
 *   **Status name**, mandatory information
 *   **Icon**. (to be removed after migration since it is not used anymore),
 *   **Label color** with a color picker or write the hexadecimal code
 
 The user can customize the order status actions by checking the different options below:
-
 
 *   **Consider the associated order as validated.** If enabled, this status marks all associated orders as "paid"
 *   **Allow a customer to download and view PDF versions of their invoice.** If enabled, the invoice can be downloadable in the  Order History page in the Front Office.
@@ -61,7 +72,20 @@ Note that it is not possible to delete default order statuses such as Payment ac
 
 ![Order status form](/img/edit%20the%20order%20status.png)
 
+
+### Multistore behavior
+
+As the Add/Edit form does not display any shop association block, **when merchants add or edit an order status, it is added to all shops or edited for all shops** - no matter the context selected. 
+
+An information message should be displayed at the top of the page to inform the user of this behavior: "Note that this feature is available in all shops context only. It will be added to all your stores." (_See issue [#19496](https://github.com/PrestaShop/PrestaShop/issues/19496)_)
+
+So all order status should be displayed in the listing, be it an all shops, a group, or a specific shop context.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md
+
 # **Return status**
+
+## List
 
 The **return statuses** list displays all the return statuses with their **id, name with their color label and edit button**. 
 
@@ -80,6 +104,8 @@ It is possible to research the return status by ID or Name.
 
 **The first return status generated** in the return workflow is **“Waiting for confirmation”** when the customer creates a return demand in the Front Office. 
 
+## Add / edit order return status
+
 **Adding or Editing a return status** allows the user to add or edit **the status name** input text on any back-office language and **the label color** with a color picker or directly into the input text with the hexadecimal code. 
 
 ![Add new return status](/img/creating%20an%20return%20status.png)
@@ -94,6 +120,15 @@ It is possible to research the return status by ID or Name.
 
 Note that it is not possible to delete default return statuses such as Waiting for confirmation, Package received, etc. These PrestaShop return statuses can only be modified.
 
+### Multistore behavior
+
+As the Add/Edit form does not display any shop association block, **when merchants add or edit an order return status, it is added to all shops or edited for all shops** - no matter the context selected. 
+
+An information message should be displayed at the top of the page to inform the user of this behavior: "Note that this feature is available in all shops context only. It will be added to all your stores." (_See issue [#19497](https://github.com/PrestaShop/PrestaShop/issues/19497)_)
+
+So all order status should be displayed in the listing, be it an all shops, a group, or a specific shop context.
+
+:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md
 
 # **Specific cases**
 
@@ -115,18 +150,11 @@ For the order history page in FO, it will stay transparent for the user, as the 
 For the customer page, this improvement fixes the exception while having no other impact on the page.
 
 
-
-
-
 **MISSING PART OF SPECIFICATIONS TO BE COMPLETED**
-
-
 
 - Errors messages - In which cases there should be an error message ?
 - Multilanguage - Which fields are multilingual ?
-- Multistore - How should it work when multistore is enabled ?
 - Permissions - What should happen if I don’t have view, add, edit, delete right ?
-
 
 ACCEPTANCE TESTS
 check page on RTL
