@@ -13,7 +13,7 @@ The ecotax is subject to VAT.
 
 The ecotax can be toggled in the "Tax Options" section from the _International > Taxes_ page.
 Once enabled, a new drop-down is displayed containing all the tax rules, allowing the merchant to choose the VAT rate that will be applied on the ecotax.
-But this drop-down should rather be displayed on the product page as the ecotax VAT rate should be same as the VAT product rate (see improvement [#22827](https://github.com/PrestaShop/PrestaShop/issues/22827)).
+But this drop-down should rather be displayed on the product page (instead of _International > Taxes_ page) as the ecotax VAT rate should be same as the VAT product rate (see improvement [#22827](https://github.com/PrestaShop/PrestaShop/issues/22827)).
 If the ecotax is enabled, then a field "Ecotax (tax incl.)" is displayed in the Back Office's "add / edit product" page, so that the merchant can input the amount of included ecotax (tax included) in the product's price.
 However, ecotax only applies for physical products, so it should never be displayed for virtual products. 
 
