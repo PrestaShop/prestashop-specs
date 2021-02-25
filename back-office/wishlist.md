@@ -347,4 +347,4 @@ If the multistore feature is enabled and in the case of multi-shops in the same 
 
 If the multistore feature is enabled and in the case of multi-shops in the same group where the customers, the available quantity for sale and the orders are shared: 
 - even if there is a sharing of customers accounts and products quantity between the shops, the visitor will not share his wishlists: he will have specific wishlists according to the shop he is in. 
-- the statistics are global statistics: include data from shops belonging to the same group 
+-  the statistics table in the back office will be different depending on if  you are in shop A or shop B.
