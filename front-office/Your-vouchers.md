@@ -18,7 +18,7 @@ When there is no voucher for the customer, the page displays a notification: `Yo
 If the customer has vouchers, it is listed on the table with the following information:
 - The voucher's Code if there is any. It leaves a blank if it is a voucher with no code.
 - The Description of the voucher. It stands for the name of the cart rule.
-- The Quantity available for the customer.
+- The Quantity available for the customer. If the "Total available for each user" is reched or if the "Total available" is 0, the voucher is still displayed but with 0 in the quantity column
 - The voucher's Value.  
 It displays the value of the percentage (ex:20%), the amount (ex:50), "free shipping" if the vouchers is a free shipping voucher or the product gift's name ex: T-SHIRT IMPRIMÉ COLIBRI: Size - S)
 If the voucher is composed of differents cart rules' actions, it aggregates the values with "+" between them.  
