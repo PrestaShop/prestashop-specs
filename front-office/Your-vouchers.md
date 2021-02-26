@@ -4,14 +4,14 @@ Vouchers are displayed in the customer account in the front-office, according to
 
 On the table below are listed all the different cases.
 
-| Cases | Code | Highlighted | Group restriction | User restriction | Available in the FO vouchers page? |
-|-------|------|-------------|-------------------|-------------------|---------------------------|
-| 1     | X    | Yes         | X                 | X                 | Yes                       |
-| 2     | X    | X           | X                 | Yes               | Yes                       |
-| 3     | Yes  | No          | No                | No                | No                        |
-| 4     | No   | No          | Yes               | No                | Yes                       |
-| 5     | No   | No          | No                | No                | Yes                       |
-| 6     | Yes  | No          | Yes               | No                | No                        |
+| Cases | Code         | Highlighted | Group restriction | User restriction  | Available in the FO vouchers page? |
+|-------|--------------|-------------|-------------------|-------------------|------------------------------------|
+| 1     | Yes or No    | Yes         | Yes or No         | Yes or No         | Yes                                |
+| 2     | Yes or No    | Yes or No   | Yes or No         | Yes               | Yes                                |
+| 3     | Yes          | No          | No                | No                | No                                 |
+| 4     | No           | No          | Yes               | No                | Yes                                |
+| 5     | No           | No          | No                | No                | Yes                                |
+| 6     | Yes          | No          | Yes               | No                | No                                 |
 
 When there is no voucher for the customer, the page displays a notification: `You do not have any vouchers.` in `Shop.Notifications.Warning`.
 
