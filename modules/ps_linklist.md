@@ -9,12 +9,11 @@ Thus, this project aims at specifying the current and expected behaviour of the 
 ## SPECIFICATIONS
 
 ### Multisotre header
-The multistore header is displayed, the specifications of this component are described in the multistore general specs in back-office/multistoregeneralspecs.md
+The multistore header is displayed, the specifications of this component are described in the [multistore general specs](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#multistore-header-only-from-178) in back-office/multistoregeneralspecs.md
 
 ### Shop association block
 When a new block is added, the merchant can choose to which shop(s) the block will be associated thanks to the “shop association block” component.<br/>
-The specifications of this block are described in the multistore general specs in back-office/multistoregeneralspecs.md
+The specifications of this block are described in the [multistore general specs](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block) in back-office/multistoregeneralspecs.md
 
 ### Listing
-The position column is displayed only in a specific shop context.<br/>
-Changing the position of a block is possible only in a specific shop context.
+The specifications of this block are described in the [multistore general specs](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#actions-in-the-lisitngs-grids) in back-office/multistoregeneralspecs.md
