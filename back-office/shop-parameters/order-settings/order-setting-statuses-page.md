@@ -192,7 +192,7 @@ So all order status should be displayed in the listing, be it an all shops, a gr
 
 ## Return statuses
 
-![Order statuses list](/img/list%20order%20statuses.png)
+![Order statuses list](/img/list%20return%20statuses.png)
 
 ### Settings wheel
 
@@ -372,4 +372,3 @@ ACCEPTANCE TESTS:
 - check page on RTL
 - check page with multistore
 - check page with multilanguage
-
