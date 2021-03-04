@@ -167,18 +167,44 @@ If the merchant unselect all the checkboxes (all the shops), then an error messa
 
 ### Actions in the lisitngs (grids)
 
-**Delete action**
+#### Edit action
+When an element (category, attribute, feature ...) is edited, the modifications made are applied to all the stores with which the element is associated. This way, the content of the element is always the same for all the shops with which it is associated: we don't let to the user the possibility of having different content for an element associated with several shops.
 
-If an element (category, attribute, feature ...) is associated with several shops, then if I delete it from the listing, it will be disassociated for the selected context(s) and deleted if the all shops context is selected. 
+**User acceptance test**
+Given I am a merchant in a multistore context, when I am editing an element then I want the changes I made to be applied to all stores with which the element is associated.
 
-**Enable/disable**
+**Example**
+Let's suppose I have 2 shops: "Shop1" and "Shop2".
+I create a category called "Shirts" with the description "my awesome shirts" and I associate it with all stores through the shop association block.
+In the listing in all shops context I have:
+"Shirts" | "my awesome shirts" which is associated with "Shop1" and "Shop2"
+Finally I change my mind and in "Shop2", I want another description for this category: "my very awesome shirts"
+I have to edit the "Shirts" category and uncheck the "shop2" box, then I have to create a new "Shirts" category associated only with "Shop2" with my description "my very awesome shirts".
+Now, in the listing in all shops context I have:
+"Shirts" | "my awesome shirts" which is associated with "Shop1" 
+"Shirts" | "my very awesome shirts" which is associated with "Shop2"
 
+#### Delete action
+If an element (category, attribute, feature ...) is associated with several shops, then if I delete it from the listing, it will be disassociated for the selected context(s) and deleted if it is no longer associated with any store.
+
+**User acceptance test**
+Given I am a merchant in a multistore context, when I am deleting an element associated with several shops from the lisitng then I want it to be disassociated from the stores selected in the context.
+
+Given I am a merchant in a multistore context, when I am deleting an element associated with several shops from the lisitng then I want it to be deleted if it is no longer associated with any store.
+
+#### Enable/disable
 If an element (category, attribute, feature ...) is associated with several shops, then if I enable or disable it from the listing, the action will be done for the store(s) with which the item is associated and not only for the selected context. 
 When the user hovers the enable/disable icon, a tooltip is displayed "It will apply to all stores associated with this item" (**from 1.7.8**)
 
-**Position column (from 1.7.8)**
+**User acceptance test**
+Given I am a merchant in a multistore context, when I am enabling / disabling an element associated with several shops, then I want it to be enabled / disabled for all the stores it is associated with.
+
+#### Position column
 If the listing has a position column, then it should be displayed only in a specific shop context.
-Changing the position of a block is possible only in a specific shop context.
+Changing the position of an element is possible only in a specific shop context.
+
+**User acceptance test**
+Given I am a merchant in a multistore context, when I am in a specific shop context and if the listing has a position column, then I want to be able to change the position of the element
 
 
 ### Checkboxes
