@@ -33,6 +33,14 @@ If the store has only one payment method available, this payment method should b
 
 ## Final summary
 
+
+If the merchant has enabled the 'Final summary', a panel summaring the order is displayed below the paiment block.
+It displays the address of shipping and invoice, the shipping method and the product list of the cart.
+[TO BE COMPLETED](img)
+
+If the merchant has enabled the 'Final summary' and all the product in the cart are virtual product,
+it only displays the address of the invoice and the product list of the cart. 
+
 If the merchant has enabled the 'Final summary' and 'Offer recycled packaging' options in the Shop Parameters > Order Settings section of the back office, and if the customer has decided to receive his/her order in recycled packaging, it should be mentioned in the _Shipping Method_ block of the final summary: `Recycled packaging` (localized in `Shop.Theme.Checkout`). Cf. _to do_ #[16348](https://github.com/PrestaShop/PrestaShop/issues/16348) issue.
 
 
