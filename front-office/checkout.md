@@ -36,7 +36,8 @@ If the store has only one payment method available, this payment method should b
 
 If the merchant has enabled the 'Final summary', a panel summaring the order is displayed below the paiment block.
 It displays the address of shipping and invoice, the shipping method and the product list of the cart.
-[TO BE COMPLETED](img)
+
+![order final summary](/img/Order final summary.png)
 
 If the merchant has enabled the 'Final summary' and all the product in the cart are virtual product,
 it only displays the address of the invoice and the product list of the cart. 
