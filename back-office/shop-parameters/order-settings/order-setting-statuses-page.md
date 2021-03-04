@@ -149,7 +149,7 @@ If a sort and/or a search have been done, results should be kept when moving on 
 When **adding a new order status or editing an order status**, the user can fulfill the information below:
 *   **Status name**, mandatory information
 *   **Icon**. (to be removed after migration since it is not used anymore),
-*   **Color** with a color picker or write the hexadecimal code
+*   **Color** select the color through the color picker or write the hexadecimal code. By default the value is #ffffff. If the form is submited without color, then the status name isn't visible (see _[issue #21284](https://github.com/PrestaShop/PrestaShop/issues/21284)_)
 
 The user can customize the order status actions by checking the different options below:
 
@@ -319,7 +319,9 @@ By default, PrestaShop has the following order return statuses:
 
 ### Add / edit order return status
 
-**Adding or Editing an order return status** allows the user to add or edit **the order return status name** input text on any back-office language and **the label color** with a color picker or directly into the input text with the hexadecimal code. 
+When **adding or editing a new order return status**, the user can fulfill the information below:
+*   **Status name** mandatory information
+*   **Color** select the color through the color picker or write the hexadecimal code. By default the value is #ffffff. If the form is submited without color, then the status name isn't visible (see _[issue #21284](https://github.com/PrestaShop/PrestaShop/issues/21284)_)
 
 ![Add new return status](/img/creating%20an%20return%20status.png)
 
