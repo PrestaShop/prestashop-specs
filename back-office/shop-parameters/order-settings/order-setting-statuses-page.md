@@ -83,6 +83,8 @@ This should be removed during the migration since it is not used anymore.
 
 The merchant can choose to send an email or not to the customer when the order status is applied to the order.
 
+If no email template has been selected and if a click is made on enable/disable, then the following error message is displayed: "The field template is required"
+
 A search can be made by selecting "yes" or "no" through the drop-down.
 
 5) Delivery
