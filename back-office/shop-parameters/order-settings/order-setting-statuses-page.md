@@ -2,9 +2,11 @@
 
 The statuses page has 2 lists for both the order statuses and the order return statuses.
 
+![page status global](https://user-images.githubusercontent.com/13449658/110355341-67ecde80-8039-11eb-9341-ae46c233bd52.png)
+
 ## Order statuses
 
-![Order statuses list](/img/list%20order%20statuses.png)
+![page status](https://user-images.githubusercontent.com/13449658/110355438-84891680-8039-11eb-9047-3d498d272771.png)
 
 ### Settings wheel
 
@@ -180,7 +182,7 @@ The order statuses can be displayed on:
 
 Note that it is not possible to delete default order statuses such as Payment accepted, Delivered, etc. These PrestaShop order statuses can only be modified.
 
-![Order status form](/img/edit%20the%20order%20status.png)
+![page status edit](https://user-images.githubusercontent.com/13449658/110355532-a2567b80-8039-11eb-9721-f13b31d9a1b4.png)
 
 #### Multistore behavior
 
@@ -194,7 +196,7 @@ So all order status should be displayed in the listing, be it an all shops, a gr
 
 ## Return statuses
 
-![Order statuses list](/img/list%20return%20statuses.png)
+![page status return](https://user-images.githubusercontent.com/13449658/110355577-aedad400-8039-11eb-89e9-ac5f6fe4d60d.png)
 
 ### Settings wheel
 
@@ -315,8 +317,6 @@ By default, PrestaShop has the following order return statuses:
 - id 4:	Return denied	
 - id 5:	Return completed	
 
-![Return statuse list](/img/list%20return%20statuses.png)
-
 **The first return status generated** in the return workflow is **“Waiting for confirmation”** when the customer creates a return demand in the Front Office. 
 
 ### Add / edit order return status
@@ -325,7 +325,7 @@ When **adding or editing a new order return status**, the user can fulfill the i
 *   **Status name** mandatory information
 *   **Color** select the color through the color picker or write the hexadecimal code. By default the value is #ffffff. If the form is submited without color, then the status name isn't visible (see _[issue #21284](https://github.com/PrestaShop/PrestaShop/issues/21284)_)
 
-![Add new return status](/img/creating%20an%20return%20status.png)
+![page status return edit](https://user-images.githubusercontent.com/13449658/110355668-c74aee80-8039-11eb-8ef9-e2e1fda404cd.png)
 
 **The order return status can be displayed on:**
 *   the Order Follow page in Front Office customer account,
