@@ -165,7 +165,7 @@ If the merchant unselect all the checkboxes (all the shops), then an error messa
 - Advanced parameters > Webservice > Add / edit
 
 
-### Actions in the lisitngs (grids)
+### Actions in the listings (grids)
 
 #### Edit action
 When an element (category, attribute, feature ...) is edited, the modifications made are applied to all the stores with which the element is associated. This way, the content of the element is always the same for all the shops with which it is associated: we don't let to the user the possibility of having different content for an element associated with several shops.
