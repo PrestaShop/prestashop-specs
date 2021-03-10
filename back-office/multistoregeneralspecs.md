@@ -174,14 +174,23 @@ When an element (category, attribute, feature ...) is edited, the modifications 
 Given I am a merchant in a multistore context, when I am editing an element then I want the changes I made to be applied to all stores with which the element is associated.
 
 **Example**
+
 Let's suppose I have 2 shops: "Shop1" and "Shop2".
+
 I create a category called "Shirts" with the description "my awesome shirts" and I associate it with all stores through the shop association block.
+
 In the listing in all shops context I have:
+
 "Shirts" | "my awesome shirts" which is associated with "Shop1" and "Shop2"
+
 Finally I change my mind and in "Shop2", I want another description for this category: "my very awesome shirts"
+
 I have to edit the "Shirts" category and uncheck the "shop2" box, then I have to create a new "Shirts" category associated only with "Shop2" with my description "my very awesome shirts".
+
 Now, in the listing in all shops context I have:
+
 "Shirts" | "my awesome shirts" which is associated with "Shop1" 
+
 "Shirts" | "my very awesome shirts" which is associated with "Shop2"
 
 #### Delete action
