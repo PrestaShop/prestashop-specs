@@ -56,24 +56,19 @@ SO THAT  I can't scroll on Tax Rules List to find one Tax Rules
 ```
   
 
-Decision three
-```
-all filter all disabled
-
-one or more filter are enabled
-```
 
 ```
-Scenario: Filter by ID 
+Scenario: Filter by existing  ID / no filter active  
     Given all filter all disabled 
     When BO user set existing ID on ID filter textfied 
     Then      Tax Rules only show Tax Rules that correspond to this ID
-         AND  ALL Other  
+         AND  ALL Other are hiden
 ```
+![image](https://user-images.githubusercontent.com/79218263/110777152-19218d80-8261-11eb-9382-4c570419ab55.png)
 
 
 ```
-Scenario: Filter by ID 
+Scenario: Filter by non existing  ID / no filter active 
     Given all filter all disabled 
     When BO user set non existing ID on ID filter textfied 
     Then Show Tax Rules list without any lines 
@@ -81,7 +76,29 @@ Scenario: Filter by ID
 ![image](https://user-images.githubusercontent.com/79218263/110776099-f773d680-825f-11eb-8d10-342b787d58e8.png)
 
 
+```
+Scenario: Filter by non existing  ID / filter active  
+    Given one or mor filter all enabled 
+    When BO user set non existing ID on ID filter textfied 
+    Then Show Tax Rules list without any lines  
+```
 
+```
+Scenario: Filter by existing  ID / filter active  
+    Given one or more filter all enabled 
+    When      BO user set existing ID on ID filter textfied 
+         AND  ID Tax Rules line is include in filter active
+    Then      Tax Rules only show Tax Rules that correspond to this ID
+         AND  ALL Other are hiden 
+```
+
+```
+Scenario: Filter by existing  ID / filter active  
+    Given one or more filter all enabled 
+    When      BO user set existing ID on ID filter textfied 
+         AND  ID Tax Rules line is not include in filter(s) active 
+    Then      Then Show Tax Rules list without any lines 
+```
 
 #### User Story 003
 ```
