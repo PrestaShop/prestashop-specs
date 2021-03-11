@@ -32,6 +32,14 @@
 
 ### Command 
 #### Enabled Disabled  
+```
+AS A     BO User 
+I WANT   Enabled or Disabled Tax Rules     
+SO THAT  this one can be use for add new VAT who us it 
+
+```
+
+
 #### CRUD 
 
 
@@ -194,12 +202,7 @@ Scenario: Reset filter(s)
 
 
 ### Technical U.S. 
-Refresh 
-Show SQL query 
-Export to SQL Manager 
-
-
-
+#### User Story 005
 ```
 AS A     BO User 
 I WANT   refresh the Tax Rules Tab    
@@ -208,6 +211,7 @@ SO THAT  I get last Tax Rules state
 
 * Just a basic JS location.reload()
 
+#### User Story 006
 ```
 AS A     BO User 
 I WANT   show SQL Query use to filter current tab state    
@@ -225,7 +229,7 @@ Scenario: Show SQL QUERY
 ```
 
 
-
+#### User Story 007
 ```
 AS A     BO User 
 I WANT   export SQL Query (use to filter) to SQL Manager   
@@ -247,11 +251,6 @@ Scenario: Show SQL QUERY
 
 
 
-```
-AS A     BO User 
-I WANT   switch on several Tax Rule   
-SO THAT 
-```
 
 
 
