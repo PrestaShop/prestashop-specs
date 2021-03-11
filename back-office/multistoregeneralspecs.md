@@ -52,7 +52,7 @@ Given I am a merchant in a multistore context, when I am in a specific shop cont
 
 The name of the selected context is displayed, it can be:
 - All shops
-- A shop group name (can be added / edited in Advanced parameters > Multistore)
+- A shop group name (can be added / edited in Advanced parameters > Multistore) if the group contains at least a shop
 - A shop name (can be added in Advanced parameters > Multistore)
 
 **User acceptance test**
@@ -81,7 +81,7 @@ If the user chooses one of the listed results, it is automatically written in th
 
 The options listed in this drop-down are:
 - All shops with a link to select it as context
-- The shop groups names with a link to select the group as context
+- The shop groups names (if the group contains at least a shop) with a link to select the group as context 
 - The shop names with a link to select the shop as context
 
 The colors of each shop and group are displayed before each option.<br/>
