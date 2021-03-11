@@ -255,7 +255,7 @@ The displayed results can then be browsed, either by the arrow keys on the keybo
 If the user chooses one of the listed results, it is automatically written in the search field and selected as context.
 
 In the specific settings drop-down there are:
-- The shop groups names with a link to select it as context
+- The shop groups names with a link to select it as context (only if the group contains at least a shop)
 - The shops names with a link to select it as context
 
 Next to each shop name, there is a mention:
