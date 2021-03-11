@@ -159,6 +159,15 @@ I WANT   show SQL Query use to filter current tab state
 SO THAT  ?????
 ```
 
+![image](https://user-images.githubusercontent.com/79218263/110787852-24c78100-826e-11eb-9bd1-c5c768b6adb5.png)
+
+
+```
+Scenario: Show SQL QUERY 
+    Given one or more filter all enabled or not 
+    When      BO user click on "Show SQL Query" 
+    Then      Show under Tax Rules list SQL Query use to generate filter (or not) Tax Rules list    
+```
 
 
 
@@ -169,6 +178,21 @@ SO THAT  ?????
 ```
 
 ```
+Scenario: Show SQL QUERY 
+    Given one or more filter all enabled or not 
+    When      BO user click on "Export to SQL Manager" 
+    Then      Open SQL Manager (Advanced Pamaeter > Database (page) > SQL Manager (Tab) )     
+              With     SQL query name equal to "VAT > Tax Rules"
+                   AND SQL query equal to SQL Query use to  generate filter (or not) Tax Rules list
+```
+
+* Exemple for Enabled Tax Rules filter 
+
+![image](https://user-images.githubusercontent.com/79218263/110788663-3198a480-826f-11eb-95c8-b44401e3fb93.png)
+
+
+
+```
 AS A     BO User 
 I WANT   switch on several Tax Rule   
 SO THAT 
@@ -176,16 +200,11 @@ SO THAT
 
 
 
-## User story 1 
-
-
-
-## 
 
 
 
 
 
 ## ISSUES RELATED
-
+* SQL Manager 
 
