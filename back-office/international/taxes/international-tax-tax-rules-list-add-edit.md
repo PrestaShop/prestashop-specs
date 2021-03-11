@@ -8,8 +8,15 @@
 * data are based on an O3T image 
 
 ## Table of Content 
+* [Why][#why]
 * [Current page design](#current-page-design)
 * [User story list ](#user-story-list) 
+   * [Command](#command) 
+      * [Enabled/Disabled](#enabled/Disabled)  
+      * [CRUD](#crud) 
+
+   * [Query](#query)
+      * [Filter](#filter) 
 
 ## Why 
 
@@ -25,12 +32,12 @@
 
 ### Command 
 #### Enabled/Disabled  
-#### Add One 
+#### CRUD 
 
 
 Add VAT (one, many ? ) 
 
-#### Delete One
+
 
 Delete One 
 Delete Many
