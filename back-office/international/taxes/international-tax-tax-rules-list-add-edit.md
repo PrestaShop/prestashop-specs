@@ -168,6 +168,16 @@ SO THAT  I can't disabled all filter textfield and/or select to remove all filte
          I shure I'm not forget to remove one filter 
 ```
 
+```
+Scenario: Reset filter(s)
+    Given one or more filter active  
+    When      BO user click on filter button
+    Then          All filter are disabled 
+              AND show all Tax Rules 
+```
+
+* Before 
+
 
 
 
