@@ -1,7 +1,7 @@
 # **SPECIFICATIONS - DASHBOARD PAGE**
 
 
-_As a user, I want to know when my PHP version is no longer supported._
+_As a user, I want to know when my PHP version is not suitable - no longer supported or not yet supported._
 
 Since 1.7.8, a yellow warning notification is displayed on the top of the Dashboard page when the PHP version detected is no longer supported, cf. issue #[20862](https://github.com/PrestaShop/PrestaShop/issues/20862).
 
