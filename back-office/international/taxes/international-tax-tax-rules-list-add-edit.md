@@ -12,7 +12,7 @@
 * [Current page design](#current-page-design)
 * [User story list ](#user-story-list) 
    * [Command](#command) 
-      * [Enabled/Disabled](#enabled/disabled)  
+      * [Enabled/Disabled](#enabled-disabled)  
       * [CRUD](#crud) 
 
    * [Query](#query)
@@ -31,7 +31,7 @@
 * Note : design team work on persona specification, "BO user" is a dummy persona 
 
 ### Command 
-#### Enabled/Disabled  
+#### Enabled Disabled  
 #### CRUD 
 
 
