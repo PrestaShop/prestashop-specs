@@ -55,6 +55,20 @@ I WANT   filter Tax Rules by ID
 SO THAT  I can't scroll on Tax Rules List to find one Tax Rules  
 ```
   
+* Question  : 
+   * why use like (not =) for filter on ID ? 
+   * why where 1 AND ? 
+```sql 
+SELECT SQL_CALC_FOUND_ROWS a.* 
+FROM `ps_tax_rules_group` a 
+WHERE     1 
+      AND a.deleted = 0 
+      AND a.`id_tax_rules_group` LIKE '%1%' 
+      AND a.`active` = 1 
+ORDER BY a.id_tax_rules_group ASC 
+LIMIT 0, 50
+```
+
 
 
 ```
@@ -130,20 +144,25 @@ Export to SQL Manager
 
 ```
 AS A     BO User 
-I WANT   switch off one Tax Rule   
-SO THAT 
+I WANT   refresh the Tax Rules Tab    
+SO THAT  I get last Tax Rules state   
 ```
+
+* Just a basic JS location.reload()
 
 ```
 AS A     BO User 
-I WANT   switch on one Tax Rule   
-SO THAT 
+I WANT   show SQL Query use to filter current tab state    
+SO THAT  ?????
 ```
+
+
+
 
 ```
 AS A     BO User 
-I WANT   switch off several Tax Rule   
-SO THAT 
+I WANT   export SQL Query (use to filter) to SQL Manager   
+SO THAT  ?????
 ```
 
 ```
