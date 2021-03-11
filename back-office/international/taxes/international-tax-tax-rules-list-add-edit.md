@@ -121,8 +121,21 @@ Scenario: Filter by existing  ID / filter active
 ```
 AS A     BO User 
 I WANT   filter Tax Rules by Name    
-SO THAT  I can't scroll on Tax Rules List to find one Tax Rules  
+SO THAT  I can't scroll on full Tax Rules List to find one Tax Rules  
 ```
+* Note : math is a LIKE match not an Equal match 
+   * Exemple : is Taxe Rule Name is "AZERTY" 
+     * "ZE", "AZERTY", "ERTY" match.   
+
+```
+Scenario: Filter by name 
+    Given any filter active  
+    When      BO user set string on filter textfied 
+         AND  this string match (like) with one on more Tax Name  
+    Then      Then Show Tax Rules list who Tax name match with this string  
+```
+
+
 
 
 #### User Story 004
