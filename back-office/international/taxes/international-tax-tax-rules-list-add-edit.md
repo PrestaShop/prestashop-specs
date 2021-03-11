@@ -135,6 +135,28 @@ Scenario: Filter by name
     Then      Then Show Tax Rules list who Tax name match with this string  
 ```
 
+![image](https://user-images.githubusercontent.com/79218263/110789508-40cc2200-8270-11eb-9770-f8a4f5e91e44.png)
+
+
+```
+Scenario: Filter by name 
+    Given any filter active  
+    When      BO user set string on filter textfied 
+         AND  this string doesn't match (like) with any Tax Name  
+    Then      Then Show void Tax Rules list 
+```
+```
+Scenario: Filter by name 
+    Given any filter active  
+    When      BO user set string on filter textfied 
+         AND  this string match (like) with one on more Tax Name  
+    Then      Then Show Tax Rules list who Tax name match with this string  
+```
+
+![image](https://user-images.githubusercontent.com/79218263/110789508-40cc2200-8270-11eb-9770-f8a4f5e91e44.png)
+
+
+
 
 
 
