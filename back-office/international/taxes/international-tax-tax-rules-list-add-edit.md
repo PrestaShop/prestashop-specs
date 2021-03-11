@@ -7,6 +7,9 @@
 * all examples are based on Prestashop 1.7.7.2 
 * data are based on an O3T image 
 
+## Table of Content 
+* [Current page design](#current-page-design)
+* [User story list ](#user-story-list) 
 
 ## Why 
 
