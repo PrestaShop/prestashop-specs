@@ -69,6 +69,9 @@ ORDER BY a.id_tax_rules_group ASC
 LIMIT 0, 50
 ```
 
+![image](https://user-images.githubusercontent.com/79218263/110779979-7a972b80-8264-11eb-9881-1dce1538d0a0.png)
+
+
 
 
 ```
