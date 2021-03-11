@@ -100,7 +100,7 @@ If I select Shop A as context, then the zones created in Shop A will be displaye
 
 If I select all shops as context, then the zones created in Shop A, Shop B and Shop C will be displayed.
 
-### ADD NEW ZONE
+### ADD / EDIT ZONE
 
 Clicking on _Add new zone_ button will redirect the user to the new page which they can add a custom zone.
 
@@ -134,26 +134,6 @@ Clicking on _Cancel_ button will ignor the input fields and return to the Intern
 **Save**
 
 Clicking on _Save_ button will insert the data from 'ZONES' fields into `_db_prefix_zone`, and `_db_prefix_zone_shop` tables and return to International > Locations > Zones page (back-office/international/international-locations-zones.md).
-
-### EDIT ZONE
-
-Clicking on _Edit_ button will redirect the user to the new page which they can edit a zone.
-
-**Name**
-
-The _Name_ field defines the zone's name for each language. The user can modify the name of the zone for each language separately.
-
-**Active**
-
-The _Active_ field displays a YES/NO toggle button to define if the zone should be activated on shop or not. By default, it display the current status of the selected zone.
-
-**Cancel**
-
-Clicking on _Cancel_ button will ignor the input fields and return to the International > Locations > Zones page (back-office/international/international-locations-zones.md) without impacting on database.
-
-**Save**
-
-Clicking on _Save_ button will modify the data from `_db_prefix_zone`, and `_db_prefix_zone_shop` tables for the selected zone and replace them with the new data received from 'ZONES' field and return to International > Locations > Zones page (back-office/international/international-locations-zones.md).
 
 ### DELETE ZONE
 
