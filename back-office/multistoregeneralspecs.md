@@ -88,7 +88,7 @@ The colors of each shop and group are displayed before each option.<br/>
 When the user hovers the color, a tooltip is displayed "edit color"<br/>
 The user can click on the color to change it<br/>
 It opens the store's or group's page edition.
-The selected context as a check icon in front of the name. On hover, the check is replaced by the color with the tooltip. 
+The selected context has a check icon in front of the name. On hover, the check is replaced by the color with the tooltip. 
 
 If the shop URL is configured, a "view my shop" link is displayed after each shop name.<br/>
 It opens the front-office of the corresponding shop.
