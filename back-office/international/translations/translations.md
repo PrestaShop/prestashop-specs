@@ -2,7 +2,7 @@
 
 #### Conceptual vocabulary
 
-- **Wordings:** original texts found throughout the software. They are in English but may be translated _to_ English for better localization.
+- **Wordings:** original texts found throughout the software. Although these messages are written in English, they are actually only tokens to be translated into any language, including English variations (eg. British, American).
 - **Translations:** wordings translated to a given language.
 - **Translation domain:** named logic group of wordings. Any given wording is attached to one and only one translation domain. Two identical wordings attached to two different translation domains are considered as two different wordings.
 - Translation catalogue: A collection of translation domains containing translations for a given language, stored physically in a support like files or on a database.
@@ -254,4 +254,3 @@ Composed example:
 ```
 AdminAdvparametersFeature.es-MX.xlf
 ```
-
