@@ -1,12 +1,12 @@
 # Translations
 
-## Conceptual vocabulary
+#### Conceptual vocabulary
 
-- Wordings: original texts found throughout the software. They are in English but may be translated _to_ English for better localization.
-- Translations: wordings translated to a given language.
-- Translation domain: named logic group of wordings. Any given wording is attached to one and only one translation domain. Two identical wordings attached to two different translation domains are considered as two different wordings.
+- **Wordings:** original texts found throughout the software. Although these messages are written in English, they are actually only tokens to be translated into any language, including English variations (eg. British, American).
+- **Translations:** wordings translated to a given language.
+- **Translation domain:** named logic group of wordings. Any given wording is attached to one and only one translation domain. Two identical wordings attached to two different translation domains are considered as two different wordings.
 - Translation catalogue: A collection of translation domains containing translations for a given language, stored physically in a support like files or on a database.
-- Default catalogue: The master translation catalogue that contains the wordings but not its translations. It's [included in the GitHub project](https://github.com/PrestaShop/PrestaShop/tree/1.7.6.0/app/Resources/translations/default).
+- **Default catalogue:** The master translation catalogue that contains the wordings but not its translations. It's [included in the GitHub project](https://github.com/PrestaShop/PrestaShop/tree/1.7.6.0/app/Resources/translations/default).
 
 ## Modify translations section
 
@@ -119,6 +119,8 @@ Translations are retrieved from a list of sources:
 3. The module's legacy files: PHP translation files for the chosen language, stored within the module in the `translations/` directory, one per language code.
 4. The database: if translations were customized previously through this interface.
 
+If the module uses Core translations, they are not shown on this interface.
+
 If the same wording is translated in the core, the module files and the database, the database translation is shown.
 
 #### Email translations (subject)
@@ -138,7 +140,7 @@ The behavior is exactly like "back office translations", but using only the doma
 
 ## Workflow
 
-Each source mentionned in the previous parts represents a level in the translation workflow:
+Each source mentioned in the previous parts represents a level in the translation workflow:
 
 1. the default catalog is the translation basis;
 2. it is overwritten by the translation files when downloaded through a localization pack or this interface ('Add / Update a language' section);
@@ -154,8 +156,101 @@ It works the same for the modules that have their own translation files:
 
 ## Export translations section
 
-This feature allows the user to export translations in a given language for a given theme. When the user selects the theme/language pair and clicks on "Export", a zip file is generated and downloaded. 
+This feature allows the user to export translations in a given language. The user is given a list of options to choose what kind of translations they want to export:
 
-The generated zip contains a collection of XLF files, one per domain, which is composed of all the theme's wordings (ie. all wordings found in the theme files), translated to the chosen langue.
+- **PrestaShop translations** 
+  When chosen, the following checkboxes appear below this option:
+  - Back Office
+  - Front Office
+  - Email
+  - Other
+- **Theme translations**
+  When chosen, a select box containing the installed themes appears below.
+- **Installed modules translations**
+  When chosen, a select box containing the installed modules appears below.
 
-Note: Exported translations should be loaded differently compared to the translation interface. In difference with the latter, where non-translated wordings are empty, exported translations should never be empty. If the translation is not defined, use the original wording as translation.
+<img src="../../../img/back-office/international/translations/export-ps.png" alt="PrestaShop translations" style="zoom:50%;" />
+
+<img src="../../../img/back-office/international/translations/export-theme.png" alt="PrestaShop translations" style="zoom:50%;" />
+
+<img src="../../../img/back-office/international/translations/export-module.png" alt="PrestaShop translations" style="zoom:50%;" />
+
+When the user clicks on "Export", a zip file is generated and downloaded. 
+
+### The exported package
+
+The generated zip contains exported translation domains, stored as XLF files (one per domain), each one containing of all the domain's wordings and their translation to the target language.
+
+**Note:** If a given wording is not translated, then the original wording should be used as translation in the exported file.
+
+The domains that are included in the export package depend on the combination of options chosen in the form, as described below.
+
+#### Export PrestaShop translations
+
+Each translation type roughly matches the translation sources described in the "Translation sources & storage" section above:
+
+- **Back office:** Translations are sourced in the same way as specified in "Back office translations".
+- **Front office:** Translations are sourced in the same way as specified in "Front office - Core translations".
+- **Email:** Translations are sourced in the same way as specified in "Email translations" (subject & body)
+- **Other:** Translations are sourced in the same way as specified in "Other translations".
+
+The exported package should include all XLF files stored under a language directory, like so:
+
+```
+fr-FR
+├── AdminActions.fr-FR.xlf
+├── AdminAdvparametersFeature.fr-FR.xlf
+├── AdminAdvparametersHelp.fr-FR.xlf
+└── ...
+```
+
+#### Export Theme translations
+
+Translations are sourced in the same way as specified in "Front office - theme".
+
+**Note:** this export may include core translation domains if they are used by the theme's files. However, only the wordings used by the theme are to be included in the exported file.
+
+The exported package should include all XLF files stored under a language directory, like so:
+
+```
+fr-FR
+├── ShopMytheme.fr-FR.xlf
+├── ShopNavigation.fr-FR.xlf
+├── ShopNotificationsError.fr-FR.xlf
+└── ...
+```
+
+#### Export Installed module translations
+
+Translations are sourced in the same way as specified in "Installed module translations".
+
+**Note:** this export may include core translation domains if they are used by the module's files. However, only the wordings used by the module are to be included in the exported file.
+
+The exported package should include all XLF files stored under a language directory, like so:
+
+```
+fr-FR
+├── ModulesymoduleAdmin.fr-FR.xlf
+├── ModuleMymoduleShop.fr-FR.xlf
+├── ShopNotificationsError.fr-FR.xlf
+└── ...
+```
+
+### XLF file name convention
+
+Exported XLF files should respect the following file name convention:
+
+```
+<DOMAIN_NAME>.<IETF_LTAG>.xlf
+```
+
+Where:
+
+- **DOMAIN_NAME:** Translation domain name, without dots. Example for "Admin.Advparameters.Feature":  "AdminAdvparametersFeature"
+- **IETF_LTAG:** IETF language tag. Example for Mexican Spanish: "es-MX"
+
+Composed example:
+
+```
+AdminAdvparametersFeature.es-MX.xlf
+```
