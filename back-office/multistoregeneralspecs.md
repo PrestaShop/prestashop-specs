@@ -96,6 +96,8 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's URL page edition.
 
+As a merchant I should be able to configure my store even if the URL of the shop is not yet defined. So, please note that even a shop without an URL configured can be selected as context.
+
 **User acceptance test**
 
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to search for a context
