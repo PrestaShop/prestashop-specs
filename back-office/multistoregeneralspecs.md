@@ -94,7 +94,7 @@ If the shop URL is configured, a "view my shop" link is displayed after each sho
 It opens the front-office of the corresponding shop.
 
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
-It opens the store's page edition.
+It opens the store's URL page edition.
 
 **User acceptance test**
 
