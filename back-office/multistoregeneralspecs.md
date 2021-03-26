@@ -61,7 +61,7 @@ Given I am a merchant in a multistore context, when I am in the back-office, the
 
 **View my shop link**
 
-When a shop is selected, a link "view my shop" is displayed and opens the front-office of the shop.
+When a shop with a configured URL is selected, a link "view my shop" is displayed and opens the front-office of the shop.
 
 **User acceptance test**
 
@@ -69,7 +69,7 @@ Given I am a merchant in a multistore context, when I am in a specific shop cont
 
 **Configure shop URL link**
 
-When a shop is selected, a link "configure shop URL" is displayed and opens the store's URL page edition
+When a shop without a configured URL is selected, a link "configure shop URL" is displayed and opens the store's URL page edition
 
 **User acceptance test**
 
