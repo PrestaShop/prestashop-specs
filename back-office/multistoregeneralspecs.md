@@ -118,9 +118,9 @@ Given I am a merchant in a multistore context, when I am in the multistore heade
 
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure it.
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure the URL.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to select this shop as context to configure it.
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to select this shop as context to configure my shop.
 
 
 **Behavior when switching context**
