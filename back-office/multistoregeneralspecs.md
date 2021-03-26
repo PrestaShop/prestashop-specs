@@ -67,14 +67,6 @@ When a shop with a configured URL is selected, a link "view my shop" is displaye
 
 Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
-**Configure shop URL link**
-
-When a shop without a configured URL is selected, a link "configure shop URL" is displayed and opens the store's URL page edition
-
-**User acceptance test**
-
-Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has not been configured, then I want to be able to configure the URL of my shop.
-
 **Context drop-down**
 DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
 
@@ -83,6 +75,7 @@ In the multistore header, there is a context drop-down allowing to select the co
 In the drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
 There is a placeholder: "Search shop name"<br/>
 As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
+The results should not show shop(s) for which the URL has not been configured. <br/>
 The results are displayed in a frame below the search field. <br/>
 The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
 If the user chooses one of the listed results, it is automatically written in the search field and selected as context.
@@ -104,24 +97,25 @@ It opens the front-office of the corresponding shop.
 If the shop URL isn't configured, a "configure shop URL" link is displayed after each shop name.<br/>
 It opens the store's URL page edition.
 
-As a merchant I should be able to configure my store even if the URL of the shop is not yet defined. So, please note that even a shop without an URL configured can be selected as context.
+As a merchant I should not be able to configure my store if the URL of the shop is not yet defined. So, please note that a shop without an URL configured can't be selected as context.
 
 **User acceptance test**
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to search for a context
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to search for a context.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to select the context
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to not be able to search for this context.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to select the context
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to not be able to select this shop context.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure the URL.
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected.
 
-Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to select this shop as context to configure my shop.
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to be able to configure the URL.
 
 **Behavior when switching context**
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
