@@ -67,6 +67,14 @@ When a shop is selected, a link "view my shop" is displayed and opens the front-
 
 Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
+**Configure shop URL link**
+
+When a shop is selected, a link "configure shop URL" is displayed and opens the store's URL page edition
+
+**User acceptance test**
+
+Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has not been configured, then I want to be able to configure the URL of my shop.
+
 **Context drop-down**
 DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown
 
@@ -111,6 +119,9 @@ Given I am a merchant in a multistore context, when I am in the multistore heade
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.
 
 Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to configure it.
+
+Given I am a merchant in a multistore context, when I am in the multistore header context drop-down and if the URL of the shop has not been configured, then I want to be able to select this shop as context to configure it.
+
 
 **Behavior when switching context**
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
