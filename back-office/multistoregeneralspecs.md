@@ -30,7 +30,7 @@ The multistore header contains many things listed below:
 DESIGN: https://invis.io/QPWKQY5DV79#/412654655_Contexte_Candy
 
 This header takes the color of the selected context:<br/>
-- The all shops context is blue #25B9D8 and this color can't be changed by the user.<br/>
+- The all shops context is blue #25B9D7 and this color can't be changed by the user.<br/>
 - The shop group color can be configured while creating or editing the group<br/>
 - The shop color can be configured while creating or editing the shop.
 
@@ -44,7 +44,7 @@ Given I am a merchant in a multistore context, when I am in a specific shop cont
 
 Given I am a merchant in a multistore context, when I am in a shop group context in the back-office and if I have define a color for it, then I want to see the color of the shop group selected in the header
 
-Given I am a merchant in a multistore context, when I am in "all shops" context in the back-office then I want to see the header in blue #25B9D8
+Given I am a merchant in a multistore context, when I am in "all shops" context in the back-office then I want to see the header in blue #25B9D7
 
 Given I am a merchant in a multistore context, when I am in a specific shop context or in a shop group context in the back-office and if I haven't define any color for it, then I want to see the header in light grey #EBEBEB
 
