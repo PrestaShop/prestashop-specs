@@ -44,12 +44,14 @@ You can select a theme and generate a RTL stylesheet.
 IMPROVEMENT to do : when i import a logo it’s not resized it must be to avoid the breaking of the page
 
 **Header logo.** It should be displayed in the header, on all front office pages. PrestaShop's default theme uses the 'Classic' _my store_ logo. Once the image is saved, by clicking on the _Save_ button at the right bottom of this section, users should be able to have a preview of their logo.
+Authorized header logo images extensions are: .gif, .jpg, .jpeg, .jpe, .png, .svg
 
 **Mail & invoice logo.** PrestaShop's default theme uses the 'Classic' _my store_ logo. The mail logo should be displayed in emails' header. The invoice logo should be displayed in invoices' header. In both cases, if no mail nor invoice logo image is defined, the header logo (as the main logo image) is used. Once the image is saved, by clicking on the _Save_ button at the right bottom of this section, users should be able to have a preview of their logo.
+Authorized mail & invoice logo images extensions are: .gif, .jpg, .jpeg, .jpe, .png
 
 **Favicons.** By default, the favicon is the PrestaShop logo. A light text is written below, _Use our favicon generator on PrestaShop Marketplace to boost your brand image!_, that redirects to the Addons' favicon generator - English page: https://addons.prestashop.com/en/create-favicon.php. Once the image is saved, by clicking on the _Save_ button at the right bottom of this section, users should be able to have a preview of their logo.
 
-All logo images should be imported via the upload field, with the placeholder _Choose file(s)_ and the CTA _Browse_, all being clickable items opening the user's local files. Available logo images extensions are: .gif, .jpg, .jpeg, .jpe, .png, .svg.
+All logo images should be imported via the upload field, with the placeholder _Choose file(s)_ and the CTA _Browse_, all being clickable items opening the user's local files. 
 
 
 ### Multistore behavior
