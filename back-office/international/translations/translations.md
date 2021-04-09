@@ -29,8 +29,9 @@ Once you click on the "Modify" button, you go to the translation interface.
 - When the user chooses "Front office translations", a list of all the installed themes except "classic" + a special item called "Core translations" is displayed as well.
 - When the user chooses "Installed modules translations", a list of all the installed modules is displayed as well.
 - When the user chooses "Email translations", a list containing "Subject" and "Body" is displayed as well.
-  - If the user chooses "Body", a list of all the installed themes + "Core" is displayed as well.
-  - This type sends the user to the legacy translation interface instead of the one described below.
+  - If the user chooses "Body", a list of all the installed themes (including classic) + a special item called "Core" is displayed as well.
+    - This type sends the user to the legacy translation interface, where the user can edit the rendered templates, instead of the one described below.
+    - The email translations (body) interface described below is accessible from the _Design > Email theme > Translate emails_ page.
 
 ## Translation interface
 
