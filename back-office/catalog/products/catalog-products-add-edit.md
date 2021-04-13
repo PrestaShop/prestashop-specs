@@ -44,7 +44,8 @@ Please note, when editing a standard product with combinations, you can’t chan
 * **Product list**: Link that displays the list of all products filtered as in the catalog, with their id, name, price, quantity.       
 If you click on the id or the name, you arrive on the product page in basic settings tab.       
 If you click on the price, you arrive on the product page in pricing tab.       
-If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.
+If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.       
+When the quantity is equal or less than 0 the quantity is displayed with a red background.
 * **Help**: Link to display the help in the right menu.
 * **Delete**: Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 * **Preview**: When you click on this button, it saves and open a new browser tab with the product displayed in front-office.      
@@ -55,7 +56,7 @@ Keyboard shortcut: ALT + SHIFT + V
 * **Save**: Button to save all changes made in all tabs.      
 Keyboard shortcut: ALT + SHIFT + S.      
 If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
-* **Duplicate**: When you click on this button, it saves and duplicate the current product \(the duplicated product will be offline\). The duplicated product must be exactly the same. 
+* **Duplicate**: When you click on this button, it saves and duplicates the current product \(the duplicated product will be offline\). The duplicated product has all the product information (related products, shipping configuration, associated suppliers, combinations, associated and attached files) of the copied product.
 Keyboard shortcut: ALT + SHIFT + D      
 * **Go to catalog**: When you click on this button, it saves and redirect to catalog product list.      
 Keyboard shortcut: ALT + SHIFT + Q
@@ -100,26 +101,23 @@ When you change it, the price tax incl is updated. And the “tax rule” field 
 If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.       
 When you change it, the same field in pricing tab is also updated.      
 Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab.
-* **Search category**: Search field to search a category. You can search by category name.       
-When you start typing, if there are results, they are displayed and highlighted \( [issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\) under and you can click on it.
-* **Select category**: Allows to associate categories to the product.        
-A category is necessarily selected, it is impossible not to have one.       
-When you create a new product, “Home” is selected.       
-When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse \([issue 14052](https://github.com/PrestaShop/PrestaShop/issues/14052)\).       
-When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.
-* **Unselect category**: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”.       
-You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked.       
-If you try to unselect all categories, you can’t do it for the last one.
-* **Category tree**: When you create a new product, the tree is open for the first 2 levels of categories \([issue 14955](https://github.com/PrestaShop/PrestaShop/issues/14955)\).       
-When I click on "collapse" it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. When I click on "expend" the whole tree is opened.       
+
+A category is necessarily selected, a product is always at least associated to one category.       
+When you create a new product, “Home” is selected.      
+* **Search category**: Allows to associate categories to the product. When the user searches a category, the results is displayed into a list that can be navigated using keyboard or hover with mouse \([issue 20331](https://github.com/PrestaShop/PrestaShop/issues/20331)\). The selected category by the user is add to **Associated categories** and is checked in the **Category tree.**
+* **Associated categories**: Displays all the associated categorie. Each category can be removed by clicking on the cross button next to it. Removing a category uncheck the category on the tree. The last category can't be removed.
+* **Category tree**: When the user creates a new product, the tree is open for the first 2 levels of categories \([issue 14955](https://github.com/PrestaShop/PrestaShop/issues/14955)\).       
+When the user clicks on "collapse" it folds the whole tree. The user can also click on each parent to folds / unfolds its subcategories. When the user clicks on "expend" the whole tree is opened.       
 Categories are sorted by level AND position:       
 Categ 1 level 1 position 1       
 Categ 3 level 1 position 2       
 Categ 2 level 1 position 3       
 Categ 2-2 level 2 position 1       
 Categ 2-1 level 2 position 2       
+On the left of the category's name is display a checkbox, if it is checked then the category is associated to the product. The last category can't be removed unchecked.
 * **Main category**: Radio button to select the main category of the product. There can only be one.           
 The main category is the one that will be in the product URL, before the product name and in the breadcrumb in front-office you have all parent categories up to the main one.
+If the category flagged as the main category is unchecked in the tree or removed from the associated category, the associated category with the highest position on the tree will automatically be assigned as the main category.
 * **Create a new category**: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.
 * **New category name**: Allows to create quickly a new category.       
 The name will be the same in all languages.        
@@ -130,8 +128,8 @@ When you save, if your category name contains an invalid character, an error mes
   Categ 3 level 1 position 2          
   Categ 2 level 1 position 3             
   Categ 2-2 level 2 position 1          
-  Categ 2-1 level 2 position 2      
-
+  Categ 2-1 level 2 position 2           
+If the list has elements with the same name, the lists displays all the categories with their ID. (ID - Name_category).
 * **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”      
 You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.       
 When there is already an image, you can click only on the frame with the “+” to open the selector.
@@ -155,7 +153,9 @@ The image is open in its default size. You can close it by clicking on the cross
   * The cross to close the frame and unselect images
   * Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.
 
-    If more than one image is selected the checkbox "cover" disappears
+    If more than one image is selected the checkbox "cover" disappears.
+    
+The **Features section** is displayed if the Feature option in Advanced Parameters > Performance > Optional features page is enabled. Otherwise, the section is hidden.
 * **Add a feature**: By default the selected option is "Choose a feature".
 All the features are displayed in the drop-down and are sorted by position ASC.
 If there are several features with the same name, then the ID of the feature is displayed before its name 
@@ -433,13 +433,8 @@ When the merchant changes it, the same field in the Basic settings tab is also u
 When a value is filled, the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 When the merchant changes it, the same field in the Basic settings tab is also updated.
-* **\(Retail\) price tax excl ecotax included**: "ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
-When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.      
-To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
-* **\(Retail\) price tax incl ecotax included**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).       
-"ecotax included" is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.      
-When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.      
-To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.
+* **\(Retail\) price tax excl ecotax included**: It's the same field as Retail price (tax excl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field. [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)     
+* **\(Retail\) price tax incl ecotax included**:  It's the same field as Retail price (tax incl.), the mention "ecotax included" is added to the label only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product. This mention is added to make the merchant understand that he/she must enter the price with the ecotax included in this field. [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)   
 * **Tax rule**: This field shouldn't be displayed if taxes are disabled in International &gt; Taxes \([issue 15330](https://github.com/PrestaShop/PrestaShop/issues/15330)\).          
 Drop-down with all tax rules enabled and a “no tax” option. 
 If there are several taxes rules with the same name, then the ID of the tax rule is displayed before its name.
@@ -460,7 +455,7 @@ Displayed in the product page in front-office next to the unit price
 * **Net turnover excluding tax**: This information is displayed when the ecotax is enabled and if it is not a virtual product. 
 It’s the amount of Price \(tax excl.\) - ecotax \(tax incl.\).       
 It is taken into account for the calculations instead of the field "Price \(tax excl.\)" when ecotax tax incl field is different from 0.         
-This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\)
+This value is recalculated when the merchant will change one of the following fields: Price \(tax excl.\) ecotax included, Price \(tax incl.\) ecotax included & Ecotax \(tax incl.\). [Improvement #15044](https://github.com/PrestaShop/PrestaShop/issues/15044)
 * **Cost price (tax excl.)**: By default, it’s set to 0.000000      
 It’s used for margin calculations.          
 To separate decimals a dot or a comma can be used, both should work no matter the language.
