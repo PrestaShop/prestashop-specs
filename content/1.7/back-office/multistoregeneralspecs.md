@@ -286,7 +286,8 @@ Given I am a merchant in a multistore context, when I am configuring my shop(s) 
 ### Specific settings drop-down (only from 1.7.8)
 DESIGN: https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown
 
-This drop-down is displayed only in all shops context and only for parameters that have been customized in one or many specific shops.
+This drop-down is displayed in all shops context and only for parameters that have been customized in one or many specific shops or groups of shop.
+This drop-down is displayed in a group context and only for parameters that have been customized in one or many specific shops of the group.
 
 **Search bar (only from 1.7.8)**
 
@@ -297,13 +298,50 @@ The results are displayed in a frame below the search field. <br/>
 The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
 If the user chooses one of the listed results, it is automatically written in the search field and selected as context.
 
-In the specific settings drop-down there are:
+In all shops context, in the specific settings drop-down there are:
 - The shop groups names with a link to select it as context (only if the group contains at least a shop)
 - The shops names with a link to select it as context
 
 Next to each shop name, there is a mention:
 - "Inherited" if the parameter has the same value as in all shops
-- "Customized" if the parameter has a different value in a shop
+- "Customized" if the parameter has a different value for a shop or for a group
+
+In a group context, in the specific settings drop-down there are:
+- The current shop group name with a link to select it as context (only if the group contains at least a shop)
+- The shops names belonging to the group selected, with a link to select it as context
+Other groups and shops are not displayed.
+
+Next to each shop name, there is a mention:
+- "Inherited" if the parameter has the same value as in the selected group
+- "Customized" if the parameter has a different value for a shop of the selected group
+
+Example:
+
+Consider the following group and shops:
+
+- Group 1
+  - Shop A
+  - Shop B
+
+Group1 maintenance field value is "The shop is in maintenance"
+
+Shop A maintenance field value has been changed and is "Shop A is in maintenance"
+
+Shop B maintenance field value is "The shop is in maintenance"
+
+
+All shop context:
+
+Shop A => Customized
+
+Shop B => Inherited
+
+
+Group1 context:
+
+Shop A => Customized
+
+Shop B => Inherited
 
 **Configurations pages with specific settings drop-down**
 
