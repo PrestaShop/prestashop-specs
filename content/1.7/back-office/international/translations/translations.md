@@ -166,7 +166,7 @@ This feature allows the user to export translations in a given language. The use
   - Email
   - Other
 - **Theme translations**
-  When chosen, a select box containing the installed themes appears below.
+  When chosen, a select box containing the installed themes (except classic theme) appears below.
 - **Installed modules translations**
   When chosen, a select box containing the installed modules appears below.
 
@@ -179,6 +179,8 @@ This feature allows the user to export translations in a given language. The use
 When the user clicks on "Export", a zip file is generated and downloaded. 
 
 ### The exported package
+
+The generated zip filename pattern will be ```translations_export_{locale_code}.zip```
 
 The generated zip contains exported translation domains, stored as XLF files (one per domain), each one containing of all the domain's wordings and their translation to the target language.
 
