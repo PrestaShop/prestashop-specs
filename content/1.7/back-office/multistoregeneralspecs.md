@@ -4,13 +4,13 @@ As a merchant I need to be able to correctly manage all my stores
 
 ## WHAT
 
-Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases [here](/../../broader-topics/multistorespecialsspecs.md)
+Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It's the general behavior. Some pages can have specific behaviors, you can find these specific cases [here](../broader-topics/multistorespecialsspecs.md)
 
 ## SPECIFICATIONS
 
 ### Shop & shop group color
 
-From 1.7.8, while creating a shop or a group, the user can select a color as described in [the specs to setup the multistore feature](../advanced-parameters/multistore/multistore.md)<br/>
+From 1.7.8, while creating a shop or a group, the user can select a color as described in [the specs to setup the multistore feature](./advanced-parameters/multistore/multistore.md)<br/>
 This color will be displayed in the multistore header for the selected shop or shop group.<br/>
 It will be also displayed before the name of each shop / group in the context drop-down.
 
