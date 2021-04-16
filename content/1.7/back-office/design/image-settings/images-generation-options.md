@@ -76,5 +76,3 @@ Also, when clicking on 'Regenerate thumbnails', a pop up modal window should dis
 
 The fields listed above don't have checkboxes and are available in all contexts (all shops, group, single store).
 Images are regenerated for all shops, no matter the context selected.
-
-
