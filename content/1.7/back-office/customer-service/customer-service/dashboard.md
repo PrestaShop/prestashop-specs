@@ -302,7 +302,7 @@ Also, in the case of multilanguage, if an error occurs, then the user must be wa
 
 ### Multistore
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19378) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19330), take a look at the conditions and specs [here](../../../multistoregeneralspecs.md)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19378) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19330), take a look at the conditions and specs [here](../../multistoregeneralspecs.md)
 
 ## CUSTOMER SERVICE OPTIONS
 
@@ -363,7 +363,7 @@ A tooltip is available: "Do not user start-TLS to encrypt the session, even with
 
 ### Multistore
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19378) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19330), take a look at the conditions and specs [here](../../../multistoregeneralspecs.md)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19378) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19330), take a look at the conditions and specs [here](../../multistoregeneralspecs.md)
 
 ### SAVE BUTTON
 
