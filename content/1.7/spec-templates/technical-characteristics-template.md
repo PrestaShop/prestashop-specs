@@ -43,9 +43,9 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 
 ## SPECIFICATIONS
 
-[The first step is to detail the behavior of each field per tab when creating / editing a product.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#product-creation-edition)
+[The first step is to detail the behavior of each field per tab when creating / editing a product.](../../back-office/catalog/products/catalog-products-add-edit.md#product-creation-edition)
 
-[The second step of this document is to detail the type of each fields and error messages per tab.](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#errors)
+[The second step of this document is to detail the type of each fields and error messages per tab.](../../back-office/catalog/products/catalog-products-add-edit.md#errors)
 
 The third step is to detail the multistore behavior.
 
@@ -210,9 +210,9 @@ You shouldn't be able to add the same product several times to the pack. If the 
 
 The second tab name changes depending on the type of product selected :
 
-* [**Quantities**](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#quantities-tab-epic) for a standard product without combinations or a pack
-* [**Virtual product**](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#virtual-product-tab-epic) for a virtual product.
-* [**Combinations**](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/catalog-products-add-edit.md#combinations-tab-epic) for a standard product with combination
+* [**Quantities**](../../back-office/catalog/products/catalog-products-add-edit.md#quantities-tab-epic) for a standard product without combinations or a pack
+* [**Virtual product**](../../back-office/catalog/products/catalog-products-add-edit.md#virtual-product-tab-epic) for a virtual product.
+* [**Combinations**](../../back-office/catalog/products/catalog-products-add-edit.md#combinations-tab-epic) for a standard product with combination
 
 ### Quantities tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14771)\]
 

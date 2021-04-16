@@ -40,9 +40,9 @@ In an all shops context, the options listed above should have [specific settings
 - Product picture height
 - Generate high resolution images
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
+:point_right: [Multistore general specs](../../../multistoregeneralspecs.md)
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them
+:point_right: [Multistore special case: fields without checkboxes](../../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them)
 
 
 ## REGENERATE THUMBNAILS

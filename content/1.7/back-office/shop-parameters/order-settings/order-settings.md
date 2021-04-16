@@ -103,7 +103,7 @@ By default, customer language is selected.
 This toggle is on No by default.
 
 When enabled, a checkbox "I would like my order to be gift wrapped" is displayed in front-office during the checkout at the shipping step.
-A checkbox "gift" is also displayed during the order creation in back-office at the shipping step, see the [specs here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)
+A checkbox "gift" is also displayed during the order creation in back-office at the shipping step, see the [specs here](../../../orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)
 
 ### Gift-wrapping price
 
@@ -122,4 +122,4 @@ This drop-down lists all the enabled tax rules and allows the merchant to select
 This toggle is on No by default.
 
 When enabled, a checkbox "I would like to receive my order in recycled packaging." is displayed in front-office during the checkout at the shipping step.
-A checkbox "Recycled packaging" is also displayed during the order creation in back-office at the shipping step, see the [specs here](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)
+A checkbox "Recycled packaging" is also displayed during the order creation in back-office at the shipping step, see the [specs here](../../../orders/orders/Order%20Add/Add%20new%20Order.md#v-shipping)

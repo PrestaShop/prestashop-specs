@@ -103,7 +103,7 @@ In a specific shop context or in a group context, the options listed above shoul
 
 In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19312)
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
+:point_right: [Multistore general specs](../../../multistoregeneralspecs.md)
 
 ## Add new / Edit webservice key
 
@@ -166,5 +166,5 @@ And you can also, select shop(s) not previously selected and therefore associate
 
 Selecting at least a shop is mandatory, if the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed below the shop association block to inform of the obligation to have at least one shop checked: "You have to select at least one shop to associate this item with" + the save button is disabled. only from 1.7.8
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block
+:point_right: [](../../../multistoregeneralspecs.md#shop-association-block)
 

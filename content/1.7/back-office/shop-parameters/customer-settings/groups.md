@@ -5,12 +5,12 @@ _As a merchant, I want to be able to group my customers._
 
 ## Summary
 
-1. [Customers groups listing](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#groups-listing)
-2. [Customers groups options](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#default-groups-options)
-3. [Customers groups multistore behavior](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#multistore-behavior)
-4. [Customers groups add form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#add-form)
-5. [Customers groups edit form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#edit-form)
-6. [Customers groups view form](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/shop-parameters/customer-settings/groups.md#view-form)
+1. [Customers groups listing](#groups-listing)
+2. [Customers groups options](#default-groups-options)
+3. [Customers groups multistore behavior](#multistore-behavior)
+4. [Customers groups add form](#add-form)
+5. [Customers groups edit form](#edit-form)
+6. [Customers groups view form](#view-form)
 
 
 ## Information notification
@@ -79,7 +79,7 @@ In a specific shop context or in a group context, the options listed above shoul
 
 In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318).
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/b912faba2d354ec41851fd37b5c97e89350a3b79/back-office/multistoregeneralspecs.md
+:point_right: [Multistore general specs](../../../multistoregeneralspecs.md)
 
 
 ## Add form
@@ -102,7 +102,7 @@ Only numbers can be typed in the field. If the merchant tries to save letters or
 
 **Shop association.** The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md#shop-association-block
+:point_right: [Shop association block specs](../../../multistoregeneralspecs.md#shop-association-block)
 
 
 ## Edit form
