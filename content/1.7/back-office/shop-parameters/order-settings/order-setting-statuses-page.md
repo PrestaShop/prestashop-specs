@@ -55,7 +55,7 @@ If the user was on another page in a specific shop context or in a group context
 
 An information message is displayed at the top of the page: "Note that this page is available in all shops context only, this is why your context has just switched." (_See issue [#19495](https://github.com/PrestaShop/PrestaShop/issues/19495)_)
 
-:point_right: [Read multistore specials cases](../../../../broader-topics/multistorespecialsspecs.md)
+:point_right: [Read multistore specials cases](../../../broader-topics/multistorespecialsspecs.md)
 
 #### Select all / unselect all checkbox
 
@@ -192,7 +192,7 @@ An information message should be displayed at the top of the page to inform the 
 
 So all order status should be displayed in the listing, be it an all shops, a group, or a specific shop context.
 
-:point_right: [Read multistore specials cases](../../../../broader-topics/multistorespecialsspecs.md)
+:point_right: [Read multistore specials cases](../../../broader-topics/multistorespecialsspecs.md)
 
 ## Return statuses
 
@@ -243,7 +243,7 @@ If the user was on another page in a specific shop context or in a group context
 
 An information message is displayed at the top of the page: "Note that this page is available in all shops context only, this is why your context has just switched." (_See issue [#19495](https://github.com/PrestaShop/PrestaShop/issues/19495)_)
 
-:point_right: [Read multistore specials cases](../../../../broader-topics/multistorespecialsspecs.md)
+:point_right: [Read multistore specials cases](../../../broader-topics/multistorespecialsspecs.md)
 
 #### Select all / unselect all checkbox
 
@@ -345,7 +345,7 @@ An information message should be displayed at the top of the page to inform the 
 
 So all order status should be displayed in the listing, be it an all shops, a group, or a specific shop context.
 
-:point_right: [Read multistore specials cases](../../../../broader-topics/multistorespecialsspecs.md)
+:point_right: [Read multistore specials cases](../../../broader-topics/multistorespecialsspecs.md)
 
 ## Specific cases
 
