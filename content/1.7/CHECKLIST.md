@@ -85,4 +85,4 @@ Last but not least, it will be much appreciated by the QA team if the specificat
 
 Want to have a precise overview of how should your specifications look like? Browse the different files already available or check our templates in the dedicated directory! Happy contributing!
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/tree/master/spec-templates
+:point_right: [](./spec-templates)
