@@ -79,7 +79,7 @@ In a specific shop context or in a group context, the options listed above shoul
 
 In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19318).
 
-:point_right: [Multistore general specs](../../../multistoregeneralspecs.md)
+:point_right: [Multistore general specs](../../multistoregeneralspecs.md)
 
 
 ## Add form
