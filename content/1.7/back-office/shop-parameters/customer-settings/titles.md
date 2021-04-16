@@ -70,4 +70,4 @@ An information message should be displayed at the top of the page to inform the 
 
 So all social titles should be displayed in the listing, be it an all shops, a group, or a specific shop context.
 
-:point_right: [multistore general specs](../../../multistoregeneralspecs.md)
+:point_right: [multistore general specs](../../multistoregeneralspecs.md)
