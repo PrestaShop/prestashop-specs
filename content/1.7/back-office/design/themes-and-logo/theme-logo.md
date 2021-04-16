@@ -56,7 +56,7 @@ All logo images should be imported via the upload field, with the placeholder _C
 
 ### Multistore behavior
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19375) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19327), take a look at the conditions and specs [here](../../../multistoregeneralspecs.md)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19375) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19327), take a look at the conditions and specs [here](../../multistoregeneralspecs.md)
 
 If I am in an all shops context or in a group of shops context, an information notification is displayed: `You must select a shop from the above list if you wish to choose a theme.`.
 
