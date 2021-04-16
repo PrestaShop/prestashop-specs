@@ -108,7 +108,7 @@ In a specific shop context or in a group context, the "default file encoding" do
 
 In an all shops context, the the "default file encoding" doesn't have specific settings drop-down.
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them
+:point_right: [Multistore specials cases: fields without checkboxes](../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them)
 
 ### Add new SQL query
 
@@ -143,4 +143,4 @@ This page has no shop association block. By default, the SQL query is added for 
 
 To inform the merchants of this behavior, an information message is displayed on this page: "Note that this feature is available in all shops context only. It will be added to all your stores." (see issue [#19422](https://github.com/PrestaShop/PrestaShop/issues/19422))
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block
+:point_right: [Multistore special case: Add new pages without shop association block](../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block)

@@ -60,9 +60,9 @@ For example, the most common case is activating/deactivating a setting in the ba
 
 Behaviors **might change when the multistore mode is enabled** (Shop Parameters > General), and it is to specify as well. How is the feature supposed to work with the multistore? In a specific shop context, a group context, and an all shops context?
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/multistoregeneralspecs.md
+:point_right: [multistore general specs](./back-office/multistoregeneralspecs.md)
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/blob/master/broader-topics/multistorespecialsspecs.md
+:point_right: [multistore general specs](./broader-topics/multistorespecialsspecs.md)
 
 
 ## Permission settings
@@ -85,4 +85,4 @@ Last but not least, it will be much appreciated by the QA team if the specificat
 
 Want to have a precise overview of how should your specifications look like? Browse the different files already available or check our templates in the dedicated directory! Happy contributing!
 
-:point_right: https://github.com/PrestaShop/prestashop-specs/tree/master/spec-templates
+:point_right: [Specifications templates](./spec-templates)
