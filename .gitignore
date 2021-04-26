@@ -4,3 +4,5 @@
 ## Directory-based project format:
 .idea/
 /public/
+**/node_modules/
+/resources/

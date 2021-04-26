@@ -1,0 +1,51 @@
+baseURL: "https://specs.prestashop.com/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "PrestaShop Specifications"
+
+theme: "hugo-geekdoc"
+enableGitInfo: true
+enableRobotsTXT: true
+
+params:
+  # geekdocMenuBundle: true
+  geekdocToC: 3
+
+  geekdocRepo: https://github.com/prestashop/prestashop-specs
+  geekdocEditPath: edit/master/
+
+  geekdocSearch: true
+  geekdocSearchShowParent: true
+
+  # (Optional, default true) Add an anchor link to headlines.
+  geekdocImageLazyLoading: true
+
+  pluralizeListTitles: false
+
+  projectUrls:
+    gitHub: "https://github.com/PrestaShop/PrestaShop/"
+    reportBug: "https://github.com/PrestaShop/PrestaShop/issues"
+    slack: "https://github.com/PrestaShop/open-source/blob/master/slack/readme.md"
+
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 1
