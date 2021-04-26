@@ -24,8 +24,9 @@ jobs:
             - name: Clean public directory
               run: rm -rf public
 
-            - name: Build theme
             - uses: c-hive/gha-npm-cache@v1
+
+            - name: Build theme
               run: ./bin/buildTheme.sh
 
             - name: Build site
