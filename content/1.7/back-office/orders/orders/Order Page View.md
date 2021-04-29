@@ -357,6 +357,17 @@ When I add a product already present in the order from the back office, the addi
 
 When I have a multi invoice and I add the product to an invoice that already contains the product, the addition is blocked by displaying the following error message "This product is already in invoice #number, please edit the quantity instead." localized in Admin.Notifications.Error
 
+-   **Add a product with a specific price**
+
+_specific price depending on the quantity_
+When a user add a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.
+
+When a user edit a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.
+
+A gift product is not included in the quantity rules of a specific price 
+
+If the ‘Quantity discounts based on‘ is set to ‘Products’ then the specific price rule is ignored.
+
 **Specific scenario**: When the merchant wants to add more quantities of the same product, he has to edit the product quantity to add some items.
 
 -   **Product minimum quantity**
@@ -426,16 +437,11 @@ The merchant is warned if he edits the price of the product with a specific pric
 The **Update button** saves the modification and **Cancel button** drops them.
 
 These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below :
-- If the product has a specific price. In this situation, if applicable, then when adding this product to the order (or adding the quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price should be applied.
+- If the product had associated cart rule. In this situation, if applicable, then when adding this product to the order (or adding the quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price is applied.
 
 - If the product has a Minimum quantity for sale higher than 1, defined in the Product quantity tab. In this situation, when trying to add a product with less than the minimum quantity, an error will be displayed with the required minimum quantity. Then, by editing this quantity, the merchant can enter any quantity, the verification is done only when adding. 
 
 - If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order.
-
-- If a cart rule is associated with a product :
-
-    1/ If the cart rule specifically applies a reduction on a product, it uses the rule defined for when the product is added in the order.
-    2/ If the cart rule adds a free gift to the order
 
 5. **Cart rule list**
 
