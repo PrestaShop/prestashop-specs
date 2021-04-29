@@ -35,7 +35,7 @@ If the store has only one payment method available, this payment method should b
 
 
 If the 'Final summary' has been enabled in the Shop Parameters > Order Settings section of the back office, a panel summarizing the order is displayed in the last step of the checkout, below the payment block.
-It displays the address of shipping and invoice, the shipping method ,and the product list of the cart.
+It displays the shipping and invoice address, the shipping method and a summary of the cart with the product list, the unit price, the quantity, the total for each product line, the subtotal, the shipping and the total
 
 ![order final summary](/img/Order_final_summary.png)
 
