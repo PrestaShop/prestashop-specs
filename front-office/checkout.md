@@ -39,7 +39,7 @@ It displays the shipping and invoice address, the shipping method and a summary 
 
 ![order final summary](/img/Order_final_summary.png)
 
-If the merchant has enabled the 'Final summary' and all the product in the cart are virtual product,
+If the 'Final summary' has been enabled and if all the products in the cart are virtual, then the shipping method and the shipping amount are not displayed. 
 
 If the merchant has enabled the 'Final summary' and 'Offer recycled packaging' options in the Shop Parameters > Order Settings section of the back office, and if the customer has decided to receive his/her order in recycled packaging, it should be mentioned in the _Shipping Method_ block of the final summary: `Recycled packaging` (localized in `Shop.Theme.Checkout`). Cf. _to do_ #[16348](https://github.com/PrestaShop/PrestaShop/issues/16348) issue.
 
