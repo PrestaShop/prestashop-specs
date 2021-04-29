@@ -366,7 +366,7 @@ When a user edit a product with a specific price on the quantity on the order pa
 
 A gift product is not included in the quantity rules of a specific price 
 
-If the ‘Quantity discounts based on‘ is set to ‘Products’ then the specific price rule is ignored.
+If the "Quantity discounts based on" option is set to "Products", the specific price rule is ignored for product combinations.
 
 **Specific scenario**: When the merchant wants to add more quantities of the same product, he has to edit the product quantity to add some items.
 
