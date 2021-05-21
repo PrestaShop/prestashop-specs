@@ -69,16 +69,16 @@ The available quantity of the product decreases according to the selected quanti
 
 When a pack of products is added to the cart and the pack has availability preferences to deny orders, the cart checks the stock availability depending on the quantities parameter of the pack.
 If the quantities parameter of the pack is:
-1) *Decrement pack only*, the verification of the quantity available checks the quantity available of the pack.
-2) *Decrement products in pack only*, the verification of the quantity available checks the quantity of the products of the pack (all the products have to be available).
-3) *Decrement both*, the verification of the quantity available checks the quantity of the products of the pack (all the products have to be available) and the quantity of the pack.
+1) **Decrement pack only**, the verification of the quantity available checks the quantity available of the pack.
+2) **Decrement products in pack only**, the verification of the quantity available checks the quantity of the products of the pack (all the products have to be available).
+3) **Decrement both**, the verification of the quantity available checks the quantity of the products of the pack (all the products have to be available) and the quantity of the pack.
 
 If the added product has availability preferences to allow orders, the product is added regardless of the product quantity.
 
 After the product is added to the cart depending on the quantities parameter of the pack:
-1) The available quantity of the pack decreases according to the selected quantity if the availability preference is to *Decrement pack only*.
-2) The available quantity of the products of the pack decreases according to the selected quantity if the availability preference is to *Decrement products in the pack only*.
-3) The available quantity of the pack and the products of the pack decrease according to the selected quantity if the availability preferences is to *Decrement both*.
+1) The available quantity of the pack decreases according to the selected quantity if the availability preference is to **Decrement pack only**.
+2) The available quantity of the products of the pack decreases according to the selected quantity if the availability preference is to **Decrement products in the pack only**.
+3) The available quantity of the pack and the products of the pack decrease according to the selected quantity if the availability preferences is to **Decrement both**.
 
 
 **The product table** displays for each product, the product image, description, reference, base price without tax, quantity, and total price without tax.
