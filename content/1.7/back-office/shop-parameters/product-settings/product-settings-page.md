@@ -146,7 +146,7 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
-If the product has combinations and if the default combination is out of stock with allowed backorder and if other combinations are available for order (in stock or out of stock with allowed backorder), then we should display “Product available with different options” in the product listings and product page instead of the "label of out-of-stock products with denied backorders".
+If the product has combinations and if the default combination is out of stock with denied backorder and if other combinations are available for order (in stock or out of stock with allowed backorder), then we should display “Product available with different options” in the product listings and product page instead of the "label of out-of-stock products with denied backorders".
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
