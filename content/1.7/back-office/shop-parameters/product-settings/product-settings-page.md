@@ -117,14 +117,6 @@ When setting this option to 'No':
 - the 'Quantity' field is not displayed in the product page (Catalog > Products);</br>
 - the 'Available' column is not displayed in the order details page (Orders > Orders > View).
 
-**Display the "out of stock" label on the product's listing pages** It allows to display a label on the product's listing pages when a product is out of stock and can't be ordered. The toggle is on yes by default.
-
-The out of stock label should be displayed only if the product stock is <= 0 AND if the order of out of stock product is denied.
-
-If the product has combinations, the out of stock label should be displayed only if all combinations are out of stock (stock is <= 0 AND if the order of out of stock product is denied)
-
-cf. _1.7.8_ issue #[21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
-
 **Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
 - just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
