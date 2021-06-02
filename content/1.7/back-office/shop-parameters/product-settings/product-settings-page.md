@@ -1,18 +1,14 @@
 # **SPECIFICATIONS - PRODUCT SETTINGS PAGE**
 
+**Mockups**: https://www.figma.com/file/aCBf2HlypjT0ZxP2XcsT68/Core-Github-issues?node-id=207%3A4875
 
 ## Products (general)
-
-_As a merchant, I want to be able to turn my online store into a products catalog._
 
 **Catalog mode.** A switch button allows the merchant to enable or disable the catalog mode. By default, it is disabled. Enabling this catalog mode **disables the shopping cart on the front office** and displays another field right below, labeled 'Show prices'.
 
 It also impacts the customer account on the front office, turning off the 'Order history and details', 'Credit slips', and 'Merchandise returns' pages.
 
 **Show prices.** It should be displayed only when the catalog mode is enabled. By default, it is disabled and prices are not mentioned on the front office. Enabling this option **adds the products' price and keeps the shopping cart unavailable in the front office**.
-
-
-_As a merchant, I want to be able to set my products' general settings._
 
 **Number of days for which the product is considered 'new'.** Currently, **a product is considered new starting from its creation date** but day 0 should be based on its activation date, cf. _to do_ issue #[18823](https://github.com/PrestaShop/PrestaShop/issues/18823). By default, it is set to 20 days.
 
@@ -96,17 +92,7 @@ When it's disabled, in the volume discounts board, the discount is displayed
 
 ## Products stock
 
-**Front-office mockups**: https://www.figma.com/file/aCBf2HlypjT0ZxP2XcsT68/Core-Github-issues?node-id=207%3A4875
-
 _As a merchant, I want to be able to manage my product pages according to the available stock._
-
-**Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
-
-1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
-
-2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a standard product.
- 
- On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
 
 **Enable stock management.** It allows basic stock management options and features: merchants can set the current quantity of a product and let PrestaShop lower it for each order, or re-stock it for each canceled or returned order. By default, this feature is enabled.
 
@@ -117,13 +103,13 @@ When setting this option to 'No':
 - the 'Quantity' field is not displayed in the product page (Catalog > Products);</br>
 - the 'Available' column is not displayed in the order details page (Orders > Orders > View).
 
-**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
-- just below the price in product listings
-- just above the quantity input and the 'Add to cart' button of the product page. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
-- in the shopping cart, below the combinations if there are, otherwise under the product name
+**Default pack stock management.** In case they sell packs of products, merchants can **select how to update the stock** among 3 different possibilities:
 
-Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+- _Decrement pack only._ When a pack is sold, only the stock for the pack is impacted.</br>
+- _Decrement products in pack only._ When a pack is sold, only the stock for each product is impacted.</br>
+- _Decrement both._ When a pack is sold, both the stock for the pack and the stock for each product are impacted.
+
+Note: this parameter can also be set for each pack in the 'Quantities' tab of their own product page.
 
 **Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the 'Product Details' section of the product page. Number of available items should be based on the selected attributes (= combination).
 
@@ -131,6 +117,22 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
+
+**Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
+
+1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
+
+2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a standard product.
+ 
+ On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
+
+**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
+- just below the price in product listings
+- just above the quantity input and the 'Add to cart' button of the product page. 
+- If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
+- in the shopping cart, below the combinations if there are, otherwise under the product name
+
+Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
 **Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed in orange #E19E00 in different places of the front-office:
 - just below the price in product listings
@@ -165,15 +167,6 @@ It should be displayed in orange #E19E00 in different places of the front-office
 - in the shopping cart, below the combinations if there are, otherwise under the product name, after the stock label. 
 
 By default, the field is empty. Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
-
-**Default pack stock management.** In case they sell packs of products, merchants can **select how to update the stock** among 3 different possibilities:
-
-- _Decrement pack only._ When a pack is sold, only the stock for the pack is impacted.</br>
-- _Decrement products in pack only._ When a pack is sold, only the stock for each product is impacted.</br>
-- _Decrement both._ When a pack is sold, both the stock for the pack and the stock for each product are impacted.
-
-Note: this parameter can also be set for each pack in the 'Quantities' tab of their own product page.
-
 
 ## Pagination
 
