@@ -96,6 +96,8 @@ When it's disabled, in the volume discounts board, the discount is displayed
 
 ## Products stock
 
+**Front-office mockups**: https://www.figma.com/file/aCBf2HlypjT0ZxP2XcsT68/Core-Github-issues?node-id=207%3A4875
+
 _As a merchant, I want to be able to manage my product pages according to the available stock._
 
 **Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
@@ -124,7 +126,7 @@ If the product has combinations, the out of stock label should be displayed only
 cf. _1.7.8_ issue #[21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 
 **Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
-- just below the price in product lisitngs
+- just below the price in product lisitings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
@@ -133,12 +135,13 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 
 **Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the 'Product Details' section of the product page. Number of available items should be based on the selected attributes (= combination).
 
-**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right below the 'Add to cart' button in the product page. If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
+**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right before the 'Add to cart' button in the product page and next to the stock label. Example: Availability: In stock - Last item in stock - Delivered under 48 hours
+If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
 
 **Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed in orange #E19E00 in different places of the front-office:
-- just below the price in product lisitngs
+- just below the price in product lisitings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
@@ -146,7 +149,7 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
 **Label of out-of-stock products with denied backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is disabled**. By default, it is _Out-of-Stock_ (or its translation for other languages). It should be displayed in red #C3362B in different places of the front-office:
-- just below the price in product lisitngs
+- just below the price in product lisitings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
