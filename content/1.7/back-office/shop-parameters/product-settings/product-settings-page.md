@@ -126,7 +126,7 @@ If the product has combinations, the out of stock label should be displayed only
 cf. _1.7.8_ issue #[21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 
 **Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
-- just below the price in product lisitings
+- just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
@@ -141,7 +141,7 @@ If the product has combinations, this message is based on the selected attribute
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
 
 **Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed in orange #E19E00 in different places of the front-office:
-- just below the price in product lisitings
+- just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
@@ -149,7 +149,7 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
 **Label of out-of-stock products with denied backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is disabled**. By default, it is _Out-of-Stock_ (or its translation for other languages). It should be displayed in red #C3362B in different places of the front-office:
-- just below the price in product lisitings
+- just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
