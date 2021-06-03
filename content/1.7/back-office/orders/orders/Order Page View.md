@@ -359,10 +359,10 @@ When I have a multi invoice and I add the product to an invoice that already con
 
 -   **Add a product with a specific price**
 
-_specific price depending on the quantity_
-When a user add a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.
+_Specific price depending on the quantity_
+When a user adds a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.
 
-When a user edit a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.
+When a user edits a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.
 
 A gift product is not included in the quantity rules of a specific price 
 
@@ -370,7 +370,7 @@ If the "Quantity discounts based on" option is set to "Products", the specific p
 
 _Adding a product already present in the order to a new invoice_
 
-If a product already existing in the order is added into a new invoice, the specific price on the quantity is not applied.
+If a product already exists in the order is added into a new invoice, the specific price on the quantity is not applied.
 
 -   **Add a product already present in the order
 
