@@ -1,3 +1,7 @@
+---
+title: Multistore Specials Cases
+weight: 1
+---
 # MULTISTORE SPECIALS CASES SPECS
 
 ## WHAT

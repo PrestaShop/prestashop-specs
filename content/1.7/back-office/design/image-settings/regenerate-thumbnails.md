@@ -1,3 +1,7 @@
+---
+title: Regenerate Thumbnails
+weight: 1
+---
 Regenerate thumbnails might be a touchy operation for the user.
 
 In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature's two options:

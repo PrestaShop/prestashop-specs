@@ -1,3 +1,7 @@
+---
+title: Information Page
+weight: 1
+---
 # **SPECIFICATIONS - INFORMATION PAGE**
 
 

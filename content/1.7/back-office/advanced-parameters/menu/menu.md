@@ -1,3 +1,7 @@
+---
+title: Menu Tab
+weight: 1
+---
 # SPECS FOR THE MENU TAB
 
 ## HISTORY

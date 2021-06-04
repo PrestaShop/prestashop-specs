@@ -1,3 +1,7 @@
+---
+title: Settings
+weight: 2
+---
 # Order settings specs
 
 ## General
@@ -8,7 +12,7 @@ This toggle is on No by default.
 
 When enabled, a summary is displayed in the Front-Office during the checkout, at the payment step:
 
-![order final summary](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Order_final_summary.png)
+![order final summary](/img/Order_final_summary.png)
 
 
 This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method & its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.
@@ -21,7 +25,7 @@ This toggle is on Yes by default.
 
 During the checkout in front-office, at the first step (personal information), a tab "order as a guest" is displayed with the following form:
 
-![order as a guest](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Order%20as%20a%20guest.png)
+![order as a guest](/img/order_as_a_guest.png)
 
 As the creation of an account is optional, the password field is also optional.
 
@@ -29,7 +33,7 @@ As the creation of an account is optional, the password field is also optional.
 
 During the checkout in front-office, at the first step (personal information), a tab "Create an account" is displayed with the following form:
 
-![order create an account](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Order_create_account.png)
+![order create an account](/img/Order_create_account.png)
 
 As the creation of an account is not optional, the password field is required.
 
@@ -39,9 +43,9 @@ This toggle is on No by default.
 
 When enabled, a "reorder" link is displayed in the order history page of the customer account and in the order detail:
 
-![reorder list](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Reorder.png)
+![reorder list](/img/Reorder.png)
 
-![reorder detail](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/Reorder_detail.png)
+![reorder detail](/img/Reorder_detail.png)
 
 ### Minimum purchase total required in order to validate the order
 
@@ -51,7 +55,7 @@ The merchant can enter the minimum value (taxes excluded) required in the cart f
 
 If the value is > 0.00 and not reached in the shopping cart front-office, then a message is displayed in the shopping cart: "A minimum shopping cart total of XX (tax excl.) is required to validate your order. Current cart total is XX (tax excl.)." and the "Proceed to checkout" button is disabled.
 
-![minimum order value](https://github.com/PrestaShop/prestashop-specs/blob/marionf-patch-2/img/minimum_order_value.png)
+![minimum order value](/img/minimum_order_value.png)
 
 **Please note this value is not taken into account for an order created in the back-office:** the merchant is allowed to create an order with an amount < to the value defined. 
 

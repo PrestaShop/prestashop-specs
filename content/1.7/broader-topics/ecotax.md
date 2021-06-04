@@ -1,3 +1,7 @@
+---
+title: EcoTax
+weight: 1
+---
 # SPECIFICATIONS - ECOTAX
 
 ## WHAT IS THE ECOTAX

@@ -1,3 +1,7 @@
+---
+title: Groups Page
+weight: 1
+---
 # **SPECIFICATIONS - CUSTOMERS SETTINGS > GROUPS PAGE**
 
 

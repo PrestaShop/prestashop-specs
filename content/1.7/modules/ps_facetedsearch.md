@@ -1,3 +1,7 @@
+---
+title: Faceted Search
+weight: 1
+---
 # ps\_facetedsearch specifications
 
 The faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.

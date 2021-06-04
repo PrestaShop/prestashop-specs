@@ -1,3 +1,7 @@
+---
+title: MultiStore
+weight: 1
+---
 # SPECS TO SETUP THE MULTISTORE
 
 As a merchant I need to be able to create as many stores as I need with a single back office.

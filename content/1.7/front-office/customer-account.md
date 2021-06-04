@@ -1,3 +1,7 @@
+---
+title: Customer Account
+weight: 1
+---
 # **SPECIFICATIONS - CUSTOMER ACCOUNT**
 
 

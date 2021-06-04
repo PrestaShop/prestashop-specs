@@ -1,3 +1,7 @@
+---
+title: Free Gift
+weight: 1
+---
 # SPECIFICATIONS - FREE GIFT USAGE DURING CHECKOUT 
 
 

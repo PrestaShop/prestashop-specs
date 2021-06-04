@@ -1,3 +1,7 @@
+---
+title: SEO Rules & Behaviours
+weight: 1
+---
 # Specifications related to SEO in PrestaShop
 
 

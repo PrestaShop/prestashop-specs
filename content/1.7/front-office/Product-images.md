@@ -1,3 +1,7 @@
+---
+title: Product Images
+weight: 1
+---
 # Managing product images in front-office #
 
 **Current context**

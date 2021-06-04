@@ -1,3 +1,7 @@
+---
+title: Image File Formats
+weight: 1
+---
 # **SPECIFICATIONS - IMAGE FILE FORMATS**
 
 

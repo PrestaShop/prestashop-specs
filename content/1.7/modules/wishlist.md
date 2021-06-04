@@ -1,3 +1,7 @@
+---
+title: Wishlist
+weight: 1
+---
 # Wishlist native module functional specifications
 
 ## Feature 1: Add to favorites 
@@ -13,7 +17,7 @@ Functional rules:
 What type of users can add products to their favorites?  
 Only logged-in users can add a product to their favorites - provided that they click on the heart icon on the product page or product block from a navigation page.
 
-![wishlist screen 1](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-1.png)
+![wishlist screen 1](/img/wishlist-screen-1.png)
 
 
 Which products can be added to favorites? 
@@ -55,10 +59,10 @@ For a logged-in user, clicking on the heart icon displays an in-page pop-up that
 -	the default favorites list,
 -	a previously created list (if the user does not have created lists previously, the default list is displayed - see below > the pop-up has a min. size),
 
-![wishlist screen 2](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-2.png)
+![wishlist screen 2](/img/wishlist-screen-2.png)
 
 -	a new list that can be created by clicking 'Create New wishlist'.
-![wishlist screen 3](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-3.png)
+![wishlist screen 3](/img/wishlist-screen-3.png)
 
 The user can only select one list, so the product can be added to only one list.  
 
@@ -73,14 +77,14 @@ The heart icon turns full once the product added to a favorites list.
 
 Heart icon for combinations: in the listing pages, the heart will not be full if the default combination is not selected.
 
-![wishlist screen 23](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-23.PNG)
+![wishlist screen 23](/img/wishlist-screen-23.PNG)
 
 If the user clicks on the full heart again, the product is removed from the wishlist. And if the product is deleted by the seller meanwhile, it should no longer appear in the user's favorites lists.
 
 Non-logged-in users:
 For a non-logged-in user: clicking on the heart icon displays an in-page pop-up that informs he/she must log in to proceed.
 
-![wishlist screen 5](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-5.png)
+![wishlist screen 5](/img/wishlist-screen-5.png)
 
 When clicking on "Sign in", the user is redirected to the login page. Once the connection is made, the user is redirected to his/her product or listing page.
 
@@ -102,10 +106,10 @@ For logged-in users:
 As a logged-in user, I can access my favorite products by:  
 - Going to my account  
 - Clicking on "Wishlists"
-![wishlist screen 6](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-6.png)
+![wishlist screen 6](/img/wishlist-screen-6.png)
 
 - I arrive on the page with all my favorites lists (default one + created lists)
-![wishlist screen 7](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-7.png)
+![wishlist screen 7](/img/wishlist-screen-7.png)
 
 - Selecting one of these lists brings me to a new page that lists my previously added favorite products  
 
@@ -114,7 +118,7 @@ This means that it accounts for all the idproduct allocated
 For example, if there are 3 combinations of the same product it counts as 3 products.
 In the case of a product pack, this counts as 1 pack and not the number of products in the pack
 
-![wishlist screen 8](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-8.png)
+![wishlist screen 8](/img/wishlist-screen-8.png)
 
 I can view the products and I can sort them as follows:  
 - Last added (default sorting)  
@@ -122,7 +126,7 @@ I can view the products and I can sort them as follows:
 - Price lowest to highest 
 
 In all three cases, keep the discount price in mind  
-![wishlist screen 9](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-9.png)
+![wishlist screen 9](/img/wishlist-screen-9.png)
 
 Please note that if a product is deleted or deactivated from the catalog, the product automatically disappears from the list.  
 
@@ -145,7 +149,7 @@ I can modify the quantity, the combinations, and the customizations of all my fa
 
 When I click on the pencil icon, I am redirected to the product page to make my modifications. Once the changes are made, I just need to click on the heart icon to add this new product as a favorite. The new quantity, combination and/or customization overwrites the original favorite in the list.
 
-![wishlist screen 10](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-10.png)
+![wishlist screen 10](/img/wishlist-screen-10.png)
 
 I can permanently remove a favorite product from the list by clicking on remove and a pop-up appears confirming that the product has been removed from the list.  
 
@@ -172,24 +176,24 @@ Specific case:
 Functional rules:
 A logged-in user can add one of their favorites to the cart (except customized products) if the product is in stock or out of stock but with the allow order option checked), by clicking on Add to cart.
 
-![wishlist screen 11](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-11.png)
+![wishlist screen 11](/img/wishlist-screen-11.png)
 
 If the product is out of stock with the option "Deny order" and therefore cannot be added to the cart: 
 -	a message is displayed informing the user that the product is no longer available: "Product out of stock".
 -	the "Add to cart" CTA is disabled and the product cannot be added to the cart
 
-![wishlist screen 12](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-12.png)
+![wishlist screen 12](/img/wishlist-screen-12.png)
 
 If the "order out of stock products" option is denied and if the selected combination is out of stock and if there are other available combinations (in stock or out of stock with allowed order) for the same product:
 -	a message tells the user that the product is available in other options "Product available with different options"
 -	the product image and the Add to cart CTA are disabled
 
-![wishlist screen 13](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-13.png)
+![wishlist screen 13](/img/wishlist-screen-13.png)
 
 For a customized product :
 * If the customization is required and as the customization is always not defined (since it is impossible to save the customization as a wishlist), the user will not be able to add this product to the cart directly from the favorites list. The "Add to cart" CTA is replaced by "Customize". When clicking on the CTA, the user is redirected to the product sheet in order to customize the product, and if it is already filled in, they can add this product to the cart. 
 * If the customization is not required, the product can be added to the cart directly.
-![wishlist screen 14](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-14.png)
+![wishlist screen 14](/img/wishlist-screen-14.png)
 
 Only non-customized products, with stock or out of stock with allow order option, can be added to the cart. If the product is out of stock and if the "order out of stock products" option is denied, the user will not be able to add it to the shopping cart, as it is currently the case in the PrestaShop Core.
 
@@ -211,7 +215,7 @@ Only logged-in users can create a favorites list
 3.	Option to cancel a list creation 
 4.	Validate the creation by clicking on Create
 
-![wishlist screen 15](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-15.png)
+![wishlist screen 15](/img/wishlist-screen-15.png)
 
 Once the list has been created, it will appear at the bottom of the lists 
 
@@ -246,19 +250,19 @@ b.	Share the list
 7.	A Rename CTA is used to validate the action and close the pop-up 
 8.	An "Cancel" CTA cancels the action and closes the pop-up 
 
-![wishlist screen 16](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-16.png)
+![wishlist screen 16](/img/wishlist-screen-16.png)
 
 When a user changes the name of the list and clicks on Rename, the pop-up window disappears and an information message is displayed in their favorites list indicating that the new name has been taken into account (the growl message). 
 
 To delete a list, simply click on the recycle bin icon, a validation pop-up appears, once the action is confirmed, the list is deleted
 
-![wishlist screen 17](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-17.png)
+![wishlist screen 17](/img/wishlist-screen-17.png)
 
 When the user confirms that they want to delete the list, an info message is displayed to inform the user that the list has been successfully deleted. 
 
 For the default favorites list, the recycle bin icon and the three little dots are not displayed but only the share button, see below.
 
-![wishlist screen 18](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-18.png)
+![wishlist screen 18](/img/wishlist-screen-18.png)
 
 
 ### US 7: Share your list
@@ -277,7 +281,7 @@ b.	Share the list
 11.	Click on "Copy link" to copy it (so we can close the pop-up window and share the link)
 12.	Click "Cancel" to close the pop-up 
 
-![wishlist screen 19](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-19.png)
+![wishlist screen 19](/img/wishlist-screen-19.png)
 
 a user who accesses the shared link cannot modify the products, they can only add them to their shopping cart (if enabled) > Read-only view 
 It is not an option in the module configuration.
@@ -286,7 +290,7 @@ Once a user has copied the link, the "Copy link" CTA changes to "Link copied" an
 
 To share the default list, just click on the share icon. It should display the sharing link in a pop-up window.
 
-![wishlist screen 18](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-18.png)
+![wishlist screen 18](/img/wishlist-screen-18.png)
 
 
 ##### As a user (logged in or not), I can open another user's list via a special link
@@ -303,11 +307,11 @@ A user does not need to be logged in to view the shared link > an "ephemeral" pa
 
 A multi-language field for each field allows to translate them
 
-![wishlist screen 21](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-21.png)
+![wishlist screen 21](/img/wishlist-screen-21.png)
 
 ##### As a seller, I can view statistics regarding favorites in back office 
 
-![wishlist screen 22](https://github.com/PrestaShop/prestashop-specs/blob/master/img/wishlist-screen-22.png)
+![wishlist screen 22](/img/wishlist-screen-22.png)
 
 available statistics: 
 Provide a cache for queries with calculations for large catalogs! (some sellers have more than 30,000 products)

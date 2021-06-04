@@ -1,3 +1,7 @@
+---
+title: Linklist
+weight: 1
+---
 # SPECS MULTISTORE LINKLIST MODULE
 
 As a merchant I need to be able to display different links in the front office depending on my stores

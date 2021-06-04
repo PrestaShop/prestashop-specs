@@ -1,3 +1,7 @@
+---
+title: Your vouchers
+weight: 1
+---
 ## Rules of the vouchers displayed in the customer's account in front-office
 
 Vouchers are displayed in the customer account in the front-office, according to their parameters:
@@ -28,4 +32,4 @@ Ex: if the voucher reduced 20 euro tax excluded, add free shipping and give The 
 
 __Voucher displayed on the Your voucher page.__
 
-![Voucher](https://github.com/PrestaShop/prestashop-specs/blob/master/img/list_vouchers_FO.png)
+![Voucher](/img/list_vouchers_FO.png)

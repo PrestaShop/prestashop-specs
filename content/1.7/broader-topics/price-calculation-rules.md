@@ -1,3 +1,7 @@
+---
+title: Price Calculation
+weight: 1
+---
 # Price calculation specifications 
 
 **Introduction**

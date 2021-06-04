@@ -1,3 +1,7 @@
+---
+title: Product Page
+weight: 1
+---
 # **SPECIFICATIONS - PRODUCT PAGE**
 
 

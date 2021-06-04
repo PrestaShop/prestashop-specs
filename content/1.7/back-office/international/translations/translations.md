@@ -1,3 +1,7 @@
+---
+title: Translations
+weight: 1
+---
 # Translations
 
 #### Conceptual vocabulary
@@ -170,11 +174,11 @@ This feature allows the user to export translations in a given language. The use
 - **Installed modules translations**
   When chosen, a select box containing the installed modules appears below.
 
-<img src="../../../img/back-office/international/translations/export-ps.png" alt="PrestaShop translations" style="zoom:50%;" />
+![PrestaShop translations](/img/back-office/international/translations/export-ps.png)
 
-<img src="../../../img/back-office/international/translations/export-theme.png" alt="PrestaShop translations" style="zoom:50%;" />
+![PrestaShop translations](/img/back-office/international/translations/export-theme.png)
 
-<img src="../../../img/back-office/international/translations/export-module.png" alt="PrestaShop translations" style="zoom:50%;" />
+![PrestaShop translations](/img/back-office/international/translations/export-module.png)
 
 When the user clicks on "Export", a zip file is generated and downloaded. 
 

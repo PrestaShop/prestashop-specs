@@ -1,3 +1,7 @@
+---
+title: Search Page
+weight: 1
+---
 # **SPECIFICATIONS - SEARCH PAGE**
 
 

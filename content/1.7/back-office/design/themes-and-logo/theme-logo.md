@@ -1,3 +1,7 @@
+---
+title: Theme & Logo
+weight: 1
+---
 # SPECIFICATIONS - DESIGN > THEME & LOGO > THEME & LOGO
 
 
