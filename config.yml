@@ -1,0 +1,22 @@
+baseURL: "http://localhost:1313/prestashop-specs/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "PrestaShop Specs"
+canonifyURLs: true
+relativeURLs: true
+uglyURLs: true
+
+theme: "hugo-geekdoc"
+
+params:
+  geekdocBreadcrumb: true
+  geekdocLogo: "logo.png"
+  geekdocRepo: "https://github.com/PrestaShop/prestashop-specs"
+  geekdocSearch: true
+  geekdocSearchShowParent: true
+  geekdocMenuBundle: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
