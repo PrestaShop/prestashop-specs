@@ -40,6 +40,15 @@ SPECIFICATIONS Multisotre header The multistore header is displayed, the specifi
     </item>
     
     <item>
+      <title>Theme Customization</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
+      <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
+    </item>
+    
+    <item>
       <title>Wishlist</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -47,15 +56,6 @@ SPECIFICATIONS Multisotre header The multistore header is displayed, the specifi
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</guid>
       <description>Wishlist native module functional specifications Feature 1: Add to favorites US 1: Add a product to a favorites list As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites list Several cases:
  Connected users Non-logged-in users Products with combinations &amp;amp; customizations  Functional rules: What type of users can add products to their favorites?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
-      <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
     </item>
     
   </channel>

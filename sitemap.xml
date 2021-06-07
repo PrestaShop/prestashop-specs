@@ -507,6 +507,10 @@
   </url>
   
   <url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</loc>
+  </url>
+  
+  <url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo.html</loc>
   </url>
   
@@ -560,10 +564,6 @@
   
   <url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/forms.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</loc>
   </url>
   
   <url>

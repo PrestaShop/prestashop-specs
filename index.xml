@@ -713,6 +713,15 @@ The page can have extra sections if:
     </item>
     
     <item>
+      <title>Theme Customization</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
+      <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
+    </item>
+    
+    <item>
       <title>Titles Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -814,15 +823,6 @@ This way, the customer can verify before the payment all the information: the de
       <guid>https://build.prestashop.com/prestashop-specs/1.7/forms.html</guid>
       <description>Specification of forms Context: Rule to be applied after the migration of a from or creation of a new form
 Mandatory fields:  Any mandatory string fields do not accept only spaces as a value.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
-      <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
     </item>
     
   </channel>
