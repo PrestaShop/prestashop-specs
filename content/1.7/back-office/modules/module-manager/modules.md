@@ -1,3 +1,7 @@
+---
+title: Modules Page
+weight: 1
+---
 # **SPECIFICATIONS - MODULE MANAGER > MODULES PAGE**
 
 

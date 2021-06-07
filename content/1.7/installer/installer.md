@@ -1,3 +1,7 @@
+---
+title: Installer
+weight: 1
+---
 # **SPECIFICATIONS - INSTALLER**
 
 

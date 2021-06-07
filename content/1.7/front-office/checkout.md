@@ -1,3 +1,7 @@
+---
+title: Checkout
+weight: 1
+---
 # **SPECIFICATIONS - CHECKOUT**
 
 

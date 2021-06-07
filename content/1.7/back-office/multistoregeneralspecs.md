@@ -1,3 +1,7 @@
+---
+title: General MultiStore Back Office
+weight: 1
+---
 # SPECS GENERAL MULTISTORE BACK-OFFICE
 
 As a merchant I need to be able to correctly manage all my stores

@@ -1,3 +1,7 @@
+---
+title: Updates Page
+weight: 1
+---
 # **SPECIFICATIONS - MODULE MANAGER > UPDATES PAGE**
 
 

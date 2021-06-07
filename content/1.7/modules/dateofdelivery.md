@@ -1,3 +1,7 @@
+---
+title: Date Of Delivery
+weight: 1
+---
 # Specifications for Date of delivery module #
 
 In 1.7, the dateofdelivery module has never been integrated with Classic Theme, which results in the module not being displayed in front-office (when using the $hookDisplayBeforeCarrier).

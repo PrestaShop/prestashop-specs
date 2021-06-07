@@ -1,3 +1,7 @@
+---
+title: Technical characteristics specs
+weight: 1
+---
 # Technical characteristics specs template v1.0
 December 19
 
@@ -15,7 +19,7 @@ This template presents how to write **technical characteristics** specs.
 It corresponds to the features' "Technical characteristics" int he schema below
 
 
-![specs structure](../img/ps_specs_structure.jpg)
+![specs structure](/img/ps_specs_structure.jpg)
 
 ---
 ---

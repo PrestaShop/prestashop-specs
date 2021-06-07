@@ -1,3 +1,7 @@
+---
+title: Customers Page
+weight: 1
+---
 # **SPECIFICATIONS - CUSTOMERS SETTINGS > CUSTOMERS PAGE**
 
 

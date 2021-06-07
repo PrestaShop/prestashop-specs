@@ -1,3 +1,7 @@
+---
+title: Titles Page
+weight: 1
+---
 # **SPECIFICATIONS - CUSTOMERS SETTINGS > TITLES PAGE**
 
 

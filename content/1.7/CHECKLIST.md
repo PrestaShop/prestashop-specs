@@ -1,3 +1,7 @@
+---
+title: Checklist
+weight: 1
+---
 # **SPECIFICATIONS CHECKLIST**
 
 

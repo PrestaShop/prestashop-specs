@@ -1,3 +1,7 @@
+---
+title: Symfony Migration
+weight: 1
+---
 # symfony-migration
 
 **SYMFONY MIGRATION GUIDELINES**

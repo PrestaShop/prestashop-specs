@@ -1,3 +1,7 @@
+---
+title: Administration Page
+weight: 1
+---
 # **SPECIFICATIONS - ADMINISTRATION PAGE**
 
 

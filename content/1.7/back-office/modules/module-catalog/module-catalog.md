@@ -1,3 +1,7 @@
+---
+title: Module Catalog Page
+weight: 1
+---
 # **SPECIFICATIONS - MODULE CATALOG > MODULE CATALOG PAGE**
 
 

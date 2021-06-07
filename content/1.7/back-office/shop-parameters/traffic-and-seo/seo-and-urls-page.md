@@ -1,3 +1,7 @@
+---
+title: SEO & URLs Page
+weight: 1
+---
 # **SPECIFICATIONS - SEO & URLS PAGE**
 
 

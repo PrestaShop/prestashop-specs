@@ -1,3 +1,7 @@
+---
+title: Alerts Page
+weight: 1
+---
 # **SPECIFICATIONS - MODULE MANAGER > ALERTS PAGE**
 
 

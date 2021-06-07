@@ -1,3 +1,7 @@
+---
+title: Dashboard
+weight: 1
+---
 # SPECIFICATIONS - CUSTOMERS SERVICE > CUSTOMERS SERVICE PAGE
 
 ## MOCKUPS
