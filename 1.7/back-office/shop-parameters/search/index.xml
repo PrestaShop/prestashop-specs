@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search.html</link>
+    <description>Recent content in Search on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</guid>
+      <description>SPECIFICATIONS - SEARCH PAGE Search As a merchant, I want to make sure visitors can find the product they are looking for on my online store.
+A table lists all the aliases defined by the merchant. He/she can add and edit aliases.
+Add an alias Clicking &amp;lsquo;Add new alias&amp;rsquo; or on the &amp;lsquo;+&amp;rsquo; icon on the top right-hand corner of the table should redirect to a new page, where there are two fields to fill:</description>
+    </item>
+    
+  </channel>
+</rss>

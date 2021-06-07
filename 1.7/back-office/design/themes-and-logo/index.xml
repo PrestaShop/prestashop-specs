@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Themes &amp; Logo on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo.html</link>
+    <description>Recent content in Themes &amp; Logo on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theme &amp; Logo</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; THEME &amp;amp; LOGO &amp;gt; THEME &amp;amp; LOGO As a merchant, I want to be able to set up my store&amp;rsquo;s look.
+The page can have extra sections if:
+ several themes are installed;
+ the multistore feature is enabled;
+ RTL languages are enabled;
+ the MBO module is installed.  Header There are 4 buttons:
+  &amp;lsquo;Add new theme&amp;rsquo; button redirects to the Design &amp;gt; Theme &amp;amp; Logo &amp;gt; Add new theme page.</description>
+    </item>
+    
+  </channel>
+</rss>

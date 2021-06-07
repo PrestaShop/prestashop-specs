@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traffic &amp; SEO on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo.html</link>
+    <description>Recent content in Traffic &amp; SEO on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SEO &amp; URLs Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</guid>
+      <description>SPECIFICATIONS - SEO &amp;amp; URLS PAGE Grid MetaGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column.
+SEO &amp;amp; URLs [TO BE COMPLETED]
+Rewritten URL. Should be available for all pages, even the index which stands for the store&amp;rsquo;s homepage.
+[TO BE COMPLETED]
+URLs set up Friendly URL. By default, this option is enabled.</description>
+    </item>
+    
+  </channel>
+</rss>

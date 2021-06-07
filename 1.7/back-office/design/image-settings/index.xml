@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Settings on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings.html</link>
+    <description>Recent content in Image Settings on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generation Options</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; IMAGE SETTINGS IMAGE SETTINGS [TO BE COMPLETED]
+IMAGE GENERATION OPTIONS Image format
+ Use JPEG.
+ Use PNG only if the base image is in PNG format.
+ Use PNG for all images.
+ Use WEBP only if the base image is in WEBP format.
+ Use WEBP for all images.
+  JPEG Compression
+PNG Compression
+Generate images based on one side of the source image</description>
+    </item>
+    
+    <item>
+      <title>Regenerate Thumbnails</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</guid>
+      <description>Regenerate thumbnails might be a touchy operation for the user.
+In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature&amp;rsquo;s two options:
+Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails. Also, regenerating thumbnails for all existing images can take several minutes, please be patient., localized in Admin.Design.Notification
+Select an image [TO BE COMPLETED]</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Team on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team.html</link>
+    <description>Recent content in Team on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Employees</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; EMPLOYEES Grid EmployeeGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Profiles Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+  </channel>
+</rss>

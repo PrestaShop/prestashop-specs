@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Addresses on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses.html</link>
+    <description>Recent content in Addresses on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add / Edit Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</guid>
+      <description>To save or change a Back-Office address, the following field must be filled in:
+ the first name, last name, address1, country city  The others fields are optional</description>
+    </item>
+    
+  </channel>
+</rss>

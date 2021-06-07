@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discount on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount.html</link>
+    <description>Recent content in Discount on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cart Rule</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</guid>
+      <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
+2 vouchers should be applied but the shipping should be deducted once.
+If I applied 2 vouchers in a cart:
+ Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift  Then
+Free shipping is applied once with a 5 % discount and a gift.
+ When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
+    </item>
+    
+    <item>
+      <title>Price Rules</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULES User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
+WHY The Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
+    </item>
+    
+  </channel>
+</rss>

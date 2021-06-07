@@ -1,0 +1,3381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="View Page">
+
+<title>View Page | PrestaShop Specs</title>
+
+<link rel="icon" href="../../../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../../../main.min.css" as="style">
+<link rel="stylesheet" href="../../../../main.min.css" media="all">
+
+<link rel="preload" href="../../../../mobile.min.css" as="style">
+<link rel="stylesheet" href="../../../../mobile.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../../../print.min.css" as="style">
+<link rel="stylesheet" href="../../../../print.min.css" media="print">
+
+<link rel="preload" href="../../../../custom.css" as="style">
+<link rel="stylesheet" href="../../../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://build.prestashop.com/prestashop-specs/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../../../logo.png" alt="" width=38 height=38>
+                PrestaShop Specs
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+
+
+    <section class="gdoc-nav--main">
+        <h2>Navigation</h2>
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7.html" class="gdoc-nav__entry ">
+                        Specifications
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/forms.html" class="gdoc-nav__entry ">
+                        Forms
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office.html" class="gdoc-nav__entry ">
+                        Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters.html" class="gdoc-nav__entry ">
+                        Advanced Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/administration.html" class="gdoc-nav__entry ">
+                        Administration
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/administration/administration.html" class="gdoc-nav__entry ">
+                        Administration Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database.html" class="gdoc-nav__entry ">
+                        Database
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database/dbbackup.html" class="gdoc-nav__entry ">
+                        DB Backup
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html" class="gdoc-nav__entry ">
+                        SQL Manager
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/email.html" class="gdoc-nav__entry ">
+                        Email
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/import.html" class="gdoc-nav__entry ">
+                        Import
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/information.html" class="gdoc-nav__entry ">
+                        Information
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/information/information.html" class="gdoc-nav__entry ">
+                        Information Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/logs.html" class="gdoc-nav__entry ">
+                        Logs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/menu.html" class="gdoc-nav__entry ">
+                        Menu
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/menu/menu.html" class="gdoc-nav__entry ">
+                        Menu Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/multistore/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/performance.html" class="gdoc-nav__entry ">
+                        Performance
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team.html" class="gdoc-nav__entry ">
+                        Team
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team/employees.html" class="gdoc-nav__entry ">
+                        Employees
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team/profiles.html" class="gdoc-nav__entry ">
+                        Profiles Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/webservice.html" class="gdoc-nav__entry ">
+                        WebService
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/webservice/webservice.html" class="gdoc-nav__entry ">
+                        Webservice
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog.html" class="gdoc-nav__entry ">
+                        Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers.html" class="gdoc-nav__entry ">
+                        Brands &amp; Suppliers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/brands.html" class="gdoc-nav__entry ">
+                        Brands
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html" class="gdoc-nav__entry ">
+                        Supliers Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories/add-edit.html" class="gdoc-nav__entry ">
+                        Category Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount.html" class="gdoc-nav__entry ">
+                        Discount
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount/cart-rule.html" class="gdoc-nav__entry ">
+                        Cart Rule
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount/price-rules.html" class="gdoc-nav__entry ">
+                        Price Rules
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products.html" class="gdoc-nav__entry ">
+                        Products
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products/listing.html" class="gdoc-nav__entry ">
+                        Listing
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products/add-edit.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/customer-service/dashboard.html" class="gdoc-nav__entry ">
+                        Dashboard
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/merchandise-returns.html" class="gdoc-nav__entry ">
+                        Merchandise Returns
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/order-messages.html" class="gdoc-nav__entry ">
+                        Order Messages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/addresses.html" class="gdoc-nav__entry ">
+                        Addresses
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/addresses/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/customers/list.html" class="gdoc-nav__entry ">
+                        List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design.html" class="gdoc-nav__entry ">
+                        Design
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/email-theme.html" class="gdoc-nav__entry ">
+                        Email Theme
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings.html" class="gdoc-nav__entry ">
+                        Image Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings/generation-options.html" class="gdoc-nav__entry ">
+                        Generation Options
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html" class="gdoc-nav__entry ">
+                        Regenerate Thumbnails
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/link-widget.html" class="gdoc-nav__entry ">
+                        Link Widget
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/pages/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/positions.html" class="gdoc-nav__entry ">
+                        Positions
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-and-logo.html" class="gdoc-nav__entry ">
+                        Themes &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-and-logo/theme-logo.html" class="gdoc-nav__entry ">
+                        Theme &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-catalog.html" class="gdoc-nav__entry ">
+                        Themes Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/multistoregeneralspecs.html" class="gdoc-nav__entry ">
+                        General MultiStore Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international.html" class="gdoc-nav__entry ">
+                        International
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization.html" class="gdoc-nav__entry ">
+                        Localization
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization/currencies.html" class="gdoc-nav__entry ">
+                        Currencies
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization/languages.html" class="gdoc-nav__entry ">
+                        Languages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/locations.html" class="gdoc-nav__entry ">
+                        Locations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/taxes.html" class="gdoc-nav__entry ">
+                        Taxes
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/taxes/taxes.html" class="gdoc-nav__entry ">
+                        Taxes Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/translations/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-catalog/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager.html" class="gdoc-nav__entry ">
+                        Module Manager
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/alerts.html" class="gdoc-nav__entry ">
+                        Alerts Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/modules.html" class="gdoc-nav__entry ">
+                        Modules Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/updates.html" class="gdoc-nav__entry ">
+                        Updates Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/credit-slips.html" class="gdoc-nav__entry ">
+                        Credit Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/delivery-slips.html" class="gdoc-nav__entry ">
+                        Delivery Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/invoices.html" class="gdoc-nav__entry ">
+                        Invoices
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/add.html" class="gdoc-nav__entry ">
+                        Add new order
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/listing.html" class="gdoc-nav__entry ">
+                        Listing Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/view-page.html" class="gdoc-nav__entry is-active">
+                        View Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/shopping-carts.html" class="gdoc-nav__entry ">
+                        Shopping Carts
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment.html" class="gdoc-nav__entry ">
+                        Payment
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment/payment-methods.html" class="gdoc-nav__entry ">
+                        Payment Methods
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping.html" class="gdoc-nav__entry ">
+                        Shipping
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/carriers.html" class="gdoc-nav__entry ">
+                        Carriers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/carriers/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters.html" class="gdoc-nav__entry ">
+                        Shop Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/contact.html" class="gdoc-nav__entry ">
+                        Contact
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/contact/tab.html" class="gdoc-nav__entry ">
+                        Contacts Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings.html" class="gdoc-nav__entry ">
+                        Customer Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/customers.html" class="gdoc-nav__entry ">
+                        Customers Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/groups.html" class="gdoc-nav__entry ">
+                        Groups Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/titles.html" class="gdoc-nav__entry ">
+                        Titles Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/general.html" class="gdoc-nav__entry ">
+                        General
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/general/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/merchant-expertise.html" class="gdoc-nav__entry ">
+                        Merchant Expertise
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings.html" class="gdoc-nav__entry ">
+                        Order Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html" class="gdoc-nav__entry ">
+                        Order Statuses
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-settings.html" class="gdoc-nav__entry ">
+                        Settings
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/product-settings.html" class="gdoc-nav__entry ">
+                        Product Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/product-settings/page.html" class="gdoc-nav__entry ">
+                        Product Settings Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/search/search.html" class="gdoc-nav__entry ">
+                        Search Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo.html" class="gdoc-nav__entry ">
+                        Traffic &amp; SEO
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" class="gdoc-nav__entry ">
+                        SEO &amp; URLs Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics.html" class="gdoc-nav__entry ">
+                        Broader Topics
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/ecotax.html" class="gdoc-nav__entry ">
+                        EcoTax
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/image-file-formats.html" class="gdoc-nav__entry ">
+                        Image File Formats
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/multistorespecialsspecs.html" class="gdoc-nav__entry ">
+                        Multistore Specials Cases
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/price-calculation-rules.html" class="gdoc-nav__entry ">
+                        Price Calculation
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/seo-rules-and-behaviours.html" class="gdoc-nav__entry ">
+                        SEO Rules &amp; Behaviours
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/symfony-migration.html" class="gdoc-nav__entry ">
+                        Symfony Migration
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/checklist.html" class="gdoc-nav__entry ">
+                        Checklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office.html" class="gdoc-nav__entry ">
+                        Front Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/checkout.html" class="gdoc-nav__entry ">
+                        Checkout
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/customer-account.html" class="gdoc-nav__entry ">
+                        Customer Account
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/discounts.html" class="gdoc-nav__entry ">
+                        Discounts
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/discounts/cart-rules-free-gift.html" class="gdoc-nav__entry ">
+                        Free Gift
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Mode
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/product-images.html" class="gdoc-nav__entry ">
+                        Product Images
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/products-list.html" class="gdoc-nav__entry ">
+                        Product List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/product-page.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/your-vouchers.html" class="gdoc-nav__entry ">
+                        Your vouchers
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/installer/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/psthemecusto.html" class="gdoc-nav__entry ">
+                        Psthemecusto
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/dateofdelivery.html" class="gdoc-nav__entry ">
+                        Date Of Delivery
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/ps_facetedsearch.html" class="gdoc-nav__entry ">
+                        Faceted Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/ps_linklist.html" class="gdoc-nav__entry ">
+                        Linklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/wishlist.html" class="gdoc-nav__entry ">
+                        Wishlist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates.html" class="gdoc-nav__entry ">
+                        Templates
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html" class="gdoc-nav__entry ">
+                        Functional and behaviors specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates/technical-characteristics-template.html" class="gdoc-nav__entry ">
+                        Technical characteristics specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span>
+        
+        <span class="breadcrumb">
+            <svg class="icon path"><use xlink:href="#path"></use></svg>
+            
+            
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='../../../../'>PrestaShop Specs</a> / <a href='../../../../1.7.html'>Specifications</a> / <a href='../../../../1.7/back-office.html'>Back Office</a> / <a href='../../../../1.7/back-office/orders.html'>Orders</a> / <a href='../../../../1.7/back-office/orders/orders.html'>Orders</a> / View Page
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+        </span>
+        
+    </span>
+    <span>
+        
+    </span>
+</div>
+
+
+    <article class="gdoc-markdown">
+        <h1>View Page</h1>
+        
+
+
+
+    
+
+
+<p><strong>Specifications for the order view page for 1.7.7 - 2019</strong></p>
+<h1 id="user-story"><strong>User Story:</strong></h1>
+<h1 id="as-a-merchant-i-need-to-be-able-to-manage-all-my-orders-processed-on-my-website">As a merchant, I need to be able to manage all my orders processed on my website.</h1>
+<p>As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:</p>
+<ul>
+<li>Check the order’s products to prepare it</li>
+<li>Manage the order’s progress,</li>
+<li>Edit the customer information or send him messages,</li>
+<li>Print his invoice,</li>
+<li>Handle payment methods,</li>
+<li>Follow my shipping through activities,</li>
+<li>Manage returns and refunds</li>
+</ul>
+<p><strong>WHY</strong></p>
+<p>The order view page <em>(Orders &gt; Orders &gt; View button)</em> is expected to be migrated to Symfony for the 1.7.7 version and will be reworked for improved merchant productivity and user experience.</p>
+<p>Some new specifications for the new design are in progress but to avoid any feature regressions in the future, we need to specify the whole behavior of this page to make it easier to compare the new scenarios and avoid any new bugs and regressions.</p>
+<p><strong>WHAT</strong></p>
+<p>Thus, this project aims at specifying the new behaviors for every scenario a merchant could be dealing with in the order management. This specification should specifically define :</p>
+<p>I. Action panel</p>
+<ol>
+<li>Update the order status</li>
+<li>Print order button</li>
+<li>View invoice show button</li>
+<li>View delivery slip button</li>
+<li>Summary of the standard refund, partial refund and return product feature</li>
+<li>Partial refund button</li>
+<li>Standard Refund button</li>
+<li>Return products button</li>
+<li>Cancel products button</li>
+<li>Next/Previous button</li>
+</ol>
+<p>II. Customer panel</p>
+<ol>
+<li>Deleted customer</li>
+<li>Guest customer</li>
+<li>Shipping and Invoice address</li>
+<li>Private customer note</li>
+</ol>
+<p>III. Messages panel</p>
+<ol>
+<li>Messages display</li>
+<li>Predefined messages</li>
+<li>Sending messages</li>
+</ol>
+<p>IV. Products panel</p>
+<ol>
+<li>Product list</li>
+<li>Add new products</li>
+<li>Remove products from the order</li>
+<li>Edit products already in the order</li>
+<li>Cart rule list</li>
+<li>Add a new cart rule</li>
+<li>Invoice generation</li>
+<li>Order Summary</li>
+</ol>
+<p>V. Tabs panel</p>
+<ol>
+<li>Status tab</li>
+<li>Documents tab</li>
+<li>Shipping tab</li>
+<li>Merchandising returns tab</li>
+</ol>
+<p><strong>SPECIFICATIONS</strong></p>
+<p><strong>Orders &gt; Orders &gt; View order</strong></p>
+<p>The user gets access to the order view page by either clicking on <strong>the order’s row</strong> or <strong>the view button</strong>.</p>
+<p><strong>Generic page operation - Order view</strong></p>
+<p>On the header, we have <strong>the order’s reference, customer’s name, total price in black background, the date and the hour</strong>.
+All date and time formats are defined according to CLDR and the display language.</p>
+<p>Order documents like invoices and delivery slips are, by default, in the customer language. An option allows merchants to turn it into the logistician language in the Shop Parameters &gt; Order Settings page, cf. issue #<a href="https://github.com/PrestaShop/PrestaShop/issues/10258">10258</a>.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="i-action-panel">I. <strong>Action panel</strong><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#i-action-panel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor I. <strong>Action panel</strong>" href="#i-action-panel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p><strong>Below the panel’s header</strong>, we have all the order&rsquo;s action button:</p>
+<ul>
+<li><strong>Update the order status</strong></li>
+<li><strong>Print order button</strong></li>
+<li><strong>View invoice show button</strong></li>
+<li><strong>View delivery slip button</strong></li>
+<li><strong>Partial refund button</strong></li>
+<li><strong>Standard Refund button</strong></li>
+<li><strong>Return products button</strong></li>
+<li><strong>Cancel products button</strong></li>
+<li><strong>Next/Previous button</strong></li>
+</ul>
+<ol>
+<li><strong>Update the order status</strong></li>
+</ol>
+<p>The current status is displayed by default on the droplist. It can be changed by selecting the new order&rsquo;s status from the droplist after validating the confirmation button.</p>
+<ol start="2">
+<li><strong>Print order button</strong></li>
+</ol>
+<p>Opens the Print page of the browser with the order’s content.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/386350135_Order_Details_-_Print_Order_1">pdf file result 1/2</a></p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/386350136_Order_Details_-_Print_Order_2">pdf file result 2/2</a></p>
+<ol start="3">
+<li><strong>View invoice show</strong></li>
+</ol>
+<p>The Invoice can be downloaded if the current or new order status has <strong>the generation of the invoice activated</strong> or if the user has generated it manually.</p>
+<ol start="4">
+<li><strong>View delivery slip</strong></li>
+</ol>
+<p>If the current or new order status has <strong>the generation of the delivery slip</strong> then <strong>the button to download the delivery slip is shown.</strong></p>
+<ol start="5">
+<li><strong>Summary of the standard refund, partial refund and return product feature</strong></li>
+</ol>
+<div class="gdoc-page__anchorwrap"><h2 id="merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong>" href="#merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<table>
+<thead>
+<tr>
+<th><strong>Button</strong></th>
+<th><strong>Why</strong></th>
+<th><strong>What is does</strong></th>
+<th><strong>When is it displayed</strong></th>
+<th><strong>When is it hidden</strong></th>
+<th><strong>Option</strong></th>
+<th><strong>Summarise Behaviours</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PrestaShop/PrestaShop/issues/16650"><strong>Cancel products</strong></a></td>
+<td>To Cancel a wrong order</td>
+<td>It deletes the products (or reduce the quantity). It also changes the order status to <strong>Canceled</strong> when all the products are canceled.</td>
+<td>At the creation of an order and merchandise return is <strong>enabled</strong></td>
+<td>When the order is considered as paid</td>
+<td></td>
+<td>Select the products to cancel then their quantity. Press on the cancel products to confirm.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PrestaShop/PrestaShop/issues/16653"><strong>Standard refund</strong></a></td>
+<td>To refund products, before it is sent to the customer (the products are still in the stock)</td>
+<td>Refund by voucher or by credit slip of the total amount of products</td>
+<td>When the order is considered as <strong>paid</strong> or <strong>at least one payment</strong> is linked to the order and Merchandise return is <strong>enabled</strong></td>
+<td>When the order is considered as shipped</td>
+<td>- Generate a credit slip- Generate voucher- Repay shipping costs (option appears if you select to generate a voucher or a credit slip)</td>
+<td>Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PrestaShop/PrestaShop/issues/15820"><strong>Partial Refund</strong></a></td>
+<td>To refund any amount of products and/or the shipping cost</td>
+<td>Refund by voucher and restock</td>
+<td>When the order is considered as <strong>paid</strong> or <strong>at least one payment</strong> is linked to the order</td>
+<td>Never</td>
+<td>- Restock products- Generate a voucher</td>
+<td>Select the quantity and amount of the refund per product, the amount of the refund for shipping cost. Select the refund options then press on Partial refund to confirm</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PrestaShop/PrestaShop/issues/16654"><strong>Return products</strong></a></td>
+<td>To refund the returned products and restock</td>
+<td>Refund the total price of the products, the shipping cost and restock the returned products</td>
+<td>Order is considered as <strong>paid</strong> or <strong>at least one payment</strong> is linked to the order and <strong>shipped</strong> and merchandise return is <strong>enabled</strong></td>
+<td>Never</td>
+<td>- Restock products- Generate credit slip- Generate a voucher- Repay shipping costs (option appears if you select generate a voucher or credit slip)</td>
+<td>Select the products to refund and their quantity. Then select the refund option. Press on refund products to confirm.</td>
+</tr>
+</tbody>
+</table>
+<p>If this order has been partially paid by voucher. The merchant can refund either by selecting the total amount of the selected products or this total minus the amount of the vouchers.</p>
+<p>Before 1.7.7, it used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied to the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
+To harmonize the behaviors, we put the specific custom edition into the partial refund button and set the return product button with straightforward options. The merchant can customize the voucher on the partial refund feature.</p>
+<ol start="6">
+<li><strong>Partial refund button</strong></li>
+</ol>
+<p>If the current or new order status of the order is considered <strong>as paid</strong> then <strong>the button is shown.</strong> After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refund and then enter a selected refund amount per product line. The maximum refundable amount is written below all the amount input in tax included.</p>
+<p>By default, the entered quantity has 0 pre-filled. To release a partial refund, the user must have selected a minimum quantity of 1. The maximum refund is determined by the product totals. The limitation of the refund does not take into account the amount paid whether it is partially or paid by the customer.</p>
+<p><strong>Before validating a partial refund,</strong> the user can choose to re-stock or generate a voucher by checking the checkboxes.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund">Partial Refund screen</a></p>
+<p><strong>After the validation of a partial refund,</strong> a new column is added with the quantity previously selected and the amount entered.</p>
+<p>When the status &ldquo;Refunded&rdquo; is applied to the order, the refund amount is deducted from the total spent by the customer since registration and the number of valid orders placed decreases by 1.</p>
+<ol start="7">
+<li><strong>Cancel products button</strong></li>
+</ol>
+<p>The cancel button is only displayed by default on the creation of an order.
+The button <strong>is hidden</strong> when the order is <strong>considered as paid</strong></p>
+<p>When pressing the button, the product list takes the full with of the page and the column cancel is added.
+On the column cancel, a checkbox and quantity input is displayed. Checking the checkbox will prefill the quantity input with the quantity of the product ordered.
+The quantity input can still be editable.</p>
+<p>Pressing the button cancel will reduce the quantity of the products selected if there are still some left otherwise it deletes the product from the list.</p>
+<p><img src="https://user-images.githubusercontent.com/43613217/69956873-85abc980-1501-11ea-9a02-33365caa01fe.png" alt="before cancel button"></p>
+<p>To cancel products at least one of the products must be selected.</p>
+<p><strong>When all the products are canceled, the status automatically changes for &ldquo;Canceled&rdquo;.</strong></p>
+<p><strong>When the status &ldquo;Canceled&rdquo; is applied to the order, the quantity of products in the order is returned to stock.</strong></p>
+<ol start="8">
+<li><strong>Standard products button</strong></li>
+</ol>
+<p>Standard refund <strong>is only displayed when the merchandise returns are activated and the order is considered as paid</strong> and <strong>is hidden when the order is considered as shipped.</strong></p>
+<p>When the user presses the button a column &ldquo;Refund&rdquo; is added with a checkbox and the input quantity.</p>
+<p>A quantity of greater than 0 must be selected to refund a product.</p>
+<p>Before refunding the products, the user can choose to generate a credit slip and/or voucher. The merchant can choose to restock the products</p>
+<p><img src="https://user-images.githubusercontent.com/43613217/69959536-ad9e2b80-1507-11ea-9441-ec63cce2c0dd.png" alt="before standard refund"></p>
+<p>A product can&rsquo;t be refund multiple times.</p>
+<p>After refunding, it shows on a column &ldquo;Refunded&rdquo;, the quantity and the price of the refund per products.</p>
+<p><img src="https://user-images.githubusercontent.com/43613217/69959612-e211e780-1507-11ea-945a-934fe5441d37.png" alt="after standard refund"></p>
+<ol start="9">
+<li><strong>Return products button</strong></li>
+</ol>
+<p>Return product <strong>is only displayed when the merchandise returns are activated and the order is considered as paid</strong> and <strong>is hidden when the order is considered as shipped.</strong></p>
+<p>When the user presses the button a column &ldquo;Refund&rdquo; is added with a checkbox and the input quantity.</p>
+<p>A quantity must be selected to refund a product.
+A product can be return if it has been re-stock before by another process has a standard, cancel, or partial refund button.
+A product can&rsquo;t be refund multiple times.</p>
+<p>Before refunding the products, the user can choose to generate a credit slip and/or voucher or/and re-stock.</p>
+<p><img src="https://user-images.githubusercontent.com/43613217/69962213-cd385280-150d-11ea-8eca-1e245e5e408f.png" alt="before return product"></p>
+<p>After returning the products, it shows on a column &ldquo;Return&rdquo; and &ldquo;Refund&rdquo; with the return quantity and the price of the refund per products if a generated slip was checked in the option.</p>
+<p><img src="https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png" alt="after return product"></p>
+<ol start="10">
+<li><strong>Next/Previous button</strong></li>
+</ol>
+<p>![arrows next/prev](INSERT IMG)</p>
+<p>Pressing the left arrow opens the next older order.
+Pressing the right arrow opens the next recent order.
+If the first order (the oldest one) is opened, the left arrow is disabled.
+If the last order (the newest one) is opened, the right arrow is disabled.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="ii-customer-panel">II. <strong>Customer panel</strong><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#ii-customer-panel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor II. <strong>Customer panel</strong>" href="#ii-customer-panel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>The customer panel displayed on the left of the product list has <strong>the customer’s title, name, last name, and customer reference.</strong> To see the full customer description, you can click on <strong>View full details</strong> that redirect to his customer page on another page.</p>
+<p>The customer panel is divided into 3 parts:</p>
+<ul>
+<li>Customer card regrouping the customer’s information</li>
+<li>Shipping and Invoice address</li>
+<li>Private customer note</li>
+</ul>
+<p><strong>Customer card</strong> displays :</p>
+<ul>
+<li><strong>the email on a “mailto” link</strong></li>
+<li><strong>date of the account registered</strong></li>
+<li><strong>valid orders placed on a black background</strong></li>
+<li><strong>total spend since registration on a black background.</strong></li>
+</ul>
+<ol>
+<li><strong>Deleted customer</strong></li>
+</ol>
+<p>When a customer is deleted:</p>
+<p>The customer information such as <strong>the email, the date of the account registered, the valid orders placed, the total spend since registration</strong>, shipping and invoice address drop-down button, and the private note block are not displayed.</p>
+<p>The customer name is changed to <strong>&ldquo;Deteled customer&rdquo;</strong>. It removes the icon account box and the link to redirect to the full details customer page.</p>
+<ol start="2">
+<li><strong>Guest customer</strong></li>
+</ol>
+<p>If the customer is a guest:
+The fields &ldquo;account registered&rdquo; and &ldquo;total spent&rdquo; are hidden.
+Below the customer name, &ldquo;Guest&rdquo; in grey (Open sans semibold 14px #6C868E) is displayed.</p>
+<p>The button to transform a guest into a customer is removed. The feature is still available on the customer page. The order is not the place to handle customer management. It was removed to not encourage the merchant to transform Guest to a Customer account by letting a button on the order page.</p>
+<ol start="3">
+<li><strong>Shipping and Invoice address</strong></li>
+</ol>
+<p>Each address has <strong>a button</strong> to update or change it. The button opens a list to select to edit or update it.
+Editing an address creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress">Edit/Change Addresse behaviors</a></p>
+<p><strong>The edit address redirects to the edit address page of the selected address</strong>. After saving any edit of the fields of the address form, <strong>the user is redirected to the order</strong> that he was editing in the first place.</p>
+<p>And <strong>change address</strong> opens the pop in that allows the user to choose the new address form a droplist.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress">Popin - Change address</a></p>
+<p>When all the products in the order are virtual products, only the invoice address is displayed.</p>
+<ol start="4">
+<li><strong>Private customer note</strong></li>
+</ol>
+<p><strong>Private customer note</strong> saves or displays a note for the corresponding customer. The same note will be share for all the orders from the same customer. It is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press the save button to save it.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior">Customer private note</a></p>
+<div class="gdoc-page__anchorwrap"><h2 id="iii-messages-panel">III. <strong>Messages panel</strong><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#iii-messages-panel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor III. <strong>Messages panel</strong>" href="#iii-messages-panel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Bellow the customer panel, you have the messages panel. <strong>The total of the exchanged messages</strong> is displayed next to the panel&rsquo;s title.</p>
+<ol>
+<li><strong>Messages display</strong></li>
+</ol>
+<p><strong>Only the 4 last messages</strong> private or public are displayed showing <strong>the sender’s name, delivery’s date, and the content’s message. The private message</strong> is displayed with a dark background and a specific icon for the sender pic.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/378991321__Order_Details">Messages Panel</a></p>
+<p>If the merchant has added a message to the order during the creation, the message is displayed here as a private message</p>
+<p><strong>To see all the past messages</strong>, the merchant can click on <strong>View full conversation</strong> to open on a popup.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History">Message History</a></p>
+<ol start="2">
+<li><strong>Predefined messages</strong></li>
+</ol>
+<p>Bellow the messages displayed, the user can <strong>choose an order message</strong> to send into the droplist containing <strong>the predefined messages</strong> of the <strong>order messages page</strong>. Selecting the message prefills <strong>the message input text</strong>. By default, there is no prefilled message so the droplist shows “-”. below the droplist, the link named <strong>&ldquo;configure predefined messages&rdquo;</strong> is available. It redirects to<strong>the order messages page</strong> to access the predefined messages.</p>
+<p>After selecting the droplist selection, the prefilled text is still editable.</p>
+<ol start="3">
+<li><strong>Sending messages</strong></li>
+</ol>
+<p><strong>A checkbox</strong> is available to choose <strong>to write a private message hidden from the customer.</strong></p>
+<p>Using the prefilled message or writing the message from scratch, the user sends it by clicking on <strong>Send message</strong> . It sends the message by email and adds the message on the front-office on the message section of <strong>the order historic page and an email</strong> as presented on the screenshots below.</p>
+<p>The maximum of character in the text input is 1200 char. If the merchant manages to send a message of more than 1200 characters, the message is not sent and the warning message &ldquo;This field cannot be longer than 1200 characters&rdquo; is displayed below the text input.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="iv-products-panel">IV. <strong>Products panel</strong><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#iv-products-panel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor IV. <strong>Products panel</strong>" href="#iv-products-panel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<ol>
+<li><strong>The Product list</strong></li>
+</ol>
+<p>Below the actions button and on the right of the customer panel, the product panel displays <strong>the order’s products into the table list</strong> showing:</p>
+<ul>
+<li><strong>the product’s image,</strong></li>
+<li><strong>product name (with its name, combination name, and reference),</strong></li>
+<li><strong>stock location,</strong> if one of the products has one</li>
+<li><strong>base price with tax included,</strong></li>
+<li><strong>quantity,</strong></li>
+<li><strong>available quantity,</strong></li>
+<li><strong>total with tax included,</strong></li>
+<li><strong>and 2 action buttons : edit and delete.</strong></li>
+</ul>
+<p>The list of products is displayed in reverse chronological order of the date of addition (the last added products are displayed first).</p>
+<p><strong>When the product has customization</strong>, a row is added below the product with the labels of the customization and the content from the customer (image or text). When the number of images exceeds the size of the toe, they go to the next line.</p>
+<p><a href="../../../../img/customization.png">popin displaying the products from the pack</a></p>
+<p><strong>When the product is a pack of products</strong>, a link is added below the product name to show all the products in a pop in.</p>
+<p><a href="../../../../img/view-pack-content.png">Link in the product row</a></p>
+<p>By pressing on the link &ldquo;View pack content&rdquo;, it shows all the products from the pack in a pop in:</p>
+<p><a href="../../../../img/pack-content.png">Popin displaying the products from the pack</a></p>
+<p><strong>The pagination of the list starts when there are more than 8 products</strong>
+<strong>The stock location column is hidden</strong> only when none of the products has a stock location. The column is only displayed at the corresponding pagination. If only a product on page 2 of the list has a stock location then the stock location column appears on page 2 and hidden in the other pages.</p>
+<p><a href="https://projects.invisionapp.com/share/YKTGGFZAMCB#/screens/392128609">Pagination design</a></p>
+<p><strong>The quantity</strong> is colored in a dark grey background if there are at least 2 quantities.</p>
+<p><strong>Possible actions:</strong></p>
+<p>In an existing order (until it gets the order status “Processing in progress”), it is possible to perform actions on the order’s products and discounts. Merchants can :</p>
+<ul>
+<li>add new products to the order</li>
+<li>remove products from the order</li>
+<li>modify elements of existing products</li>
+<li>add new cart rules to the order</li>
+</ul>
+<p>Below the totals, a warning message is displayed to warn the user that <strong>for this customer group, prices are displayed as HT</strong> or <strong>for this customer group, prices are displayed as TTC</strong> depending on the customer group setting and also <strong>that returns are disabled.</strong> when the merchandise return is disabled on the merchandise returns page.</p>
+<ol start="2">
+<li><strong>Add new products</strong></li>
+</ol>
+<p>When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :</p>
+<ul>
+<li>the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.</li>
+<li>the quantity:
+The quantity input is an input type number that decreases the stock left when the user increases the quantity. If the quantity selected is higher than the stock, the available quantity label becomes red.
+The product is added in the product table and to the order after <strong>pressing on the add button</strong>: if the quantity is greater than 0; if the quantity is less than or equal to the quantity available. Otherwise, a warning error is shown (except if the stock parameter allows selling without stocks (in Product quantities tab). In this situation, the merchant can add as many product items as he wants).</li>
+</ul>
+<p>When a product is successfully added to the order, a notification of success is displayed: &ldquo;The item was successfully added.&rdquo; in Admin.Notifications.Success.
+Then the product list is reloaded behind the loading spinner to check if any new products could be added through automatics carts rules. The user is redirected to the first page of the product list.</p>
+<p>When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): &ldquo;This product is already in your order, please edit the quantity instead.&rdquo;</p>
+<p>When I have a multi invoice and I add the product to an invoice that already contains the product, the addition is blocked by displaying the following error message &ldquo;This product is already in invoice #number, please edit the quantity instead.&rdquo; localized in Admin.Notifications.Error</p>
+<ul>
+<li><strong>Add a product with a specific price</strong></li>
+</ul>
+<p><em>Specific price depending on the quantity</em>
+When a user adds a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.</p>
+<p>When a user edits a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.</p>
+<p>A gift product is not included in the quantity rules of a specific price</p>
+<p>If the &ldquo;Quantity discounts based on&rdquo; option is set to &ldquo;Products&rdquo;, the specific price rule is ignored for product combinations.</p>
+<p><em>Adding a product already present in the order to a new invoice</em></p>
+<p>If a product already exists in the order is added into a new invoice, the specific price on the quantity is not applied.</p>
+<ul>
+<li>**Add a product already present in the order</li>
+</ul>
+<p>When the merchant wants to add more quantities of the same product, he has to edit the product quantity to add some items.</p>
+<ul>
+<li><strong>Product minimum quantity</strong></li>
+</ul>
+<p>The minimum quantity of a product is determined by all the products of the order regardless of whether the products are separated between invoices. It allows a merchant to add a product on another invoice because the minimum quantity is respected in the order.
+Editing the quantity of the product to a quantity less than the minimum quantity required is authorized, the responsibility belongs to the merchant.</p>
+<p>For example, when I add a product A with a minimum quantity, if the quantity of the new product A and the current quantity is equal to or greater than the product is added. Otherwise, an error is launched: &ldquo;Error! Minimum quantity of X must be added&rdquo;, X quantity missing to be equal to the required minimum quantity.</p>
+<p>A product allowed to be ordered out of stock can be added to an order without complying with the minimum quantity rule.</p>
+<ul>
+<li><strong>Product associated to cart rule</strong></li>
+</ul>
+<p>When I add a product associated with a discount to an order, the discount is also added.</p>
+<ul>
+<li>
+<p>In the case of a discount on the total of the order, if I add a second time this product, the discount should not be added and avoid the accumulation of discount.</p>
+</li>
+<li>
+<p>In the case of reduction to a specific product of a fixed amount, the discount is applied only once despite the number of quantities of the same product in the cart and the total per user strictly greater than 1.</p>
+</li>
+</ul>
+<p>If the discount is updated the order remains the same.</p>
+<ul>
+<li><strong>Cart rule behaviors</strong></li>
+</ul>
+<p><strong>Specific scenario</strong>: Adding a product recalculates all discounts and the total price. So if the merchant has a discount linked to a specific product for example at 40%. Then he changes the discount to 50% discount. Finally, he adds a new product, the discount will update and a 50% discount will be applied to the order.</p>
+<p><strong>Specific scenarios</strong>: A product added in an order with a discount attached to it is added in the order as well.</p>
+<p>In the case of a discount to a specific product by percentage, the discount applies to the total amount of the product taking into account the quantity, i.e. the discount = quantity of the product * %. But only applies once in the basket even if the merchant can still use the discount on other carts (total user for each user &gt; 0).</p>
+<ul>
+<li><strong>Multi invoices behaviors</strong></li>
+</ul>
+<p>When I add a product when an invoice is already generated, the merchant can choose to:</p>
+<ul>
+<li>Offer free shipping for this product or apply the shipping cost</li>
+<li>Associate the product to an existing or new invoice</li>
+</ul>
+<p>When the order has several invoices, it is possible to add an already existing product to the order if they are related to a different invoice.
+There is only one possible price per product even if they are from different invoices. Therefore, if a product is added with a different price in another invoice, the price will be updated on the first invoice. To avoid confusion, a pop-up window will be displayed before the addition to confirm that the action may have an impact on the other order.</p>
+<ol start="3">
+<li><strong>Remove products from the order</strong></li>
+</ol>
+<p>Deleting one or several products is very easy: a remove icon is available to remove one or several quantities of a paid product.</p>
+<p>When a product is removed from the order, a notification is displayed: &ldquo;The item was successfully removed.&rdquo; in Admin.Notifications.Error.
+Then the product list is refreshed behind the loading spinner to check if any gift product has to be removed as well. The user is redirected to the page where the user was when the product has been removed. If the removed product was on the last page, the user is redirected to the second-last page.</p>
+<p>Current bug: if I delete the paid product, it will also delete the gifted product (the voucher is still displayed). The deletion should only delete the paid product.</p>
+<p><strong>Specific scenarios</strong> : when a product in the cart is a gift product (from a cart rule)
+Note that it is not possible to delete a gift product from the cart, it’s only possible by removing the associated cart rule.</p>
+<p>Furthermore, If the merchant has a paid product, and the same product, but gifted, in the cart, he should not have a Remove button available on the product line. The remove button only appears when there are no longer gift products on the same product line.</p>
+<p><strong>A confirmation pop-up appears after clicking on the Delete button.</strong></p>
+<p>If the user deletes all the products, the order status remains the same.</p>
+<ol start="4">
+<li><strong>Edit products already in the order</strong></li>
+</ol>
+<p>When clicking on the edit button of a product line, the user is allowed to edit :</p>
+<ul>
+<li>The product base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax. ex: If the user edits an amount in the input without tax it will insert the amount plus the product taxes in the input with tax automatically. And vice versa, if the user edits an amount in the input with tax it will insert the amount less the product taxes in the input without tax.</li>
+<li>The quantity of the product. Behaviors are the same as when merchants add new products. Increasing or decreasing will update the stock available quantity.</li>
+</ul>
+<p>The merchant is warned if he edits the price of the product with a specific price or a catalog price rule.
+<img src="../../../../img/Warning_on_the_edition_product_specific_price_catalog.PNG" alt="Warning on the edition of a product with specific price"></p>
+<p><strong>While editing the quantity, the total price will be updated multiplying quantity with the base price.</strong>
+The <strong>Update button</strong> saves the modification and <strong>Cancel button</strong> drops them.</p>
+<p>These rules apply for all types of products, with or without combinations. Nevertheless, there are some specific cases, detailed below :</p>
+<ul>
+<li>
+<p>If the product had associated cart rule. In this situation, if applicable, then when adding this product to the order (or adding the quantity of the same product), the base price will be automatically recalculated to include the discount. If the conditions are not met (ex: expired date, only for a specific customer, etc.), then the normal price is applied.</p>
+</li>
+<li>
+<p>If the product has a Minimum quantity for sale higher than 1, defined in the Product quantity tab. In this situation, when trying to add a product with less than the minimum quantity, an error will be displayed with the required minimum quantity. Then, by editing this quantity, the merchant can enter any quantity, the verification is done only when adding.</p>
+</li>
+<li>
+<p>If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order.</p>
+</li>
+</ul>
+<ol start="5">
+<li><strong>Cart rule list</strong></li>
+</ol>
+<p>The below the product panel, there is the order&rsquo;s summary:</p>
+<ul>
+<li><strong>Products total with taxes excluded</strong></li>
+<li><strong>Total shipping</strong></li>
+<li><strong>Discount</strong> if there is any cart rule applied</li>
+<li><strong>Wrapping</strong> if there is a wrapping option in the order</li>
+<li><strong>Taxes</strong></li>
+<li><strong>Total</strong> in black background</li>
+</ul>
+<p>Condition of cart rule:</p>
+<ul>
+<li>temporal discount does not affect</li>
+</ul>
+<ol start="6">
+<li><strong>Add a new cart rule</strong></li>
+</ol>
+<ul>
+<li><strong>Add a new discount</strong>: opens a pop in to create your new cart rule between the percentage, the amount (taxes included), and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of the products (the shipping cost is not included).</li>
+</ul>
+<p><a href="https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount">Popin add discount</a></p>
+<p>The vouchers will be added to the table list displaying the discount name, value, and the delete button on the top of the summary order. The new discount created is added with the status deactivated on the cart rule page with zero quantity.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied">Carts rules list</a></p>
+<p><strong>If the order status is considered as paid</strong>, either on adding a product or adding a discount adding, the user has to specify on <strong>which generated invoices will be applied.</strong></p>
+<ol start="7">
+<li><strong>Invoice generation</strong></li>
+</ol>
+<p><strong>Specific scenarios</strong>:
+When a new invoice is created with free shipping, a discount is generated at the value of the shipping cost with the name:&quot;[gGenerated] CartRule for Free Shipping&quot;.
+On the invoice, the discount is not displayed. It only displays the free shipping in Shipping Costs.</p>
+<ol start="8">
+<li><strong>Order Summary</strong>
+The below the product panel, there is the order&rsquo;s summary:</li>
+</ol>
+<ul>
+<li><strong>Products total with taxes excluded</strong></li>
+<li><strong>Total shipping</strong></li>
+<li><strong>Discount</strong> if there is any cart rule applied</li>
+<li><strong>Wrapping</strong> if there is a wrapping option in the order</li>
+<li><strong>Taxes</strong></li>
+<li><strong>Total</strong> in black background</li>
+</ul>
+<p>Below the totals, a warning message is displayed to warn the user that <strong>for this customer group, prices are displayed as HT</strong> or <strong>for this customer group, prices are displayed as TTC</strong> depending on the customer group setting and also <strong>that returns are disabled.</strong> when the merchandise return is disabled on the merchandise returns page.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="v-tabs-panel">V. Tabs panel<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#v-tabs-panel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor V. Tabs panel" href="#v-tabs-panel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>All the tabs are located in the same panel below the products list.</p>
+<p>The label &ldquo;Wrapping gift&rdquo; and &ldquo;Recycled packaging&rdquo; are only shown when the feature is present in the order. It must be shown on all the tabs.
+<img src="../../../../img/wrapping_recycled_on.png" alt="Wrapping and recycled packing are included in the order"></p>
+<ol>
+<li><strong>Status tab</strong></li>
+</ol>
+<p>The table <strong>list of the latest order status</strong> is displayed composed:</p>
+<ul>
+<li><strong>The status with associated colored</strong></li>
+<li><strong>date and hour</strong></li>
+<li><strong>The editor</strong></li>
+<li><strong>Button to resend the email to the customer</strong></li>
+</ul>
+<p>Below the list, a drop list of all the status available is displayed to update the current status through the <strong>button Update Status</strong> next to it. Updating the order status will trigger all the actions set by the order status.</p>
+<p>On the bottom of the block, there is the <strong>Order comment</strong>. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press the save button to save it.</p>
+<ol start="2">
+<li><strong>Documents tab</strong></li>
+</ol>
+<p>The document tab <strong>regrouped all the document</strong> as invoices and delivery slips <strong>in a table</strong>. The table displays <strong>the date, document type, reference, and the amount.</strong> The reference is a clickable link to download the document.</p>
+<p>Each table’s rows as 2 possible <strong>button actions</strong>:</p>
+<ul>
+<li><strong>Enter payment</strong>: it redirects to the payment panel to fill the transaction with the invoice preselected.</li>
+<li><strong>Add note/Edit note</strong>: it displays a text input that can be saved or cancel. The saved note will be integrated into the related document.</li>
+</ul>
+<p><strong>If there is no document</strong>, <strong>a button is available to generate an invoice</strong> with all the information saved so far in the order.</p>
+<ol start="3">
+<li><strong>Shipping tab</strong></li>
+</ol>
+<p>If there is a gift wrapping message for the order, it&rsquo;s displayed in the Shipping tab, before the table.</p>
+<p>The carrier table shows <strong>the date, the carrier, the weight, the shipping cost, the tracking number, and the edit button.</strong></p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/381874233__Order_Details_-_Shipping">Shipping tab</a></p>
+<p>The edit shipping button on each row can edit the information in a pop in. You can edit the text input the tracking number and in the drop list the carrier method.</p>
+<p><a href="https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit">Edit shipping details</a></p>
+<ol start="4">
+<li><strong>Merchandising returns tab</strong></li>
+</ol>
+<p>The merchandise return tab lists <strong>the date, the type, the carrier (= return status), and the number (= return reference number)</strong>. When the merchandise return is disabled the tab displayed: &ldquo;no merchandise returned yet&rdquo;.</p>
+<ol start="5">
+<li><strong>Payment panel</strong></li>
+</ol>
+<p>The payment section displays all the transactions made in the order from the payment module or the manual inputs.</p>
+<p>The table shows <strong>the date and hours, the payment method, the transaction ID, the amount with the currency, and the button detail.</strong></p>
+<p>To fill a payment transaction, the user has <strong>to select the date, one payment method from a droplist, the amount, and currency then press the add button. The amount</strong> can be a <strong>positive or negative value</strong>.</p>
+<p><strong>A red warning is shown</strong> if the filled amount is inferior or superior to the order’s total comparing the total of the transactions and order’s total.</p>
+<p>After adding, the user can display <strong>all the details of the transaction by pressing the Detail button</strong>. It will show below the arrow <strong>the number, brand, expiration date, and owner of the credit card</strong> for any payment module.</p>
+<p><strong>If the order’s status</strong> is considered <strong>as paid then before adding a transaction</strong> the user has to specify in <strong>which generated invoices from a droplist</strong> it will be added.</p>
+<p>When the status accepted (waiting for payment) you can change the currency of the order with a drop list.</p>
+<p>If the shop has different currencies, a droplist of the shop&rsquo;s currencies is displayed to change the order currency. The change rate is based on the latest conversion rate saved in the shop.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="vi-sources">VI. Sources<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#vi-sources" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor VI. Sources" href="#vi-sources"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Steps to display:</p>
+<ul>
+<li>Activate multistore</li>
+<li>Create a new shop group, which does not share nor customers, nor available quantities to sell</li>
+<li>Create a new shop in this group (importing data from the main shop)</li>
+<li>Go to FO, make an order (without registering), there should be the &ldquo;Sources&rdquo; block on this order on BO now</li>
+</ul>
+<p>It displays the date and from where the user came from.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="vii-links">VII. Links<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#vii-links" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor VII. Links" href="#vii-links"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="viii-multistore">VIII. Multistore<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html#viii-multistore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor VIII. Multistore" href="#viii-multistore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>An order made from a specific shop can be edited from any shops. Even if the shop where the order is edited isn&rsquo;t in the same group as the shop where the order was made.</p>
+<p>In a multistore context, the next and previous buttons for navigating between orders work according to the selected context in the back-office (specific shop, group of shops or all shops)
+If a specific shop group is selected as context in the order list, then the user can navigate between orders belonging only to this shop group in the order view page.
+If a specific shop is selected as context in the order list, then the user can navigate between orders belonging only to this shop in the order view page.
+If &ldquo;All shops&rdquo; is selected as context in the order list, then the user can navigate between orders from all the shops in the order view page.</p>
+
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer class="gdoc-footer">
+    <div class="container flex flex-wrap">
+        <span class="gdoc-footer__item">
+            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
+            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
+        </span>
+        
+        
+    </div>
+</footer>
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../../../js/en.search.min.f963c509117ece11ac8cae97f754d71e04ec3c21e6a315310caca82820b9da59.js"></script>
+
+
+
+<script defer src="../../../../js/clipboard.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

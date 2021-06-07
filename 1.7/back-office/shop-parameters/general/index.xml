@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general.html</link>
+    <description>Recent content in General on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maintenance Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</guid>
+      <description>SPECIFICATIONS - MAINTENANCE PAGE As a merchant, I want to be able to turn my store offline to perform maintenance.
+General Enable store. Merchants have the possibility to temporarily disable their shop. It should only disable the front office, the back office is still accessible during maintenance. A help text is available: We recommend that you deactivate your store while performing maintenance. Note that it will not disable the webservice. in Admin.</description>
+    </item>
+    
+  </channel>
+</rss>

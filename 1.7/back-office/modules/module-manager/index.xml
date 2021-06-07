@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module Manager on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager.html</link>
+    <description>Recent content in Module Manager on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alerts Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; ALERTS PAGE [TO BE COMPLETED]
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>Modules Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; MODULES PAGE [TO BE COMPLETED]
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>Updates Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; UPDATES PAGE As a merchant, I want to be able to get the list of all the modules I need to update.
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.</description>
+    </item>
+    
+  </channel>
+</rss>

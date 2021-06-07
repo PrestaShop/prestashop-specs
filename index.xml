@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/</link>
+    <description>Recent content on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add / Edit</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</guid>
+      <description>Shipping-Carriers-add-edit SPECIFICATIONS - SHIPPING &amp;gt; CARRIERS &amp;gt; Add new/Edit What The Add new/Edit Carrier page allows users to create and edit carriers.
+Specifications As of Sept 9th 2019 Version : 1.7.6.1
+Elements in the page Logo Block Logo block: There is a logo block on the left of the page. The title is TITLE. It contains a thumbnail of the image uploaded as logo. Once an image has been uploaded a button with a trashcan icon is available in the block top right corner.</description>
+    </item>
+    
+    <item>
+      <title>Add / Edit Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</guid>
+      <description>To save or change a Back-Office address, the following field must be filled in:
+ the first name, last name, address1, country city  The others fields are optional</description>
+    </item>
+    
+    <item>
+      <title>Add new order</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</guid>
+      <description>Orders &amp;gt; Orders &amp;gt; Add new order
+As a merchant, I want to be able to manually add an order to my back-office. Creating a new order is divided into 6 steps:
+ I. Customer selection with his/her old orders and carts II. Order cart III. Vouchers IV. Address V. Summary VI. Multistore  I. Customer selection To select the customer, the merchant has to type any character chain that is contained in the customer&amp;rsquo;s first name, last name, or email.</description>
+    </item>
+    
+    <item>
+      <title>Administration Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</guid>
+      <description>SPECIFICATIONS - ADMINISTRATION PAGE General [TO BE COMPLETED]
+Addons API stability channel. Available in development environment only, starting from PrestaShop 1.7.8, cf. issue #18273. It is a dropdown selector containing three options to let the users choose what kind of stability level they want to use for their Addons modules:
+Stable
+Alpha
+Beta
+By default, the Stable option is selected. A tooltip is available, Choose a stability level for the modules downloaded from Addons Marketplace.</description>
+    </item>
+    
+    <item>
+      <title>Alerts Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; ALERTS PAGE [TO BE COMPLETED]
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>Brands</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</guid>
+      <description>SPECIFICATIONS - CATALOG - BRANDS &amp;amp; SUPPLIERS - BRANDS Grid Brands ManufacturerGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.
+Grid Adresses ManufacturerAddressGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
+    </item>
+    
+    <item>
+      <title>Cart Rule</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</guid>
+      <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
+2 vouchers should be applied but the shipping should be deducted once.
+If I applied 2 vouchers in a cart:
+ Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift  Then
+Free shipping is applied once with a 5 % discount and a gift.
+ When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; CATEGORIES Grid CategoryGridDefinitionFactory.php
+ If the category has at least 1 children category  Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View   If the category does not have children category  Default action in the button: Edit Other available actions in the menu: Edit, Delete Row action: Edit    Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Category Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</guid>
+      <description>SPECS CATEGORY PAGE As a merchant I need to be able to correctly create, edit and delete my categories.
+SPECIFICATIONS When i disable a category, I expect it to still be present in as a parent in the category tree (issue 14790)</description>
+    </item>
+    
+    <item>
+      <title>Checklist</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/checklist.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/checklist.html</guid>
+      <description>SPECIFICATIONS CHECKLIST As a contributor, I want to know how to write complete specifications.
+As a core team member, I want to deliver the most completed specifications in order to have accurate and qualitative development.
+Most of the time, each file corresponds to a specific page or a tab, whether it comes from the back office, the front office, or a module. It might happen to have a cross-functional feature to specify, that defines wide behaviors and impacts many different pages.</description>
+    </item>
+    
+    <item>
+      <title>Checkout</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/checkout.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/checkout.html</guid>
+      <description>SPECIFICATIONS - CHECKOUT [TO BE COMPLETED]
+Personal information step Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It should indicate the name of the company processing the order.
+Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It stands for the SIRET of the company.</description>
+    </item>
+    
+    <item>
+      <title>Contacts Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</guid>
+      <description>SPECIFICATIONS - SHOP PARAMETERS &amp;gt; CONTACT &amp;gt; CONTACTS TAB Grid ContactGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
+    </item>
+    
+    <item>
+      <title>Currencies</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</guid>
+      <description>Localization-Currencies-List-Add-Edit Currency format setting Localization &amp;gt; Currencies &amp;gt; Edit/Add Page
+USER STORY As a merchant, I want to manage the display of my currencies in the Front Office depending on the language if needed in order to adapt my shop to my clients&#39; visual expectations.
+WHY We have understood there is a big complexity on the currency display choose when you shop is for B2C or B2B, or when you sell in countries sharing the same symbol currency as in Latin America countries with the pesos.</description>
+    </item>
+    
+    <item>
+      <title>Customer Account</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/customer-account.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/customer-account.html</guid>
+      <description>SPECIFICATIONS - CUSTOMER ACCOUNT [TO BE COMPLETED]
+Personal information [TO BE COMPLETED]
+Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It displays the name of the company, as written in the BO.
+Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office.</description>
+    </item>
+    
+    <item>
+      <title>Customers Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/customers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/customers.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; CUSTOMERS PAGE General As a merchant, I want to be able to define my preferences to manage my customers.
+Re-display cart at login. By default, this option is disabled. When enabled, if a customer has left a cart unchecked-out, it displays it again when he/she logs back in. It should even memorize at what step of the checkout the customer stops so that he/she can go back directly to where the checkout was stopped.</description>
+    </item>
+    
+    <item>
+      <title>Dashboard</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SERVICE &amp;gt; CUSTOMERS SERVICE PAGE MOCKUPS https://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&amp;amp;scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&amp;amp;scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&amp;amp;scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&amp;amp;scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&amp;amp;scaling=min-zoom
+https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&amp;amp;scaling=min-zoom
+MESSAGES NOTIFICATIONS When a new message is sent by a customer or a visitor, then it&amp;rsquo;s displayed in the notifications (bell) in the header.
+If you click on it, the thread is opened (view page) and all the messages notifications are removed for the current employee.
+It could be a message written through:
+ the order view page in the BO; the order details page in the customer account in the FO; or any message sent to the customer service via the store&amp;rsquo;s contact form.</description>
+    </item>
+    
+    <item>
+      <title>Date Of Delivery</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/dateofdelivery.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/dateofdelivery.html</guid>
+      <description>Specifications for Date of delivery module In 1.7, the dateofdelivery module has never been integrated with Classic Theme, which results in the module not being displayed in front-office (when using the $hookDisplayBeforeCarrier). This specification aims at redefining available features with this module so that it is easier to make it work on PrestaShop 1.7.
+FRONT-OFFICE This module displays an approximate date of delivery during the checkout process. It should be displayed in the &amp;ldquo;Shipping&amp;rdquo; section of the process, as shown on the mock up below.</description>
+    </item>
+    
+    <item>
+      <title>DB Backup</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/dbbackup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/dbbackup.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; DATABASE &amp;gt; DB BACKUP Grid Default action in the button: View Other available actions in the menu: Delete Row action: View
+Row action does not apply to the checkbox column.</description>
+    </item>
+    
+    <item>
+      <title>EcoTax</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/ecotax.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/ecotax.html</guid>
+      <description>SPECIFICATIONS - ECOTAX WHAT IS THE ECOTAX The ecotax is a contribution in France to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. The ecotax is not a tax per se, but a fixed mandatory contribution (the actual term is &amp;ldquo;eco-participation&amp;rdquo;) that must be paid by the customer. Then it’s donated by the seller to a collection agency.
+The amount of the ecotax is fixed and does not depend on the product price.</description>
+    </item>
+    
+    <item>
+      <title>Employees</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; EMPLOYEES Grid EmployeeGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Faceted Search</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_facetedsearch.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_facetedsearch.html</guid>
+      <description>ps_facetedsearch specifications The faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.
+This module has been massively reworked and keeps evolving frequently. This master issue (EPIC) allows to track the status of the module and follow its improvements : https://github.com/PrestaShop/PrestaShop/issues/9684
+Introduction
+The module displays a block on category pages with layered navigation filters.</description>
+    </item>
+    
+    <item>
+      <title>Free Gift</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/cart-rules-free-gift.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/cart-rules-free-gift.html</guid>
+      <description>SPECIFICATIONS - FREE GIFT USAGE DURING CHECKOUT Use the free gift cart rule As a customer, I want my free gift cart rule to be taken into account in my shopping cart.
+When a merchant creates in the back office a cart rule with a &amp;lsquo;free gift&amp;rsquo; option, it means that only one item (of the product selected as a gift) is offered. In the front office, customers can purchase additional quantity for this product but they should pay for n-1 items; customers can shop more of the free gift item, only the additional items will be charged.</description>
+    </item>
+    
+    <item>
+      <title>Functional and behaviors specs</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/functionnal-and-behaviors-specs-template.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/functionnal-and-behaviors-specs-template.html</guid>
+      <description>Functional and behaviors specs template v1.0 December 19
+Disclaimer: This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.
+The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.
+Do not attempt to build what is written below
+Structure This template presents how to write a page Intro, and features&amp;rsquo;s Context, functional specs and behaviors for features.</description>
+    </item>
+    
+    <item>
+      <title>General MultiStore Back Office</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html</guid>
+      <description>SPECS GENERAL MULTISTORE BACK-OFFICE As a merchant I need to be able to correctly manage all my stores
+WHAT Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It&amp;rsquo;s the general behavior. Some pages can have specific behaviors, you can find these specific cases here
+SPECIFICATIONS Shop &amp;amp; shop group color From 1.7.8, while creating a shop or a group, the user can select a color as described in the specs to setup the multistore feature This color will be displayed in the multistore header for the selected shop or shop group.</description>
+    </item>
+    
+    <item>
+      <title>Generation Options</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; IMAGE SETTINGS IMAGE SETTINGS [TO BE COMPLETED]
+IMAGE GENERATION OPTIONS Image format
+ Use JPEG.
+ Use PNG only if the base image is in PNG format.
+ Use PNG for all images.
+ Use WEBP only if the base image is in WEBP format.
+ Use WEBP for all images.
+  JPEG Compression
+PNG Compression
+Generate images based on one side of the source image</description>
+    </item>
+    
+    <item>
+      <title>Groups Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/groups.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/groups.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; GROUPS PAGE As a merchant, I want to be able to group my customers.
+Summary  Customers groups listing Customers groups options Customers groups multistore behavior Customers groups add form Customers groups edit form Customers groups view form  Information notification By default, a blue information notification is displayed on the top of the page:
+PrestaShop has three default customer groups:
+Visitor - All persons without a customer account or customers that are not logged in.</description>
+    </item>
+    
+    <item>
+      <title>Image File Formats</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/image-file-formats.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/image-file-formats.html</guid>
+      <description>SPECIFICATIONS - IMAGE FILE FORMATS As a merchant, I want to be able to use the best web suitable images on my store, such as .png, .svg, or .webp.
+Introduction Several issues have been brought to our attention on GitHub, especially on the need for PrestaShop to support more image formats. Indeed, images have great business value for online stores and their formats have quite evolved since the release of PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>Information Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/information.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/information.html</guid>
+      <description>SPECIFICATIONS - INFORMATION PAGE [TO BE COMPLETED]
+List of overrides As a developer/merchant, I want to be able to know what PrestaShop behavior is overridden.
+As for the list of changed files, the Advanced Parameters &amp;gt; Information page should display the list of overrides.</description>
+    </item>
+    
+    <item>
+      <title>Installer</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/installer/installer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/installer/installer.html</guid>
+      <description>SPECIFICATIONS - INSTALLER [TO BE COMPLETED]
+System compatibility [TO BE COMPLETED]
+A warning notification should be displayed to let the users know about a possible limitation if the server configuration is too low, cf. to do #9561 issue: Limitation of the server configuration: the set_time_limit function must be enabled on your web server for PrestaShop to run correctly. in Install.</description>
+    </item>
+    
+    <item>
+      <title>Languages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LANGUAGES Grid LanguageGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Linklist</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_linklist.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_linklist.html</guid>
+      <description>SPECS MULTISTORE LINKLIST MODULE As a merchant I need to be able to display different links in the front office depending on my stores
+WHAT Thus, this project aims at specifying the current and expected behaviour of the module when the multistore is enabled and when there are several stores.
+SPECIFICATIONS Multisotre header The multistore header is displayed, the specifications of this component are described in the multistore general specs in back-office/multistoregeneralspecs.</description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/list.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/list.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS &amp;gt; CUSTOMERS - LIST Grid CustomerGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: View, Delete Row action: View
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing.html</guid>
+      <description>SPECS LISTING PRODUCT PAGE 1. When there is 0 products The empty state card appears ONLY when there is no value (by default or created). It can also reappear IF the merchant decides to remove every existing value in the table.
+https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
+2. Header In the header, there is &amp;ldquo;New product&amp;rdquo; button allowing to open the form to create a new product
+3. Top of the listing Settings wheel When clicking on it, 4 options are displayed:</description>
+    </item>
+    
+    <item>
+      <title>Listing Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/listing.html</guid>
+      <description>SPECS LISTING ORDER PAGE 1. When there are 0 orders [WAINTING FOR DESIGN]
+The empty state card appears ONLY when there is no value (by default or created).
+2. Header In the header, there is &amp;ldquo;Add new order&amp;rdquo; button allowing to open the form to create a manual order.
+3. Top of the listing Settings wheel When clicking on it, 4 options are displayed:
+ Export  After clicking on it, the list is exported in CSV format.</description>
+    </item>
+    
+    <item>
+      <title>Maintenance Mode</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</guid>
+      <description>SPECIFICATIONS - MAINTENANCE MODE Logged-in employees As an employee, I want to be able to access the front office during maintenance.
+When the &amp;lsquo;Enable store for logged-in employees&amp;rsquo; option is enabled in the back office&amp;rsquo;s Shop Parameters &amp;gt; Maintenance page, any logged-in employee should be able to access the front office even if the store is in maintenance, cf. to do issue #18932.
+[TO BE COMPLETED]</description>
+    </item>
+    
+    <item>
+      <title>Maintenance Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</guid>
+      <description>SPECIFICATIONS - MAINTENANCE PAGE As a merchant, I want to be able to turn my store offline to perform maintenance.
+General Enable store. Merchants have the possibility to temporarily disable their shop. It should only disable the front office, the back office is still accessible during maintenance. A help text is available: We recommend that you deactivate your store while performing maintenance. Note that it will not disable the webservice. in Admin.</description>
+    </item>
+    
+    <item>
+      <title>Menu Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/menu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/menu.html</guid>
+      <description>SPECS FOR THE MENU TAB HISTORY For the history, this page was present in 1.6 and allowed to add, edit, delete, activate / deactivate menus and reorganize them thanks to the position column.
+This page was removed in 1.7.0 because users were deleting menu entries but did not know how to re-add them with the controller name.
+SPECS The behavior in 1.7.X is:
+No &amp;ldquo;menu&amp;rdquo; tab in the BO menu (as in 1.</description>
+    </item>
+    
+    <item>
+      <title>Module Catalog Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-catalog/module-catalog.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-catalog/module-catalog.html</guid>
+      <description>SPECIFICATIONS - MODULE CATALOG &amp;gt; MODULE CATALOG PAGE [TO BE COMPLETED]
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>Modules Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; MODULES PAGE [TO BE COMPLETED]
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>MultiStore</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/multistore.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/multistore.html</guid>
+      <description>SPECS TO SETUP THE MULTISTORE As a merchant I need to be able to create as many stores as I need with a single back office. The main uses cases of the mutistore are:
+ B2B/B2C shop, international shop (many languages, many currencies), several brands  WHAT Thus, this project aims at specifying the current and expected behaviour to setup many stores
+SPECIFICATIONS Enable the multistore The multistore is disabled by default and can be enabled in Shop parameters &amp;gt; General  Once enabled, a new &amp;ldquo;Multistore&amp;rdquo; menu is displayed in Advanced parameters &amp;gt; Multistore  There are two types of main actions in this page :</description>
+    </item>
+    
+    <item>
+      <title>Multistore Specials Cases</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/multistorespecialsspecs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/multistorespecialsspecs.html</guid>
+      <description>MULTISTORE SPECIALS CASES SPECS WHAT Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are many stores. Here are the specials behaviors. Here you can find general specs
+SPECIFICATIONS List of specific cases There are the 5 main specific cases:
+  “Add new” action is not possible (button disabled) in all shops or in a group context, this action is only enabled in a specific shop context.</description>
+    </item>
+    
+    <item>
+      <title>Order Statuses</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-statuses.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-statuses.html</guid>
+      <description>SPECIFICATIONS - SHOP PARAMETERS &amp;gt; ORDER SETTINGS &amp;gt; ORDER STATUSES The statuses page has 2 lists for both the order statuses and the order return statuses.
+Order statuses Settings wheel When clicking on it, three options are displayed:
+ Refresh list  After clicking ont it, the whole page is refreshed.
+Show SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
+    
+    <item>
+      <title>Pages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/pages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/pages.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; PAGES Grid Categories CmsPageCategoryDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the checkbox column and to columns with enable/disable actions.
+Grid Pages CmsPageDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Price Calculation</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</guid>
+      <description>Price calculation specifications Introduction
+This document aims at explaining in details how product and order prices should be calculated in every shop scenarios.
+This is a legal requirement, especially as it has an impact on invoices, so we must ensure prices are correctly calculated on PrestaShop websites.
+Prices have impact on products, orders, but also on discounts, invoices, etc. so this document details the different behaviours for all pages according to the shop scenario.</description>
+    </item>
+    
+    <item>
+      <title>Price Rules</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULES User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
+WHY The Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
+    </item>
+    
+    <item>
+      <title>Product Images</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-images.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-images.html</guid>
+      <description>Managing product images in front-office Current context In 1.7.7, it has been decided to introduce a change in behaviour in product thumbnails following a topwatchers issue : [#12241] (https://github.com/PrestaShop/PrestaShop/issues/12241). To ensure this change did not impact developers&#39; modules, we have also let the possibility to override the image used as cover. The following specs aim at detailing what are the different behaviours, in back-office and front office listings and product pages.</description>
+    </item>
+    
+    <item>
+      <title>Product List</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/products-list.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/products-list.html</guid>
+      <description>SPECIFICATIONS - THEME CLASSIC - PRODUCTS LIST Product thumbnail Link to the product The picture area and the product name are linked to the product page. The flags and the white area are not linked.
+On hover, the white area deploys vertically to reveal the &amp;ldquo;Quick view&amp;rdquo; link. The &amp;ldquo;Quick view&amp;rdquo; link opens a modal to preview the product.</description>
+    </item>
+    
+    <item>
+      <title>Product Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</guid>
+      <description>SPECS PRODUCT PAGE As a merchant I need to be able to correctly create, edit and delete my products.
+WHY The add / edit product page (Catalog &amp;gt; Products) has already been migrated to Symfony for the 1.7.0 version, but many behaviours are not specified which have introduced regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test and avoid any new bugs.</description>
+    </item>
+    
+    <item>
+      <title>Product Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</guid>
+      <description>SPECIFICATIONS - PRODUCT PAGE [TO BE COMPLETED]
+Prices If a product has a discount, merchants can choose to display the discounted price on the product page (in Shop Parameters &amp;gt; Product Settings). By default, this setting is disabled so the discounted price should not appear in the front office.</description>
+    </item>
+    
+    <item>
+      <title>Product Settings Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</guid>
+      <description>SPECIFICATIONS - PRODUCT SETTINGS PAGE Mockups: https://www.figma.com/file/aCBf2HlypjT0ZxP2XcsT68/Core-Github-issues?node-id=207%3A4875
+Products (general) Catalog mode. A switch button allows the merchant to enable or disable the catalog mode. By default, it is disabled. Enabling this catalog mode disables the shopping cart on the front office and displays another field right below, labeled &amp;lsquo;Show prices&amp;rsquo;.
+It also impacts the customer account on the front office, turning off the &amp;lsquo;Order history and details&amp;rsquo;, &amp;lsquo;Credit slips&amp;rsquo;, and &amp;lsquo;Merchandise returns&amp;rsquo; pages.</description>
+    </item>
+    
+    <item>
+      <title>Profiles Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Regenerate Thumbnails</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</guid>
+      <description>Regenerate thumbnails might be a touchy operation for the user.
+In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature&amp;rsquo;s two options:
+Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails. Also, regenerating thumbnails for all existing images can take several minutes, please be patient., localized in Admin.Design.Notification
+Select an image [TO BE COMPLETED]</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html</guid>
+      <description>SPECIFICATIONS - SEARCH [TO BE COMPLETED]
+Empty search results If the visitor&amp;rsquo;s search is unsuccessful, the page should display the following message:
+No matches were found for your search in Shop.Theme.Catalog Please try other keywords to describe what you are looking for. in Shop.Theme.Catalog
+A search bar is available right below to allow visitors to try another query: Search our catalog in Shop.Theme.Global.
+Empty catalog pages If the visitor reaches a page that contains no product, the page should display the following message:</description>
+    </item>
+    
+    <item>
+      <title>Search Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</guid>
+      <description>SPECIFICATIONS - SEARCH PAGE Search As a merchant, I want to make sure visitors can find the product they are looking for on my online store.
+A table lists all the aliases defined by the merchant. He/she can add and edit aliases.
+Add an alias Clicking &amp;lsquo;Add new alias&amp;rsquo; or on the &amp;lsquo;+&amp;rsquo; icon on the top right-hand corner of the table should redirect to a new page, where there are two fields to fill:</description>
+    </item>
+    
+    <item>
+      <title>SEO &amp; URLs Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</guid>
+      <description>SPECIFICATIONS - SEO &amp;amp; URLS PAGE Grid MetaGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column.
+SEO &amp;amp; URLs [TO BE COMPLETED]
+Rewritten URL. Should be available for all pages, even the index which stands for the store&amp;rsquo;s homepage.
+[TO BE COMPLETED]
+URLs set up Friendly URL. By default, this option is enabled.</description>
+    </item>
+    
+    <item>
+      <title>SEO Rules &amp; Behaviours</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</guid>
+      <description>Specifications related to SEO in PrestaShop Introduction SEO is key when choosing an ecommerce solution. A CMS which is SEO optimized is a strategic added value for many merchants, and an important selection criterion. It’s also a key factor for brand image and differentiation with our competitors.
+In the meantime, some technical and functional choices can have a huge impact (positive or negative) on stores’ SEO. It is exactly what happened between 1.</description>
+    </item>
+    
+    <item>
+      <title>SQL Manager</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; DATABASE &amp;gt; SQL MANAGER The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.
+1.7.8.x version The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.</description>
+    </item>
+    
+    <item>
+      <title>Supliers Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; BRANDS &amp;amp; SUPPLIERS &amp;gt; SUPPLIERS TAB Grid SupplierGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Symfony Migration</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/symfony-migration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/symfony-migration.html</guid>
+      <description>symfony-migration SYMFONY MIGRATION GUIDELINES
+For UX, some guidelines have been defined for each most types of page in the back-office : table and grid pages, configuration pages, drag &amp;amp; drop, etc. These redesigns are made gradually as the development skills and migration progress. This is why no design has been specified for CRUD (with create - read - update - delete actions) pages.
+Please note that many pages in the BO have very specific behaviour and need their own redesign.</description>
+    </item>
+    
+    <item>
+      <title>Taxes Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; TAXES &amp;gt; TAXES TAB Grid TaxGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Technical characteristics specs</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html</guid>
+      <description>Technical characteristics specs template v1.0 December 19
+Disclaimer: This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.
+The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.
+Do not attempt to build what is written below
+Structure This template presents how to write technical characteristics specs.</description>
+    </item>
+    
+    <item>
+      <title>Theme &amp; Logo</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; THEME &amp;amp; LOGO &amp;gt; THEME &amp;amp; LOGO As a merchant, I want to be able to set up my store&amp;rsquo;s look.
+The page can have extra sections if:
+ several themes are installed;
+ the multistore feature is enabled;
+ RTL languages are enabled;
+ the MBO module is installed.  Header There are 4 buttons:
+  &amp;lsquo;Add new theme&amp;rsquo; button redirects to the Design &amp;gt; Theme &amp;amp; Logo &amp;gt; Add new theme page.</description>
+    </item>
+    
+    <item>
+      <title>Titles Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; TITLES PAGE As a merchant, I want to be able to define my customers.
+Listing As usual, four tables options are displayed on the top-right hand corner as icons:
+ Add new
+ Refresh list
+ Show SQL query
+ Export to SQL manager
+  By default, the table is divided into the following columns:
+ ID
+ Social title
+ Gender
+ Image</description>
+    </item>
+    
+    <item>
+      <title>Translations</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/translations/translations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/translations/translations.html</guid>
+      <description>Translations Conceptual vocabulary  Wordings: original texts found throughout the software. Although these messages are written in English, they are actually only tokens to be translated into any language, including English variations (eg. British, American). Translations: wordings translated to a given language. Translation domain: named logic group of wordings. Any given wording is attached to one and only one translation domain. Two identical wordings attached to two different translation domains are considered as two different wordings.</description>
+    </item>
+    
+    <item>
+      <title>Updates Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</guid>
+      <description>SPECIFICATIONS - MODULE MANAGER &amp;gt; UPDATES PAGE As a merchant, I want to be able to get the list of all the modules I need to update.
+Modules header Upload a module. [TO BE COMPLETED]
+If the module zip file is too big, the upload fails and the modal window notices the error:
+Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.</description>
+    </item>
+    
+    <item>
+      <title>View Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</guid>
+      <description>Specifications for the order view page for 1.7.7 - 2019
+User Story: As a merchant, I need to be able to manage all my orders processed on my website. As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
+ Check the order’s products to prepare it Manage the order’s progress, Edit the customer information or send him messages, Print his invoice, Handle payment methods, Follow my shipping through activities, Manage returns and refunds  WHY</description>
+    </item>
+    
+    <item>
+      <title>Webservice</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/webservice/webservice.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/webservice/webservice.html</guid>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; WEBSERVICE The listing page is composed of the list of the webservice keys and the configuration section.
+Webservice Add new webservice A button &amp;ldquo;Add new webservice&amp;rdquo; allows to create a new webservice key and redirects to the add page.
+Information message An information message is displayed: &amp;ldquo;It is preferable to use SSL (https:) for webservice calls, as it avoids the &amp;ldquo;man in the middle&amp;rdquo; type security issues.</description>
+    </item>
+    
+    <item>
+      <title>Wishlist</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</guid>
+      <description>Wishlist native module functional specifications Feature 1: Add to favorites US 1: Add a product to a favorites list As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites list Several cases:
+ Connected users Non-logged-in users Products with combinations &amp;amp; customizations  Functional rules: What type of users can add products to their favorites?</description>
+    </item>
+    
+    <item>
+      <title>Your vouchers</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</guid>
+      <description>Rules of the vouchers displayed in the customer&amp;rsquo;s account in front-office Vouchers are displayed in the customer account in the front-office, according to their parameters:
+On the table below are listed all the different cases.
+   Cases Code Highlighted Group restriction User restriction Available in the FO vouchers page?     1 Yes or No Yes Yes or No Yes or No Yes   2 Yes or No Yes or No Yes or No Yes Yes   3 Yes No No No No   4 No No Yes No Yes   5 No No No No Yes   6 Yes No Yes No No    When there is no voucher for the customer, the page displays a notification: You do not have any vouchers.</description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</guid>
+      <description>Order settings specs General Enable final summary This toggle is on No by default.
+When enabled, a summary is displayed in the Front-Office during the checkout, at the payment step:
+This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method &amp;amp; its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/forms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/forms.html</guid>
+      <description>Specification of forms Context: Rule to be applied after the migration of a from or creation of a new form
+Mandatory fields:  Any mandatory string fields do not accept only spaces as a value.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
+      <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
+    </item>
+    
+  </channel>
+</rss>

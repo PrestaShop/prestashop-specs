@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Localization on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization.html</link>
+    <description>Recent content in Localization on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Currencies</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</guid>
+      <description>Localization-Currencies-List-Add-Edit Currency format setting Localization &amp;gt; Currencies &amp;gt; Edit/Add Page
+USER STORY As a merchant, I want to manage the display of my currencies in the Front Office depending on the language if needed in order to adapt my shop to my clients&#39; visual expectations.
+WHY We have understood there is a big complexity on the currency display choose when you shop is for B2C or B2B, or when you sell in countries sharing the same symbol currency as in Latin America countries with the pesos.</description>
+    </item>
+    
+    <item>
+      <title>Languages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LANGUAGES Grid LanguageGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+  </channel>
+</rss>

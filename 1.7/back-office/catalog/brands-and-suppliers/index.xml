@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brands &amp; Suppliers on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers.html</link>
+    <description>Recent content in Brands &amp; Suppliers on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brands</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</guid>
+      <description>SPECIFICATIONS - CATALOG - BRANDS &amp;amp; SUPPLIERS - BRANDS Grid Brands ManufacturerGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.
+Grid Adresses ManufacturerAddressGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
+    </item>
+    
+    <item>
+      <title>Supliers Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; BRANDS &amp;amp; SUPPLIERS &amp;gt; SUPPLIERS TAB Grid SupplierGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+  </channel>
+</rss>

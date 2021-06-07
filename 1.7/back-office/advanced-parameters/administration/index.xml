@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Administration on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration.html</link>
+    <description>Recent content in Administration on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administration Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</guid>
+      <description>SPECIFICATIONS - ADMINISTRATION PAGE General [TO BE COMPLETED]
+Addons API stability channel. Available in development environment only, starting from PrestaShop 1.7.8, cf. issue #18273. It is a dropdown selector containing three options to let the users choose what kind of stability level they want to use for their Addons modules:
+Stable
+Alpha
+Beta
+By default, the Stable option is selected. A tooltip is available, Choose a stability level for the modules downloaded from Addons Marketplace.</description>
+    </item>
+    
+  </channel>
+</rss>

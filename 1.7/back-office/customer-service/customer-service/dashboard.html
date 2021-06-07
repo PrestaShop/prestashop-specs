@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dashboard">
+
+<title>Dashboard | PrestaShop Specs</title>
+
+<link rel="icon" href="../../../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../../../main.min.css" as="style">
+<link rel="stylesheet" href="../../../../main.min.css" media="all">
+
+<link rel="preload" href="../../../../mobile.min.css" as="style">
+<link rel="stylesheet" href="../../../../mobile.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../../../print.min.css" as="style">
+<link rel="stylesheet" href="../../../../print.min.css" media="print">
+
+<link rel="preload" href="../../../../custom.css" as="style">
+<link rel="stylesheet" href="../../../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://build.prestashop.com/prestashop-specs/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../../../logo.png" alt="" width=38 height=38>
+                PrestaShop Specs
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+
+
+    <section class="gdoc-nav--main">
+        <h2>Navigation</h2>
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7.html" class="gdoc-nav__entry ">
+                        Specifications
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/forms.html" class="gdoc-nav__entry ">
+                        Forms
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office.html" class="gdoc-nav__entry ">
+                        Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters.html" class="gdoc-nav__entry ">
+                        Advanced Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/administration.html" class="gdoc-nav__entry ">
+                        Administration
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/administration/administration.html" class="gdoc-nav__entry ">
+                        Administration Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database.html" class="gdoc-nav__entry ">
+                        Database
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database/dbbackup.html" class="gdoc-nav__entry ">
+                        DB Backup
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html" class="gdoc-nav__entry ">
+                        SQL Manager
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/email.html" class="gdoc-nav__entry ">
+                        Email
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/import.html" class="gdoc-nav__entry ">
+                        Import
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/information.html" class="gdoc-nav__entry ">
+                        Information
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/information/information.html" class="gdoc-nav__entry ">
+                        Information Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/logs.html" class="gdoc-nav__entry ">
+                        Logs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/menu.html" class="gdoc-nav__entry ">
+                        Menu
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/menu/menu.html" class="gdoc-nav__entry ">
+                        Menu Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/multistore/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/performance.html" class="gdoc-nav__entry ">
+                        Performance
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team.html" class="gdoc-nav__entry ">
+                        Team
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team/employees.html" class="gdoc-nav__entry ">
+                        Employees
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/team/profiles.html" class="gdoc-nav__entry ">
+                        Profiles Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/webservice.html" class="gdoc-nav__entry ">
+                        WebService
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/advanced-parameters/webservice/webservice.html" class="gdoc-nav__entry ">
+                        Webservice
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog.html" class="gdoc-nav__entry ">
+                        Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers.html" class="gdoc-nav__entry ">
+                        Brands &amp; Suppliers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/brands.html" class="gdoc-nav__entry ">
+                        Brands
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html" class="gdoc-nav__entry ">
+                        Supliers Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/categories/add-edit.html" class="gdoc-nav__entry ">
+                        Category Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount.html" class="gdoc-nav__entry ">
+                        Discount
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount/cart-rule.html" class="gdoc-nav__entry ">
+                        Cart Rule
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/discount/price-rules.html" class="gdoc-nav__entry ">
+                        Price Rules
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products.html" class="gdoc-nav__entry ">
+                        Products
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products/listing.html" class="gdoc-nav__entry ">
+                        Listing
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/catalog/products/add-edit.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/customer-service/dashboard.html" class="gdoc-nav__entry is-active">
+                        Dashboard
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/merchandise-returns.html" class="gdoc-nav__entry ">
+                        Merchandise Returns
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customer-service/order-messages.html" class="gdoc-nav__entry ">
+                        Order Messages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/addresses.html" class="gdoc-nav__entry ">
+                        Addresses
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/addresses/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/customers/customers/list.html" class="gdoc-nav__entry ">
+                        List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design.html" class="gdoc-nav__entry ">
+                        Design
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/email-theme.html" class="gdoc-nav__entry ">
+                        Email Theme
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings.html" class="gdoc-nav__entry ">
+                        Image Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings/generation-options.html" class="gdoc-nav__entry ">
+                        Generation Options
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html" class="gdoc-nav__entry ">
+                        Regenerate Thumbnails
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/link-widget.html" class="gdoc-nav__entry ">
+                        Link Widget
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/pages/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/positions.html" class="gdoc-nav__entry ">
+                        Positions
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-and-logo.html" class="gdoc-nav__entry ">
+                        Themes &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-and-logo/theme-logo.html" class="gdoc-nav__entry ">
+                        Theme &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/design/themes-catalog.html" class="gdoc-nav__entry ">
+                        Themes Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/multistoregeneralspecs.html" class="gdoc-nav__entry ">
+                        General MultiStore Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international.html" class="gdoc-nav__entry ">
+                        International
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization.html" class="gdoc-nav__entry ">
+                        Localization
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization/currencies.html" class="gdoc-nav__entry ">
+                        Currencies
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/localization/languages.html" class="gdoc-nav__entry ">
+                        Languages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/locations.html" class="gdoc-nav__entry ">
+                        Locations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/taxes.html" class="gdoc-nav__entry ">
+                        Taxes
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/taxes/taxes.html" class="gdoc-nav__entry ">
+                        Taxes Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/international/translations/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-catalog/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager.html" class="gdoc-nav__entry ">
+                        Module Manager
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/alerts.html" class="gdoc-nav__entry ">
+                        Alerts Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/modules.html" class="gdoc-nav__entry ">
+                        Modules Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/modules/module-manager/updates.html" class="gdoc-nav__entry ">
+                        Updates Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/credit-slips.html" class="gdoc-nav__entry ">
+                        Credit Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/delivery-slips.html" class="gdoc-nav__entry ">
+                        Delivery Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/invoices.html" class="gdoc-nav__entry ">
+                        Invoices
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/add.html" class="gdoc-nav__entry ">
+                        Add new order
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/listing.html" class="gdoc-nav__entry ">
+                        Listing Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/orders/view-page.html" class="gdoc-nav__entry ">
+                        View Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/orders/shopping-carts.html" class="gdoc-nav__entry ">
+                        Shopping Carts
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment.html" class="gdoc-nav__entry ">
+                        Payment
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment/payment-methods.html" class="gdoc-nav__entry ">
+                        Payment Methods
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/payment/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping.html" class="gdoc-nav__entry ">
+                        Shipping
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/carriers.html" class="gdoc-nav__entry ">
+                        Carriers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/carriers/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shipping/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters.html" class="gdoc-nav__entry ">
+                        Shop Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/contact.html" class="gdoc-nav__entry ">
+                        Contact
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/contact/tab.html" class="gdoc-nav__entry ">
+                        Contacts Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings.html" class="gdoc-nav__entry ">
+                        Customer Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/customers.html" class="gdoc-nav__entry ">
+                        Customers Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/groups.html" class="gdoc-nav__entry ">
+                        Groups Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/titles.html" class="gdoc-nav__entry ">
+                        Titles Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/general.html" class="gdoc-nav__entry ">
+                        General
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/general/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/merchant-expertise.html" class="gdoc-nav__entry ">
+                        Merchant Expertise
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings.html" class="gdoc-nav__entry ">
+                        Order Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html" class="gdoc-nav__entry ">
+                        Order Statuses
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-settings.html" class="gdoc-nav__entry ">
+                        Settings
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/product-settings.html" class="gdoc-nav__entry ">
+                        Product Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/product-settings/page.html" class="gdoc-nav__entry ">
+                        Product Settings Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/search/search.html" class="gdoc-nav__entry ">
+                        Search Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo.html" class="gdoc-nav__entry ">
+                        Traffic &amp; SEO
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" class="gdoc-nav__entry ">
+                        SEO &amp; URLs Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics.html" class="gdoc-nav__entry ">
+                        Broader Topics
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/ecotax.html" class="gdoc-nav__entry ">
+                        EcoTax
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/image-file-formats.html" class="gdoc-nav__entry ">
+                        Image File Formats
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/multistorespecialsspecs.html" class="gdoc-nav__entry ">
+                        Multistore Specials Cases
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/price-calculation-rules.html" class="gdoc-nav__entry ">
+                        Price Calculation
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/seo-rules-and-behaviours.html" class="gdoc-nav__entry ">
+                        SEO Rules &amp; Behaviours
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/broader-topics/symfony-migration.html" class="gdoc-nav__entry ">
+                        Symfony Migration
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/checklist.html" class="gdoc-nav__entry ">
+                        Checklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office.html" class="gdoc-nav__entry ">
+                        Front Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/checkout.html" class="gdoc-nav__entry ">
+                        Checkout
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/customer-account.html" class="gdoc-nav__entry ">
+                        Customer Account
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/discounts.html" class="gdoc-nav__entry ">
+                        Discounts
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/discounts/cart-rules-free-gift.html" class="gdoc-nav__entry ">
+                        Free Gift
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Mode
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/product-images.html" class="gdoc-nav__entry ">
+                        Product Images
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/products-list.html" class="gdoc-nav__entry ">
+                        Product List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/product-page.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/front-office/your-vouchers.html" class="gdoc-nav__entry ">
+                        Your vouchers
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/installer/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/psthemecusto.html" class="gdoc-nav__entry ">
+                        Psthemecusto
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/dateofdelivery.html" class="gdoc-nav__entry ">
+                        Date Of Delivery
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/ps_facetedsearch.html" class="gdoc-nav__entry ">
+                        Faceted Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/ps_linklist.html" class="gdoc-nav__entry ">
+                        Linklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/modules/wishlist.html" class="gdoc-nav__entry ">
+                        Wishlist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates.html" class="gdoc-nav__entry ">
+                        Templates
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html" class="gdoc-nav__entry ">
+                        Functional and behaviors specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../../../1.7/spec-templates/technical-characteristics-template.html" class="gdoc-nav__entry ">
+                        Technical characteristics specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span>
+        
+        <span class="breadcrumb">
+            <svg class="icon path"><use xlink:href="#path"></use></svg>
+            
+            
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='../../../../'>PrestaShop Specs</a> / <a href='../../../../1.7.html'>Specifications</a> / <a href='../../../../1.7/back-office.html'>Back Office</a> / <a href='../../../../1.7/back-office/customer-service.html'>Customer Service</a> / <a href='../../../../1.7/back-office/customer-service/customer-service.html'>Customer Service</a> / Dashboard
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+        </span>
+        
+    </span>
+    <span>
+        
+    </span>
+</div>
+
+
+    <article class="gdoc-markdown">
+        <h1>Dashboard</h1>
+        
+
+
+
+    
+
+
+<h1 id="specifications---customers-service--customers-service-page">SPECIFICATIONS - CUSTOMERS SERVICE &gt; CUSTOMERS SERVICE PAGE</h1>
+<div class="gdoc-page__anchorwrap"><h2 id="mockups">MOCKUPS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#mockups" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MOCKUPS" href="#mockups"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p><a href="https://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593">https://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&amp;scaling=min-zoom</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&amp;scaling=min-zoom</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&amp;scaling=min-zoom</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&amp;scaling=min-zoom</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&amp;scaling=min-zoom</a></p>
+<p><a href="https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&amp;scaling=min-zoom">https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&amp;scaling=min-zoom</a></p>
+<div class="gdoc-page__anchorwrap"><h2 id="messages-notifications">MESSAGES NOTIFICATIONS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#messages-notifications" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MESSAGES NOTIFICATIONS" href="#messages-notifications"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>When a new message is sent by a customer or a visitor, then it&rsquo;s displayed in the notifications (bell) in the header.</p>
+<p>If you click on it, the thread is opened (view page) and all the messages notifications are removed for the current employee.</p>
+<p>It could be a message written through:</p>
+<ul>
+<li>the order view page in the BO;</li>
+<li>the order details page in the customer account in the FO;</li>
+<li>or any message sent to the customer service via the store&rsquo;s contact form.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="stats">STATS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#stats" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STATS" href="#stats"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>There are 3 indicators displayed:</p>
+<ul>
+<li>Pending discussion threads</li>
+<li>Average response time for 30 days in hours</li>
+<li>Messages per thread for 30 days</li>
+</ul>
+<p>Theses indicators can be refreshed by clicking on the refresh icon.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="contacts-blocks">CONTACTS BLOCKS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#contacts-blocks" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CONTACTS BLOCKS" href="#contacts-blocks"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Each contact type added in Shop parameters &gt; Contact &gt; Contact has its own block if the &lsquo;Save messages?&rsquo; setting is enabled.</p>
+<p>With these blocks, the users can quickly see if there are new messages (that have not yet been read).</p>
+<p>By default, there are two blocks matching the default contacts <em>Webmaster</em> and <em>Customer service</em>. Adding more contacts will add more blocks.</p>
+<p>For each block, the description filled for the contact (in Shop parameters &gt; Contact &gt; Contact) is displayed.</p>
+<p>The number of <strong>opened</strong> messages for the contact are displayed: &ldquo;X new message(s)&rdquo; with a link opening the first message.</p>
+<p>If there is no message, then &ldquo;No new message&rdquo; is displayed.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="meaning-of-status">MEANING OF STATUS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#meaning-of-status" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MEANING OF STATUS" href="#meaning-of-status"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>A simple reminder of the 4 status that can be applied to a discussion thread:</p>
+<ul>
+<li>Open</li>
+<li>Closed</li>
+<li>Pending 1</li>
+<li>Pending 2</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="statistics">STATISTICS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#statistics" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor STATISTICS" href="#statistics"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>An overview of the global activity of the customer service since the beginning with 5 indicators displayed:</p>
+<ul>
+<li>Total threads</li>
+<li>Threads pending</li>
+<li>Total number of customer messages</li>
+<li>Unread threads</li>
+<li>Closed threads</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="customer-service">CUSTOMER SERVICE<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#customer-service" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CUSTOMER SERVICE" href="#customer-service"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h3 id="settings-wheel">Settings wheel<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#settings-wheel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Settings wheel" href="#settings-wheel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>When clicking on it, two options are displayed:</p>
+<ol>
+<li>Show SQL query</li>
+</ol>
+<p>After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</p>
+<p>There are two buttons:</p>
+<ul>
+<li>Close: After clicking on it, the modal is closed</li>
+<li>Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters &gt; Database &gt; SQL Manager</li>
+</ul>
+<ol start="2">
+<li>Export to SQL Manager</li>
+</ol>
+<p>After clicking on it, the SQL query is opened in Advanced parameters &gt; Database &gt; SQL Manager</p>
+<div class="gdoc-page__anchorwrap"><h3 id="bulk-actions-drop-down">Bulk actions drop-down<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#bulk-actions-drop-down" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bulk actions drop-down" href="#bulk-actions-drop-down"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>This dropdown is enabled only if at least one message is selected, otherwise it&rsquo;s disabled.</p>
+<p>There is 5 options, see the improvement <a href="https://github.com/PrestaShop/PrestaShop/issues/19197">#19197</a></p>
+<ol>
+<li>Mark as &ldquo;opened&rdquo;</li>
+</ol>
+<p>After clicking on it, the status of the selected messages are changed for &ldquo;opened&rdquo; and a successful message is displayed: &ldquo;Update successful&rdquo;</p>
+<ol start="2">
+<li>Mark as &ldquo;closed&rdquo;</li>
+</ol>
+<p>After clicking on it, the status of the selected messages are changed for &ldquo;closed&rdquo; and a successful message is displayed: &ldquo;Update successful&rdquo;</p>
+<ol start="3">
+<li>Mark as &ldquo;pending 1&rdquo;</li>
+</ol>
+<p>After clicking on it, the status of the selected messages are changed for &ldquo;pending 1&rdquo; and a successful message is displayed: &ldquo;Update successful&rdquo;</p>
+<ol start="4">
+<li>Mark as &ldquo;pending 2&rdquo;</li>
+</ol>
+<p>After clicking on it, the status of the selected messages are changed for &ldquo;pending 2&rdquo; and a successful message is displayed: &ldquo;Update successful&rdquo;</p>
+<ol start="5">
+<li>Delete selection</li>
+</ol>
+<p>After clicking on it, a modal is opened asking to confirm or cancel the action: &ldquo;Are you sure you want to delete the selected item(s)?&rdquo;</p>
+<p>The action can be canceled by clicking on the cross or on the cancel button.</p>
+<p>After clicking on &ldquo;Delete&rdquo; button, the selected messages are deleted, a successful message is displayed &ldquo;The selection has been successfully deleted.&rdquo;</p>
+<div class="gdoc-page__anchorwrap"><h3 id="listing">Listing<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#listing" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Listing" href="#listing"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>The messages listed here, could be written through:</p>
+<ul>
+<li>the order view page in the BO;</li>
+<li>the order details page in the customer account in the FO;</li>
+<li>the store&rsquo;s contact form.</li>
+</ul>
+<p><strong>The messages sent through the contact form in the front office are only listed here if the contact (&lsquo;Webmaster&rsquo; or &lsquo;Customer service&rsquo;, for example) has the &ldquo;Save messages?&rdquo; option enabled.</strong></p>
+<p>This setting can be changed in Shop parameters &gt; Contact &gt; Contact, when editing the contacts.</p>
+<p>If the option is disabled for the contact that the customer chooses, the message is simply sent to the contact&rsquo;s email address, and is not stored in PrestaShop.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="multistore">Multistore<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#multistore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore" href="#multistore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>Only the messages created in the selected store or store group (through the context) are displayed.</p>
+<p>For example, let&rsquo;s say I have the following configuration:</p>
+<ul>
+<li>Group 1
+<ul>
+<li>Shop A</li>
+<li>Shop B</li>
+</ul>
+</li>
+<li>Group 2
+<ul>
+<li>Shop C</li>
+</ul>
+</li>
+</ul>
+<p>If I select group 1 as context, then the messages created in Shop A and Shop B will be displayed.</p>
+<p>If I select Shop A as context, then the messages created in Shop A will be displayed.</p>
+<p>If I select all shops as context, then the messages created in Shop A, Shop B and Shop C will be displayed.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="select-all--unselect-all-checkbox">Select all / unselect all checkbox<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#select-all--unselect-all-checkbox" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Select all / unselect all checkbox" href="#select-all--unselect-all-checkbox"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>After checking the box, all the messages displayed on the page are selected or unselected.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="columns">Columns<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#columns" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Columns" href="#columns"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>There are 12 columns:</p>
+<ol>
+<li>ID</li>
+</ol>
+<p>It&rsquo;s possible to sort by id asc or desc and search by id.</p>
+<ol start="2">
+<li>Customer</li>
+</ol>
+<p>The firstname and lastname are displayed if the customer was logged in while sending the message. Otherwise, &ldquo;&ndash;&rdquo; is displayed.</p>
+<p>When it is the merchant, customer service, or any other contact, who writes to a customer, the customer&rsquo;s first name and last name are displayed too.</p>
+<p>It&rsquo;s possible to sort by customer asc or desc and search by customer (firstname and/or lastname)</p>
+<ol start="3">
+<li>Email</li>
+</ol>
+<p>The customer&rsquo;s email address is displayed.
+It&rsquo;s possible to sort by email asc or desc and search by email</p>
+<ol start="4">
+<li>Type (contact)</li>
+</ol>
+<p>The type of the messsage (contact) selected by the customer in the contact form is displayed.</p>
+<p>If the message is sent through the front-office: my account &gt; order history &gt; details &gt; add a message, then there is no contact displayed &amp; &ldquo;&ndash;&rdquo; is displayed.</p>
+<p>It&rsquo;s possible to sort by type asc or desc and search by selecting the type through the drop-down, where all contacts' title are displayed.</p>
+<ol start="5">
+<li>Language</li>
+</ol>
+<p>The language selected by the customer in the front office or the employee in the back office (through an order message) while sending the message is displayed.</p>
+<p>It&rsquo;s possible to sort by language asc or desc and search by selecting the language through the drop-down, where all enabled languages are displayed.</p>
+<ol start="6">
+<li>Status</li>
+</ol>
+<p>The status of the message is displayed.</p>
+<p>It&rsquo;s possible to change the status of a message by clicking on the drop-down. After changing the status, a successful message is displayed &ldquo;Update successful&rdquo;</p>
+<p>It&rsquo;s possible to sort by status asc or desc and search by selecting the status through the drop-down, where all status are displayed.</p>
+<ol start="7">
+<li>Employee</li>
+</ol>
+<p>The first letter of the employee&rsquo;s firstname and his/her lastname are displayed if the message is assigned to an employee. Otherwise, &ldquo;&ndash;&rdquo; is displayed.</p>
+<p>It&rsquo;s possible to sort by employee asc or desc and search by employee&rsquo;s lastname.</p>
+<ol start="8">
+<li>Messages</li>
+</ol>
+<p>The customer&rsquo;s message is displayed and truncated if it contains more than 40 chars.</p>
+<p>It&rsquo;s possible to sort by message asc or desc and search by messages</p>
+<ol start="9">
+<li>Private</li>
+</ol>
+<p>An icon is displayed according to the privacy of the message: a cross if the message is not private (sent to the customer) and a tick if the message is private (not sent to the customer)</p>
+<p>It&rsquo;s possible to sort by privacy asc or desc and search by selecting the privacy through the drop-down, where 2 options are listed: &ldquo;yes&rdquo; and &ldquo;no&rdquo;.</p>
+<ol start="10">
+<li>Last message</li>
+</ol>
+<p>The date and hour of the last customer&rsquo;s message is displayed.</p>
+<p>It&rsquo;s possible to sort by date asc or desc and search by selecting a range of date through two datepicker: &ldquo;from&rdquo; and &ldquo;to&rdquo;</p>
+<ol start="11">
+<li>Shop</li>
+</ol>
+<p>If the multistore is enabled and several shops have been configured, then this column is displayed.
+The name of the shop where the message was sent is displayed.</p>
+<p>It&rsquo;s not possible to sort or perform a search for this column.</p>
+<ol start="12">
+<li>Actions</li>
+</ol>
+<p>There are two actions:</p>
+<ul>
+<li>View, the main one:</li>
+</ul>
+<p>After clicking on it, the thread is opened in the same tab.
+This action can also be performed by clicking on a line.</p>
+<ul>
+<li>Delete, the second one:</li>
+</ul>
+<p>After clicking on it, a modal is opened asking to confirm or cancel the action: &ldquo;Are you sure you want to delete the selected item(s)?&rdquo;</p>
+<p>The action can be canceled by clicking on the cross or on the cancel button.</p>
+<p>After clicking on &ldquo;Delete&rdquo; button, the message is deleted and a successful message is displayed &ldquo;Successful deletion.&rdquo;</p>
+<div class="gdoc-page__anchorwrap"><h4 id="search">Search<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#search" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Search" href="#search"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>Below, the same behavior as others listing:</p>
+<p>By default, the search button is disabled. It becomes enabled when something is filled in a search field.</p>
+<p>After clicking on &ldquo;Search&rdquo;, the search is applied and the messages matching with the search are displayed</p>
+<p>If no results are found, then a message &ldquo;No records found&rdquo; is displayed.</p>
+<p>After clicking on &ldquo;Search&rdquo;, this button is disabled and a &ldquo;Reset&rdquo; button is displayed.</p>
+<p>After clicking on &ldquo;Reset&rdquo;, the search is removed and all messages are displayed.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="pagination">Pagination<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#pagination" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Pagination" href="#pagination"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>The pagination of the list starts when there are more than 20 messages.</p>
+<p>The merchant can select the number of messages displayed through a drop-down: 20, 50, 300, 1000</p>
+<p>When there are more results than the number selected, the merchant can navigate through pages.</p>
+<p>If a sort and/or a search have been done, results should be kept when moving on to the next page.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="contact-options">CONTACT OPTIONS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#contact-options" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CONTACT OPTIONS" href="#contact-options"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>The user can edit 2 options, which apply to all customers / visitors:</p>
+<ol>
+<li><strong>Allow file uploading</strong>: This toggle allows the merchant to choose if he/she wants to allow his/her visitors to upload files through the contact form.</li>
+</ol>
+<p>It&rsquo;s enabled by default.</p>
+<p>When enabled, an optional field &ldquo;Attachment&rdquo; is displayed in the front-office&rsquo;s contact form and a &ldquo;choose file&rdquo; CTA allows to select a file.</p>
+<p>Only the following extension are accepted: pdf, txt, png, jpg, gif, zip.
+Otherwise, an error notfication is displayed: &ldquo;Bad file extension&rdquo;.</p>
+<p>A tooltip is available: &ldquo;Allow customers to upload files using the contact page.&rdquo;</p>
+<ol start="2">
+<li><strong>Default message</strong>: This field allows the merchant to enter a default message that will be pre-filled while responding to a message.</li>
+</ol>
+<p>By default this field is filled with the following message:</p>
+<p>&ldquo;Dear Customer,</p>
+<p>Regards,
+Customer service&rdquo;</p>
+<p>A tooltip is available: &ldquo;Please fill out the message fields that appear by default when you answer a thread on the customer service page&rdquo;</p>
+<p>A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed and customizing the message according to the customer&rsquo;s language.</p>
+<p>Also, in the case of multilanguage, if an error occurs, then the user must be warned in the message which language is problematic.</p>
+<div class="gdoc-page__anchorwrap"><h3 id="multistore-1">Multistore<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#multistore-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore" href="#multistore-1"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>In a multistore context, the options listed above have <a href="https://github.com/PrestaShop/PrestaShop/issues/19378">checkboxes</a> and <a href="https://github.com/PrestaShop/PrestaShop/issues/19330">specific settings drop-down</a>, take a look at the conditions and specs <a href="../../multistoregeneralspecs.md">here</a></p>
+<div class="gdoc-page__anchorwrap"><h2 id="customer-service-options">CUSTOMER SERVICE OPTIONS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#customer-service-options" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor CUSTOMER SERVICE OPTIONS" href="#customer-service-options"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>This section enables the user to precisely configure PrestaShop&rsquo;s access to his/her email server through its IMAP interface.
+The user needs to properly configure his/her IMAP settings, so that PrestaShop can retrieve the customer&rsquo;s answers to emails that were sent from the customer service tool.</p>
+<p><strong>IMAP URL:</strong> This fields allows to enter the IMAP Url.</p>
+<p>A tooltip is available: &ldquo;URL for your IMAP server (ie.:mail.server.com).&rdquo;</p>
+<p><strong>IMAP port:</strong> This fields allows to enter the IMAP port.</p>
+<p>A tooltip is available: &ldquo;Port to use to connect to your IMAP server.&rdquo;</p>
+<p><strong>IMAP user:</strong> This fields allows to enter the IMAP user.</p>
+<p>A tooltip is available: &ldquo;User to use to connect to your IMAP server.&rdquo;</p>
+<p><strong>IMAP password:</strong> This fields is an input type password and allows to enter the IMAP password.</p>
+<p>A tooltip is available: &ldquo;Password to use to connect to your IMAP server.&rdquo;</p>
+<p><strong>Delete messages:</strong> If this toggle is enabled, messages on the server will be deleted as soon as PrestaShop has retrieved them.</p>
+<p>A tooltip is available: &ldquo;Delete messages after synchronization. If you do not enable this option, the synchronization will take more time.&rdquo;</p>
+<p><strong>Create new threads:</strong> If this toggle is enabled, this will create new threads for unrecognized e-mails.</p>
+<p>A tooltip is available: &ldquo;Create new threads for unrecognized emails.&rdquo;</p>
+<p><strong>IMAP options (/pop3):</strong> If this toggle is enabled, POP3 will be used instead of IMAP.</p>
+<p>A tooltip is available: &ldquo;Use POP3 instead of IMAP.&rdquo;</p>
+<p><strong>IMAP options (/norsh):</strong> If this toggle is enabled, the connection to the email server will not pre-authenticated.</p>
+<p>A tooltip is available: &ldquo;Do not use RSH or SSH to establish a preauthenticated IMAP sessions.&rdquo;</p>
+<p><strong>IMAP options (/ssl):</strong>  If this toggle is enabled, the connection to the email server will not be encrypted.</p>
+<p>A tooltip is available: &ldquo;Use the Secure Socket Layer (TLS/SSL) to encrypt the session.&rdquo;</p>
+<p><strong>IMAP options (/validate-cert):</strong> If this toggle is enabled, PrestaShop will force the validation of the server&rsquo;s TLS/SSL certificate.</p>
+<p>A tooltip is available: &ldquo;Validate certificates from the TLS/SSL server.&rdquo;</p>
+<p><strong>IMAP options (/novalidate-cert):</strong> If this toggle is enabled, PrestaShop will never try to validate the server&rsquo;s TLS/SSL certificate. This is essential for servers with self-signed certificates.</p>
+<p>A tooltip is available: &ldquo;Do not validate certificates from the TLS/SSL server. This is only needed if a server uses self-signed certificates.&rdquo;</p>
+<p><strong>IMAP options (/tls):</strong> If this toggle is enabled, PrestaShop will force the use of StartTLS to encrypt the connection. Servers that do not support StartTLS will be rejected.</p>
+<p>A tooltip is available: &ldquo;Force use of start-TLS to encrypt the seesion, and reject connection to servers that do not support it.&rdquo;</p>
+<p><strong>IMAP options (/notls)</strong> If this toggle is enabled, PrestaShop will not use StartTLS to encrypt the session, even with servers that support it.</p>
+<p>A tooltip is available: &ldquo;Do not user start-TLS to encrypt the session, even with servers that support it.&rdquo;</p>
+<div class="gdoc-page__anchorwrap"><h3 id="multistore-2">Multistore<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#multistore-2" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore" href="#multistore-2"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>In a multistore context, the options listed above have <a href="https://github.com/PrestaShop/PrestaShop/issues/19378">checkboxes</a> and <a href="https://github.com/PrestaShop/PrestaShop/issues/19330">specific settings drop-down</a>, take a look at the conditions and specs <a href="../../multistoregeneralspecs.md">here</a></p>
+<div class="gdoc-page__anchorwrap"><h3 id="save-button">SAVE BUTTON<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#save-button" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SAVE BUTTON" href="#save-button"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>When clicking on save, if all settings have well been saved, then a successful message is displayed: &ldquo;The settings have been successfully updated.&rdquo;</p>
+<p>If all IMAP fields are not filled and if the user click on save, then the following error notification is displayed: &ldquo;Unable to save settings, please fill in all IMAP fields to configure your customer service options.&rdquo; in <em>Admin.Catalog.Notification</em>.</p>
+<p>If all IMAP fields are filled and if IMAP is not installed on the server, then the following warning notification is displayed after clicking on Save: &ldquo;IMAP could not be installed on the server, check your configuration and try again.&rdquo;</p>
+<div class="gdoc-page__anchorwrap"><h2 id="sync">Sync<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html#sync" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sync" href="#sync"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>This block is displayed if all IMAP fields are filled</p>
+<p><strong>Run Sync</strong></p>
+<p>A tooltip is available: &ldquo;Click to synchronize mail automatically&rdquo;</p>
+<p><strong>Run Sync button</strong> This button allows to synchronize mail automatically</p>
+
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer class="gdoc-footer">
+    <div class="container flex flex-wrap">
+        <span class="gdoc-footer__item">
+            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
+            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
+        </span>
+        
+        
+    </div>
+</footer>
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../../../js/en.search.min.f963c509117ece11ac8cae97f754d71e04ec3c21e6a315310caca82820b9da59.js"></script>
+
+
+
+<script defer src="../../../../js/clipboard.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

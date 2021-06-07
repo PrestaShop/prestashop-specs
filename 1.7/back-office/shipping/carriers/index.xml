@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carriers on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers.html</link>
+    <description>Recent content in Carriers on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add / Edit</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</guid>
+      <description>Shipping-Carriers-add-edit SPECIFICATIONS - SHIPPING &amp;gt; CARRIERS &amp;gt; Add new/Edit What The Add new/Edit Carrier page allows users to create and edit carriers.
+Specifications As of Sept 9th 2019 Version : 1.7.6.1
+Elements in the page Logo Block Logo block: There is a logo block on the left of the page. The title is TITLE. It contains a thumbnail of the image uploaded as logo. Once an image has been uploaded a button with a trashcan icon is available in the block top right corner.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages.html</link>
+    <description>Recent content in Pages on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/pages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/pages.html</guid>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; PAGES Grid Categories CmsPageCategoryDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
+Row action does not apply to the checkbox column and to columns with enable/disable actions.
+Grid Pages CmsPageDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
+Row action does not apply to the checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+  </channel>
+</rss>

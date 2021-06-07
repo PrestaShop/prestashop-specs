@@ -1,0 +1,3702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Technical characteristics specs">
+
+<title>Technical characteristics specs | PrestaShop Specs</title>
+
+<link rel="icon" href="../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../main.min.css" as="style">
+<link rel="stylesheet" href="../../main.min.css" media="all">
+
+<link rel="preload" href="../../mobile.min.css" as="style">
+<link rel="stylesheet" href="../../mobile.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../print.min.css" as="style">
+<link rel="stylesheet" href="../../print.min.css" media="print">
+
+<link rel="preload" href="../../custom.css" as="style">
+<link rel="stylesheet" href="../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://build.prestashop.com/prestashop-specs/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../logo.png" alt="" width=38 height=38>
+                PrestaShop Specs
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+
+
+    <section class="gdoc-nav--main">
+        <h2>Navigation</h2>
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7.html" class="gdoc-nav__entry ">
+                        Specifications
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/forms.html" class="gdoc-nav__entry ">
+                        Forms
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office.html" class="gdoc-nav__entry ">
+                        Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters.html" class="gdoc-nav__entry ">
+                        Advanced Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/administration.html" class="gdoc-nav__entry ">
+                        Administration
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/administration/administration.html" class="gdoc-nav__entry ">
+                        Administration Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database.html" class="gdoc-nav__entry ">
+                        Database
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database/dbbackup.html" class="gdoc-nav__entry ">
+                        DB Backup
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database/sql_manager.html" class="gdoc-nav__entry ">
+                        SQL Manager
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/email.html" class="gdoc-nav__entry ">
+                        Email
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/import.html" class="gdoc-nav__entry ">
+                        Import
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/information.html" class="gdoc-nav__entry ">
+                        Information
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/information/information.html" class="gdoc-nav__entry ">
+                        Information Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/logs.html" class="gdoc-nav__entry ">
+                        Logs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/menu.html" class="gdoc-nav__entry ">
+                        Menu
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/menu/menu.html" class="gdoc-nav__entry ">
+                        Menu Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/multistore/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/performance.html" class="gdoc-nav__entry ">
+                        Performance
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team.html" class="gdoc-nav__entry ">
+                        Team
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team/employees.html" class="gdoc-nav__entry ">
+                        Employees
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team/profiles.html" class="gdoc-nav__entry ">
+                        Profiles Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/webservice.html" class="gdoc-nav__entry ">
+                        WebService
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/webservice/webservice.html" class="gdoc-nav__entry ">
+                        Webservice
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog.html" class="gdoc-nav__entry ">
+                        Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers.html" class="gdoc-nav__entry ">
+                        Brands &amp; Suppliers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers/brands.html" class="gdoc-nav__entry ">
+                        Brands
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html" class="gdoc-nav__entry ">
+                        Supliers Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories/add-edit.html" class="gdoc-nav__entry ">
+                        Category Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount.html" class="gdoc-nav__entry ">
+                        Discount
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount/cart-rule.html" class="gdoc-nav__entry ">
+                        Cart Rule
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount/price-rules.html" class="gdoc-nav__entry ">
+                        Price Rules
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products.html" class="gdoc-nav__entry ">
+                        Products
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products/listing.html" class="gdoc-nav__entry ">
+                        Listing
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products/add-edit.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/customer-service/dashboard.html" class="gdoc-nav__entry ">
+                        Dashboard
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/merchandise-returns.html" class="gdoc-nav__entry ">
+                        Merchandise Returns
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/order-messages.html" class="gdoc-nav__entry ">
+                        Order Messages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/addresses.html" class="gdoc-nav__entry ">
+                        Addresses
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/addresses/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/customers/list.html" class="gdoc-nav__entry ">
+                        List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design.html" class="gdoc-nav__entry ">
+                        Design
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/email-theme.html" class="gdoc-nav__entry ">
+                        Email Theme
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings.html" class="gdoc-nav__entry ">
+                        Image Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings/generation-options.html" class="gdoc-nav__entry ">
+                        Generation Options
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings/regenerate-thumbnails.html" class="gdoc-nav__entry ">
+                        Regenerate Thumbnails
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/link-widget.html" class="gdoc-nav__entry ">
+                        Link Widget
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/pages/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/positions.html" class="gdoc-nav__entry ">
+                        Positions
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-and-logo.html" class="gdoc-nav__entry ">
+                        Themes &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-and-logo/theme-logo.html" class="gdoc-nav__entry ">
+                        Theme &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-catalog.html" class="gdoc-nav__entry ">
+                        Themes Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/multistoregeneralspecs.html" class="gdoc-nav__entry ">
+                        General MultiStore Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international.html" class="gdoc-nav__entry ">
+                        International
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization.html" class="gdoc-nav__entry ">
+                        Localization
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization/currencies.html" class="gdoc-nav__entry ">
+                        Currencies
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization/languages.html" class="gdoc-nav__entry ">
+                        Languages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/locations.html" class="gdoc-nav__entry ">
+                        Locations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/taxes.html" class="gdoc-nav__entry ">
+                        Taxes
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/taxes/taxes.html" class="gdoc-nav__entry ">
+                        Taxes Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/translations/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-catalog/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager.html" class="gdoc-nav__entry ">
+                        Module Manager
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/alerts.html" class="gdoc-nav__entry ">
+                        Alerts Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/modules.html" class="gdoc-nav__entry ">
+                        Modules Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/updates.html" class="gdoc-nav__entry ">
+                        Updates Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/credit-slips.html" class="gdoc-nav__entry ">
+                        Credit Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/delivery-slips.html" class="gdoc-nav__entry ">
+                        Delivery Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/invoices.html" class="gdoc-nav__entry ">
+                        Invoices
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/add.html" class="gdoc-nav__entry ">
+                        Add new order
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/listing.html" class="gdoc-nav__entry ">
+                        Listing Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/view-page.html" class="gdoc-nav__entry ">
+                        View Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/shopping-carts.html" class="gdoc-nav__entry ">
+                        Shopping Carts
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment.html" class="gdoc-nav__entry ">
+                        Payment
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment/payment-methods.html" class="gdoc-nav__entry ">
+                        Payment Methods
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping.html" class="gdoc-nav__entry ">
+                        Shipping
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/carriers.html" class="gdoc-nav__entry ">
+                        Carriers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/carriers/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters.html" class="gdoc-nav__entry ">
+                        Shop Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/contact.html" class="gdoc-nav__entry ">
+                        Contact
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/contact/tab.html" class="gdoc-nav__entry ">
+                        Contacts Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings.html" class="gdoc-nav__entry ">
+                        Customer Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/customers.html" class="gdoc-nav__entry ">
+                        Customers Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/groups.html" class="gdoc-nav__entry ">
+                        Groups Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/titles.html" class="gdoc-nav__entry ">
+                        Titles Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/general.html" class="gdoc-nav__entry ">
+                        General
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/general/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/merchant-expertise.html" class="gdoc-nav__entry ">
+                        Merchant Expertise
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings.html" class="gdoc-nav__entry ">
+                        Order Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings/order-statuses.html" class="gdoc-nav__entry ">
+                        Order Statuses
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings/order-settings.html" class="gdoc-nav__entry ">
+                        Settings
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/product-settings.html" class="gdoc-nav__entry ">
+                        Product Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/product-settings/page.html" class="gdoc-nav__entry ">
+                        Product Settings Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/search/search.html" class="gdoc-nav__entry ">
+                        Search Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/traffic-and-seo.html" class="gdoc-nav__entry ">
+                        Traffic &amp; SEO
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" class="gdoc-nav__entry ">
+                        SEO &amp; URLs Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics.html" class="gdoc-nav__entry ">
+                        Broader Topics
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/ecotax.html" class="gdoc-nav__entry ">
+                        EcoTax
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/image-file-formats.html" class="gdoc-nav__entry ">
+                        Image File Formats
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/multistorespecialsspecs.html" class="gdoc-nav__entry ">
+                        Multistore Specials Cases
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/price-calculation-rules.html" class="gdoc-nav__entry ">
+                        Price Calculation
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/seo-rules-and-behaviours.html" class="gdoc-nav__entry ">
+                        SEO Rules &amp; Behaviours
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/symfony-migration.html" class="gdoc-nav__entry ">
+                        Symfony Migration
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/checklist.html" class="gdoc-nav__entry ">
+                        Checklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office.html" class="gdoc-nav__entry ">
+                        Front Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/checkout.html" class="gdoc-nav__entry ">
+                        Checkout
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/customer-account.html" class="gdoc-nav__entry ">
+                        Customer Account
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/discounts.html" class="gdoc-nav__entry ">
+                        Discounts
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/discounts/cart-rules-free-gift.html" class="gdoc-nav__entry ">
+                        Free Gift
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Mode
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/product-images.html" class="gdoc-nav__entry ">
+                        Product Images
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/products-list.html" class="gdoc-nav__entry ">
+                        Product List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/product-page.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/your-vouchers.html" class="gdoc-nav__entry ">
+                        Your vouchers
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/installer/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/psthemecusto.html" class="gdoc-nav__entry ">
+                        Psthemecusto
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/dateofdelivery.html" class="gdoc-nav__entry ">
+                        Date Of Delivery
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/ps_facetedsearch.html" class="gdoc-nav__entry ">
+                        Faceted Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/ps_linklist.html" class="gdoc-nav__entry ">
+                        Linklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/wishlist.html" class="gdoc-nav__entry ">
+                        Wishlist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates.html" class="gdoc-nav__entry ">
+                        Templates
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html" class="gdoc-nav__entry ">
+                        Functional and behaviors specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates/technical-characteristics-template.html" class="gdoc-nav__entry is-active">
+                        Technical characteristics specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span>
+        
+        <span class="breadcrumb">
+            <svg class="icon path"><use xlink:href="#path"></use></svg>
+            
+            
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='../../'>PrestaShop Specs</a> / <a href='../../1.7.html'>Specifications</a> / <a href='../../1.7/spec-templates.html'>Templates</a> / Technical characteristics specs
+    
+
+    
+
+    
+
+    
+
+        </span>
+        
+    </span>
+    <span>
+        
+    </span>
+</div>
+
+
+    <article class="gdoc-markdown">
+        <h1>Technical characteristics specs</h1>
+        
+
+
+
+    
+
+
+<h1 id="technical-characteristics-specs-template-v10">Technical characteristics specs template v1.0</h1>
+<p>December 19</p>
+<div class="gdoc-page__anchorwrap"><h3 id="disclaimer">Disclaimer:<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#disclaimer" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Disclaimer:" href="#disclaimer"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.</p>
+<p>The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.</p>
+<p>Do not attempt to build what is written below</p>
+<div class="gdoc-page__anchorwrap"><h3 id="structure">Structure<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#structure" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Structure" href="#structure"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>This template presents how to write <strong>technical characteristics</strong> specs.</p>
+<p>It corresponds to the features' &ldquo;Technical characteristics&rdquo; int he schema below</p>
+<p><img src="../../img/ps_specs_structure.jpg" alt="specs structure"></p>
+<hr>
+<hr>
+<hr>
+<pre><code>  The following specs is about the Prodcut Add/edit page.
+  To see the page in the software, go to Products &gt; Edit a product or click on add a product.
+</code></pre><h1 id="tech-characteristics"><del><del><del><del>TECH CHARACTERISTICS</del></del></del></del>~</h1>
+<h1 id="specs-product-page">SPECS PRODUCT PAGE</h1>
+<p>As a merchant I need to be able to correctly create, edit and delete my products.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="why">WHY<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#why" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WHY" href="#why"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>The add / edit product page (Catalog &gt; Products) has already been migrated to Symfony for the 1.7.0 version, but many behaviours are not specified which have introduced regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test and avoid any new bugs.</p>
+<p>Furthermore, we have identified different issues related to this page that we should fix during the re-migration : <a href="https://github.com/PrestaShop/PrestaShop/issues/13891">https://github.com/PrestaShop/PrestaShop/issues/13891</a></p>
+<div class="gdoc-page__anchorwrap"><h2 id="what">WHAT<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#what" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WHAT" href="#what"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Thus, this project aims at specifying the current and expected behaviour for every scenario a merchant could be dealing with when creating / editing a product for his/her customers.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="specifications">SPECIFICATIONS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#specifications" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SPECIFICATIONS" href="#specifications"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p><a href="../back-office/catalog/products/catalog-products-add-edit.md#product-creation-edition">The first step is to detail the behavior of each field per tab when creating / editing a product.</a></p>
+<p><a href="../back-office/catalog/products/catalog-products-add-edit.md#errors">The second step of this document is to detail the type of each fields and error messages per tab.</a></p>
+<p>The third step is to detail the multistore behavior.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="1----product-creation--edition-on-back-office-a-idproduct-creation-editiona">1.    Product creation / edition on Back office <a id="product-creation-edition"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#1----product-creation--edition-on-back-office-a-idproduct-creation-editiona" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1.    Product creation / edition on Back office <a id="product-creation-edition"></a>" href="#1----product-creation--edition-on-back-office-a-idproduct-creation-editiona"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h3 id="elements-in-all-tabs-epichttpsgithubcomprestashopprestashopissues14770">Elements in all tabs [<a href="https://github.com/PrestaShop/PrestaShop/issues/14770">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#elements-in-all-tabs-epichttpsgithubcomprestashopprestashopissues14770" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Elements in all tabs [<a href="https://github.com/PrestaShop/PrestaShop/issues/14770">EPIC</a>]" href="#elements-in-all-tabs-epichttpsgithubcomprestashopprestashopissues14770"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to always see some elements when I create or edit a product.</strong></p>
+<p>Some elements are displayed in all tabs. Here is the list of those elements :</p>
+<ul>
+<li><strong>Product name</strong>: When you create a new product, this field is empty and there is a placeholder: “Enter your product name”.
+Only the name in the default language must be filled, if the product name is not filled for all languages, then it must retrieve the product name in the default language.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed.
+If the content does not exist in a language, it must retrieve the content of the default language. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic.</li>
+<li><strong>Product type</strong>: Drop-down with 3 : Standard product, Pack of products, Virtual product.
+Please note, when editing a standard product with combinations, you can’t change the type, the drop-down is disabled.</li>
+<li><strong>Sales</strong>: This link redirect to Stats &gt; product detail and is open in a new browser tab</li>
+<li><strong>Product list</strong>: Link that displays the list of all products filtered as in the catalog, with their id, name, price, quantity.
+If you click on the id or the name, you arrive on the product page in basic settings tab.
+If you click on the price, you arrive on the product page in pricing tab.
+If you click on the quantity, you arrive on the product page in the second tab which is: Quantities for a standard product without combinations or a pack, Combinations for a standard product with combination, Virtual product for a virtual product.</li>
+<li><strong>Help</strong>: Link to display the help in the right menu.</li>
+<li><strong>Delete</strong>: Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.</li>
+<li><strong>Preview</strong>: When you click on this button, it saves and open a new browser tab with the product displayed in front-office.
+If the product is disabled (offline), you have on the product page in front-office a message displayed: “This product is not visible to your customers.”
+Keyboard shortcut: ALT + SHIFT + V</li>
+<li><strong>Online</strong>: When you click on this button, it saves and makes the product visible in front-office.</li>
+<li><strong>Offline</strong>: When you click on this button, it saves and makes the product invisible in front-office.</li>
+<li><strong>Save</strong>: Button to save all changes made in all tabs.
+Keyboard shortcut: ALT + SHIFT + S.
+If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.</li>
+<li><strong>Duplicate</strong>: When you click on this button, it saves and duplicate the current product (the duplicated product will be offline). The duplicated product must be exactly the same.
+Keyboard shortcut: ALT + SHIFT + D</li>
+<li><strong>Go to catalog</strong>: When you click on this button, it saves and redirect to catalog product list.
+Keyboard shortcut: ALT + SHIFT + Q</li>
+<li><strong>Add new product</strong>: When you click on this button, it saves and opens a new empty product page.
+Keyboard shortcut: ALT + SHIFT + P</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="basic-settings-tab-epichttpsgithubcomprestashopprestashopissues14763">Basic settings tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14763">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#basic-settings-tab-epichttpsgithubcomprestashopprestashopissues14763" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Basic settings tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14763">EPIC</a>]" href="#basic-settings-tab-epichttpsgithubcomprestashopprestashopissues14763"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to complete the basic information of my products.</strong></p>
+<p>Here is the list of the elements of basic settings tab:</p>
+<ul>
+<li>
+<p><strong>Combinations</strong>: If you have selected standard product in the drop-down, you have 2 radios buttons: simple product or product with combinations.
+If product with combination is selected, under the two radio buttons, there is a “combinations” link. When you click on it, you switch to combinations tab.
+If product with combinations was selected &amp; combinations were generated, when I change for simple product, a modal is displayed alerting all combinations will be deleted and ask to confirm or cancel the action.</p>
+</li>
+<li>
+<p><strong>Reference</strong>: The reference is displayed in the product details part in front-office.</p>
+</li>
+<li>
+<p><strong>Summary</strong>: The text can be formatted thanks to the TinyMCE editor (<a href="https://github.com/PrestaShop/PrestaShop/issues/14985">improvement 14985</a>)
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Description</strong>: The text can be formatted thanks to the TinyMCE editor (<a href="https://github.com/PrestaShop/PrestaShop/issues/14985">improvement 14985</a>)
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Quantity</strong>: This field is not displayed for a product with combinations. This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
+If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab (for a standard product) or to virtual product tab (for a virtual product).
+When you update the field in basic settings tab, the same field in quantities (for a standard product) / virtual product tab is updated.
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.</p>
+</li>
+<li>
+<p><strong>Price tax excl</strong>: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When you change it, the same field in pricing tab is also updated.</p>
+</li>
+<li>
+<p><strong>Price tax incl</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When you change it, the same field in pricing tab is also updated.</p>
+</li>
+<li>
+<p><strong>Tax rule</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+Drop-down with all tax rules enabled and a “no tax” option.
+When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.
+If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop.
+When you change it, the same field in pricing tab is also updated.
+Under the tax rule drop down, there is a “pricing” link. When you click on it, you switch to pricing tab.</p>
+</li>
+<li>
+<p><strong>Search category</strong>: Search field to search a category. You can search by category name.
+When you start typing, if there are results, they are displayed and highlighted ( <a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>) under and you can click on it.</p>
+</li>
+<li>
+<p><strong>Select category</strong>: Allows to associate categories to the product.
+A category is necessarily selected, it is impossible not to have one.
+When you create a new product, “Home” is selected.
+When you search a category elements are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>).
+When you click on the result, the category appears in “associated category” and is checked in the list. You can also select a category in the tree by clicking in the checkbox, then the category appears in “associated category”.</p>
+</li>
+<li>
+<p><strong>Unselect category</strong>: You can unselect a category by unchecking the checkbox in the tree. Then, the category is removed in “associated category”.
+You can also click on the cross in “associated category”. Then, the checkbox for the corresponding category is unchecked.
+If you try to unselect all categories, you can’t do it for the last one.</p>
+</li>
+<li>
+<p><strong>Category tree</strong>: When you create a new product, the tree is open for the first 2 levels of categories (<a href="https://github.com/PrestaShop/PrestaShop/issues/14955">issue 14955</a>).
+When I click on &ldquo;collapse&rdquo; it folds the whole tree. I can also click on each parent to folds / unfolds its subcategories. When I click on &ldquo;expend&rdquo; the whole tree is opened.
+Categories are sorted by level AND position:
+Categ 1 level 1 position 1
+Categ 3 level 1 position 2
+Categ 2 level 1 position 3
+Categ 2-2 level 2 position 1
+Categ 2-1 level 2 position 2</p>
+</li>
+<li>
+<p><strong>Main category</strong>: Radio button to select the main category of the product. There can only be one.
+The main category is the one that will be in the product URL, before the product name and in the breadcrumb in front-office you have all parent categories up to the main one.</p>
+</li>
+<li>
+<p><strong>Create a new category</strong>: When you click on the button “Create a category”, this button disappears, a field “New category name” and a drop-down “parent of the category” are displayed with 2 buttons Cancel and Create.</p>
+</li>
+<li>
+<p><strong>New category name</strong>: Allows to create quickly a new category.
+The name will be the same in all languages.
+Alphanumeric field. Maximum 128 characters. Invalid characters are: &lt;&gt;;=#{}
+When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”</p>
+</li>
+<li>
+<p><strong>Parent of the category</strong>: Drop-down with all categories enabled, sorted by level and position:
+Categ 1 level 1 position 1
+Categ 3 level 1 position 2
+Categ 2 level 1 position 3
+Categ 2-2 level 2 position 1
+Categ 2-1 level 2 position 2</p>
+</li>
+<li>
+<p><strong>Image upload</strong>: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”
+You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.
+When there is already an image, you can click only on the frame with the “+” to open the selector.</p>
+</li>
+<li>
+<p><strong>Image order</strong>: You can move the images in the product sheet, the order is well changed in front-office.
+The drag icon isn&rsquo;t displayed when many images are selected and you can&rsquo;t move many images</p>
+</li>
+<li>
+<p><strong>Image caption</strong>: You can click on an uploaded image and add a caption.
+You can put a caption by language.
+The caption is displayed in front-office when you hover the thumbnail image according to the selected language.</p>
+</li>
+<li>
+<p><strong>Cover image</strong>: You can click on an uploaded image to assign it as cover image. There is necessarily a cover image. There can be only one cover image.
+If you upload many images, the first image selected is the cover image.
+The cover image is displayed in product list in front-office.
+You can change the cover image by clicking on an image, check the checkbox “cover image” and click on Save. If it was checked for another image, then it’s unchecked.</p>
+</li>
+<li>
+<p><strong>Zoom</strong>: You can zoom on an uploaded image by clicking on it and click on “Zoom”.
+The image is open in its default size. You can close it by clicking on the cross, outside the image or pressing ESC key.       Merchants should be able to navigate between several images in zoom view to have an easy last check before saving the page.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.</p>
+</li>
+<li>
+<p><strong>Bulk actions</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/12773">issue #12773</a>) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:</p>
+<ul>
+<li>
+<p>The number of images selected</p>
+</li>
+<li>
+<p>An &ldquo;Unselect all&rdquo; link to unselect images and close the frame</p>
+</li>
+<li>
+<p>The &ldquo;zoom&rdquo; button to open the first image of the list zoomed</p>
+</li>
+<li>
+<p>A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.</p>
+</li>
+<li>
+<p>The cross to close the frame and unselect images</p>
+</li>
+<li>
+<p>Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.</p>
+<p>If more than one image is selected the checkbox &ldquo;cover&rdquo; disappears</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a feature</strong>: Drop-down with all features.
+If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)
+When you select a feature, both fields (pre-defined &amp; customized value) are enabled.
+The features and the associated values are displayed in product details tab of the front-office.</p>
+</li>
+<li>
+<p><strong>Feature pre-defined value</strong>: Drop-down with all compositions of the selected feature.
+If you select a pre-defined value, the customized value should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)
+When you add a feature with a pre-defined value, it’s added in all languages enabled.</p>
+</li>
+<li>
+<p><strong>Feature customized value</strong>: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)
+When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Delete feature</strong>: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.</p>
+</li>
+<li>
+<p><strong>Add a brand</strong>: Drop-down with all brands enabled.
+The brand is displayed in the product page in front-office in product details tab. The logo of the brand is displayed if the brand has a logo, otherwise the name of the brand is displayed.
+When you add a brand, it’s added in all languages enabled.</p>
+</li>
+<li>
+<p><strong>Delete a brand</strong>: Button to delete the brand. When you click on it, you have a modal for cancel or confirm the action. When you delete a brand, it’s deleted in all languages.</p>
+</li>
+<li>
+<p><strong>Add a related product</strong>: Search field to search a product. You can search by product name or product reference.
+When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>).
+You can click on it to select it. It should not be possible to associate the same product with itself or to associate the same product several times (<a href="https://github.com/PrestaShop/PrestaShop/issues/9960">issue 9960</a>)
+You can have many associated products.</p>
+</li>
+<li>
+<p><strong>Delete a related product</strong>: The trash button is to delete all related products. When you click on it, you have a modal for cancel or confirm the action.
+If you want to delete only one associated product, you can click on the cross. When you click on it, you have a modal for cancel or confirm the action.</p>
+</li>
+<li>
+<p><strong>Pack search for a product</strong>: Select Pack of products as product type in the drop-down.
+A search field to search a product is displayed. You can search by product name or product reference.
+When you start typing, if there are results, they are displayed and highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>)
+If you try to search another product that is alreay a pack, it shouldn&rsquo;t be displayed in the dropdown because you can&rsquo;t add a pack in a pack.
+When you select a result, then the product name is inserted in the search bar.
+You shouldn&rsquo;t be able to add the same product several times to the pack. If the product is already in the pack, you shouldn&rsquo;t see it in the results (<a href="https://github.com/PrestaShop/PrestaShop/issues/9617">issue 9617</a>)</p>
+</li>
+</ul>
+<p><strong>Pack quantity</strong></p>
+<ul>
+<li><strong>Pack add a product</strong>: Button to add the product in the quantity specified to the pack.</li>
+<li><strong>Pack delete a product</strong>: When you hover one of the pack products, a trash appears to remove the product from the pack. When you click on it, you have a modal for cancel or confirm the action.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="second-tab-a-idpackqtya">Second tab <a id="packqty"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#second-tab-a-idpackqtya" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Second tab <a id="packqty"></a>" href="#second-tab-a-idpackqtya"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>The second tab name changes depending on the type of product selected :</p>
+<ul>
+<li><a href="../back-office/catalog/products/catalog-products-add-edit.md#quantities-tab-epic"><strong>Quantities</strong></a> for a standard product without combinations or a pack</li>
+<li><a href="../back-office/catalog/products/catalog-products-add-edit.md#virtual-product-tab-epic"><strong>Virtual product</strong></a> for a virtual product.</li>
+<li><a href="../back-office/catalog/products/catalog-products-add-edit.md#combinations-tab-epic"><strong>Combinations</strong></a> for a standard product with combination</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="quantities-tab-epichttpsgithubcomprestashopprestashopissues14771">Quantities tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14771">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#quantities-tab-epichttpsgithubcomprestashopprestashopissues14771" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Quantities tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14771">EPIC</a>]" href="#quantities-tab-epichttpsgithubcomprestashopprestashopissues14771"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage my products quantities.</strong></p>
+<p>Here is the list of the elements of quantities tab:</p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
+When you update the field in quantities tab, the same field in basic settings tab is updated.
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.</li>
+<li><strong>Minimum quantity for sale</strong>: In front-office (product page &amp; quick-view), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”</li>
+<li><strong>Stock location</strong>: This field should not be displayed for a virtual product (<a href="https://github.com/PrestaShop/PrestaShop/issues/9623">issue 9623</a>)</li>
+<li><strong>Low stock level</strong>: You can define a value and choose or not to receive an email when the product quantity is &lt;= to this value.</li>
+<li><strong>Send me an email when the quantity is below or equals this level</strong>: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.</li>
+<li><strong>Pack quantities</strong>: Dropdown with 4 options, displayed only when the product type is pack:
+1) <strong>Decrement pack only</strong>: Only the pack quantity is decremented when you order it.
+2) <strong>Decrement products in pack only</strong>: Only the products contained in the pack are decremented, the pack isn’t.
+3) <strong>Decrement both</strong>: The pack and the products contained in the pack are decremented.
+4) <strong>Default</strong>: Can be one of the 3 values above, it depends on what is selected in Shop parameters &gt; Products &gt; Default pack stock management.</li>
+<li><strong>Availability preferences, behavior when out of stock:</strong></li>
+</ul>
+<p>This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.</p>
+<p>3 radios buttons:
+1) <strong>Deny orders</strong>: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+2) <strong>Allow orders</strong>: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+3) <strong>Use default behavior (Deny orders or Allow orders)</strong>: the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.</p>
+<ul>
+<li><strong>Label when in stock</strong>: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Availability date</strong>: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="virtual-product-tab-epichttpsgithubcomprestashopprestashopissues14772">Virtual product tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14772">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#virtual-product-tab-epichttpsgithubcomprestashopprestashopissues14772" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Virtual product tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14772">EPIC</a>]" href="#virtual-product-tab-epichttpsgithubcomprestashopprestashopissues14772"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage my virtual products.</strong></p>
+<p>Here is the list of the elements of virtual product tab:</p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
+When you update the field in virtual product tab, the same field in basic settings tab is updated.
+The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
+This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.</li>
+<li><strong>Minimum quantity for sale</strong>: In front-office (product page &amp; quick-view), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”</li>
+<li><strong>Stock location</strong>: This field should not be displayed for a virtual product (<a href="https://github.com/PrestaShop/PrestaShop/issues/9323">issue 9323</a>)</li>
+<li><strong>Low stock level</strong>: You can define a value and choose or not to receive an email when the product quantity is &lt;= to this value.</li>
+<li><strong>Send me an email when the quantity is below or equals this level</strong>: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.</li>
+<li><strong>Associated files ?</strong>: There is two radio buttons: Yes &amp; No. By default No is checked.
+If you check Yes, new fields are displayed:
+<ul>
+<li><strong>Browse file</strong>: You can search and upload a file. This field disappears after uploading a file and clicking on save. It’s replaced by “Download file” and “Delete this file” actions, so you can upload only one associated file.</li>
+<li><strong>File name</strong>: This field is automatically completed with the name of the file uploaded, but you can edit it.</li>
+<li><strong>Number of allowed download</strong>: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “You have reached the maximum number of downloads allowed.” The number of downloads allowed is displayed in the mail download_product sent to the customer.</li>
+<li><strong>Expiration date</strong>: Date field. After this date, the customer can’t download the file anymore. If you try to download it, a message is displayed “Expiration date has passed, you cannot download this product.”. The expiration date is displayed in the mail download_product sent to the customer.</li>
+<li><strong>Number of days</strong>: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “The product deadline is in the past.”</li>
+<li><strong>Delete file</strong>: Once the file uploaded and clicking on Save, you can delete the file. When you click on “delete this file”, a modal is displayed to cancel or confirm the action. If you confirm the deletion, the file is deleted and “delete file” and “download file” actions are replaced by the browse file field.</li>
+<li><strong>Download file</strong>: Once the file uploaded and clicking on Save, you can download your file.</li>
+</ul>
+</li>
+<li><strong>Availability preferences, behavior when out of stock:</strong></li>
+</ul>
+<p>This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.</p>
+<p>3 radios buttons:</p>
+<p>1) <strong>Deny orders</strong>: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+2) <strong>Allow orders</strong>: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+3) <strong>Use default behavior (Deny orders or Allow orders)</strong>: the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.</p>
+<ul>
+<li><strong>Label when in stock</strong>: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Availability date</strong>: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="combinations-tab-epichttpsgithubcomprestashopprestashopissues14773">Combinations tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14773">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#combinations-tab-epichttpsgithubcomprestashopprestashopissues14773" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Combinations tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14773">EPIC</a>]" href="#combinations-tab-epichttpsgithubcomprestashopprestashopissues14773"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage my products with combinations.</strong></p>
+<p>Here is the list of the elements of combinations tab:</p>
+<ul>
+<li>
+<p><strong>Search attributes</strong>: I can search and select any existing attribute’s value by typing the value or the attribute’s private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>).
+I can also choose all the values of an attribute at once by typing the private name (<a href="https://github.com/PrestaShop/PrestaShop/issues/12440">issue 12440</a>) of the attribute: All.
+Elements in dropdown are highlighted when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>).
+All results are displayed in the dropdown with a scrollbar (<a href="https://github.com/PrestaShop/PrestaShop/issues/9939">issue 9939</a>).
+When I select an attribute’s value in the search bar, the value is selected and in bold in the menu on the right.
+If I remove an attribute value in the search bar, the value is unchecked in the menu on the right.</p>
+</li>
+<li>
+<p><strong>Select attributes</strong>: When no combinations have been generated yet, attributes private names are opened and values displayed.
+If combinations are already generated, attributes are collapsed and values are not displayed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16100">issue 16100</a>)
+When I select any existing attribute’s value in the menu on the right, it’s added in the search bar: “Attribute private name: value selected”.
+When I uncheck an attribute value in the menu on the right, it’s removed from the search bar.</p>
+</li>
+<li>
+<p><strong>Generate combinations</strong>: After selecting one or many attributes’ values, I click on Generate. Combinations are displayed in the list.</p>
+</li>
+<li>
+<p><strong>Combinations list</strong>: Columns: Combinations, impact on price (tax excl), final price (tax excl), quantity, reference (<a href="https://github.com/PrestaShop/PrestaShop/issues/16101">issue 16101</a>), actions (edit &amp; delete action), default combination.
+You can search and sort by for every column, except actions one.
+In combinations field, you can search by attribute value. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16108">issue 16108</a>)
+When you change a value in the list it’s automatically saved. (<a href="https://github.com/PrestaShop/PrestaShop/issues/16102">issue 16102</a>)
+Display a pagination system when there is more than 10 combinations (<a href="https://github.com/PrestaShop/PrestaShop/issues/16103">issue 16103</a>)</p>
+</li>
+<li>
+<p><strong>Bulk actions</strong>: I can select many combinations to change the following values in bulk:
+1) <strong>Quantity</strong>: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
+The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
+This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+2) <strong>Cost price</strong>: It’s used for margin calculations.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+3) <strong>Impact on weight</strong>: If the combination have a different weight than the one set in Shipping tab, you can enter the difference here (positive or negative). Carriers that does not accept products greater than this weight are not displayed in front-office.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+4) <strong>Impact on price (tax excl.)</strong>: When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When you change it, the same field in pricing tab is also updated.
+5) <strong>Impact on price (tax incl.)</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in pricing tab is also updated.
+6) <strong>Availability date</strong>: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.
+7) <strong>Reference</strong>: : The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
+8) <strong>Minimum quantity</strong>: In front-office (product page &amp; quick-view), this value is indicated in the quantity field.
+When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
+9) <strong>Low stock level</strong>: You can define a value and choose whether or not to receive an email when the product quantity is &lt;= to this value.
+10) <strong>Send me an email when the quantity is below or equals this level</strong>: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
+11) <strong>Delete combinations</strong>: If I remove all the combinations of a product, save and refresh the page, it becomes a simple product.</p>
+</li>
+<li>
+<p><strong>Availability preferences, behavior when out of stock</strong>: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead there is a message “Stock management is disabled”</p>
+</li>
+<li>
+<p><strong>3 radios buttons</strong>:</p>
+<p>1) Deny orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.
+2) Allow orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.
+3) Use default behavior (Deny orders or Allow orders): the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.</p>
+</li>
+<li>
+<p><strong>Label when in stock</strong>: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Label when out of stock (and back order allowed)</strong>: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+</ul>
+<p><strong>Edit combinations</strong>:</p>
+<ul>
+<li><strong>Back to product button</strong>: When you click on it, you return to the combinations tab. The page shouldn’t be reloaded to not lose not saved changes.</li>
+<li><strong>Quantity</strong>: This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.
+The quantity of the combination is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
+This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.</li>
+<li><strong>Availability date</strong>: Date field. The date should be displayed in front-office in the product details part, no matter the availability of the product.</li>
+<li><strong>Min. quantity for sale</strong>: In front-office (product page &amp; quick-view), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”</li>
+<li><strong>Référence</strong>: The reference of the combination is displayed in the product details part in front-office, according to the selected combination.</li>
+<li><strong>Stock location</strong>: You can indicate where the product is located in the warehouse</li>
+<li><strong>Low stock level</strong>: You can define a value and choose whether or not to receive an email when the product quantity is &lt;= to this value.</li>
+<li><strong>Send me an email when the quantity is below or equals this level</strong>: Checkbox, when it’s checked an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.</li>
+<li><strong>Cost price</strong>: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Impact on price (tax excl.)</strong>: This value is added to the product price tax excl.
+When a value is filled, the impact on price tax incl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Impact on price (tax incl.)</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+This value is added to the product price tax incl.
+When a value is filled, the impact on price tax excl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Final retail price</strong>: Displays the final price tax excl and tax incl. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15416">issue 15416</a>)
+Both final prices are updated when you modify the impact on price tax excl or tax incl.</li>
+<li><strong>Ecotax (tax incl.)</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/15059">issue 15059</a>) This field is displayed if the “ecotax” option is enabled in International &gt; Taxes.
+The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”</li>
+<li><strong>Impact on price per unit (tax excl.)</strong>: This value is added to the product price per unit in Pricing tab.
+You can fill it if you sell products per unit.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+Displayed in the product page in front-office.</li>
+<li><strong>Impact on weight</strong>: This value is added to the product weight configured in Shipping tab. Carriers that does not accept products greater than this total weight are not displayed in front-office. The weight unit displayed next to the field is the one defined in International &gt; Localization.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Impact on additional shipping fees</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/11305">Improvement 11305</a>) By default, it’s filled with 0.000000
+This amount is added to the additional shipping fees configured in Shipping tab for the product.
+The total is added to the total shipping cost according to the carrier selected in front-office.</li>
+<li><strong>ISBN code</strong>: Only numbers are accepted.
+The International Standard Book Number (ISBN) is used to identify books and other publications.
+The ISBN is displayed in product details tab of the front-office and change accordingly to the selected combination.</li>
+<li><strong>EAN-13 or JAN barcode</strong>: Only numbers are accepted.
+This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America.
+The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.</li>
+<li><strong>UPC barcode</strong>: Only numbers are accepted.
+This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries.
+The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.</li>
+<li><strong>MPN</strong>: Numbers and characters are accepted.
+The Manufacturer Part Number is used to identify a specific product of a given manufacturer.</li>
+<li><strong>Images</strong>: All the images uploaded in basic settings tab are displayed.
+The cover image chosen in basic settings tab is automatically selected as default image when the combination is created.
+You can choose another default image for the combination. You can have only one &ldquo;default&rdquo; image per combination (<a href="https://github.com/PrestaShop/PrestaShop/issues/13479">issue 13479</a>)
+When you hover an image, the caption configured in basic settings tab should be displayed (<a href="https://github.com/PrestaShop/PrestaShop/issues/9936">improvement 9936</a>)</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="shipping-tab-epichttpsgithubcomprestashopprestashopissues14774">Shipping tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14774">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#shipping-tab-epichttpsgithubcomprestashopprestashopissues14774" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Shipping tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14774">EPIC</a>]" href="#shipping-tab-epichttpsgithubcomprestashopprestashopissues14774"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage carriers information for my products.</strong></p>
+<p>This tab is not displayed for a virtual product.</p>
+<p>Here is the list of the elements of shipping tab:</p>
+<ul>
+<li>
+<p><strong>Width</strong>: By default it’s filled with 0.
+I set the width, carriers that does not accept products greater than this width are not displayed in front-office.
+The dimension unit displayed next to the field is the one defined in International &gt; Localization.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</p>
+</li>
+<li>
+<p><strong>Height</strong>: By default it’s filled with 0.
+I set the height, carriers that does not accept products greater than this height are not displayed in front-office.
+The dimension unit displayed next to the field is the one defined in International &gt; Localization.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</p>
+</li>
+<li>
+<p><strong>Depth</strong>: By default it’s filled with 0.
+I set the depth, carriers that does not accept products greater than this depth are not displayed in front-office.
+The dimension unit displayed next to the field is the one defined in International &gt; Localization.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</p>
+</li>
+<li>
+<p><strong>Weight</strong>: By default it’s filled with 0.
+I set the weight, carriers that does not accept products greater than this weight are not displayed in front-office.
+The weight unit displayed next to the field is the one defined in International &gt; Localization.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</p>
+</li>
+<li>
+<p><strong>Delivery time</strong>: 3 radio buttons:</p>
+<p>1) <strong>None</strong>: No delivery time is displayed on the product page in front-office
+2) <strong>Default delivery time</strong>: If the product is in stock, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. There is an “edit” link that opens Shop parameters &gt; Products settings in a new browser tab next to the radio button label.
+3) <strong>Specific delivery time to this product</strong>: If the product is in stock, the value filled in “Delivery time of in-stock products” is displayed on the product page in front-office. If the product is out of stock but orders are allowed, the value filled in “Delivery time of out-of-stock products with allowed orders” is displayed on the product page in front-office.</p>
+</li>
+<li>
+<p><strong>Delivery time of in-stock products</strong>: There is a placeholder: “Delivered within 3-4 days” and a subtitle under the field: “Leave empty to disable.”
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Delivery time of out-of-stock products with allowed orders</strong>: There is a placeholder: “Delivered within 5-7 days” and a subtitle under the field: “Leave empty to disable.”
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Additional shipping fees</strong>: By default, it’s filled with 0.000000
+The amount is added to the total shipping cost according to the carrier selected in front-office.</p>
+</li>
+<li>
+<p><strong>Available carriers</strong>: Checkbox with all carriers with the id of the carrier, the name and the delay (<a href="https://github.com/PrestaShop/PrestaShop/issues/11379">issue 11379</a>)
+By default all available carriers should be checked and displayed in Frontoffice. If a carrier isn&rsquo;t checked, it&rsquo;s not displayed in front-office. (<a href="https://github.com/PrestaShop/PrestaShop/issues/15377">issue 15377</a>)
+A bulk action allow to select / unselect all carriers</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="pricing-tab-epichttpsgithubcomprestashopprestashopissues14775">Pricing tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14775">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#pricing-tab-epichttpsgithubcomprestashopprestashopissues14775" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Pricing tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14775">EPIC</a>]" href="#pricing-tab-epichttpsgithubcomprestashopprestashopissues14775"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage the prices of my products</strong></p>
+<p>Here is the list of the elements of pricing tab:</p>
+<ul>
+<li><strong>(Retail) price tax excl ecotax included</strong>: &ldquo;ecotax included&rdquo; is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.
+When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.</li>
+<li><strong>(Retail) price tax incl ecotax included</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+&ldquo;ecotax included&rdquo; is displayed only if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product.
+When a value is filled, the price tax excl field is calculated automatically according to the tax rule chosen.
+To separate decimals a dot or a comma can be used, both should work no matter the language. When you change it, the same field in basic settings tab is also updated.</li>
+<li><strong>Tax rule</strong>: This field shouldn&rsquo;t be displayed if taxes are disabled in International &gt; Taxes (<a href="https://github.com/PrestaShop/PrestaShop/issues/15330">issue 15330</a>).
+Drop-down with all tax rules enabled and a “no tax” option.
+When you change it, the price tax incl is updated. And the “tax rule” field in Pricing tab is also changed.
+If you select an United States tax rule, price tax incl = price tax excl because it is a tax per state and we can not say in which state is the shop. When you change it, the same field in basic settings tab is also updated.</li>
+<li><strong>Manage tax rule</strong>: Open in a new browser tab International &gt; Taxes</li>
+<li><strong>Display the &ldquo;On sale!&rdquo; flag on the product page, and on product listings</strong>: When the checkbox is checked, it displays a banner &ldquo;PROMO !&rdquo; (not linked to a possible promotion in progress) on the image of the product in the product listing and on the product page in front-office.</li>
+<li><strong>Final retail price banner</strong>: Displays the final prices tax excl and tax incl (tax incl only if taxes are enabled in International &gt; Taxes).
+Prices are updated when they are modified above.</li>
+<li><strong>Price per unit tax excl</strong>: By default, it’s set to 0.000000
+You can fill the unit price if you sell products per unit.
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+Displayed in the product page in front-office.</li>
+<li><strong>Unity field</strong>: There is a placeholder: “Per kilo, per litre”.
+You can fill the name of the unit.
+Displayed in the product page in front-office next to the unit price</li>
+<li><strong>Ecotax tax incl</strong>: This field is displayed if the “ecotax” option is enabled in International &gt; Taxes. Except for a virtual product this field shouldn’t be displayed (<a href="https://github.com/PrestaShop/PrestaShop/issues/15038">issue 15038</a>). The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”</li>
+<li><strong>Net turnover excluding tax</strong>: This information is displayed when the ecotax is enabled and if it is not a virtual product.
+It’s the amount of Price (tax excl.) - ecotax (tax incl.).
+It is taken into account for the calculations instead of the field &ldquo;Price (tax excl.)&rdquo; when ecotax tax incl field is different from 0.
+This value is recalculated when the merchant will change one of the following fields: Price (tax excl.) ecotax included, Price (tax incl.) ecotax included &amp; Ecotax (tax incl.)</li>
+<li><strong>Cost price tax excl</strong>: By default, it’s set to 0.000000
+It’s used for margin calculations.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Add a specific price</strong>: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.
+This button opens a form with the following fields :
+<ul>
+<li><strong>Currencies</strong>: Drop down with all the currencies enabled. You can select one currency or select “all currencies”, so that the specific price is available in all currencies.
+By default, “all currencies” is selected.</li>
+<li><strong>Countries</strong>: Drop down with all the countries enabled &amp; disabled. You can select one country or select “all countries”, so that the specific price is available in all countries.
+By default, “all countries” is selected.</li>
+<li><strong>Groups</strong>: Drop down with all customers groups. You can select one group or select “all groups”, so that the specific price is available for all customers groups.
+By default, “all groups” is selected.</li>
+<li><strong>Customers</strong>: There is a placeholder: “All customers”.
+If no customer is selected, the specific price is available for all customers.
+You can search a customer by name, lastname or email. Enabled customers with corresponding name, lastname or email address are displayed under the field.
+When you search a customer, results are highlighted in dropdown when using keyboard and hover with mouse (<a href="https://github.com/PrestaShop/PrestaShop/issues/14052">issue 14052</a>). You can click, to select it.
+If you enter something and no results are found, when you click outside the field, what has been entered is deleted.
+You can select only one customer.
+You can remove it by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.</li>
+<li><strong>Combinations</strong>: This drop down is displayed only for a product with combinations.
+All the combinations are listed. You can select one combination or select “apply to all combinations”, so that the specific price is available for all combinations.
+By default, “Apply to all combinations” is selected.
+Display the following information message under the field: &ldquo;Note that if you want to base a quantity discount on a product, it will apply to all of its combinations. Go in Shop Parameters &gt; Product Settings to modify it&rdquo; (<a href="https://github.com/PrestaShop/PrestaShop/issues/12363">issue 12363</a>).</li>
+<li><strong>Available from</strong>: Datefield. The specific price is applied only from the selected date and hour.
+When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (<a href="https://github.com/PrestaShop/PrestaShop/issues/11329">improvement 11329</a>).
+If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.</li>
+<li><strong>Available to</strong>: Datefield. The specific price is applied until the selected date and hour.
+When you click on the field a calendar is displayed and you can choose a date and also hour and minutes (<a href="https://github.com/PrestaShop/PrestaShop/issues/11329">improvement 11329</a>).
+If you enter a wrong value (numbers or letter), when you click outside the field, the date previously selected (when you opened the calendar) is completed.</li>
+<li><strong>Starting at</strong>: Quantity from which the specific price is applied.
+By default, it’s set to 1.
+In front-office the specific price isn’t displayed if this quantity isn’t reached.</li>
+<li><strong>Product price tax excl</strong>: To separate decimals a dot or a comma can be used, both should work no matter the language. This value change the original product price tax excl.
+In front-office, this price is displayed instead of the other.</li>
+<li><strong>Leave initial price</strong>: If the checkbox is not checked, you can fill the product price tax excl field. Otherwise, the product price tax excl field is disabled.
+By default the checkbox is checked.</li>
+<li><strong>Apply a discount of</strong>: By default, it’s set to 0.000000
+You can fill the discount amount or percent.
+To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Apply a discount in</strong>: Drop down allowing to choose if the specific price is in amount or in percent.
+There are 2 options: Default currency symbol &amp; %.
+By default the default currency symbol is selected.</li>
+<li><strong>Apply a discount</strong>: Drop down with 2 options: tax included and tax excluded.
+It’s not displayed if you select a reduction in percent.</li>
+<li><strong>Apply</strong>: When you click on it, the specific price is created and you have a success message “Settings updated”.</li>
+<li><strong>Cancel</strong>: If you click on Cancel, the form with all specific prices fields is closed. If you click again on Add a specific price, every fields are reseted to their default values.</li>
+</ul>
+</li>
+<li><strong>List of specific prices &amp; catalog price rules</strong>: You see the specific price with all the details: rule, combination, currency, country, group, customer, fixed price, impact, period, from, actions (delete, update). Rule column contains “&ndash;” for a specific price.
+Here are also listed the catalog prices rules. Rule column contains the name of the catalog price rule.
+Actions edit &amp; delete are not displayed for a catalog price rule.</li>
+<li><strong>Edit a specific price</strong>: You can edit an existing specifice price. It opens a modal with all the fields described above. You can close the modal by clicking on the cross, on cancel or pushing ESC key. You can save your changes by clicking on Apply. A success message “Settings updated” is displayed.</li>
+<li><strong>Delete a specific price</strong>: You can delete a specific price by clicking on the trash. When you click on it, you have a modal to cancel or confirm the action.</li>
+<li><strong>Priorities</strong>: 4 dropdown with the same 4 options: Shop, Currency, Country, Group.
+By default, “group” is selected for the first dropdown, “currency” for the second, “country” for the third and “shop” for the last.
+Allow to define which specific price is applied first if a customer fit into multiple specific price conditions.</li>
+<li><strong>Apply to all products</strong>: Checkbox to apply the same priorities for all products.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="seo-tab-epichttpsgithubcomprestashopprestashopissues14776">SEO tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14776">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#seo-tab-epichttpsgithubcomprestashopprestashopissues14776" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SEO tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14776">EPIC</a>]" href="#seo-tab-epichttpsgithubcomprestashopprestashopissues14776"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage my SEO information for my products.</strong></p>
+<p>Here is the list of the elements of SEO tab:</p>
+<ul>
+<li><strong>SEO preview</strong>: It is a preview of your search engine result, it allows to see how your product page will appear in search engines results.
+If the meta title field is empty, the product name is displayed.
+If I edit the product name and if there is nothing in the meta title field, it’s displayed directly in the preview.
+If I change the name of the product, the preview will not change until the meta title field is complete.
+If the meta description field is empty, the product description is displayed.
+If I click on Basic Settings, change the description, save, refresh the page and return to SEO, the description of the preview has changed.
+When you start to complete meta title, meta description and friendly URL fields, it’s displayed directly in the preview.
+The preview is displayed in the selected language. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14984">Issue 14984</a>)</li>
+<li><strong>Meta title</strong>: There is a placeholder: “To have a different title from the product name, enter it here.”
+This data is displayed in the code of the page in the tag.
+If the field is empty, the product name will be used. A counter indicates the number of characters used on 70 characters recommended.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Meta description</strong>: There is a placeholder: “To have a different description than your product summary in search results pages, write it here.”
+This data is displayed in the code of the page in the tag.
+If the field is empty, the product description will be used. A counter indicates the number of characters used on 160 characters recommended.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Friendly URL</strong>: This field is automatically field when you enter the product name.
+The spaces are replaced by dashes.
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)
+When many languages are installed, if I fill the product name only for the default language, I want the friendly-url field to be automatically filled in other languages with the same content as in default language (<a href="https://github.com/PrestaShop/PrestaShop/issues/15936">improvement 15936</a>)</li>
+<li><strong>Indexation by search engines</strong>: Yes / No toggle. When set on Yes, the product is indexed. Otherwise it&rsquo;s not.</li>
+<li><strong>Reset URL</strong>: This buttons allows to reset the friendly URL field as it was before the last change.</li>
+<li><strong>Information message</strong>: Friendly URLs are currently disabled. To enable it, go to SEO and URLs.
+Friendly URLs are currently enabled. To disable it, go to SEO and URLs.
+SEO and URLs link is opened in a new tab.</li>
+<li><strong>Indexation by search engines</strong>: Yes / No. By default it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, product URL isn’t indexed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14317">improvement 14317</a>)</li>
+<li><strong>Redirection when offline</strong>: Dropdown with 5 options:
+1) <strong>Permanent redirection to a category (301)</strong>: When my product is offline, I choose a category to redirect to.
+This is a &ldquo;definitive&rdquo; redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
+2) <strong>Temporary redirection to a category (302)</strong>: When my product is offline, I can choose a category to which my current product is redirected.
+The new category will only be displayed when my product is offline, it is not saved in the browser cache
+3) <strong>Permanent redirection to a product (301)</strong>: When my product is offline, I choose another product to redirect to. This is a &ldquo;definitive&rdquo; redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.
+4) <strong>Temporary redirection to a product (302)</strong>: When my product is offline, I can choose a product to which my current product is redirected.
+The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache
+5) <strong>No redirection (404)</strong>: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available.” and the product isn’t displayed.
+If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”</li>
+<li><strong>Target category</strong>: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category.
+There is a placeholder: “To which category the page should redirect ?”
+If no category is selected, the Main Category is used.
+You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected category is displayed under the field.</li>
+<li><strong>Target product</strong>: This search field is displayed if you select in the dropdown Permanent redirection to a product or Temporary redirection to a product.
+There is a placeholder: “To which product the page should redirect ?”
+You can search by product name or reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected product is displayed under the field.
+Delete selected category or product: You can remove the selected product or category by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.</li>
+<li><strong>Information message</strong>: No redirection (404) = Do not redirect anywhere and display a 404 &ldquo;Not Found&rdquo; page.
+Permanent redirection (301) = Permanently display another product or category instead.
+Temporary redirection (302) = Temporarily display another product or category instead.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="options-tab-epichttpsgithubcomprestashopprestashopissues14777">Options tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14777">EPIC</a>]<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#options-tab-epichttpsgithubcomprestashopprestashopissues14777" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Options tab [<a href="https://github.com/PrestaShop/PrestaShop/issues/14777">EPIC</a>]" href="#options-tab-epichttpsgithubcomprestashopprestashopissues14777"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>As a merchant I want to be able to manage the options for my products.</strong></p>
+<p>Here is the list of the elements of options tab:</p>
+<ul>
+<li>
+<p><strong>Visibility</strong>: Drop-down with 4 options. By default, everywhere is selected.</p>
+<p>1) <strong>Everywhere</strong>: The product is displayed in the catalog (categories) and can be found if you search for it.
+2) <strong>Catalog only</strong>: The product is displayed in the catalog (categories) and can’t be found if you search for it.
+3) <strong>Search only</strong>: The product is not displayed in the catalog (categories) and can be found if you search for it.
+4) <strong>Nowhere</strong>: The product is not displayed in the catalog (categories) and can’t be found if you search for it.</p>
+</li>
+<li>
+<p><strong>Available for order</strong>: Checkbox checked by default. If you uncheck it, the add to cart button is disabled in the product page in front-office and the “show price” checkbox is displayed (checked).</p>
+</li>
+<li>
+<p><strong>Show price</strong>: This checkbox appears when you unselect “available for order” checkbox and it’s checked. If you uncheck it, the product price isn’t displayed on the product page and product lists in front-office.</p>
+</li>
+<li>
+<p><strong>Web only</strong>: Checkbox not checked by default. When checked and when the product is “available for order” OR “show price” is checked, a label “Online only” is displayed on the product page and product lists in front-office.</p>
+</li>
+<li>
+<p><strong>Tags</strong>: There is a placeholder: “Use a comma to create separate tags. E.g.: dress, cotton, party dresses.” To validate a tag, you can push Enter or comma key. The tags appears in Shop parameters &gt; Search &gt; Tags and are associated to the product. You can remove a tag by clicking on the cross. The tag is also removed in Shop parameters &gt; Search &gt; Tags. A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Information message</strong>: “Tags facilitate the product search for customers using the search bar” There is a read more link to open the following info: “Choose terms and keywords which your potential customers commonly would search for when looking for this product. Make sure that they are consistent with the tags you may have already defined. You can manage tag aliases in the Search section. If you add new tags, you have to rebuild the index.”</p>
+</li>
+<li>
+<p><strong>Condition</strong>: Drop-down with 3 options: New, Used, Refurbished. By default, New is selected.</p>
+</li>
+<li>
+<p><strong>Display condition on product page</strong>: Checkbox, by default it’s not checked. When checked, the condition is displayed on the product page in front-office.</p>
+</li>
+<li>
+<p><strong>ISBN</strong>: Field, only numbers are accepted. The International Standard Book Number (ISBN) is used to identify books and other publications.</p>
+</li>
+<li>
+<p><strong>EAN-13 or JAN barcode</strong>: Field, only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is added at the end of the product URL in front-office.</p>
+</li>
+<li>
+<p><strong>UPC barcode</strong>: Field, only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries.</p>
+</li>
+<li>
+<p><strong>MPN</strong>: Field, numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.</p>
+</li>
+<li>
+<p><strong>Add a customization field</strong>: You can click several times on this button to add multiple customization fields. Fields are displayed on the product page in front-office. When you click on it that opens a form with the following fields:</p>
+<ul>
+<li><strong>Label</strong>: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</li>
+<li><strong>Type</strong>: Drop-down with 3 options: text, file &amp; numeric. By default text is selected. If you choose “text” in front-office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers (<a href="https://github.com/PrestaShop/PrestaShop/issues/11795">improvement 11795</a>)</li>
+<li><strong>Delete</strong>: Button to delete the field. When you click on it, you have a modal to cancel or confirm the action.</li>
+<li><strong>Required</strong>: Checkbox not checked by default. When checked the field is required in front-office and you can’t add the product to the cart while it’s not completed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Attach a new file</strong>: Button allowing to add files to the product page. When you click on it, a form is opened with the elements below. If you click a second time on it, the form is closed. If you want to add many files, you need to add the first one before adding another one.</p>
+<ul>
+<li><strong>Choose files</strong>: You can browse and choose files</li>
+<li><strong>Title</strong>: Field with the title of the document, displayed in front-office</li>
+<li><strong>Description</strong>: Field with the description of the document, displayed in front-office</li>
+<li><strong>Add</strong>: Button to add the file. After clicking on it the file is displayed in a table with 3 columns: Checkbox Title, File name &amp; Type. There is a checkbox allowing to check/uncheck all the files (<a href="https://github.com/PrestaShop/PrestaShop/issues/9790">issue 9790</a>) When the checkbox is checked, the file is displayed on the product page (attachments tab) in front-office. When the checkbox isn’t checked, the file isn’t displayed. If there is only 1 file and not checked, attachments tab isn’t displayed in front-office. The files uploaded through the product page in back-office are listed in Catalog &gt; Files.</li>
+<li><strong>Cancel</strong>: Button to close the form</li>
+</ul>
+</li>
+<li>
+<p><strong>Suppliers</strong>: This part is displayed only if you have created and enabled at least one supplier. Indicating the product&rsquo;s supplier is not really important for customers, but it may turn out to be an essential part for the merchant’s internal management, not least when managing stock: the merchant simply needs to know who he bought the product from.</p>
+<ul>
+<li><strong>Information message about suppliers</strong>: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool (see Shop Parameters &gt; Products settings), the values you define (price, references) will be used in supply orders.”</li>
+<li><strong>Choose the suppliers associated with this product</strong>: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office.</li>
+<li><strong>Default supplier</strong>: When you check a supplier, a radio button allowing to choose the default supplier appears. When there is only one supplier checked, the default supplier radio button is automatically checked (<a href="https://github.com/PrestaShop/PrestaShop/issues/8580">issue 9580</a>) When there are many suppliers checked, you can change the default supplier.</li>
+<li><strong>Supplier reference(s)</strong>: This part is displayed only if you have associated at least one supplier to the product. The supplier&rsquo;s section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.</li>
+<li><strong>Information message about supplier reference(s)</strong>: “You can specify product reference(s) for each associated supplier. Click &ldquo;Save&rdquo; after changing selected suppliers to display the associated product references.”</li>
+<li><strong>Table of suppliers</strong>:
+<ul>
+<li><strong>The product name</strong>: Display the product name</li>
+<li><strong>Supplier reference</strong>: Field to specify the product reference for each supplier.</li>
+<li><strong>Price (tax excl.)</strong>: Field to specify the product price for each supplier.</li>
+<li><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="2----type-of-each-field--errors-message-a-iderrorsa">2.    Type of each field &amp; errors message <a id="errors"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#2----type-of-each-field--errors-message-a-iderrorsa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 2.    Type of each field &amp; errors message <a id="errors"></a>" href="#2----type-of-each-field--errors-message-a-iderrorsa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p><strong>As a merchant I want to know if there are errors when I complete a field.</strong></p>
+<div class="gdoc-page__anchorwrap"><h3 id="elements-in-all-tabs-a-iderrorsalltabsa">Elements in all tabs <a id="errorsalltabs"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#elements-in-all-tabs-a-iderrorsalltabsa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Elements in all tabs <a id="errorsalltabs"></a>" href="#elements-in-all-tabs-a-iderrorsalltabsa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Product name</strong>: Mandatory alphanumeric field. It should have minimum 3 characters and maximum 128. If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” Prohibited characters are: ={}&lt;&gt;;# If you enter an invalid character, an error message is displayed under the field: ”This value is not valid.” If it’s not filled in the default language, when you save, a message “This value should not be blank.” is displayed under the field</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="basic-settings-tab-a-idbasicsettingsa">Basic settings tab <a id="basicsettings"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#basic-settings-tab-a-idbasicsettingsa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Basic settings tab <a id="basicsettings"></a>" href="#basic-settings-tab-a-idbasicsettingsa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Reference</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Summary</strong>: Long text editor with tiny MCE. By default, maximum 800 characters (can be changed in Shop parameters &gt; Products &gt; Max size of short description). A counter indicates the number of characters remaining. If you enter more characters than the number allowed and save, an error is displayed “This value is too long. It should have XX characters or less.”</li>
+<li><strong>Description</strong>: Long text editor with tiny MCE. Maximum 21844 characters. A counter indicates the number of characters remaining. If you enter more characters than the number allowed and save, an error is displayed “This value is too long. It should have 21844 characters or less.”</li>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Price tax incl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>New category name</strong>: Alphanumeric field. Maximum 128 characters. Invalid characters are: &lt;&gt;;=#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Image upload</strong>: If you try to upload another format than JPG, GIF or PNG, you have an error: “image_name.ext: Image format not recognized, allowed format are: .gif, .jpg, .png”</li>
+<li><strong>Image caption</strong>: When you click on “Save image settings” it shows at the top left a green message “Settings updated”. Alphanumeric field. Maximum 128 characters. Invalid characters are: ={}&lt;&gt; If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” When you save, if your image caption name contains an invalid char, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Feature customized value</strong>: Alphanumeric field. Maximum 255 characters. Prohibited characters are: ={}&lt;&gt; If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” When you save, if your customized value contains an invalid char, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Pack quantity</strong>: Integer field, only integers are allowed. If you enter a number with decimal (ex 1,5 or 1.5) and click on add, an error should be displayed under the field “This value is not valid.”. If you try to enter anything other than numbers, it’s not filled in the field.</li>
+<li><strong>Minimum quantity for sale</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="quantities-tab-a-iderrorsquantitiesa">Quantities tab <a id="errorsquantities"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#quantities-tab-a-iderrorsquantitiesa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Quantities tab <a id="errorsquantities"></a>" href="#quantities-tab-a-iderrorsquantitiesa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Stock location</strong>: Alphanumeric field. It should have maximum 64 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 64 character or less.” Prohibited characters are: ={}&lt;&gt;; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="virtual-product-tab-a-iderrorsvirtualproducta">Virtual product tab <a id="errorsvirtualproduct"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#virtual-product-tab-a-iderrorsvirtualproducta" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Virtual product tab <a id="errorsvirtualproduct"></a>" href="#virtual-product-tab-a-iderrorsvirtualproducta"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Associated files (file name field)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Number of allowed download</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed “This value is not valid.”</li>
+<li><strong>Number of days</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed “This value is not valid.”</li>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="combinations-tab-a-iderrorscombinationsa">Combinations tab <a id="errorscombinations"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#combinations-tab-a-iderrorscombinationsa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Combinations tab <a id="errorscombinations"></a>" href="#combinations-tab-a-iderrorscombinationsa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p><strong>Bulk actions</strong></p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Cost price</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Reference</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Minimum quantity</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+</ul>
+<p><strong>Availability preferences</strong></p>
+<ul>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<p><strong>Edit combination</strong></p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Min. quantity for sale</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Référence</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Stock location</strong>: Alphanumeric field. It should have maximum 64 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 64 character or less.” Prohibited characters are: ={}&lt;&gt;; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Cost price</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Ecotax (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price per unit (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>ISBN code</strong>: Varchar field but only numbers are accepted. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>EAN-13 or JAN barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 13 characters. If you try to enter more than 13 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>UPC barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 12 characters. If you try to enter more than 12 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>MPN</strong>: Varchar field, numbers and characters are accepted. It should have maximum 40 characters. If you try to enter more than 40 chars, an error message should be displayed under the field: “This value is too long. It should have 40 characters or less.” .</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="shipping-tab-a-iderrorsshippinga">Shipping tab <a id="errorsshipping"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#shipping-tab-a-iderrorsshippinga" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Shipping tab <a id="errorsshipping"></a>" href="#shipping-tab-a-iderrorsshippinga"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Width</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Height</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Depth</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Delivery time of in-stock products</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Delivery time of out-of-stock products with allowed orders</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Additional shipping fees</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="pricing-tab-a-iderrorspricinga">Pricing tab <a id="errorspricing"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#pricing-tab-a-iderrorspricinga" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Pricing tab <a id="errorspricing"></a>" href="#pricing-tab-a-iderrorspricinga"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Price tax incl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Price per unit tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Unity field</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Ecotax tax incl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Cost price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Add a specific price:</strong>
+<ul>
+<li><strong>Starting at</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed under the field “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error should be displayed “This value is not valid.”</li>
+<li><strong>Impact on product price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Apply a discount of</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”. If you don’t complete this field and click on Apply, you have an error message “No reduction value has been submitted”.</li>
+</ul>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="seo-tab-a-iderrorsseoa">SEO tab <a id="errorsseo"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#seo-tab-a-iderrorsseoa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SEO tab <a id="errorsseo"></a>" href="#seo-tab-a-iderrorsseoa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Meta title</strong>: Alphanumeric field. It should have maximum 128 characters. If you try to enter more than 128 chars, an error message should be displayed under the field: “This value is too long. It should have 128 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Meta description</strong>: Alphanumeric field. It should have maximum 512 characters. If you try to enter more than 512 chars, an error message should be displayed under the field: “This value is too long. It should have 512 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Friendly URL</strong>: Alphanumeric field. It should have maximum 128 characters. If you try to enter more than 128 chars, an error message should be displayed under the field: “This value is too long. It should have 128 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="options-tab-a-iderrorsoptionsa">Options tab <a id="errorsoptions"></a><a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html#options-tab-a-iderrorsoptionsa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Options tab <a id="errorsoptions"></a>" href="#options-tab-a-iderrorsoptionsa"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<ul>
+<li><strong>Tags</strong>: Alphanumeric field. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is too long. It should have 32 characters or less.” Prohibited characters are: &lt;&gt;;=#{} If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>ISBN</strong>: Varchar field but only numbers are accepted. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>EAN-13 or JAN barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 13 characters. If you try to enter more than 13 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>UPC barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 12 characters. If you try to enter more than 12 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>MPN</strong>: Varchar field, numbers and characters are accepted. It should have maximum 40 characters. If you try to enter more than 40 chars, an error message should be displayed under the field: “This value is too long. It should have 40 characters or less.”</li>
+<li><strong>Add a customization field</strong>:
+<ul>
+<li><strong>Label</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+</li>
+<li><strong>Attach a new file</strong>:
+<ul>
+<li><strong>Browse file</strong>: If you click on “Add” without selecting a file an error message is displayed under the field “Please select a file”</li>
+<li><strong>Title:</strong> Alphanumeric field. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is too long. It should have 32 characters or less.” Prohibited characters are: &lt;&gt;={} If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Description</strong>: Alphanumeric field. There is no maximum characters. Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+</li>
+<li><strong>Table of suppliers</strong>:
+<ul>
+<li><strong>Supplier reference</strong>: Alphanumeric field. It should have maximum 65 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 65 characters or less.” Prohibited characters are: &lt;&gt;={}; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Price (tax excl.)</strong>: Decimal field. If you enter more than 20 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+</ul>
+</li>
+</ul>
+
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer class="gdoc-footer">
+    <div class="container flex flex-wrap">
+        <span class="gdoc-footer__item">
+            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
+            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
+        </span>
+        
+        
+    </div>
+</footer>
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../js/en.search.min.f963c509117ece11ac8cae97f754d71e04ec3c21e6a315310caca82820b9da59.js"></script>
+
+
+
+<script defer src="../../js/clipboard.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

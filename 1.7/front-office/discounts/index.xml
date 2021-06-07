@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discounts on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts.html</link>
+    <description>Recent content in Discounts on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free Gift</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/cart-rules-free-gift.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/cart-rules-free-gift.html</guid>
+      <description>SPECIFICATIONS - FREE GIFT USAGE DURING CHECKOUT Use the free gift cart rule As a customer, I want my free gift cart rule to be taken into account in my shopping cart.
+When a merchant creates in the back office a cart rule with a &amp;lsquo;free gift&amp;rsquo; option, it means that only one item (of the product selected as a gift) is offered. In the front office, customers can purchase additional quantity for this product but they should pay for n-1 items; customers can shop more of the free gift item, only the additional items will be charged.</description>
+    </item>
+    
+  </channel>
+</rss>

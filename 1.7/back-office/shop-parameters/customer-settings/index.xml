@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customer Settings on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings.html</link>
+    <description>Recent content in Customer Settings on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customers Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/customers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/customers.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; CUSTOMERS PAGE General As a merchant, I want to be able to define my preferences to manage my customers.
+Re-display cart at login. By default, this option is disabled. When enabled, if a customer has left a cart unchecked-out, it displays it again when he/she logs back in. It should even memorize at what step of the checkout the customer stops so that he/she can go back directly to where the checkout was stopped.</description>
+    </item>
+    
+    <item>
+      <title>Groups Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/groups.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/groups.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; GROUPS PAGE As a merchant, I want to be able to group my customers.
+Summary  Customers groups listing Customers groups options Customers groups multistore behavior Customers groups add form Customers groups edit form Customers groups view form  Information notification By default, a blue information notification is displayed on the top of the page:
+PrestaShop has three default customer groups:
+Visitor - All persons without a customer account or customers that are not logged in.</description>
+    </item>
+    
+    <item>
+      <title>Titles Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</guid>
+      <description>SPECIFICATIONS - CUSTOMERS SETTINGS &amp;gt; TITLES PAGE As a merchant, I want to be able to define my customers.
+Listing As usual, four tables options are displayed on the top-right hand corner as icons:
+ Add new
+ Refresh list
+ Show SQL query
+ Export to SQL manager
+  By default, the table is divided into the following columns:
+ ID
+ Social title
+ Gender
+ Image</description>
+    </item>
+    
+  </channel>
+</rss>

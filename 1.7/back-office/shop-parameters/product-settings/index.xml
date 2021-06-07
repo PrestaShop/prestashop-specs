@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product Settings on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings.html</link>
+    <description>Recent content in Product Settings on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product Settings Page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</guid>
+      <description>SPECIFICATIONS - PRODUCT SETTINGS PAGE Mockups: https://www.figma.com/file/aCBf2HlypjT0ZxP2XcsT68/Core-Github-issues?node-id=207%3A4875
+Products (general) Catalog mode. A switch button allows the merchant to enable or disable the catalog mode. By default, it is disabled. Enabling this catalog mode disables the shopping cart on the front office and displays another field right below, labeled &amp;lsquo;Show prices&amp;rsquo;.
+It also impacts the customer account on the front office, turning off the &amp;lsquo;Order history and details&amp;rsquo;, &amp;lsquo;Credit slips&amp;rsquo;, and &amp;lsquo;Merchandise returns&amp;rsquo; pages.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="General MultiStore Back Office">
+
+<title>General MultiStore Back Office | PrestaShop Specs</title>
+
+<link rel="icon" href="../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../main.min.css" as="style">
+<link rel="stylesheet" href="../../main.min.css" media="all">
+
+<link rel="preload" href="../../mobile.min.css" as="style">
+<link rel="stylesheet" href="../../mobile.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../print.min.css" as="style">
+<link rel="stylesheet" href="../../print.min.css" media="print">
+
+<link rel="preload" href="../../custom.css" as="style">
+<link rel="stylesheet" href="../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://build.prestashop.com/prestashop-specs/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../logo.png" alt="" width=38 height=38>
+                PrestaShop Specs
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+
+
+    <section class="gdoc-nav--main">
+        <h2>Navigation</h2>
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7.html" class="gdoc-nav__entry ">
+                        Specifications
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/forms.html" class="gdoc-nav__entry ">
+                        Forms
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office.html" class="gdoc-nav__entry ">
+                        Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters.html" class="gdoc-nav__entry ">
+                        Advanced Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/administration.html" class="gdoc-nav__entry ">
+                        Administration
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/administration/administration.html" class="gdoc-nav__entry ">
+                        Administration Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database.html" class="gdoc-nav__entry ">
+                        Database
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database/dbbackup.html" class="gdoc-nav__entry ">
+                        DB Backup
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/database/sql_manager.html" class="gdoc-nav__entry ">
+                        SQL Manager
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/email.html" class="gdoc-nav__entry ">
+                        Email
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/import.html" class="gdoc-nav__entry ">
+                        Import
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/information.html" class="gdoc-nav__entry ">
+                        Information
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/information/information.html" class="gdoc-nav__entry ">
+                        Information Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/logs.html" class="gdoc-nav__entry ">
+                        Logs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/menu.html" class="gdoc-nav__entry ">
+                        Menu
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/menu/menu.html" class="gdoc-nav__entry ">
+                        Menu Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/multistore/multistore.html" class="gdoc-nav__entry ">
+                        MultiStore
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/performance.html" class="gdoc-nav__entry ">
+                        Performance
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team.html" class="gdoc-nav__entry ">
+                        Team
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team/employees.html" class="gdoc-nav__entry ">
+                        Employees
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/team/profiles.html" class="gdoc-nav__entry ">
+                        Profiles Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/webservice.html" class="gdoc-nav__entry ">
+                        WebService
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/advanced-parameters/webservice/webservice.html" class="gdoc-nav__entry ">
+                        Webservice
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog.html" class="gdoc-nav__entry ">
+                        Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers.html" class="gdoc-nav__entry ">
+                        Brands &amp; Suppliers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers/brands.html" class="gdoc-nav__entry ">
+                        Brands
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html" class="gdoc-nav__entry ">
+                        Supliers Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories/categories.html" class="gdoc-nav__entry ">
+                        Categories
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/categories/add-edit.html" class="gdoc-nav__entry ">
+                        Category Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount.html" class="gdoc-nav__entry ">
+                        Discount
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount/cart-rule.html" class="gdoc-nav__entry ">
+                        Cart Rule
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/discount/price-rules.html" class="gdoc-nav__entry ">
+                        Price Rules
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products.html" class="gdoc-nav__entry ">
+                        Products
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products/listing.html" class="gdoc-nav__entry ">
+                        Listing
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/catalog/products/add-edit.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/customer-service.html" class="gdoc-nav__entry ">
+                        Customer Service
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/customer-service/dashboard.html" class="gdoc-nav__entry ">
+                        Dashboard
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/merchandise-returns.html" class="gdoc-nav__entry ">
+                        Merchandise Returns
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customer-service/order-messages.html" class="gdoc-nav__entry ">
+                        Order Messages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/addresses.html" class="gdoc-nav__entry ">
+                        Addresses
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/addresses/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/customers.html" class="gdoc-nav__entry ">
+                        Customers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/customers/customers/list.html" class="gdoc-nav__entry ">
+                        List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design.html" class="gdoc-nav__entry ">
+                        Design
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/email-theme.html" class="gdoc-nav__entry ">
+                        Email Theme
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings.html" class="gdoc-nav__entry ">
+                        Image Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings/generation-options.html" class="gdoc-nav__entry ">
+                        Generation Options
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/image-settings/regenerate-thumbnails.html" class="gdoc-nav__entry ">
+                        Regenerate Thumbnails
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/link-widget.html" class="gdoc-nav__entry ">
+                        Link Widget
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/pages/pages.html" class="gdoc-nav__entry ">
+                        Pages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/positions.html" class="gdoc-nav__entry ">
+                        Positions
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-and-logo.html" class="gdoc-nav__entry ">
+                        Themes &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-and-logo/theme-logo.html" class="gdoc-nav__entry ">
+                        Theme &amp; Logo
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/design/themes-catalog.html" class="gdoc-nav__entry ">
+                        Themes Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/multistoregeneralspecs.html" class="gdoc-nav__entry is-active">
+                        General MultiStore Back Office
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international.html" class="gdoc-nav__entry ">
+                        International
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization.html" class="gdoc-nav__entry ">
+                        Localization
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization/currencies.html" class="gdoc-nav__entry ">
+                        Currencies
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/localization/languages.html" class="gdoc-nav__entry ">
+                        Languages
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/locations.html" class="gdoc-nav__entry ">
+                        Locations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/taxes.html" class="gdoc-nav__entry ">
+                        Taxes
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/taxes/taxes.html" class="gdoc-nav__entry ">
+                        Taxes Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/international/translations/translations.html" class="gdoc-nav__entry ">
+                        Translations
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-catalog/module-catalog.html" class="gdoc-nav__entry ">
+                        Module Catalog Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager.html" class="gdoc-nav__entry ">
+                        Module Manager
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/alerts.html" class="gdoc-nav__entry ">
+                        Alerts Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/modules.html" class="gdoc-nav__entry ">
+                        Modules Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/modules/module-manager/updates.html" class="gdoc-nav__entry ">
+                        Updates Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/credit-slips.html" class="gdoc-nav__entry ">
+                        Credit Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/delivery-slips.html" class="gdoc-nav__entry ">
+                        Delivery Slips
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/invoices.html" class="gdoc-nav__entry ">
+                        Invoices
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders.html" class="gdoc-nav__entry ">
+                        Orders
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/add.html" class="gdoc-nav__entry ">
+                        Add new order
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/listing.html" class="gdoc-nav__entry ">
+                        Listing Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/orders/view-page.html" class="gdoc-nav__entry ">
+                        View Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/orders/shopping-carts.html" class="gdoc-nav__entry ">
+                        Shopping Carts
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment.html" class="gdoc-nav__entry ">
+                        Payment
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment/payment-methods.html" class="gdoc-nav__entry ">
+                        Payment Methods
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/payment/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping.html" class="gdoc-nav__entry ">
+                        Shipping
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/carriers.html" class="gdoc-nav__entry ">
+                        Carriers
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/carriers/add-edit.html" class="gdoc-nav__entry ">
+                        Add / Edit
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shipping/preferences.html" class="gdoc-nav__entry ">
+                        Preferences
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters.html" class="gdoc-nav__entry ">
+                        Shop Parameters
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/contact.html" class="gdoc-nav__entry ">
+                        Contact
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/contact/tab.html" class="gdoc-nav__entry ">
+                        Contacts Tab
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings.html" class="gdoc-nav__entry ">
+                        Customer Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/customers.html" class="gdoc-nav__entry ">
+                        Customers Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/groups.html" class="gdoc-nav__entry ">
+                        Groups Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/customer-settings/titles.html" class="gdoc-nav__entry ">
+                        Titles Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/general.html" class="gdoc-nav__entry ">
+                        General
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/general/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/merchant-expertise.html" class="gdoc-nav__entry ">
+                        Merchant Expertise
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings.html" class="gdoc-nav__entry ">
+                        Order Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings/order-statuses.html" class="gdoc-nav__entry ">
+                        Order Statuses
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/order-settings/order-settings.html" class="gdoc-nav__entry ">
+                        Settings
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/product-settings.html" class="gdoc-nav__entry ">
+                        Product Settings
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/product-settings/page.html" class="gdoc-nav__entry ">
+                        Product Settings Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/search/search.html" class="gdoc-nav__entry ">
+                        Search Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/traffic-and-seo.html" class="gdoc-nav__entry ">
+                        Traffic &amp; SEO
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" class="gdoc-nav__entry ">
+                        SEO &amp; URLs Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics.html" class="gdoc-nav__entry ">
+                        Broader Topics
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/ecotax.html" class="gdoc-nav__entry ">
+                        EcoTax
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/image-file-formats.html" class="gdoc-nav__entry ">
+                        Image File Formats
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/multistorespecialsspecs.html" class="gdoc-nav__entry ">
+                        Multistore Specials Cases
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/price-calculation-rules.html" class="gdoc-nav__entry ">
+                        Price Calculation
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/seo-rules-and-behaviours.html" class="gdoc-nav__entry ">
+                        SEO Rules &amp; Behaviours
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/broader-topics/symfony-migration.html" class="gdoc-nav__entry ">
+                        Symfony Migration
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/checklist.html" class="gdoc-nav__entry ">
+                        Checklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office.html" class="gdoc-nav__entry ">
+                        Front Office
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/checkout.html" class="gdoc-nav__entry ">
+                        Checkout
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/customer-account.html" class="gdoc-nav__entry ">
+                        Customer Account
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/discounts.html" class="gdoc-nav__entry ">
+                        Discounts
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/discounts/cart-rules-free-gift.html" class="gdoc-nav__entry ">
+                        Free Gift
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/maintenance.html" class="gdoc-nav__entry ">
+                        Maintenance Mode
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/product-images.html" class="gdoc-nav__entry ">
+                        Product Images
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/products-list.html" class="gdoc-nav__entry ">
+                        Product List
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/product-page.html" class="gdoc-nav__entry ">
+                        Product Page
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/search.html" class="gdoc-nav__entry ">
+                        Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/front-office/your-vouchers.html" class="gdoc-nav__entry ">
+                        Your vouchers
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/installer/installer.html" class="gdoc-nav__entry ">
+                        Installer
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules.html" class="gdoc-nav__entry ">
+                        Modules
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/psthemecusto.html" class="gdoc-nav__entry ">
+                        Psthemecusto
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/dateofdelivery.html" class="gdoc-nav__entry ">
+                        Date Of Delivery
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/ps_facetedsearch.html" class="gdoc-nav__entry ">
+                        Faceted Search
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/ps_linklist.html" class="gdoc-nav__entry ">
+                        Linklist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/modules/wishlist.html" class="gdoc-nav__entry ">
+                        Wishlist
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates.html" class="gdoc-nav__entry ">
+                        Templates
+                    </a>
+                </span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html" class="gdoc-nav__entry ">
+                        Functional and behaviors specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="../../1.7/spec-templates/technical-characteristics-template.html" class="gdoc-nav__entry ">
+                        Technical characteristics specs
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span>
+        
+        <span class="breadcrumb">
+            <svg class="icon path"><use xlink:href="#path"></use></svg>
+            
+            
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='../../'>PrestaShop Specs</a> / <a href='../../1.7.html'>Specifications</a> / <a href='../../1.7/back-office.html'>Back Office</a> / General MultiStore Back Office
+    
+
+    
+
+    
+
+    
+
+        </span>
+        
+    </span>
+    <span>
+        
+    </span>
+</div>
+
+
+    <article class="gdoc-markdown">
+        <h1>General MultiStore Back Office</h1>
+        
+
+
+
+    
+
+
+<h1 id="specs-general-multistore-back-office">SPECS GENERAL MULTISTORE BACK-OFFICE</h1>
+<p>As a merchant I need to be able to correctly manage all my stores</p>
+<div class="gdoc-page__anchorwrap"><h2 id="what">WHAT<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#what" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WHAT" href="#what"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It&rsquo;s the general behavior. Some pages can have specific behaviors, you can find these specific cases <a href="../broader-topics/multistorespecialsspecs.md">here</a></p>
+<div class="gdoc-page__anchorwrap"><h2 id="specifications">SPECIFICATIONS<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#specifications" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SPECIFICATIONS" href="#specifications"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h3 id="shop--shop-group-color">Shop &amp; shop group color<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#shop--shop-group-color" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Shop &amp; shop group color" href="#shop--shop-group-color"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>From 1.7.8, while creating a shop or a group, the user can select a color as described in <a href="./advanced-parameters/multistore/multistore.md">the specs to setup the multistore feature</a><br/>
+This color will be displayed in the multistore header for the selected shop or shop group.<br/>
+It will be also displayed before the name of each shop / group in the context drop-down.</p>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant, when I am creating a new shop then I want to be able to choose a color for my shop.</p>
+<p>Given I am a merchant, when I am creating a new shop group then I want to be able to choose a color for my shop group.</p>
+<div class="gdoc-page__anchorwrap"><h3 id="multistore-header-only-from-178">Multistore header (only from 1.7.8)<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#multistore-header-only-from-178" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore header (only from 1.7.8)" href="#multistore-header-only-from-178"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>DESIGN:https://invis.io/QPWKQY5DV79#/410364467_All_Shops_0</p>
+<p>On each page, when the multistore feature is enabled and if many shops are created, a multistore header is displayed.<br/>
+The multistore header contains many things listed below:</p>
+<p><strong>Color (only from 1.7.8)</strong>
+DESIGN: <a href="https://invis.io/QPWKQY5DV79#/412654655_Contexte_Candy">https://invis.io/QPWKQY5DV79#/412654655_Contexte_Candy</a></p>
+<p>This header takes the color of the selected context:<br/></p>
+<ul>
+<li>The all shops context is blue #25B9D7 and this color can&rsquo;t be changed by the user.<br/></li>
+<li>The shop group color can be configured while creating or editing the group<br/></li>
+<li>The shop color can be configured while creating or editing the shop.</li>
+</ul>
+<p>If the shop or the group selected doesn&rsquo;t have yet a color configured, the default color is light grey #EBEBEB.<br/>
+In this case, an information message is displayed on the page to prompt the user to define a color with a link opening the store&rsquo;s or group&rsquo;s page edition: &ldquo;Customize your multistore header, follow the link to pick a color for this shop context&rdquo; in Admin.Navigation.Header<br/>
+The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refreshes or returns to this page later.</p>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if I have define a color for it, then I want to see the color of the shop selected in the header</p>
+<p>Given I am a merchant in a multistore context, when I am in a shop group context in the back-office and if I have define a color for it, then I want to see the color of the shop group selected in the header</p>
+<p>Given I am a merchant in a multistore context, when I am in &ldquo;all shops&rdquo; context in the back-office then I want to see the header in blue #25B9D7</p>
+<p>Given I am a merchant in a multistore context, when I am in a specific shop context or in a shop group context in the back-office and if I haven&rsquo;t define any color for it, then I want to see the header in light grey #EBEBEB</p>
+<p><strong>Name of the selected context</strong></p>
+<p>The name of the selected context is displayed, it can be:</p>
+<ul>
+<li>All shops</li>
+<li>A shop group name (can be added / edited in Advanced parameters &gt; Multistore) if the group contains at least a shop</li>
+<li>A shop name (can be added in Advanced parameters &gt; Multistore)</li>
+</ul>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am in the back-office, then I want to see the name of the context selected in the header</p>
+<p><strong>View my shop link</strong></p>
+<p>When a shop with a configured URL is selected, a link &ldquo;view my shop&rdquo; is displayed and opens the front-office of the shop.</p>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am in a specific shop context in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.</p>
+<p><strong>Context drop-down</strong>
+DESIGN:https://invis.io/QPWKQY5DV79#/410364468_All_Shops_Dropdown</p>
+<p>In the multistore header, there is a context drop-down allowing to select the context.</p>
+<p>In the drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
+There is a placeholder: &ldquo;Search shop name&rdquo;<br/>
+As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
+The results should not show shop(s) for which the URL has not been configured. <br/>
+The results are displayed in a frame below the search field. <br/>
+The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
+If the user chooses one of the listed results, it is automatically written in the search field and selected as context.</p>
+<p>The options listed in this drop-down are:</p>
+<ul>
+<li>All shops with a link to select it as context</li>
+<li>The shop groups names (if the group contains at least a shop) with a link to select the group as context</li>
+<li>The shop names with a link to select the shop as context</li>
+</ul>
+<p>The colors of each shop and group are displayed before each option.<br/>
+When the user hovers the color, a tooltip is displayed &ldquo;edit color&rdquo;<br/>
+The user can click on the color to change it<br/>
+It opens the store&rsquo;s or group&rsquo;s page edition.
+The selected context has a check icon in front of the name. On hover, the check is replaced by the color with the tooltip.</p>
+<p>If the shop URL is configured, a &ldquo;view my shop&rdquo; link is displayed after each shop name.<br/>
+It opens the front-office of the corresponding shop.</p>
+<p>If the shop URL isn&rsquo;t configured, a &ldquo;configure shop URL&rdquo; link is displayed after each shop name.<br/>
+It opens the store&rsquo;s URL page edition.</p>
+<p>As a merchant I should not be able to configure my store if the URL of the shop is not yet defined. So, please note that a shop without an URL configured can&rsquo;t be selected as context.</p>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to search for a context.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to not be able to search for this context.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to select the context</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to not be able to select this shop context.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to edit the shop color and shop group color.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office, then I want to be able to see which context is selected.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has been configured, then I want to be able to see the shop URL and click on it to see the front-office.</p>
+<p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to be able to configure the URL.</p>
+<p><strong>Behavior when switching context</strong>
+DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch</p>
+<p>If the user tries to change context without having saved, a modal appears: &ldquo;You are about to switch context. Do you want to save your modifications before?&rdquo; with 2 CTA: &ldquo;Save&rdquo; and &ldquo;Cancel&rdquo;
+If the user clicks on &ldquo;Save&rdquo;, then modifications are saved and the context is changed for the one selected
+If the user clicks on &ldquo;Cancel&rdquo;, then modifications are not saved and the context is changed for the one selected</p>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am in the back-office and when I try to change context, if I have not saved my modifications then a modal is displayed with 2 choices: Save &amp; Cancel.</p>
+<p>Given the modal displayed, when I click on Save, then my modifications are saved and the context is changed for the one selected.</p>
+<p>Given the modal displayed, when I click on Cancel, then my modifications are not saved and the context is changed for the one selected.</p>
+<div class="gdoc-page__anchorwrap"><h3 id="shop-association-block">Shop association block<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#shop-association-block" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Shop association block" href="#shop-association-block"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>The shop association block is displayed when you add or edit something.<br/>
+The shop association block displays all groups and all shops.<br/>
+Checkboxes allow to select / unselect groups and shops.<br/>
+It&rsquo;s possible to expand / collapse the wall tree and expand / collapse each group<br/>
+If you select / unselect a group, all shops of this group are selected / unselected</p>
+<p>The shop association block allows to choose for which store(s) you want to associate or disassocate the current element.</p>
+<p>When you add something, the shop(s) selected in the context are automatically checked in the shop association block.<br/>
+But it&rsquo;s possible to select / uncelect shops, no matter the context selected.</p>
+<p>When you edit something, you can unselect shop(s) previously selected and therefore disassocate it from these shops.<br/>
+And you can also, select shop(s) not previously selected and therefore associate it with these shops.<br/>
+If the merchant unselect all the checkboxes (all the shops), then an error message in red is displayed below the shop association block to inform of the obligation to have at least one shop checked: &ldquo;You have to select at least one shop to associate this item with&rdquo; + the save button is disabled. <strong>only from 1.7.8</strong></p>
+<p><strong>Add / edit pages with shop association block</strong></p>
+<ul>
+<li>Catalog &gt; Categories &gt; Add / edit category</li>
+<li>Catalog &gt; Attributes &gt; Attributes group &gt; Add / edit</li>
+<li>Catalog &gt; Attributes &gt; Attributes value &gt; Add / edit</li>
+<li>Catalog &gt; Features &gt; Feature &gt; Add / edit feature</li>
+<li>Catalog &gt; Brands &gt; Add / edit brand</li>
+<li>Catalog &gt; Suppliers &gt; Add / edit supplier</li>
+<li>Design &gt; Pages &gt; Add / edit page</li>
+<li>Design &gt; Pages &gt; Add / edit category page</li>
+<li>Shipping &gt; Carriers &gt; Add / edit carrier</li>
+<li>International &gt; Localization &gt; Languages &gt; Add / edit</li>
+<li>International &gt; Localization &gt; Currencies &gt; Add / edit</li>
+<li>International &gt; Locations &gt; Zones &gt; Add / edit</li>
+<li>International &gt; Locations &gt; Countries &gt; Add / edit</li>
+<li>International &gt; Taxes &gt; Taxes rules &gt; Add / edit</li>
+<li>Shop parameters &gt; Customer settings &gt; Groups &gt; Add / edit</li>
+<li>Shop parameters &gt; Contact &gt; Contacts &gt; Add / edit</li>
+<li>Shop parameters &gt; Contact &gt; Stores &gt; Add / edit</li>
+<li>Shop parameters &gt; Traffic &amp; SEO &gt; Referrers &gt; Add / edit</li>
+<li>Advanced parameters &gt; Webservice &gt; Add / edit</li>
+<li>Advanced parameters &gt; Team &gt; Employees &gt; Add / edit &gt; Only for the default profiles (Logistician, Commercial, Translator) and the profiles created by the user.</li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h3 id="actions-in-the-listings-grids">Actions in the listings (grids)<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#actions-in-the-listings-grids" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Actions in the listings (grids)" href="#actions-in-the-listings-grids"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h4 id="edit-action">Edit action<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#edit-action" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Edit action" href="#edit-action"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>When an element (category, attribute, feature &hellip;) is edited, the modifications made are applied to all the stores with which the element is associated. This way, the content of the element is always the same for all the shops with which it is associated: we don&rsquo;t let to the user the possibility of having different content for an element associated with several shops.</p>
+<p><strong>User acceptance test</strong>
+Given I am a merchant in a multistore context, when I am editing an element then I want the changes I made to be applied to all stores with which the element is associated.</p>
+<p><strong>Example</strong></p>
+<p>Let&rsquo;s suppose I have 2 shops: &ldquo;Shop1&rdquo; and &ldquo;Shop2&rdquo;.</p>
+<p>I create a category called &ldquo;Shirts&rdquo; with the description &ldquo;my awesome shirts&rdquo; and I associate it with all stores through the shop association block.</p>
+<p>In the listing in all shops context I have:</p>
+<p>&ldquo;Shirts&rdquo; | &ldquo;my awesome shirts&rdquo; which is associated with &ldquo;Shop1&rdquo; and &ldquo;Shop2&rdquo;</p>
+<p>Finally I change my mind and in &ldquo;Shop2&rdquo;, I want another description for this category: &ldquo;my very awesome shirts&rdquo;</p>
+<p>I have to edit the &ldquo;Shirts&rdquo; category and uncheck the &ldquo;shop2&rdquo; box, then I have to create a new &ldquo;Shirts&rdquo; category associated only with &ldquo;Shop2&rdquo; with my description &ldquo;my very awesome shirts&rdquo;.</p>
+<p>Now, in the listing in all shops context I have:</p>
+<p>&ldquo;Shirts&rdquo; | &ldquo;my awesome shirts&rdquo; which is associated with &ldquo;Shop1&rdquo;</p>
+<p>&ldquo;Shirts&rdquo; | &ldquo;my very awesome shirts&rdquo; which is associated with &ldquo;Shop2&rdquo;</p>
+<div class="gdoc-page__anchorwrap"><h4 id="delete-action">Delete action<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#delete-action" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Delete action" href="#delete-action"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>If an element (category, attribute, feature &hellip;) is associated with several shops, then if I delete it from the listing, it will be disassociated for the selected context(s) and deleted if it is no longer associated with any store.</p>
+<p><strong>User acceptance test</strong>
+Given I am a merchant in a multistore context, when I am deleting an element associated with several shops from the lisitng then I want it to be disassociated from the stores selected in the context.</p>
+<p>Given I am a merchant in a multistore context, when I am deleting an element associated with several shops from the lisitng then I want it to be deleted if it is no longer associated with any store.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="enabledisable">Enable/disable<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#enabledisable" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Enable/disable" href="#enabledisable"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>If an element (category, attribute, feature &hellip;) is associated with several shops, then if I enable or disable it from the listing, the action will be done for the store(s) with which the item is associated and not only for the selected context.
+When the user hovers the enable/disable icon, a tooltip is displayed &ldquo;It will apply to all stores associated with this item&rdquo; (<strong>from 1.7.8</strong>)</p>
+<p><strong>User acceptance test</strong>
+Given I am a merchant in a multistore context, when I am enabling / disabling an element associated with several shops, then I want it to be enabled / disabled for all the stores it is associated with.</p>
+<div class="gdoc-page__anchorwrap"><h4 id="position-column">Position column<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#position-column" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Position column" href="#position-column"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<p>If the listing has a position column, then it should be displayed only in a specific shop context.
+Changing the position of an element is possible only in a specific shop context.</p>
+<p><strong>User acceptance test</strong>
+Given I am a merchant in a multistore context, when I am in a specific shop context and if the listing has a position column, then I want to be able to change the position of the element</p>
+<div class="gdoc-page__anchorwrap"><h3 id="checkboxes">Checkboxes<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#checkboxes" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Checkboxes" href="#checkboxes"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>DESIGN: <a href="https://invis.io/QPWKQY5DV79#/410364470_Contexte_1_Yes">https://invis.io/QPWKQY5DV79#/410364470_Contexte_1_Yes</a></p>
+<p>Checkboxes are displayed in a specific shop context and in a group context <br/>
+They are not displayed in all shops context <br/>
+They are displayed before each fields / toggles / parameters unless if an exception is defined in the specs of the page<br/>
+When checkboxes are not selected, the fields or toggles are disabled.
+If a box was checked in a specific shop or group context, if I uncheck it and save, then the parameter takes the value defined for the group if configured or the value defined in all shops context.</p>
+<p>Checkboxes allow:</p>
+<ul>
+<li>to select one or many fields / toggles</li>
+<li>to enabled selected fields / toggles</li>
+<li>to apply a different configuration for the selected store or group</li>
+<li>to submit only the selected fields / toggles</li>
+<li>the merchant to see which parameters have different value(s) for the selected store or group</li>
+</ul>
+<p>An information message is displayed on all pages where there are checkboxes, to indicate what they are used for.<br/>
+The user can close the information message. The message is closed only for the selected context and it will not be redisplayed if the user refresh or return on this page later.<br/>
+&ldquo;If you want to apply specific settings to a store or a group of shops, you need to select the parameter to modify, bring your modifications and then save.&rdquo;</p>
+<p><strong>Configurations pages with checkboxes</strong></p>
+<ul>
+<li>Advanced Parameters &gt; Administration</li>
+<li>Advanced Parameters &gt; Email</li>
+<li>Advanced Parameters &gt; Team &gt; Employees</li>
+<li>Advanced Parameters &gt; Database &gt; Backup</li>
+<li>Advanced Parameters &gt; Logs</li>
+<li>Advanced Parameters &gt; Webservice</li>
+<li>Shop Parameters &gt; General &gt; General</li>
+<li>Shop Parameters &gt; General &gt; Maintenance</li>
+<li>Shop Parameters &gt; Order Setting</li>
+<li>Shop Parameters &gt; Product Settings</li>
+<li>Shop Parameters &gt; Customer Settings &gt; Customers</li>
+<li>Shop Parameters &gt; Customer Settings &gt; Groups</li>
+<li>Shop Parameters &gt; Contact &gt; Stores</li>
+<li>Shop Parameters &gt; Traffic &amp; SEO &gt; SEO &amp; URLs</li>
+<li>Shop parameters &gt; Traffic &amp; SEO &gt; Referrers</li>
+<li>Shop Parameters &gt; Search</li>
+<li>International &gt; Localization &gt; Localization</li>
+<li>International &gt; Localization &gt; Geolocation</li>
+<li>International &gt; Location &gt; Countries</li>
+<li>International &gt; Taxes &gt; Taxes</li>
+<li>Shipping &gt; Preferences</li>
+<li>Design &gt; Theme &amp; Logo &gt; Theme &amp; Logo</li>
+<li>Design &gt; Email Theme</li>
+<li>Design &gt; Image Settings</li>
+<li>Customer Service &gt; Customer Service</li>
+<li>Customer Service &gt; Merchandise Returns</li>
+<li>Catalog &gt; Products &gt; Add / edit product</li>
+<li>Orders &gt; Invoices</li>
+<li>Orders &gt; Credit Slips</li>
+<li>Orders &gt; Delivery Slips</li>
+</ul>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to select one or many fields / toggles to apply a different configuration for the selected store or group</p>
+<p>Given I am a merchant in a multistore context, when I am configuring my shop(s) in a specific shop context or in a group context then I want to be able to see which fields / toggles have a different configuration for the selected store or group</p>
+<div class="gdoc-page__anchorwrap"><h3 id="specific-settings-drop-down-only-from-178">Specific settings drop-down (only from 1.7.8)<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html#specific-settings-drop-down-only-from-178" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Specific settings drop-down (only from 1.7.8)" href="#specific-settings-drop-down-only-from-178"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>DESIGN: <a href="https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown">https://invis.io/QPWKQY5DV79#/410367397_All_Shops_Specific_Set-_Dropdown</a></p>
+<p>This drop-down is displayed in all shops context and only for parameters that have been customized in one or many specific shops or groups of shop.
+This drop-down is displayed in a group context and only for parameters that have been customized in one or many specific shops of the group.</p>
+<p><strong>Search bar (only from 1.7.8)</strong></p>
+<p>In the specific settings drop-down there is a search bar with auto-completion allowing to search and select a shop or a group quickly.<br/>
+There is a placeholder: &ldquo;Search shop name&rdquo;<br/>
+As soon as a user types a character in the field, a search is immediately performed and returned.<br/>
+The results are displayed in a frame below the search field. <br/>
+The displayed results can then be browsed, either by the arrow keys on the keyboard, or by the mouse cursor.<br/>
+If the user chooses one of the listed results, it is automatically written in the search field and selected as context.</p>
+<p>In all shops context, in the specific settings drop-down there are:</p>
+<ul>
+<li>The shop groups names with a link to select it as context (only if the group contains at least a shop)</li>
+<li>The shops names with a link to select it as context</li>
+</ul>
+<p>Next to each shop name, there is a mention:</p>
+<ul>
+<li>&ldquo;Inherited&rdquo; if the parameter has the same value as in all shops</li>
+<li>&ldquo;Customized&rdquo; if the parameter has a different value for a shop or for a group</li>
+</ul>
+<p>In a group context, in the specific settings drop-down there are:</p>
+<ul>
+<li>The current shop group name with a link to select it as context (only if the group contains at least a shop)</li>
+<li>The shops names belonging to the group selected, with a link to select it as context
+Other groups and shops are not displayed.</li>
+</ul>
+<p>Next to each shop name, there is a mention:</p>
+<ul>
+<li>&ldquo;Inherited&rdquo; if the parameter has the same value as in the selected group</li>
+<li>&ldquo;Customized&rdquo; if the parameter has a different value for a shop of the selected group</li>
+</ul>
+<p>Example:</p>
+<p>Consider the following group and shops:</p>
+<ul>
+<li>Group 1
+<ul>
+<li>Shop A</li>
+<li>Shop B</li>
+</ul>
+</li>
+</ul>
+<p>Group1 maintenance field value is &ldquo;The shop is in maintenance&rdquo;</p>
+<p>Shop A maintenance field value has been changed and is &ldquo;Shop A is in maintenance&rdquo;</p>
+<p>Shop B maintenance field value is &ldquo;The shop is in maintenance&rdquo;</p>
+<p>All shop context:</p>
+<p>Shop A =&gt; Customized</p>
+<p>Shop B =&gt; Inherited</p>
+<p>Group1 context:</p>
+<p>Shop A =&gt; Customized</p>
+<p>Shop B =&gt; Inherited</p>
+<p><strong>Configurations pages with specific settings drop-down</strong></p>
+<ul>
+<li>Advanced Parameters &gt; Administration</li>
+<li>Advanced Parameters &gt; Email</li>
+<li>Advanced Parameters &gt; Team &gt; Employees</li>
+<li>Advanced Parameters &gt; Database &gt; Backup</li>
+<li>Advanced Parameters &gt; Logs</li>
+<li>Advanced Parameters &gt; Webservice</li>
+<li>Shop Parameters &gt; General &gt; General</li>
+<li>Shop Parameters &gt; General &gt; Maintenance</li>
+<li>Shop Parameters &gt; Order Setting</li>
+<li>Shop Parameters &gt; Product Settings</li>
+<li>Shop Parameters &gt; Customer Settings &gt; Customers</li>
+<li>Shop Parameters &gt; Customer Settings &gt; Groups</li>
+<li>Shop Parameters &gt; Contact &gt; Stores</li>
+<li>Shop Parameters &gt; Traffic &amp; SEO &gt; SEO &amp; URLs</li>
+<li>Shop parameters &gt; Traffic &amp; SEO &gt; Referrers</li>
+<li>Shop Parameters &gt; Search</li>
+<li>International &gt; Localization &gt; Localization</li>
+<li>International &gt; Localization &gt; Geolocation</li>
+<li>International &gt; Location &gt; Countries</li>
+<li>International &gt; Taxes &gt; Taxes</li>
+<li>Shipping &gt; Preferences</li>
+<li>Design &gt; Theme &amp; Logo &gt; Theme &amp; Logo</li>
+<li>Design &gt; Email Theme</li>
+<li>Design &gt; Image Settings</li>
+<li>Customer Service &gt; Customer Service</li>
+<li>Customer Service &gt; Merchandise Returns</li>
+<li>Orders &gt; Invoices</li>
+<li>Orders &gt; Credit Slips</li>
+<li>Orders &gt; Delivery Slips</li>
+</ul>
+<p><strong>User acceptance test</strong></p>
+<p>Given I am a merchant in a multistore context, when I am configuring my shops in &ldquo;all shops&rdquo; context, then I want to know the parameters that have been customized in one or many specific shops</p>
+<p>Given I am a merchant in a multistore context configuring my shops in &ldquo;all shops&rdquo; context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to search for a context</p>
+<p>Given I am a merchant in a multistore context configuring my shops in &ldquo;all shops&rdquo; context, when I am looking if a parameter has been customized in one or many specific shops, then I want to be able to switch context</p>
+
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer class="gdoc-footer">
+    <div class="container flex flex-wrap">
+        <span class="gdoc-footer__item">
+            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
+            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
+        </span>
+        
+        
+    </div>
+</footer>
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../js/en.search.min.f963c509117ece11ac8cae97f754d71e04ec3c21e6a315310caca82820b9da59.js"></script>
+
+
+
+<script defer src="../../js/clipboard.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

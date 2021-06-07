@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Menu on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu.html</link>
+    <description>Recent content in Menu on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menu Tab</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/menu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/menu.html</guid>
+      <description>SPECS FOR THE MENU TAB HISTORY For the history, this page was present in 1.6 and allowed to add, edit, delete, activate / deactivate menus and reorganize them thanks to the position column.
+This page was removed in 1.7.0 because users were deleting menu entries but did not know how to re-add them with the controller name.
+SPECS The behavior in 1.7.X is:
+No &amp;ldquo;menu&amp;rdquo; tab in the BO menu (as in 1.</description>
+    </item>
+    
+  </channel>
+</rss>
