@@ -158,7 +158,7 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 In case of a product with combinations:
 - if all the combinations are out of stock with denied backorders, the "Label of out-of-stock products with denied backorders" will be displayed in red #C3362B.
 - if the default combination is out of stock with denied backorders and if at least one other combination is in stock, the "Product available with different options" will be displayed in green #5A9166
-- if the default combination is out of stock with denied backorders and if at least one other combination is out of stock with allowed backorders, the "Product available with different options" will be displayed in orange #E19E00
+- if the default combination is out of stock with denied backorders and if at least one other combination is out of stock with allowed backorders, the "Product available with different options" will be displayed in green #5A9166
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
