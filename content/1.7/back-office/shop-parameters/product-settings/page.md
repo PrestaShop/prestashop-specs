@@ -47,7 +47,7 @@ _As a merchant, I want to be able to manage my unavailable product combinations.
 
 **Display unavailable attributes on the product page.** By default, it is enabled. And the tooltip should be _If an attribute is not available in every product combination, it will not be displayed._, cf. _1.7.8_ issue #[17447](https://github.com/PrestaShop/PrestaShop/issues/17447).
 
-**When this option is enabled, unavailable products' combinations remain visible in the shop**. A message on the FO product page indicates the product is no longer available in the chosen option and invites customers to choose another combination: _Product available with different options_. 
+**When this option is enabled, unavailable products' combinations remain visible in the shop**. Also, if at least one other combination than the default one can be ordered, a message "Product available with different options" is displayed on the FO product page and product's listing. 
 
 **When this option is enabled as well as the 'Allow ordering out-of-stock products' option**, customers are able to add unavailable combinations to their cart.
  
@@ -137,7 +137,7 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 
 In case of a product with combinations:
 - if the default combination is in stock and if no other combination can be ordered, only the "Label of in-stock products" will be displayed in green #5A9166.
-- if at least one other combination than the default one is in stock, the "product available with different options" message will be displayed in grey under the "Label of in-stock products" message.
+- if at least one other combination than the default one can be ordered, the "product available with different options" message will be displayed in grey under the "Label of in-stock products" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
