@@ -115,9 +115,9 @@ When setting this option to 'No':
 
 Note: this parameter can also be set for each pack in the 'Quantities' tab of their own product page.
 
-**Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** next to the stock label. Number of available items should be based on the selected attributes (= combination). If the quantity is <= 0, the quantity is not displayed.
+**Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** just before the stock label. Number of available items should be based on the selected attributes (= combination). If the quantity is <= 0, the quantity is not displayed.
 
-**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right before the 'Add to cart' button in the product page and next to the stock label. Example: Availability: In stock - Last item in stock - Delivered under 48 hours
+**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right before the 'Add to cart' button in the product page and just before to the stock label. Example: Availability: X last item(s) in stock - Delivered under 48 hours
 If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
