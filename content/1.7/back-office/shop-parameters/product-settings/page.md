@@ -135,7 +135,9 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 - just above the quantity input and the 'Add to cart' button of the product page. 
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
-In case of a product with combinations, if the default combination is in stock, the "Label of in-stock products" will be displayed.
+In case of a product with combinations:
+- if the default combination is in stock and if no other combination can be ordered, only the "Label of in-stock products" will be displayed in green #5A9166.
+- if at least one other combination than the default one is in stock, the "product available with different options" message will be displayed in grey under the "Label of in-stock products" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
@@ -145,8 +147,8 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
 In case of a product with combinations:
-- if the default combination is out of stock with allowed backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #E19E00
-- if the default combination is out of stock with allowed backorders and if one or more other combinations are out of stock with denied backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #E19E00
+- if the default combination is out of stock with allowed backorders and if no other combination can be ordered, only the "Label of out-of-stock products with allowed backorders" will be displayed in orange #E19E00.
+- if at least one other combination than the default one can be ordered, the "product available with different options" message will be displayed in grey under the "Label of out-of-stock products with allowed backorders" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
@@ -156,9 +158,8 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
 In case of a product with combinations:
-- if all the combinations are out of stock with denied backorders, the "Label of out-of-stock products with denied backorders" will be displayed in red #C3362B.
-- if the default combination is out of stock with denied backorders and if at least one other combination is in stock, the "Product available with different options" will be displayed in green #5A9166
-- if the default combination is out of stock with denied backorders and if at least one other combination is out of stock with allowed backorders, the "Product available with different options" will be displayed in green #5A9166
+- if the default combination is out of stock with denied backorders and if no other combination can be ordered, only the "Label of out-of-stock products with denied backorders" will be displayed in red #C3362B.
+- if at least one other combination than the default one can be ordered, the "product available with different options" message will be displayed in grey under the "Label of out-of-stock products with denied backorders" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
