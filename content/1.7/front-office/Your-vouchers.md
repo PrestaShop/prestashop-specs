@@ -32,4 +32,4 @@ Ex: if the voucher reduced 20 euro tax excluded, add free shipping and give The 
 
 __Voucher displayed on the Your voucher page.__
 
-![Voucher](/img/list_vouchers_FO.png)
+![Voucher](/static/img/list_vouchers_FO.png)
