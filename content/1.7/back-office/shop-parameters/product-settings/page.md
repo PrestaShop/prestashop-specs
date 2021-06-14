@@ -115,9 +115,13 @@ When setting this option to 'No':
 
 Note: this parameter can also be set for each pack in the 'Quantities' tab of their own product page.
 
-**Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the 'Product Details' section of the product page. Number of available items should be based on the selected attributes (= combination).
+**Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the product page, just before the delivery time:
+X in stock (in stock here is the "label of in stock product" defined by the merchant)
 
-**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Last items in stock_, right before the 'Add to cart' button in the product page and next to the stock label. Example: Availability: In stock - Last item in stock - Delivered under 48 hours
+The number of available items should be based on the selected product and attributes (= combination).
+
+**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Only X left in stock_, right before the 'Add to cart' button in the product page and before the delivery time label: 
+Availability: Only X left in stock - Delivered under 48 hours
 If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
