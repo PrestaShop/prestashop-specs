@@ -47,7 +47,6 @@ _Schema of PrestaShop URL (displayed only if friendly URLs are enabled)_
 By default, route to pages are the following :
 - Route to products : {category:/}{id}{-:id_product_attribute}-{rewrite}{-:ean13}.html
 - Route to category : {id}-{rewrite}
-- Route to category which has the "selected_filter" attribute for the "Layered Navigation" (blocklayered) module : {id}-{rewrite}{/:selected_filters}
 - Route to supplier : supplier/{id}-{rewrite}
 - Route to brand : brand/{id}-{rewrite}
 - Route to page : content/{id}-{rewrite}
