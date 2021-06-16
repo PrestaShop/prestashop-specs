@@ -47,7 +47,7 @@ _As a merchant, I want to be able to manage my unavailable product combinations.
 
 **Display unavailable attributes on the product page.** By default, it is enabled. And the tooltip should be _If an attribute is not available in every product combination, it will not be displayed._, cf. _1.7.8_ issue #[17447](https://github.com/PrestaShop/PrestaShop/issues/17447).
 
-**When this option is enabled, unavailable products' combinations remain visible in the shop**. Also, if at least one other combination than the default one can be ordered, a message "Product available with different options" is displayed on the FO product page and product's listing. 
+**When this option is enabled, unavailable products' combinations remain visible in the shop**. A message on the FO product page and on product listings indicates the product is no longer available in the chosen option and invites customers to choose another combination: _Other options available_. 
 
 **When this option is enabled as well as the 'Allow ordering out-of-stock products' option**, customers are able to add unavailable combinations to their cart.
  
@@ -130,7 +130,7 @@ Only numbers can be typed in the field, or added by using the arrows at the end 
 
 **Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
 
-1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
+1. _Other options available_ if the selected combination can't be ordered and if other combination can be ordered. 
 
 2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a standard product.
  
@@ -145,12 +145,11 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 
 **Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed in orange #E19E00 in different places of the front-office:
 - just below the price in product listings
-- just above the quantity input and the 'Add to cart' button of the product page. 
+- just above the quantity input and the 'Add to cart' button of the product page. ²
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
 In case of a product with combinations:
-- if the default combination is out of stock with allowed backorders and if no other combination can be ordered, only the "Label of out-of-stock products with allowed backorders" will be displayed in orange #E19E00.
-- if at least one other combination than the default one can be ordered, the "product available with different options" message will be displayed in grey under the "Label of out-of-stock products with allowed backorders" message.
+- if the default combination (on the product listing) or then selected combination (on the product page) is out of stock with allowed backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #E19E00.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
@@ -161,9 +160,10 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 
 In case of a product with combinations:
 - if the default combination is out of stock with denied backorders and if no other combination can be ordered, only the "Label of out-of-stock products with denied backorders" will be displayed in red #C3362B.
-- if at least one other combination than the default one can be ordered, the "product available with different options" message will be displayed in grey under the "Label of out-of-stock products with denied backorders" message.
+- if at least one other combination than the default one (on the product listings) or the selected one (on product page) can be ordered, the "Other options available" message will be displayed in grey under the "Label of out-of-stock products with denied backorders" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+The placeholder for this field is: "Temporarily out of stock"
 
 **Delivery time of in-stock products.** Merchants can indicate the delivery time of in-stock products. 
 It should be displayed  in green #5A9166 in different places of the front-office if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products):
