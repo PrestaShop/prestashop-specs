@@ -370,7 +370,7 @@ When a user edits a product with a specific price on the quantity on the order p
 
 A gift product is not included in the quantity rules of a specific price 
 
-If the "Quantity discounts based on" option is set to "Products", the specific price rule is ignored for product combinations.
+If the "Quantity discounts based on" option is set to "Products", the specific price rule is ignored for product combinations if the quantity is superior or equal to 2.
 
 _Adding a product already present in the order to a new invoice_
 
