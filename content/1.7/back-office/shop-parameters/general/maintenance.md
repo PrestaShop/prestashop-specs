@@ -16,6 +16,7 @@ During maintenance, the webservice remains enabled. Users with a key can still r
 **Enable store for logged-in employees.** By default, this setting is enabled. When an employee is logged in, his/her **IP address should automatically be allowed to access the front office**, even if the shop is disabled, cf. _to do_ issue #[18932](https://github.com/PrestaShop/PrestaShop/issues/18932). A help text is available: `Allow logged-in employees to access the store, even in maintenance mode.` in `Admin.Shopparameters.Help`.
 
 **Maintenance IP.** It **allows specific IP addresses to access the store even if it is disabled**. Clicking `Add my IP` should automatically fetch the IP address of the current computer. Users can add as many IP addresses as they need as long as separated with commas (,).
+You can allow a set of ip v4 address to access the front office. Since 1.7.8 you can add ip v6 addresses and ip subnet, Ip subnet has to be in CIDR format.
 
 A help text is available: `Allow IP addresses to access the store, even in maintenance mode. Use a comma to separate them (e.g. 42.24.4.2,127.0.0.1,99.98.97.96).` in `Admin.Shopparameters.Help`.
 
