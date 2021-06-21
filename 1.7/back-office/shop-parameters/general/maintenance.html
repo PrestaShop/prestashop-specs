@@ -2801,7 +2801,8 @@
 <p><strong>Enable store.</strong> Merchants have the <strong>possibility to temporarily disable their shop</strong>. It should only disable the front office, the back office is still accessible during maintenance. A help text is available: <code>We recommend that you deactivate your store while performing maintenance. Note that it will not disable the webservice.</code> in <code>Admin.Shopparameters.Help</code>.</p>
 <p>During maintenance, the webservice remains enabled. Users with a key can still retrieve data. If need be, the webservice is to disable in Advanced Parameters &gt; Webservice.</p>
 <p><strong>Enable store for logged-in employees.</strong> By default, this setting is enabled. When an employee is logged in, his/her <strong>IP address should automatically be allowed to access the front office</strong>, even if the shop is disabled, cf. <em>to do</em> issue #<a href="https://github.com/PrestaShop/PrestaShop/issues/18932">18932</a>. A help text is available: <code>Allow logged-in employees to access the store, even in maintenance mode.</code> in <code>Admin.Shopparameters.Help</code>.</p>
-<p><strong>Maintenance IP.</strong> It <strong>allows specific IP addresses to access the store even if it is disabled</strong>. Clicking <code>Add my IP</code> should automatically fetch the IP address of the current computer. Users can add as many IP addresses as they need as long as separated with commas (,).</p>
+<p><strong>Maintenance IP.</strong> It <strong>allows specific IP addresses to access the store even if it is disabled</strong>. Clicking <code>Add my IP</code> should automatically fetch the IP address of the current computer. Users can add as many IP addresses as they need as long as separated with commas (,).
+You can allow a set of ip v4 address to access the front office. Since 1.7.8 you can add ip v6 addresses and ip subnet, Ip subnet has to be in CIDR format.</p>
 <p>A help text is available: <code>Allow IP addresses to access the store, even in maintenance mode. Use a comma to separate them (e.g. 42.24.4.2,127.0.0.1,99.98.97.96).</code> in <code>Admin.Shopparameters.Help</code>.</p>
 <p><strong>Custom maintenance text.</strong> Users can <strong>display a message on the maintenance page</strong> by using a text editor. By default, the following message is displayed: <code>We are currently updating our shop and will be back really soon. Thanks for your patience.</code> in <code>Admin.Shopparameters.Feature</code>. Merchants can localize the message according to the store&rsquo;s available languages.</p>
 <p>It is limited to 21844 characters. If the input contains more than 21844 characters, an error notification should be displayed when clicking &lsquo;Save&rsquo; (and prevent from saving): <code>%1$s is too long. Maximum length: %2$d</code> in <code>Admin.Notifications.Error</code>.</p>
@@ -2859,7 +2860,7 @@
 
 
 
-<script defer src="../../../../js/en.search.min.24b16664396a78ae8deb63c9d57128f8da9d8904dd7a2c55208f5ad2eee2830a.js"></script>
+<script defer src="../../../../js/en.search.min.c452e87108fd8b7ac9ee71c85d3f05341d6f7913eb28a37d49effa1afd7606c3.js"></script>
 
 
 
