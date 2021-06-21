@@ -35,9 +35,9 @@ Identification number. Optional field displayed if the merchant has enabled the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</guid>
-      <description>SPECIFICATIONS - MAINTENANCE MODE Logged-in employees As an employee, I want to be able to access the front office during maintenance.
-When the &amp;lsquo;Enable store for logged-in employees&amp;rsquo; option is enabled in the back office&amp;rsquo;s Shop Parameters &amp;gt; Maintenance page, any logged-in employee should be able to access the front office even if the store is in maintenance, cf. to do issue #18932.
-[TO BE COMPLETED]</description>
+      <description>SPECIFICATIONS - MAINTENANCE MODE Authorized ip addresses I want to be able to access the front office during maintenance mode from some ip addresses.
+In the back office&amp;rsquo;s Shop Parameters &amp;gt; Maintenance page, you can allow a set of ip v4 address to access the front office. Since 1.7.8 you can add ip v6 addresses and ip subnet cf. issue #16032.
+Ip subnet has to be in CIDR format : something like x.</description>
     </item>
     
     <item>
