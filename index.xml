@@ -107,7 +107,8 @@ Free shipping is applied once with a 5 % discount and a gift.
       
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</guid>
       <description>SPECS CATEGORY PAGE As a merchant I need to be able to correctly create, edit and delete my categories.
-SPECIFICATIONS When i disable a category, I expect it to still be present in as a parent in the category tree (issue 14790)</description>
+SPECIFICATIONS When I disable a category, I expect it to still be present in as a parent in the category tree (issue 14790)
+Group access When I add a category, all the customers groups should be selected by default, even the one created by the merchant (issue 20691)</description>
     </item>
     
     <item>
