@@ -121,4 +121,4 @@ WIP
 
 ## Behaviors / User stories
 
-When you edit a carrier a new carrier is created. a link is saved to the original id with the id_reference.
+When you edit a carrier, a new carrier is created and the carrier id changes. A link is saved to the original id with the id_reference.
