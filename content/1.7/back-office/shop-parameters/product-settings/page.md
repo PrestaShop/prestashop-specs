@@ -149,7 +149,7 @@ Leaving this field empty disables the feature. Merchants can localize the label 
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
 In case of a product with combinations:
-- if the default combination (on the product listing) or then selected combination (on the product page) is out of stock with allowed backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #FF5E24.
+- if the default combination (on the product listing) or the selected combination (on the product page) is out of stock with allowed backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #FF5E24.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
