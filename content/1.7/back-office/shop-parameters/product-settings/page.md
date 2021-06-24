@@ -47,7 +47,7 @@ _As a merchant, I want to be able to manage my unavailable product combinations.
 
 **Display unavailable attributes on the product page.** By default, it is enabled. And the tooltip should be _If an attribute is not available in every product combination, it will not be displayed._, cf. _1.7.8_ issue #[17447](https://github.com/PrestaShop/PrestaShop/issues/17447).
 
-**When this option is enabled, unavailable products' combinations remain visible in the shop**. A message on the FO product page indicates the product is no longer available in the chosen option and invites customers to choose another combination: _Product available with different options_. 
+**When this option is enabled, unavailable products' combinations remain visible in the shop**. A message on the FO product page and on product listings indicates the product is no longer available in the chosen option and invites customers to choose another combination: _Other product variations available_. 
 
 **When this option is enabled as well as the 'Allow ordering out-of-stock products' option**, customers are able to add unavailable combinations to their cart.
  
@@ -118,60 +118,63 @@ Note: this parameter can also be set for each pack in the 'Quantities' tab of th
 **Display available quantities on the product page.** By default, it is enabled, **displaying in the front office how many items are in stock** in the product page, just before the delivery time:
 X in stock (in stock here is the "label of in stock product" defined by the merchant)
 
-The number of available items should be based on the selected product and attributes (= combination).
+The number of available items should be based on the selected product and attributes (= combination). If the quantity is <= 0, the quantity is not displayed.
 
-**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Only X left in stock_, right before the 'Add to cart' button in the product page and before the delivery time label: 
+**Display remaining quantities when the quantity is lower than.** Merchants can **display a small alert in the front office when the stock for a product gets below a certain level**. It adds the following message, _Only X left in stock_, in the cart and in the product page before the delivery time label: 
+
 Availability: Only X left in stock - Delivered under 48 hours
+
 If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
 
 **Allow ordering of out-of-stock products.** By default, it is disabled. It means that, **when a product is not available in stock, the 'Add to cart' button on the product page is unclickable** with the following message just below:
 
-1. :no_entry_sign: _Product available with different options_ if the product has combinations. 
+1. _Other product variations available_ if the selected combination can't be ordered and if at least one other combination can be ordered. 
 
 2. :no_entry_sign: _Out-of-Stock_ (or any message typed in the 'Label of out-of-stock products with denied backorders' field) if this is a standard product.
  
  On the contrary, enabling this option allows customers to order both in-stock and out-of-stock products.
 
-**Label of in-stock products.** Merchants can **add a label to all in-stock products**. It should be displayed in green #5A9166 in different places of the front-office:
+**Label of in-stock products.** Merchants can **add a label to all in-stock products**. The text should be displayed in green #5A9166 in different places of the front-office:
 - just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
-**Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. It should be displayed in orange #E19E00 in different places of the front-office:
+**Label of out-of-stock products with allowed backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is enabled**. The text should be displayed in orange #FF5E24 in different places of the front-office:
 - just below the price in product listings
-- just above the quantity input and the 'Add to cart' button of the product page. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
+- just above the quantity input and the 'Add to cart' button of the product page. ²
 - in the shopping cart, below the combinations if there are, otherwise under the product name
+
+In case of a product with combinations:
+- if the default combination (on the product listing) or the selected combination (on the product page) is out of stock with allowed backorders, the "Label of out-of-stock products with allowed backorders" will be displayed in orange #FF5E24.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
-**Label of out-of-stock products with denied backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is disabled**. By default, it is _Out-of-Stock_ (or its translation for other languages). It should be displayed in red #C3362B in different places of the front-office:
+**Label of out-of-stock products with denied backorders.** Merchants can **add a label to all out-of-stock products when the 'Allow ordering of out-of-stock products' option is disabled**. By default, it is _Out-of-Stock_ (or its translation for other languages). The text should be displayed in red #C3362B in different places of the front-office:
 - just below the price in product listings
 - just above the quantity input and the 'Add to cart' button of the product page. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the availability will also be displayed next to each value in the drop-down of the product page.
 - in the shopping cart, below the combinations if there are, otherwise under the product name
 
-If the product has combinations and if the default combination is out of stock with denied backorder and if other combinations are available for order (in stock or out of stock with allowed backorder), then we should display “Product available with different options” in the product listings and product page instead of the "label of out-of-stock products with denied backorders".
+In case of a product with combinations:
+- if the default combination is out of stock with denied backorders and if no other combination can be ordered, only the "Label of out-of-stock products with denied backorders" will be displayed in red #C3362B.
+- if at least one other combination than the default one (on the product listings) or the selected one (on product page) can be ordered, the "Other product variations available" message will be displayed under the "Label of out-of-stock products with denied backorders" message.
 
 Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
+The placeholder for this field is: "Temporarily out of stock"
 
 **Delivery time of in-stock products.** Merchants can indicate the delivery time of in-stock products. 
-It should be displayed  in green #5A9166 in different places of the front-office if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products):
+The text should be displayed  in green #5A9166 in different places of the front-office if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products):
 - just above the quantity input and the 'Add to cart' button of the product page, after the stock label. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the delivery time will also be displayed next to each value in the drop-down of the product page, after the stock label. 
 - in the shopping cart, below the combinations if there are, otherwise under the product name, after the stock label. 
 
 By default the field is empty. Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
 
 **Delivery time of out-of-stock products with allowed backorders.** Merchants can indicate the delivery time of out-of-stock products with allowed backorders.
-It should be displayed in orange #E19E00 in different places of the front-office if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products):
+It should be displayed in orange #FF5E24 in different places of the front-office if the 'Default delivery time' is checked in the 'Shipping' tab of the product page (Catalog > Products):
 - just above the quantity input and the 'Add to cart' button of the product page, after the stock label. 
-- If the product has only one attribute and its values are displayed in a drop-down, then the delivery time will also be displayed next to each value in the drop-down of the product page, after the stock label. 
 - in the shopping cart, below the combinations if there are, otherwise under the product name, after the stock label. 
 
 By default, the field is empty. Leaving this field empty disables the feature. Merchants can localize the label according to the store's available languages.
