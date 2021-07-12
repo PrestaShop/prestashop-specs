@@ -361,20 +361,22 @@ When I add a product already present in the order from the back office, the addi
 
 When I have a multi invoice and I add the product to an invoice that already contains the product, the addition is blocked by displaying the following error message "This product is already in invoice #number, please edit the quantity instead." localized in Admin.Notifications.Error
 
--   **Add a product with a specific price**
+-   **Add a product with a specific price based on the quantity**
 
-_Specific price depending on the quantity_
-When a user adds a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.
+ORSP1: When a user adds a product with a specific price based on the quantity on the order page of BO, the specific price is applied only if the base price is not edited on the form and the product's quantity is superior or equal to the specific price's quantity.
 
-When a user edits a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.
+When a user edits a product with a specific price based on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches the product quantity.
 
-A gift product is not included in the quantity rules of a specific price 
+_Adding a product's combination
 
-If the "Quantity discounts based on" option is set to "Products", the specific price rule is ignored for product combinations if the quantity is superior or equal to 2.
+If the "Quantity discounts based on" option is set to "Products", the specific price rule is only applied if there are no other combinations from the same product in the order and the product's quantity and ORSP1.
 
 _Adding a product already present in the order to a new invoice_
 
 If a product already exists in the order is added into a new invoice, the specific price on the quantity is not applied.
+   
+A gifted product is not included in the quantity rules of a specific price.
+
 
 -   **Add a product already present in the order
 
