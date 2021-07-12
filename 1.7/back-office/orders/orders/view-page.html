@@ -3120,15 +3120,15 @@ Then the product list is reloaded behind the loading spinner to check if any new
 <p>When I add a product already present in the order from the back office, the addition is blocked by displaying the following error message (EM): &ldquo;This product is already in your order, please edit the quantity instead.&rdquo;</p>
 <p>When I have a multi invoice and I add the product to an invoice that already contains the product, the addition is blocked by displaying the following error message &ldquo;This product is already in invoice #number, please edit the quantity instead.&rdquo; localized in Admin.Notifications.Error</p>
 <ul>
-<li><strong>Add a product with a specific price</strong></li>
+<li><strong>Add a product with a specific price based on the quantity</strong></li>
 </ul>
-<p><em>Specific price depending on the quantity</em>
-When a user adds a product with a specific price on the quantity on the order page of BO, the specific price is applied only if base price is not edited on the form.</p>
-<p>When a user edits a product with a specific price on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches with product conditions.</p>
-<p>A gift product is not included in the quantity rules of a specific price</p>
-<p>If the &ldquo;Quantity discounts based on&rdquo; option is set to &ldquo;Products&rdquo;, the specific price rule is ignored for product combinations if the quantity is superior or equal to 2.</p>
+<p>ORSP1: When a user adds a product with a specific price based on the quantity on the order page of BO, the specific price is applied only if the base price is not edited on the form and the product&rsquo;s quantity is superior or equal to the specific price&rsquo;s quantity.</p>
+<p>When a user edits a product with a specific price based on the quantity on the order page of BO, the product price is not updated even if the specific price rule matches the product quantity.</p>
+<p>_Adding a product&rsquo;s combination</p>
+<p>If the &ldquo;Quantity discounts based on&rdquo; option is set to &ldquo;Products&rdquo;, the specific price rule is only applied if there are no other combinations from the same product in the order and the product&rsquo;s quantity and ORSP1.</p>
 <p><em>Adding a product already present in the order to a new invoice</em></p>
 <p>If a product already exists in the order is added into a new invoice, the specific price on the quantity is not applied.</p>
+<p>A gifted product is not included in the quantity rules of a specific price.</p>
 <ul>
 <li>**Add a product already present in the order</li>
 </ul>
@@ -3363,7 +3363,7 @@ If &ldquo;All shops&rdquo; is selected as context in the order list, then the us
 
 
 
-<script defer src="../../../../js/en.search.min.250a603346a42bb00ea51f4166c93b1c0607c9a46c34ea15779ddbf425f9e520.js"></script>
+<script defer src="../../../../js/en.search.min.796976edd5651bc66ae16911a61d07e6e03298beb2779c223c8edbf609e305c1.js"></script>
 
 
 
