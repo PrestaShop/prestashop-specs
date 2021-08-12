@@ -1,9 +1,9 @@
 ---
-title: Specifications
+title: "1.7"
 menuTitle: Specifications
-weight: 1
-pre: ""
 chapter: true
 ---
+
+# Specifications
 
 {{% children %}}

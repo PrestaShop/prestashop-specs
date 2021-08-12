@@ -3,3 +3,6 @@
 
 ## Directory-based project format:
 .idea/
+
+## Hugo Build Directory
+public/
