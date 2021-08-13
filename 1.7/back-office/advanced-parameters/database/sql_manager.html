@@ -1,2807 +1,6663 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="Specifications of the PrestaShop project">
+<meta name="twitter:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta name="twitter:site" content="@prestashop" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SQL Manager" />
+<meta name="twitter:description" content="Specifications of the PrestaShop project">
+<meta property="og:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta property="og:site_name" content="PrestaShop" />
+<meta property="og:title" content="SQL Manager" />
+<meta property="og:description" content="Specifications of the PrestaShop project">
+<meta name="author" content="PrestaShop">
 
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SQL Manager">
+    <link rel="icon" href="../../../../images/preston-logo@2x.png" type="image/png">
 
-<title>SQL Manager | PrestaShop Specs</title>
+    <title>SQL Manager :: PrestaShop Specs</title>
 
-<link rel="icon" href="../../../../favicon/favicon-32x32.png" type="image/x-icon">
+    
+    <link href="../../../../css/font-awesome.min.css?1628839583" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1628839583" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1628839583" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1628839583" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1628839583" rel="stylesheet">
+    
+    <link href="../../../../style.css?1628839583" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 
-<link rel="preload" as="font" href="../../../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" as="font" href="../../../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+    <script src="../../../../js/jquery-3.3.1.min.js?1628839583"></script>
 
-<link rel="preload" href="../../../../main.min.css" as="style">
-<link rel="stylesheet" href="../../../../main.min.css" media="all">
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 
-<link rel="preload" href="../../../../mobile.min.css" as="style">
-<link rel="stylesheet" href="../../../../mobile.min.css" media="screen and (max-width: 45rem)">
+  </head>
+  <body class="" data-url="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html">
+    <nav id="sidebar" class="">
 
-<link rel="preload" href="../../../../print.min.css" as="style">
-<link rel="stylesheet" href="../../../../print.min.css" media="print">
 
-<link rel="preload" href="../../../../custom.css" as="style">
-<link rel="stylesheet" href="../../../../custom.css" media="all">
 
-<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../../../">PrestaShop Specs</a>
 
-</head>
-
-<body>
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
-
-    <div class="wrapper">
-        <input type="checkbox" class="hidden" id="menu-control" />
-        <header class="gdoc-header">
-    <div class="container flex align-center justify-between">
-        
-        <label for="menu-control" class="gdoc-nav__control">
-            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
-            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
-        </label>
-        
-        <a class="gdoc-header__link" href="https://build.prestashop.com/prestashop-specs/">
-            <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="../../../../logo.png" alt="" width=38 height=38>
-                PrestaShop Specs
-            </span>
-        </a>
     </div>
-</header>
-
-
-        <main class="container flex flex-even">
-            <aside class="gdoc-nav">
-                <nav>
     
-    <div class="gdoc-search">
-        <svg class="icon search"><use xlink:href="#search"></use></svg>
-        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
-            aria-label="Search" maxlength="64" />
-        <div class="gdoc-search__spinner spinner hidden"></div>
-        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
-    </div>
-
-
-
-    <section class="gdoc-nav--main">
-        <h2>Navigation</h2>
-        
-            
-
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7.html" class="gdoc-nav__entry ">
-                        Specifications
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/forms.html" class="gdoc-nav__entry ">
-                        Forms
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office.html" class="gdoc-nav__entry ">
-                        Back Office
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters.html" class="gdoc-nav__entry ">
-                        Advanced Parameters
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/administration.html" class="gdoc-nav__entry ">
-                        Administration
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/administration/administration.html" class="gdoc-nav__entry ">
-                        Administration Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/database.html" class="gdoc-nav__entry ">
-                        Database
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/database/dbbackup.html" class="gdoc-nav__entry ">
-                        DB Backup
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html" class="gdoc-nav__entry is-active">
-                        SQL Manager
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/email.html" class="gdoc-nav__entry ">
-                        Email
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/import.html" class="gdoc-nav__entry ">
-                        Import
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/information.html" class="gdoc-nav__entry ">
-                        Information
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/information/information.html" class="gdoc-nav__entry ">
-                        Information Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/logs.html" class="gdoc-nav__entry ">
-                        Logs
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/menu.html" class="gdoc-nav__entry ">
-                        Menu
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/menu/menu.html" class="gdoc-nav__entry ">
-                        Menu Tab
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/multistore.html" class="gdoc-nav__entry ">
-                        MultiStore
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/multistore/multistore.html" class="gdoc-nav__entry ">
-                        MultiStore
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/performance.html" class="gdoc-nav__entry ">
-                        Performance
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/team.html" class="gdoc-nav__entry ">
-                        Team
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/team/employees.html" class="gdoc-nav__entry ">
-                        Employees
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/team/profiles.html" class="gdoc-nav__entry ">
-                        Profiles Tab
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/webservice.html" class="gdoc-nav__entry ">
-                        WebService
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/advanced-parameters/webservice/webservice.html" class="gdoc-nav__entry ">
-                        Webservice
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog.html" class="gdoc-nav__entry ">
-                        Catalog
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers.html" class="gdoc-nav__entry ">
-                        Brands &amp; Suppliers
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/brands.html" class="gdoc-nav__entry ">
-                        Brands
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html" class="gdoc-nav__entry ">
-                        Supliers Tab
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/categories.html" class="gdoc-nav__entry ">
-                        Categories
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/categories/categories.html" class="gdoc-nav__entry ">
-                        Categories
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/categories/add-edit.html" class="gdoc-nav__entry ">
-                        Category Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/discount.html" class="gdoc-nav__entry ">
-                        Discount
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/discount/cart-rule.html" class="gdoc-nav__entry ">
-                        Cart Rule
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/discount/price-rules.html" class="gdoc-nav__entry ">
-                        Price Rules
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/products.html" class="gdoc-nav__entry ">
-                        Products
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/products/listing.html" class="gdoc-nav__entry ">
-                        Listing
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/catalog/products/add-edit.html" class="gdoc-nav__entry ">
-                        Product Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customer-service.html" class="gdoc-nav__entry ">
-                        Customer Service
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customer-service/customer-service.html" class="gdoc-nav__entry ">
-                        Customer Service
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customer-service/customer-service/dashboard.html" class="gdoc-nav__entry ">
-                        Dashboard
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customer-service/merchandise-returns.html" class="gdoc-nav__entry ">
-                        Merchandise Returns
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customer-service/order-messages.html" class="gdoc-nav__entry ">
-                        Order Messages
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customers.html" class="gdoc-nav__entry ">
-                        Customers
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customers/addresses.html" class="gdoc-nav__entry ">
-                        Addresses
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customers/addresses/add-edit.html" class="gdoc-nav__entry ">
-                        Add / Edit Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customers/customers.html" class="gdoc-nav__entry ">
-                        Customers
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/customers/customers/list.html" class="gdoc-nav__entry ">
-                        List
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design.html" class="gdoc-nav__entry ">
-                        Design
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/email-theme.html" class="gdoc-nav__entry ">
-                        Email Theme
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/image-settings.html" class="gdoc-nav__entry ">
-                        Image Settings
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/image-settings/generation-options.html" class="gdoc-nav__entry ">
-                        Generation Options
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html" class="gdoc-nav__entry ">
-                        Regenerate Thumbnails
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/link-widget.html" class="gdoc-nav__entry ">
-                        Link Widget
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/pages.html" class="gdoc-nav__entry ">
-                        Pages
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/pages/pages.html" class="gdoc-nav__entry ">
-                        Pages
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/positions.html" class="gdoc-nav__entry ">
-                        Positions
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/themes-and-logo.html" class="gdoc-nav__entry ">
-                        Themes &amp; Logo
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/themes-and-logo/theme-logo.html" class="gdoc-nav__entry ">
-                        Theme &amp; Logo
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/design/themes-catalog.html" class="gdoc-nav__entry ">
-                        Themes Catalog
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/multistoregeneralspecs.html" class="gdoc-nav__entry ">
-                        General MultiStore Back Office
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international.html" class="gdoc-nav__entry ">
-                        International
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/localization.html" class="gdoc-nav__entry ">
-                        Localization
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/localization/currencies.html" class="gdoc-nav__entry ">
-                        Currencies
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/localization/languages.html" class="gdoc-nav__entry ">
-                        Languages
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/locations.html" class="gdoc-nav__entry ">
-                        Locations
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/taxes.html" class="gdoc-nav__entry ">
-                        Taxes
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/taxes/taxes.html" class="gdoc-nav__entry ">
-                        Taxes Tab
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/translations.html" class="gdoc-nav__entry ">
-                        Translations
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/international/translations/translations.html" class="gdoc-nav__entry ">
-                        Translations
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules.html" class="gdoc-nav__entry ">
-                        Modules
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-catalog.html" class="gdoc-nav__entry ">
-                        Module Catalog
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-catalog/module-catalog.html" class="gdoc-nav__entry ">
-                        Module Catalog Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-manager.html" class="gdoc-nav__entry ">
-                        Module Manager
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-manager/alerts.html" class="gdoc-nav__entry ">
-                        Alerts Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-manager/modules.html" class="gdoc-nav__entry ">
-                        Modules Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/modules/module-manager/updates.html" class="gdoc-nav__entry ">
-                        Updates Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders.html" class="gdoc-nav__entry ">
-                        Orders
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/credit-slips.html" class="gdoc-nav__entry ">
-                        Credit Slips
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/delivery-slips.html" class="gdoc-nav__entry ">
-                        Delivery Slips
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/invoices.html" class="gdoc-nav__entry ">
-                        Invoices
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/orders.html" class="gdoc-nav__entry ">
-                        Orders
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/orders/add.html" class="gdoc-nav__entry ">
-                        Add new order
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/orders/listing.html" class="gdoc-nav__entry ">
-                        Listing Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/orders/view-page.html" class="gdoc-nav__entry ">
-                        View Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/orders/shopping-carts.html" class="gdoc-nav__entry ">
-                        Shopping Carts
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/payment.html" class="gdoc-nav__entry ">
-                        Payment
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/payment/payment-methods.html" class="gdoc-nav__entry ">
-                        Payment Methods
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/payment/preferences.html" class="gdoc-nav__entry ">
-                        Preferences
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shipping.html" class="gdoc-nav__entry ">
-                        Shipping
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shipping/carriers.html" class="gdoc-nav__entry ">
-                        Carriers
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shipping/carriers/add-edit.html" class="gdoc-nav__entry ">
-                        Add / Edit
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shipping/preferences.html" class="gdoc-nav__entry ">
-                        Preferences
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters.html" class="gdoc-nav__entry ">
-                        Shop Parameters
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/contact.html" class="gdoc-nav__entry ">
-                        Contact
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/contact/tab.html" class="gdoc-nav__entry ">
-                        Contacts Tab
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings.html" class="gdoc-nav__entry ">
-                        Customer Settings
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/customers.html" class="gdoc-nav__entry ">
-                        Customers Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/groups.html" class="gdoc-nav__entry ">
-                        Groups Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/customer-settings/titles.html" class="gdoc-nav__entry ">
-                        Titles Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/general.html" class="gdoc-nav__entry ">
-                        General
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/general/maintenance.html" class="gdoc-nav__entry ">
-                        Maintenance Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/merchant-expertise.html" class="gdoc-nav__entry ">
-                        Merchant Expertise
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/order-settings.html" class="gdoc-nav__entry ">
-                        Order Settings
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html" class="gdoc-nav__entry ">
-                        Order Statuses
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-settings.html" class="gdoc-nav__entry ">
-                        Settings
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/product-settings.html" class="gdoc-nav__entry ">
-                        Product Settings
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/product-settings/page.html" class="gdoc-nav__entry ">
-                        Product Settings Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/search.html" class="gdoc-nav__entry ">
-                        Search
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/search/search.html" class="gdoc-nav__entry ">
-                        Search Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo.html" class="gdoc-nav__entry ">
-                        Traffic &amp; SEO
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" class="gdoc-nav__entry ">
-                        SEO &amp; URLs Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics.html" class="gdoc-nav__entry ">
-                        Broader Topics
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/ecotax.html" class="gdoc-nav__entry ">
-                        EcoTax
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/image-file-formats.html" class="gdoc-nav__entry ">
-                        Image File Formats
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/multistorespecialsspecs.html" class="gdoc-nav__entry ">
-                        Multistore Specials Cases
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/price-calculation-rules.html" class="gdoc-nav__entry ">
-                        Price Calculation
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/seo-rules-and-behaviours.html" class="gdoc-nav__entry ">
-                        SEO Rules &amp; Behaviours
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/broader-topics/symfony-migration.html" class="gdoc-nav__entry ">
-                        Symfony Migration
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/checklist.html" class="gdoc-nav__entry ">
-                        Checklist
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office.html" class="gdoc-nav__entry ">
-                        Front Office
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/checkout.html" class="gdoc-nav__entry ">
-                        Checkout
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/customer-account.html" class="gdoc-nav__entry ">
-                        Customer Account
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/discounts.html" class="gdoc-nav__entry ">
-                        Discounts
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/discounts/cart-rules-free-gift.html" class="gdoc-nav__entry ">
-                        Free Gift
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/maintenance.html" class="gdoc-nav__entry ">
-                        Maintenance Mode
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/product-images.html" class="gdoc-nav__entry ">
-                        Product Images
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/products-list.html" class="gdoc-nav__entry ">
-                        Product List
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/product-page.html" class="gdoc-nav__entry ">
-                        Product Page
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/search.html" class="gdoc-nav__entry ">
-                        Search
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/front-office/your-vouchers.html" class="gdoc-nav__entry ">
-                        Your vouchers
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/installer.html" class="gdoc-nav__entry ">
-                        Installer
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/installer/installer.html" class="gdoc-nav__entry ">
-                        Installer
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules.html" class="gdoc-nav__entry ">
-                        Modules
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules/dateofdelivery.html" class="gdoc-nav__entry ">
-                        Date Of Delivery
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules/ps_facetedsearch.html" class="gdoc-nav__entry ">
-                        Faceted Search
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules/ps_linklist.html" class="gdoc-nav__entry ">
-                        Linklist
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules/psthemecusto.html" class="gdoc-nav__entry ">
-                        Theme Customization
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/modules/wishlist.html" class="gdoc-nav__entry ">
-                        Wishlist
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/spec-templates.html" class="gdoc-nav__entry ">
-                        Templates
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html" class="gdoc-nav__entry ">
-                        Functional and behaviors specs
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="../../../../1.7/spec-templates/technical-characteristics-template.html" class="gdoc-nav__entry ">
-                        Technical characteristics specs
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-
-
-
-
-        
-    </section>
-
-    <section class="gdoc-nav--more">
-        
-    </section>
-</nav>
-
-            </aside>
-
-            <div class="gdoc-page">
-                
-    
-
-
-    
-
-
-
-
-
-
-<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-    <span>
-        
-        <span class="breadcrumb">
-            <svg class="icon path"><use xlink:href="#path"></use></svg>
-            
-            
-    
-    
-        
-        
-        
-    
-    
-        
-        
-        
-    
-    
-        
-        
-        
-    
-    
-        
-        
-        
-    
-    
-        
-        
-        
-    
-    
-        <a href='../../../../'>PrestaShop Specs</a> / <a href='../../../../1.7.html'>Specifications</a> / <a href='../../../../1.7/back-office.html'>Back Office</a> / <a href='../../../../1.7/back-office/advanced-parameters.html'>Advanced Parameters</a> / <a href='../../../../1.7/back-office/advanced-parameters/database.html'>Database</a> / SQL Manager
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-        </span>
-        
-    </span>
-    <span>
-        
-    </span>
+        <div class="searchbox-extended">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input id="search-by" type="search" placeholder="Search...">
 </div>
 
 
-    <article class="gdoc-markdown">
-        <h1>SQL Manager</h1>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+      
         
+          
+            
+              
 
 
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office.html" title="Back Office" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office.html">
+          <span>
+            Back Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters.html" title="Advanced Parameters" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters.html">
+          <span>
+            Advanced Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/administration.html" title="Administration" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/administration.html">
+          <span>
+            Administration
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/administration/administration.html" title="Administration Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/administration/administration.html">
+        Administration Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/database.html" title="Database" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/database.html">
+          <span>
+            Database
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/dbbackup.html" title="DB Backup" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/database/dbbackup.html">
+        DB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/sql_manager.html" title="SQL Manager" class="dd-item active currentPage">
+        <a href="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html">
+        SQL Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/email.html" title="Email" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/email.html">
+          <span>
+            Email
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/import.html" title="Import" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/import.html">
+          <span>
+            Import
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/information.html" title="Information" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/information.html">
+          <span>
+            Information
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/information/information.html" title="Information Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/information/information.html">
+        Information Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/logs.html" title="Logs" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/logs.html">
+          <span>
+            Logs
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/menu.html" title="Menu" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/menu.html">
+          <span>
+            Menu
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/menu/menu.html" title="Menu Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/menu/menu.html">
+        Menu Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/multistore.html" title="MultiStore" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/multistore.html">
+          <span>
+            MultiStore
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/multistore.html" title="MultiStore" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/multistore/multistore.html">
+        MultiStore
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/performance.html" title="Performance" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/performance.html">
+          <span>
+            Performance
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/team.html" title="Team" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/team.html">
+          <span>
+            Team
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/employees.html" title="Employees" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/team/employees.html">
+        Employees
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/profiles.html" title="Profiles Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/team/profiles.html">
+        Profiles Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/webservice.html" title="WebService" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/webservice.html">
+          <span>
+            WebService
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/webservice/webservice.html" title="Webservice" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/webservice/webservice.html">
+        Webservice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog.html" title="Catalog" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog.html">
+          <span>
+            Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers.html" title="Brands &amp; Suppliers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/brands-and-suppliers.html">
+          <span>
+            Brands &amp; Suppliers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/brands.html" title="Brands" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/brands.html">
+        Brands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/suppliers.html" title="Supliers Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html">
+        Supliers Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/categories.html" title="Categories" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/categories.html">
+          <span>
+            Categories
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/categories.html" title="Categories" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/categories/categories.html">
+        Categories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/add-edit.html" title="Category Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/categories/add-edit.html">
+        Category Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/discount.html" title="Discount" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/discount.html">
+          <span>
+            Discount
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/cart-rule.html" title="Cart Rule" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/discount/cart-rule.html">
+        Cart Rule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/price-rules.html" title="Price Rules" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/discount/price-rules.html">
+        Price Rules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/products.html" title="Products" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/products.html">
+          <span>
+            Products
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/listing.html" title="Listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/products/listing.html">
+        Listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/add-edit.html" title="Product Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/products/add-edit.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customer-service/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/customer-service/dashboard.html" title="Dashboard" class="dd-item ">
+        <a href="../../../../1.7/back-office/customer-service/customer-service/dashboard.html">
+        Dashboard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/merchandise-returns.html" title="Merchandise Returns" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/customer-service/merchandise-returns.html">
+          <span>
+            Merchandise Returns
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/order-messages.html" title="Order Messages" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/customer-service/order-messages.html">
+          <span>
+            Order Messages
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/addresses.html" title="Addresses" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers/addresses.html">
+          <span>
+            Addresses
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/addresses/add-edit.html" title="Add / Edit Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/customers/addresses/add-edit.html">
+        Add / Edit Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/list.html" title="List" class="dd-item ">
+        <a href="../../../../1.7/back-office/customers/customers/list.html">
+        List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design.html" title="Design" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design.html">
+          <span>
+            Design
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/email-theme.html" title="Email Theme" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/email-theme.html">
+          <span>
+            Email Theme
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/image-settings.html" title="Image Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/image-settings.html">
+          <span>
+            Image Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/generation-options.html" title="Generation Options" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/image-settings/generation-options.html">
+        Generation Options
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/regenerate-thumbnails.html" title="Regenerate Thumbnails" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html">
+        Regenerate Thumbnails
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/link-widget.html" title="Link Widget" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/link-widget.html">
+          <span>
+            Link Widget
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/pages.html" title="Pages" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/pages.html">
+          <span>
+            Pages
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/pages/pages.html" title="Pages" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/pages/pages.html">
+        Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/positions.html" title="Positions" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/positions.html">
+          <span>
+            Positions
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-and-logo.html" title="Themes &amp; Logo" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/themes-and-logo.html">
+          <span>
+            Themes &amp; Logo
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/theme-logo.html" title="Theme &amp; Logo" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/themes-and-logo/theme-logo.html">
+        Theme &amp; Logo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-catalog.html" title="Themes Catalog" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/themes-catalog.html">
+          <span>
+            Themes Catalog
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/multistoregeneralspecs.html" title="General MultiStore Back Office" class="dd-item ">
+        <a href="../../../../1.7/back-office/multistoregeneralspecs.html">
+        General MultiStore Back Office
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international.html" title="International" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international.html">
+          <span>
+            International
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/localization.html" title="Localization" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/localization.html">
+          <span>
+            Localization
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/currencies.html" title="Currencies" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/localization/currencies.html">
+        Currencies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/languages.html" title="Languages" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/localization/languages.html">
+        Languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations.html" title="Locations" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/international/locations.html">
+          <span>
+            Locations
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/taxes.html" title="Taxes" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/taxes.html">
+          <span>
+            Taxes
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/taxes.html" title="Taxes Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/taxes/taxes.html">
+        Taxes Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/translations.html" title="Translations" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/translations.html">
+          <span>
+            Translations
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/translations/translations.html" title="Translations" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/translations/translations.html">
+        Translations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-catalog.html" title="Module Catalog" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules/module-catalog.html">
+          <span>
+            Module Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-catalog/module-catalog.html" title="Module Catalog Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-catalog/module-catalog.html">
+        Module Catalog Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-manager.html" title="Module Manager" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules/module-manager.html">
+          <span>
+            Module Manager
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/alerts.html" title="Alerts Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/alerts.html">
+        Alerts Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/modules.html" title="Modules Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/modules.html">
+        Modules Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/updates.html" title="Updates Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/updates.html">
+        Updates Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/credit-slips.html" title="Credit Slips" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/credit-slips.html">
+          <span>
+            Credit Slips
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/delivery-slips.html" title="Delivery Slips" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/delivery-slips.html">
+          <span>
+            Delivery Slips
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/invoices.html" title="Invoices" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/invoices.html">
+          <span>
+            Invoices
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/orders/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/add.html" title="Add new order" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/add.html">
+        Add new order
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/listing.html" title="Listing Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/listing.html">
+        Listing Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/view-page.html" title="View Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/view-page.html">
+        View Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/shopping-carts.html" title="Shopping Carts" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/shopping-carts.html">
+          <span>
+            Shopping Carts
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment.html" title="Payment" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/payment.html">
+          <span>
+            Payment
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/payment-methods.html" title="Payment Methods" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/payment/payment-methods.html">
+          <span>
+            Payment Methods
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/payment/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping.html" title="Shipping" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shipping.html">
+          <span>
+            Shipping
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/carriers.html" title="Carriers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shipping/carriers.html">
+          <span>
+            Carriers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shipping/carriers/add-edit.html" title="Add / Edit" class="dd-item ">
+        <a href="../../../../1.7/back-office/shipping/carriers/add-edit.html">
+        Add / Edit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/shipping/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters.html" title="Shop Parameters" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters.html">
+          <span>
+            Shop Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/contact.html" title="Contact" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/contact.html">
+          <span>
+            Contact
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/tab.html" title="Contacts Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/contact/tab.html">
+        Contacts Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings.html" title="Customer Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/customer-settings.html">
+          <span>
+            Customer Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/customers.html" title="Customers Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/customers.html">
+        Customers Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/groups.html" title="Groups Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/groups.html">
+        Groups Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/titles.html" title="Titles Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/titles.html">
+        Titles Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/general.html" title="General" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/general.html">
+          <span>
+            General
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/general/maintenance.html" title="Maintenance Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/general/maintenance.html">
+        Maintenance Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/merchant-expertise.html" title="Merchant Expertise" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/merchant-expertise.html">
+          <span>
+            Merchant Expertise
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/order-settings.html" title="Order Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/order-settings.html">
+          <span>
+            Order Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-statuses.html" title="Order Statuses" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html">
+        Order Statuses
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-settings.html" title="Settings" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-settings.html">
+        Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/product-settings.html" title="Product Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/product-settings.html">
+          <span>
+            Product Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/product-settings/page.html" title="Product Settings Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/product-settings/page.html">
+        Product Settings Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/search.html" title="Search" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/search.html">
+          <span>
+            Search
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/search.html" title="Search Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/search.html">
+        Search Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo.html" title="Traffic &amp; SEO" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo.html">
+          <span>
+            Traffic &amp; SEO
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" title="SEO &amp; URLs Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html">
+        SEO &amp; URLs Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/broader-topics.html" title="Broader Topics" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/broader-topics.html">
+          <span>
+            Broader Topics
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/ecotax.html" title="EcoTax" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/ecotax.html">
+        EcoTax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/image-file-formats.html" title="Image File Formats" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/image-file-formats.html">
+        Image File Formats
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/multistorespecialsspecs.html" title="Multistore Specials Cases" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/multistorespecialsspecs.html">
+        Multistore Specials Cases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/price-calculation-rules.html" title="Price Calculation" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/price-calculation-rules.html">
+        Price Calculation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/seo-rules-and-behaviours.html" title="SEO Rules &amp; Behaviours" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/seo-rules-and-behaviours.html">
+        SEO Rules &amp; Behaviours
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/symfony-migration.html" title="Symfony Migration" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/symfony-migration.html">
+        Symfony Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office.html" title="Front Office" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/front-office.html">
+          <span>
+            Front Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/checkout.html" title="Checkout" class="dd-item ">
+        <a href="../../../../1.7/front-office/checkout.html">
+        Checkout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/customer-account.html" title="Customer Account" class="dd-item ">
+        <a href="../../../../1.7/front-office/customer-account.html">
+        Customer Account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office/discounts.html" title="Discounts" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/front-office/discounts.html">
+          <span>
+            Discounts
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/discounts/cart-rules-free-gift.html" title="Free Gift" class="dd-item ">
+        <a href="../../../../1.7/front-office/discounts/cart-rules-free-gift.html">
+        Free Gift
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/maintenance.html" title="Maintenance Mode" class="dd-item ">
+        <a href="../../../../1.7/front-office/maintenance.html">
+        Maintenance Mode
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-images.html" title="Product Images" class="dd-item ">
+        <a href="../../../../1.7/front-office/product-images.html">
+        Product Images
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/products-list.html" title="Product List" class="dd-item ">
+        <a href="../../../../1.7/front-office/products-list.html">
+        Product List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-page.html" title="Product Page" class="dd-item ">
+        <a href="../../../../1.7/front-office/product-page.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/search.html" title="Search" class="dd-item ">
+        <a href="../../../../1.7/front-office/search.html">
+        Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/your-vouchers.html" title="Your vouchers" class="dd-item ">
+        <a href="../../../../1.7/front-office/your-vouchers.html">
+        Your vouchers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/installer.html" title="Installer" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/installer.html">
+          <span>
+            Installer
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/installer/installer.html" title="Installer" class="dd-item ">
+        <a href="../../../../1.7/installer/installer.html">
+        Installer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/dateofdelivery.html" title="Date Of Delivery" class="dd-item ">
+        <a href="../../../../1.7/modules/dateofdelivery.html">
+        Date Of Delivery
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_facetedsearch.html" title="Faceted Search" class="dd-item ">
+        <a href="../../../../1.7/modules/ps_facetedsearch.html">
+        Faceted Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_linklist.html" title="Linklist" class="dd-item ">
+        <a href="../../../../1.7/modules/ps_linklist.html">
+        Linklist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/psthemecusto.html" title="Theme Customization" class="dd-item ">
+        <a href="../../../../1.7/modules/psthemecusto.html">
+        Theme Customization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/wishlist.html" title="Wishlist" class="dd-item ">
+        <a href="../../../../1.7/modules/wishlist.html">
+        Wishlist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/spec-templates.html" title="Templates" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/spec-templates.html">
+          <span>
+            Templates
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/functionnal-and-behaviors-specs-template.html" title="Functional and behaviors specs" class="dd-item ">
+        <a href="../../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html">
+        Functional and behaviors specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/technical-characteristics-template.html" title="Technical characteristics specs" class="dd-item ">
+        <a href="../../../../1.7/spec-templates/technical-characteristics-template.html">
+        Technical characteristics specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+      
+    </ul>
 
     
+    
+
+    
+    <section id="footer">
+      <p><a href="https://github.com/PrestaShop/PrestaShop/"><i class="fa fa-github" aria-hidden="true"></i> PrestaShop on GitHub</a></p>
+<p><a href="https://github.com/PrestaShop/PrestaShop/issues"><i class="fa fa-bug" aria-hidden="true"></i> Report a bug</a></p>
+<p><a href="https://www.prestashop-project.org/slack/readme/"><i class="fa fa-comment" aria-hidden="true"></i> Join us on Slack</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+      <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+<div>
+  <div id="top-bar">
+    
+      
+      
+      
+      <div id="top-github-link">
+        <a class="github-link" title='Improve this page' href="https://github.com/PrestaShop/prestashop-specs/edit/master/content/1.7/back-office/advanced-parameters/database/sql_manager.md" target="blank">
+          <i class="fa fa-pencil"></i>
+          <span id="top-github-link-text">Improve this page</span>
+        </a>
+        <a class="how-to-improve" href="https://devdocs.prestashop.com/1.7/contribute/documentation/how/">
+          <i class="fa fa-question-circle"></i>
+          <span>How</span>
+        </a>
+      </div>
+      
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://schema.org/breadcrumb">
+      <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="links">
+        
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              <a href='../../../../'>Home</a> > <a href='../../../../1.7.html'>Specifications</a> > <a href='../../../../1.7/back-office.html'>Back Office</a> > <a href='../../../../1.7/back-office/advanced-parameters.html'>Advanced Parameters</a> > <a href='../../../../1.7/back-office/advanced-parameters/database.html'>Database</a> > SQL Manager
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+
+        
+        
+          
+            <div id="toc">
+  <div class="wrapper">
+    <div id="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#specifications---advanced-parameters-gt-database-gt-sql-manager">SPECIFICATIONS - ADVANCED PARAMETERS &gt; DATABASE &gt; SQL MANAGER</a>
+      <ul>
+        <li><a href="#178x-version">1.7.8.x version</a></li>
+        <li><a href="#177x-version">1.7.7.x version</a>
+          <ul>
+            <li><a href="#sql-manager">SQL Manager</a>
+              <ul>
+                <li><a href="#settings-wheel">Settings wheel</a></li>
+                <li><a href="#bulk-actions">Bulk actions</a></li>
+                <li><a href="#columns">Columns</a></li>
+                <li><a href="#multistore-behavior">Multistore behavior</a></li>
+              </ul>
+            </li>
+            <li><a href="#settings">Settings</a>
+              <ul>
+                <li><a href="#multistore-behavior-1">Multistore behavior</a></li>
+              </ul>
+            </li>
+            <li><a href="#add-new-sql-query">Add new SQL query</a>
+              <ul>
+                <li><a href="#multistore-behavior-2">Multistore behavior</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <div id="navigation">
+  
+  
+
+  
+
+  
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+
+  
+  
+  <a class="nav nav-next" href="../../../../1.7/back-office/advanced-parameters/email.html" title="Email" style="margin-right: 0px;">
+    <i class="fa fa-chevron-right"></i>
+    Next article
+  </a>
+  
+</div>
+
+  </div>
+</div>
+
+          
+        
+
+        <div id="body-inner">
+
+          
+
+
 
 
 <h1 id="specifications---advanced-parameters-gt-database-gt-sql-manager">SPECIFICATIONS - ADVANCED PARAMETERS &gt; DATABASE &gt; SQL MANAGER</h1>
 <p>The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="178x-version">1.7.8.x version<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#178x-version" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1.7.8.x version" href="#178x-version"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<h2 id="178x-version">1.7.8.x version</h2>
 <p>The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.
 The module will be downloadable for users who need it and have the required skills.
 The feature to hide the password or the secure key into &lsquo;************&rsquo; when the password is in the query results will be removed since we can&rsquo;t fully hide them since with an alias the keys or passwords can be displayed.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="177x-version">1.7.7.x version<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#177x-version" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1.7.7.x version" href="#177x-version"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<h2 id="177x-version">1.7.7.x version</h2>
 <p>SQL Manager is a feature that allows users with technical skills to create and handle SQL queries.</p>
 <p>For instance, using this tool allows the user to create a reusable query giving an updated list of the clients who are subscribed to your newsletter or get a list of products in HTML or CSV format.</p>
 <p>For security reasons, some types of queries are not allowed: UPDATE, DELETE, CREATE TABLE, DROP, etc. In short, you can only read data (SELECT query).</p>
@@ -2823,8 +6679,8 @@ The feature to hide the password or the secure key into &lsquo;************&rsqu
 </li>
 </ul>
 <p>&ldquo;When saving the query, only the &ldquo;SELECT&rdquo; SQL statement is allowed.&rdquo;</p>
-<div class="gdoc-page__anchorwrap"><h3 id="sql-manager">SQL Manager<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#sql-manager" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SQL Manager" href="#sql-manager"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
-<div class="gdoc-page__anchorwrap"><h4 id="settings-wheel">Settings wheel<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#settings-wheel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Settings wheel" href="#settings-wheel"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h3 id="sql-manager">SQL Manager</h3>
+<h4 id="settings-wheel">Settings wheel</h4>
 <p>When clicking on it, three options are displayed:</p>
 <ol>
 <li>Refresh list</li>
@@ -2843,7 +6699,7 @@ The feature to hide the password or the secure key into &lsquo;************&rsqu
 <li>Export to SQL Manager</li>
 </ol>
 <p>After clicking on it, the SQL query is opened in Advanced parameters &gt; Database &gt; SQL Manager</p>
-<div class="gdoc-page__anchorwrap"><h4 id="bulk-actions">Bulk actions<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#bulk-actions" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Bulk actions" href="#bulk-actions"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h4 id="bulk-actions">Bulk actions</h4>
 <p>Clicking on the <em>Bulk actions</em> button allows users to perform bulk actions for selected SQL queries (using the checkboxes), or query - the button is clickable starting from one selected item. A user can:</p>
 <ul>
 <li>Select all/Unselect all: this button will select/unselect all the checkboxes beginning each row of the listing.</li>
@@ -2852,7 +6708,7 @@ After clicking on &ldquo;Delete selected&rdquo;, a modal with title &ldquo;Delet
 </ul>
 <p>The action can be canceled by clicking on the cross or on the cancel button.</p>
 <p>After clicking on &ldquo;Delete&rdquo; button, the selected webservice keys are deleted, a successful message is displayed &ldquo;The selection has been successfully deleted.&rdquo;</p>
-<div class="gdoc-page__anchorwrap"><h4 id="columns">Columns<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#columns" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Columns" href="#columns"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h4 id="columns">Columns</h4>
 <p>The page displays the SQL Manager list with the following columns:</p>
 <ol>
 <li>ID</li>
@@ -2879,15 +6735,15 @@ After clicking on <em>Delete</em>, a modal with title &ldquo;Delete selection&rd
 </ul>
 <p>The action can be canceled by clicking on the cross or on the cancel button.</p>
 <p>After clicking on &ldquo;Delete&rdquo; button, the message is deleted and a successful message is displayed &ldquo;Successful deletion.&rdquo;</p>
-<div class="gdoc-page__anchorwrap"><h4 id="multistore-behavior">Multistore behavior<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#multistore-behavior" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore behavior" href="#multistore-behavior"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h4 id="multistore-behavior">Multistore behavior</h4>
 <p>By default, a SQL query affects all shops. Since it can&rsquo;t be associated with any specific shop, all the SQL queries listed on this page are used in an all shops context.</p>
-<div class="gdoc-page__anchorwrap"><h3 id="settings">Settings<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#settings" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Settings" href="#settings"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<h3 id="settings">Settings</h3>
 <p>Select your default file encoding. You can configure the character encoding of the downloaded CSV file. The default, UTF-8, is recommended, but you can select ISO-8859-1 if need be through the drop-down.</p>
-<div class="gdoc-page__anchorwrap"><h4 id="multistore-behavior-1">Multistore behavior<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#multistore-behavior-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore behavior" href="#multistore-behavior-1"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h4 id="multistore-behavior-1">Multistore behavior</h4>
 <p>In a specific shop context or in a group context, the &ldquo;default file encoding&rdquo; doesn&rsquo;t have checkbox and is disabled with an information message displayed when the user hovers the drop-down: &ldquo;You can modify this parameter in all shops context only. Switch context to enable it.&rdquo; (see issue <a href="https://github.com/PrestaShop/PrestaShop/issues/19356">#19356</a>)</p>
 <p>In an all shops context, the the &ldquo;default file encoding&rdquo; doesn&rsquo;t have specific settings drop-down.</p>
 <p>:point_right: <a href="../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them">Multistore specials cases: fields without checkboxes</a></p>
-<div class="gdoc-page__anchorwrap"><h3 id="add-new-sql-query">Add new SQL query<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#add-new-sql-query" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Add new SQL query" href="#add-new-sql-query"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<h3 id="add-new-sql-query">Add new SQL query</h3>
 <p>Creating a new query is divided into 3 sections:</p>
 <ul>
 <li>
@@ -2911,69 +6767,65 @@ After clicking on <em>Delete</em>, a modal with title &ldquo;Delete selection&rd
 &lsquo;SQL_SMALL_RESULT&rsquo;, &lsquo;SQL_BIG_RESULT&rsquo;, &lsquo;QUICK&rsquo;, &lsquo;SQL_BUFFER_RESULT&rsquo;, &lsquo;SQL_CACHE&rsquo;, &lsquo;SQL_NO_CACHE&rsquo;, &lsquo;SQL_CALC_FOUND_ROWS&rsquo;, &lsquo;WITH&rsquo;.
 Each keywords are checked in the SQL query before saving it.</p>
 <p>On the bottom left, the &ldquo;List of MySQL Tables&rdquo; gives the user a list of all the available database tables. He/she should select a table to make PrestaShop display all its attributes and types in the list on the right, then click &ldquo;Add attribute to SQL query&rdquo; or &ldquo;Add table name to SQL query&rdquo; to send its attribute name/table name into the SQL query field.</p>
-<div class="gdoc-page__anchorwrap"><h4 id="multistore-behavior-2">Multistore behavior<a data-clipboard-text="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html#multistore-behavior-2" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Multistore behavior" href="#multistore-behavior-2"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h4></div>
+<h4 id="multistore-behavior-2">Multistore behavior</h4>
 <p>This page has no shop association block. By default, the SQL query is added for all shops, no matter the context selected.</p>
 <p>To inform the merchants of this behavior, an information message is displayed on this page: &ldquo;Note that this feature is available in all shops context only. It will be added to all your stores.&rdquo; (see issue <a href="https://github.com/PrestaShop/PrestaShop/issues/19422">#19422</a>)</p>
 <p>:point_right: <a href="../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block">Multistore special case: Add new pages without shop association block</a></p>
 
 
-    </article>
-
-                
-
-
-
-
-
-
-
-
-    
-    
-
-    
-
-
-
-
-
-<div class="gdoc-page__footer flex flex-wrap justify-between">
-    
-    
+<footer class="article-footer">
+	
+<div>
+  Last updated on June 4, 2021
+  :
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/0c247475ad6861c7288afae318c935a2175de0e8">"Markdown : Adapt header, remove .gitkeep &amp; add _index.md in all directories" (0c24747)</a>
+  
 </div>
 
-            </div>
-        </main>
 
-        <footer class="gdoc-footer">
-    <div class="container flex flex-wrap">
-        <span class="gdoc-footer__item">
-            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
-            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
-        </span>
-        
-        
-    </div>
+	<div class="license">
+		This article is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	</div>
 </footer>
 
-    </div>
+        
+        </div>
+        
 
+      </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1628839583"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1628839583"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1628839583"></script>
+    <script src="../../../../js/jquery.sticky.js?1628839583"></script>
+    <script src="../../../../js/featherlight.min.js?1628839583"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1628839583"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1628839583"></script>
+    <script src="../../../../js/learn.js?1628839583"></script>
+    <script src="../../../../js/hugo-learn.js?1628839583"></script>
+    
+    <script src="../../../../main.js?1628839583"></script>
+    <link href="../../../../mermaid/mermaid.css?1628839583" rel="stylesheet" />
+    <script src="../../../../mermaid/mermaid.js?1628839583"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
     
 
-
-
-
-<script defer src="../../../../js/en.search.min.796976edd5651bc66ae16911a61d07e6e03298beb2779c223c8edbf609e305c1.js"></script>
-
-
-
-<script defer src="../../../../js/clipboard.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var clipboard = new ClipboardJS('.clip');
-    });
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: 'e5a3a32dad46a5aaaa771b2b37d7084a',
+indexName: 'prestashop',
+inputSelector: '#search-by',
+debug: false
+});
 </script>
 
-
-</body>
+  </body>
 </html>
+
