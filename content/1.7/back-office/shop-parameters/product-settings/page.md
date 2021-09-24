@@ -126,7 +126,7 @@ Availability: Only X left in stock - Delivered under 48 hours
 
 If the product has combinations, this message is based on the selected attributes (= combinations) according to the quantity in stock.
 
-It adds the following message , _Only X left in stock_, in product listings in green #5A9166.
+It adds the following message , _Only X left in stock_, in product listings in green #5A9166 if the default combination quantity is below the level defined.
 
 Only numbers can be typed in the field, or added by using the arrows at the end of the field. By default, it is set to 3 - typing 0 disables this feature. It cannot be set to less than 0, otherwise the field goes back to the previous valid value and an error notification is displayed: _The Display remaining quantities when the quantity is lower than field is invalid._
 
