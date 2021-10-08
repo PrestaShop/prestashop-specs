@@ -67,7 +67,6 @@ Display an information message on these pages: "Note that this page is available
 - International > Localization > Languages <br/>
 But a language can be created for only one shop or a group with the shop association block.
 - Shop parameters > Order settings > Statuses
-- Advanced parameters > Performance
 - Advanced parameters > Team > Profiles
 - Advanced parameters > Team > Permissions
 - Advanced parameters > Multistore > AdminShopGroup
@@ -117,6 +116,12 @@ List of these fields:
 - Advanced parameters > Database > SQL Manager<br/>
 List of these fields: 
   - Select your default file encoding
+
+- Advanced parameters > Performance<br/>
+List of these fields: 
+  - Disable non PrestaShop modules 
+  - Disable all overrides 
+  - Debug mode 
   
 ### List of pages for specific case 5) The page is displayed only when a specific shop is selected
 
