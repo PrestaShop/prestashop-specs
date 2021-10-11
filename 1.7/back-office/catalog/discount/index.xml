@@ -8,10 +8,10 @@
     <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cart Rule</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</link>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rule.html</guid>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</guid>
       <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
 2 vouchers should be applied but the shipping should be deducted once.
 If I applied 2 vouchers in a cart:
