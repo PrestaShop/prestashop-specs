@@ -1,7 +1,8 @@
 ---
-title: Cart Rule
+title: How does Cart Rule works ?
 weight: 1
 ---
+
 ## Cart Rule 
 
 **when 2 vouchers applied to a cart have free shipping.**
