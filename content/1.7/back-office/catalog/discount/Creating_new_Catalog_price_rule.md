@@ -14,4 +14,6 @@ After that, you will be navigated to the Catalog Price rules creation page.
 
  **Name** - this input field is marked with asterisk sign, meaning that this feald is required. Give it a name for your first price rule.<br>
  **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, if you want, that only USA customers could see the price rules for Prestahop catalogs, you should select the USD currency here.<br>
- **Country** - you can select a specific country for the Catalog price rules. For example, if you want, that only German customers could see the certain price rules, you should select the Germany in the dropdown.
+ **Country** - you can select a specific country for the Catalog price rules. For example, if you want, that only German customers could see the certain price rules, you should select the Germany in the dropdown.<br>
+**Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. You can select the appropriate Group, in order to show the price rules for that certain group of visitors in your website.<br>
+**From quantity** - as you can see, it is marked with asterisk, meaning that the input field is required, for further steps. You can type, for example, 50 and it will mean, that all the catalog prices from 50 will get the certain catalog discount rule.<br>
