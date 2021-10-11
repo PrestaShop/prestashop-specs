@@ -39,6 +39,16 @@ As a merchant, I want to be able to manually add an order to my back-office. Cre
     </item>
     
     <item>
+      <title>Add/Edit Catalog Price Rules.md</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</guid>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULES User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
+WHY The Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
+    </item>
+    
+    <item>
       <title>Administration Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -512,16 +522,6 @@ Row action does not apply to the checkbox column and to columns with enable/disa
 This document aims at explaining in details how product and order prices should be calculated in every shop scenarios.
 This is a legal requirement, especially as it has an impact on invoices, so we must ensure prices are correctly calculated on PrestaShop websites.
 Prices have impact on products, orders, but also on discounts, invoices, etc. so this document details the different behaviours for all pages according to the shop scenario.</description>
-    </item>
-    
-    <item>
-      <title>Price Rules</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULES User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
-WHY The Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
     </item>
     
     <item>

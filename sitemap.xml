@@ -11,6 +11,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</loc>
+    <lastmod>2021-10-11T18:13:24+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -294,9 +297,6 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
-  </url><url>
-    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/price-rules.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-images.html</loc>
