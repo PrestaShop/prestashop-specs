@@ -77,20 +77,6 @@ Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
     </item>
     
     <item>
-      <title>Cart Rule</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</guid>
-      <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
-2 vouchers should be applied but the shipping should be deducted once.
-If I applied 2 vouchers in a cart:
- Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift  Then
-Free shipping is applied once with a 5 % discount and a gift.
- When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
-    </item>
-    
-    <item>
       <title>Categories</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -309,6 +295,20 @@ Generate images based on one side of the source image</description>
 Summary  Customers groups listing Customers groups options Customers groups multistore behavior Customers groups add form Customers groups edit form Customers groups view form  Information notification By default, a blue information notification is displayed on the top of the page:
 PrestaShop has three default customer groups:
 Visitor - All persons without a customer account or customers that are not logged in.</description>
+    </item>
+    
+    <item>
+      <title>How does Cart Rule works ?</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</guid>
+      <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
+2 vouchers should be applied but the shipping should be deducted once.
+If I applied 2 vouchers in a cart:
+ Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift  Then
+Free shipping is applied once with a 5 % discount and a gift.
+ When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
     </item>
     
     <item>
