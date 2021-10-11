@@ -63,7 +63,7 @@ Specifications must be validated by the core team (product, dev, and QA) and mer
 
 The specifications' PR must then be merged into the PrestaShop develop branch in the repository `PrestaShop/PrestaShop`, the development phase can start. If any behavior is redefined during this phase, specs must be updated accordingly.
 
-![Management of PrestaShop specifications](/img/prestashop-specs-management.jpg)
+![Management of PrestaShop specifications](https://github.com/PrestaShop/prestashop-specs/blob/master/static/img/prestashop-specs-management.jpg)
 
 
 ### Process when working on a bug
@@ -82,7 +82,7 @@ Then, you can follow the same process as for a new feature or improvement, by cr
 
 This is the main template to follow to write specifications.
 
-![Usual specification structure](/img/prestashop-specs-template.jpg)
+![Usual specification structure](https://github.com/PrestaShop/prestashop-specs/blob/master/static/img/prestashop-specs-template.jpg)
 
 When possible, each file corresponds to a page.
 
