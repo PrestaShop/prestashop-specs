@@ -1,5 +1,5 @@
 ---
-title: Price Rules
+title: Add/Edit Catalog Price Rules.md
 weight: 1
 ---
 # SPECIFICATIONS - CATALOG > DISCOUNTS > CATALOG PRICE RULES
