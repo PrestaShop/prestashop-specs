@@ -12,5 +12,6 @@ After that, you will be navigated to the Catalog Price rules creation page.
 
 ## Price Rules input fields and meanings
 
- Name - this input field is marked with asterisk sign, meaning that this feald is required. Give it a name for your first price rule.<br>
- Currency - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, if you want, that only USA customers could see the price rules for Prestahop catalogs, you should select the Dollar currency here.
+ **Name** - this input field is marked with asterisk sign, meaning that this feald is required. Give it a name for your first price rule.<br>
+ **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, if you want, that only USA customers could see the price rules for Prestahop catalogs, you should select the USD currency here.<br>
+ **Country** - you can select a specific country for the Catalog price rules. For example, if you want, that only German customers could see the certain price rules, you should select the Germany in the dropdown.
