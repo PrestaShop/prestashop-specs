@@ -23,3 +23,4 @@ After that, you will be navigated to the Catalog Price rules creation page.
 **To** - in this place, you can be already familiar with the date boxes as well. Just simply select the time of the date picker. Select the year, month, day and the time the price rule existance should be exceeded for Prestashop items.<br>
 **Reduction type** - you can choose for your merchants, that the discount affection will be expressed as Percentage or Amount in the Prestashop items. You can select one of the types in the dropdown.<br>
 **Reduction with or without taxes** - you can choose, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices.<br>
+**Reduction** - it is an Amount or Percentage type of input here. You can just input the certain digits here for your catalog prices to be shown.
