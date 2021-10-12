@@ -1,5 +1,9 @@
 # Add new feature button
 
+
+![Feature2](prestashop-specs/content/1.7/back-office/Feature2.png)
+
+
 The button at the top right "Add a new feature" when pressed on redirects to a page where you can create a new feature for your products.
 
 When you're redirected the following field inputs should appear:
@@ -39,4 +43,5 @@ On the right side:
  
  When changes are made, and saved, a message with a green backgroung saying "Seuccessful update." should appear.
  
- 
+ ![Update](prestashop-specs/content/1.7/back-office/Update.png)
+
