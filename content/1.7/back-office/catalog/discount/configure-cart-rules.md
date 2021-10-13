@@ -18,3 +18,6 @@ When there are multiple cart rules created, you can manage them and configure th
 ## Edit
 
 - Edit - You can edit the cart rule separately by clicking Edit, and then if you like to delete it just click the arrow button near Edit > Delete.
+
+## Multistore 
+All these settings can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
