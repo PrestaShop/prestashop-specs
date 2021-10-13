@@ -19,4 +19,3 @@ It is an UI (user interface) where the user can view all the cart rules that has
 - Status - you can filer the Enabled - Yes or Disabled - No cart rule statuses.
 - Search - execution of the search action in filtering
 - You can use checkboxes, if you manage to select the rule separately and use for example Bulk Actions for managing the rule.
-- You can edit the cart rule separately by clicking Edit, and then if you like to delete it just click the arrow button near Edit > Delete.
