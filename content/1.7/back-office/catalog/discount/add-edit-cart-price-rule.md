@@ -32,3 +32,10 @@ One of the most important tab, where you can describe the certain conditions, ho
 - Customer group selection - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest.
 - Compatibility with other cart rules - you can include what cart rules can be combined with another cart rules.
 - Product selection - this is kind of important condition for cart rule - you can select specific products from whole webshop, that can have the cart rule.
+
+## Actions tab
+Here you can set the actions that can be executed after correct conditions are set.
+
+- Free shipping switch toggle button - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
+- Apply a discount - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
+- Send a free gift switch toggle button - this option enables you to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
