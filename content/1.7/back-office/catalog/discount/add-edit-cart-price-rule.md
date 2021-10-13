@@ -13,3 +13,4 @@ When you enter the Cart rule editing UI, there are 3 separate tabs - Information
 - Highlight switch toggle button - use this option enabled, when you want the merchants to see the cart rule voucher to be displayed in cart summary.
 - Partial use switch toggle button - use this option enabled, when the total cart sum is smaller than the voucher sum. If you don't want to use Partial use, voucher value will be lovered to the total order amount. If you enable this, new voucher will be created in the Cart, as a reminder.
 - Priority - you can set the priority of your Cart rules, in what order to show for the customers of the webshop. For example, set 1 for the most importand cart rule.
+- Status switch toggle button - enable the button if you want to enable the rule, disable if you want to deactivate the rule and vouchers for customers.
