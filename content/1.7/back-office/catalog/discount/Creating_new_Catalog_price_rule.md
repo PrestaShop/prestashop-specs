@@ -48,12 +48,15 @@ The save 10€ label is automatically displayed, which is the expected behaviour
 ## Condition Groups
 There are also additional and extended Catalog price rules combinations you can specify for your Catalog items.
 
+![image](https://user-images.githubusercontent.com/29095235/137093734-0d8a07b4-2531-43cc-9b38-1bacda2fc2c1.png)
+
 **Those conditions are related to :**
 - Category : the merchant can choose to apply discount only on products which belong to the chosen category. 
 - Brand : the merchant can choose to apply a discount on a specific brand only 
 - Supplier : same as above 
 - Attributes : same as above, the merchant can choose to apply a discount on a specific attribute. To do so, he needs to choose the attribute type and a specific value. 
 - Features : same as above.
+- Value : displays the certain value expression, that can be chosen above in the form
 
 It is possible to add several sets of conditions in the same group, but also to create different condition groups in the same rule.
 
