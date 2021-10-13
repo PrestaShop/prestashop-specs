@@ -3,7 +3,7 @@ title: Configuration of Cart Rules
 weight: 1
 ---
 
-# Bulk Actions
+## Bulk Actions
 
 ![image](static/img/bulk-actions.png)
 
@@ -14,3 +14,7 @@ When there are multiple cart rules created, you can manage them and configure th
 - Enable selection - after you selected the specific multiple Cart rules, you can enable them by one click
 - Disable selection - after you selected the specific multiple Cart rules, you can disable them by one click
 - Delete selected - after you selected the specific multiple Cart rules, you can delete them from the listing by one click
+
+## Edit
+
+- Edit - You can edit the cart rule separately by clicking Edit, and then if you like to delete it just click the arrow button near Edit > Delete.
