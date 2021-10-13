@@ -39,3 +39,6 @@ Here you can set the actions that can be executed after correct conditions are s
 - Free shipping switch toggle button - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
 - Apply a discount - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
 - Send a free gift switch toggle button - this option enables you to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
+
+## Multistore 
+All these Cart rule settings are separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
