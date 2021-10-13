@@ -29,3 +29,5 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 - Compatibility between rules 
 - Discounts display on front office
 
+## Multistore 
+All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
