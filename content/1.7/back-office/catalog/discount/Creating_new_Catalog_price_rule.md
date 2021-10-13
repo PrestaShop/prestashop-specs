@@ -57,6 +57,8 @@ There are also additional and extended Catalog price rules combinations you can 
 - Attributes : same as above, the merchant can choose to apply a discount on a specific attribute. To do so, he needs to choose the attribute type and a specific value. 
 - Features : same as above.
 - Value : displays the certain value expression, that can be chosen above in the form
+- AND : is an operator, which indicates that the contitional group elements are working together
+- OR : is an operator, which indicates the combining fact between two conditional groups
 
 It is possible to add several sets of conditions in the same group, but also to create different condition groups in the same rule.
 
