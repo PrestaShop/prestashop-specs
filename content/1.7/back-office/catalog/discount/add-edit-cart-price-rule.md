@@ -27,4 +27,8 @@ One of the most important tab, where you can describe the certain conditions, ho
 - Minimum amount field - set the minimum amount from which the customers will see the Cart rule. As well, you can set the currency, if prices should affected with taxes or without taxes and if shipping is affected too.
 - Total available - this filed describes the quantity of the cart rules - vouchers available for certain conditions.
 - Total available for each user field - you can set the price rules amount for certain users separately.
-- 
+- Restrictions - also you can set certain conditions for the main cart rule condition.
+- Carrier selection - you can set certain carriers, that could be affected by the rule condition.
+- Customer group selection - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest.
+- Compatibility with other cart rules - you can include what cart rules can be combined with another cart rules.
+- Product selection - this is kind of important condition for cart rule - you can select specific products from whole webshop, that can have the cart rule.
