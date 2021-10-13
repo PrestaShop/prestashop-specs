@@ -64,7 +64,7 @@ There is tooltip for this colorpicker: "Choose a color with the color picker, or
 "It will be applied to the multistore header to underline your shop context."
 - Shop group: Allow to select the shop group of the shop
 - Category root: Allow to select the root category of the shop.
-- Associated categories: Allow to select the categories that will be associated with the store <br/>
+- Associated categories: The root category selected above is displayed + the sub-categories belonging to the root category selected. It allows to select the categories that will be associated with the store <br/>
 - Theme: Allow to select the front-office theme of the store among the themes available in the back office
 
 When a shop is created, data can be imported:
