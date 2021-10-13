@@ -102,3 +102,6 @@ Adding one or several condition groups Once the basic conditions have been defin
 **Results :** If I add only one product, I will get a 10€ discount. If I add 2 products, then the discount will be of 5€ for each product. There is no combination of both rules.
 
 Ex 2 : Same example but with 2 rules with the same minimum quantity. After a few tests, it seems that only the oldest rule will apply to the product. Other rules will have no effect on the product. Shouldn’t this be explained in the rules listing ?
+
+## Multistore 
+All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
