@@ -7,6 +7,9 @@ weight: 1
 When you enter the Cart rule editing UI, there are 3 separate tabs - Information, Conditions and Actions. Each of them are combined together with the general cart rules functionality. The explanations of the input fields, dropdowns, switch toggle buttons and text fields:<br>
 
 ## Information tab
+
+[image](static/img/cart-rules-information-tab.png)
+
 - Name - you can input the unique cart rule name.
 - Description - you can describe, where is the cart rule used for in more details.
 - Code - you can input your own unique cart rule code, or you can simply press Generate and Prestashop will generate the rule automatically with unique code name. It will become as voucher from front end side.
@@ -22,6 +25,8 @@ There is a widget at the right of Name input field with multiple languages. You 
 ## Conditions tab
 One of the most important tab, where you can describe the certain conditions, how the Cart rule should be appearing as a voucher in the Prestashop Cart and what circumstances will be affecting the rule.
 
+[image](static/img/cart-rules-conditions-tab.png)
+
 - Limit to a single customer input field - you can start typing the customer name or email in order to set the Cart rule condition for certain customer.
 - Valid - simple date picker form, where you can set the existance time of the rule condition
 - Minimum amount field - set the minimum amount from which the customers will see the Cart rule. As well, you can set the currency, if prices should affected with taxes or without taxes and if shipping is affected too.
@@ -35,6 +40,8 @@ One of the most important tab, where you can describe the certain conditions, ho
 
 ## Actions tab
 Here you can set the actions that can be executed after correct conditions are set.
+
+[image](static/img/cart-rules-actions-tab.png)
 
 - Free shipping switch toggle button - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
 - Apply a discount - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
