@@ -20,6 +20,3 @@ It is an UI (user interface) where the user can view all the cart rules that has
 - Search - execution of the search action in filtering
 - You can use checkboxes, if you manage to select the rule separately and use for example Bulk Actions for managing the rule.
 - You can edit the cart rule separately by clicking Edit, and then if you like to delete it just click the arrow button near Edit > Delete.
-
-**Bulk Actions**
-![image](https://user-images.githubusercontent.com/29095235/137119042-b3e61388-8968-49d6-a66b-a28e032fad6e.png)
