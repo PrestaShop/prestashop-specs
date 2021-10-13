@@ -1,3 +1,7 @@
+---
+title: Configuration of Cart Rules
+weight: 1
+---
 
 # Bulk Actions
 
