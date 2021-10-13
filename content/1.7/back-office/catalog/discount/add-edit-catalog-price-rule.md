@@ -11,7 +11,7 @@ The first step of this document is to detail global and generic expected behavio
 If you want to create first Catalog Price rule, click on the blue button with plus on the top-right of the page - (+) Add new catalog price rule. Also, as an alternative, you can click on smaller plus (+) icon in the top-right of the Catalog Price rules table.
 
 After that, you will be navigated to the Catalog Price rules creation page.
-![image](https://user-images.githubusercontent.com/29095235/136797959-3a97e049-00a4-42f5-97b2-af1c6d152a80.png)
+![image](static/img/catalog-price-rules.png)
 
 ## Price Rules input fields and meanings
 
@@ -48,7 +48,7 @@ The save 10€ label is automatically displayed, which is the expected behaviour
 ## Condition Groups
 There are also additional and extended Catalog price rules combinations you can specify for your Catalog items.
 
-![image](https://user-images.githubusercontent.com/29095235/137093734-0d8a07b4-2531-43cc-9b38-1bacda2fc2c1.png)
+![image](static/img/condition-group.png)
 
 **Those conditions are related to :**
 - Category : the merchant can choose to apply discount only on products which belong to the chosen category. 
