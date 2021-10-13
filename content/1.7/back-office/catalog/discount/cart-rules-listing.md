@@ -19,3 +19,6 @@ It is an UI (user interface) where the user can view all the cart rules that has
 - Status - you can filer the Enabled - Yes or Disabled - No cart rule statuses.
 - Search - execution of the search action in filtering
 - You can use checkboxes, if you manage to select the rule separately and use for example Bulk Actions for managing the rule.
+
+## Multistore 
+All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
