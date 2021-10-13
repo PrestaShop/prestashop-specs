@@ -15,5 +15,16 @@ When you enter the Cart rule editing UI, there are 3 separate tabs - Information
 - Priority - you can set the priority of your Cart rules, in what order to show for the customers of the webshop. For example, set 1 for the most importand cart rule.
 - Status switch toggle button - enable the button if you want to enable the rule, disable if you want to deactivate the rule and vouchers for customers.
 
-## Multilanguaging
+**Multilanguaging**<br>
+
 There is a widget at the right of Name input field with multiple languages. You can set the different language to the rule names for this certain Information tab form.
+
+## Conditions tab
+One of the most important tab, where you can describe the certain conditions, how the Cart rule should be appearing as a voucher in the Prestashop Cart and what circumstances will be affecting the rule.
+
+- Limit to a single customer input field - you can start typing the customer name or email in order to set the Cart rule condition for certain customer.
+- Valid - simple date picker form, where you can set the existance time of the rule condition
+- Minimum amount field - set the minimum amount from which the customers will see the Cart rule. As well, you can set the currency, if prices should affected with taxes or without taxes and if shipping is affected too.
+- Total available - this filed describes the quantity of the cart rules - vouchers available for certain conditions.
+- Total available for each user field - you can set the price rules amount for certain users separately.
+- 
