@@ -1,3 +1,6 @@
+## add/edit feature value
+
+
 When pressing the button "Add new feature value" redirection to the "Feature value" window happens.
 
 In there there's 4 input fields, 4 drop downs and 3 buttons.
