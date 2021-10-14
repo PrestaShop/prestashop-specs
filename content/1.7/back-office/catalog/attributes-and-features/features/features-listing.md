@@ -4,9 +4,9 @@
 ![Feature](prestashop-specs/static/img/Features.png)
 
 
-Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on your shop using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
+Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on the shop that is using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
-You can set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which you can click to display the available values for this feature. From there, you can sort, edit and delete values if you need to.
+It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which can be clicked on to display the available values for this feature. From there, it can be sorted, edited and deleted values if needed.
 
 Each feature has it's own ID, Name, Value, and Position where it is placed in the list.
 
@@ -22,7 +22,7 @@ Also there are buttons at the right hand which are:
  
  All of the features have a selecting field on the left, as well as bulk actions at the bottom left for selecting/unselecting all and deleting the selected fields.
  
- On the right side, for each feature you have the option to:
+ On the right side, for each feature there are the options to:
  
   - View (view the feature in details)
   - Edit (edit the feature)
@@ -31,25 +31,25 @@ Also there are buttons at the right hand which are:
  
  ## View feature - Composition (name of the feature, can be different)
  
- By viewing the feature, you will see the name of the selected feature at the top.
+ By viewing the feature, the name of the selected feature at the top should be seen.
  
- Inside you have the option to change the ID's of the values that the feature offers. Any of the fields can be deleted by bulk actions or selecting the field and deleting the selected.
+ Inside there is the option to change the ID's of the values that the feature offers. Any of the fields can be deleted by bulk actions or selecting the field and deleting the selected.
  
- In the same page you also have the buttons at the right:
+ In the same page there are alse the buttons at the right:
  
   - Add new (for adding a new feature)
   - Refresh list (for updating the list)
   - Show SQL query (Opens a popup showing SQL code for the page)
   - Export to SQL Manager (redirects to the SQL manager in the back office)
  
- By pressing "edit" on a selected value, you are prompted with changing the following:
+ By pressing "edit" on a selected value, the following fields are prompted:
  
   - Feature (can be selected from different features that are created)
   - Value (edit the value of the feature)
   - URL (when faceted module is enabled allows to search for the value more precisely, also can be in different languages)
   - Meta title (when faceted module is enabled allows to search for the value more precisely, also can be in different languages)
   
-After making the needed changes you can either "save then add another value" or "save".
+After the changes are made either "save then add another value" or "save".
 
 ---
 
@@ -98,9 +98,9 @@ Different features added and values allows the merchant to specify his product d
 ### Products tab - Features
 
 
-In the back office, products tab, when a product is selected, a line for features is shown, where all of your features are listed.
+In the back office, products tab, when a product is selected, a line for features is shown, where all of the features are listed.
 
-In there you should find the following:
+In there the following options will appear:
 
  - Feature (drop down list to select feature by it's name)
  - Pre-defined value (drop down list to select values assigned to the feature)
