@@ -1,4 +1,4 @@
-## add/edit feature value
+## Add/edit feature value
 
 
 When pressing the button "Add new feature value" redirection to the "Feature value" window happens.
