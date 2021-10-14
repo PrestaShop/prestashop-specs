@@ -33,7 +33,7 @@ Every row from the values list when hovered on, changes the whole value row colo
 
 Every row of all the values has it's own "edit" button + drop down with an option to delete the value.
 
-  - When pressed on "edit" redirect to [edit feature value](../add-edit-feature-value.md)
+  - When pressed on "edit" redirect to [edit feature value](../features/add-edit-feature-value.md)
   - When pressed on "delete", prompts with a message "delete selected item?" and 2 selections are available "yes" or "no"
     - If pressed "yes" returns to the same page, shows message "Successful deletion."
     - If pressed "no" returns to the same page, nothing changes.
