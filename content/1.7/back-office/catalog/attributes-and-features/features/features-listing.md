@@ -31,7 +31,15 @@ There are two buttons:
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
  
 ### Bulk actions
- All of the features have a selecting field on the left, as well as bulk actions at the bottom left for selecting/unselecting all and deleting the selected fields.
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected features (using the checkboxes). A user can:
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes beginning each row of the listing.
+- Delete selected: This button will delete the selected features. 
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
+
+The action can be canceled by clicking on the cross or on the cancel button.
+
+After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
  
  On the right side, for each feature there are the options to:
  
