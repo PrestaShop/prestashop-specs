@@ -62,7 +62,6 @@ The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
  
  On the right side, for each feature there are the options to:
- 
   - View (view the feature in details)
   - Edit (edit the feature)
   - Delete (delete the feature)
