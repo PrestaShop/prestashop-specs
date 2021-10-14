@@ -4,65 +4,36 @@
 ![Feature](prestashop-specs/static/img/Features.png)
 
 ## HOW FEATURES WORK
-Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on the shop that is using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
-It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which can be clicked on to display the available values for this feature. From there, it can be sorted, edited and deleted values if needed.
-The page displays the features list with the following columns:
+Features must first be registered on the shop using this "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
+
+Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on your shop using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
+
+Then, they can be configured on a per-product basis, from the "Product" page under the "Catalog" menu, see [the specs of the add/edit product page](.../products/add-edit.md).
+
+Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the "Product Details" tab.
 
 ## FEATURES
-1. ID
-It's possible to sort by id asc or desc and search by id.
 
-2. Name
-It's possible to sort by name asc or desc and search by name.
+It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which can be clicked on to display the available values for this feature. From there, it can be sorted, edited and deleted values if needed.
 
-3. Values
-It indicates the number of values for each feature.
-
-4. Position
-The position of each feature can be changed by clicking on this column and by moving it up or down.
-After changing the position, the message "Successful update." is displayed.
-
-5. Actions
-**View.** The values of the feature are displayed in a table. This is the main action and it can be performed by clicking on the line. When the feature has no value, the following message is displayed: "No records found"
-**Edit.** The user can edit a feature as often as necessary.
-**Delete.** A feature can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
-The action can be canceled by clicking on the cross or on the cancel button.
-
-After clicking on "Delete" button, the feature and all its values are deleted, a successful message is displayed "Successful deletion."
+Each feature has it's own ID, Name, Value, and Position where it is placed in the list.
 
 There is a search bar which has inputs of "ID", "Name", "Position" which will help to find a specific feature if there are a lot of them created.
 
 ### Settings wheel
 When clicking on the settings wheel, three options are displayed:
 
-1) Refresh list
-
-After clicking on it, the page is reloaded. Sorts and searches are kept.
-2) Show SQL query
-
-After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
-
-There are two buttons:
-
-- Close: After clicking on it, the modal is closed
-- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
-3) Export to SQL Manager
-
-After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+ - Refresh list (for updating the list)
+ - Show SQL query (Opens a popup showing SQL code for the page)
+ - Export to SQL Manager (redirects to the SQL manager in the back office)
  
-### Bulk actions
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected features (using the checkboxes). A user can:
-
-- Select all/Unselect all: this button will select/unselect all the checkboxes beginning each row of the listing.
-- Delete selected: This button will delete the selected features. 
-After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462))
-
-The action can be canceled by clicking on the cross or on the cancel button.
-
-After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
  
- On the right side, for each feature there are the options to:
+ All of the features have a selecting field on the left, as well as bulk actions at the bottom left for selecting/unselecting all and deleting the selected fields.
+ 
+  - View (view the feature in details)
+  - Edit (edit the feature)
+  - Delete (delete the feature)
  
  
  ## View feature - Composition (name of the feature, can be different)
@@ -99,21 +70,7 @@ All of the fields within Features are translated to other selected language apar
 
 ## Multishop
 
-
-Only the features created in the selected store or store group (through the context) are displayed.
-
-For example, let's say I have the following configuration:
-- Group 1
-  - Shop A
-  - Shop B
-- Group 2
-  - Shop C
-  
-If I select group 1 as context, then the features created in Shop A and Shop B will be displayed.
-
-If I select Shop A as context, then the features created in Shop A will be displayed.
-
-If I select all shops as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
+Different features are allocated for different shops, meaning that 2 different shops can have different features, or they can be created for all shops.
 
 When selecting multishop, adding a new feature will open a new tab allowing to select which shop will have the created feature, a box with containing options should appear:
 
