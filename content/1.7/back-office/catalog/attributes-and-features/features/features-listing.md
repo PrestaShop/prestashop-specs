@@ -9,6 +9,7 @@ Features are configured on a per-product basis, from the "Product" page under th
 It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which can be clicked on to display the available values for this feature. From there, it can be sorted, edited and deleted values if needed.
 The page displays the features list with the following columns:
 
+## FEATURES
 1. ID
 It's possible to sort by id asc or desc and search by id.
 
