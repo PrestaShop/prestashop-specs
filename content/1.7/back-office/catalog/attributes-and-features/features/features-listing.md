@@ -98,7 +98,21 @@ All of the fields within Features are translated to other selected language apar
 
 ## Multishop
 
-Different features are allocated for different shops, meaning that 2 different shops can have different features, or they can be created for all shops.
+
+Only the features created in the selected store or store group (through the context) are displayed.
+
+For example, let's say I have the following configuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+  
+If I select group 1 as context, then the features created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the features created in Shop A will be displayed.
+
+If I select all shops as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
 
 When selecting multishop, adding a new feature will open a new tab allowing to select which shop will have the created feature, a box with containing options should appear:
 
