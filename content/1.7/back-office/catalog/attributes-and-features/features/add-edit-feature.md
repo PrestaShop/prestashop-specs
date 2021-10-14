@@ -19,7 +19,6 @@ When redirection happens the following field inputs should appear:
  - Cancel: The feature is not added and the listing is displayed
  - Save: The feature is added and a success message is displayed on the listing: "Successful creation."
  
-## If store is Multishop 
 
 When creating new feature shows a box of options that are:
 
