@@ -1,4 +1,4 @@
-# Add new feature button
+# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > ADD / EDIT FEATURE
 
 
 ![Feature2](prestashop-specs/content/1.7/back-office/Feature2.png)
