@@ -4,9 +4,9 @@
 ![Feature2](prestashop-specs/content/1.7/back-office/Feature2.png)
 
 
-The button at the top right "Add a new feature" when pressed on redirects to a page where you can create a new feature for your products.
+The button at the top right "Add a new feature" when pressed on redirects to a page where it's possible can create a new feature for the products.
 
-When you're redirected the following field inputs should appear:
+When redirection happens the following field inputs should appear:
 
  - Name (name of the feature)
  - URL (when faceted module is enabled allows to search for the value more precisely, also can be in different languages)
