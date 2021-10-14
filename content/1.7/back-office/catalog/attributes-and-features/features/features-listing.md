@@ -1,4 +1,4 @@
-# Features 
+# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES
 
 
 ![Feature](prestashop-specs/static/img/Features.png)
