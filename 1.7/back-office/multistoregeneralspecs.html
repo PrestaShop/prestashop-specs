@@ -21,16 +21,16 @@
     <title>General MultiStore Back Office :: PrestaShop Specs</title>
 
     
-    <link href="../../css/font-awesome.min.css?1634133626" rel="stylesheet">
-    <link href="../../css/syntax-github.css?1634133626" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1634133626" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1634133626" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1634133626" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css?1634225890" rel="stylesheet">
+    <link href="../../css/syntax-github.css?1634225890" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1634225890" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1634225890" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1634225890" rel="stylesheet">
     
-    <link href="../../style.css?1634133626" rel="stylesheet">
+    <link href="../../style.css?1634225890" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 
-    <script src="../../js/jquery-3.3.1.min.js?1634133626"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1634225890"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -6716,9 +6716,12 @@ It opens the store&rsquo;s URL page edition.</p>
 <p>Given I am a merchant in a multistore context, when I am in the multistore header context drop-down in the back-office and if the URL of the shop has not been configured, then I want to be able to configure the URL.</p>
 <p><strong>Behavior when switching context</strong>
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch</p>
-<p>If the user tries to change context without having saved, a modal appears: &ldquo;You are about to switch context. Do you want to save your modifications before?&rdquo; with 2 CTA: &ldquo;Save&rdquo; and &ldquo;Cancel&rdquo;
-If the user clicks on &ldquo;Save&rdquo;, then modifications are saved and the context is changed for the one selected
-If the user clicks on &ldquo;Cancel&rdquo;, then modifications are not saved and the context is changed for the one selected</p>
+<p>If the user tries to change context without having saved, a modal appears with the following content:
+Title: &ldquo;Switch context?&rdquo;
+Body: &ldquo;Switching context now will discard all unsaved changes.&rdquo;
+2 buttons &ldquo;Switch context anyway&rdquo; and &ldquo;Cancel&rdquo;
+If the user clicks on &ldquo;Switch context anyway&rdquo;, then modifications are not saved and the context is changed for the one selected.
+If the user clicks on &ldquo;Cancel&rdquo;, then the context is not changed.</p>
 <p><strong>User acceptance test</strong></p>
 <p>Given I am a merchant in a multistore context, when I am in the back-office and when I try to change context, if I have not saved my modifications then a modal is displayed with 2 choices: Save &amp; Cancel.</p>
 <p>Given the modal displayed, when I click on Save, then my modifications are saved and the context is changed for the one selected.</p>
@@ -6934,9 +6937,9 @@ Other groups and shops are not displayed.</li>
 <footer class="article-footer">
 	
 <div>
-  Last updated on June 4, 2021
+  Last updated on October 14, 2021
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/0c247475ad6861c7288afae318c935a2175de0e8">"Markdown : Adapt header, remove .gitkeep &amp; add _index.md in all directories" (0c24747)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/adba5c045af3b983ceb9c018e15fbaa6a3a20574">"Updates behavior when switching context" (adba5c0)</a>
   
 </div>
 
@@ -6957,19 +6960,19 @@ Other groups and shops are not displayed.</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1634133626"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1634133626"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1634133626"></script>
-    <script src="../../js/jquery.sticky.js?1634133626"></script>
-    <script src="../../js/featherlight.min.js?1634133626"></script>
-    <script src="../../js/html5shiv-printshiv.min.js?1634133626"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1634133626"></script>
-    <script src="../../js/learn.js?1634133626"></script>
-    <script src="../../js/hugo-learn.js?1634133626"></script>
+    <script src="../../js/clipboard.min.js?1634225890"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1634225890"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1634225890"></script>
+    <script src="../../js/jquery.sticky.js?1634225890"></script>
+    <script src="../../js/featherlight.min.js?1634225890"></script>
+    <script src="../../js/html5shiv-printshiv.min.js?1634225890"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1634225890"></script>
+    <script src="../../js/learn.js?1634225890"></script>
+    <script src="../../js/hugo-learn.js?1634225890"></script>
     
-    <script src="../../main.js?1634133626"></script>
-    <link href="../../mermaid/mermaid.css?1634133626" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1634133626"></script>
+    <script src="../../main.js?1634225890"></script>
+    <link href="../../mermaid/mermaid.css?1634225890" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1634225890"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
