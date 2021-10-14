@@ -1,4 +1,4 @@
- ## View feature - Composition (name of the feature, can be different)
+ # View feature - Composition (name of the feature, can be different)
  
  By viewing the feature, the name of the selected feature at the top should be seen.
  
