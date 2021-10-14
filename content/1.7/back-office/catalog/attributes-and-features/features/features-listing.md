@@ -3,7 +3,7 @@
 
 ![Feature](prestashop-specs/static/img/Features.png)
 
-
+## HOW FEATURES WORK
 Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on the shop that is using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
 It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which can be clicked on to display the available values for this feature. From there, it can be sorted, edited and deleted values if needed.
