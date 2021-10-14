@@ -124,9 +124,12 @@ Given I am a merchant in a multistore context, when I am in the multistore heade
 **Behavior when switching context**
 DESIGN:https://invis.io/QPWKQY5DV79#/420155466_Poppin_Context_Switch
 
-If the user tries to change context without having saved, a modal appears: "You are about to switch context. Do you want to save your modifications before?" with 2 CTA: "Save" and "Cancel"
-If the user clicks on "Save", then modifications are saved and the context is changed for the one selected
-If the user clicks on "Cancel", then modifications are not saved and the context is changed for the one selected
+If the user tries to change context without having saved, a modal appears with the following content:
+Title: "Switch context?"
+Body: "Switching context now will discard all unsaved changes."
+2 buttons "Switch context anyway" and "Cancel"
+If the user clicks on "Switch context anyway", then modifications are not saved and the context is changed for the one selected.
+If the user clicks on "Cancel", then the context is not changed.
 
 **User acceptance test**
 
