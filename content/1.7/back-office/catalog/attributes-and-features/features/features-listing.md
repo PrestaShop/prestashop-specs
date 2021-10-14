@@ -1,7 +1,7 @@
 # SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES
 
 
-![Feature](prestashop-specs/static/img/Features.png)
+![Feature](.../prestashop-specs/static/img/Features.png)
 
 ## HOW FEATURES WORK
 
