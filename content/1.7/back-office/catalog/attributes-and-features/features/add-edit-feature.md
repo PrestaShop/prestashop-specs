@@ -1,7 +1,7 @@
 # SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > ADD / EDIT FEATURE
 
 
-![Feature2](prestashop-specs/content/1.7/back-office/Feature2.png)
+![Feature2](../prestashop-specs/content/1.7/back-office/Feature2.png)
 
 
 While adding or editing a feature, the following fields / toggles / parameters are displayed:
@@ -64,5 +64,5 @@ When selecting multishop, adding a new feature will open a new tab allowing to s
  
  When changes are made, and saved, a message with a green backgroung saying "Successful update." should appear.
  
- ![Update](prestashop-specs/content/1.7/back-office/Update.png)
+ ![Update](../prestashop-specs/content/1.7/back-office/Update.png)
 
