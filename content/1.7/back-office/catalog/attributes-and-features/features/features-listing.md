@@ -16,7 +16,7 @@ Once configured on a per-product basis, the features and values of the products 
 ## FEATURES
 
 ### Call to action
-2 call to actions are displayed in the header of this page:
+1 call to actions are displayed in the header of this page:
 1) Add new feature
 👉 See the [specs of the add/edit feature](./add-edit-feature.md) 
 2) Add new feature value
@@ -66,8 +66,6 @@ All of the fields within Features are translated to other selected language apar
  
 
 ---
-
-## Back office
 
 ### Products tab - Features
 
