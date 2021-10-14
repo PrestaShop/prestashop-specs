@@ -49,6 +49,11 @@ On the right side:
  If the checkbox selected to create the feature on all shops, will appear on all shops, if specific shop, only that shop will see the feature.
  
  
+Different features are allocated for different shops, meaning that 2 different shops can have different features, or they can be created for all shops.
+
+When selecting multishop, adding a new feature will open a new tab allowing to select which shop will have the created feature, a box with containing options should appear.
+ 
+ 
  # Editing an existing feature
  
  Pressing the dropdown menu at the right side prompts with an option to either edit or delete the feature.
