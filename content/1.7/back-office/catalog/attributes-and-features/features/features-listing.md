@@ -45,13 +45,6 @@ When clicking on the settings wheel, three options are displayed:
 ---
 
 
-## Multilanguage
-
-All of the fields within Features are translated to other selected language apart from the "Position" section.
-
-
----
-
 ## Multishop
 
 
