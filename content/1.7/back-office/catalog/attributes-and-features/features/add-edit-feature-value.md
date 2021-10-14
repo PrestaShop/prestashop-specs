@@ -18,6 +18,8 @@ Below the 4 fields there are 3 more buttons (from left to right):
   - Save then add another value (after saving, saves the added value, clears the fields to create a new one)
   - Save (Saves the value, redirect back to features menu with a message showing "Successful creation.")
 
+---
+
 If any of the mandatory fields are not entered/selected, the following message in a red background appears "The field value is required at least in English (English)."
 
 
