@@ -15,7 +15,6 @@ There is a search bar which has inputs of "ID", "Name", "Position" which will he
 ### Settings wheel
 When clicking on the settings wheel, three options are displayed:
 
- - Add new (for adding a new feature)
 1) Refresh list
 
 After clicking on it, the page is reloaded. Sorts and searches are kept.
