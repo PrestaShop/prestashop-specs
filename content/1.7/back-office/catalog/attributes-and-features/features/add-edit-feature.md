@@ -57,7 +57,7 @@ On the right side:
  
  All changes made will appear in the Attributes&Features -> Features list with a new ID.
  
- When changes are made, and saved, a message with a green backgroung saying "Seuccessful update." should appear.
+ When changes are made, and saved, a message with a green backgroung saying "Successful update." should appear.
  
  ![Update](prestashop-specs/content/1.7/back-office/Update.png)
 
