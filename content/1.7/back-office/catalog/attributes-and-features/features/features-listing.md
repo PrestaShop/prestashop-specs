@@ -1,7 +1,7 @@
 # Features 
 
 
-![Feature](prestashop-specs/content/1.7/back-office/Features.png)
+![Feature](prestashop-specs/static/img/Features.png)
 
 
 Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on your shop using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
@@ -86,7 +86,7 @@ From left to right firstly the name of the feature is shown. On the right from t
 Different features added and values allows the merchant to specify his product details in the front office.
 
 
-![FeaturesFO](prestashop-specs/content/1.7/back-office/FeaturesFO.png)
+![FeaturesFO](prestashop-specs/static/img/FeaturesFO.png)
 
 
 
