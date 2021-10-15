@@ -20,6 +20,7 @@ The following information is stated by default in Conditions tab:
 - Total available input field is stated by digital value 1 by default
 - Total available for each user is stated by digital value 1 by default
 
+The Conditions tab values are all set up to disabled by default.
 
 The explanations of the input fields, dropdowns, switch toggle buttons and text fields are stated below:<br>
 
