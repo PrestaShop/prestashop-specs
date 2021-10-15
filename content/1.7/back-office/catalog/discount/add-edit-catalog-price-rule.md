@@ -16,17 +16,18 @@ The second user interface will lead to Catalog Price rules creation page.
 ## Price Rules input fields and meanings
 
  **Name** - this input field is marked with asterisk sign, meaning that this feald is mandatory. The name can be set for the first Price rule.<br>
- **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, it can be set that only USA customers could see the price rules for Prestahop catalogs, then it should be selected as the USD currency here.<br>
- **Country** - specific country can be set for the Catalog price rules. For example, it can be set that only German customers could see the certain price rules, Germany should be set in the dropdown.<br>
-**Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. Appropriate group can be selected, in order to show the price rules for that certain group of visitors in website.<br>
-**From quantity** - it is mandatory field, meaning that the input field is required, for further steps. It can be typed, for example, 50 and it will mean, that all the catalog items with quantity up to 50 will get the certain catalog discount rule.<br>
-**Price (tax excl.)** - it is a field that can be typed, for example, 10 and it will mean, that all the catalog items with the prices up to 10 will get the certain catalog discount rule.<br>
-**Leave initial price (checkobox)** - for certain needs, it can be checkboxed, users would get the catalog price rules from the initial original item price.<br>
-**From** - just simple date and time selection picker widged. Select the year, month, day and the time from when the catalog price rule will be executed and displayed for Prestashop items.<br>
-**To** - just simple date and time selection picker widged. Select the year, month, day and the time the price rule existance should be exceeded for Prestashop items.<br>
-**Reduction type** - certain discount affection will be expressed as Percentage or Amount in the Prestashop items. It can be selected by one of the types in the dropdown.<br>
-**Reduction with or without taxes** - it can be chosen, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices.<br>
-**Reduction** - it is an Amount or Percentage type of input here. It can be set as certain digits here for the catalog prices to be shown.<br><br>
+ **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, it can be set that only USA customers could see the price rules for Prestahop catalogs, then it should be selected as the USD currency here. By default, the Currency dropdown will be set for "All currencies".<br>
+ **Country** - specific country can be set for the Catalog price rules. For example, it can be set that only German customers could see the certain price rules, Germany should be set in the dropdown. By default, the Country dropdown will be set for "All countries".<br>
+**Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. Appropriate group can be selected, in order to show the price rules for that certain group of visitors in website. By default, the Group dropdown will be set for "All countries".<br>
+**From quantity** - it is mandatory field, meaning that the input field is required, for further steps. It can be typed, for example, 50 and it will mean, that all the catalog items with quantity up to 50 will get the certain catalog discount rule. By default, the Form quantity field is seto to value 1.<br>
+**Price (tax excl.)** - it is a field that can be typed, for example, 10 and it will mean, that all the catalog items with the prices up to 10 will get the certain catalog discount rule. By default, the field is gray and disabled, however if the "Leave initial price (checkbox)" is disabled, the field will be instantly enabled.<br>
+**Leave initial price (checkobox)** - for certain needs, it can be checkboxed, users would get the catalog price rules from the initial original item price. By default, the checkbox is enabled.<br>
+**From** - just simple date and time selection picker widged. Select the year, month, day and the time from when the catalog price rule will be executed and displayed for Prestashop items. By default the field is empty.<br>
+**To** - just simple date and time selection picker widged. Select the year, month, day and the time the price rule existance should be exceeded for Prestashop items. By default the field is empty.<br>
+**Reduction type** - certain discount affection will be expressed as Percentage or Amount in the Prestashop items. It can be selected by one of the types in the dropdown. By default, the field is set to "Amount".<br>
+**Reduction with or without taxes** - it can be chosen, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices. By default, the field is set to "Tax excluded".<br>
+**Reduction** - it is an Amount or Percentage type of input here. It can be set as certain digits here for the catalog prices to be shown. By default, the input digital value is zero.
+
 It can be canceller by clicking **Cancel** your form and discard your changes, by clicking CANCEL button on the left, or you may just **Save** the new catalog price rule by clicking the SAVE button on the right.
 
 ### Adding several rules
@@ -46,7 +47,7 @@ When I select a product which complies both rules, this happens in Front office 
 The save 10€ label is automatically displayed, which is the expected behaviour. The discount grid is displayed on the product page according to “Rule 2” which is the expected behaviour.
 
 ## Condition Groups
-There are also additional and extended Catalog price rules combinations you can specify for your Catalog items.
+There are also additional and extended Catalog price rules combinations that can be specified for your Catalog items.
 
 ![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/condition-group.png)
 
