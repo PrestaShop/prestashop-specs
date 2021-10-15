@@ -48,7 +48,7 @@ The save 10€ label is automatically displayed, which is the expected behaviour
 ## Condition Groups
 There are also additional and extended Catalog price rules combinations you can specify for your Catalog items.
 
-![image](static/img/condition-group.png)
+![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/condition-group.png)
 
 **Those conditions are related to :**
 - Category : the merchant can choose to apply discount only on products which belong to the chosen category. 
