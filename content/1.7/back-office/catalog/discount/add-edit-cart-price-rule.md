@@ -41,27 +41,27 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 
 [image](static/img/cart-rules-conditions-tab.png)
 
-- Limit to a single customer input field - you can start typing the customer name or email in order to set the Cart rule condition for certain customer.
-- Valid - simple date picker form, where you can set the existance time of the rule condition
-- Minimum amount field - set the minimum amount from which the customers will see the Cart rule. As well, you can set the currency, if prices should affected with taxes or without taxes and if shipping is affected too.
-- Total available - this filed describes the quantity of the cart rules - vouchers available for certain conditions.
-- Total available for each user field - you can set the price rules amount for certain users separately.
-- Restrictions - also you can set certain conditions for the main cart rule condition.
-- Carrier selection - you can set certain carriers, that could be affected by the rule condition.
-- Customer group selection - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest.
-- Compatibility with other cart rules - you can include what cart rules can be combined with another cart rules.
-- Product selection - this is kind of important condition for cart rule - you can select specific products from whole webshop, that can have the cart rule.
+- **Limit to a single customer input field** - you can start typing the customer name or email in order to set the Cart rule condition for certain customer.
+- **Valid** - simple date picker form, where you can set the existance time of the rule condition
+- **Minimum amount field** - set the minimum amount from which the customers will see the Cart rule. As well, you can set the currency, if prices should affected with taxes or without taxes and if shipping is affected too.
+- **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions.
+- **Total available for each user field** - you can set the price rules amount for certain users separately.
+- **Restrictions** - also you can set certain conditions for the main cart rule condition.
+- **Carrier selection** - you can set certain carriers, that could be affected by the rule condition.
+- **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest.
+- **Compatibility with other cart rules** - you can include what cart rules can be combined with another cart rules.
+- **Product selection** - this is kind of important condition for cart rule - you can select specific products from whole webshop, that can have the cart rule.
 
 ## Actions tab
 Here you can set the actions that can be executed after correct conditions are set.
 
 [image](static/img/cart-rules-actions-tab.png)
 
-- Free shipping switch toggle button - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
-- Apply a discount - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
-- Send a free gift switch toggle button - this option enables you to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
-- Search a product field  - will appear and will let you search the certain product.
-- Matching products dropdown - will appear when there will be some characters typed in the "Search a product" field.
+- **Free shipping switch toggle button** - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
+- **Apply a discount** - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
+- **Send a free gift switch toggle button** - this option enables you to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
+- **Search a product field** - will appear and will let you search the certain product.
+- **Matching products dropdown** - will appear when there will be some characters typed in the "Search a product" field.
 
 ## Multistore 
 All these Cart rule settings are separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
