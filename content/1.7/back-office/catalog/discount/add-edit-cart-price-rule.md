@@ -63,5 +63,10 @@ The certain action can be set after cart rule is created.
 - **Search a product field** - it will set the ability to search the certain product.
 - **Matching products dropdown** - it will appear when there will be some characters typed in the "Search a product" field.
 
+## Call-to-action (CTA) functionalities
+**Cancel** - initiates the action to discard all the Cart rule changes that were before Saving action
+**Save and Stay** - initiates the action to save the settings, and stay on the same tab after the saving. Usually if all appropriate fields are set correctly, you will get green notification displayed on the top of the interface right after the click of this button.
+**Save** - initiates the action to save the settings, and stay on the Cart rules list after the saving. Usually if all appropriate fields are set correctly, you will get green notification displayed on the top of the interface right after the click of this button.
+
 ## Multistore 
 All these Cart rule settings are separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
