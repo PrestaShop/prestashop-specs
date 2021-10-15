@@ -28,13 +28,13 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 
 [image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/cart-rules-information-tab.png)
 
-- Name - it is a mandatory field, it can be set as unique rule name. There is a widget at the right of this field with multiple languages. The different languages can be set to the rule names for this certain Information tab form.
-- Description - it can be described where is the cart rule used for in more details.
-- Code - unique cart rule code can be set here, or simply by clicking Generate and Prestashop will generate the rule automatically with unique code name. It will become as voucher from front end side.
-- Highlight switch toggle button - this option can be enabled, then the cart rule voucher will be displayed in cart summary. When there is no Voucher Code set, the Highlight switch toggle button is hidden.
-- Partial use switch toggle button - this option can be enabled, when the total cart sum is smaller than the voucher sum. If Partial usage is switched off, voucher value will be lovered to the total order amount. If it will be enabled, new voucher will be created in the Cart, as a reminder.
-- Priority - priority of Cart rules can be set here, in what order to show the rules for the customers of the webshop. For example, setting 1 for the most importand cart rule.
-- Status switch toggle button - enabling this button will enable the rule, disabling it will deactivate the rule and vouchers for customers.
+- **Name** - it is a mandatory field, it can be set as unique rule name. There is a widget at the right of this field with multiple languages. The different languages can be set to the rule names for this certain Information tab form.
+- **Description** - it can be described where is the cart rule used for in more details.
+- **Code** - unique cart rule code can be set here, or simply by clicking Generate and Prestashop will generate the rule automatically with unique code name. It will become as voucher from front end side.
+- **Highlight switch toggle button** - this option can be enabled, then the cart rule voucher will be displayed in cart summary. When there is no Voucher Code set, the Highlight switch toggle button is hidden.
+- **Partial use switch toggle button** - this option can be enabled, when the total cart sum is smaller than the voucher sum. If Partial usage is switched off, voucher value will be lovered to the total order amount. If it will be enabled, new voucher will be created in the Cart, as a reminder.
+- **Priority** - priority of Cart rules can be set here, in what order to show the rules for the customers of the webshop. For example, setting 1 for the most importand cart rule.
+- **Status switch toggle button** - enabling this button will enable the rule, disabling it will deactivate the rule and vouchers for customers.
 
 ## Conditions tab
 The condition tab, allows the user to specify cart rule conditions to determine how the cart rule will be use in the Prestashop.
