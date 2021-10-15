@@ -52,12 +52,12 @@ There are also additional and extended Catalog price rules combinations that can
 ![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/condition-group.png)
 
 **Those conditions are related to :**
-- Category : the merchant can choose to apply discount only on products which belong to the chosen category. 
-- Brand : the merchant can choose to apply a discount on a specific brand only 
-- Supplier : same as above 
-- Attributes : same as above, the merchant can choose to apply a discount on a specific attribute. To do so, he needs to choose the attribute type and a specific value. 
+- Category : the merchant can choose to apply discount only on products which belong to the chosen category. By default, the dropdown category is set to Home.
+- Brand : the merchant can choose to apply a discount on a specific brand only. By default, the dropdown is set to default Prestashop brand Graphic Corner.
+- Supplier : same as above. By default, the dropdown is set to Accessories supplier.
+- Attributes : same as above, the merchant can choose to apply a discount on a specific attribute. To do so, he needs to choose the attribute type and a specific value. By default the dropdown value is set to Color and the next dropdown is set to Grey.
 - Features : same as above.
-- Value : displays the certain value expression, that can be chosen above in the form
+- Value : displays the certain value expression, that can be chosen above in the form. By default, the first dropdown is set to Composition value, the next dropdown is set to Ceramic.
 - AND : is an operator, which indicates that the contitional group elements are working together
 - OR : is an operator, which indicates the combining fact between two conditional groups
 
