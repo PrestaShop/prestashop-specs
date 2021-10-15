@@ -4,7 +4,24 @@ weight: 1
 ---
 
 # Cart Rule > Edit
-When you enter the Cart rule editing UI, there are 3 separate tabs - Information, Conditions and Actions. Each of them are combined together with the general cart rules functionality. The explanations of the input fields, dropdowns, switch toggle buttons and text fields:<br>
+When you enter the Cart rule editing UI, there are 3 separate tabs - Information, Conditions and Actions. Each of them are combined together with the general cart rules functionality. 
+
+There are default values already stated in Information tab:
+- Partial use toggle button is switched on by default
+- Priority input field is stated with digital value 1 by default
+- Status toggle button is switched on by default
+
+The following information is stated by default in Conditions tab:
+- Valid data picker widget is stated for the 1 month value by default
+- Minimum amount is stated by digital value 0
+- Default currency is stated by the default Prestashop currency
+- Tax excluded dropdown is stated by default
+- Shipping excluded dropdown is stated by default
+- Total available input field is stated by digital value 1 by default
+- Total available for each user is stated by digital value 1 by default
+
+
+The explanations of the input fields, dropdowns, switch toggle buttons and text fields are stated below:<br>
 
 ## Information tab
 
