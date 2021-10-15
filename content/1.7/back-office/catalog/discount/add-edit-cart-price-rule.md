@@ -53,9 +53,9 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 - **Product selection** - this is kind of important condition for cart rule - you can select specific products from whole webshop, that can have the cart rule.
 
 ## Actions tab
-Here you can set the actions that can be executed after correct conditions are set.
+The certain action can be set after cart rule is created.
 
-[image](static/img/cart-rules-actions-tab.png)
+[image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/cart-rules-actions-tab.png)
 
 - **Free shipping switch toggle button** - set if you want that cart rule will initiate a free shipping method for customer in checkout form.
 - **Apply a discount** - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When you set the certain Amount - the user will get a discount of a certain amount of price. Also you can set Currency and the Taxes conditions here. And you can set the action to None - in that case user of the checkout will not get any discounting at all.
