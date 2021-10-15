@@ -37,7 +37,7 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 - Status switch toggle button - enabling this button will enable the rule, disabling it will deactivate the rule and vouchers for customers.
 
 ## Conditions tab
-One of the most important tab, where you can describe the certain conditions, how the Cart rule should be appearing as a voucher in the Prestashop Cart and what circumstances will be affecting the rule.
+The condition tab, allows the user to specify cart rule conditions to determine how the cart rule will be use in the Prestashop.
 
 [image](static/img/cart-rules-conditions-tab.png)
 
