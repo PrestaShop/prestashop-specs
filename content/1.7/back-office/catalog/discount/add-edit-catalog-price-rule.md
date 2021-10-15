@@ -8,26 +8,26 @@ The first step of this document is to detail global and generic expected behavio
 
 ## Creating Price rules for catalogs
 
-If you want to create first Catalog Price rule, click on the blue button with plus on the top-right of the page - (+) Add new catalog price rule. Also, as an alternative, you can click on smaller plus (+) icon in the top-right of the Catalog Price rules table.
+First Catalog price rule can be created by clicking on the blue button with plus on the top-right of the page - (+) Add new catalog price rule. Also, as an alternative, it can be clicked on smaller plus (+) icon in the top-right of the Catalog Price rules table.
 
-After that, you will be navigated to the Catalog Price rules creation page.
-![image](static/img/catalog-price-rules.png)
+The second user interface will lead to Catalog Price rules creation page.
+![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/catalog-price-rules.png)
 
 ## Price Rules input fields and meanings
 
- **Name** - this input field is marked with asterisk sign, meaning that this feald is required. Give it a name for your first price rule.<br>
- **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, if you want, that only USA customers could see the price rules for Prestahop catalogs, you should select the USD currency here.<br>
- **Country** - you can select a specific country for the Catalog price rules. For example, if you want, that only German customers could see the certain price rules, you should select the Germany in the dropdown.<br>
-**Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. You can select the appropriate Group, in order to show the price rules for that certain group of visitors in your website.<br>
-**From quantity** - as you can see, it is marked with asterisk, meaning that the input field is required, for further steps. You can type, for example, 50 and it will mean, that all the catalog items with quantity up to 50 will get the certain catalog discount rule.<br>
-**Price (tax excl.)** - it is a field that you can type, for example, 10 and it will mean, that all the catalog items with the prices up to 10 will get the certain catalog discount rule.<br>
-**Leave initial price (checkobox)** - for your needs, you can simply checkbox this, if you want that your merchants would get the catalog price rules from the initial original item price.<br>
-**From** - in this place, you can be already familiar with the date boxes. Just simply select the time of the date picker. Select the year, month, day and the time from when the catalog price rule will be executed and displayed for Prestashop items.<br>
-**To** - in this place, you can be already familiar with the date boxes as well. Just simply select the time of the date picker. Select the year, month, day and the time the price rule existance should be exceeded for Prestashop items.<br>
-**Reduction type** - you can choose for your merchants, that the discount affection will be expressed as Percentage or Amount in the Prestashop items. You can select one of the types in the dropdown.<br>
-**Reduction with or without taxes** - you can choose, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices.<br>
-**Reduction** - it is an Amount or Percentage type of input here. You can just input the certain digits here for your catalog prices to be shown.<br><br>
-You may **Cancel** your form and discard your changes, by clicking CANCEL button on the left, or you may just **Save** the new catalog price rule by clicking the SAVE button on the right.
+ **Name** - this input field is marked with asterisk sign, meaning that this feald is mandatory. The name can be set for the first Price rule.<br>
+ **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, it can be set that only USA customers could see the price rules for Prestahop catalogs, then it should be selected as the USD currency here.<br>
+ **Country** - specific country can be set for the Catalog price rules. For example, it can be set that only German customers could see the certain price rules, Germany should be set in the dropdown.<br>
+**Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. Appropriate group can be selected, in order to show the price rules for that certain group of visitors in website.<br>
+**From quantity** - it is mandatory field, meaning that the input field is required, for further steps. It can be typed, for example, 50 and it will mean, that all the catalog items with quantity up to 50 will get the certain catalog discount rule.<br>
+**Price (tax excl.)** - it is a field that can be typed, for example, 10 and it will mean, that all the catalog items with the prices up to 10 will get the certain catalog discount rule.<br>
+**Leave initial price (checkobox)** - for certain needs, it can be checkboxed, users would get the catalog price rules from the initial original item price.<br>
+**From** - just simple date and time selection picker widged. Select the year, month, day and the time from when the catalog price rule will be executed and displayed for Prestashop items.<br>
+**To** - just simple date and time selection picker widged. Select the year, month, day and the time the price rule existance should be exceeded for Prestashop items.<br>
+**Reduction type** - certain discount affection will be expressed as Percentage or Amount in the Prestashop items. It can be selected by one of the types in the dropdown.<br>
+**Reduction with or without taxes** - it can be chosen, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices.<br>
+**Reduction** - it is an Amount or Percentage type of input here. It can be set as certain digits here for the catalog prices to be shown.<br><br>
+It can be canceller by clicking **Cancel** your form and discard your changes, by clicking CANCEL button on the left, or you may just **Save** the new catalog price rule by clicking the SAVE button on the right.
 
 ### Adding several rules
 
