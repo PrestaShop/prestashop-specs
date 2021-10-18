@@ -30,4 +30,6 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 - Discounts display on front office
 
 ## Multistore 
+This interface is not affected by any of the multistores, because additional multistore settings are managed separately by each of the Catalog Cart rule.
+
 All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
