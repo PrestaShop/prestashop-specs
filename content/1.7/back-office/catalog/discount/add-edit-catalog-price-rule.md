@@ -11,11 +11,12 @@ The first step of this document is to detail global and generic expected behavio
 First Catalog price rule can be created by clicking on the blue button with plus on the top-right of the page - (+) Add new catalog price rule. Also, as an alternative, it can be clicked on smaller plus (+) icon in the top-right of the Catalog Price rules table.
 
 The second user interface will lead to Catalog Price rules creation page.
-![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/catalog-price-rules.png)
+![Catalog Price Rules](/static/img/catalog-price-rules.png)
 
 ## Price Rules input fields and meanings
 
  **Name** - this input field is marked with asterisk sign, meaning that this feald is mandatory. The name can be set for the first Price rule.<br>
+ **Shop** - this field is hidden unless there is Multistore functionality enabled on Prestashop.
  **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, it can be set that only USA customers could see the price rules for Prestahop catalogs, then it should be selected as the USD currency here. By default, the Currency dropdown will be set for "All currencies".<br>
  **Country** - specific country can be set for the Catalog price rules. For example, it can be set that only German customers could see the certain price rules, Germany should be set in the dropdown. By default, the Country dropdown will be set for "All countries".<br>
 **Group** - Prestashop provides specific customer groups. By default, there are Visitor, Guest and Customer. Appropriate group can be selected, in order to show the price rules for that certain group of visitors in website. By default, the Group dropdown will be set for "All countries".<br>
@@ -49,7 +50,7 @@ The save 10€ label is automatically displayed, which is the expected behaviour
 ## Condition Groups
 There are also additional and extended Catalog price rules combinations that can be specified for your Catalog items.
 
-![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/condition-group.png)
+![Condition Group](/static/img/condition-group.png)
 
 **Those conditions are related to :**
 - Category : the merchant can choose to apply discount only on products which belong to the chosen category. By default, the dropdown category is set to Home.
@@ -105,4 +106,6 @@ Adding one or several condition groups Once the basic conditions have been defin
 Ex 2 : Same example but with 2 rules with the same minimum quantity. After a few tests, it seems that only the oldest rule will apply to the product. Other rules will have no effect on the product. Shouldn’t this be explained in the rules listing ?
 
 ## Multistore 
-All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
+There is an option to configure different Catalog Rules for different separate Prestashop shops. It can be set by navigating to Catalog Cart Rules > Create new rule or Edit existing > Shop dropdown field. Selecting the appropriate shop and saving the settings will enable showing the Catalog Price rules for specific shop.
+
+The settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
