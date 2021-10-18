@@ -34,5 +34,14 @@ When there are multiple cart rules created, you can manage them and configure th
 ## Edit
 - **Edit** - cart rule can be edited separately by clicking Edit, and then deleting it by clicking the arrow button near Edit > Delete.
 
+## Notifications
+When navigating to Cart Rules listing page, there will be Bulk Action cklickable options. If there is nothing selected in Bulk Actions, and action is executed, there will be an instant response in User Interface with the error notification message. The default message will be:<br>
+
+"You must select at least one item to perform a bulk action. "
+
+If deletion of the one of the Cart Rules are executed, there is an instant response in the User Inteface. The default message will be:<br>
+
+"Successful deletion."
+
 ## Multistore 
 All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
