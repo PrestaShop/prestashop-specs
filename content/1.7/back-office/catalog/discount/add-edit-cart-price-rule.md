@@ -53,7 +53,11 @@ The certain action can be set after cart rule is created. The Actions tab values
 **Save** - initiates the action to save the settings, and stay on the Cart rules list after the saving. Usually if all appropriate fields are set correctly, you will get success notification displayed on the top of the interface right after the click of this button.
 
 ## Notifications
-When clicking the Save or Save and Stay buttons, while the form is completely empty, there will be instant response in the User Interface with error notification message. The default message will be:<br>
+When navigating to Cart Rules listing page, there will be Bulk Action cklickable options. If there is nothing selected in Bulk Actions, and action is executed, there will be an instant response in User Interface with the error notification message. The default message will be:<br>
+
+"You must select at least one item to perform a bulk action. "
+
+When navigating to Cart Rules editing and clicking the Save or Save and Stay buttons, while the form is completely empty, there will be instant response in the User Interface with error notification message. The default message will be:<br>
 
 "There are 2 errors.<br>
 An action is required for this cart rule.<br>
