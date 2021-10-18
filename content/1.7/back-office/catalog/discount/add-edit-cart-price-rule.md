@@ -52,5 +52,16 @@ The certain action can be set after cart rule is created. The Actions tab values
 **Save and Stay** - initiates the action to save the settings, and stay on the same tab after the saving. Usually if all appropriate fields are set correctly, you will get success notification displayed on the top of the interface right after the click of this button.
 **Save** - initiates the action to save the settings, and stay on the Cart rules list after the saving. Usually if all appropriate fields are set correctly, you will get success notification displayed on the top of the interface right after the click of this button.
 
+## Notifications
+When clicking the Save or Save and Stay buttons, while the form is empty, there will be instant response in the User Interface with error notification message. The default message will be:<br>
+
+"There are 2 errors.<br>
+An action is required for this cart rule.<br>
+The field name is required at least in English (English)."<br>
+
+When clicking the Save or Save and Stay buttons, while the form is correctly filled, there will be instant response in the User Interface, with success notification message. The default message will be:<br>
+
+"Successful update. "<br>
+
 ## Multistore 
 All these Cart rule settings are separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
