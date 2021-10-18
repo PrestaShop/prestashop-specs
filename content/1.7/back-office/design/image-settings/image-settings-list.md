@@ -13,3 +13,10 @@ During the first Prestashop installation process on the server, Prestashop insta
 - large_default
 - category_default
 - stores_default
+
+## Image Settings table properties
+- Checkboxes - each image setting can be checkboxed separately, if there is a need of Bulk Actions executions with certain image setting. By default, there is nothing selected.
+- ID - specific digital value to describe the image setting unique operator. By default they are arranged automatically.
+- Name - specific image setting value names. By default they are installed automatically.
+- Width - specific image setting value, describing the width of the image in pixels.
+- Height - specific image setting value, describing the height of the image in pixels.
