@@ -27,14 +27,15 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 
 - **Limit to a single customer input field** - this field sets the customer name or email in order to set the Cart rule condition for certain customer.
 - **Valid** - simple date picker form, where date existance can be set. Valid data picker widget is stated for the 1 month value by default.
-- **Minimum amount field** - this field sets minimum amount from which the customers will see the Cart rule. As well, the currency can be set, if prices should affected with taxes or without taxes and if shipping is affected too. Minimum amount is stated by digital value 0.
+- **Minimum amount field** - this field sets minimum amount from which the customers will see the Cart rule. As well, the currency can be set, if prices should affected with taxes or without taxes and if shipping is affected too. Minimum amount is stated by digital value 0. Default currency is stated by the default Prestashop currency. Tax excluded dropdown is stated by default. Shipping excluded dropdown is stated by default.
 - **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions. Total available input field is stated by digital value 1 by default.
 - **Total available for each user field** - this field sets the price rules amount for certain users separately. Total available for each user is stated by digital value 1 by default.
-- **Restrictions** - also you can set certain conditions for the main cart rule condition. Default currency is stated by the default Prestashop currency. Tax excluded dropdown is stated by default. Shipping excluded dropdown is stated by default.
-- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition.
-- **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest.
-- **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules.
-- **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule.
+- **Restrictions** - also you can set certain conditions for the main cart rule condition. By default, the restrictions are set as unchecboxed condition. 
+- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. By default, it is set as uncheckboxed condition.
+- **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. By default, it is set as uncheckboxed condition.
+- **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition.
+- **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition.
+- **Shop selection** - this selection sets the shop in Prestashop, where to apply the Cart Rule. By default, this field is hidden, if there is no Multistores configured. 
 
 ## Actions tab
 The certain action can be set after cart rule is created. The Actions tab values are all set up to disabled by default.
@@ -64,4 +65,6 @@ When clicking the Save or Save and Stay buttons, while the form is correctly fil
 "Successful update. "<br>
 
 ## Multistore 
+Once the Multistores are configured in Prestashop, Cart Rules can be applied for certain shop. Applying the Cart Rule for certain shop can be configured by navigating to Cart Rules > Edit section > Configure Tab. There is a checkbox in Restriction option. Clicking the checkbox of **Shop selection** option, enables switching the appropriate Prestashop shop to the "Selected shops" area. This enables applying the Cart Rule for certain Prestashop Multistore.
+
 All these Cart rule settings are separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
