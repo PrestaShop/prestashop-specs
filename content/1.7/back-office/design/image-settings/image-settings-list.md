@@ -20,3 +20,4 @@ During the first Prestashop installation process on the server, Prestashop insta
 - Name - specific image setting value names. By default they are installed automatically.
 - Width - specific image setting value, describing the width of the image in pixels.
 - Height - specific image setting value, describing the height of the image in pixels.
+- Products - 
