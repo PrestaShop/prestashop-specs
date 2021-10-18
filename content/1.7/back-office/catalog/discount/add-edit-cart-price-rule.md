@@ -26,7 +26,7 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 
 ## Information tab
 
-[image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/cart-rules-information-tab.png)
+![image](/static/img/cart-rules-information-tab.png)
 
 - **Name** - it is a mandatory field, it can be set as unique rule name. There is a widget at the right of this field with multiple languages. The different languages can be set to the rule names for this certain Information tab form.
 - **Description** - it can be described where is the cart rule used for in more details.
