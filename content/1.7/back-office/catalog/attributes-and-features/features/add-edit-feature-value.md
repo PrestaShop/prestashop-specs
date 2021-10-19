@@ -21,7 +21,7 @@ This field is displayed only when the facetedsearch module is enabled. It allows
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. 
 There is a help-text under this field: "When the Faceted Search module is enabled, you can get more detailed page titles by choosing the word that best represent this feature. By default, PrestaShop uses the feature's name, but you can change that setting using this field."
 ## Call to action
-Below the 4 fields there are 3 more buttons (from left to right):
+Below the 4 fields there are 3 buttons (from left to right):
 
   - Cancel
   - Save then add another value (after saving, saves the added value, clears the fields to create a new one)
