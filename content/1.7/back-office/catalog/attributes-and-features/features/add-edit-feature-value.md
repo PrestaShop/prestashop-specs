@@ -2,7 +2,6 @@
 
 
 While adding or editing a feature value, the following fields / toggles / parameters are displayed:
-First 4 fields:
 
  - Feature (mandatory drop down), when pressed on the drop down, shows the features available for selection.
  - Value (mandatory field), this field can be translated: When several languages are installed, a drop-down next to the field is displayed.
