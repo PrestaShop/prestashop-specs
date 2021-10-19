@@ -37,7 +37,6 @@ The shop association block is displayed when the multistore is enabled and if se
  - Save: The feature is added and a success message is displayed on the listing: "Successful creation."
  
 
-When creating new feature shows a box of options that are:
 
  - Shops (allows to select which shop the feature will be created for, or all)
  - Option to checkmark certain shop or select all
