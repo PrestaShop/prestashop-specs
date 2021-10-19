@@ -31,7 +31,6 @@ In the case of editing a feature value, the feature value is edited and the add 
 In the case of adding a feature value, the feature value is added and the feature value listing is opened with a success message is displayed: "Successful creation."
 In the case of editing a feature value, the feature value is edited and the feature value listing is opened with a success message is displayed: "Successful update."
 
-
 For editing the feature values, everything is the same, just that the fields that are filled out stay when entering the editint window.
 
 
