@@ -58,7 +58,7 @@ After clicking on "Delete" button, the selected features and all their values ar
 ## Multistore
 
  Only the features created in the selected store or store group (through the context) are displayed.
-For example, let's there's the following configuration made:
+For example, let's say there's the following configuration made:
 - Group 1
   - Shop A
   - Shop B
