@@ -59,7 +59,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
- - Shops (Allows to select all the shops, or just 1 specific)
  - Collapse all (closes the options for possible shops)
  - Expand all (opens the options to select needed shops)
  - Check all (allows to check all the possible shops)
