@@ -41,7 +41,9 @@ There are two buttons:
 
 - Close: After clicking on it, the modal is closed
 - Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
- - Export to SQL Manager (redirects to the SQL manager in the back office)
+3) Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
  
  
  All of the features have a selecting field on the left, as well as bulk actions at the bottom left for selecting/unselecting all and deleting the selected fields.
