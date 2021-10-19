@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
- 
 
 On the right side:
 
