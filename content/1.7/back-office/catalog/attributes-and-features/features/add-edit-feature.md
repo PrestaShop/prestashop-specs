@@ -40,7 +40,6 @@ In the case of editing a feature, the feature is edited and a success message is
  
 
 
- Pressing the dropdown menu at the right side prompts with an option to either edit or delete the feature.
  
  Editing the feature prompts with the same fields as creating a new one.
  
