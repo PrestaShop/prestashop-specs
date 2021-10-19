@@ -26,4 +26,3 @@ If any of the mandatory fields are not entered/selected, the following message i
 For editing the feature values, everything is the same, just that the fields that are filled out stay when entering the editint window.
 
 
-
