@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
-When selecting multishop, adding a new feature will open a new tab allowing to select which shop will have the created feature, a box with containing options should appear.
  
  
  # Editing an existing feature
