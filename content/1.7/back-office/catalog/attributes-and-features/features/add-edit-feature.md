@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
- - Collapse all (Minimizes the shop list dropdown)
  - Expand all (Opens the dropdown for shop selection)
  - Check all (Check marks all of the shops)
  - Uncheck all (Unchecks all of the shops selected)
