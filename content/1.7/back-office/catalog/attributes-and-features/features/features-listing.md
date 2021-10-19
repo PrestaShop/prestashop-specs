@@ -5,9 +5,9 @@
 
 ## HOW FEATURES WORK
 
-Features must first be registered on the shop using this "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
+![Feature](prestashop-specs/static/img/FeaturesFO.png)
 
-Features are configured on a per-product basis, from the "Product" page under the "Catalog" menu, but they must first be registered on your shop using the tool on the "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
+Features must first be registered on the shop using this "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
 Then, they can be configured on a per-product basis, from the "Product" page under the "Catalog" menu, see [the specs of the add/edit product page](.../products/add-edit.md).
 
