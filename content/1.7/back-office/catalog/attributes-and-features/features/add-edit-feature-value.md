@@ -26,7 +26,6 @@ If any of the mandatory fields are not entered/selected, the following message i
 For editing the feature values, everything is the same, just that the fields that are filled out stay when entering the editint window.
 
 
-
 It's possible to set the features' order using the arrows in the "Position" column. The "Actions" column gives an Edit action, a Delete action and a View action which you can click to display the available values for this feature. From there, you can sort, edit and delete values if you need to.
 
 
