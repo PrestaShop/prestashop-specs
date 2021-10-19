@@ -58,7 +58,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
-### Products tab - Features
 
 
 In the back office, products tab, when a product is selected, a line for features is shown, where all of the features are listed.
