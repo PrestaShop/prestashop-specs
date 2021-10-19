@@ -58,7 +58,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
-
 In there the following options will appear:
 
  - Feature (drop down list to select feature by it's name)
