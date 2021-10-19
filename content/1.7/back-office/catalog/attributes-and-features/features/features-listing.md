@@ -58,7 +58,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
-Also, there is a button below the features row called "Add a feature".
 
 This button adds a new row for a new feature for the selected product, creates identical row to the first one, can be customized the same way.
 
