@@ -40,7 +40,6 @@ In the case of editing a feature, the feature is edited and a success message is
  
 
 
- When changes are made, and saved, a message with a green backgroung saying "Successful update." should appear.
  
  ![Update](../prestashop-specs/content/1.7/back-office/Update.png)
 
