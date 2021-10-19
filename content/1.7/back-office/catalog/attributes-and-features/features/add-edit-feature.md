@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
- - Check all (Check marks all of the shops)
  - Uncheck all (Unchecks all of the shops selected)
  
  
