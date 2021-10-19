@@ -58,13 +58,13 @@ After clicking on "Delete" button, the selected features and all their values ar
 ## Multistore
 
  Only the features created in the selected store or store group (through the context) are displayed.
-For example, let's say I have the following configuration:
+For example, let's there's the following configuration made:
 - Group 1
   - Shop A
   - Shop B
 - Group 2
   - Shop C
   
-If I select group 1 as context, then the features created in Shop A and Shop B will be displayed.
-If I select Shop A as context, then the features created in Shop A will be displayed.
-If I select all shops as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
+If the group is selected as context 1, then the features created in Shop A and Shop B will be displayed.
+If the Shop is selected as context A, then the features created in Shop A will be displayed.
+If all the shops are selected as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
