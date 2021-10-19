@@ -23,7 +23,7 @@ There is a help-text under this field: "When the Faceted Search module is enable
 ## Call to action
 Below the 4 fields there are 3 buttons (from left to right):
 
-  - Cancel
+  - Cancel: The feature value is not added and the feature listing is displayed
   - Save then add another value (after saving, saves the added value, clears the fields to create a new one)
   - Save (Saves the value, redirect back to features menu with a message showing "Successful creation.")
 
