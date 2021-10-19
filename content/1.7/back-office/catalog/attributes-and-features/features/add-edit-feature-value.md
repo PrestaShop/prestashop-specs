@@ -1,4 +1,4 @@
-## Add/edit feature value
+## SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > ADD / EDIT FEATURE VALUE
 
 
 While adding or editing a feature value, the following fields / toggles / parameters are displayed:
