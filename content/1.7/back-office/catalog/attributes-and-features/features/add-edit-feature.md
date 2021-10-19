@@ -12,6 +12,7 @@ While adding or editing a feature, the following fields / toggles / parameters a
 This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: "The field name is required at least in _default language_"
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
  2) URL 
+ 
 This field is displayed only when the facetedsearch module is enabled. It allows searching for the value more precisely. 
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 There is a help-text under this field: "When the Faceted Search module is enabled, you can get more detailed URLs by choosing the word that best represent this feature. By default, PrestaShop uses the feature's name, but you can change that setting using this field."
