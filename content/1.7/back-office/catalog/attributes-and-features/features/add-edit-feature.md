@@ -40,4 +40,3 @@ In the case of editing a feature, the feature is edited and a success message is
  
 
 
-
