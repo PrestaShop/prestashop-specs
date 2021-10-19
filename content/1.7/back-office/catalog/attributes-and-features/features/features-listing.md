@@ -24,7 +24,7 @@ Once configured on a per-product basis, the features and values of the products 
 ### Columns
 The page displays the features list with the following columns:
 
-Each feature has it's own ID, Name, Value, and Position where it is placed in the list.
+[Each feature has it's own ID, Name, Value, and Position where it is placed in the list.](./view-feature.md)
 
 
 ### Settings wheel
