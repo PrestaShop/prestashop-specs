@@ -43,7 +43,6 @@ There are two buttons:
 - Close: After clicking on it, the modal is closed
 - Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 3) Export to SQL Manager
-
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
  
 ### Bulk actions
