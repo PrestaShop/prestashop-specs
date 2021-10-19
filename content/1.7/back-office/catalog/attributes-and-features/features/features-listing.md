@@ -58,7 +58,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
- - OR Customized value (blank tab for custom value that is not added)
  - Trash can button at the very right side for deleting the feature
  
 
