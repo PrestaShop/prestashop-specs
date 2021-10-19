@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
- - Shops (allows to select which shop the feature will be created for, or all)
  - Option to checkmark certain shop or select all
  
 
