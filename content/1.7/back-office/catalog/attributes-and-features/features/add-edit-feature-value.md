@@ -2,7 +2,6 @@
 
 
 While adding or editing a feature value, the following fields / toggles / parameters are displayed:
-In there there's 4 input fields, 4 drop downs and 3 buttons.
 
 First 4 fields:
 
