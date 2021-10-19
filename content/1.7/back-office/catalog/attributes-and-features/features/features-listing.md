@@ -30,7 +30,9 @@ There is a search bar which has inputs of "ID", "Name", "Position" which will he
 ### Settings wheel
 When clicking on the settings wheel, three options are displayed:
 
- - Refresh list (for updating the list)
+1) Refresh list
+
+After clicking on it, the page is reloaded. Sorts and searches are kept.
  - Show SQL query (Opens a popup showing SQL code for the page)
  - Export to SQL Manager (redirects to the SQL manager in the back office)
  
