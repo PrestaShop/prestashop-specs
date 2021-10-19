@@ -40,5 +40,4 @@ In the case of editing a feature, the feature is edited and a success message is
  
 
 
- ![Update](../prestashop-specs/content/1.7/back-office/Update.png)
 
