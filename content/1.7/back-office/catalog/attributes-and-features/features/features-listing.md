@@ -57,7 +57,6 @@ The action can be canceled by clicking on the cross or on the cancel button.
 
 After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
   - Delete (delete the feature)
----
 
 
 ## Multishop
