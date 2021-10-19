@@ -38,7 +38,6 @@ The shop association block is displayed when the multistore is enabled and if se
  
 
 
- # Editing an existing feature
  
  Pressing the dropdown menu at the right side prompts with an option to either edit or delete the feature.
  
