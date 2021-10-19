@@ -40,7 +40,6 @@ In the case of editing a feature, the feature is edited and a success message is
  
 
 
- 
  Editing the feature prompts with the same fields as creating a new one.
  
  All changes made will appear in the Attributes&Features -> Features list with a new ID.
