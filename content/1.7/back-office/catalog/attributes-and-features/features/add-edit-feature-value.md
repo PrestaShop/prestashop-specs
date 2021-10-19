@@ -30,7 +30,6 @@ In the case of editing a feature value, the feature value is edited and the add 
 - Save: 
 In the case of adding a feature value, the feature value is added and the feature value listing is opened with a success message is displayed: "Successful creation."
 In the case of editing a feature value, the feature value is edited and the feature value listing is opened with a success message is displayed: "Successful update."
----
 
 If any of the mandatory fields are not entered/selected, the following message in a red background appears "The field value is required at least in English (English)."
 
