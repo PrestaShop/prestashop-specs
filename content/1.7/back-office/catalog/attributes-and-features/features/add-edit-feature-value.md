@@ -27,7 +27,9 @@ Below the 4 fields there are 3 buttons (from left to right):
 - Save then add another value: 
 In the case of adding a feature value, the feature value is added and the add form is opened with a success message is displayed: "Successful creation."
 In the case of editing a feature value, the feature value is edited and the add form is opened with a success message is displayed: "Successful update."
-  - Save (Saves the value, redirect back to features menu with a message showing "Successful creation.")
+- Save: 
+In the case of adding a feature value, the feature value is added and the feature value listing is opened with a success message is displayed: "Successful creation."
+In the case of editing a feature value, the feature value is edited and the feature value listing is opened with a success message is displayed: "Successful update."
 
 ---
 
