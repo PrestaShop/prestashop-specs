@@ -24,7 +24,9 @@ There is a help-text under this field: "When the Faceted Search module is enable
 Below the 4 fields there are 3 buttons (from left to right):
 
   - Cancel: The feature value is not added and the feature listing is displayed
-  - Save then add another value (after saving, saves the added value, clears the fields to create a new one)
+- Save then add another value: 
+In the case of adding a feature value, the feature value is added and the add form is opened with a success message is displayed: "Successful creation."
+In the case of editing a feature value, the feature value is edited and the add form is opened with a success message is displayed: "Successful update."
   - Save (Saves the value, redirect back to features menu with a message showing "Successful creation.")
 
 ---
