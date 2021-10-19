@@ -33,8 +33,8 @@ The shop association block is displayed when the multistore is enabled and if se
 
  ## Call to action 
  There are 2 buttons at the bottom of this page: 
- - Cancel: The feature is not added/edited and the listing is displayed
- - Save: 
+ - Cancel: The feature is not added and the listing is displayed
+ - Save: The feature is added and a success message is displayed on the listing: "Successful creation."
 In the case of adding a feature, the feature is added and a success message is displayed on the listing: "Successful creation."
 In the case of editing a feature, the feature is edited and a success message is displayed on the listing: "Successful update."
  
