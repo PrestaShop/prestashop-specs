@@ -22,6 +22,7 @@ Once configured on a per-product basis, the features and values of the products 
 2) Add new feature value
 👉 See the [specs of the add/edit feature value](./add-edit-feature-value.md) 
 ### Columns
+The page displays the features list with the following columns:
 
 Each feature has it's own ID, Name, Value, and Position where it is placed in the list.
 
