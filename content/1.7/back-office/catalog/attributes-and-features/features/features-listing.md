@@ -59,7 +59,6 @@ After clicking on "Delete" button, the selected features and all their values ar
   - Delete (delete the feature)
 ## Multishop
 
- - Uncheck all (unchecks all the selected shops)
  
  
 ![FeaturesFO](prestashop-specs/static/img/FeaturesFO.png)
