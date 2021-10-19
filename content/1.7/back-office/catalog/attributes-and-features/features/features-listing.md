@@ -33,7 +33,14 @@ When clicking on the settings wheel, three options are displayed:
 1) Refresh list
 
 After clicking on it, the page is reloaded. Sorts and searches are kept.
- - Show SQL query (Opens a popup showing SQL code for the page)
+2) Show SQL query
+
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+
+- Close: After clicking on it, the modal is closed
+- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
  - Export to SQL Manager (redirects to the SQL manager in the back office)
  
  
