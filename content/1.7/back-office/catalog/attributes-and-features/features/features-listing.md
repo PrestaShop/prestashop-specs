@@ -59,4 +59,3 @@ After clicking on "Delete" button, the selected features and all their values ar
 ## Multishop
 
  
- 
