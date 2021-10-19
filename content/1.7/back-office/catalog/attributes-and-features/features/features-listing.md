@@ -45,7 +45,7 @@ There are two buttons:
 
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
  
- 
+### Bulk actions
  All of the features have a selecting field on the left, as well as bulk actions at the bottom left for selecting/unselecting all and deleting the selected fields.
  
   - View (view the feature in details)
