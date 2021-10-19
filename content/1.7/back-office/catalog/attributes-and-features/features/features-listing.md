@@ -26,7 +26,6 @@ The page displays the features list with the following columns:
 
 Each feature has it's own ID, Name, Value, and Position where it is placed in the list.
 
-There is a search bar which has inputs of "ID", "Name", "Position" which will help to find a specific feature if there are a lot of them created.
 
 ### Settings wheel
 When clicking on the settings wheel, three options are displayed:
