@@ -360,6 +360,27 @@ To separate decimals a dot or a comma can be used, both should work no matter th
 Both final prices are updated when you modify the impact on price tax excl or tax incl.
 * **Ecotax \(tax incl.\)**: \([issue 15059](https://github.com/PrestaShop/PrestaShop/issues/15059)\) This field is displayed if the “ecotax” option is enabled in International &gt; Taxes.             
 The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”     
+
+The eco-tax is an amount that is informative and doesn't impact the final price.
+Editing the eco-tax on the product page reduces the retail price so the final price remains the same.
+
+To keep the same behavior on the edition on the combination, editing the eco-tax on a combination doesn't impact the final price. The impact on price compensates for the changes.
+
+IF a product with combination has an ecotax equal to 0 and the user adds a new ecotax price to the combination
+THEN
+The impact on the price of the combination is subtracted from the ecotax, so the final retail price is not impacted.
+
+IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination lower than the ecotax of the product
+THEN
+The impact on the price of the combination is increased from the ecotax combination, so the final retail price is not impacted.
+
+IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination superior than the ecotax of the product
+THEN
+The impact on the price of the combination is subtracted from the ecotax.
+The final retail price is not impacted and the ecotax from the combination is displayed in the front office
+
+The eco-tax from the combination is displayed in the front office
+
 * **Impact on price per unit \(tax excl.\)**: This value is added to the product price per unit in Pricing tab.      
 You can fill it if you sell products per unit.       
 To separate decimals a dot or a comma can be used, both should work no matter the language.      
