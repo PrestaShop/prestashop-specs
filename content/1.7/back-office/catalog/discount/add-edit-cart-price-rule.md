@@ -37,6 +37,13 @@ Once the first restriction checkbox is marked, the external options will expand.
 - **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. The values can be transferred to appropriate inputs with the buttons Add or Remove. By default, it is set as uncheckboxed condition.
 - **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition, and this option is hidden, when there are no rules created, at least 1 rule should be created in list.
 - **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition.
+
+Once the Product selection checkbox is marked, the UI will additioinally extend with the appropriate options to adjust - "Number of products required in the cart to enjoy the discount", "Add a rule concerning", "The product(s) are matching one of these" list, Add (+), Remove (X), Choose, Product selection buttons and appropriate text input fields.
+- Number of products required in the cart to enjoy the discount - defines the oparating value, how many products should be added to the cart in Prestashop application in order to get the ability to get a discount. There is a numeric value input field near, which can be set.
+- Add a rule concerning - 
+
+
+
 - **Shop selection** - this selection sets the shop in Prestashop, where to apply the Cart Rule. By default, this field is hidden, if there is no Multistores configured. 
 
 ## Actions tab
