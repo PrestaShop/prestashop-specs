@@ -30,8 +30,10 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 - **Minimum amount field** - this field sets minimum amount from which the customers will see the Cart rule. As well, the currency can be set, if prices should affected with taxes or without taxes and if shipping is affected too. Minimum amount is stated by digital value 0. Default currency is stated by the default Prestashop currency. Tax excluded dropdown is stated by default. Shipping excluded dropdown is stated by default.
 - **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions. Total available input field is stated by digital value 1 by default.
 - **Total available for each user field** - this field sets the price rules amount for certain users separately. Total available for each user is stated by digital value 1 by default.
-- **Restrictions** - also you can set certain conditions for the main cart rule condition. By default, the restrictions are set as unchecboxed condition. 
-- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. By default, it is set as uncheckboxed condition.
+## Restrictions
+Certain conditions can be set for the main cart rule condition. By default, the restrictions are set as unchecboxed condition. 
+
+- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. By default, it is set as uncheckboxed condition.
 - **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. By default, it is set as uncheckboxed condition.
 - **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition.
 - **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition.
