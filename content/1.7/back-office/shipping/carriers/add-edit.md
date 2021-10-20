@@ -123,4 +123,4 @@ WIP
 
 When you edit a carrier, a new carrier is created and the carrier id changes. A link is saved in the carrier table to the original id with the id_reference.
 
-![id_reference Carrier](/img/id_reference_carrier.png)
+![id_reference Carrier](../../../../../static/img/id_reference_carrier.png)
