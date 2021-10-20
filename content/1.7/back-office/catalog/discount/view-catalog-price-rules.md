@@ -32,8 +32,10 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 ## Multistore 
 Prestashop can be set with different **Shop Groups**. Each Shop Group can have certain Cart Rule specified. Each Multistore Shop can have a certain Cart Rule specified. Certain Cart Rule can be specified conditionally in Conditions tab, once the new Cart Rule is being created or edited.
 
-The Cart Rule can be specified directly on any Shop Group or Multistore Shop in Prestashop selecte. The application enables the rules on every Shop Group or Multistore Shop by default. The rule could be executed for all Groups and Shops in Front-Office by default. 
+The Cart Rule can be specified directly on any Shop Group or Multistore Shop in Prestashop selected. The application enables the rules on every Shop Group or Multistore Shop by default. The rule could be executed for all Groups and Shops in Front-Office by default. 
  
 The behavior of the Cart Rules on different Shop Groups and Multistore Shops can be set separately in Conditions tab and under the Restrictions setting.
+
+If the Cart Rules Restrictions are set, for example, for only 1 Shop Group and Multistore Shop out of 4, the customer of the Prestashop application will be forbidden to input Voucher code on the other 3 Multistore Shops. The customer will be notified with error message, once inputting the Voucher text field in Prestashop checkout. The message is specified as exclamation sign and error notification text "You cannot use this voucher."
 
 All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
