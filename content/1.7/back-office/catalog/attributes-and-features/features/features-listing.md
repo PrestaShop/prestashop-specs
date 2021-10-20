@@ -8,7 +8,9 @@
 
 Features must first be registered on the shop using this "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
-Then, they can be configured on a per-product basis, from the "Product" page under the "Catalog" menu, see [the specs of the add/edit product page](.../products/add-edit.md).
+Then, they can be configured on a per-product basis, from the "Product" page under the "Catalog" menu. 
+
+:point_right: see [the specs of the add/edit product page](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/products/add-edit.md).
 
 Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the "Product Details" tab.
 
@@ -19,11 +21,11 @@ Once configured on a per-product basis, the features and values of the products 
 2 call to actions are displayed in the header of this page:
 1) Add new feature
 
-👉 See the [specs of the add/edit feature](./add-edit-feature.md) 
+👉 See the [specs of the add/edit feature](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.md) 
 
 2) Add new feature value
 
-👉 See the [specs of the add/edit feature value](./add-edit-feature-value.md) 
+👉 See the [specs of the add/edit feature value](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.md) 
 
 ### Settings wheel
 
@@ -77,9 +79,13 @@ After changing the position, the message "Successful update." is displayed.
 
 5. Actions
 
-**View.** The values of the feature are displayed in a table. This is the main action and it can be performed by clicking on the line. When the feature has no value, the following message is displayed: "No records found"
+**View.** This is the main action and it can be performed by clicking on the line. 
+
+👉 See the [specs of the view feature](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/view-feature.md) 
 
 **Edit.** The user can edit a feature as often as necessary.
+
+👉 See the [specs of the add/edit feature](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.md) 
 
 **Delete.** A feature can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
