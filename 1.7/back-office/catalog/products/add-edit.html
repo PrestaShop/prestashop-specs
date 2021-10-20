@@ -21,16 +21,16 @@
     <title>Product Page :: PrestaShop Specs</title>
 
     
-    <link href="../../../../css/font-awesome.min.css?1634740416" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1634740416" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1634740416" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1634740416" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1634740416" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1634740987" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1634740987" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1634740987" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1634740987" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1634740987" rel="stylesheet">
     
-    <link href="../../../../style.css?1634740416" rel="stylesheet">
+    <link href="../../../../style.css?1634740987" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1634740416"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1634740987"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -7238,6 +7238,22 @@ To separate decimals a dot or a comma can be used, both should work no matter th
 Both final prices are updated when you modify the impact on price tax excl or tax incl.</li>
 <li><strong>Ecotax (tax incl.)</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/15059">issue 15059</a>) This field is displayed if the “ecotax” option is enabled in International &gt; Taxes.          <br>
 The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”</li>
+</ul>
+<p>The eco-tax is an amount that is informative and doesn&rsquo;t impact the final price.
+Editing the eco-tax on the product page reduces the retail price so the final price remains the same.</p>
+<p>To keep the same behavior on the edition on the combination, editing the eco-tax on a combination doesn&rsquo;t impact the final price. The impact on price compensates for the changes.</p>
+<p>IF a product with combination has an ecotax equal to 0 and the user adds a new ecotax price to the combination
+THEN
+The impact on the price of the combination is subtracted from the ecotax, so the final retail price is not impacted.</p>
+<p>IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination lower than the ecotax of the product
+THEN
+The impact on the price of the combination is increased from the ecotax combination, so the final retail price is not impacted.</p>
+<p>IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination superior than the ecotax of the product
+THEN
+The impact on the price of the combination is subtracted from the ecotax.
+The final retail price is not impacted and the ecotax from the combination is displayed in the front office</p>
+<p>The eco-tax from the combination is displayed in the front office</p>
+<ul>
 <li><strong>Impact on price per unit (tax excl.)</strong>: This value is added to the product price per unit in Pricing tab.   <br>
 You can fill it if you sell products per unit.    <br>
 To separate decimals a dot or a comma can be used, both should work no matter the language.   <br>
@@ -8125,9 +8141,9 @@ Dropdown with 5 options:</li>
 <footer class="article-footer">
 	
 <div>
-  Last updated on June 16, 2021
+  Last updated on June 29, 2021
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/ecd3ab852761ae50d6ba7635cdcdd5601d0eeddc">"add specs for Show price" (ecd3ab8)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/15d8fec1cd165e810dc7a003c10c38a43f05bc60">"eco tax combination" (15d8fec)</a>
   
 </div>
 
@@ -8148,19 +8164,19 @@ Dropdown with 5 options:</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1634740416"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1634740416"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1634740416"></script>
-    <script src="../../../../js/jquery.sticky.js?1634740416"></script>
-    <script src="../../../../js/featherlight.min.js?1634740416"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1634740416"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1634740416"></script>
-    <script src="../../../../js/learn.js?1634740416"></script>
-    <script src="../../../../js/hugo-learn.js?1634740416"></script>
+    <script src="../../../../js/clipboard.min.js?1634740987"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1634740987"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1634740987"></script>
+    <script src="../../../../js/jquery.sticky.js?1634740987"></script>
+    <script src="../../../../js/featherlight.min.js?1634740987"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1634740987"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1634740987"></script>
+    <script src="../../../../js/learn.js?1634740987"></script>
+    <script src="../../../../js/hugo-learn.js?1634740987"></script>
     
-    <script src="../../../../main.js?1634740416"></script>
-    <link href="../../../../mermaid/mermaid.css?1634740416" rel="stylesheet" />
-    <script src="../../../../mermaid/mermaid.js?1634740416"></script>
+    <script src="../../../../main.js?1634740987"></script>
+    <link href="../../../../mermaid/mermaid.css?1634740987" rel="stylesheet" />
+    <script src="../../../../mermaid/mermaid.js?1634740987"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
