@@ -38,9 +38,10 @@ Once the first restriction checkbox is marked, the external options will expand.
 - **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition, and this option is hidden, when there are no rules created, at least 1 rule should be created in list.
 - **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition.
 
-Once the Product selection checkbox is marked, the UI will additioinally extend with the appropriate options to adjust - "Number of products required in the cart to enjoy the discount", "Add a rule concerning", "The product(s) are matching one of these" list, Add (+), Remove (X), Choose, Product selection buttons and appropriate text input fields.
+Once the Product selection checkbox is marked, the UI will additioinally extend with the appropriate options to adjust. The CTA button with "(+) Product selection" will appear. Clicking the button will show additional operating values - "Number of products required in the cart to enjoy the discount", "Add a rule concerning", "The product(s) are matching one of these" list, Add (+), Remove (X), Choose, Product selection buttons and appropriate text input fields.
 - Number of products required in the cart to enjoy the discount - defines the oparating value, how many products should be added to the cart in Prestashop application in order to get the ability to get a discount. There is a numeric value input field near, which can be set.
-- Add a rule concerning - 
+- Add a rule concerning - defines the operating value, which will be included in creating the rule conditions for certain product (s). By default the dropdown option will be as null value --Choose--. The default values, that are installed by Prestashop are Products, Attributes, Categories, Brands and Suppliers. Choosing, for example, Products, as the value, clicking the (+) Add button will extend the UI with the Product list below. By default, there will be no products added. Once clicking the Choose button, pop-up will appear, and there will be a possibility to add the certain products from left section to the right and backwards. It can be adjusted by clicking the Add or Remove buttons.
+- 
 
 
 
