@@ -1,7 +1,7 @@
 # SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > ADD / EDIT FEATURE
 
 
-![Feature2](../prestashop-specs/content/1.7/back-office/Feature2.png)
+![Feature2](/static/img/Feature2.png)
 
 
 While adding or editing a feature, the following fields / toggles / parameters are displayed:
@@ -40,6 +40,3 @@ The shop association block is displayed when the multistore is enabled and if se
  There are 2 buttons at the bottom of this page: 
  - Cancel: The feature is not added/edited and the listing is displayed
  - Save: In the case of adding a feature, the feature is added and a success message is displayed on the listing: "Successful creation.". In the case of editing a feature, the feature is edited and a success message is displayed on the listing: "Successful update.".
- 
-
-
