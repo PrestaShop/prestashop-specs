@@ -31,8 +31,8 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 - **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions. Total available input field is stated by digital value 1 by default.
 - **Total available for each user field** - this field sets the price rules amount for certain users separately. Total available for each user is stated by digital value 1 by default.
 ## Restrictions
-Certain conditions can be set for the main cart rule condition. By default, the restrictions are set as unchecboxed condition. 
-
+Certain conditions can be set for the main cart rule condition. <br>
+Once the first restriction checkbox is marked, the external options will expand. Those are the following:<br>
 - **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. By default, it is set as uncheckboxed condition.
 - **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. By default, it is set as uncheckboxed condition.
 - **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition.
