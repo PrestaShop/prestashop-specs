@@ -1,6 +1,6 @@
-# View feature
+# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > VIEW FEATURE
  
- When viewing a feature, the name of the selected feature is displayed as the name of the block.
+When viewing a feature, the name of the selected feature is displayed as the name of the block.
  
 ## Call to action
  
