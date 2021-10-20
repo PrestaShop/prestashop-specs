@@ -4,9 +4,11 @@
  
 ## Call to action
  
-1 call to actions is displayed in the header of this page:
+A call to actions is displayed in the header of this page:
  
-  - Add new feature value (for creating new value for this feature)
+  - Add new feature value
+
+👉 See the [specs of the add/edit feature value](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.md) 
  
 ## Settings wheel
 
@@ -53,7 +55,8 @@ It's possible to sort by value asc or desc and search by value.
 3. Actions
 
 **Edit.** The user can edit a feature value as often as necessary. 
-👉 See the [edit feature value spec](../features/add-edit-feature-value.md)
+
+👉 See the [specs of the add/edit feature value](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.md) 
 
 **Delete.** A feature value can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the feature value is deleted, a successful message is displayed "Successful deletion."
 
@@ -67,3 +70,5 @@ When clicking on "reset", the search is removed and all the results are displaye
 ## Back to the list
 
 The "Back to the list" button redirects to the features lisitng.
+
+👉 See the [specs of the features listing](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/attributes-and-features/features/features-listing.md) 
