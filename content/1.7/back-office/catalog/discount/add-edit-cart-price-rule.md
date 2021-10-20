@@ -21,7 +21,7 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 - **Status switch toggle button** - enabling this button will enable the rule, disabling it will deactivate the rule and vouchers for customers. Status toggle button is enabled by default.
 
 ## Conditions tab
-The condition tab, allows the user to specify cart rule conditions to determine how the cart rule will be use in the Prestashop. 
+The condition tab, allows the ability to specify cart rule conditions to determine how the cart rule will be used in the Prestashop. 
 
 [Cart Rules: Conditions Tab](/static/img/cart-rules-conditions-tab.png)
 
@@ -33,9 +33,9 @@ The condition tab, allows the user to specify cart rule conditions to determine 
 ## Restrictions
 Certain conditions can be set for the main cart rule condition. <br>
 Once the first restriction checkbox is marked, the external options will expand. Those are the following:<br>
-- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. By default, it is set as uncheckboxed condition.
-- **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. By default, it is set as uncheckboxed condition.
-- **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition.
+- **Carrier selection** - this field can set certain carriers, that could be affected by the rule condition. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. The values can be transferred to appropriate inputs with the buttons Add or Remove. By default, it is set as uncheckboxed condition.
+- **Customer group selection** - it can be restricted by a Prestashop customers group - by default - Customer, Visitor or Guest. Once checkboxed, there will be 2 fields prompted in UI - Selected or Unselected text field values. The values can be transferred to appropriate inputs with the buttons Add or Remove. By default, it is set as uncheckboxed condition.
+- **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition, and this option is hidden, when there are no rules created, at least 1 rule should be created in list.
 - **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition.
 - **Shop selection** - this selection sets the shop in Prestashop, where to apply the Cart Rule. By default, this field is hidden, if there is no Multistores configured. 
 
