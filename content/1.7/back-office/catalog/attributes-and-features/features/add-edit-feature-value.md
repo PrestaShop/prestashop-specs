@@ -25,14 +25,10 @@ This field can be translated: When several languages are installed, a drop-down 
 There is a help-text under this field: "When the Faceted Search module is enabled, you can get more detailed page titles by choosing the word that best represent this feature. By default, PrestaShop uses the feature's name, but you can change that setting using this field."
 
 ## Call to action
-Below the 4 fields there are 3 buttons (from left to right):
 
-  - Cancel: The feature value is not added and the feature listing is displayed
-- Save then add another value: 
-In the case of adding a feature value, the feature value is added and the add form is opened with a success message is displayed: "Successful creation."
-In the case of editing a feature value, the feature value is edited and the add form is opened with a success message is displayed: "Successful update."
-- Save: 
-In the case of adding a feature value, the feature value is added and the feature value listing is opened with a success message is displayed: "Successful creation."
-In the case of editing a feature value, the feature value is edited and the feature value listing is opened with a success message is displayed: "Successful update."
-
-
+ There are 2 buttons at the bottom of this page: 
+ - **Cancel:** The feature value is not added/edited and the feature values listing is displayed.
+ - **Save then add another value:** In the case of adding a feature value, the feature value is added and the add form is opened and a success message is displayed: "Successful creation.". 
+ In the case of editing a feature value, the feature value is edited and the add form is opened and a success message is displayed: "Successful update."
+ - **Save:** In the case of adding a feature value, the feature value is added and a success message is displayed on the feature values listing: "Successful creation.". 
+In the case of editing a feature value, the feature value is edited and a success message is displayed on the feature values listing: "Successful update.".
