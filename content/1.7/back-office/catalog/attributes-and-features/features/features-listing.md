@@ -1,10 +1,6 @@
 # SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES
 
-![Feature](prestashop-specs/static/img/Features.png)
-
 ## HOW FEATURES WORK
-
-![Feature](prestashop-specs/static/img/FeaturesFO.png)
 
 Features must first be registered on the shop using this "Features" tab under the "Attributes & Features" page from the "Catalog" menu.
 
@@ -13,6 +9,8 @@ Then, they can be configured on a per-product basis, from the "Product" page und
 :point_right: see [the specs of the add/edit product page](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/products/add-edit.md).
 
 Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the "Product Details" tab.
+
+![Feature](/static/img/FeaturesFO.png)
 
 ## FEATURES
 
@@ -58,6 +56,7 @@ After clicking on "Delete selected", a modal with the title "Delete selection" i
 After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ### Columns
+
 The page displays the features list with the following columns:
 
 1. ID
