@@ -1,67 +1,69 @@
- # View feature - Composition (name of the feature, can be different)
+# View feature
  
- By viewing the feature, the name of the selected feature at the top should be seen.
+ When viewing a feature, the name of the selected feature is displayed as the name of the block.
  
- Buttons on the top right corner in this page:
+## Call to action
  
-  - Add new feature value (for creating new value for the feature)
-  - Recommended modules and services
-
- Lower row (left to right):
+1 call to actions is displayed in the header of this page:
  
-  - Name of the Feature and number of values it contains.
-  - Add new (for adding a new feature)
-  - Refresh list (for updating the list)
-  - Show SQL query (Opens a popup showing SQL code for the page)
-  - Export to SQL Manager (redirects to the SQL manager in the back office)
-
- Row below (left to right):
+  - Add new feature value (for creating new value for this feature)
  
-  - Column for checkmarking (selecting) the values;
-  - ID column with a possibility to change the sorting of the list;
-  - Value column also with a possibility to change the sorting of the list;
+## Settings wheel
 
- Row below (left to right):
+When clicking on the settings wheel, the following options are displayed:
+
+1. Refresh list
+
+After clicking on it, the page is reloaded. Sorts and searches are kept.
+
+2. Show SQL query
+
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+
+Close: After clicking on it, the modal is closed
+Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+3. Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+## Bulk actions
+
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected feature values (using the checkboxes). A user can:
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
+- Delete selected: This button will delete the selected features. 
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Delete" button, the selected feature values are deleted, a successful message is displayed "The selection has been successfully deleted."
+
+## Columns
+
+The page displays the feature values list with the following columns:
  
-  - Input field for ID search;
-  - Value input field search;
-  - Search button to search, when either ID or value is input in the search field. 
-     - If the search is initiated without entering anything, a message in a yellow field should appear "Please fill at least one field to perform a search in this list."
-     - If the search is entered with a non existant value, all values disappear, a new button near "search" appears, in a yellow frame named "reset" which resets the search, brings back to show all the possible values.
+1. ID
 
-Every row from the values list when hovered on, changes the whole value row color to blue.
-
-Every row of all the values has it's own "edit" button + drop down with an option to delete the value.
-
-  - When pressed on "edit" redirect to [edit feature value](../features/add-edit-feature-value.md)
-  - When pressed on "delete", prompts with a message "delete selected item?" and 2 selections are available "yes" or "no"
-    - If pressed "yes" returns to the same page, shows message "Successful deletion."
-    - If pressed "no" returns to the same page, nothing changes.
-
-Below there are 2 more buttons in the same collumn "Bulk actions" drop down (going up), and "Back to the list" button which redirects to the features window.
- 
-
- FROM MARION
- 
- 1. ID
 It's possible to sort by id asc or desc and search by id.
 
-2. Name
-It's possible to sort by name asc or desc and search by name.
+2. Value
 
-3. Values
+It's possible to sort by value asc or desc and search by value.
 
-It indicates the number of values for each feature.
-4. Position
-The position of each feature can be changed by clicking on this column and by moving it up or down.
-After changing the position, the message "Successful update." is displayed.
+3. Actions
 
-5. Actions
+**Edit.** The user can edit a feature value as often as necessary. 
+👉 See the [edit feature value spec](../features/add-edit-feature-value.md)
 
-**View.** The values of the feature are displayed in a table. This is the main action and it can be performed by clicking on the line. When the feature has no value, the following message is displayed: "No records found"
-**Edit.** The user can edit a feature as often as necessary.
-**Delete.** A feature can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+**Delete.** A feature value can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the feature value is deleted, a successful message is displayed "Successful deletion."
 
-The action can be canceled by clicking on the cross or on the cancel button.
-After clicking on "Delete" button, the feature and all its values are deleted, a successful message is displayed "Successful deletion."
+### Search
 
+The search button is disabled as long as no search field has been filled.
+After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
+If there is no results for the search done, the following message is displayed: "No records found".
+When clicking on "reset", the search is removed and all the results are displayed.
+
+## Back to the list
+
+The "Back to the list" button redirects to the features lisitng.
