@@ -1,4 +1,9 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > VIEW FEATURE
+---
+title: View Feature
+weight: 1
+---
+
+# View Feature
  
 When viewing a feature, the name of the selected feature is displayed as the name of the block.
  

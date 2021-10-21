@@ -1,4 +1,9 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES
+---
+title: Features listing
+weight: 1
+---
+
+# Features listing
 
 ## HOW FEATURES WORK
 
