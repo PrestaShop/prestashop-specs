@@ -1,7 +1,11 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > FEATURES > ADD / EDIT FEATURE
+---
+title: Add / Edit Feature
+weight: 1
+---
 
+# Add / Edit Feature
 
-![Feature2](/static/img/Feature2.png)
+![Feature2](/img/Feature2.png)
 
 
 While adding or editing a feature, the following fields / toggles / parameters are displayed:
