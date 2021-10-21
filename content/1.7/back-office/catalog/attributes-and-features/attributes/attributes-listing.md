@@ -17,7 +17,7 @@ This page presents a list of all your currently registered attributes. You can e
 
 2) Add new value
 
-👉 See the [specs of the add new value](./add-edit-attribute-value.md) 
+👉 See the [specs of the add new attribute](./add-edit-attribute-value.md) 
 
 ### Settings wheel
 
@@ -42,12 +42,12 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ### Bulk actions
 
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected features (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected attributes (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
-- Delete selected: This button will delete the selected features. 
+- Delete selected: This button will delete the selected attributes. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
-After clicking on "Delete" button, the selected features and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
+After clicking on "Delete" button, the selected attributes and all their values are deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ### Columns
 
@@ -63,7 +63,7 @@ It's possible to sort by name asc or desc and search by name.
 
 3. Values
 
-It indicates the number of values for each feature.
+It indicates the number of values for each attribute.
 
 4. Position
 
@@ -82,7 +82,7 @@ After changing the position, the message "Successful update." is displayed.
 
 **Delete.** The attribute can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
-After clicking on "Delete" button, the feature and all its values are deleted, a successful message is displayed "Successful deletion."
+After clicking on "Delete" button, the attribute and all its values are deleted, a successful message is displayed "Successful deletion."
 
 ## Multistore
 
@@ -94,8 +94,8 @@ For example, let's say there's the following configuration made:
 - Group 2
   - Shop C
   
-If the group 1 is selected as context, then the features created in Shop A and Shop B will be displayed.
+If the group 1 is selected as context, then the attributes created in Shop A and Shop B will be displayed.
 
-If the Shop A is selected as context, then the features created in Shop A will be displayed.
+If the Shop A is selected as context, then the attributes created in Shop A will be displayed.
 
-If "all shops" is selected as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
+If "all shops" is selected as context, then the attributes created in Shop A, Shop B, and Shop C will be displayed.
