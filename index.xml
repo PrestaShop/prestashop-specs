@@ -18,6 +18,27 @@ Elements in the page Logo Block Logo block: There is a logo block on the left of
     </item>
     
     <item>
+      <title>Add / Edit Feature</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</guid>
+      <description>Add / Edit Feature While adding or editing a feature, the following fields / toggles / parameters are displayed:
+ Name  This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: &amp;ldquo;The field name is required at least in default language&amp;rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
+    </item>
+    
+    <item>
+      <title>Add / Edit Feature Value</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</guid>
+      <description>Add / Edit Feature Value While adding or editing a feature value, the following fields / toggles / parameters are displayed:
+ Feature  This drop-down lists all the features and is mandatory. In the case of multistore, it lists only the features associated with the store(s) selected as context.
+Value  This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
+    </item>
+    
+    <item>
       <title>Add / Edit Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -241,6 +262,18 @@ Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns w
 This module has been massively reworked and keeps evolving frequently. This master issue (EPIC) allows to track the status of the module and follow its improvements : https://github.com/PrestaShop/PrestaShop/issues/9684
 Introduction
 The module displays a block on category pages with layered navigation filters.</description>
+    </item>
+    
+    <item>
+      <title>Features listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</guid>
+      <description>Features listing HOW FEATURES WORK Features must first be registered on the shop using this &amp;ldquo;Features&amp;rdquo; tab under the &amp;ldquo;Attributes &amp;amp; Features&amp;rdquo; page from the &amp;ldquo;Catalog&amp;rdquo; menu.
+Then, they can be configured on a per-product basis, from the &amp;ldquo;Product&amp;rdquo; page under the &amp;ldquo;Catalog&amp;rdquo; menu.
+:point_right: see the specs of the add/edit product page.
+Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the &amp;ldquo;Product Details&amp;rdquo; tab.</description>
     </item>
     
     <item>
@@ -763,6 +796,19 @@ Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded fi
     </item>
     
     <item>
+      <title>View Feature</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</guid>
+      <description>View Feature When viewing a feature, the name of the selected feature is displayed as the name of the block.
+Call to action A call to actions is displayed in the header of this page:
+ Add new feature value  👉 See the specs of the add/edit feature value
+Settings wheel When clicking on the settings wheel, the following options are displayed:
+ Refresh list  After clicking on it, the page is reloaded.</description>
+    </item>
+    
+    <item>
       <title>View Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -814,51 +860,6 @@ On the table below are listed all the different cases.
       <description>Order settings specs General Enable final summary This toggle is on No by default.
 When enabled, a summary is displayed in the Front-Office during the checkout, at the payment step:
 This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method &amp;amp; its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; ATTRIBUTES &amp;amp; FEATURES &amp;gt; FEATURES &amp;gt; ADD / EDIT FEATURE VALUE While adding or editing a feature value, the following fields / toggles / parameters are displayed:
- Feature  This drop-down lists all the features and is mandatory. In the case of multistore, it lists only the features associated with the store(s) selected as context.
-Value  This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; ATTRIBUTES &amp;amp; FEATURES &amp;gt; FEATURES &amp;gt; ADD / EDIT FEATURE While adding or editing a feature, the following fields / toggles / parameters are displayed:
- Name  This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: &amp;ldquo;The field name is required at least in default language&amp;rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; ATTRIBUTES &amp;amp; FEATURES &amp;gt; FEATURES HOW FEATURES WORK Features must first be registered on the shop using this &amp;ldquo;Features&amp;rdquo; tab under the &amp;ldquo;Attributes &amp;amp; Features&amp;rdquo; page from the &amp;ldquo;Catalog&amp;rdquo; menu.
-Then, they can be configured on a per-product basis, from the &amp;ldquo;Product&amp;rdquo; page under the &amp;ldquo;Catalog&amp;rdquo; menu.
-:point_right: see the specs of the add/edit product page.
-Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the &amp;ldquo;Product Details&amp;rdquo; tab.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; ATTRIBUTES &amp;amp; FEATURES &amp;gt; FEATURES &amp;gt; VIEW FEATURE When viewing a feature, the name of the selected feature is displayed as the name of the block.
-Call to action A call to actions is displayed in the header of this page:
- Add new feature value  👉 See the specs of the add/edit feature value
-Settings wheel When clicking on the settings wheel, the following options are displayed:</description>
     </item>
     
     <item>
