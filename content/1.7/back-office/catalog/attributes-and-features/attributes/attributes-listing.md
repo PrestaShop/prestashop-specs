@@ -13,11 +13,11 @@ This page presents a list of all your currently registered attributes. You can e
 2 call to actions are displayed in the header of this page:
 1) Add new attribute
 
-👉 See the [specs of the add/edit attribute](./add-edit-feature.md NOT MADE YET) 
+👉 See the [specs of the add/edit attribute](./add-edit-attribute.md) 
 
 2) Add new value
 
-👉 See the [specs of the add new value](./add-edit-feature-value.md NOT MADE YET) 
+👉 See the [specs of the add new value](./add-edit-attribute-value.md) 
 
 ### Settings wheel
 
@@ -74,11 +74,11 @@ After changing the position, the message "Successful update." is displayed.
 
 **View.** This is the main action and it can be performed by clicking on the line. 
 
-👉 See the [specs of the view attribute](./view-feature.md NOT MADE YET) 
+👉 See the [specs of the view attribute](./view-attribute.md) 
 
 **Edit.** The user can edit the attribute as often as necessary.
 
-👉 See the [specs of the add/edit feature](./add-edit-feature.md NOT MADE YET) 
+👉 See the [specs of the add/edit feature](./add-edit-attribute.md) 
 
 **Delete.** The attribute can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
