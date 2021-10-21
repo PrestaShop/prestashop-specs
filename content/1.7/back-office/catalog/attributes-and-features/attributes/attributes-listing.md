@@ -83,3 +83,19 @@ After changing the position, the message "Successful update." is displayed.
 **Delete.** The attribute can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the feature and all its values are deleted, a successful message is displayed "Successful deletion."
+
+## Multistore
+
+ Only the attributes created in the selected store or store group (through the context) are displayed.
+For example, let's say there's the following configuration made:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+  
+If the group 1 is selected as context, then the features created in Shop A and Shop B will be displayed.
+
+If the Shop A is selected as context, then the features created in Shop A will be displayed.
+
+If "all shops" is selected as context, then the features created in Shop A, Shop B, and Shop C will be displayed.
