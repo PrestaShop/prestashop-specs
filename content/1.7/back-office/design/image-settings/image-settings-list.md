@@ -5,14 +5,14 @@ weight: 1
 # SPECIFICATIONS - DESIGN > IMAGE SETTINGS
 
 ## Image Settings listing
-During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following properties.
-- cart_default - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
-- small_default
-- medium_default
-- home_default
-- large_default
-- category_default
-- stores_default
+During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties.
+- **cart_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
+- **small_default** - Products is set to enabled, Categories is set to enabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
+- **medium_default** - Products is set to enabled, Categories is set to disabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
+- **home_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
+- **large_default** - Products is set to enabled, Categories is set to disabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
+- **category_default** - Products is set to disabled, Categories is set to enabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
+- **stores_default** - Products is set to disabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to enabled.
 
 ## Image Settings table properties
 - **Checkboxes** - each image setting can be checkboxed separately, if there is a need of Bulk Actions executions with certain image setting. By default, there is nothing selected.
