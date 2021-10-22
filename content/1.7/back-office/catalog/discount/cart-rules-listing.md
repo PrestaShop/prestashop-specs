@@ -10,7 +10,7 @@ It is an UI (user interface) where the user can view all the cart rules that has
 ## The UI elements of the listing page and Filtering funcionalities
 By default, text input fields and date picker widgets are set to empty statuses.
 
-- New cart rule can be added by clicking the (+) Add new cart rule, or smaller (+) in the listing table
+- **New cart rule** can be added by clicking the (+) Add new cart rule, or smaller (+) in the listing table
 - **Cart rules and numbering** - indication, how many rules are there in this listing.
 - **ID field** - field is set for cart rule ID number, in order to find the appropriate rule and filter it out.
 - **Name** - input field option, in order to find the appropriate cart rule name and filter it out.
@@ -20,7 +20,7 @@ By default, text input fields and date picker widgets are set to empty statuses.
 - **Expiration date** - it can be managed by the expiration dates from starting till begining, if there is need to filter the existance time for your cart rule.
 - **Status** - it can be filtered like the Enabled - Yes or Disabled - No - cart rule statuses. Additionaly, there is a shortcut as the statuses can be triggered on the Cart rules table by clicking on green checkbox, for example, if it is Enabled - the status will become Disabled, and once it is clicked again - status becomes Enabled.
 - **Search** - it is execution of the search action in filtering
-- Checkboxes can be used, if there is need to manage rules separately and use for example Bulk Actions for adjusting the rule.
+- **Checkboxes** can be used, if there is need to manage rules separately and use for example Bulk Actions for adjusting the rule.
 
 ## Bulk Actions
 ![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/bulk-actions.png)
