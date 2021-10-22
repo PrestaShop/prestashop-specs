@@ -27,12 +27,15 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
 
 ## Image Settings table Filtering and UI elements
-- ID text field - it can be set as numeric value, before filtering execution.
-- Name field - it can be set as text value, before filtering execution.
-- Width field - it can be set as numeric value, before filtering execution.
-- Height field - it can be set as numeric value, before filtering execution.
-- Products dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
-- Categories dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
-- Brands dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
-- Suppliers dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
-- Stores dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **ID text field** - it can be set as numeric value, before filtering execution.
+- **Name field** - it can be set as text value, before filtering execution.
+- **Width field** - it can be set as numeric value, before filtering execution.
+- **Height field** - it can be set as numeric value, before filtering execution.
+- **Products dropdown** - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **Categories dropdown** - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **Brands dropdown** - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **Suppliers dropdown** - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **Stores dropdown** - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- **Search CTA button** - executes the filtering.
+- **Edit CTA button** - executes the action of editing the specific image setting.
+- **Arrow dropdown of Edit CTA button** - allows the functionality to execute Delete CTA with a deletion of the specific image setting.
