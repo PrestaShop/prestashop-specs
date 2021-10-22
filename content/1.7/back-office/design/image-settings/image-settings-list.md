@@ -25,3 +25,9 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Brands** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
 - **Suppliers** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
 - **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
+
+## Image Settings table Filtering and UI elements
+- ID text field - it can be set as numeric value, before filtering execution.
+- Name field - it can be set as text value, before filtering execution.
+- Width field - it can be set as numeric value, before filtering execution.
+- 
