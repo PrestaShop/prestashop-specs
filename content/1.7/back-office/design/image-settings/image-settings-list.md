@@ -30,4 +30,9 @@ During the first Prestashop installation process on the server, Prestashop insta
 - ID text field - it can be set as numeric value, before filtering execution.
 - Name field - it can be set as text value, before filtering execution.
 - Width field - it can be set as numeric value, before filtering execution.
-- 
+- Height field - it can be set as numeric value, before filtering execution.
+- Products dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- Categories dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- Brands dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- Suppliers dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
+- Stores dropdown - it can be set as selection of the dropdown values, by default the values are Enabled and Disabled. This should be done before filtering execution.
