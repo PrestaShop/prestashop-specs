@@ -5,7 +5,7 @@ weight: 1
 
 # Catalog > Discounts > Cart Rules
 It is an UI (user interface) where the user can view all the cart rules that has been created.<br>
-![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/cart-rules-listing.png)
+![Cart Rules](/static/img/cart-rules-listing.png)
 
 ## The UI elements of the listing page and Filtering funcionalities
 By default, text input fields and date picker widgets are set to empty statuses.
@@ -23,7 +23,7 @@ By default, text input fields and date picker widgets are set to empty statuses.
 - **Checkboxes** can be used, if there is need to manage rules separately and use for example Bulk Actions for adjusting the rule.
 
 ## Bulk Actions
-![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/bulk-actions.png)
+![Bulk Actions](/static/img/bulk-actions.png)
 
 When there are multiple cart rules created, you can manage them and configure the main actions by using Bulk Actions button. <br>
 
