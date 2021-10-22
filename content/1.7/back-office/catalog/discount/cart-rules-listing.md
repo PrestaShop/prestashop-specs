@@ -7,7 +7,7 @@ weight: 1
 It is an UI (user interface) where the user can view all the cart rules that has been created.<br>
 ![image](https://github.com/PrestaShop/prestashop-specs/blob/355b25180bb99fae1592d62eeed7a286c884148f/static/img/cart-rules-listing.png)
 
-## The UI elements of the listing page
+## The UI elements of the listing page and Filtering funcionalities
 - New cart rule can be added by clicking the (+) Add new cart rule, or smaller (+) in the listing table
 - **Cart rules and numbering** - indication, how many rules are there in this listing.
 - **ID field** - field is set for cart rule ID number, in order to find the appropriate rule and filter it out.
