@@ -92,6 +92,9 @@ After changing the position, the message "Successful update." is displayed.
 The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the attribute and all its values are deleted, a successful message is displayed "Successful deletion."
 
+#### Search
+The search button is disabled as long as no search field has been filled. After clicking on "search", the "search" button is disabled and a "reset" button is displayed. If there is no results for the search done, the following message is displayed: "No records found". When clicking on "reset", the search is removed and all the results are displayed.
+
 ## Multistore
 
  Only the attributes created in the selected store or store group (through the context) are displayed.
