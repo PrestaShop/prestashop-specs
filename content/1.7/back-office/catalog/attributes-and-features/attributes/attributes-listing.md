@@ -35,7 +35,7 @@ After clicking on it, the Advanced parameters > Import page is opened.
 
 After clicking on it, the page is reloaded. Sorts and searches are kept.
 
-2) Show SQL query
+3) Show SQL query
 
 After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
