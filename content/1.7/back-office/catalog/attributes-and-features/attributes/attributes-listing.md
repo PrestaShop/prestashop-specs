@@ -22,7 +22,7 @@ This page presents a list of all the registered attributes. They can be edited o
 
 2) Add new value
 
-👉 See the [specs of the add new attribute](./add-edit-attribute-value.md) 
+👉 See the [specs of the add/edit attribute value](./add-edit-attribute-value.md) 
 
 ### Settings wheel
 
