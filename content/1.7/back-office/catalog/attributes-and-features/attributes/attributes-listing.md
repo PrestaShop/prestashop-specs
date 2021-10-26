@@ -86,7 +86,7 @@ After changing the position, the message "Successful update." is displayed.
 
 **Edit.** The attribute can be edited as often as necessary.
 
-👉 See the [specs of the add/edit feature](./add-edit-attribute.md) 
+👉 See the [specs of the add/edit attribute](./add-edit-attribute.md) 
 
 **Delete.** The attribute can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
