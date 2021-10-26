@@ -31,7 +31,7 @@ When clicking on the settings wheel, the following options are displayed:
 
 After clicking on it, the Advanced parameters > Import page is opened.
 
-1) Refresh list
+2) Refresh list
 
 After clicking on it, the page is reloaded. Sorts and searches are kept.
 
