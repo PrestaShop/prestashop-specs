@@ -50,7 +50,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ### Bulk actions
 
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected attributes (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows performing bulk actions for the selected attributes (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Delete selected: This button will delete the selected attributes. 
