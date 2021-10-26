@@ -75,7 +75,7 @@ It indicates the number of values for each attribute.
 
 4. Position
 
-The position of each feature can be changed by clicking on this column and by moving it up or down.
+The position of each attribute can be changed by clicking on this column and by moving it up or down.
 After changing the position, the message "Successful update." is displayed.
 
 5. Actions
