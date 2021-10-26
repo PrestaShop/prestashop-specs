@@ -27,6 +27,9 @@ This page presents a list of all the registered attributes. They can be edited o
 ### Settings wheel
 
 When clicking on the settings wheel, the following options are displayed:
+1) Import
+
+After clicking on it, the Advanced parameters > Import page is opened.
 
 1) Refresh list
 
