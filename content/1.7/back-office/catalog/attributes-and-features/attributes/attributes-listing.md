@@ -1,4 +1,9 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > ATTRIBUTES
+---
+title: Attributes listing
+weight: 1
+---
+
+# Attributes listing
 
 ![Attribute](/static/img/Attribute.png)
 
