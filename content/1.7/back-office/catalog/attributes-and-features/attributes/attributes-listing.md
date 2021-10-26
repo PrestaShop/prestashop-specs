@@ -84,7 +84,7 @@ After changing the position, the message "Successful update." is displayed.
 
 👉 See the [specs of the view attribute](./view-attribute.md) 
 
-**Edit.** The user can edit the attribute as often as necessary.
+**Edit.** The attribute can be edited as often as necessary.
 
 👉 See the [specs of the add/edit feature](./add-edit-attribute.md) 
 
