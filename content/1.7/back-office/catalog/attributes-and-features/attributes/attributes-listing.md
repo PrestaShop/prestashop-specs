@@ -11,7 +11,7 @@ weight: 1
 
 Attributes are the basis of product variations (or "combinations" in PrestaShop's interface): you can only create variations of a product if at least one of its attributes changes. You should think of attributes as properties of a product that may change between variations while still keeping the same product name: color, capacity, size, weight, etc. You can use anything that varies between versions of the same product, except the price.
 
-This page presents a list of all your currently registered attributes. You can edit or delete each one using the actions on the right of the table, or display their values by clicking on the "View" action, which opens a new table.
+This page presents a list of all the registered attributes. They can be edited or deleted using the actions on the right of the table. Their values can be displayed by clicking on "View".
 
 ### Call to action
 
