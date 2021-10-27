@@ -29,6 +29,10 @@ Thus, this project aims at specifying the current and expected behaviour for eve
 - Compatibility between rules 
 - Discounts display on front office
 
+## Multiple Catalog Rules usage
+
+Prestashop allows to configure multiple cart rules with different configurations. If there is more than one Catalog Cart Rule created in the listing, and all the Cart Rules are configured identically, Prestashop will use the cart rule which is the nearest to ID 0, which basically is the oldest-made configuration rule in listing.
+
 ## Multistore 
 Prestashop can be set with different **Shop Groups**. Each Shop Group can have certain Cart Rule specified. Each Multistore Shop can have a certain Cart Rule specified. Certain Cart Rule can be specified conditionally in Conditions tab, once the new Cart Rule is being created or edited.
 
