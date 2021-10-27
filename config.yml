@@ -26,6 +26,7 @@ params:
     slack: "https://www.prestashop-project.org/slack/readme/"
   coverImage: "img/social-cover.jpg"
   logoTitle: "PrestaShop Specs"
+  disableSearch: true
 
 # For search functionality
 outputs:
