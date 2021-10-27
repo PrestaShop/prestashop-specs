@@ -5,7 +5,7 @@ weight: 1
 
 # Catalog > Discounts > Catalog Price Rules
 
-![image](static/img/view-catalog-price-rules.png)
+![Catalog Price Rules](static/img/view-catalog-price-rules.png)
 
 This page is the main User Interface (UI) page, of all the Prestashop's Catalog Price Rules in a one list-type of block. 
 
