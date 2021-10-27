@@ -1,6 +1,13 @@
 (() => {
   // <stdin>
   var menuItems = document.querySelectorAll("ul.topics li.isParent > a");
+  var isTouchDevice = "ontouchstart" in window;
+  function findParent(current, expected) {
+    while (current !== expected) {
+      current = current.parentNode;
+    }
+    return current;
+  }
   function toggleIcon(icon) {
     if (icon.classList.contains("fa-angle-up")) {
       icon.classList.remove("fa-angle-up");
@@ -29,4 +36,12 @@
       }
     });
   });
+  if (isTouchDevice) {
+    document.querySelectorAll(".version-selector").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        const target = findParent(e.target, el);
+        target.classList.toggle("hover");
+      });
+    });
+  }
 })();
