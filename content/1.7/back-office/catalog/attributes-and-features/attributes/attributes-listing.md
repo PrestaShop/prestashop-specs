@@ -3,7 +3,8 @@ title: Attributes listing
 weight: 1
 ---
 
-# Attributes listing
+# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > ATTRIBUTES > ATTRIBUTES LISTING
+
 
 ![Attribute](/static/img/Attribute.png)
 
