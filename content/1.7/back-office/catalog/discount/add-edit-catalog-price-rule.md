@@ -11,6 +11,7 @@ The first step of this document is to detail global and generic expected behavio
 First Catalog price rule can be created by clicking on the blue button with plus on the top-right of the page - (+) Add new catalog price rule. Also, as an alternative, it can be clicked on smaller plus (+) icon in the top-right of the Catalog Price rules table.
 
 The second user interface will lead to Catalog Price rules creation page.
+
 ![Catalog Price Rules](/static/img/catalog-price-rules.png)
 
 ## Price Rules input fields and meanings
