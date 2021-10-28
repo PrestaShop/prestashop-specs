@@ -56,6 +56,10 @@ It's possible to sort by id asc or desc and search by id.
 
 It's possible to sort by value asc or desc and search by value.
 
+3. Position
+
+The position of each attribute value can be changed by clicking on this column and by moving it up or down.
+After changing the position, the message "Successful update." is displayed.
 4. Actions
 
 **Edit.** The user can edit an attribute value as often as necessary. 
