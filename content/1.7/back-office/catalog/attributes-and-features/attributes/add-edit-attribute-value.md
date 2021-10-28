@@ -55,7 +55,7 @@ If pressing "delete", the texture disappears, a message appears saying: "The ima
 
 ## Call to action
 
-2 call to actions are displayed at the bottom of this page:
+3 call to actions are displayed at the bottom of this page:
 
 Save then add another value
 
