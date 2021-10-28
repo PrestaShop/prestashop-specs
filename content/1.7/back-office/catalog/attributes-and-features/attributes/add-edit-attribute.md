@@ -6,7 +6,6 @@ weight: 1
 
 ![Attribute1](/static/img/attribute1.png)
 
-To add an attribute, or in other words, to add an attribute which will variation possibilities for colors, capacity, material, etc. , click on "Add new attribute". A new page appears.
 
 While adding or editing an attribute, the following fields / toggles / parameters are displayed:
 
