@@ -1,4 +1,8 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > ATTRIBUTES > VIEW ATTRIBUTE
+---
+title: View attribute
+weight: 1
+---
+# View attribute
 
 When viewing an attribute, the name of the selected attribute is displayed as the name of the block.
  
