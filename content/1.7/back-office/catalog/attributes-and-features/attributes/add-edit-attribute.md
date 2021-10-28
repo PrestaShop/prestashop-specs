@@ -1,4 +1,8 @@
-# SPECIFICATIONS - CATALOG > ATTRIBUTES & FEATURES > ATTRIBUTES > ADD/EDIT NEW ATTRIBUTE
+---
+title: Add / edit attribute
+weight: 1
+---
+# Add / edit attribute
 
 ![Attribute1](/static/img/attribute1.png)
 
