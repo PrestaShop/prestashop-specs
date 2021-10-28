@@ -18,6 +18,27 @@ Elements in the page Logo Block Logo block: There is a logo block on the left of
     </item>
     
     <item>
+      <title>Add / edit attribute</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html</guid>
+      <description>Add / edit attribute While adding or editing an attribute, the following fields / toggles / parameters are displayed:
+ Name (mandatory field)  This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: &amp;ldquo;The field name is required at least in default language&amp;rdquo;. When the label is hovered, a tooltip is displayed: &amp;ldquo;Your internal name for this attribute.</description>
+    </item>
+    
+    <item>
+      <title>Add / edit attribute value</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html</guid>
+      <description>Add / edit attribute value While adding or editing an attribute value, the following fields / toggles / parameters are displayed:
+ Attribute group  This drop-down lists all the attributes and is mandatory. In the case of multistore, it lists only the attributes associated with the store(s) selected as context. When the label is hovered, a tooltip is displayed: &amp;ldquo;Choose the attribute group for this value.&amp;rdquo;
+Value  This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
+    </item>
+    
+    <item>
       <title>Add / Edit Feature</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -93,6 +114,16 @@ By default, the Stable option is selected. A tooltip is available, Choose a stab
 Modules header Upload a module. [TO BE COMPLETED]
 If the module zip file is too big, the upload fails and the modal window notices the error:
 Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.ini, please check your server configuration. in Admin.Notifications.Error, cf. to do #16428 issue.</description>
+    </item>
+    
+    <item>
+      <title>Attributes listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html</guid>
+      <description>Attributes listing HOW ATTRIBUTES WORK Attributes are the basis of product combinations. Combinations can be created through the product page (Catalog &amp;gt; Product &amp;gt; Add/edit product). Attributes are like the properties of a product (color, capacity, size, weight, etc&amp;hellip;) that may change between combinations while still keeping the same product name.
+This page presents a list of all the registered attributes. They can be edited or deleted using the actions on the right of the table.</description>
     </item>
     
     <item>
@@ -793,6 +824,19 @@ Listing As usual, four tables options are displayed on the top-right hand corner
 Modules header Upload a module. [TO BE COMPLETED]
 If the module zip file is too big, the upload fails and the modal window notices the error:
 Clicking on &amp;lsquo;What happened?&amp;rsquo; should display Your uploaded file might exceed the upload_max_filesize and the post_max_size directives in php.</description>
+    </item>
+    
+    <item>
+      <title>View attribute</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html</guid>
+      <description>View attribute When viewing an attribute, the name of the selected attribute is displayed as the name of the block.
+Call to action A call to actions is displayed in the header of this page:
+ Add new value  👉 See the specs of the add/edit attribute value
+Settings wheel When clicking on the settings wheel, the following options are displayed:
+ Refresh list  After clicking on it, the page is reloaded.</description>
     </item>
     
     <item>
