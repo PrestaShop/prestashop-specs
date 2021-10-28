@@ -58,7 +58,9 @@ If pressing "delete", the texture disappears, a message appears saying: "The ima
 2 call to actions are displayed at the bottom of this page:
 
 Save then add another value
+
 👉 When pressed, stays in the same page, shows the message: "Successful creation."
 
 Save
+
 👉 When pressed, redirects back to the features values page, shows the message: "Successful creation."
