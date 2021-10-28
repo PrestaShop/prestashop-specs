@@ -17,7 +17,8 @@ This field can be translated: When several languages are installed, a drop-down 
 
 2) Public name (mandatory field)
 
-This field defines the name for the attribute which if creating or editing shows, has an exmplanation, when hovered on "name" stating: "The public name for this attribute, displayed to the customers. Invalid characters: <>;=#{}"
+This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: "The field public_name is required at least in _default language_".
+When the label is hovered, a tooltip is displayed: "The public name for this attribute, displayed to the customers. Invalid characters: <>;=#{}"
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. 
 
 3) URL 
