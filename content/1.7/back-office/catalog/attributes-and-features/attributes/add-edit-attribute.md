@@ -42,7 +42,7 @@ This toggle is displayed only when the facetedsearch module is enabled. It allow
 
 This drop-down is mandatory. 
 When the label is hovered, a tooltip is displayed: "The way the attribute's values will be presented to the customers in the product's page."
-When pressed on the drop-down, allows to choose between the options: 
+The following options are displayed in the drop-down: 
  - Drop-down list
  - Radio buttons
  - Color or texture
