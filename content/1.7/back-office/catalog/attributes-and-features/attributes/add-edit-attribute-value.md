@@ -54,7 +54,7 @@ When trying to upload an incorrect format file and trying to save, shows the fol
 8) Current texture
 
 When there is no texture, a message "None" is displayed. When there is a texture, the texture is displayed with a "delete" button.
-If pressing "delete", the texture disappears, a message appears saying: "The image was successfully deleted."
+If pressing "delete", the texture is deleted and the following message is displayed: "The image was successfully deleted."
 
 ## Call to action
 
