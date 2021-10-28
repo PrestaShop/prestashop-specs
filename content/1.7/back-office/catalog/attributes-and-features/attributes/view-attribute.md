@@ -56,7 +56,7 @@ It's possible to sort by id asc or desc and search by id.
 
 It's possible to sort by value asc or desc and search by value.
 
-3. Actions
+4. Actions
 
 **Edit.** The user can edit an attribute value as often as necessary. 
 
