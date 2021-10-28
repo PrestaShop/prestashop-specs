@@ -10,7 +10,7 @@ weight: 1
 
 ## HOW ATTRIBUTES WORK
 
-Attributes are the basis of product combinations. Combinations can be created only if at least one of its attributes changes. Attributes are like the properties of a product that may change between combinations while still keeping the same product name: color, capacity, size, weight, etc. 
+Attributes are the basis of product combinations. Combinations can be created through the product page ([Catalog > Product > Add/edit product](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/products/add-edit.md#combinations-tab-epic)). Attributes are like the properties of a product (color, capacity, size, weight, etc...) that may change between combinations while still keeping the same product name.
 
 This page presents a list of all the registered attributes. They can be edited or deleted using the actions on the right of the table. Their values can be displayed by clicking on "View".
 
