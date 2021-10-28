@@ -57,7 +57,8 @@ If pressing "delete", the texture disappears, a message appears saying: "The ima
 
 3 call to actions are displayed at the bottom of this page:
 
-Save then add another value
+- Save then add another value:
+In the case of adding an attribute value, the attribute value is added and the add form is opened and a success message is displayed: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and the add form is opened and a success message is displayed: "Successful update."
 
 
 Save
