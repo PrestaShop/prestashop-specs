@@ -8,7 +8,8 @@ While adding or editing an attribute value, the following fields / toggles / par
 
 1) Attribute group
 
-This field is mandatory, and is a drop-down list, when pressed on the drop-down  shows the possible attributes that you can select, that are already created. When hovered on "Attribute group", shows the following information about the field: "Choose the attribute group for this value."
+This drop-down lists all the attributes and is mandatory. In the case of multistore, it lists only the attributes associated with the store(s) selected as context. 
+When the label is hovered, a tooltip is displayed: "Choose the attribute group for this value."
 
 2) Value 
 
