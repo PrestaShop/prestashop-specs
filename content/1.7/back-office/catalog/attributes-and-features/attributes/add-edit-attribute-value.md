@@ -15,7 +15,7 @@ When the label is hovered, a tooltip is displayed: "Choose the attribute group f
 
 This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 If the save button is pressed and if this field is empty for the default language, the following error message is displayed: "The field value is required at least in _default language_"
-When hovered on "Value", shows the following: "Invalid characters: <>;=#{}".
+When the label is hovered, a tooltip is displayed: "Invalid characters: <>;=#{}".
 
 3) URL 
 
