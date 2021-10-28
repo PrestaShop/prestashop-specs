@@ -40,7 +40,8 @@ This toggle is displayed only when the facetedsearch module is enabled. It allow
 
 6) Attribute type (drop-down list) (mandatory field)
 
-When hovered on the name of the field, shows the following: "The way the attribute's values will be presented to the customers in the product's page."
+This drop-down is mandatory. 
+When the label is hovered, a tooltip is displayed: "The way the attribute's values will be presented to the customers in the product's page."
 When pressed on the drop-down, allows to choose between the options: 
  - Drop-down list
  - Radio buttons
