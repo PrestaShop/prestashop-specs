@@ -60,6 +60,7 @@ If pressing "delete", the texture disappears, a message appears saying: "The ima
 - Save then add another value:
 In the case of adding an attribute value, the attribute value is added and the add form is opened and a success message is displayed: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and the add form is opened and a success message is displayed: "Successful update."
 
-Save
+- Save:
+In the case of adding an attribute value, the attribute value is added and a success message is displayed on the attribute values listing: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and a success message is displayed on the attribute values listing: "Successful update.".
 
 👉 When pressed, redirects back to the features values page, shows the message: "Successful creation."
