@@ -73,6 +73,6 @@ When clicking on "reset", the search is removed and all the results are displaye
 
 ## Back to the list
 
-The "Back to the list" button redirects to the attributes lisitng.
+The "Back to the list" button redirects to the attributes listing.
 
 👉 See the [specs of the attributes listing](./attributes-listing.md)
