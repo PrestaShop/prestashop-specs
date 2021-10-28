@@ -65,4 +65,5 @@ In the case of adding an attribute value, the attribute value is added and the a
 
 - Save:
 In the case of adding an attribute value, the attribute value is added and a success message is displayed on the attribute values listing: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and a success message is displayed on the attribute values listing: "Successful update.".
-👉 When pressed, redirects back to the features values page, shows the message: "Successful creation."
+- Cancel:
+The attribute value is not added/edited and the attribute values listing is displayed.
