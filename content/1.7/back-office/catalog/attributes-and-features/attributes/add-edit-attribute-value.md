@@ -59,7 +59,6 @@ If pressing "delete", the texture disappears, a message appears saying: "The ima
 
 Save then add another value
 
-👉 When pressed, stays in the same page, shows the message: "Successful creation."
 
 Save
 
