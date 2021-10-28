@@ -41,7 +41,7 @@ The shop association block is displayed when the multistore is enabled and if se
 **This color picker is displayed only if the selected attribute is of type color or texture.**
 When the label is hovered, a tooltip is displayed: "Choose a color with the color picker, or enter an HTML color (e.g. "lightblue", "#CC6600"".
 The color can be filled in the input or selected with the color picker.
-In the palet you have 10 preset squared colors which you can choose from instantly. Below the preset colors there's a field for inputting the code for a color. If a code is input manually and is incorrect, a red message at the top appears stating: "The color field is invalid."
+If the color filled in the field is incorrect, while clicking on save, an error message is displayed: "The color field is invalid."
 
 7) Texture
 
