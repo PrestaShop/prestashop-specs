@@ -1,5 +1,5 @@
 ---
-title: View attribute
+title: View contact
 weight: 1
 ---
 # View contacts
