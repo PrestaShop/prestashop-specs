@@ -45,7 +45,10 @@ If the color filled in the field is incorrect, while clicking on save, an error 
 
 7) Texture
 
-Texture field allows to upload a texture/picture instead of a color. This field has a button on the right "Add file", when pressed opens a pop-up allowing to choose a file to upload. Only the following formats are allowed to upload in this section: .gif, .jpg, .png.
+**This field is displayed only if the selected attribute is of type color or texture.**
+It allows uploading a texture/picture. When clicking on the "Add file" button, a pop-up is opened and allows to choose a file to upload. Only the following formats are allowed to be uploaded: .gif, .jpg, .png.
+If a texture is uploaded and if the color is filled, the texture is used and not the color.
+When the label is hovered, a tooltip is displayed: "Upload an image file containing the color texture from your computer. This will override the HTML color.".
 When trying to upload an incorrect format file and trying to save, shows the following message: "Image format not recognized, allowed formats are: .gif, .jpg, .png"
 
 8) Current texture
