@@ -63,9 +63,11 @@ If the value is > 0.00 and not reached in the shopping cart front-office, then a
 
 This toggle is on Yes by default.
 
-When enabled, the shipping costs are automatically updated when the merchant edit an order, even if the price of the order exceeds the carrier's range.
+When enabled, the shipping costs are automatically updated when the merchant edits an order, even if the price of the order exceeds the carrier's range.
 
 If there is an invoice, it's also updated.
+
+When the configuration "Recalculate shipping costs after editing the order" is defined to "No" and the user edits the carrier of an order, the shipping cost of the order remains the same. The order total and invoice are not impacted.
 
 ### Delayed shipping
 
