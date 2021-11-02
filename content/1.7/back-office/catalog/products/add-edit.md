@@ -489,6 +489,7 @@ This value is recalculated when the merchant will change one of the following fi
 * **Cost price (tax excl.)**: By default, it’s set to 0.000000      
 It’s used for margin calculations.          
 To separate decimals a dot or a comma can be used, both should work no matter the language.
+When a product has a default supplier, the cost price is synchronized with cost price of the default supplier (cf. Option tab > Supplier > Default supplier).
 * **Add a specific price**: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.     
 This button opens a form with the following fields :      
   * **Currencies**: Drop down with all the currencies enabled. You can select one currency or select “all currencies”, so that the specific price is available in all currencies.      
@@ -634,8 +635,17 @@ Here is the list of the elements of options tab:
   * **Information message about suppliers**: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool \(see Shop Parameters &gt; Products settings\), the values you define \(price, references\) will be used in supply orders.”
   * **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office.
 When several suppliers are associated with a product, uncheking one of them should delete the related data while keeping the values of the other suppliers intact.
-  * **Default supplier**: When you check a supplier, a radio button allowing to choose the default supplier appears. When there is only one supplier checked, the default supplier radio button is automatically checked \([issue 9580](https://github.com/PrestaShop/PrestaShop/issues/8580)\) When there are many suppliers checked, you can change the default supplier.
-When there is a default supplier, the cost price is the default supplier price when there is a conflit price conflit from different supplier for the same product.
+  * **Default supplier**: 
+When you check a supplier, a radio button allowing you to choose the default supplier appears. 
+
+When there is only one supplier checked, the default supplier radio button is automatically checked (issue 9580).
+
+When there are many suppliers checked, you can change the default supplier. 
+
+When a default supplier is used, the product's cost price is set by the default supplier's cost price. 
+When the user changes the cost price in the Price tab, the value of the default supplier's cost price is also updated by the new changed value. And vice versa, when the user changes the default supplier cost price, the product cost price on the Price tab is updated with the new value filled in.
+When the user saves the product form, the default supplier's cost price and the product's cost price should always be equal.
+
   * **Supplier reference\(s\)**: This part is displayed only if you have associated at least one supplier to the product. The supplier's section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.
   * **Information message about supplier reference\(s\)**: “You can specify product reference\(s\) for each associated supplier. Click "Save" after changing selected suppliers to display the associated product references.”  
   * **Supplier dropdown**: A dropdown list appears to select the supplier for which the merchant wants to change supplier costs for his products.
