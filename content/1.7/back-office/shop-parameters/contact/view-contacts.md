@@ -46,7 +46,7 @@ After clicking on "Delete" button, the selected contacts are deleted, a successf
 
 ## Columns
 
-The page displays the attribute values list with the following columns:
+The page displays the contacts list with the following columns:
  
 1. ID
 
