@@ -67,5 +67,5 @@ After changing the position, the message "Successful update." is displayed.
 
 👉 See the [specs of the add/edit contacts](./add-edit-contacts.md) 
 
-**Delete.** The contact can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the attribute value is deleted, a successful message is displayed "Successful deletion."
+**Delete.** The contact can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the contact is deleted, a successful message is displayed "Successful deletion."
 
