@@ -63,7 +63,7 @@ After changing the position, the message "Successful update." is displayed.
 4. Description
 
 5. Actions
-**Edit.** The user can edit an attribute value as often as necessary. 
+**Edit.** This is the main action and it can be performed by clicking on the line. The user can edit a contact as often as necessary. 
 
 👉 See the [specs of the add/edit contacts](./add-edit-contacts.md) 
 
