@@ -58,9 +58,11 @@ It's possible to sort by title asc or desc and search by title.
 
 3. Email address
 
-After changing the position, the message "Successful update." is displayed.
+Displays the email address to which emails arrive.
 
 4. Description
+
+Description can be edited, it can be displayed to the customer in the contact form.
 
 5. Actions
 **Edit.** This is the main action and it can be performed by clicking on the line. The user can edit a contact as often as necessary. 
