@@ -58,7 +58,7 @@ It's possible to sort by title asc or desc and search by title.
 
 3. Email address
 
-Displays the email address to which emails arrive.
+It's possible to sort by email address asc or desc and search by email address.
 
 4. Description
 
