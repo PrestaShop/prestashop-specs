@@ -13,6 +13,7 @@ While adding or editing a contact, the following fields / toggles / parameters a
 
 This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 The title is the name of the contact. For example, it can be either a person's name or the name of the service itself. There is a help-text under this field: "Contact name (e.g. Customer Support)."
+If the field is left empty, and when trying to save, shows the message below the field: "The field title is required at least in your default language."
  
  2) Email address
 
@@ -29,6 +30,7 @@ This field can be translated: When several languages are installed, a drop-down 
  5) Shop association
 
 The shop association block is displayed when the multistore is enabled and if several shops are configured. This field is mandatory.
+If none of the shops are selected, does not save the the contact, shows the message: "The "Shop association" field is required."
 
 :point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
 
