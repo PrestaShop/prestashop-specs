@@ -1,5 +1,5 @@
 ---
-title: View contact
+title: Contacts listing
 weight: 1
 ---
 # View contacts
