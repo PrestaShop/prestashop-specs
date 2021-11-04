@@ -17,6 +17,7 @@ The title is the name of the contact. For example, it can be either a person's n
  2) Email address
 
 Email address input, has an explanation below it: "Emails will be sent to this address."."
+ 
  3) Save messages?
 
 This is a toggle switch, can be choosed as "yes" or "no". It is a mandatory toggle. Has an explanation below it: If enabled, all messages will be saved in the "Customer Service" page under the "Customer" menu."
