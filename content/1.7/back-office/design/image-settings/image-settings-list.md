@@ -41,7 +41,6 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Arrow dropdown of Edit CTA button** - allows the functionality to execute Delete CTA with a deletion of the specific image setting.
 
 ## Bulk Actions
-![Bulk Actions](/static/img/bulk-actions.png)
 
 When there are multiple Image settings created, you can manage them and configure the main actions by using Bulk Actions button. <br>
 
