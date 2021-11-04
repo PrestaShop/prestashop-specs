@@ -20,7 +20,7 @@ There is a help-text under this field: "Emails will be sent to this address.".
  
  3) Save messages?
 
-This is a toggle switch, can be choosed as "yes" or "no". It is a mandatory toggle. Has an explanation below it: If enabled, all messages will be saved in the "Customer Service" page under the "Customer" menu."
+This toggle is mandatory and allows to choose if the messages are saved or not in the Customer Service page. By default, this toggle is enabled. There is a help-text under this toggle: "If enabled, all messages will be saved in the "Customer Service" page under the "Customer" menu."
 
  4) Description
 
