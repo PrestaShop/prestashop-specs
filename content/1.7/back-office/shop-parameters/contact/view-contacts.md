@@ -58,7 +58,6 @@ It's possible to sort by title asc or desc and search by title.
 
 3. Email address
 
-The position of each attribute value can be changed by clicking on this column and by moving it up or down.
 After changing the position, the message "Successful update." is displayed.
 
 4. Description
