@@ -4,7 +4,7 @@ weight: 1
 ---
 # Contacts listing
 
-The shop offers several points of contact for the customers, from a contact form to a list of physical stores \(if any\). These pages are where anything related to your contact details are configured.
+This page lists all the contacts of the store. The list of contacts is displayed in the contact form of the front office. The customer can choose the contact to send the message.
 
 ## Call to action
 
