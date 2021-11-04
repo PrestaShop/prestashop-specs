@@ -16,7 +16,7 @@ The title is the name of the contact. For example, it can be either a person's n
  
  2) Email address
 
-Email address input, has an explanation below it: "Emails will be sent to this address."."
+There is a help-text under this field: "Emails will be sent to this address.".
  
  3) Save messages?
 
