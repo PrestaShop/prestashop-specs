@@ -39,3 +39,12 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Search CTA button** - executes the filtering.
 - **Edit CTA button** - executes the action of editing the specific image setting.
 - **Arrow dropdown of Edit CTA button** - allows the functionality to execute Delete CTA with a deletion of the specific image setting.
+
+## Bulk Actions
+![Bulk Actions](/static/img/bulk-actions.png)
+
+When there are multiple Image settings created, you can manage them and configure the main actions by using Bulk Actions button. <br>
+
+- **Select All** - option to select all the listing items in Images settings list
+- **Unselect All** - option to unselect all the listing items in Images settings list
+- **Delete selected** - after selecting the specific multiple Image settings, it can be a deletion from the listing by one click
