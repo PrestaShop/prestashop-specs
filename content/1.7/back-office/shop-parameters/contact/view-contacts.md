@@ -2,7 +2,7 @@
 title: Contacts listing
 weight: 1
 ---
-# View contacts
+# Contacts listing
 
 The shop offers several points of contact for the customers, from a contact form to a list of physical stores \(if any\). These pages are where anything related to your contact details are configured.
 
