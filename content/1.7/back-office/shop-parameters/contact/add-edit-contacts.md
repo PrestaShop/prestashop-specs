@@ -12,7 +12,7 @@ While adding or editing a contact, the following fields / toggles / parameters a
  1) Title
 
 This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
-Title is the name of the contact: either a person's name or the name of the service itself. Has an explanation below the field written: "Contact name (e.g. Customer Support)."
+The title is the name of the contact. For example, it can be either a person's name or the name of the service itself. There is a help-text under this field: "Contact name (e.g. Customer Support)."
  
  2) Email address
 
