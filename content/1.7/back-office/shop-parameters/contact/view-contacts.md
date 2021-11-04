@@ -54,7 +54,7 @@ It's possible to sort by id asc or desc and search by id.
 
 2. Title
 
-It's possible to sort by value asc or desc and search by value.
+It's possible to sort by title asc or desc and search by title.
 
 3. Email address
 
