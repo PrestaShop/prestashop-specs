@@ -6,7 +6,6 @@ weight: 1
 
 ![Contact](/img/contacts.png)
 
-Click the "Add new contact" button or edit an existingg contact to access the contact creation form.
 
 While adding or editing a contact, the following fields / toggles / parameters are displayed:
 
