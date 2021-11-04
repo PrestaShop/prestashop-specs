@@ -40,7 +40,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected contacts (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
-- Delete selected: This button will delete the selected attributes. 
+- Delete selected: This button will delete the selected contacts. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected contacts are deleted, a successful message is displayed "The selection has been successfully deleted."
 
