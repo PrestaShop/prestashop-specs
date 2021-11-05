@@ -87,3 +87,16 @@ In an all shops context, the options listed above should have [specific settings
 :point_right: [Multistore general specs](../../multistoregeneralspecs.md)
 
 :point_right: [Multistore special case: fields without checkboxes](../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them)
+
+## Regenerate thumbnails
+
+**Information message**
+
+Regenerate thumbnails might be a touchy operation for the user.
+
+In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature's two options:
+
+_Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails._<br/>
+_Also, regenerating thumbnails for all existing images can take several minutes, please be patient._, localized in Admin.Design.Notification
+
+**Select an image**
