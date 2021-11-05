@@ -47,3 +47,43 @@ When there are multiple Image settings created, you can manage them and configur
 - **Select All** - option to select all the listing items in Images settings list.
 - **Unselect All** - option to unselect all the listing items in Images settings list.
 - **Delete selected** - after selecting the specific multiple Image settings, it can be a deletion from the listing by one click.
+
+## Image generation options
+
+**Image format**
+
+- Use JPEG.<br>
+- Use PNG only if the base image is in PNG format.<br>
+- Use PNG for all images.<br>
+- Use WEBP only if the base image is in WEBP format.<br>
+- Use WEBP for all images.<br>
+
+**JPEG Compression**
+
+**PNG Compression**
+
+**Generate images based on one side of the source image**
+
+**Maximum file size of product customization pictures**
+
+**Product picture width**
+
+**Product picture height**
+
+**Generate high resolution images**
+
+### Multistore behavior
+
+In a specific shop context or in a group context, the options listed above should have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19370) except the ones listed below that doesn't have checkbox and that is disabled with an information message displayed when the user hovers the drop-down: "You can modify this parameter in all shops context only. Switch context to enable it." (see issue [#19356](https://github.com/PrestaShop/PrestaShop/issues/19356))
+
+In an all shops context, the options listed above should have [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19322) except the ones listed below:
+
+- Generate images based on one side of the source image
+- Maximum file size of product customization pictures
+- Product picture width
+- Product picture height
+- Generate high resolution images
+
+:point_right: [Multistore general specs](../../multistoregeneralspecs.md)
+
+:point_right: [Multistore special case: fields without checkboxes](../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them)
