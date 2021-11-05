@@ -101,7 +101,7 @@ _Also, regenerating thumbnails for all existing images can take several minutes,
 
 **Select an image**
 
-
+There is a drop-down UI selection element, where certain value can be set for Images regeneration. By default, the value is set to "All" which means that the Images regeneration process will be applied to all the selections. Also, the **Select a format** drop-down values are hidden, by default. The selections are Categories, Brands, Suppliers, Products and Stores. After choosing one of the values from the drop-down, the Select a format drop-down will be displayed. 
 
 
 **Erase previous images**
