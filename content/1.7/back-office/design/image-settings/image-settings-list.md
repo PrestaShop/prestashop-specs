@@ -68,23 +68,23 @@ This feature allows to change the PNG files quality by compressing the images' q
 
 **Generate images based on one side of the source image**
 
-The feature allows to generate the images based on the one side of the source image. The default state is Automatic, and this value could take the biggest part of time in image gereration process. The second 2 values are - Width or Height. The generation process will align to the value that is set.
+The feature allows to generate the images based on the one side of the source image. The default state is Automatic, and this value could take the biggest part of time in image generation process. The second 2 values are - Width or Height. The generation process will align to the value that is set.
 
 **Maximum file size of product customization pictures**
 
-The feature allows to set the maximum file size of product customization pictures that customers can upload to customize a product. The file size value is defined in bytes. The default value is set in the text field - 8388608 B (Bytes) which is 8.38 MB (Megabytes) - the default PHP file size upload limit.
+The feature allows setting the maximum file size of product customization pictures that customers can upload to customize a product. The file size value is defined in bytes. The default value is set in the text field - 8388608 B (Bytes) which is 8.38 MB (Megabytes) - the default PHP file size upload limit.
 
 **Product picture width**
 
-This allows to set the max width pixels value of the customizable picture, that Prestashop customers can upload. The default width value is seto to 64 px (Pixels).
+This allows to set the max width pixels value of the customizable picture, that Prestashop customers can upload. The default width value is set to 64 px (Pixels).
 
 **Product picture height**
 
-This allows to set the max height pixels value of the customizable picture, that Prestashop customers can upload. The default height value is seto to 64 px (Pixels).
+This allows to set the max height pixels value of the customizable picture, that Prestashop customers can upload. The default height value is set to 64 px (Pixels).
 
 **Generate high resolution images**
 
-This functionality will get ability to generate high resolution images, which are of the best quality. When activating this, image diplicate will be generated. The duplicated image will contain bigger resolution and higher quality. In this case, total amount of images will be dupclicated twice.
+This functionality will get ability to generate high resolution images, which are of the best quality. When activating this, image duplicate will be generated. The duplicated image will contain bigger resolution and higher quality. In this case, total amount of images will be duplicated twice.
 
 ### Multistore behavior
 
