@@ -72,6 +72,8 @@ The feature allows to generate the images based on the one side of the source im
 
 **Maximum file size of product customization pictures**
 
+The feature allows to set the maximum file size of product customization pictures that customers can upload to customize a product. The file size value is defined in bytes.
+
 **Product picture width**
 
 **Product picture height**
