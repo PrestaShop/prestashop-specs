@@ -59,7 +59,6 @@ When there are multiple Image settings created, you can manage them and configur
 - Use WEBP for all images.<br>
 
 **JPEG Compression**
-
 This feature allows to change the JPEG files quality by compressing the images' quality. There is availability from 0 - which is the worst quality to the 100 - which is the best quality of the images. The recommended compression rate is 90. By default, the value is set to 90.
 
 **PNG Compression**
