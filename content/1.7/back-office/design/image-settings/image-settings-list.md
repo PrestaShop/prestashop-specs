@@ -76,9 +76,15 @@ The feature allows to set the maximum file size of product customization picture
 
 **Product picture width**
 
+This allows to set the max width pixels value of the customizable picture, that Prestashop customers can upload. The default width value is seto to 64 px (Pixels).
+
 **Product picture height**
 
+This allows to set the max height pixels value of the customizable picture, that Prestashop customers can upload. The default height value is seto to 64 px (Pixels).
+
 **Generate high resolution images**
+
+This functionality will get ability to generate high resolution images, which are of the best quality. When activating this, image diplicate will be generated. The duplicated image will contain bigger resolution and higher quality. In this case, total amount of images will be dupclicated twice.
 
 ### Multistore behavior
 
@@ -115,7 +121,6 @@ There is a drop-down UI selection element, where certain value can be set for Im
 - Suppliers format - large_default, medium_default, small_default
 - Products format - cart_default, home_default, large_default, medium_default, small_default
 - Stores format - All or stores_default
-
 
 **Erase previous images**
 
