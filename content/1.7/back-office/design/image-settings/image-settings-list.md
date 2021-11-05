@@ -72,7 +72,7 @@ The feature allows to generate the images based on the one side of the source im
 
 **Maximum file size of product customization pictures**
 
-The feature allows to set the maximum file size of product customization pictures that customers can upload to customize a product. The file size value is defined in bytes.
+The feature allows to set the maximum file size of product customization pictures that customers can upload to customize a product. The file size value is defined in bytes. The default value is set in the text field - 8388608 B (Bytes) which is 8.38 MB (Megabytes) - the default PHP file size upload limit.
 
 **Product picture width**
 
