@@ -20,11 +20,11 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Name** - specific image setting value names. By default they are installed automatically.
 - **Width** - specific image setting value, describing the width of the image in pixels. By default the specific width is installed.
 - **Height** - specific image setting value, describing the height of the image in pixels. By default the specific height is installed.
-- **Products** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
-- **Categories** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
-- **Brands** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
-- **Suppliers** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
-- **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these opeartors can toggle the enabling and disabling functionality directly from listing page.
+- **Products** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Categories** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Brands** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Suppliers** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 
 ## Image Settings table Filtering and UI elements
 - **ID text field** - it can be set as numeric value, before filtering execution.
