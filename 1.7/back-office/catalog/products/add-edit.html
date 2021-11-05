@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1636038420" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1636038420" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1636038420" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1636038420" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1636038420" rel="stylesheet">
-    <link href="../../../../style.css?1636038420" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1636118488" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1636118488" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1636118488" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1636118488" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1636118488" rel="stylesheet">
+    <link href="../../../../style.css?1636118488" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1636038420"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1636118488"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -7700,7 +7700,8 @@ It is taken into account for the calculations instead of the field &ldquo;Price 
 This value is recalculated when the merchant will change one of the following fields: Price (tax excl.) ecotax included, Price (tax incl.) ecotax included &amp; Ecotax (tax incl.)</li>
 <li><strong>Cost price (tax excl.)</strong>: By default, it’s set to 0.000000   <br>
 It’s used for margin calculations.       <br>
-To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+To separate decimals a dot or a comma can be used, both should work no matter the language.
+When a product has a default supplier, the cost price is synchronized with cost price of the default supplier (cf. Option tab &gt; Supplier &gt; Default supplier).</li>
 <li><strong>Add a specific price</strong>: You can’t add the same specific price with same conditions twice. If you try, you have an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.  <br>
 This button opens a form with the following fields :
 <ul>
@@ -7877,8 +7878,17 @@ Temporary redirection (302) = Temporarily display another product or category in
 <li><strong>Information message about suppliers</strong>: “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on read more link to display the following information: “When using the advanced stock management tool (see Shop Parameters &gt; Products settings), the values you define (price, references) will be used in supply orders.”</li>
 <li><strong>Choose the suppliers associated with this product</strong>: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated to the supplier and displayed on the supplier page in front-office.
 When several suppliers are associated with a product, uncheking one of them should delete the related data while keeping the values of the other suppliers intact.</li>
-<li><strong>Default supplier</strong>: When you check a supplier, a radio button allowing to choose the default supplier appears. When there is only one supplier checked, the default supplier radio button is automatically checked (<a href="https://github.com/PrestaShop/PrestaShop/issues/8580">issue 9580</a>) When there are many suppliers checked, you can change the default supplier.
-When there is a default supplier, the cost price is the default supplier price when there is a conflit price conflit from different supplier for the same product.</li>
+<li><strong>Default supplier</strong>:
+When you check a supplier, a radio button allowing you to choose the default supplier appears.</li>
+</ul>
+</li>
+</ul>
+<p>When there is only one supplier checked, the default supplier radio button is automatically checked (issue 9580).</p>
+<p>When there are many suppliers checked, you can change the default supplier.</p>
+<p>When a default supplier is used, the product&rsquo;s cost price is set by the default supplier&rsquo;s cost price.
+When the user changes the cost price in the Price tab, the value of the default supplier&rsquo;s cost price is also updated by the new changed value. And vice versa, when the user changes the default supplier cost price, the product cost price on the Price tab is updated with the new value filled in.
+When the user saves the product form, the default supplier&rsquo;s cost price and the product&rsquo;s cost price should always be equal.</p>
+<ul>
 <li><strong>Supplier reference(s)</strong>: This part is displayed only if you have associated at least one supplier to the product. The supplier&rsquo;s section also features a table that enables you to set the precise reference and unit price/currency for each product combination, per supplier. If the product has more than one supplier, the table will display each supplier one after the other.</li>
 <li><strong>Information message about supplier reference(s)</strong>: “You can specify product reference(s) for each associated supplier. Click &ldquo;Save&rdquo; after changing selected suppliers to display the associated product references.”</li>
 <li><strong>Supplier dropdown</strong>: A dropdown list appears to select the supplier for which the merchant wants to change supplier costs for his products.</li>
@@ -7889,8 +7899,6 @@ When there is a default supplier, the cost price is the default supplier price w
 <li><strong>Cost price (tax excl.)</strong>: Field to specify the product&rsquo;s cost price for each supplier.</li>
 <li><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
 The Product list has a pagination to navigate throught the combinaition.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -8468,9 +8476,9 @@ Dropdown with 5 options:</li>
 <footer class="article-footer">
 	
 <div>
-  Last updated on June 29, 2021
+  Last updated on November 2, 2021
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/15d8fec1cd165e810dc7a003c10c38a43f05bc60">"eco tax combination" (15d8fec1)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/379908808bf47ec882f1ee847d46fa9be21aef9b">"Cost price new behavior" (37990880)</a>
   
 </div>
 
@@ -8491,17 +8499,17 @@ Dropdown with 5 options:</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1636038420"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1636038420"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1636038420"></script>
-    <script src="../../../../js/jquery.sticky.js?1636038420"></script>
-    <script src="../../../../js/featherlight.min.js?1636038420"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1636038420"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1636038420"></script>
-    <script src="../../../../js/learn.js?1636038420"></script>
-    <script src="../../../../js/hugo-learn.js?1636038420"></script>
+    <script src="../../../../js/clipboard.min.js?1636118488"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1636118488"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1636118488"></script>
+    <script src="../../../../js/jquery.sticky.js?1636118488"></script>
+    <script src="../../../../js/featherlight.min.js?1636118488"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1636118488"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1636118488"></script>
+    <script src="../../../../js/learn.js?1636118488"></script>
+    <script src="../../../../js/hugo-learn.js?1636118488"></script>
     
-    <script src="../../../../main.js?1636038420"></script>
+    <script src="../../../../main.js?1636118488"></script>
     
     
 
