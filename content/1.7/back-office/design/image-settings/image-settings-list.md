@@ -68,6 +68,8 @@ This feature allows to change the PNG files quality by compressing the images' q
 
 **Generate images based on one side of the source image**
 
+The feature allows to generate the images based on the one side of the source image. The default state is Automatic, and this value could take the biggest part of time in image gereration process. The second 2 values are - Width or Height. The generation process will align to the value that is set.
+
 **Maximum file size of product customization pictures**
 
 **Product picture width**
