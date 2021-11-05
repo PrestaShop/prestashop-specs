@@ -113,7 +113,7 @@ In order to emphasize the irreversibility of this action, a yellow warning notif
 *Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails.
 Also, regenerating thumbnails for all existing images can take several minutes, please be patient.*
 
-[Learn more about all the defined notifications](#errors-and-notifications-in-ui) in this page.
+[Learn more about all the defined notifications](#errors-and-notifications-in-ui) in Image settings page.
 
 **Select an image**
 
