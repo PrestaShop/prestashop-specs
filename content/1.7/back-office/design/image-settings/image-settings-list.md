@@ -110,8 +110,10 @@ Regenerate thumbnails might be a touchy operation for the user.
 
 In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature's two options:
 
-_Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails._<br/>
-_Also, regenerating thumbnails for all existing images can take several minutes, please be patient._, localized in Admin.Design.Notification
+*Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails.
+Also, regenerating thumbnails for all existing images can take several minutes, please be patient.*
+
+Learn more about all the defined [notifications]() in this page.
 
 **Select an image**
 
@@ -137,6 +139,7 @@ Also, when clicking on 'Regenerate thumbnails', a pop up modal window should dis
 ## Errors and notifications in UI
 
 The main important warning is once entering the Images setting page. It is specified as:<br>
+
 *By default, all images settings are already installed in your store. Do not delete them, you will need it!*
 
 Once the configuration is successfully saved, the UI prompts the following success notification:<br>
@@ -144,9 +147,15 @@ Once the configuration is successfully saved, the UI prompts the following succe
 *The settings have been successfully updated.*
 
 The Images generatioin options section is stated with information notification: <br>
+
 *JPEG images have a small file size and standard quality. PNG images have a larger file size, a higher quality and support transparency. Note that in all cases the image files will have the .jpg extension.*
 
 *WARNING: This feature may not be compatible with your theme, or with some of your modules. In particular, PNG mode is not compatible with the Watermark module. If you encounter any issues, turn it off by selecting "Use JPEG".*
+
+Regenerate thumbnails warning notification:
+
+*Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails.
+Also, regenerating thumbnails for all existing images can take several minutes, please be patient.*
 
 
 ### Multistore behavior
