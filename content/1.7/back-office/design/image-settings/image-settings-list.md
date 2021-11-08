@@ -157,6 +157,14 @@ Regenerate thumbnails warning notification:
 *Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails.
 Also, regenerating thumbnails for all existing images can take several minutes, please be patient.*
 
+If the appropriate input text fields are not valid, the outcomming errors are:<br>
+
+_There are 5 errors._<br>
+_- The JPEG compression field is invalid._<br>
+_- The PNG compression field is invalid._<br>
+_- The Maximum file size of product customization pictures field is invalid._<br>
+_- The Product picture width field is invalid._<br>
+_- The Product picture height field is invalid._<br>
 
 ### Multistore behavior
 
