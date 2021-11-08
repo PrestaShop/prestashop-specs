@@ -5,6 +5,8 @@ weight: 1
 
 # Design > Image Settings > Add new Image setting
 
+## Adding or editing Image setting UI
+
 This configuration UI is about adding the new Image setting into the Image settings listing.
 
 There are the following input text fields, that can be set:
@@ -19,3 +21,13 @@ There are the following input text fields, that can be set:
 - **Stores** - this toggle switch button can be set for using images setting for Prestashop Stores. By default, the button is disabled.
 
 There is CTA **Save** for saving the Images setting that is configured, and CTA **Cancel** for discarding the Image setting creating or editing action, and navigating to the listing page.
+
+## Notifications UI
+
+After the invalid set of the configuration in this page, for all the input text fields, the UI is prompting the error: <br>
+_There are 3 errors.<br>
+The name field is invalid.<br>
+The width field is invalid.<br>
+The height field is invalid._<br>
+
+
