@@ -35,3 +35,8 @@ _There are 3 errors.<br>
 The name field is required.<br>
 The width field is required.<br>
 The height field is required._<br>
+
+When the Image setting is configured successfully, the UI will prompt the success notification:<br>
+_Successful creation. _
+
+
