@@ -24,6 +24,9 @@ There is CTA **Save** for saving the Images setting that is configured, and CTA 
 
 ## UI notifications after submitting
 
+During default Image setting configuration, the notification is prompted as error: <br>
+_By default, all images settings are already installed in your store. Do not delete them, you will need it!_
+
 After the invalid set of the configuration in this page, for all the input text fields, the UI is prompting the error: <br>
 _There are 3 errors.<br>
 The name field is invalid.<br>
@@ -35,6 +38,9 @@ _There are 3 errors.<br>
 The name field is required.<br>
 The width field is required.<br>
 The height field is required._<br>
+
+After setting up the Image setting configuration, the UI prompts the warning notification: <br>
+_After modification, do not forget to regenerate thumbnails_
 
 When the Image setting is configured successfully, the UI will prompt the success notification:<br>
 _Successful creation._
