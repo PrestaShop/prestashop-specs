@@ -39,4 +39,7 @@ The height field is required._<br>
 When the Image setting is configured successfully, the UI will prompt the success notification:<br>
 _Successful creation._
 
+### Multistore behavior
 
+The fields listed above don't have checkboxes and are available in all contexts (all shops, group, single store).
+Images settings are set for all shops, no matter the context selected.
