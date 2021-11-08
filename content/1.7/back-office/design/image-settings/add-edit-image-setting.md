@@ -11,4 +11,4 @@ There are the following input text fields, that can be set:
 
 - **Name for the image type**  - this is a required field, that describes the main name of the image type. The image type name should be used with underscores and hyphens only. Fore example, that could be _small_custom_, _large_, _custom-modified_small_. By default this input text field is empty.
 - **Width** - this is a required field, that sets the numeric value of Image setting width in pixels. By default, this input text field is empty.
-- **height** - this is a required field, that sets the numeric value of Image setting width in pixels. By default, this input text field is empty.
+- **height** - this is a required field, that sets the numeric value of Image setting height in pixels. By default, this input text field is empty.
