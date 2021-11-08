@@ -17,3 +17,5 @@ There are the following input text fields, that can be set:
 - **Brands** - this toggle switch button can be set for using images setting for Prestashop Brands. By default, the button is disabled.
 - **Suppliers** - this toggle switch button can be set for using images setting for Prestashop Suppliers. By default, the button is disabled.
 - **Stores** - this toggle switch button can be set for using images setting for Prestashop Stores. By default, the button is disabled.
+
+There is CTA **Save** for saving the Images setting that is configured, and CTA **Cancel** for discarding the Image setting creating or editing action, and navigating to the listing page.
