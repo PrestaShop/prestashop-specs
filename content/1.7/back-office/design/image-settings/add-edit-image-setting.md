@@ -22,7 +22,7 @@ There are the following input text fields, that can be set:
 
 There is CTA **Save** for saving the Images setting that is configured, and CTA **Cancel** for discarding the Image setting creating or editing action, and navigating to the listing page.
 
-## Notifications UI
+## UI notifications after submitting
 
 After the invalid set of the configuration in this page, for all the input text fields, the UI is prompting the error: <br>
 _There are 3 errors.<br>
@@ -30,4 +30,8 @@ The name field is invalid.<br>
 The width field is invalid.<br>
 The height field is invalid._<br>
 
-
+After leaving the required fields empty in this page, for all the input text fields, the UI is prompting the error: <br>
+_There are 3 errors.<br>
+The name field is required.<br>
+The width field is required.<br>
+The height field is required._<br>
