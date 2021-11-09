@@ -13,7 +13,7 @@ While adding or editing a contact, the following fields / toggles / parameters a
 
 This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 The title is the name of the contact. For example, it can be either a person's name or the name of the service itself. There is a help-text under this field: "Contact name (e.g. Customer Support)."
-If the field is left empty, and when trying to save, shows the message below the field: "The field title is required at least in your default language."
+If the save button is pressed and if this field is empty for the default language, the following error message is displayed: "The field title is required at least in your default language."
  
  2) Email address
 
