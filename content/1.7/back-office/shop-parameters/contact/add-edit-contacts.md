@@ -30,7 +30,7 @@ This field can be translated: When several languages are installed, a drop-down 
  5) Shop association
 
 The shop association block is mandatory and is displayed when the multistore is enabled and if several shops are configured.
-If none of the shops are selected, does not save the the contact, shows the message: "The "Shop association" field is required."
+If the save button is pressed and if no shop is selected, the following error message is displayed: "The "Shop association" field is required." and the contact is not saved.
 
 :point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
 
