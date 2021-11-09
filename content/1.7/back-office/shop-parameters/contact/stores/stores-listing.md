@@ -38,4 +38,118 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ## Columns
 
+The page displays the features list with the following columns:
 
+1. ID
+
+It's possible to sort by id asc or desc and search by id.
+
+2. Name
+
+It's possible to sort by name asc or desc and search by name.
+
+3. Address
+
+It's possible to sort the addresses, they asc or desc.
+
+4. City
+
+It's possible to sort the cities to asc or desc by the city.
+
+5. Zip/Postal code
+
+It's possible to sort the ZIP code by asc or desc.
+
+7. State
+
+It's possiblre to sort the state list by asc or desc.
+
+9. Country
+
+It's possible to sort the countries list by asc or desc.
+
+11. Phone
+
+It's possible to list the phone numbers list by asc or desc.
+
+13. Fax
+
+It's possible to list the fax numbers list by asc or desc.
+
+15. Enabled
+
+When pressed, shows a drop-down, where selections are: 
+ -
+ Yes
+ No
+ 
+When selected either "yes" or "no", refreshes the list, and lists by the selection. When selected one of the options, additional button appears near the "search" button called "reset".
+Pressing "reset" will remove the selected search option.
+
+### Bulk actions
+
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
+- Enable/Disable selection: this button will either enable or disable the selected shops.
+When trying to press enable/disable selection without any checkboxes marked, will show the message: "You must select at least one item to perform a bulk action." If pressing enable/disable for selected stores, will show a green message: "The status has been successfully updated."
+- Delete selected: This button will delete the selected shops. 
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Delete" button, the selected shop is deleted, a successful message is displayed "The selection has been successfully deleted."
+
+## Contact details
+
+This section enables the option to give the main details of the company, rather than those of a specific shop.
+
+The following fields are shown in this section:
+
+1. Multistore selection (toggle for yes or no)
+A message below the toggle option is shown: "Check / Uncheck all
+You are editing this page for a specific shop or group. Click "Yes" to check all fields, "No" to uncheck all.
+If you check a field, change its value, and save, the multistore behavior will not apply to this shop (or group), for this particular parameter."
+When the toggle is switched to "no" - all fields below are not possible to edit, until the field is selected by a checkbox on the left.
+When the toggle is switched to "yes" - all fields get automatically selected with the checkboxes, and are possible to edit.
+
+Every field listed below has a checkbox possible on the left from the field.
+
+ 2. Shop name 
+
+This field is mandatory, when hovered on the "Shop name" shows the message: "Displayed in emails and page titles."
+
+ 3. Shop email
+
+This field is mandatory, when hovered on the "Shop email" shows the message: "Displayed in emails sent to customers."
+
+ 5. Registration number
+
+
+
+ 7. Shop address line 1
+
+
+
+ 9. Shop address line 2
+
+
+
+ 11. Zip/Postal code
+
+
+
+ 13. City
+
+
+
+ 15. Country
+
+
+
+ 17. State
+
+
+
+ 19. Phone
+
+
+
+ 21. Fax
