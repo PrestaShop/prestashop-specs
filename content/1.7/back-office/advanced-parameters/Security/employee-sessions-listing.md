@@ -13,7 +13,7 @@ The export takes into account filters and sorts that have been done
 
 2) Import
 
-After clicking on it, the is a redirection to the import page in advanced parameters
+After clicking on it, the user is redirected to the import page in advanced parameters
 
 3) Show SQL query
 
