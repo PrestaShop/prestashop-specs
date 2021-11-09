@@ -17,7 +17,7 @@ After clicking on it, the is a redirection to the import page in advanced parame
 
 3) Show SQL query
 
-After clicking on it, the sql query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
 There are two buttons:
 - Close: After clicking on it, the modal is closed
@@ -29,10 +29,10 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ## Bulk actions drop-down
 
-This dropdown is enabled only if at least one sessions is selected, otherwise it's disabled.
+This dropdown is enabled only if at least one session is selected, otherwise, it's disabled.
 
 There is 1 option:
-- Delete selection: it delete the session. The employee can't log back with session deleted. 
+- Delete selection: it deletes the session. The employee can't log back with the session deleted. 
 
 ### Select all checkbox
 
@@ -54,10 +54,4 @@ There are 10 columns:
 
 ## Outdated sessions
 
-Clear outdated sessions manually - button - Delete all the outdated sessions that are pass out and haven't be renewed.
-
-
-
-
-
-
+Clear outdated sessions manually - button - Delete all the outdated sessions that are passed out and haven't been renewed.
