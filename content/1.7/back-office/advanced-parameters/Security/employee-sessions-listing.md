@@ -1,0 +1,63 @@
+---
+title: Listing
+weight: 1
+---
+# SPECS LISTING EMPLOYEE SESSIONS
+
+## Settings wheel
+When clicking on it, 4 options are displayed:
+1) Export
+
+After clicking on it, the list is exported in CSV format.
+The export takes into account filters and sorts that have been done
+
+2) Import
+
+After clicking on it, the is a redirection to the import page in advanced parameters
+
+3) Show SQL query
+
+After clicking on it, the sql query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+
+There are two buttons:
+- Close: After clicking on it, the modal is closed
+- Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+4) Export to SQL Manager
+
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+
+## Bulk actions drop-down
+
+This dropdown is enabled only if at least one sessions is selected, otherwise it's disabled.
+
+There is 1 option:
+- Delete selection: it delete the session. The employee can't log back with session deleted. 
+
+### Select all checkbox
+
+After checking the box, all the products displayed on the page are selected or unselected.
+
+## Listing
+
+### Columns
+
+There are 10 columns:
+
+- ID of the session
+- Employee ID
+- Employee's First name
+- EMployee's Last name
+- Employee's Email
+- Last update
+- Actions: Delete the session
+
+## Outdated sessions
+
+Clear outdated sessions manually - button - Delete all the outdated sessions that are pass out and haven't be renewed.
+
+
+
+
+
+
