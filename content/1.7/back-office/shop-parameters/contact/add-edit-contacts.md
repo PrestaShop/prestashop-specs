@@ -4,7 +4,7 @@ weight: 1
 ---
 # Add / edit contact
 
-![Contact](/img/contacts.png)
+![Contact](/static/img/contacts.png)
 
 
 While adding or editing a contact, the following fields / toggles / parameters are displayed:
