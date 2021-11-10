@@ -5,6 +5,9 @@ weight: 1
 # SPECIFICATIONS - DESIGN > IMAGE SETTINGS
 
 ## Image Settings listing
+
+![Image Settings listing](static/img/image-settings-image-settings.png)
+
 During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties.
 - **cart_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
 - **small_default** - Products is set to enabled, Categories is set to enabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
@@ -15,6 +18,7 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **stores_default** - Products is set to disabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to enabled.
 
 ## Image Settings table properties
+
 - **Checkboxes** - each image setting can be checkboxed separately, if there is a need of Bulk Actions executions with certain image setting. By default, there is nothing selected.
 - **ID** - specific digital value to describe the image setting unique operator. By default they are arranged automatically.
 - **Name** - specific image setting value names. By default they are installed automatically.
@@ -27,6 +31,7 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 
 ## Image Settings table Filtering and UI elements
+
 - **ID text field** - it can be set as numeric value, before filtering execution.
 - **Name field** - it can be set as text value, before filtering execution.
 - **Width field** - it can be set as numeric value, before filtering execution.
@@ -42,6 +47,8 @@ During the first Prestashop installation process on the server, Prestashop insta
 
 ## Bulk Actions
 
+![Bulk Actions](static/img/image-settings-bulk-actions.png)
+
 When there are multiple Image settings created, you can manage them and configure the main actions by using Bulk Actions button. <br>
 
 - **Select All** - option to select all the listing items in Images settings list.
@@ -49,6 +56,8 @@ When there are multiple Image settings created, you can manage them and configur
 - **Delete selected** - after selecting the specific multiple Image settings, it can be a deletion from the listing by one click.
 
 ## Image generation options
+
+![Image generation options](static/img/image-settings-images-generation-options.png)
 
 **Image format**
 
@@ -103,6 +112,8 @@ In an all shops context, the options listed above should have [specific settings
 :point_right: [Multistore special case: fields without checkboxes](../../../broader-topics/multistorespecialsspecs.md#list-of-pages--fields-for-specific-case-4-if-a-group-or-a-specific-shop-is-selected-some-fields-are-disabled-and-dont-have-checkboxes-allowing-to-enable-them)
 
 ## Regenerate thumbnails
+
+![Thumbnails regeneration panel](static/img/image-settings-regenerate-thumbnails.png)
 
 **Information message**
 
