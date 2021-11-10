@@ -7,6 +7,8 @@ weight: 1
 
 ## Adding or editing Image type UI
 
+![Adding or editing Image type panel](static/img/image-settings-add-edit-image-type.png)
+
 This configuration UI is about adding the new Image type into the Image type listing.
 
 There are the following input text fields, that can be set:
