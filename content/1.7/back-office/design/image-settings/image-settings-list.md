@@ -1,5 +1,5 @@
 ---
-title: Generation Options
+title: Image Settings
 weight: 1
 ---
 # SPECIFICATIONS - DESIGN > IMAGE SETTINGS
