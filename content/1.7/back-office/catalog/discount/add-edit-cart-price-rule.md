@@ -33,7 +33,7 @@ The condition tab, allows the ability to specify cart rule conditions to determi
 - **Limit to a single custome** - search input - the user can search by customer name or email in order to set the Cart rule condition for one customer.
 - **Valid** - 2 dates picker - The date picker "From" and "To" define the period of availability of the cart rule. Past these dates or before these dates, the cart rule can't be used. By default, "From" picker date is set to the date when the form was opened and the "To" one month after the From date.
 - **Minimum amount** - this field sets minimum amount from which the customers will can use the cart rule. As well, the currency can be set, if prices should affected with taxes or without taxes and if shipping is affected too. Minimum amount is stated by digital value 0. Default currency is stated by the default Prestashop currency. Tax excluded dropdown is stated by default. Shipping excluded dropdown is stated by default.
-- **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions. Total available input field is stated by digital value 1 by default.
+- **Total available** - this filed describes the quantity of the cart rules that can be used. Total available input field is set by default to 1.
 - **Total available for each user field** - this field sets the price rules amount for certain users separately. Total available for each user is stated by digital value 1 by default.
 ### Restrictions
 Certain conditions can be set for the main cart rule condition. <br>
