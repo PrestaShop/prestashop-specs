@@ -12,7 +12,7 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 
 ![Cart Rules: Information tab](/static/img/cart-rules-information-tab.png)
 
-- **Name** - it is a mandatory field, it can be set as unique rule name. There is a widget at the right of this field with multiple languages. The different languages can be set to the rule names for this certain Information tab form.
+- **Name** - text field - it is a mandatory field with a language selector
 - **Description** - it can be described where is the cart rule used for in more details.
 - **Code** - unique cart rule code can be set here, or simply by clicking Generate and Prestashop will generate the rule automatically with unique code name. It will become as voucher from front end side.
 - **Highlight switch toggle button** - this option can be enabled, then the cart rule voucher will be displayed in cart summary. When there is no Voucher Code set, the Highlight switch toggle button is hidden.
