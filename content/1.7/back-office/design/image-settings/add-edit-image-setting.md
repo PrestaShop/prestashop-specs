@@ -1,5 +1,5 @@
 ---
-title: Add new Image setting
+title: Add new Image type
 weight: 1
 ---
 
