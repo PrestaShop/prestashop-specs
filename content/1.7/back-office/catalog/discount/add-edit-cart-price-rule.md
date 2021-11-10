@@ -30,7 +30,7 @@ The condition tab, allows the ability to specify cart rule conditions to determi
 
 [Cart Rules: Conditions Tab](/static/img/cart-rules-conditions-tab.png)
 
-- **Limit to a single customer input field** - this field sets the customer name or email in order to set the Cart rule condition for certain customer.
+- **Limit to a single custome** - search input - the user can search by customer name or email in order to set the Cart rule condition for one customer.
 - **Valid** - simple date picker form, where date existance can be set. Valid data picker widget is stated for the 1 month value by default.
 - **Minimum amount field** - this field sets minimum amount from which the customers will see the Cart rule. As well, the currency can be set, if prices should affected with taxes or without taxes and if shipping is affected too. Minimum amount is stated by digital value 0. Default currency is stated by the default Prestashop currency. Tax excluded dropdown is stated by default. Shipping excluded dropdown is stated by default.
 - **Total available** - this filed describes the quantity of the cart rules - vouchers available for certain conditions. Total available input field is stated by digital value 1 by default.
