@@ -23,7 +23,7 @@ When there is no Code set, the Highlight switch toggle button is hidden.
 - **Partial use switch toggle button** - this option can be enabled, when the total cart sum is smaller than the voucher sum. If Partial usage is disabled, voucher value will be lovered to the total order amount. If it will be enabled, new voucher will be created in the Cart, as a reminder. Partial use toggle button is switched on by default.
 - **Priority** - Numeric field - By default the priority is set to 1. This field defines the calculation priority of the cart rules at the checkout process. A cart rule with the priority set to 1 will be applied before the cart rule set to 2. The lower the priority value, the higher the priority of the cart rule.
 If there are multiple cart rules applied at the checkout with the identical priority value, the priority will be defined between the cart rule by their Cart Rule ID, the lower is the cart rule ID, the higher the priority .
-- **Status switch toggle button** - enabling this button will enable the rule, disabling it will deactivate the rule and vouchers for customers. Status toggle button is enabled by default.
+- **Status** - switch toggle button -  Status toggle button is enabled by default. Disabling the toggle will disable the cart rule and won't be useable.
 
 ## Conditions tab
 The condition tab, allows the ability to specify cart rule conditions to determine how the cart rule will be used in the Prestashop. 
