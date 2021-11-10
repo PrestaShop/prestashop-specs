@@ -14,7 +14,10 @@ The explanations of the input fields, dropdowns, switch toggle buttons and text 
 
 - **Name** - text field - it is a mandatory field with a language selector
 - **Description** - text field - to describe the cart rule in more details.
-- **Code** - unique cart rule code can be set here, or simply by clicking Generate and Prestashop will generate the rule automatically with unique code name. It will become as voucher from front end side.
+- **Code** - text field - 
+If the user decide to use a Code for the cart rule then the code has to be unique to validate the form otherwise a error is thrown: "This cart rule code is already used (conflict with cart rule %Id of the cart rule%).
+By clicking Generate, a code is generated automatically with unique code name.
+If the code is left empty then the cart rule will automatically be applied to customers' cart that matches the cart rule conditions.
 - **Highlight switch toggle button** - this option can be enabled, then the cart rule voucher will be displayed in cart summary. When there is no Voucher Code set, the Highlight switch toggle button is hidden.
 - **Partial use switch toggle button** - this option can be enabled, when the total cart sum is smaller than the voucher sum. If Partial usage is disabled, voucher value will be lovered to the total order amount. If it will be enabled, new voucher will be created in the Cart, as a reminder. Partial use toggle button is switched on by default.
 - **Priority** - priority of Cart rules can be set here, in what order to show the rules for the customers of the webshop. For example, setting 1 for the most importand cart rule. Priority input field is stated with digital value 1 by default. If there are multiple cart rules created, with the identical digital value, Prestashop Back-Office will arrange the cart rules like the Cart Rule ID arrangement is set in module Cart Rule listing - from the older to the newest created.
