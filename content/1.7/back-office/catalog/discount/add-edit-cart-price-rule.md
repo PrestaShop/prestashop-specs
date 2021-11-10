@@ -20,7 +20,7 @@ By clicking Generate, a code is generated automatically with unique code name.
 If the code is left empty then the cart rule will automatically be applied to customers' cart that matches the cart rule conditions.
 - **Highlight** - switch toggle button - If enabled, the cart rule will be displayed in cart summary. 
 When there is no Code set, the Highlight switch toggle button is hidden.
-- **Partial use switch toggle button** - this option can be enabled, when the total cart sum is smaller than the voucher sum. If Partial usage is disabled, voucher value will be lovered to the total order amount. If it will be enabled, new voucher will be created in the Cart, as a reminder. Partial use toggle button is switched on by default.
+- **Partial use switch toggle button** - If enabled, when the total cart of the checkout amount is smaller than the cart rule amout, a cart rule is created with the remaining sum.
 - **Priority** - Numeric field - By default the priority is set to 1. This field defines the calculation priority of the cart rules at the checkout process. A cart rule with the priority set to 1 will be applied before the cart rule set to 2. The lower the priority value, the higher the priority of the cart rule.
 If there are multiple cart rules applied at the checkout with the identical priority value, the priority will be defined between the cart rule by their Cart Rule ID, the lower is the cart rule ID, the higher the priority .
 - **Status** - switch toggle button -  Status toggle button is enabled by default. Disabling the toggle will disable the cart rule and won't be useable.
