@@ -70,7 +70,7 @@ It's possible to sort by country asc or desc and search by country.
 
 11. Phone
 
-It's possible to list the phone numbers list by asc or desc.
+It's possible to sort by phone asc or desc and search by phone.
 
 13. Fax
 
