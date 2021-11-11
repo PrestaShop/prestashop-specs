@@ -3,7 +3,7 @@ title: Stores listing
 weight: 1
 ---
 
-# View stores
+# Stores listing
 
 In this interface, all the stores are listed in a handy list, giving every store's information as well as an indicator telling whether the store is currently active or not –  it's possible to for instance want to gather the information for a new store in advance, in order to have its page ready for the launch.
 
