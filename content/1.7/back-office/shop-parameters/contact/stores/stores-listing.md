@@ -79,7 +79,6 @@ It's possible to sort by fax asc or desc and search by fax.
 15. Enabled
 
 A drop-down allows to select: 
- -
  Yes
  No
  
