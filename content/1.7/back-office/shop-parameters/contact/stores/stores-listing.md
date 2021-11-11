@@ -114,7 +114,7 @@ The following fields are shown in this section:
 
 This field is mandatory, when hovered on the "Shop name" shows the message: "Displayed in emails and page titles."
 
- 3. Shop email
+- Shop email
 
 This field is mandatory, when hovered on the "Shop email" shows the message: "Displayed in emails sent to customers."
 
