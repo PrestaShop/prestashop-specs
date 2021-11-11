@@ -58,7 +58,7 @@ It's possible to sort by city asc or desc and search by city.
 
 5. Zip/Postal code
 
-It's possible to sort the ZIP code by asc or desc.
+It's possible to sort by zip code asc or desc and search by zip code.
 
 7. State
 
