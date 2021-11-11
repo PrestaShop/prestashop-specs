@@ -118,7 +118,7 @@ This field is mandatory, when hovered on the "Shop name" shows the message: "Dis
 
 This field is mandatory, when hovered on the "Shop email" shows the message: "Displayed in emails sent to customers."
 
- 5. Registration number
+- Registration number
 
 
 
