@@ -109,7 +109,6 @@ This section enables the option to give the main details of the company, rather 
 
 The following fields are shown in this section:
 
-Every field listed below has a checkbox possible on the left from the field.
 
  2. Shop name 
 
