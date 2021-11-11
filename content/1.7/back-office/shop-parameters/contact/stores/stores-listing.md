@@ -38,7 +38,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ## Columns
 
-The page displays the features list with the following columns:
+The page displays the stores list with the following columns:
 
 1. ID
 
