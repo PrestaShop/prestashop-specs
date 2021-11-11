@@ -126,7 +126,7 @@ This field is mandatory, when hovered on the "Shop email" shows the message: "Di
 
 
 
- 9. Shop address line 2
+- Shop address line 2
 
 
 
