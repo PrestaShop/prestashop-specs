@@ -5,7 +5,7 @@ weight: 1
 
 # Stores listing
 
-In this interface, all the stores are listed in a handy list, giving every store's information as well as an indicator telling whether the store is currently active or not –  it's possible to for instance want to gather the information for a new store in advance, in order to have its page ready for the launch.
+This page lists all the stores. The stores enabled are displayed in the corresponding "stores" page of the front office.
 
 ## Call to action
  
