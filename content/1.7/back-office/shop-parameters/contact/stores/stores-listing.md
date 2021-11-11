@@ -91,7 +91,8 @@ Clicking on the _Bulk actions_ button allows users to perform bulk actions for s
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Enable/Disable selection: this button will either enable or disable the selected stores.
-When trying to press enable/disable selection without any checkboxes marked, will show the message: "You must select at least one item to perform a bulk action." If pressing enable/disable for selected stores, will show a green message: "The status has been successfully updated."
+When trying to enable or disable the selection without any checkboxes checked, the following message is displayed: "You must select at least one item to perform a bulk action." 
+After clicking on "enable"  or "disable", the selected store is enabled or disabled, and a successful message is displayed: "The status has been successfully updated."
 - Delete selected: This button will delete the selected stores. 
 When trying to delete the selection without any checkboxes checked, the following message is displayed: "You must select at least one item to perform a bulk action."
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
