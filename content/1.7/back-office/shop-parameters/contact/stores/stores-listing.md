@@ -62,7 +62,7 @@ It's possible to sort by zip code asc or desc and search by zip code.
 
 7. State
 
-It's possiblre to sort the state list by asc or desc.
+It's possible to sort by state asc or desc and search by state.
 
 9. Country
 
