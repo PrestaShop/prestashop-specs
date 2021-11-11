@@ -84,7 +84,6 @@ A drop-down allows to select:
  
 When a search is performed with "yes" selected, only the stores enabled are displayed.
 When a search is performed with "no" selected, only the stores disabled are displayed.
-Pressing "reset" will remove the selected search option.
 
 ### Bulk actions
 
