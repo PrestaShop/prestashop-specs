@@ -110,7 +110,7 @@ This section enables the option to give the main details of the company, rather 
 The following fields are shown in this section:
 
 
- 2. Shop name 
+- Shop name 
 
 This field is mandatory, when hovered on the "Shop name" shows the message: "Displayed in emails and page titles."
 
