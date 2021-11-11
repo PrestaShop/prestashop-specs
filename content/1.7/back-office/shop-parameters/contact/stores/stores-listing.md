@@ -96,7 +96,7 @@ When trying to press enable/disable selection without any checkboxes marked, wil
 - Delete selected: This button will delete the selected stores. 
 When trying to delete the selection without any checkboxes checked, the following message is displayed: "You must select at least one item to perform a bulk action."
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
-After clicking on "Delete" button, the selected shop is deleted, a successful message is displayed "The selection has been successfully deleted."
+After clicking on "Delete" button, the selected store is deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ## Contact details
 
