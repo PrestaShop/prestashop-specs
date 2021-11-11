@@ -109,7 +109,6 @@ This section enables the option to give the main details of the company, rather 
 
 The following fields are shown in this section:
 
-1. Multistore selection (toggle for yes or no)
 A message below the toggle option is shown: "Check / Uncheck all
 You are editing this page for a specific shop or group. Click "Yes" to check all fields, "No" to uncheck all.
 If you check a field, change its value, and save, the multistore behavior will not apply to this shop (or group), for this particular parameter."
