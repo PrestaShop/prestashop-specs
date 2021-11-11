@@ -79,7 +79,7 @@ It's possible to sort by fax asc or desc and search by fax.
 15. Enabled
 
 A drop-down allows to select: 
- Yes
+- Yes
  No
  
 When selected either "yes" or "no", refreshes the list, and lists by the selection. When selected one of the options, additional button appears near the "search" button called "reset".
