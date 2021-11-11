@@ -7,6 +7,22 @@ weight: 1
 
 This page lists all the stores. The stores enabled are displayed in the corresponding "stores" page of the front office.
 
+## Multistore
+
+Only the stores created in the selected store or store group (through the context) are displayed.
+
+For example, let's say I have the following configuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+
+If I select group 1 as context, then the stores created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the stores created in Shop A will be displayed.
+
+If I select all shops as context, then the stores created in Shop A, Shop B and Shop C will be displayed.
 ## Call to action
  
 A call to actions is displayed in the header of this page:
