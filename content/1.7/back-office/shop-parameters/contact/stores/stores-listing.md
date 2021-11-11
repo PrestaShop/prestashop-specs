@@ -66,7 +66,7 @@ It's possible to sort by state asc or desc and search by state.
 
 9. Country
 
-It's possible to sort the countries list by asc or desc.
+It's possible to sort by country asc or desc and search by country.
 
 11. Phone
 
