@@ -134,7 +134,7 @@ This field is mandatory, when hovered on the "Shop email" shows the message: "Di
 
 
 
- 13. City
+- City
 
 
 
