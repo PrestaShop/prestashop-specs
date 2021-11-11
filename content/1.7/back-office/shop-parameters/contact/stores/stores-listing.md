@@ -129,10 +129,12 @@ The following fields are shown in this section:
 - Shop name 
 
 This field is mandatory, when hovered on the "Shop name" shows the message: "Displayed in emails and page titles."
+If the field is not filled out, when trying to save will show the message: "field Shop name is required."
 
 - Shop email
 
 This field is mandatory, when hovered on the "Shop email" shows the message: "Displayed in emails sent to customers."
+If the field is not filled out, when trying to save will show the message: "field Shop email is required."
 
 - Registration number
 
