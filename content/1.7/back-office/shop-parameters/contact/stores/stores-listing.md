@@ -82,7 +82,8 @@ A drop-down allows to select:
 - Yes
 - No
  
-When selected either "yes" or "no", refreshes the list, and lists by the selection. When selected one of the options, additional button appears near the "search" button called "reset".
+When a search is performed with "yes" selected, only the stores enabled are displayed.
+When a search is performed with "no" selected, only the stores disabled are displayed.
 Pressing "reset" will remove the selected search option.
 
 ### Bulk actions
