@@ -1,5 +1,5 @@
 ---
-title: Add / View stores
+title: Stores listing
 weight: 1
 ---
 
