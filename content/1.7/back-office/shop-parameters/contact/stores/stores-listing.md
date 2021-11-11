@@ -152,4 +152,8 @@ This field is mandatory, when hovered on the "Shop email" shows the message: "Di
 
 
 
- 21. Fax
+- Fax
+
+## Multistore
+
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19367) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19319), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/multistoregeneralspecs.md#checkboxes)
