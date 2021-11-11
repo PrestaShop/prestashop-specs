@@ -54,7 +54,7 @@ It's possible to sort by address asc or desc and search by address.
 
 4. City
 
-It's possible to sort the cities to asc or desc by the city.
+It's possible to sort by city asc or desc and search by city.
 
 5. Zip/Postal code
 
