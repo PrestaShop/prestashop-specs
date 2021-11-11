@@ -128,45 +128,45 @@ The following fields are shown in this section:
 
 - Shop name 
 
-This field is mandatory, when hovered on the "Shop name" shows the message: "Displayed in emails and page titles."
+This field is mandatory. When the label is hovered, a tooltip is displayed: "Displayed in emails and page titles."
 If the field is not filled out, when trying to save will show the message: "field Shop name is required."
 
 - Shop email
 
-This field is mandatory, when hovered on the "Shop email" shows the message: "Displayed in emails sent to customers."
+This field is mandatory. When the label is hovered, a tooltip is displayed: "Displayed in emails sent to customers."
 If the field is not filled out, when trying to save will show the message: "field Shop email is required."
 
 - Registration number
 
-
+When hovered on this field, shows an explanation for this field: "Shop registration information (e.g. SIRET or RCS).
 
 - Shop address line 1
 
-
+Input field for the first address line of the store.
 
 - Shop address line 2
 
-
+Input field for the second address line of the store.
 
 - Zip/Postal code
 
-
+Input field for the zip code.
 
 - City
 
-
+Input field for the city.
 
 - Country
 
-
+Input field for the country.
 
 - State
 
-
+Input field for the satte.
 
 - Phone
 
-
+Input field for the phone.
 
 - Fax
 
