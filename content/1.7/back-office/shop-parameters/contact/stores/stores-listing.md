@@ -74,7 +74,7 @@ It's possible to sort by phone asc or desc and search by phone.
 
 13. Fax
 
-It's possible to list the fax numbers list by asc or desc.
+It's possible to sort by fax asc or desc and search by fax.
 
 15. Enabled
 
