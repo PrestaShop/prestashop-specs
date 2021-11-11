@@ -109,7 +109,6 @@ This section enables the option to give the main details of the company, rather 
 
 The following fields are shown in this section:
 
-When the toggle is switched to "no" - all fields below are not possible to edit, until the field is selected by a checkbox on the left.
 When the toggle is switched to "yes" - all fields get automatically selected with the checkboxes, and are possible to edit.
 
 Every field listed below has a checkbox possible on the left from the field.
