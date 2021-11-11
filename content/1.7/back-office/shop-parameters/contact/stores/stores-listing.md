@@ -50,7 +50,7 @@ It's possible to sort by name asc or desc and search by name.
 
 3. Address
 
-It's possible to sort the addresses, they asc or desc.
+It's possible to sort by address asc or desc and search by address.
 
 4. City
 
