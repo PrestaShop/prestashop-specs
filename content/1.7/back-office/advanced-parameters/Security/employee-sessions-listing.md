@@ -34,7 +34,7 @@ This dropdown is enabled only if at least one session is selected, otherwise, it
 There is 1 option:
 - Delete selection: it deletes the session. The employee can't log back with the session deleted. 
 
-### Select all checkbox
+### Select all checkboxes
 
 After checking the box, all the products displayed on the page are selected or unselected.
 
