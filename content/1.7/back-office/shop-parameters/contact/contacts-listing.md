@@ -29,7 +29,7 @@ A call to actions is displayed in the header of this page:
   
 👉 See the [specs of the add/edit contact](./add-edit-contact.md) 
 
-# Settings wheel
+## Settings wheel
 
 When clicking on the settings wheel, the following options are displayed:
 
