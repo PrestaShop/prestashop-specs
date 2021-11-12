@@ -5,7 +5,22 @@ weight: 1
 # Contacts listing
 
 This page lists all the contacts of the store. The list of contacts is displayed in the contact form of the front office. The customer can choose the contact to send the message.
+## Multistore
 
+Only the contacts created in the selected store or store group (through the context) are displayed.
+
+For example, let's say I have the following configuration:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+
+If I select group 1 as context, then the contacts created in Shop A and Shop B will be displayed.
+
+If I select Shop A as context, then the contacts created in Shop A will be displayed.
+
+If I select all shops as context, then the contacts created in Shop A, Shop B and Shop C will be displayed.
 ## Call to action
 
 A call to actions is displayed in the header of this page:
