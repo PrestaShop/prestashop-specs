@@ -86,4 +86,9 @@ It's possible to sort by description asc or desc and search by description.
 👉 See the [specs of the add/edit contacts](./add-edit-contacts.md) 
 
 **Delete.** The contact can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the contact is deleted, a successful message is displayed "Successful deletion."
+## Search
 
+The search button is disabled as long as no search field has been filled.
+After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
+If there is no results for the search done, the following message is displayed: "No records found".
+When clicking on "reset", the search is removed and all the results are displayed.
