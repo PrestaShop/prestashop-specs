@@ -20,4 +20,4 @@ You can also click the filename in the list below, and even make a multiple sele
 
 After the description, there is a **Search input**, where specific files can be set from the list below. The search input can be filled up by typing the appropriate file name. There is a possibility to type multiple files to exclude, this can be done by separating each filenames by comma. By default, the input field is signed with placeholder "E.g. address, addresses, attachment".
 
-After the **Search input**, there is a wide vertical text selection box, where all the available filenames are listed.
+After the **Search input**, there is a wide vertical text selection box, where all the available filenames are listed. The available files list is generated in alphabetical way, so it can be easily accessed. The multiple filenames selections can be maintained using keyboard buttons. One or multiple filenames can be clicked by a mouse click while holding Ctrl button together and holding Cmd button together for MacOS system. 
