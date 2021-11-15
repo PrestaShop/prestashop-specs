@@ -8,6 +8,6 @@ This functionality can be used for certain positioning of the certain module in 
 
 There are different UI elements in the Positions > Transplant a module directory:
 
-**Module** - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. Once the dropdown is clicked, the vertical UI dropdown will be expanded with the following module names, and search text input, where the module can be searched by typing first letters of the module name. By default, the dropdown is substracted and set as placeholder called "Please select a module".
+**Module** - required input element - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. Once the dropdown is clicked, the vertical UI dropdown will be expanded with the following module names, and search text input, where the module can be searched by typing first letters of the module name. By default, the dropdown is substracted and set as placeholder called "Please select a module".
 
-**Transplant to** - text dropdown with the list of available hooks, that can be used for transplantation. Also, there are already hooks lists, meaning that the hooks are already used and the certain module is already transplanted into the certain hook(s). 
+**Transplant to** - required input element - text dropdown with the list of available hooks, that can be used for transplantation. Also, there are already used hooks list, meaning that the hooks are already used and the certain module is already transplanted into the certain hook(s). 
