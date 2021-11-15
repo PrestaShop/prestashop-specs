@@ -8,4 +8,4 @@ This functionality can be used for certain positioning of the certain module in 
 
 There are different UI elements in the Positions > Transplant a module directory:
 
-**Module** - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. By default, the dropdown is set as placeholder called "Please select a module".
+**Module** - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. Once the dropdown is clicked, the vertical UI dropdown will be expanded with the following module names, and search text input, where the module can be searched by typing first letters of the module name. By default, the dropdown is substracted and set as placeholder called "Please select a module".
