@@ -76,23 +76,23 @@ It's possible to sort by city asc or desc and search by city.
 
 It's possible to sort by zip code asc or desc and search by zip code.
 
-7. State
+6. State
 
 It's possible to sort by state asc or desc and search by state.
 
-9. Country
+7. Country
 
 It's possible to sort by country asc or desc and search by country.
 
-11. Phone
+8. Phone
 
 It's possible to sort by phone asc or desc and search by phone.
 
-13. Fax
+9. Fax
 
 It's possible to sort by fax asc or desc and search by fax.
 
-15. Enabled
+10. Enabled
 
 A drop-down allows to select: 
 - Yes
