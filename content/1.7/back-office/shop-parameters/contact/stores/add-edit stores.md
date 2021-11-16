@@ -5,71 +5,67 @@ weight: 1
 
 # Add / Edit Store
 
-When entered the add or editing current store the following fields are displayed:
+While adding or editing a store, the following fields/toggles/drop downs/parameters are displayed:
 
 1) Name
 
-Input field for the name of the store. Can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+This input field allows to fill the name of the store. It can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 
 3) Address
 
-Input field for the address of the shop. This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
-If there is no address input, when trying to save shows the message: "The field address1 is required at least in English (English)."
+This input field allows to fill the address of the store. This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+If the save button is pressed and if this field is empty, the following error message is displayed: "The field address1 is required at least in _default language_"
 
 5) Address (2)
 
-Second input field for the address of the shop. This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+This input field allows to fill the second address line of the store. This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 
 7) Zip/Postal code
 
-Input field for the zip/postal code of the shop.
+This input field allows to fill the zip/postal code of the store. The field is not marked as mandatory, but if the field is empty, and trying to save, shows the message: "A Zip/Postal code is required.". Also the postcode can't be too long, if it's too long, and trying to save shows the message: "The postcode field is too long (12 chars max).", also if the format isn't correct, when saving shows error: "The Zip/Postal code is invalid. It must be entered as follows: 00000"
 
 9) City
 
-Input field for the city of the shop, this field is mandatory.
-When trying to save without a city entered, shows the message: "The city field is required."
+This input field allows to fill the city of the store and is mandatory.
+If the save button is pressed and if this field is empty, the following error message is displayed: "The city field is required."
 
 11) Country
 
-Drop-down menu for the country of the shop, this is a mandatory selection field.
+This drop-down allows to select the country of the store and is mandatory. While creating a new store, the default country (selected in International > Localization > Configuration) is selected by default.
 
-13) State (is shown only when the country is selected as "United states")
+13) State (only for the countries that have states, as defined in International > Locations > States.)
 
-Drop-down menu for the state of the shop, this is a mandatory selection field.
+This drop-down allows to select the state of the store and is mandatory. If no state is selected, when trying to save, shows: "An address located in a country containing states must have a state selected."
 
 15) Latitude/Longtitude
 
-These are 2 separate input fields for the lattitude and longtitude of the shop, this field is mandatory.
-Only numbers are allowed for these fields. When trying to input anything but not numbers, a message is shown: "Latitude and longitude are required." Also, the numbers in the fields are limited, if there are more numbers than allowed, messaged are shown: 
-"There are 2 errors.
-The latitude field is too long (13 chars max).
-The longitude field is too long (13 chars max)."
+There are 2 separate input fields for the latitude and longitude of the store, they are both mandatory.
+Only numbers are allowed for these fields. When trying to input characters that are not some numbers, an error message is displayed: "Latitude and longitude are required." The numbers in the fields are limited to 13, if there are more numbers than allowed, an error message is displayed: "The latitude field is too long (13 chars max)." and/or "The longitude field is too long (13 chars max)."
 
 17) Phone
 
-Input field for the phone of the shop.
+This input field allows to fill the phone number of the store.
 
 19) Fax
 
-Input field for the fax of the shop.
+This input field allows to fill the fax number of the store.
 
 21) Email address
 
-Input field for the email of the shop.
+This input field allows to fill the email address of the store.
 
 23) Note
 
-Input field for the notes of the shop.
+This input field allows to fill a note for the store.
 
 25) Active
 
-Toggle switch for "yes" or "no"
+This toggle can be on "yes" or "no" and allows to choose if the store is active or not.
 
 27) Picture
 
 Picture is shown that will be used for the store.
-Below the size of the picture is shown.
-Below that there is a field for picture name input, and a button "add file" for adding a picture.
+While editing a store with an existing picture, the size of the picture is displayed under the field.
 
 29) Shop association
 
@@ -79,8 +75,8 @@ The shop association block is displayed when the multistore is enabled and if se
 
 31) Hours
 
-Firstly an example is shown: "e.g. 10:00AM - 9:30PM"
-All the fields below have separate inputs for working hours. By default all of them are fields have already inputs "09:00AM - 07:00PM" that can be changed. These fields can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the fields are displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+Firstly an example is displayed: "e.g. 10:00AM - 9:30PM"
+For each day of the week, there is an input field allowing to fill the working hours. These fields can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the fields are displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 
  - Monday
  - Tuesday
@@ -92,7 +88,7 @@ All the fields below have separate inputs for working hours. By default all of t
 
 ## Call to action
 
-- Cancel:
-In the case of adding a new store, the store is added and a success message is displayed on the stores listing: "Successful creation.". In the case of editing a store, the store is edited and a success message is displayed on the stores listing: "Successful update.".
 - Save:
+In the case of adding a new store, the store is added and a success message is displayed on the stores listing: "Successful creation.". In the case of editing a store, the store is edited and a success message is displayed on the stores listing: "Successful update.".
+- Cancel:
 The store is not added/edited and the stores listing is displayed.
