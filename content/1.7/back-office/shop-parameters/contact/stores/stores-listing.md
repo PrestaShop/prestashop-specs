@@ -101,6 +101,11 @@ A drop-down allows to select:
 When a search is performed with "yes" selected, only the stores enabled are displayed.
 When a search is performed with "no" selected, only the stores disabled are displayed.
 
+Below the "search" button every store has 2 buttons:
+
+ -[Edit](../add-edit stores.md)
+ -Delete (when pressing the drop-down)
+
 ### Bulk actions
 
 Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
@@ -121,24 +126,23 @@ If there is no results for the search done, the following message is displayed: 
 When clicking on "reset", the search is removed and all the results are displayed.
 # Contact details
 
-This section enables the option to give the main details of the company, rather than those of a specific shop.
+This section allows giving the main details of the company, rather than those of a specific shop.
 
 The following fields are shown in this section:
-
 
 - Shop name 
 
 This field is mandatory. When the label is hovered, a tooltip is displayed: "Displayed in emails and page titles."
-If the field is not filled out, when trying to save will show the message: "field Shop name is required."
+If the save button is pressed and if this field is empty, the following error message is displayed: "field Shop name is required"
 
 - Shop email
 
 This field is mandatory. When the label is hovered, a tooltip is displayed: "Displayed in emails sent to customers."
-If the field is not filled out, when trying to save will show the message: "field Shop email is required."
+If the save button is pressed and if this field is empty, the following error message is displayed: "field Shop email is required."
 
 - Registration number
 
-When hovered on this field, shows an explanation for this field: "Shop registration information (e.g. SIRET or RCS).
+When the label is hovered, a tooltip is displayed: "Shop registration information (e.g. SIRET or RCS)."
 
 - Shop address line 1
 
@@ -158,17 +162,19 @@ Input field for the city.
 
 - Country
 
-Input field for the country.
+This is a drop-down with all the countries that are existing in the International > Location > Countries page.
 
 - State
 
-Input field for the satte.
+This is a drop-down with all the states associated with the country selected above and existing in International > Location > States page.
 
 - Phone
 
 Input field for the phone.
 
 - Fax
+
+Input field for the fax.
 
 ## Multistore
 
