@@ -28,13 +28,21 @@ After the **Search input**, there is a wide vertical text selection box, where a
 
 ## Notifications and messages in the UI
 
-Once the form is filled and submitted with the empty input fields, the message is prompted:<br>
+Once the form is filled and submitted with the empty input fields, the error message is prompted:<br>
 
 _This module cannot be loaded._
 
-Once the form is filled and submitted correctly, the message is prompted:<br>
+Once the form is filled and submitted correctly, the success message is prompted:<br>
 
 _The module transplanted successfully to the hook._
+
+If the Exception value is typed incorrectly in form, the error is prompted:<br>
+
+_No valid value for field exceptions has been defined. _
+
+If module, is already transplanted into certain hook, the error message is prompted:<br>
+
+_This module has already been transplanted to this hook. _
 
 ## Multistore
 
