@@ -32,6 +32,9 @@ Once the form is filled and submitted with the empty input fields, the message i
 
 _This module cannot be loaded._
 
+Once the form is filled and submitted correctly, the message is prompted:<br>
+
+_The module transplanted successfully to the hook._
 
 ## Multistore
 
