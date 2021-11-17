@@ -38,7 +38,7 @@ If the Exception value is typed incorrectly in form, the error is prompted:<br>
 _No valid value for field exceptions has been defined._
 
 If Exception value is typed with correct symbols, but is not found in the exceptions list, the error message is prompted:<br>
-_This module has already been transplanted to this hook. _
+_This module has already been transplanted to this hook._
 
 If module, is already transplanted into certain hook, the error message is prompted:<br>
 _This module has already been transplanted to this hook._
