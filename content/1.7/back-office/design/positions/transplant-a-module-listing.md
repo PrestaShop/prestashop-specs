@@ -26,6 +26,15 @@ After the description, there is a **Search input**, where specific files can be 
 
 After the **Search input**, there is a wide vertical text selection box, where all the available filenames are listed. The available files list is generated in alphabetical way, so it can be easily accessed. The multiple filenames selections can be maintained using keyboard buttons. One or multiple filenames can be clicked by a mouse click while holding Ctrl button together and holding Cmd button together for MacOS system. 
 
+## Notifications and messages in the UI
+
+Once the form is filled and submitted with the empty input fields, the message is prompted:<br>
+
+_This module cannot be loaded._
+
+
 ## Multistore
 
 Multistore funcionality can be separately adjusted to the other shops and shop groups also. It means, that transplanting the hook while being on 1st multistore will affect the shop separately from the other shops.
+
+
