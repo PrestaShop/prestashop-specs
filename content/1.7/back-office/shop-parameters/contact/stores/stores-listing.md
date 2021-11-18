@@ -105,7 +105,8 @@ When a search is performed with "no" selected, only the stores disabled are disp
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
  👉 See the [specs of the add/edit store](./add-edit-store.md) 
- **Delete.** The store can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
+
+- **Delete.** The store can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
  The action can be canceled by clicking on the cross or on the cancel button.
  After clicking on "Delete" button, the store is deleted and a successful message is displayed "Successful deletion."
 
