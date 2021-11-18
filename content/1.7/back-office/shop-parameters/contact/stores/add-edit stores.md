@@ -1,5 +1,5 @@
 ---
-title: Add / Edit Stores
+title: Add / Edit Store
 weight: 1
 ---
 
