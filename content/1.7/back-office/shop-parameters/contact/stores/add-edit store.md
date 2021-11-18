@@ -9,7 +9,7 @@ While adding or editing a store, the following fields/toggles/drop downs/paramet
 
 1) Name
 
-This input field allows to fill the name of the store. It can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. When hovered on "name", shows the following suggestion: "Store name (e.g. City Center Mall Store). Allowed characters: letters, spaces and %s"
+This input field allows to fill the name of the store. It can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. When the label is hovered, a tooltip is displayed "Store name (e.g. City Center Mall Store). Allowed characters: letters, spaces and %s"
 
 2) Address
 
@@ -22,7 +22,7 @@ This input field allows to fill the second address line of the store. This field
 
 4) Zip/Postal code
 
-This input field allows to fill the zip/postal code of the store. The field is not marked as mandatory, but if the field is empty, and trying to save, shows the message: "A Zip/Postal code is required.". Also the postcode can't be too long, if it's too long, and trying to save shows the message: "The postcode field is too long (12 chars max).", also if the format isn't correct, when saving shows error: "The Zip/Postal code is invalid. It must be entered as follows: 00000"
+This input field allows to fill the zip/postal code of the store. The field is not marked as mandatory, but if the field is empty when trying to save, the following error message is displayed: "A Zip/Postal code is required.". If the postal code exceeds 12 characters when trying to save, the following error message is displayed: "The postcode field is too long (12 chars max).". If the format isn't correct when saving, the following error message is displayed: "The Zip/Postal code is invalid. It must be entered as follows: 00000". The format of the postal code is defined for each country in International > Locations > Countries > Add/edit country.
 
 5) City
 
@@ -33,15 +33,15 @@ If the save button is pressed and if this field is empty, the following error me
 
 This drop-down allows to select the country of the store and is mandatory. While creating a new store, the default country (selected in International > Localization > Configuration) is selected by default.
 
-7) State (only for the countries that have states, as defined in International > Locations > States.)
+7) State (displayed only for the countries that have states, as defined in International > Locations > States.)
 
-This drop-down allows to select the state of the store and is mandatory. If no state is selected, when trying to save, shows: "An address located in a country containing states must have a state selected."
+This drop-down allows to select the state of the store and is mandatory. If no state is selected when trying to save, the following error message is displayed: "An address located in a country containing states must have a state selected."
 
 8) Latitude/Longtitude
 
 There are 2 separate input fields for the latitude and longitude of the store, they are both mandatory.
-Only numbers are allowed for these fields. When trying to input characters that are not some numbers, an error message is displayed: "Latitude and longitude are required." The numbers in the fields are limited to 13, if there are more numbers than allowed, an error message is displayed: "The latitude field is too long (13 chars max)." and/or "The longitude field is too long (13 chars max)."
-When hovered on the writing - Latitude / Longitude, shows the following: "Store coordinates (e.g. 45.265469/-47.226478).
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "Latitude and longitude are required." The numbers in the fields are limited to 13, if there are more numbers than allowed, an error message is displayed: "The latitude field is too long (13 chars max)." and/or "The longitude field is too long (13 chars max)."
+When the label is hovered, a tooltip is displayed: "Store coordinates (e.g. 45.265469/-47.226478).
 
 9) Phone
 
@@ -57,18 +57,18 @@ This input field allows to fill the email address of the store.
 
 12) Note
 
-This input field allows to fill a note for the store. This field can be translated, a drop-down list is shown, translates the field to a selected language which are added in the shop.
+This input field allows to fill a note for the store. It can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 
 13) Active
 
-This toggle can be on "yes" or "no" and allows to choose if the store is active or not. Default state of this button when created is "yes"
-When hovered on "Active", shows the following: "Whether or not to display this store". If the button is set to "no", in the front office, Stores section the shop will not be displayed.
+This toggle can be on "yes" or "no" and allows to choose if the store is active or not. By default, while creating a new store, this toggle is on "yes". If the toggle is set to "no", the "Stores" page of the front office will not be displayed or accessible.
+When the label is hovered, a tooltip is displayed: "Whether or not to display this store".
 
 14) Picture
 
-Picture is shown that will be used for the store.
-While editing a store with an existing picture, the size of the picture is displayed under the field. When hovered on Picture, shows the following: "Storefront picture."
-When trying to upload an incorrect format file, shows the message: "Image format not recognized, allowed formats are: .gif, .jpg, .png"
+This field allows to upload a picture for the store.
+While editing a store with an existing picture, the size of the picture is displayed under the field. When the label is hovered, a tooltip is displayed: "Storefront picture."
+When trying to upload an incorrect format file, the following error message is displayed: "Image format not recognized, allowed formats are: .gif, .jpg, .png"
 
 15) Shop association
 
