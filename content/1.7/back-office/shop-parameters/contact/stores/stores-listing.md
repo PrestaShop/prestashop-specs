@@ -45,8 +45,8 @@ After clicking on it, the SQL query is displayed in a modal. The SQL query takes
 
 There are two buttons:
 
-Close: After clicking on it, the modal is closed
-Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+ Close: After clicking on it, the modal is closed
+ Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
 3. Export to SQL Manager
 
@@ -101,10 +101,13 @@ A drop-down allows to select:
 When a search is performed with "yes" selected, only the stores enabled are displayed.
 When a search is performed with "no" selected, only the stores disabled are displayed.
 
-Below the "search" button every store has 2 buttons:
+11. Actions
 
- -[Edit](../add-edit stores.md)
- -Delete (when pressing the drop-down)
+ **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
+ 👉 See the [specs of the add/edit store](./add-edit-store.md) 
+ **Delete.** The store can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
+ The action can be canceled by clicking on the cross or on the cancel button.
+ After clicking on "Delete" button, the store is deleted and a successful message is displayed "Successful deletion."
 
 ### Bulk actions
 
