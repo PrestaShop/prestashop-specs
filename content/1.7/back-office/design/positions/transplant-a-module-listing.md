@@ -43,6 +43,10 @@ _This module has already been transplanted to this hook._
 If module, is already transplanted into certain hook, the error message is prompted:<br>
 _This module has already been transplanted to this hook._
 
+## Editing the Module Transplantations via Position Hooks listing
+
+There is an availability to manage the Module Transplantations straight from the Position Hooks list. It is available in the IMPROVE > Design > Positions navigation path in Prestashop application. The editing of the Transplantation is done after clicking the pen icon in the chosen hook. 
+
 ## Multistore
 
 Multistore funcionality can be separately adjusted to the other shops and shop groups also. It means, that transplanting the hook while being on 1st multistore will affect the shop separately from the other shops.
