@@ -46,5 +46,3 @@ _This module has already been transplanted to this hook._
 ## Multistore
 
 Multistore funcionality can be separately adjusted to the other shops and shop groups also. It means, that transplanting the hook while being on 1st multistore will affect the shop separately from the other shops.
-
-
