@@ -32,7 +32,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 This dropdown is enabled only if at least one session is selected, otherwise, it's disabled.
 
 There is 1 option:
-- Delete selection: it deletes the session. The employee can't log back with the session deleted. 
+- Delete selection: it deletes the sessions after validating the validation's modal. The employee can't log back with the session deleted. 
 
 ### Select all checkboxes
 
