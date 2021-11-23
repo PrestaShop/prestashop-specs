@@ -50,7 +50,7 @@ There are 10 columns:
 - EMployee's Last name
 - Employee's Email
 - Last update
-- Actions: Delete the session
+- Actions: Delete the session after validating the validation's modal
 
 ## Outdated sessions
 
