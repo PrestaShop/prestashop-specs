@@ -69,7 +69,7 @@ Number of products that can be found with the tag.
   After clicking on "Delete" button, the tag is deleted and a successful message is displayed "Successful deletion."
   
 ### Bulk actions
-
+The Bulk actions button is enabled only if at least one row of the list is selected.
 Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
