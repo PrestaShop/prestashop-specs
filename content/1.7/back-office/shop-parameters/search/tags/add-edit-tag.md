@@ -28,6 +28,6 @@ Several products can be selected on the left or on the right box and added or re
 ## Call to action
 
 - Save:
-In the case of adding a new tag, the tag is added and a success message is displayed on the tags listing: "Successful creation.". In the case of editing a tag, the tag is edited and a success message is displayed on the tags listing: "Successful update.".
+In the case of adding a new tag and if there is no error, the tag is added and a success message is displayed on the tags listing: "Successful creation.". In the case of editing a tag and if there is no error, the tag is edited and a success message is displayed on the tags listing: "Successful update.".
 - Cancel:
 The tag is not added/edited and the tags listing is displayed.
