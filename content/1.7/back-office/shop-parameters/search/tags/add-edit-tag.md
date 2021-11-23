@@ -17,8 +17,13 @@ This drop-down menu allows selecting the language of the tag and is mandatory. T
 
 3) Products
 
-This section has 2 fields, the one on the left indicates all the products that are added to the shop, and has a button below the list named: "Add". When selecting a product, and pressing "add" the selected product moves to the right box, which lists the products that are listed with the selected tag.
-From the field box o the right, you can also select the products, and press "remove" which is below the field, then the product is moved back to the left field box.
+This section allows to select products associated with the tag and has 2 parts:
+- the one on the left lists all the products of the shop
+- the one on the right lists all the products selected for the tag.
+When selecting a product in the list on the left, and clicking on "add", the selected product moves to the right box.
+When selecting a product in the list on the right, and clicking on "remove", the selected product is moved back to the left box.
+
+Several products can be selected on the left or on the right box and added or removed at once.
 
 ## Call to action
 
