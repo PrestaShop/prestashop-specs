@@ -1,19 +1,19 @@
 ---
-title: Add / Edit Store
+title: Add / Edit tag
 weight: 1
 ---
 
-# Add / Edit tags 
+# Add / Edit tag
 
-While adding or editing tags, the following fields/drop downs/parameters are displayed:
+While adding or editing tag, the following fields/drop downs/parameters are displayed:
 
 1) Name 
 
-This field is for the name of the tag, the field is mandatory. When trying to save without any name input, shows the message: "The name field is required."
+This field allows to fill the name of the tag and is mandatory. If the save button is pressed and if this field is empty, the following error message is displayed: "The name field is required."
 
 2) Language
 
-This is a drop-down menu for the language of the tag. The default country (selected in International > Localization > Configuration) is selected by default.
+This drop-down menu allows selecting the language of the tag and is mandatory. The default country (selected in International > Localization > Configuration) is selected by default.
 
 3) Products
 
