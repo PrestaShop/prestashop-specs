@@ -4,24 +4,11 @@ weight: 1
 ---
 # Tags listing
 
-The tagging feature enables to associate products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for.
+The tagging feature allows associating products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for through the search bar in front office.
 
 ## Multistore
 
-Only the stores created in the selected store or store group (through the context) are displayed.
-
-For example, let's say I have the following configuration:
-- Group 1
-  - Shop A
-  - Shop B
-- Group 2
-  - Shop C
-
-If I select group 1 as context, then the stores created in Shop A and Shop B will be displayed.
-
-If I select Shop A as context, then the stores created in Shop A will be displayed.
-
-If I select all shops as context, then the stores created in Shop A, Shop B and Shop C will be displayed.
+Creating or editing a tag, it's added for all shops and then the lists displays all the tags no matter the context selected.
 
 ## Call to action
  
@@ -58,7 +45,7 @@ The page displays the tag list with the following columns:
 
 1. ID
 
-ID number of the tag.
+ID of the tag.
 
 2.  Language
 
@@ -79,6 +66,20 @@ Number of products that can be found with the tag.
 
 - **Delete.** The tag can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
   The action can be canceled by clicking on the cross or on the cancel button.
-  After clicking on "Delete" button, the store is deleted and a successful message is displayed "Successful deletion."
+  After clicking on "Delete" button, the tag is deleted and a successful message is displayed "Successful deletion."
+  
+### Bulk actions
 
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
 
+- Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
+- Delete selected: This button will delete the selected stores. 
+When trying to delete the selection without any checkboxes checked, the following message is displayed: "You must select at least one element to delete."
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Ok" button, the selected tag is deleted, a successful message is displayed "The selection has been successfully deleted."
+
+## Search
+The search button is disabled as long as there are less than 2 tags in the list.
+After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
+If there is no results for the search done, the following message is displayed: "No records found".
+When clicking on "reset", the search is removed and all the results are displayed.
