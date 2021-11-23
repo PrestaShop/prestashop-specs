@@ -32,7 +32,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 This dropdown is enabled only if at least one session is selected, otherwise, it's disabled.
 
 There is 1 option:
-- Delete selection: it deletes the sessions after validating the validation modal. The customer can't log back with the session deleted. 
+- Delete selection: it deletes the sessions after validating the validation's modal. The customer can't log back with the session deleted. 
 
 ### Select all checkboxes
 
@@ -50,7 +50,7 @@ There are 10 columns:
 - Customer's Last name
 - Customer's Email
 - Last update
-- Actions: Delete the session
+- Actions: Delete the session after validating the validation's modal
 
 ## Outdated sessions
 
