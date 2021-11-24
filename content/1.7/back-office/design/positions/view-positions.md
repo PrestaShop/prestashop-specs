@@ -18,6 +18,7 @@ The following elements of this page are:
 ## UI elements of the Positioning Hook listing
 
 - **Enable or Disable toggle switch button and hook name** - there is a function, using toggle button to enable or disable the positioning hook for certain modules, that are wraped in the hook. By default, the hook toggle button is enabled.
+- **Description of the hook** - some of the positioning hooks can have descriptions, and those will be displayed right above the **Enable or Disable toggle switch button and hook name**.
 - **Checkbox with the quantity of modules** - this checkbox is bulk-action style functionality that selects or unselects all the modules in the list.
 - **Selection UI element** - by default, UI element is hidden, and it is indicated once there are some modules selected from the listing. The UI table contains checkmark icon, title with the naming _Selection_, total amount of selected modules and CTA button _Unhook the selection_. Clicking the CTA button will unhook the selected modules from the selected hook.
 - **Checkbox in the item of module listing** - enables the Selection UI element, once it is checkboxed. Also enables the managing the bulk-actions of the modules in listing.
