@@ -30,3 +30,5 @@ The following elements of this page are:
 - **Arrangement numeric value** - specific numeric value of the module arrangement, helps visualy find the module in the hook.
 - **Editing icon** - proceeds the editing of the module hooks.
 - **Three-dot menu** - executes the dropdown element, where the unhooking action can be executed after the clicking on link _Unhook_.
+
+## Multistoring functionality
