@@ -9,7 +9,7 @@ The tagging feature allows associating products with keywords. Customers can use
 ## Multistore
 
 While creating or editing a tag, it's added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected.
-👉 See [the specs](../../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block)
+👉 See [the specs](../../../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block)
 
 ## Call to action
  
