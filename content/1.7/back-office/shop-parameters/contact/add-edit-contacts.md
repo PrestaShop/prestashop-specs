@@ -25,7 +25,7 @@ This toggle is mandatory and allows to choose if the messages are saved or not i
 
  4) Description
 
-This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. There is no drop-down button when only one language is defined
 
  5) Shop association
 
