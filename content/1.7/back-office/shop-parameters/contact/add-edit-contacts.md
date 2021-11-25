@@ -37,4 +37,4 @@ If the save button is pressed and if no shop is selected, the following error me
  ## Call to action 
  There are 2 buttons at the bottom of this page: 
  - Cancel: The contact is not added/edited and the listing is displayed
- - Save: In the case of adding a contact, the contact is added and a success message is displayed on the listing: "Successful creation.". In the case of editing a contact, the contact is edited and a success message is displayed on the listing: "Successful update.".
+ - Save: In the case of adding a contact and if there is no error, the contact is added and a success message is displayed on the listing: "Successful creation.". In the case of editing a contact, the contact is edited and a success message is displayed on the listing: "Successful update.".
