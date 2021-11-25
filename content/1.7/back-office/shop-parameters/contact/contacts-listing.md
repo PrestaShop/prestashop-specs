@@ -52,7 +52,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 ## Bulk actions
 
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected contacts (using the checkboxes). A user can:
+The _Bulk actions_ button is active only if at least one row of the contact list is selected. Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected contacts (using the checkboxes). A user can:
 
 - Select all/Unselect all: this checkbox will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Delete selected: This button will delete the selected contacts. 
