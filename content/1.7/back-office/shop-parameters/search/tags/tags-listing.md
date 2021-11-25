@@ -80,7 +80,7 @@ After clicking on "Delete selected", a modal with the title "Delete selection" i
 After clicking on "Ok" button, the selected tag is deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ## Search
-The search button is disabled as long as there are less than 2 tags in the list. Search can be used for ID, language, name and Products.
+The search button is disabled as long as there are less than 2 tags in the list. A search can be done by ID, language, name, and Products.
 It's possible to sort the list by pressing the arrow button near ID, language, name or products.
 After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
 If there is no results for the search done, the following message is displayed: "No records found".
