@@ -39,6 +39,16 @@ Value  This field is mandatory and can be translated: When several languages are
     </item>
     
     <item>
+      <title>Add / edit contact</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/add-edit-contacts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/add-edit-contacts.html</guid>
+      <description>Add / edit contact While adding or editing a contact, the following fields / toggles / parameters are displayed:
+ Title  This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. There is no drop-down button when only one language is defined.</description>
+    </item>
+    
+    <item>
       <title>Add / Edit Feature</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -179,6 +189,18 @@ Most of the time, each file corresponds to a specific page or a tab, whether it 
       <description>SPECIFICATIONS - CHECKOUT [TO BE COMPLETED]
 Personal information step Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It should indicate the name of the company processing the order.
 Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It stands for the SIRET of the company.</description>
+    </item>
+    
+    <item>
+      <title>Contacts listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/contacts-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/contacts-listing.html</guid>
+      <description>Contacts listing This page lists all the contacts of the store. The list of contacts is displayed in the contact form of the front office. The customer can choose the contact to send the message.
+Multistore Only the contacts created in the selected store or store group (through the context) are displayed.
+For example, let&amp;rsquo;s say I have the following configuration:
+ Group 1  Shop A Shop B   Group 2  Shop C    If I select group 1 as context, then the contacts created in Shop A and Shop B will be displayed.</description>
     </item>
     
     <item>

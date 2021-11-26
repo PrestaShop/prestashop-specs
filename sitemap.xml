@@ -11,6 +11,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html</loc>
     <lastmod>2021-10-28T14:09:29+03:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/add-edit-contacts.html</loc>
+    <lastmod>2021-11-25T17:45:33+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</loc>
     <lastmod>2021-10-21T11:16:36+02:00</lastmod>
   </url><url>
@@ -85,6 +88,9 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/contacts-listing.html</loc>
+    <lastmod>2021-11-25T10:21:51+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
