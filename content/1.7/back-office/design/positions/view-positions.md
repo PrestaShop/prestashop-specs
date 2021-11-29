@@ -31,6 +31,11 @@ The following elements of this page are:
 - **Editing icon** - proceeds the editing of the module hooks.
 - **Three-dot menu** - executes the dropdown element, where the unhooking action can be executed after the clicking on link _Unhook_.
 
+## UI Notifications after submissions
+
+After executing the unhooking action of the selected hook, the success message is prompted instantly:<br>
+_The module was successfully removed from the hook._
+
 ## Multistoring functionality
 
 Prestashop identifies all positioning hooks from the database, so if there are several shop groups or multistores created, system displays the hook list separately from each multistore. This means, that some of the hooks are listed in Multistore 1 and the other hooks can be listed, disabled or enabled, in Multistore 2.
