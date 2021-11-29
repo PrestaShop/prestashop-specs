@@ -21,3 +21,4 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 - **Customer** - input field, that could be typed as alphabetic value in order to retrieve the required Customer name or last name. By default the input is blank empty.
 - **Carrier** - input field, that could be typed as alphabetic value in order to retrieve the required Carrier name. By default the input is blank empty.
 - **Date** - input form, that could be adjusted by the time values. Setting the date "From" to "To", will retrieve the appropriate date range information of the Shopping Carts. By default, the date range is blank empty.
+- **Online** - value indicator between Yes and No. Once the Guest visitor is visiting the Prestashop Front-Office, and adding items to the Shopping Cart, the value then switches to Yes. 
