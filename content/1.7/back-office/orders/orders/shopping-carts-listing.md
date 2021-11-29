@@ -18,6 +18,6 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 
 - **ID** - input field, that could be typed as numeric value in order to retrieve the required Shopping Cart ID. By default the input is blank empty.
 - **Order ID** - input field, chat could be typed as numeric value in order to retrieve the required Order ID. By default the input is blank empty.
-- Customer - input field, that could be typed as alphabetic value in order to retrieve the required Customer name or last name. By default the input is blank empty.
-- Carrier - input field, that could be typed as alphabetic value in order to retrieve the required Carrier name. By default the input is blank empty.
-- Date - input form, that could be adjusted by the time values. Setting the date "From" to "To", will retrieve the appropriate date range information of the Shopping Carts. By default, the date range is blank empty.
+- **Customer** - input field, that could be typed as alphabetic value in order to retrieve the required Customer name or last name. By default the input is blank empty.
+- **Carrier** - input field, that could be typed as alphabetic value in order to retrieve the required Carrier name. By default the input is blank empty.
+- **Date** - input form, that could be adjusted by the time values. Setting the date "From" to "To", will retrieve the appropriate date range information of the Shopping Carts. By default, the date range is blank empty.
