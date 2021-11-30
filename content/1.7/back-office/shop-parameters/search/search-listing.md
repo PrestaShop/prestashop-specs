@@ -70,7 +70,7 @@ Clicking on the _Bulk actions_ button allows users to perform bulk actions for s
 - Disable selection. Disables the selected alias, changes the status to a red cross mark. If no alias is selected when pressing "disable selection" the message is shown: "You must select at least one item to perform a bulk action." If an alias is selected, and "disable selection" is pressed, the message is shown: "The status has been successfully updated." and the check mark is changed to a red cross.
 - Delete selected: This button will delete the selected alias. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
-After clicking on "Delete" button, the selected feature values are deleted, a successful message is displayed "The selection has been successfully deleted."
+After clicking on "Delete" button, the selected aliases are deleted, a successful message is displayed "The selection has been successfully deleted."
 
  ## Search
  
