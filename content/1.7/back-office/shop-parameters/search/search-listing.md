@@ -50,7 +50,7 @@ Result of the alias
 
 3. Status
 
-Checkmark if the alias is enabled or disabled
+The alias can be enabled or disabled
 
 5. Actions
 
