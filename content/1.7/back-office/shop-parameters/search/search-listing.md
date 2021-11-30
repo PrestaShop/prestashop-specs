@@ -63,7 +63,7 @@ The alias can be enabled or disabled
   
  ## Bulk actions
 
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected feature values (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected aliases (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Enable selection. Enables the selected alias, changes the status to green check mark. If no alias is selected when pressing "enable selection" the message is shown: "You must select at least one item to perform a bulk action." If an alias is selected, and "enable" is pressed, the message is shown: "The status has been successfully updated." and check mark is changed to a green one.
