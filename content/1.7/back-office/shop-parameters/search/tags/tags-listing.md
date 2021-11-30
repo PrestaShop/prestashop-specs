@@ -71,7 +71,7 @@ Number of products that can be found with the tag.
   
 ### Bulk actions
 The Bulk actions button is enabled only if at least one row of the list is selected.
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected tags (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Delete selected: This button will delete the selected stores. 
