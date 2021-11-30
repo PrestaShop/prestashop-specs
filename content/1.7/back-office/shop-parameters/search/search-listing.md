@@ -99,6 +99,7 @@ Below there are 2 links that when pressed performs the following actions:
  -Add missing products to the index - only the new products will be indexed. Also when pressed, the page will be refreshed, and a message shown: "Successful update."
  -Re-build the entire index - the "Re-build entire index" process takes more time, but it is more thorough.
 Below it is written: You can set a cron job that will rebuild your index using the following URL: (a full link of the shop and the directory you are in is shown)
+
 Currently used shop URL which is shown: " http://localhost/presta1781/admin040gp2f9r/index.php?controller=AdminSearch&action=searchCron&ajax=1&full=1&token=yruOjDwR&id_shop=1"
 Below there is a toggle switch for indexing, can be turned "on" or "off". Has an explanation for it: "Enable the automatic indexing of products. If you enable this feature, the products will be indexed in the search automatically when they are saved. If the feature is disabled, you will have to index products manually by using the links provided in the field set."
 
@@ -109,7 +110,7 @@ Below there are 2 links:
  - [Signaler un problème sur GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose)
  - [Proposer une idée d'amélioration sur GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose)
 Below are the following:
- - "Search within word" toggle switch, can be turned to "yes" or "no". Has an explanation below: "By default, to search for “blouse”, you have to enter “blous”, “blo”, etc (beginning of the word) – but not “lous” (within the word). With this option enabled, it also gives the good result if you search for “lous”, “ouse”, or anything contained in the word.". When hovered on the field, a message is shown: "Enable search within a whole word, rather than from its beginning only. It checks if the searched term is contained in the indexed word. This may be resource-consuming.\
+ - "Search within word" toggle switch, can be turned to "yes" or "no". Has an explanation below: "By default, to search for “blouse”, you have to enter “blous”, “blo”, etc (beginning of the word) – but not “lous” (within the word). With this option enabled, it also gives the good result if you search for “lous”, “ouse”, or anything contained in the word.". When hovered on the field, a message is shown: "Enable search within a whole word, rather than from its beginning only. It checks if the searched term is contained in the indexed word. This may be resource-consuming.
  - "Search exact end match" toggle switch, can be turned to "yes" or "no". Has an explanation below: "By default, if you search "book", you will have "book", "bookcase" and "bookend". With this option enabled, it only gives one result “book”, as exact end of the indexed word is matching." When hovered on the field, a message is shown: "Enable more precise search with the end of the word. It checks if the searched term is the exact end of the indexed word."
  - "Fuzzy search" toggle switch, can be turned to "yes" or "no". Has an explanation below: "By default, the fuzzy search is enabled. It means spelling errors are allowed, e.g. you can search for "bird" with words like "burd", "bard" or "beerd". Disabling this option will require exact spelling for the search to match results." When hovered on the field, a message is shown: "Enable approximate string matching".
 
