@@ -80,6 +80,17 @@ Value  This field is mandatory and can be translated: When several languages are
     </item>
     
     <item>
+      <title>Add / Edit tag</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</guid>
+      <description>Add / Edit tag While adding or editing tag, the following fields/drop downs/parameters are displayed:
+ Name  This field allows to fill the name of the tag and is mandatory. If the save button is pressed and if this field is empty, the following error message is displayed: &amp;ldquo;The name field is required.&amp;rdquo;
+Language  This drop-down menu allows selecting the language of the tag and is mandatory. The default country (selected in International &amp;gt; Localization &amp;gt; Configuration) is selected by default.</description>
+    </item>
+    
+    <item>
       <title>Add new order</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -759,6 +770,17 @@ Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns w
       <description>symfony-migration SYMFONY MIGRATION GUIDELINES
 For UX, some guidelines have been defined for each most types of page in the back-office : table and grid pages, configuration pages, drag &amp;amp; drop, etc. These redesigns are made gradually as the development skills and migration progress. This is why no design has been specified for CRUD (with create - read - update - delete actions) pages.
 Please note that many pages in the BO have very specific behaviour and need their own redesign.</description>
+    </item>
+    
+    <item>
+      <title>Tags listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</guid>
+      <description>Tags listing The tagging feature allows associating products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for through the search bar in front office.
+Multistore While creating or editing a tag, it&amp;rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected. 👉 See the specs
+Call to action A call to actions is displayed in the header of this page:</description>
     </item>
     
     <item>

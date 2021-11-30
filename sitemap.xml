@@ -23,6 +23,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</loc>
+    <lastmod>2021-11-23T17:32:39+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -391,6 +394,12 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/symfony-migration.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags.html</loc>
+    <lastmod>2021-11-23T14:30:55+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</loc>
+    <lastmod>2021-11-30T09:41:40+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>

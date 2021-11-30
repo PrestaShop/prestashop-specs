@@ -49,6 +49,13 @@
 	"content": "To save or change a Back-Office address, the following field must be filled in:\n the first name, last name, address1, country city  The others fields are optional\n"
 },
 {
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html",
+	"title": "Add / Edit tag",
+	"tags": [],
+	"description": "",
+	"content": "Add / Edit tag While adding or editing tag, the following fields/drop downs/parameters are displayed:\n Name  This field allows to fill the name of the tag and is mandatory. If the save button is pressed and if this field is empty, the following error message is displayed: \u0026ldquo;The name field is required.\u0026rdquo;\nLanguage  This drop-down menu allows selecting the language of the tag and is mandatory. The default country (selected in International \u0026gt; Localization \u0026gt; Configuration) is selected by default.\nProducts  This section allows to select products associated with the tag and has 2 parts:\n the one on the left lists all the products of the shop the one on the right lists all the products selected for the tag. When selecting a product in the list on the left, and clicking on \u0026ldquo;add\u0026rdquo;, the selected product moves to the right box. When selecting a product in the list on the right, and clicking on \u0026ldquo;remove\u0026rdquo;, the selected product is moved back to the left box.  Several products can be selected on the left or on the right box and added or removed at once.\nCall to action  Save: In the case of adding a new tag and if there is no error, the tag is added and a success message is displayed on the tags listing: \u0026ldquo;Successful creation.\u0026rdquo;. In the case of editing a tag and if there is no error, the tag is edited and a success message is displayed on the tags listing: \u0026ldquo;Successful update.\u0026rdquo;. Cancel: The tag is not added/edited and the tags listing is displayed.  "
+},
+{
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html",
 	"title": "Add new order",
 	"tags": [],
@@ -837,7 +844,7 @@
 	"title": "Search",
 	"tags": [],
 	"description": "",
-	"content": "   Search Page   "
+	"content": "   Tags     Search Page   "
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html",
@@ -908,6 +915,20 @@
 	"tags": [],
 	"description": "",
 	"content": "symfony-migration SYMFONY MIGRATION GUIDELINES\nFor UX, some guidelines have been defined for each most types of page in the back-office : table and grid pages, configuration pages, drag \u0026amp; drop, etc. These redesigns are made gradually as the development skills and migration progress. This is why no design has been specified for CRUD (with create - read - update - delete actions) pages.\nPlease note that many pages in the BO have very specific behaviour and need their own redesign. This is why it is crucial to follow the roadmap which have been defined, in order to anticipate sketch needs.\n1) Tables\nIn tables and listings, some improvements and changes in behaviour have been decided :\n Search : when searching for an ID \u0026ldquo;X\u0026rdquo;, only the element with this exact ID should be displayed. Previously, all elements including this ID were being shown. Filter :  2) Tables with drag \u0026amp; drop\n3) Add new / other actions\n4) Configuration blocks\n"
+},
+{
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags.html",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": "   Add / Edit tag   Tags listing   "
+},
+{
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html",
+	"title": "Tags listing",
+	"tags": [],
+	"description": "",
+	"content": "Tags listing The tagging feature allows associating products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for through the search bar in front office.\nMultistore While creating or editing a tag, it\u0026rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected. 👉 See the specs\nCall to action A call to actions is displayed in the header of this page:\n Add new tag  👉 See the specs of the add/edit tag\nSettings wheel When clicking on the settings wheel, the following options are displayed:\n Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.\nShow SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.\nThere are two buttons:\n Close: After clicking on it, the modal is closed Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters \u0026gt; Database \u0026gt; SQL Manager  Export to SQL Manager  After clicking on it, the SQL query is opened in Advanced parameters \u0026gt; Database \u0026gt; SQL Manager.\nColumns The page displays the tag list with the following columns:\n ID  ID of the tag.\nLanguage  Language of the tag.\nName  Name of the tag.\nProducts  Number of products that can be found with the tag.\nActions    Edit. This is the main action and it can be performed by clicking on the line or on the button. 👉 See the specs of the add/edit tag\n  Delete. The tag can be deleted by clicking on this button. After clicking on \u0026ldquo;Delete\u0026rdquo;, a modal with the title \u0026ldquo;Delete selection\u0026rdquo; is opened asking to confirm or cancel the action: \u0026ldquo;Are you sure you want to delete the selected item(s)?\u0026rdquo; The action can be canceled by clicking on the cross or on the cancel button. After clicking on \u0026ldquo;Delete\u0026rdquo; button, the tag is deleted and a successful message is displayed \u0026ldquo;Successful deletion.\u0026rdquo;\n  Bulk actions The Bulk actions button is enabled only if at least one row of the list is selected. Clicking on the Bulk actions button allows users to perform bulk actions for selected tags (using the checkboxes). A user can:\n Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing. Delete selected: This button will delete the selected tags. After clicking on \u0026ldquo;Delete selected\u0026rdquo;, a modal with the title \u0026ldquo;Delete selection\u0026rdquo; is opened asking to confirm or cancel the action: \u0026ldquo;Delete the selected item(s)?\u0026rdquo; (See issue #14462). The action can be canceled by clicking on the cross or on the cancel button. After clicking on \u0026ldquo;Ok\u0026rdquo; button, the selected tag is deleted, a successful message is displayed \u0026ldquo;The selection has been successfully deleted.\u0026rdquo;  Search The search button is disabled as long as there are less than 2 tags in the list. A search can be done by ID, language, name, and Products. It\u0026rsquo;s possible to sort the list by ID, language, name or products in an ascending or descending way. After clicking on \u0026ldquo;search\u0026rdquo;, the \u0026ldquo;search\u0026rdquo; button is disabled and a \u0026ldquo;reset\u0026rdquo; button is displayed. If there is no results for the search done, the following message is displayed: \u0026ldquo;No records found\u0026rdquo;. When clicking on \u0026ldquo;reset\u0026rdquo;, the search is removed and all the results are displayed.\n"
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes.html",
