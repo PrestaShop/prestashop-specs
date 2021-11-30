@@ -74,7 +74,7 @@ The Bulk actions button is enabled only if at least one row of the list is selec
 Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected tags (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
-- Delete selected: This button will delete the selected stores. 
+- Delete selected: This button will delete the selected tags. 
 When trying to delete the selection without any checkboxes checked, the following message is displayed: "You must select at least one element to delete."
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Ok" button, the selected tag is deleted, a successful message is displayed "The selection has been successfully deleted."
