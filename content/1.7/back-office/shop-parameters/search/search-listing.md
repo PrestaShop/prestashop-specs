@@ -74,7 +74,7 @@ After clicking on "Delete" button, the selected aliases are deleted, a successfu
 
  ## Search
  
-The search button is disabled as long as there are less than 2 alias  in the list. A search can be done by aliases, search, and status.
+The search button is disabled as long as there are less than 2 aliases in the list. A search can be done by aliases, search, and status.
 It's possible to sort the list by aliases, search in an ascending or descending way.
 After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
 If there is no results for the search done, the following message is displayed: "No records found".
