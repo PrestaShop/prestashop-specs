@@ -94,7 +94,9 @@ This section provides information on the number of products that can be searched
 
 Firstly an explanation is shown: "The "indexed" products have been analyzed by PrestaShop and will appear in the results of a front office search.
 Indexed products 18 / 18." (the number depends on the products which are in the shop, and are indexed).
+
 Below folows: "Building the product index may take a few minutes. If your server stops before the process ends, you can resume the indexing by clicking "Add missing products to the index"."
+
 Below there are 2 links that when pressed performs the following actions:
  -Add missing products to the index - only the new products will be indexed. Also when pressed, the page will be refreshed, and a message shown: "Successful update."
  -Re-build the entire index - the "Re-build entire index" process takes more time, but it is more thorough.
