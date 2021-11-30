@@ -5,7 +5,7 @@ weight: 1
 
 # Search listing
 
-The "Search" page enables to configure the shop's search features.
+The "Search" page allows configuring the shop's search features.
 
 ## Call to action
  
