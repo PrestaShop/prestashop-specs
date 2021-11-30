@@ -59,7 +59,7 @@ The alias can be enabled or disabled
 
 - **Delete.** The alias can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
   The action can be canceled by clicking on the cross or on the cancel button.
-  After clicking on "Delete" button, the tag is deleted and a successful message is displayed "Successful deletion."
+  After clicking on "Delete" button, the alias is deleted and a successful message is displayed "Successful deletion."
   
  ## Bulk actions
 
