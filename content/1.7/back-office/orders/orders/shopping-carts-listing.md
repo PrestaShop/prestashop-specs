@@ -52,3 +52,7 @@ A selective UI, where certain global actions can be done, after checking - using
 - **Select All** - checking this option, Prestashop will select all the checkboxes in the Shopping Carts list.
 - **Unselect All** - checking this option, Prestashop will unselect all the checkboxes in the Shopping Carts list.
 - **Delete selected** - Prestashop will execute a deletion of the selected Shopping Carts rows from the listing. At first, there will be a prompt message informing about deletion.
+
+### Pagination elements UI
+
+The pagination can be selected both in showing the Shopping Carts listed in the table or navigating through the Shopping Cart pages. Shopping Cart lists can be displayed as 20, 50, 100, 300 and 1000 at one viewport screen.
