@@ -71,3 +71,4 @@ _You must select at least one element to delete._
 
 ## Multistore functionality in Shopping Carts
 
+Shopping Carts are stored separately in separate Prestashop multistore databases, so the generated Carts are differently listed in other Multistores and Shop Groups.
