@@ -5,6 +5,8 @@ weight: 1
 
 # ORDERS > SHOPPING CARTS
 
+[Shopping Carts UI](static/img/orders-shopping-cart.png)
+
 This specific page is for storing and editing all the Prestashop shopping carts, that were generated during the checkout process. All the listed UI elements are the following below.
 
 ## Top of the table UI
@@ -28,7 +30,7 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 
 ## The body of the Table UI
 
-- **Checkbox** - once the checkbox is checked, the function can be related to Bulk Actions section in the bottom of the Shopping Cart table. The Shopping Cart item can be managed by those Bulk Actions. By default, there are nonde of the Shopping Carts selected.
+- **Checkbox** - once the checkbox is checked, the function can be related to Bulk Actions section in the bottom of the Shopping Cart table. The Shopping Cart item can be managed by the Bulk Actions (see below). By default, there are none of the Shopping Carts selected. Note, that Orders, that had been fully validated and paid, can not be selective in Shopping Carts list.
 - **ID number of Shopping Cart** - specific numeric value, that is registered by Prestashop, every time the cart is created. By default, the ID numbering is set by the ascending arrangement.
 - **Abandoned cart** - if the Cart is not validated through the last checkout step, and the Order is not created, the Cart is statused as Abandoned, and the status becomes _Abandoned Cart_ without any Order ID number.
 - **Customer name and last name** - the unique identifier that shows the Cart creator. If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart, because the Prestashop has not yet transformed the Cart ID into Client ID. If there is registered client, that created the Cart, it will be identified by first and last name.
@@ -41,4 +43,12 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 
 ## The bottom of the Table UI
 
-- **Bulk actions** - a selective UI, where certain global actions can be done, after checking one or multiple Shopping Cart element rows.
+### Bulk Actions UI
+
+[Bulk Actions in Shopping Cart](static/img/orders-shopping-carts-bulk-actions.png)
+
+A selective UI, where certain global actions can be done, after checking - using checkboxes - in one or multiple Shopping Cart element rows. Bulk Actions has the following functionalities:<br>
+
+- **Select All** - checking this option, Prestashop will select all the checkboxes in the Shopping Carts list.
+- **Unselect All** - checking this option, Prestashop will unselect all the checkboxes in the Shopping Carts list.
+- **Delete selected** - Prestashop will execute a deletion of the selected Shopping Carts rows from the listing. At first, there will be a prompt message informing about deletion.
