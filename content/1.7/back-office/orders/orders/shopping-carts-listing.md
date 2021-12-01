@@ -38,3 +38,7 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 - **Online** - the text value, that can be displayed as Yes or No, according to conditioins.
 - **Shop** - if multistores are enabled, Prestashop will show the appropriate shop, where Cart was created.
 - **CTA button View and Delete** - if the Cart is abandoned or the Cart has not been converted to the Orded, the CTA button will be displayed only View. If the Cart has transformed to Order, there will be also a dropdown in View CTA, with the selection of Delete - in order to delete the Cart from Prestashop database.
+
+## The bottom of the Table UI
+
+- **Bulk actions** - a selective UI, where certain global actions can be done, after checking one or multiple Shopping Cart element rows.
