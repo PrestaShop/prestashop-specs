@@ -30,3 +30,5 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 - **Checkbox** - once the checkbox is checked, the function can be related to Bulk Actions section in the bottom of the Shopping Cart table. The Shopping Cart item can be managed by those Bulk Actions. By default, there are nonde of the Shopping Carts selected.
 - **ID number of Shopping Cart** - specific numeric value, that is registered by Prestashop, every time the cart is created. By default, the ID numbering is set by the ascending arrangement.
 - **Abandoned cart** - if the Cart is not validated through the last checkout step, and the Order is not created, the Cart is statused as Abandoned, and the status becomes _Abandoned Cart_ without any Order ID number.
+- **Customer name and last name** - the unique identifier that shows the Cart creator. If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart, because the Prestashop has not yet transformed the Cart ID into Client ID. If there is registered client, that created the Cart, it will be identified by first and last name.
+- 
