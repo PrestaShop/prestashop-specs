@@ -10,6 +10,11 @@ A simple product is selected by default.
 
 Each product type has its shorts' description. Selecting a product type displays its description.
 
+- Simple product → A physical product that needs to be shipped.
+- Product with combination → A product with different variations (size, color, etc.) from which customers can choose.
+-  Pack of products → A collection of products from your catalog.
+- Virtual product → An intangible product that doesn't require shipping. You can also add a downloadable file.
+
 Modules can hook into the modal to add a new product type, with its description and icon/image.
 The module is allowed to add any image or icon at the same size as the icon of the product type of PrestaShop.
 
