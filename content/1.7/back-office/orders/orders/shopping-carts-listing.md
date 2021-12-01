@@ -56,3 +56,18 @@ A selective UI, where certain global actions can be done, after checking - using
 ### Pagination elements UI
 
 The pagination can be selected both in showing the Shopping Carts listed in the table or navigating through the Shopping Cart pages. Shopping Cart lists can be displayed as 20, 50, 100, 300 and 1000 at one viewport screen.
+
+## Other Shopping Carts functionalities
+
+Export carts - CTA button located in the top-right of the page. After clicking, Prestashop generates a specific CSV file for downloading. This CSV file contains all the Shopping Cart data from the table UI.
+
+## Notifications after form submissions
+
+After using the Bulk Actions successful Cart deletion, the success notification is prompted:<br>
+_The selection has been successfully deleted._
+
+After using the Bulk Actions unsiccessful Cart deletion, the failure notification is prompted:<br>
+_You must select at least one element to delete._
+
+## Multistore functionality in Shopping Carts
+
