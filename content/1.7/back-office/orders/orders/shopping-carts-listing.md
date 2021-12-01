@@ -33,4 +33,6 @@ This specific page is for storing and editing all the Prestashop shopping carts,
 - **Abandoned cart** - if the Cart is not validated through the last checkout step, and the Order is not created, the Cart is statused as Abandoned, and the status becomes _Abandoned Cart_ without any Order ID number.
 - **Customer name and last name** - the unique identifier that shows the Cart creator. If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart, because the Prestashop has not yet transformed the Cart ID into Client ID. If there is registered client, that created the Cart, it will be identified by first and last name.
 - **Total sum of Cart** - numeric value that shows the total amount in the Shopping Cart. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased.
-- 
+- **Carrier** - if the user has reached the Carrier step in the Checkout, then Prestashop will register and display the chosen Carrier in the Shopping Cart item.
+- **Date** - the exact time stamp, when the Cart was created.
+- **Online** - the text value, that can be displayed as Yes or No, according to conditioins.
