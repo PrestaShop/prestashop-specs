@@ -63,6 +63,9 @@ Export carts - CTA button located in the top-right of the page. After clicking, 
 
 ## Notifications after form submissions
 
+After deleting the single Shopping Cart row, using the dropdown View > Delete, the success notification is prompted:<br>
+_Successful deletion._
+
 After using the Bulk Actions successful Cart deletion, the success notification is prompted:<br>
 _The selection has been successfully deleted._
 
