@@ -104,9 +104,7 @@ A link to the AdminSearch controller is displayed: "http://localhost/presta1781/
 
 Below, a toggle "Indexing" allows to enable or disable the automatic indexing of the products.
 
-The following help text is displayed: "Enable the automatic indexing of products. If you enable this feature, the products will be indexed in the search automatically when they are saved. If the feature is disabled, you will have to index products manually by using the links provided in the field set."
-
-By default the toggle is enabled.
+The following help text is displayed: "Enable the automatic indexing of products. By default the toggle is enabled. If you enable this feature, the products will be indexed in the search automatically when they are saved. If the feature is disabled, you will have to index products manually by using the links provided in the field set."
 
  # Search
  
