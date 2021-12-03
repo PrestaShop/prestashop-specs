@@ -14,8 +14,9 @@ This functionality ables to make a return action of purchased goods via Prestash
 - **Customer** - the details of the customer - first and last name, and link to the Customer profile.
 - **Order** - the exact date when order was created by the customer, as well as link to the exact order in Order page.
 - **Customer explanation** - input text area, where customer can provide big amount of text as explanation to the Prestashop administrators.
-- **Status** - several statuses, used to give the udpate to the applying customer.
+- **Status** - several statuses, used to give the udpate to the applying customer. All the statuses are mentioned below.
 - **Products** - the list of products in the return package displayed in a listing UI. There are _Reference_, _Product name_, _Quantity_, and _Action_ listing column names. 
+- **Returns form** - specific PDF invoice document, showing the details about the request of the return, appears for downloading, only when the customer requests for a return of the goods, and the Prestashop merchant sets the Status of return to _Waiting for package_.
 
 ### Statuses
 
@@ -26,5 +27,9 @@ The statuses are the following:
 - **Return denied** - the status, indicating that the Prestashop merchant is denied the returning pack from the customer. Once changed, the customer gets notificaiton about the status change.
 - **Return completed** - the status, indicating that the Prestashop merchant has completed the return case of the pack from the customer. Once changed, the customer gets notificaiton about the status change.
 
+## CTA buttons
 
+- **Cancel** - cancels all the Edit UI, redirects to the Merchandise Return list.
+- **Save** - saves the single Merchandise Return Editing configuration.
+- **Delete** - deletes the product from the return list package.
 
