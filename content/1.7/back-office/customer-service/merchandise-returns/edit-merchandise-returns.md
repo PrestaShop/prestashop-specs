@@ -15,6 +15,7 @@ This functionality ables to make a return action of purchased goods via Prestash
 - **Order** - the exact date when order was created by the customer, as well as link to the exact order in Order page.
 - **Customer explanation** - input text area, where customer can provide big amount of text as explanation to the Prestashop administrators.
 - **Status** - several statuses, used to give the udpate to the applying customer.
+- **Products** - the list of products in the return package displayed in a listing UI. There are _Reference_, _Product name_, _Quantity_, and _Action_ listing column names. 
 
 ### Statuses
 
@@ -25,4 +26,5 @@ The statuses are the following:
 - **Return denied** - the status, indicating that the Prestashop merchant is denied the returning pack from the customer. Once changed, the customer gets notificaiton about the status change.
 - **Return completed** - the status, indicating that the Prestashop merchant has completed the return case of the pack from the customer. Once changed, the customer gets notificaiton about the status change.
 
-- **Products** - the list of products in the return package displayed in a listing UI. There are _Reference_, _Product name_, _Quantity_, and _Action_ listing column names. 
+
+
