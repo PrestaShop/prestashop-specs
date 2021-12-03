@@ -24,3 +24,5 @@ The statuses are the following:
 - **Package received** - the status, indicating that the Prestashop merchant has received the returning pack from the customer. Once the status is changed, the customer gets notificaiton about the status change.
 - **Return denied** - the status, indicating that the Prestashop merchant is denied the returning pack from the customer. Once changed, the customer gets notificaiton about the status change.
 - **Return completed** - the status, indicating that the Prestashop merchant has completed the return case of the pack from the customer. Once changed, the customer gets notificaiton about the status change.
+
+- **Products** - the list of products in the return package displayed in a listing UI. There are _Reference_, _Product name_, _Quantity_, and _Action_ listing column names. 
