@@ -39,3 +39,7 @@ The statuses are the following:
 _Successful update._
 - If there is a deletion attempt from the Return Package list, when only 1 item is in the list, the UI will be prompted with the message:<br>
 _You need at least one product._
+
+## Multistores compatibility
+
+Merchandise Editing functionality is separately maintained by each separate multistore shop. It means, that all the Merchandise Returns and Orders are managed separately in each multistore, by switching the Multistore Switcher to the appropriate shop. _All Shops_ view context is also available, it is comfortable to see all the Merchandise Returns in one list from all the shops.
