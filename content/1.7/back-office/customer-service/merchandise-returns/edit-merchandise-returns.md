@@ -16,7 +16,7 @@ This functionality ables to make a return action of purchased goods via Prestash
 - **Customer explanation** - input text area, where customer can provide big amount of text as explanation to the Prestashop administrators.
 - **Status** - several statuses, used to give the udpate to the applying customer. All the statuses are mentioned below.
 - **Products** - the list of products in the return package displayed in a listing UI. There are _Reference_, _Product name_, _Quantity_, and _Action_ listing column names. 
-- **Returns form** - specific PDF invoice document, showing the details about the request of the return, appears for downloading, only when the customer requests for a return of the goods, and the Prestashop merchant sets the Status of return to _Waiting for package_.
+- **Returns form** - specific PDF invoice document, showing the details about the request of the return, appears for downloading, only when the customer requests for a return of the goods, and the Prestashop merchant sets the Status of return to _Waiting for package_. The PDF contains Billing and Delivery Address, message, that Prestashop has logged the return request, the deadline when the package must be returned, return number, date. Items to be returned list, reference, quantity, following conditions declarations, if the conditions are not met.
 
 ### Statuses
 
