@@ -49,4 +49,4 @@ There is an availability to manage the Module Transplantations straight from the
 
 ## Multistore
 
-Multistore funcionality can be separately adjusted to the other shops and shop groups also. It means, that transplanting the hook while being on 1st multistore will affect the shop separately from the other shops.
+Multistore functionality can be separately adjusted to the other shops and shop groups also. It means, that transplanting the hook while being on 1st multistore will affect the shop separately from the other shops.
