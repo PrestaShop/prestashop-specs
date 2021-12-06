@@ -6,13 +6,13 @@ weight: 1
 
 [Transplant a module](static/img/design-positions-transplant.png)
 
-This functionality can be used for certain positioning of the certain module in different Prestashop UI places. Any Prestashop module can be registered on the placement operator called Hook. Thera are multiple different hook names in Prestashop, and module can be transplanted into the one of the desirable hooks.
+This functionality can be used for certain positioning of the certain module in different Prestashop UI places. Any Prestashop module can be registered on the placement operator called Hook. There are multiple different hook names in Prestashop, and module can be transplanted into the one of the desirable hooks.
 
 ## UI elements listing
 
 There are different UI elements in the Positions > Transplant a module directory:
 
-**Module** - required input element - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. Once the dropdown is clicked, the vertical UI dropdown will be expanded with the following module names, and search text input, where the module can be searched by typing first letters of the module name. By default, if none of the modules selected, the dropdown is substracted and set as placeholder called _Please select a module_.
+**Module** - required input element - text dropdown that sets the appropriate transplantable module name from the Prestashop gathered module list. Once the dropdown is clicked, the vertical UI dropdown will be expanded with the following module names, and search text input, where the module can be searched by typing first letters of the module name. By default, if none of the modules selected, the dropdown is subtracted and set as placeholder called _Please select a module_.
 
 **Transplant to** - required input element - text dropdown with the list of available hooks, that can be used for transplantation. Some modules contains detailed hook description in brackets, explaining where is the exact hook position in Prestashop application. Also, there are already used hooks list, meaning that the hooks are already managed and can not be used for a new transplantation of a seleted module. By default, if none of the modules above selected, this field is set to disabled, with the placeholder defined as _Select a module above before choosing from available hooks_. 
 
