@@ -37,4 +37,4 @@ _The settings have been successfully updated._
 
 ## Multistores functionality
 
-
+Merchandise Returns functionality is separately maintained by each separate multistore shop. It can be Enabled or Disabled in different multistores. It means, that all the Merchandise Returns and Orders are managed separately in each multistore, by switching the Multistore Switcher to the appropriate shop. All Shops view context is also available, it is comfortable to see all the Settings and Merchandise Returns in one list from all the shops.
