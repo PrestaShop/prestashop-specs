@@ -33,7 +33,7 @@ The statuses are the following:
 - **Save** - saves the single Merchandise Return Editing configuration.
 - **Delete** - deletes the product from the return list package.
 
-## Message UI notifications after form submissions
+## Notifications messages after form submission in UI
 
 - If the editing of the return is successful - once updating the return status - the UI will be prompted with the message:<br>
 _Successful update._
