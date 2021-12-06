@@ -37,3 +37,5 @@ The statuses are the following:
 
 - If the Editing of the return is successful, the UI will be prompted with the message:<br>
 _Successful update._
+- If there is a deletion attempt from the Return Package list, when only 1 item is in the list, the UI will be prompted with the message:<br>
+_You need at least one product._
