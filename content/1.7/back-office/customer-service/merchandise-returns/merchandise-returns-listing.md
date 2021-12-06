@@ -26,5 +26,6 @@ This UI is listed as 2 sections - _Merchandise Returns_ and _Merchandise return 
 
 ## Merchandise return (RMA) options 
 
-- Enable returns - toggle switch, where Enabling or Disabling the Retuns can be set. The Returns will be available for the customers of the shop from their My Account page. By default the function is set to Disabled.
-- Time limit of validity - input field, where customers can fill the numeric value, how many days after the delivery date does the customer have to return a product. By default the numeric value is set to 14.
+- **Enable returns** - toggle switch, where Enabling or Disabling the Retuns can be set. The Returns will be available for the customers of the shop from their My Account page. By default the function is set to Disabled.
+- **Time limit of validity** - input field, where customers can fill the numeric value, how many days after the delivery date does the customer have to return a product. By default the numeric value is set to 14.
+- **Returns prefix** - specific alphabetic value, where prefix can be used for a return name in generated PDF. The prefix can be set for each different language in Prestashop.
