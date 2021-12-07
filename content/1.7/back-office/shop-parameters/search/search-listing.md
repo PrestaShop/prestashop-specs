@@ -80,7 +80,9 @@ After clicking on "Delete" button, the selected aliases are deleted, a successfu
 
  ## Search
  
-The search button is disabled as long as there are less than 2 aliases in the list. A search can be done by aliases, search, and status (drop-down menu).
+The search button is disabled as long as there are less than 2 aliases in the list. 
+
+A search can be done by aliases, search, and status (drop-down menu).
 It's possible to sort the list by aliases or by search in an ascending or descending way.
 After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
 If there is no results for the search done, the following message is displayed: "No records found".
@@ -98,13 +100,14 @@ Below, the following message is displayed: "Building the product index may take 
 Below there are 2 links that performs the following actions when clicked:
  -"Add missing products to the index" : only the new products will be indexed. After clicking on it, the page is refreshed, and the following message is displayed: "Successful update."
  - "Re-build the entire index": when clicking on it, all the products are indexed (and not only the missing ones compared to the previous link)
+
 Below, the following message is displayed : "You can set a cron job that will rebuild your index using the following URL:" 
 
 A link to the AdminSearch controller is displayed: "http://localhost/presta1781/admin/index.php?controller=AdminSearch&action=searchCron&ajax=1&full=1&token=yruOjDwR&id_shop=1" (the link depends on the shop domain name and admin folder's name)
 
 Below, a toggle "Indexing" allows to enable or disable the automatic indexing of the products.
 
-The following help text is displayed: "Enable the automatic indexing of products. By default the toggle is enabled. If you enable this feature, the products will be indexed in the search automatically when they are saved. If the feature is disabled, you will have to index products manually by using the links provided in the field set."
+The following help text is displayed under the toggle: "Enable the automatic indexing of products. By default the toggle is enabled. If you enable this feature, the products will be indexed in the search automatically when they are saved. If the feature is disabled, you will have to index products manually by using the links provided in the field set."
 
  # Search
  
@@ -116,24 +119,34 @@ Below there are 2 links:
  - [Proposer une idée d'amélioration sur GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose)
 
 Below, the following toggle and fields are displayed:
-  - "Search within word" : This toggle can be enabled or disabled. By default, the toggle is disabled. The following help text is displayed: "By default, to search for “blouse”, you have to enter “blous”, “blo”, etc (beginning of the word) – but not “lous” (within the word). With this option enabled, it also gives the good result if you search for “lous”, “ouse”, or anything contained in the word.". 
+  - **Search within word**: This toggle can be enabled or disabled. By default, the toggle is disabled. 
+ The following help text is displayed under the toggle: "By default, to search for “blouse”, you have to enter “blous”, “blo”, etc (beginning of the word) – but not “lous” (within the word). With this option enabled, it also gives the good result if you search for “lous”, “ouse”, or anything contained in the word.".  
 The following tooltip is displayed: "Enable search within a whole word, rather than from its beginning only. By default the toggle is set to "No". It checks if the searched term is contained in the indexed word. This may be resource-consuming."
 
- - "Search exact end match": This toggle can be enabled or disabled. By default, the toggle is disabled. The following help text is displayed below: "By default, if you search "book", you will have "book", "bookcase" and "bookend". With this option enabled, it only gives one result “book”, as exact end of the indexed word is matching." 
+ - **Search exact end match**: This toggle can be enabled or disabled. By default, the toggle is disabled. 
+The following help text is displayed below: "By default, if you search "book", you will have "book", "bookcase" and "bookend". With this option enabled, it only gives one result “book”, as exact end of the indexed word is matching." 
 The following tooltip is displayed: "Enable more precise search with the end of the word. It checks if the searched term is the exact end of the indexed word."
 
- - "Fuzzy search": This toggle, can be enabled or disabled. By default, this toggle is enabled. A help text is displayed below: "By default, the fuzzy search is enabled. It means spelling errors are allowed, e.g. you can search for "bird" with words like "burd", "bard" or "beerd". Disabling this option will require exact spelling for the search to match results."  
+ - **Fuzzy search**: This toggle, can be enabled or disabled. By default, this toggle is enabled. 
+A help text is displayed below: "By default, the fuzzy search is enabled. It means spelling errors are allowed, e.g. you can search for "bird" with words like "burd", "bard" or "beerd". Disabling this option will require exact spelling for the search to match results."   
 The following tooltip is displayed: "Enable approximate string matching".
 
- - "Maximum approximate words allowed by fuzzy search". This is the limitation for how many words the "fuzzy search" can handle. Only numbers can be entered in this field. When trying to input characters that are not numbers and when saving, the following error message is displayed: "The Maximum approximate words allowed by fuzzy search field is invalid."
+ - **Maximum approximate words allowed by fuzzy search**: This is the limitation for how many words the "fuzzy search" can handle. 
+Only numbers can be entered in this field. When trying to input characters that are not numbers and when saving, the following error message is displayed: "The Maximum approximate words allowed by fuzzy search field is invalid."
 The following tooltip is displayed: "Note that this option is resource-consuming: the more you search, the longer it takes."
-  - "Maximum word length (in characters)". This field is mandatory and allows to define how many characters are allowed to run a fuzzy search query. When trying to save and if the field is empty, the following error message is displayed: "field Maximum word length (in characters) is required." 
+
+  - **Maximum word length (in characters)**: This field is mandatory and allows to define how many characters are allowed to run a fuzzy search query. 
+ When trying to save and if the field is empty, the following error message is displayed: "field Maximum word length (in characters) is required." 
 Only numbers can be entered in this field. When trying to input characters that are not numbers and when saving, the following error message is displayed: "The Maximum word length (in characters) field is invalid."
 A help text is displayed below the field: "This parameter will only be used if the fuzzy search is activated: the lower the value, the more tolerant your search will be.".
 Also, a tooltip is displayed: "Only words fewer or equal to this maximum length will be searched."
- - "Minimum word length (in characters)". It is possible to choose the minimum size at which a word may be registered in the search index and found the customers. Only numbers can be entered in this field. When trying to input characters that are not numbers and when saving, the following error message is displayed: "The Minimum word length (in characters) field is invalid." 
+
+ - **Minimum word length (in characters)**: It is possible to choose the minimum size at which a word may be registered in the search index and found the customers. 
+Only numbers can be entered in this field. When trying to input characters that are not numbers and when saving, the following error message is displayed: "The Minimum word length (in characters) field is invalid." 
 Also, a tooltip is displayed: "Only words this size or larger will be indexed."
- - "Blacklisted words". It allows choosing the terms that must not be found by the shop visitors. A tooltip is displayed: "Please enter the index words separated by a".
+
+ - **Blacklisted words**: It allows choosing the terms that must not be found by the shop visitors. 
+A tooltip is displayed: "Please enter the index words separated by a".
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. There is no drop-down button when only one language is defined.
 The default value of this field is: "a|about|above|after|again|against|all|am|an|and|any|are|aren|as|at|be|because|been|before|being|below|between|both|but|by|can|cannot|could|couldn|did|didn|do|does|doesn|doing|don|down|during|each|few|for|from|further|had|hadn|has|hasn|have|haven|having|he|ll|her|here|hers|herself|him|himself|his|how|ve|if|in|into|is|isn|it|its|itself|let|me|more|most|mustn|my|myself|no|nor|not|of|off|on|once|only|or|other|ought|our|ours|ourselves|out|over|own|same|shan|she|should|shouldn|so|some|such|than|that|the|their|theirs|them|themselves|then|there|these|they|re|this|those|through|to|too|under|until|up|very|was|wasn|we|were|weren|what|when|where|which|while|who|whom|why|with|won|would|wouldn|you|your|yours|yourself|yourselves"
 
@@ -154,7 +167,7 @@ First thing presented is a multistore toggle which can be turned "off" or "on".
 
 The following fields are displayed:
 
- - Product name weight: The default value for this field is
+ - Product name weight: The default value for this field is 6
  - Reference weight: The default value for this field is 10
  - Short description weight: The default value for this field is 1
  - Description weight: The default value for this field is 1
