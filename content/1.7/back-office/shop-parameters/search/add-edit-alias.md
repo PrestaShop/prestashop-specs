@@ -5,12 +5,12 @@ weight: 1
 
 # Add / Edit alias
 
-When in this page, there are 2 input fields shown:
+In this page, there are 2 fields displayed:
 
- - "Alias" this field is mandatory, when trying to save the field empty, shows the message: "Aliases and results are both required."
-A tooltip for this field shows: "Enter each alias separated by a comma (e.g. 'prestshop,preztashop,prestasohp'). Forbidden characters: &lt;&gt;;=#{}"
- - "Result" this field is mandatory, when trying to save the field empty, shows the message: "Aliases and results are both required."
-A tolltip for this field shows: "Search this word instead."
+ - **Alias**: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: "Aliases and results are both required."
+A tooltip for this field is displayed: "Enter each alias separated by a comma (e.g. 'prestshop,preztashop,prestasohp'). Forbidden characters: &lt;&gt;;=#{}"
+ - **Result**: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: "Aliases and results are both required."
+A tooltip for this field is displayed: "Search this word instead."
 
 ## Call to action
 
