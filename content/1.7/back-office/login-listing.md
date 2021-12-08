@@ -21,3 +21,9 @@ This UI is the main feature to authorize the Prestashop Back-Office administrato
 - **Login CTA button** - the button, that executes the logging in action, the user then is instantly redirected to the default main dashboard page.
 - **Stay logged in checkbox** - this checkbox and its function is common in many logging-in submission forms. Once the checkbox is marked, the browser will remember the logging-in status, and the administrator will not be required to input email and password in the next attempt of logging-in. The administrator will be authenticated and redirected to the dashboard instantly.
 - **I forgot my password** - specific link, in case administrator forgets the Prestashop authentication password. Once clicked, the UI instantly flips to the new UI which contains the email input. After submitting the email there, a link will be generated and sent to the defined email.
+
+## Bottom UI Section
+
+- **Back to Front-Office** - the link, navigating to the Prestashop Front-Office parent home page.
+- **Copyright** - Prestashop all rights declaration text.
+- **Social networking** - official social networks of Prestashop: Twitter, Facebook, Github and their links.
