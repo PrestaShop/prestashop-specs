@@ -4,7 +4,7 @@ weight: 1
 ---
 # Add / edit contact
 
-![Contact](/static/img/contacts.png)
+![Contact](/img/contacts.png)
 
 
 While adding or editing a contact, the following fields / toggles / parameters are displayed:
@@ -32,7 +32,7 @@ This field can be translated: When several languages are installed, a drop-down 
 The shop association block is mandatory and is displayed when the multistore is enabled and if several shops are configured.
 If the save button is pressed and if no shop is selected, the following error message is displayed: "The "Shop association" field is required." and the contact is not saved.
 
-:point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
+👉 See the [specs of the shop association block]({{<ref "../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
  ## Call to action 
  There are 2 buttons at the bottom of this page: 

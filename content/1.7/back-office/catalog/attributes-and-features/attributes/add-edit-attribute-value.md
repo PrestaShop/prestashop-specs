@@ -34,7 +34,7 @@ There is a help-text under this field: "When the Faceted Search module is enable
  
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-:point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
+👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
 6) Color
 
@@ -60,10 +60,10 @@ If pressing "delete", the texture is deleted and the following message is displa
 
 3 call to actions are displayed at the bottom of this page:
 
-- Save then add another value:
+- **Save then add another value:**
 In the case of adding an attribute value, the attribute value is added and the add form is opened and a success message is displayed: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and the add form is opened and a success message is displayed: "Successful update."
 
-- Save:
+- **Save:**
 In the case of adding an attribute value, the attribute value is added and a success message is displayed on the attribute values listing: "Successful creation.". In the case of editing an attribute value, the attribute value is edited and a success message is displayed on the attribute values listing: "Successful update.".
-- Cancel:
+- **Cancel:**
 The attribute value is not added/edited and the attribute values listing is displayed.
