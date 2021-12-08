@@ -14,6 +14,7 @@ This UI is the main feature to authorize the Prestashop Back-Office administrato
 
 ## Middle UI Section
 
-- Logo - the official Preston seabird logo of Prestashop.
-- Shop name - the shop name, that was defined during the installation process of Prestashop application.
-- Email address input - the specific superadmin profile email input. The email is the exact that was defined during the installation process of Prestashop. It must be used at the first log-in attempt. 
+- **Logo** - the official Preston seabird logo of Prestashop.
+- **Shop name** - the shop name, that was defined during the installation process of Prestashop application.
+- **Email address input** - the specific superadmin profile email input text field. The email is the exact that was defined during the installation process of Prestashop. It must be used at the first log-in attempt. 
+- Password input - the specific superadmin profile password input text field. The password is the exact that was defined during the installation process of Prestashop. It must be used at the first log-in attempt. 
