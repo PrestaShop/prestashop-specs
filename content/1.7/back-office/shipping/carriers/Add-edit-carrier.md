@@ -47,7 +47,7 @@ A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking numb
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-# Multistore (2n step, if multistore is enabled)
+# Multistore (2nd step, if multistore is enabled)
 
 This tab is shown when multistore is enabled.
 
