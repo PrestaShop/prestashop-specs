@@ -56,7 +56,7 @@ Result of the alias
 
 The alias can be enabled or disabled
 
-5. Actions
+4. Actions
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
 👉 See the [specs of the add/edit alias](./add-edit-alias.md) 
@@ -103,7 +103,7 @@ The number of products indexed and the number of products in the shop is display
 Below, the following message is displayed: "Building the product index may take a few minutes. If your server stops before the process ends, you can resume the indexing by clicking "Add missing products to the index"."
 
 Below there are 2 links that performs the following actions when clicked:
- -"Add missing products to the index" : only the new products will be indexed. After clicking on it, the page is refreshed, and the following message is displayed: "Successful update."
+ - "Add missing products to the index" : only the new products will be indexed. After clicking on it, the page is refreshed, and the following message is displayed: "Successful update."
  - "Re-build the entire index": when clicking on it, all the products are indexed (and not only the missing ones compared to the previous link)
 
 Below, the following message is displayed : "You can set a cron job that will rebuild your index using the following URL:" 
@@ -194,7 +194,4 @@ Only numbers can be entered in this field. When entering characters that are not
 ## Multistore
  
  In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/multistoregeneralspecs.md#checkboxes)
- 
- While creating or editing an alias, it's added or edited for all shops (no matter the context selected). So, the list displays all the aliases, no matter the context selected.
- 
-👉 See [the specs](../../../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block) 
+  
