@@ -19,15 +19,11 @@ A call to actions is displayed in the header of this page:
 
 When clicking on the settings wheel, the following options are displayed:
 
-1. Add new
-
-When pressed redirects to the add/edit carrier page see the [specs of the add/edit carrier](./add-edit-carrier.md) 
-
-2. Refresh list
+1. Refresh list
 
 After clicking on it, the page is reloaded. Sorts and searches are kept.
 
-3. Show SQL query
+2. Show SQL query
 
 After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
@@ -36,13 +32,13 @@ There are two buttons:
 - Close: After clicking on it, the modal is closed
 - Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
-4. Export to SQL Manager
+3. Export to SQL Manager
 
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
 ## Columns
 
-The page displays the stores list with the following columns:
+The page displays the carriers list with the following columns:
 
 1. ID
 
@@ -54,15 +50,15 @@ It's possible to sort by name of carriers asc or desc and search by name.
 
 3. Logo
 
-Displays the logo.
+The logo of the carrier is displayed if there is any
 
 4. Delay
 
-Displays the delay of the shipping method.
+The delay of the shipping method is displayed. It's possible to search by delay.
 
 5. Status
 
-Status if the carrier is active or not. If active - green check mark. If inactive - red cross
+The carrier can be enabled or disabled. If it's enabled, a green checkmark is displayed. If it's disabled, a red cross is displayed. It's possible to search by status by clicking on the dropdown and by selecting one of the two options: "yes" or "no". If "yes" is selected, only the carriers enabled are displayed. If "no" is selected, only the disabled carriers are displayed.
 
 6. Free shipping
 
@@ -70,7 +66,8 @@ Status if the carrier provides free shipping. If active - green check mark. If i
 
 7. Position
 
-Position number, that can be dragged within the carriers. It's possible to sort by position asc or desc and search.
+The position of each carrier can be changed by clicking on this column and by moving it up or down.
+After changing the position, the message "Successful update." is displayed. It's possible to sort by position asc or desc and search by position.
 
 8. Actions
 
@@ -81,10 +78,20 @@ Position number, that can be dragged within the carriers. It's possible to sort 
  The action can be canceled by clicking on the cross or on the cancel button.
  After clicking on "Delete" button, the carrier is deleted and a successful message is displayed "Successful deletion."
  
+ ### Search
+ 
+The search button is disabled as long as there are less than 2 carriers in the list. 
+
+A search can be done by ID, name, delay, status (drop-down menu), free shipping (drop-down) and position.
+It's possible to sort the list by carriers or by search in an ascending or descending way.
+After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
+If there is no results for the search done, the following message is displayed: "No records found".
+When clicking on "reset", the search is removed and all the results are displayed.
+ 
  ### Bulk actions
 
 The Bulk actions button is enabled only if at least one row of the list is selected.
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected stores (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected carriers (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Enable/Disable selection: this button will either enable or disable the selected carriers.
@@ -93,3 +100,8 @@ After clicking on "enable"  or "disable", the selected carriers is enabled or di
 When trying to delete the selection without any checkboxes checked, the following message is displayed: "You must select at least one item to perform a bulk action."
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected carrier is deleted, a successful message is displayed "The selection has been successfully deleted."
+
+ ### Multistore
+ 
+ The interface is the same, only the add-edit-carriers changes:
+ 👉  See the [specs of the add/edit carrier]({{<ref "add-edit-carrier.md">}} "Add/edit carrier") 
