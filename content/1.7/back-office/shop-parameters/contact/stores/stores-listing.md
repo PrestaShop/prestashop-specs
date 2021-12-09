@@ -29,7 +29,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new store
 
-👉 See the [specs of the add/edit store](./add-edit-store.md) 
+👉 See the [specs of the add/edit store]({{<ref "add-edit-store.md">}} "Add/edit store")
 
 ## Settings wheel
 
@@ -104,7 +104,7 @@ When a search is performed with "no" selected, only the stores disabled are disp
 11. Actions
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
- 👉 See the [specs of the add/edit store](./add-edit-store.md) 
+👉 See the [specs of the add/edit store]({{<ref "add-edit-store.md">}} "Add/edit store")
 
 - **Delete.** The store can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
  The action can be canceled by clicking on the cross or on the cancel button.
@@ -181,4 +181,4 @@ Input field for the fax.
 
 ## Multistore
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19367) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19319), take a look at the conditions and specs [here](../../../multistoregeneralspecs.md#checkboxes)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19367) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19319), take a look at the conditions and specs [here]({{<ref "../../../multistoregeneralspecs.md#checkboxes">}} "Checkboxes")
