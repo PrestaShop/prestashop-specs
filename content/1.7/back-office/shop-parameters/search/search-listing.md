@@ -13,7 +13,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new alias
 
-👉 See the [specs of the add/edit alias](./add-edit-alias.md) 
+👉 See the [specs of the add/edit alias]({{<ref "add-edit-alias.md">}} "Add/edit alias")
 
 ## Settings wheel
 
@@ -59,7 +59,7 @@ The alias can be enabled or disabled
 4. Actions
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
-👉 See the [specs of the add/edit alias](./add-edit-alias.md) 
+👉 See the [specs of the add/edit alias]({{<ref "add-edit-alias.md">}} "Add/edit alias")
 
 - **Delete.** The alias can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
   The action can be canceled by clicking on the cross or on the cancel button.
@@ -91,7 +91,7 @@ When clicking on "reset", the search is removed and all the results are displaye
 ## Multistore
 
 While creating or editing an alias, it's added or edited for all shops (no matter the context selected). So, the list displays all the aliases, no matter the context selected.
-👉 See [the specs](../../../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block)
+👉 See the [specs]({{<ref "../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block">}})
 
   # Indexing
  
@@ -116,7 +116,7 @@ The following help text is displayed under the toggle: "Enable the automatic ind
 
 ## Multistore
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/multistoregeneralspecs.md#checkboxes)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here]({{<ref "../../multistoregeneralspecs.md#checkboxes">}} "checkboxes") 
 
  # Search
  
@@ -162,7 +162,7 @@ The default value of this field is: "a|about|above|after|again|against|all|am|an
 
 ## Multistore
 
-In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/multistoregeneralspecs.md#checkboxes)
+In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here]({{<ref "../../multistoregeneralspecs.md#checkboxes">}} "checkboxes") 
 
  # Weight
  
@@ -193,5 +193,5 @@ Only numbers can be entered in this field. When entering characters that are not
 
 ## Multistore
  
- In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/multistoregeneralspecs.md#checkboxes)
+ In a multistore context, the options listed above have [checkboxes](https://github.com/PrestaShop/PrestaShop/issues/19369) and [specific settings drop-down](https://github.com/PrestaShop/PrestaShop/issues/19321), take a look at the conditions and specs [here]({{<ref "../../multistoregeneralspecs.md#checkboxes">}} "checkboxes") 
   
