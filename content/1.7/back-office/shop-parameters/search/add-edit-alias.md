@@ -14,7 +14,12 @@ A tooltip for this field is displayed: "Search this word instead."
 
 ## Call to action
 
-- Save:
+- **Save:**
 In the case of adding a new alias, the alias is added and a success message is displayed on the search listing: "Creation successful". In the case of editing an alias, the alias is edited and a success message is displayed on the search listing: "Creation successful".
-- Cancel:
+- **Cancel:**
 The alias is not added/edited and the search listing is displayed.
+
+## Multistore
+
+While creating or editing an alias, it's added or edited for all shops (no matter the context selected). So, the list displays all the aliases, no matter the context selected.
+👉 See the [specs]({{<ref "../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block">}})
