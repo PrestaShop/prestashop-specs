@@ -103,8 +103,6 @@ All fields below have checkboxes allowing to enable and complete the fields (onl
 
 There is a button below the table "Add new range". When the button is pressed, a new row near the "ranges" appear, the table is the same as 6th field, only the "All" row is not duplicated. With the duplicate table a button "Delete" also appears below it.
 
-### Call to action
-
  - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
