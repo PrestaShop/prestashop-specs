@@ -3,9 +3,9 @@ title: Add/edit carrier
 weight: 1
 ---
 
- # General settings
+# General settings (1st step)
 
- ## Call to action
+## Call to action
  
 A call to action button at the top right is displayed:
 
@@ -19,9 +19,10 @@ Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can 
 On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
 
  - 1 General settings
- - 2 Shipping locations and costs
- - 3 Size, weight, and group access
- - 4 Summary
+ - 2 Multistore (If multistore is enabled)
+ - 3 Shipping locations and costs
+ - 4 Size, weight, and group access
+ - 5 Summary
 
 Below there 5 fields:
 
@@ -40,13 +41,13 @@ When an image is uploaded, it will appear in the logo field on the left, as well
  - Tracking URL. Has an explanation below the field: "For example: 'http://example.com/track.php?num=@' with '@' where the tracking number should appear.". 
 A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking number should appear. It will be automatically replaced by the tracking number." The URL should be as displayed in the explanation below, if it's not entered by the explanation, and trying to save will show the message: "The url field is invalid.".
 
- ## Call to action
+## Call to action
  
  - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-# Multistore
+# Multistore (2n step, if multistore is enabled)
 
 This tab is shown when multistore is enabled.
 
@@ -54,12 +55,56 @@ The shop association block is displayed when the multistore is enabled and if se
 
 👉 See the [specs of the shop association block]({{<ref "../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
- ### Call to action
+### Call to action
  
  - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
- # Shipping locations and costs
+# Shipping locations and costs (3rd step)
  
+### Call to action
+
+A call to action button at the top right is displayed:
+
+ - Cancel 
+Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+## Columns
+
+Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
+
+On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
+
+ - 1 General settings
+ - 2 Multistore (If multistore is enabled)
+ - 3 Shipping locations and costs
+ - 4 Size, weight, and group access
+ - 5 Summary
+
+Below there are 6 fields:
+
+ 1. Add handling costs. A toggle switch, can be turned to "yes" or "no". By default is set to "no".
+A tooltip is displayed: "Include the handling costs (as set in Shipping > Preferences) in the final carrier price."
+ 2. Free shipping. A toggle switch, can be turned to "yes" or "no". By default is set to "no". When switched to "yes", automatically switches "Add handling costs" to "no", and disables all the input fields for "ranges".
+ 3. Billing. 2 Checkboxes are present for this section: "According to total price.""and "According to total weight.". 
+ 4. Tax, this is a drop-down menu, shows all the possible tax rates depending on the countries installed on the shop.
+ 5. Out-of-range behavior, this is a drop-down menu with the possible options: "Apply the cost of the highest defined range" and "Disable carrier".
+A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
+
+ 6. Ranges, this is a table with the tables in this section:
+    - "Will be applied when the weight is	>= Kg *by default the input is 0.0000*"
+    - "Will be applied when the weight is	< Kg, *by default the input is empty*"
+    - "All", has a checkbox, and input field for the currency selected by the shop's default currency. The field is disabled if the checkbox is not marked. When the checkbox is marked, all the currency fields below become checkmarked and enabled."
  
+All fields below have checkboxes allowing to enable and complete the fields (only numbers are allowed, inputting any other symbol will result in the field being marked in red). The zones displayed below are the ones that are existing in International > Locations > Zones.
+
+### Call to action 
+
+There is a button below the table "Add new range". When the button is pressed, a new row near the "ranges" appear, the table is the same as 6th field, only the "All" row is not duplicated. With the duplicate table a button "Delete" also appears below it.
+
+### Call to action
+
+ - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
+ - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
+ - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
