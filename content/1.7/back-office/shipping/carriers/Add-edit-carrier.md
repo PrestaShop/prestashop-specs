@@ -1,5 +1,5 @@
 ---
-title: Add/edit carriet
+title: Add/edit carrier
 weight: 1
 ---
 
