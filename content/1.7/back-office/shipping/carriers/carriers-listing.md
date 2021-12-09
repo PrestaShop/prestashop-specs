@@ -5,7 +5,7 @@ weight: 1
 
 # Carriers listing
 
-The "Carriers" page presents a list of all the current carriers. From here it's possible directly change their status, indicate if shipping is free or not, and change their position when presented to the customers.
+The "Carriers" page displays a list of all the current carriers. From here, it's possible to directly change their status, indicate if shipping is free or not, and change their position in the front office.
 
 ## Call to action
 
@@ -13,7 +13,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new carrier
 
-👉 See the [specs of the add/edit carrier](./add-edit-carrier.md) 
+👉  See the [specs of the add/edit carrier]({{<ref "add-edit-carrier.md">}} "Add/edit carrier") 
 
 ## Settings wheel
 
@@ -75,7 +75,7 @@ Position number, that can be dragged within the carriers. It's possible to sort 
 8. Actions
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
- 👉 See the [specs of the add/edit carriers](./add-edit-carriers.md) 
+ 👉  See the [specs of the add/edit carrier]({{<ref "add-edit-carrier.md">}} "Add/edit carrier") 
 
 - **Delete.** The carrier can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
  The action can be canceled by clicking on the cross or on the cancel button.
