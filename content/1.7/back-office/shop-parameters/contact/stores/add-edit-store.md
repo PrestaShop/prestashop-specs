@@ -74,7 +74,7 @@ When trying to upload an incorrect format file, the following error message is d
 
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-:point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
+👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block")
 
 16) Hours
 
@@ -91,7 +91,7 @@ For each day of the week, there is an input field allowing to fill the working h
 
 ## Call to action
 
-- Save:
+- **Save:**
 In the case of adding a new store, the store is added and a success message is displayed on the stores listing: "Successful creation.". In the case of editing a store, the store is edited and a success message is displayed on the stores listing: "Successful update.".
-- Cancel:
+- **Cancel:**
 The store is not added/edited and the stores listing is displayed.
