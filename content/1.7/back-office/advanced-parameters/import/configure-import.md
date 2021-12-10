@@ -115,7 +115,7 @@ Fields listed, that are included into the import execution process.
 - Expiration date (yyyy-mm-dd)
 - Number of days - Number of days this file can be accessed by customers. Set to zero for unlimited access.
 - ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
-- Advanced Stock Management
-- Depends on stock
+- Advanced Stock Management - Enabling Advanced Stock Management on product (0 = No, 1 = Yes).
+- Depends on stock - 0 = Using quantity set in product, 1 = Using quantity from warehouse.
 - Warehouse
 - Accessories (x,y,z...)
