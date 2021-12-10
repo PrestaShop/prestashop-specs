@@ -109,7 +109,7 @@ There is a button below the table "Add new range". When the button is pressed, a
 
 # Size, weight, and group access (4th step)
 
-## Call to action
+### Call to action
  
 A call to action button at the top right is displayed:
 
@@ -136,7 +136,7 @@ A tooltip is displayed: "Mark the groups that are allowed access to this carrier
      - Guest
      - Customer
 
-## Call to action
+### Call to action
 
  - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
