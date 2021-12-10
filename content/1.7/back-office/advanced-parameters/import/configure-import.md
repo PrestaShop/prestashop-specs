@@ -32,4 +32,19 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 
 ## Available fields UI section
 
+Fields listed, that are included into the import execution process.
 
+### Categories
+
+- ID
+- Active (0/1)
+- Name (required field)
+- Parent category
+- Root category (0/1) - A category root is where a category tree can begin. This is used with multistore.
+- Description
+- Meta title
+- Meta keywords
+- Meta description
+- Rewritten URL
+- Image URL
+- ID / Name of shop - Ignore this field if you don't use the Multistore tool. If you leave this field empty, the default shop will be used.
