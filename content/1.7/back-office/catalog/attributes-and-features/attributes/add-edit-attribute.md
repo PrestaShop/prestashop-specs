@@ -4,7 +4,7 @@ weight: 1
 ---
 # Add / edit attribute
 
-![Attribute1](/static/img/attribute1.png)
+![Attribute1](/img/attribute1.png)
 
 
 While adding or editing an attribute, the following fields / toggles / parameters are displayed:
@@ -51,7 +51,7 @@ The following options are displayed in the drop-down:
  
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-:point_right: See the [specs of the shop association block](../../../multistoregeneralspecs.md#shop-association-block)
+👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
  ## Call to action 
  There are 2 buttons at the bottom of this page: 

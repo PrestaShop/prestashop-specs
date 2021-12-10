@@ -12,7 +12,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new value
   
-👉 See the [specs of the add/edit attribute value](./add-edit-attribute-value.md) 
+👉 See the [specs of the add/edit attribute value]({{<ref "add-edit-attribute-value.md">}} "Add/edit attribute value") 
 
 # Settings wheel
 
@@ -64,7 +64,7 @@ After changing the position, the message "Successful update." is displayed.
 
 **Edit.** The user can edit an attribute value as often as necessary. 
 
-👉 See the [specs of the add/edit attribute value](./add-edit-attribute-value.md) 
+👉 See the [specs of the add/edit attribute value]({{<ref "add-edit-attribute-value.md">}} "Add/edit attribute value") 
 
 **Delete.** An attribute value can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the attribute value is deleted, a successful message is displayed "Successful deletion."
 
@@ -79,4 +79,4 @@ When clicking on "reset", the search is removed and all the results are displaye
 
 The "Back to the list" button redirects to the attributes listing.
 
-👉 See the [specs of the attributes listing](./attributes-listing.md)
+👉 See the [specs of the attributes listing]({{<ref "attributes-listing.md">}} "Attributes listing") 

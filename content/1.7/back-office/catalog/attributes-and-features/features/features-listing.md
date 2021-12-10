@@ -11,11 +11,11 @@ Features must first be registered on the shop using this "Features" tab under th
 
 Then, they can be configured on a per-product basis, from the "Product" page under the "Catalog" menu. 
 
-:point_right: see [the specs of the add/edit product page](../../products/add-edit.md).
+👉 See the [specs of the add/edit product page]({{<ref "../../products/add-edit.md">}} "Add/edit product page") 
 
 Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the "Product Details" tab.
 
-![Feature](/static/img/FeaturesFO.png)
+![Feature](/img/FeaturesFO.png)
 
 ## FEATURES
 
@@ -24,11 +24,11 @@ Once configured on a per-product basis, the features and values of the products 
 2 call to actions are displayed in the header of this page:
 1) Add new feature
 
-👉 See the [specs of the add/edit feature](./add-edit-feature.md) 
+👉 See the [specs of the add/edit feature]({{<ref "add-edit-feature.md">}} "Add/edit feature") 
 
 2) Add new feature value
 
-👉 See the [specs of the add/edit feature value](./add-edit-feature-value.md) 
+👉 See the [specs of the add/edit feature value]({{<ref "add-edit-feature-value.md">}} "Add/edit feature value") 
 
 ### Settings wheel
 
@@ -85,11 +85,11 @@ After changing the position, the message "Successful update." is displayed.
 
 **View.** This is the main action and it can be performed by clicking on the line. 
 
-👉 See the [specs of the view feature](./view-feature.md) 
+👉 See the [specs of the view feature]({{<ref "view-feature.md">}} "view feature") 
 
 **Edit.** The user can edit a feature as often as necessary.
 
-👉 See the [specs of the add/edit feature](./add-edit-feature.md) 
+👉 See the [specs of the add/edit feature]({{<ref "add-edit-feature.md">}} "Add/edit feature") 
 
 **Delete.** A feature can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.

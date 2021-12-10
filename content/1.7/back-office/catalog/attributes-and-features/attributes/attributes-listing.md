@@ -6,11 +6,11 @@ weight: 1
 # Attributes listing
 
 
-![Attribute](/static/img/Attribute.png)
+![Attribute](/img/Attribute.png)
 
 ## HOW ATTRIBUTES WORK
 
-Attributes are the basis of product combinations. Combinations can be created through the product page ([Catalog > Product > Add/edit product](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/catalog/products/add-edit.md#combinations-tab-epic)). Attributes are like the properties of a product (color, capacity, size, weight, etc...) that may change between combinations while still keeping the same product name.
+Attributes are the basis of product combinations. Combinations can be created through the product page ([Catalog > Product > Add/edit product]({{<ref "../../products/add-edit.md">}} "Add/edit product page")). Attributes are like the properties of a product (color, capacity, size, weight, etc...) that may change between combinations while still keeping the same product name.
 
 This page presents a list of all the registered attributes. They can be edited or deleted using the actions on the right of the table. Their values can be displayed by clicking on "View".
 
@@ -19,11 +19,11 @@ This page presents a list of all the registered attributes. They can be edited o
 2 call to actions are displayed in the header of this page:
 1) Add new attribute
 
-👉 See the [specs of the add/edit attribute](./add-edit-attribute.md) 
+👉 See the [specs of the add/edit attribute]({{<ref "add-edit-attribute.md">}} "Add/edit attribute") 
 
 2) Add new value
 
-👉 See the [specs of the add/edit attribute value](./add-edit-attribute-value.md) 
+👉 See the [specs of the add/edit attribute value]({{<ref "add-edit-attribute-value.md">}} "Add/edit attribute value") 
 
 ### Settings wheel
 
@@ -83,11 +83,11 @@ After changing the position, the message "Successful update." is displayed.
 
 **View.** This is the main action and it can be performed by clicking on the line. 
 
-👉 See the [specs of the view attribute](./view-attribute.md) 
+👉 See the [specs of the view attribute]({{<ref "view-attribute.md">}} "View attribute") 
 
 **Edit.** The attribute can be edited as often as necessary.
 
-👉 See the [specs of the add/edit attribute](./add-edit-attribute.md) 
+👉 See the [specs of the add/edit attribute]({{<ref "add-edit-attribute.md">}} "Add/edit attribute") 
 
 **Delete.** The attribute can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.

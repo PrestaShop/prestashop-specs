@@ -9,7 +9,8 @@ The tagging feature allows associating products with keywords. Customers can use
 ## Multistore
 
 While creating or editing a tag, it's added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected.
-👉 See [the specs](../../../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block)
+
+👉 See the [specs]({{<ref "../../../../broader-topics/multistorespecialsspecs.md#list-of-pages-for-specific-case-2-add-new-pages-without-shop-association-block">}})
 
 ## Call to action
  
@@ -17,7 +18,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new tag
 
-👉 See the [specs of the add/edit tag](./add-edit-tag.md) 
+👉 See the [specs of the add/edit tag]({{<ref "add-edit-tag.md">}} "Add/edit tag")  
 
 ## Settings wheel
 
@@ -63,7 +64,7 @@ Number of products that can be found with the tag.
 5. Actions
 
 - **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
-👉 See the [specs of the add/edit tag](./add-edit-tag.md) 
+👉 See the [specs of the add/edit tag]({{<ref "add-edit-tag.md">}} "Add/edit tag")
 
 - **Delete.** The tag can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the  action: "Are you sure you want to delete the selected item(s)?"
   The action can be canceled by clicking on the cross or on the cancel button.

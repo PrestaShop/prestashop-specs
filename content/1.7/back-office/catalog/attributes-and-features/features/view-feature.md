@@ -13,7 +13,7 @@ A call to actions is displayed in the header of this page:
  
   - Add new feature value
 
-👉 See the [specs of the add/edit feature value](./add-edit-feature-value.md) 
+👉 See the [specs of the add/edit feature value]({{<ref "add-edit-feature-value.md">}} "Add/edit feature value") 
  
 ## Settings wheel
 
@@ -61,7 +61,7 @@ It's possible to sort by value asc or desc and search by value.
 
 **Edit.** The user can edit a feature value as often as necessary. 
 
-👉 See the [specs of the add/edit feature value](./add-edit-feature-value.md) 
+👉 See the [specs of the add/edit feature value]({{<ref "add-edit-feature-value.md">}} "Add/edit feature value")
 
 **Delete.** A feature value can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" The action can be canceled by clicking on the cross or on the cancel button. After clicking on "Delete" button, the feature value is deleted, a successful message is displayed "Successful deletion."
 
@@ -76,4 +76,4 @@ When clicking on "reset", the search is removed and all the results are displaye
 
 The "Back to the list" button redirects to the features lisitng.
 
-👉 See the [specs of the features listing](./features-listing.md) 
+👉 See the [specs of the features listing]({{<ref "features-listing.md">}} "Feature listing")
