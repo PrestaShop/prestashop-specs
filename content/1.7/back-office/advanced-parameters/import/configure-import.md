@@ -111,10 +111,10 @@ Fields listed, that are included into the import execution process.
 - Action when out of stock
 - Virtual product (0 = No, 1 = Yes)
 - File URL
-- Number of allowed downloads
+- Number of allowed downloads - Number of days this file can be accessed by customers. If setting configured to zero, it will be configured for unlimited access.
 - Expiration date (yyyy-mm-dd)
-- Number of days
-- ID / Name of shop
+- Number of days - Number of days this file can be accessed by customers. Set to zero for unlimited access.
+- ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
 - Advanced Stock Management
 - Depends on stock
 - Warehouse
