@@ -37,10 +37,10 @@ Fields listed, that are included into the import execution process.
 ### Categories
 
 - ID
-- Active (0/1)
+- Active 
 - Name (required field)
 - Parent category
-- Root category (0/1) - A category root is where a category tree can begin. This is used with multistore.
+- Root category - A category root is where a category tree can begin. This is used with multistore.
 - Description
 - Meta title
 - Meta keywords
@@ -48,3 +48,74 @@ Fields listed, that are included into the import execution process.
 - Rewritten URL
 - Image URL
 - ID / Name of shop - Ignore this field if you don't use the Multistore tool. If you leave this field empty, the default shop will be used.
+
+### Products
+
+- ID
+- Active
+- Name*
+- Categories (x,y,z...)
+- Price tax excluded
+- Price tax included
+- Tax rule ID
+- Cost price
+- On sale (0/1)
+- Discount amount
+- Discount percent
+- Discount from (yyyy-mm-dd)
+- Discount to (yyyy-mm-dd)
+- Reference #
+- Supplier reference #
+- Supplier
+- Brand
+- EAN13
+- UPC
+- MPN
+- Ecotax
+- Width
+- Height
+- Depth
+- Weight
+- Delivery time of in-stock products:
+- Delivery time of out-of-stock products with allowed orders:
+- Quantity
+- Minimal quantity
+- Low stock level
+- Send me an email when the quantity is under this level
+- Visibility
+- Additional shipping cost
+- Unit for base price
+- Base price
+- Summary
+- Description
+- Tags (x,y,z...)
+- Meta title
+- Meta keywords
+- Meta description
+- Rewritten URL
+- Label when in stock
+- Label when backorder allowed
+- Available for order (0 = No, 1 = Yes)
+- Product availability date
+- Product creation date
+- Show price (0 = No, 1 = Yes)
+- Image URLs (x,y,z...)
+- Image alt texts (x,y,z...)
+- Delete existing images (0 = No, 1 = Yes)
+- Feature (Name:Value:Position:Customized)
+- Available online only (0 = No, 1 = Yes)
+- Condition
+- Customizable (0 = No, 1 = Yes)
+- Uploadable files (0 = No, 1 = Yes)
+- Text fields (0 = No, 1 = Yes)
+- Action when out of stock
+- Virtual product (0 = No, 1 = Yes)
+- File URL
+- Number of allowed downloads
+- Expiration date (yyyy-mm-dd)
+- Number of days
+- ID / Name of shop
+- Advanced Stock Management
+- Depends on stock
+- Warehouse
+- Accessories (x,y,z...)
