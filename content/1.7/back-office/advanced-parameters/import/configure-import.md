@@ -148,3 +148,20 @@ Fields listed, that are included into the import execution process.
 - Advanced Stock Management - Enabling Advanced Stock Management on product (0 = No, 1 = Yes).
 - Depends on stock - 0 = Using quantity set in product, 1 = Using quantity from warehouse.
 - Warehouse - ID of the warehouse to set as storage.
+
+### Customers
+
+- ID
+- Active (0/1)
+- Titles ID (Mr = 1, Ms = 2, else 0)
+- Email (required)
+- Password (required)
+- Birth date (yyyy-mm-dd)
+- Last name (required)
+- First name (required)
+- Newsletter (0/1)
+- Partner offers (0/1)
+- Registration date (yyyy-mm-dd)
+- Groups (x,y,z...)
+- Default group ID
+- ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
