@@ -24,7 +24,8 @@ Language  This drop-down menu allows selecting the language of the tag and is ma
       
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</guid>
       <description>Tags listing The tagging feature allows associating products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for through the search bar in front office.
-Multistore While creating or editing a tag, it&amp;rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected. 👉 See the specs
+Multistore While creating or editing a tag, it&amp;rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected.
+👉 See the specs
 Call to action A call to actions is displayed in the header of this page:</description>
     </item>
     

@@ -215,16 +215,6 @@ For example, let&amp;rsquo;s say I have the following configuration:
     </item>
     
     <item>
-      <title>Contacts Tab</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</guid>
-      <description>SPECIFICATIONS - SHOP PARAMETERS &amp;gt; CONTACT &amp;gt; CONTACTS TAB Grid ContactGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
-    </item>
-    
-    <item>
       <title>Currencies</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -336,7 +326,7 @@ The module displays a block on category pages with layered navigation filters.</
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</guid>
       <description>Features listing HOW FEATURES WORK Features must first be registered on the shop using this &amp;ldquo;Features&amp;rdquo; tab under the &amp;ldquo;Attributes &amp;amp; Features&amp;rdquo; page from the &amp;ldquo;Catalog&amp;rdquo; menu.
 Then, they can be configured on a per-product basis, from the &amp;ldquo;Product&amp;rdquo; page under the &amp;ldquo;Catalog&amp;rdquo; menu.
-:point_right: see the specs of the add/edit product page.
+👉 See the specs of the add/edit product page
 Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the &amp;ldquo;Product Details&amp;rdquo; tab.</description>
     </item>
     
@@ -779,7 +769,8 @@ Please note that many pages in the BO have very specific behaviour and need thei
       
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</guid>
       <description>Tags listing The tagging feature allows associating products with keywords. Customers can use the keywords to easily and quickly find the products they are looking for through the search bar in front office.
-Multistore While creating or editing a tag, it&amp;rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected. 👉 See the specs
+Multistore While creating or editing a tag, it&amp;rsquo;s added or edited for all shops (no matter the context selected). So, the list displays all the tags, no matter the context selected.
+👉 See the specs
 Call to action A call to actions is displayed in the header of this page:</description>
     </item>
     

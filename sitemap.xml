@@ -6,16 +6,16 @@
     <lastmod>2021-10-20T16:21:52+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html</loc>
-    <lastmod>2021-10-28T09:43:28+03:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html</loc>
-    <lastmod>2021-10-28T14:09:29+03:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/add-edit-contacts.html</loc>
-    <lastmod>2021-11-25T17:45:33+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</loc>
-    <lastmod>2021-10-21T11:16:36+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</loc>
     <lastmod>2021-10-21T11:16:36+02:00</lastmod>
@@ -24,7 +24,7 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</loc>
-    <lastmod>2021-11-23T17:32:39+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -54,7 +54,7 @@
     <lastmod>2021-10-21T11:16:36+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html</loc>
-    <lastmod>2021-10-28T11:23:17+03:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -93,10 +93,7 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/contacts-listing.html</loc>
-    <lastmod>2021-11-25T10:21:51+02:00</lastmod>
-  </url><url>
-    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/tab.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/credit-slips.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -168,7 +165,7 @@
     <lastmod>2021-10-21T11:16:36+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</loc>
-    <lastmod>2021-10-21T11:16:36+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts/cart-rules-free-gift.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -399,7 +396,7 @@
     <lastmod>2021-11-23T14:30:55+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</loc>
-    <lastmod>2021-11-30T09:41:40+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -444,10 +441,10 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html</loc>
-    <lastmod>2021-10-28T09:44:13+03:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</loc>
-    <lastmod>2021-10-21T11:16:36+02:00</lastmod>
+    <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</loc>
     <lastmod>2021-07-12T19:14:40+02:00</lastmod>
