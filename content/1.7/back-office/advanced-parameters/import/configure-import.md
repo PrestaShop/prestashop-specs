@@ -53,7 +53,7 @@ Fields listed, that are included into the import execution process.
 
 - ID
 - Active
-- Name*
+- Name (required)
 - Categories (x,y,z...)
 - Price tax excluded
 - Price tax included
