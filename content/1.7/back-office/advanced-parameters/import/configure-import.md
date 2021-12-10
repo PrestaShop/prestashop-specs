@@ -117,5 +117,5 @@ Fields listed, that are included into the import execution process.
 - ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
 - Advanced Stock Management - Enabling Advanced Stock Management on product (0 = No, 1 = Yes).
 - Depends on stock - 0 = Using quantity set in product, 1 = Using quantity from warehouse.
-- Warehouse
+- Warehouse - ID of the warehouse to set as storage.
 - Accessories (x,y,z...)
