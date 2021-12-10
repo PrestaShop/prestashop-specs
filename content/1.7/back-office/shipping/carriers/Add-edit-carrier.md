@@ -106,3 +106,38 @@ There is a button below the table "Add new range". When the button is pressed, a
  - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+# Size, weight, and group access
+
+## Call to action
+ 
+A call to action button at the top right is displayed:
+
+ - Cancel 
+Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+## Columns
+
+Input fields only accept numbers, when trying to add any other symbols, and trying to proceed to next page, an alert is prompted showing:
+"TECHNICAL ERROR:
+Details:
+Error thrown: [object Object]
+Text status: error"
+And an option to press "Ok".
+
+ - Maximum package width (cm) an input field, has a tooltip: "Mazimum width managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+ - Maximum package height (cm) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+ - Maximum package depth (cm) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+ - Maximum package weight (Kg) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore."
+ - Group access, displays the ID and group name in a table, all of them have a checkmark on the left, by default Vistor, guest and customer has checkmarks checked.
+A tooltip is displayed: "Mark the groups that are allowed access to this carrier."
+     - Group name, if this field id checkmarked, all the fields get checkmarked or checkmark gets removed.
+     - Visitor
+     - Guest
+     - Customer
+
+## Call to action
+
+ - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
+ - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
+ - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
