@@ -25,4 +25,5 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Field separator** - specific alphabetic symbol must be set, in order to separate the CSV data values. This field is displayed as required.
 - **Multiple value separator** - if values are very similar-typed and should be separated, there should be a multiple value separator defined. This field is displayed as required.
 - **Delete all categories before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required.
-- **Skip thumbnails regeneration** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the import.
+- **Skip thumbnails regeneration** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the  product import.
+- **Force all ID numbers** - enable or disable toggle switch button, that configures, if to keep imported items’ ID number as is already, otherwise, PrestaShop will ignore them and create auto-incremented ID numbers during import process.
