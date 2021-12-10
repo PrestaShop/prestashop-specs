@@ -107,7 +107,7 @@ There is a button below the table "Add new range". When the button is pressed, a
  - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-# Size, weight, and group access
+# Size, weight, and group access (4th step)
 
 ## Call to action
  
