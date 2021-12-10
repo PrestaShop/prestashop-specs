@@ -125,26 +125,26 @@ Fields listed, that are included into the import execution process.
 - Product ID
 - Product reference
 - Attribute (Name:Type:Position)(required)
-Value (Value:Position)(required)
-Supplier reference
-Reference
-EAN13
-UPC
-MPN
-Cost price
-Impact on price
-Ecotax
-Quantity
-Minimal quantity
-Low stock level
-Send me an email when the quantity is under this level
-Impact on weight
-Default (0 = No, 1 = Yes)
-Combination availability date
-Choose among product images by position (1,2,3...)
-Image URLs (x,y,z...)
-Image alt texts (x,y,z...)
-ID / Name of shop
-Advanced Stock Management
-Depends on stock
-Warehouse
+- Value (Value:Position)(required)
+- Supplier reference
+- Reference
+- EAN13
+- UPC
+- MPN
+- Cost price
+- Impact on price
+- Ecotax
+- Quantity
+- Minimal quantity
+- Low stock level
+- Send me an email when the quantity is under this level
+- Impact on weight
+- Default (0 = No, 1 = Yes)
+- Combination availability date
+- Choose among product images by position (1,2,3...)
+- Image URLs (x,y,z...)
+- Image alt texts (x,y,z...)
+- ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
+- Advanced Stock Management - Enabling Advanced Stock Management on product (0 = No, 1 = Yes).
+- Depends on stock - 0 = Using quantity set in product, 1 = Using quantity from warehouse.
+- Warehouse - ID of the warehouse to set as storage.
