@@ -24,7 +24,7 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Language of the file** - the language must be set manualy for the products importing. This dropdown input is set to English by default, or in the other case - to the default Prestashops' installation language. The locale must be installed. The field is displayed as required. 
 - **Field separator** - specific alphabetic symbol must be set, in order to separate the CSV data values. This field is displayed as required.
 - **Multiple value separator** - if values are very similar-typed and should be separated, there should be a multiple value separator defined. This field is displayed as required.
-- **Delete all categories before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required.
+- **Delete all Categories/Products/Combinations/Customers/Addresses/Brands/Suppliers/Alias before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required.
 - **Skip thumbnails regeneration** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the  product import. This button setting is displayed as required.
 - **Force all ID numbers** - enable or disable toggle switch button, that configures, if to keep imported items’ ID number as is already, otherwise, PrestaShop will ignore them and create auto-incremented ID numbers during import process. This button setting is displayed as required.
 - **Send notification email** - enable or disable toggle switch button, that configures the email sending, when the import is complete. It can be useful when handling large files, as the import may take some time. This button setting is displayed as required.
@@ -256,3 +256,4 @@ This section helps to orientate, how is the CSV file structure made. Administrat
 - **Sample Suppliers file** - 1.6 KB
 - **Sample Aliases file** - 135 B
 - **Sample Store Contacts file** - 1.3 KB
+
