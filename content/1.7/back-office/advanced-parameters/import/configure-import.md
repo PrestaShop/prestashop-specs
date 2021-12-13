@@ -189,3 +189,16 @@ Fields listed, that are included into the import execution process.
 - Mobile Phone
 - VAT number
 - Identification number
+
+### Brands
+
+- ID
+- Active (0/1)
+- Name (required)
+- Description
+- Short description
+- Meta title
+- Meta keywords
+- Meta description
+- Image URL
+- ID / Name of group shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
