@@ -243,3 +243,7 @@ Fields listed, that are included into the import execution process.
 - Hours (x,y,z...)
 - Image URL
 - ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
+
+## Download sample csv files UI section
+
+This section helps to orientate, how is the CSV file structure made. Administrators can download the file examples, and to test the product import actions and analyse what values and fields are managed by Prestashop.
