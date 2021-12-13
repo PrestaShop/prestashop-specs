@@ -165,3 +165,27 @@ Fields listed, that are included into the import execution process.
 - Groups (x,y,z...)
 - Default group ID
 - ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
+
+### Addresses
+
+- ID
+- Alias (required)
+- Active (0/1)
+- Customer email (required)
+- Customer ID
+- Brand
+- Supplier
+- Company
+- Last name (required)
+- First name (required)
+- Address (required)
+- Address (2)
+- Zip/Postal code (required)
+- City (required)
+- Country (required)
+- State
+- Other
+- Phone
+- Mobile Phone
+- VAT number
+- Identification number
