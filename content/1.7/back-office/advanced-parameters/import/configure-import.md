@@ -215,3 +215,31 @@ Fields listed, that are included into the import execution process.
 - Meta description
 - Image URL
 - ID / Name of group shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
+
+### Alias
+
+- ID
+- Alias (required)
+- Search (required)
+- Active
+
+### Store contacts
+
+- ID
+- Active (0/1)
+- Name
+- Address (required)
+- Address (2)
+- Zip/Postal code
+- State
+- City (required)
+- Country (required)
+- Latitude (required)
+- Longitude (required)
+- Phone
+- Fax
+- Email address
+- Note
+- Hours (x,y,z...)
+- Image URL
+- ID / Name of shop - Field can be ignored if Multishop is used. If this field is left empty, the default shop will be used.
