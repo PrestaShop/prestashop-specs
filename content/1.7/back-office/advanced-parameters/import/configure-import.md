@@ -246,4 +246,13 @@ Fields listed, that are included into the import execution process.
 
 ## Download sample csv files UI section
 
-This section helps to orientate, how is the CSV file structure made. Administrators can download the file examples, and to test the product import actions and analyse what values and fields are managed by Prestashop.
+This section helps to orientate, how is the CSV file structure made. Administrators can download the file examples, and to test the product import actions and analyse what values and fields are managed by Prestashop. Those CSV files contain random dummy values. The following CSV templates names and the file sizes are:<br>
+- Sample Categories file - 969 B
+- Sample Products file - 4.6 KB
+- Sample Combinations file - 
+- Sample Customers file
+- Sample Addresses file
+- Sample Brands file
+- Sample Suppliers file
+- Sample Aliases file
+- Sample Store Contacts file
