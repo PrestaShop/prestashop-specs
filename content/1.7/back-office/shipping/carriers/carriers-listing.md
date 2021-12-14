@@ -62,7 +62,7 @@ The carrier can be enabled or disabled. If it's enabled, a green checkmark is di
 
 6. Free shipping
 
-Status if the carrier provides free shipping. If active - green check mark. If inactive - red cross
+The carrier can be free or not. If it's free, a green checkmark is displayed. If it's not free, a red cross is displayed. It's possible to search by free shipping by clicking on the dropdown and by selecting one of the two options: "yes" or "no". If "yes" is selected, only the free carriers are displayed. If "no" is selected, only paying carriers are displayed.
 
 7. Position
 
@@ -83,7 +83,6 @@ After changing the position, the message "Successful update." is displayed. It's
 The search button is disabled as long as there are less than 2 carriers in the list. 
 
 A search can be done by ID, name, delay, status (drop-down menu), free shipping (drop-down) and position.
-It's possible to sort the list by carriers or by search in an ascending or descending way.
 After clicking on "search", the "search" button is disabled and a "reset" button is displayed.
 If there is no results for the search done, the following message is displayed: "No records found".
 When clicking on "reset", the search is removed and all the results are displayed.
@@ -102,6 +101,15 @@ After clicking on "Delete selected", a modal with the title "Delete selection" i
 After clicking on "Delete" button, the selected carrier is deleted, a successful message is displayed "The selection has been successfully deleted."
 
  ### Multistore
+
  
- The interface is the same, only the add-edit-carriers changes:
- 👉  See the [specs of the add/edit carrier]({{<ref "add-edit-carrier.md">}} "Add/edit carrier") 
+Only the carriers created in the selected store or store group (through the context) are displayed.
+For example, let's say there's the following configuration made:
+- Group 1
+  - Shop A
+  - Shop B
+- Group 2
+  - Shop C
+If the group 1 is selected as context, then the attributes created in Shop A and Shop B will be displayed.
+If the Shop A is selected as context, then the attributes created in Shop A will be displayed.
+If "all shops" is selected as context, then the attributes created in Shop A, Shop B, and Shop C will be displayed.
