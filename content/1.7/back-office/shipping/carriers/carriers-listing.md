@@ -101,7 +101,6 @@ After clicking on "Delete selected", a modal with the title "Delete selection" i
 After clicking on "Delete" button, the selected carrier is deleted, a successful message is displayed "The selection has been successfully deleted."
 
  ### Multistore
-
  
 Only the carriers created in the selected store or store group (through the context) are displayed.
 For example, let's say there's the following configuration made:
