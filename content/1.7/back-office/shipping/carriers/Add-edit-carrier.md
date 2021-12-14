@@ -157,11 +157,11 @@ Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can 
 
 On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
 
- - 1 General settings
- - 2 Multistore (If multistore is enabled)
- - 3 Shipping locations and costs
- - 4 Size, weight, and group access
- - 5 Summary
+ - **1 General settings**
+ - **2 Multistore (If multistore is enabled)**
+ - **3 Shipping locations and costs**
+ - **4 Size, weight, and group access**
+ - **5 Summary**
 
 ### Carrier summary
 
