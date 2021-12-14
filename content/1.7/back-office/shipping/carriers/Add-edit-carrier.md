@@ -12,8 +12,6 @@ A call to action button at the top right is displayed:
  - Cancel :
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-## Logo
-
 ## Steps
 
 Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
