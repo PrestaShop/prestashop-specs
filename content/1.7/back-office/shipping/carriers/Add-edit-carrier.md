@@ -37,17 +37,17 @@ The different steps are displayed:
  - **Logo.** A field for uploading the logo. To upload a logo, there is a button on the right of the field named ""Choose a file". Has an explanation below the field: "Format: JPG, GIF, PNG. Filesize: 8.00 MB max. Current size: undefined.". When trying to upload a wrong format, a message will appear: "*Your shop name* says Cannot upload file".
 
  - **Tracking URL.** Has an explanation below the field: "For example: 'http://example.com/track.php?num=@' with '@' where the tracking number should appear.". 
-A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking number should appear. It will be automatically replaced by the tracking number." The URL should be as displayed in the explanation below, if it's not entered by the explanation, and trying to save will show the message: "The url field is invalid.".
+A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking number should appear. It will be automatically replaced by the tracking number." The URL should be written as displayed in the tooltip, otherwise, the following error message is displayed: "The url field is invalid.".
 
 ## Call to action
  
- - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+ - **Previous.** In the first step, this button is disabled.
+ - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+ - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
 
-# Multistore (2nd step, if multistore is enabled)
+# Multistore (2nd step)
 
-This tab is shown when multistore is enabled.
+**This step is displayed only when the multistore is enabled and if there are several shops.**
 
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
@@ -55,9 +55,9 @@ The shop association block is displayed when the multistore is enabled and if se
 
 ### Call to action
  
- - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+ - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
+ - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+- **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
 
 # Shipping locations and costs (3rd step)
  
@@ -65,14 +65,16 @@ The shop association block is displayed when the multistore is enabled and if se
 
 A call to action button at the top right is displayed:
 
- - Cancel :
+ - Cancel:
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-## Columns
+## Logo
 
-Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
+Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
-On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
+## Steps
+
+The different steps are displayed:  
 
  - 1 General settings
  - 2 Multistore (If multistore is enabled)
@@ -80,14 +82,14 @@ On the right side, from left to the right, the steps of adding/editing a carrier
  - 4 Size, weight, and group access
  - 5 Summary
 
-Below there are 6 fields:
+## Fields
 
- 1. Add handling costs. A toggle switch, can be turned to "yes" or "no". By default is set to "no".
+- *Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
 A tooltip is displayed: "Include the handling costs (as set in Shipping > Preferences) in the final carrier price."
- 2. Free shipping. A toggle switch, can be turned to "yes" or "no". By default is set to "no". When switched to "yes", automatically switches "Add handling costs" to "no", and disables all the input fields for "ranges".
- 3. Billing. 2 Checkboxes are present for this section: "According to total price.""and "According to total weight.". 
- 4. Tax, this is a drop-down menu, shows all the possible tax rates depending on the countries installed on the shop.
- 5. Out-of-range behavior, this is a drop-down menu with the possible options: "Apply the cost of the highest defined range" and "Disable carrier".
+- **Free shipping.** This toggle allows choosing if the carrier is free or not. By default, this toggle is disabled. When this toggle is enabled, the toggle "Add handling costs" automatically switched to "no" and becomes disabled as all the input fields for "ranges".
+- **Billing.** 2 Checkboxes are present for this section: "According to total price.""and "According to total weight.". 
+- **Tax.** this is a drop-down menu, shows all the possible tax rates depending on the countries installed on the shop.
+- **Out-of-range behavior** this is a drop-down menu with the possible options: "Apply the cost of the highest defined range" and "Disable carrier".
 A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
 
  6. Ranges, this is a table with the tables in this section:
@@ -111,7 +113,7 @@ There is a button below the table "Add new range". When the button is pressed, a
  
 A call to action button at the top right is displayed:
 
- - Cancel :
+ - Cancel:
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 ## Columns
@@ -136,9 +138,9 @@ A tooltip is displayed: "Mark the groups that are allowed access to this carrier
 
 ### Call to action
 
- - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+ - **Previous.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
+ - **Next.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
+ - **Finish.** Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 # Summary (5th step)
 
@@ -146,7 +148,7 @@ A tooltip is displayed: "Mark the groups that are allowed access to this carrier
  
 A call to action button at the top right is displayed:
 
- - Cancel :
+ - Cancel:
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 ## Columns
@@ -173,6 +175,6 @@ Below there is a toggle switch "Enabled". It can be selected as "yes" or "no". H
 
 ### Call to action
 
- - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+ - **Previous.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
+ - **Next.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
+ - **Finish.** Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
