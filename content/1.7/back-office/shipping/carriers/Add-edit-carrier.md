@@ -12,11 +12,11 @@ A call to action button at the top right is displayed:
  - Cancel :
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-## Steps
+## Logo
 
 Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
-The different steps are displayed:  
+## Steps 
 
  - 1 General settings
  - 2 Multistore (If multistore is enabled)
@@ -82,18 +82,21 @@ The different steps are displayed:
 
 ## Fields
 
-- *Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
+- **Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
 A tooltip is displayed: "Include the handling costs (as set in Shipping > Preferences) in the final carrier price."
 - **Free shipping.** This toggle allows choosing if the carrier is free or not. By default, this toggle is disabled. When this toggle is enabled, the toggle "Add handling costs" automatically switched to "no" and becomes disabled as all the input fields for "ranges".
 - **Billing.** 2 Checkboxes are present for this section: "According to total price.""and "According to total weight.". 
-- **Tax.** this is a drop-down menu, shows all the possible tax rates depending on the countries installed on the shop.
-- **Out-of-range behavior** this is a drop-down menu with the possible options: "Apply the cost of the highest defined range" and "Disable carrier".
+- **Tax.** The drop-down menu displays all the enabled tax rules existing in International > Taxes > Taxes rules.
+- **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier".
 A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
 
  6. Ranges, this is a table with the tables in this section:
     - "Will be applied when the weight is	>= Kg *by default the input is 0.0000*"
-    - "Will be applied when the weight is	< Kg, *by default the input is empty*"
-    - "All", has a checkbox, and input field for the currency selected by the shop's default currency. The field is disabled if the checkbox is not marked. When the checkbox is marked, all the currency fields below become checkmarked and enabled."
+    - "Will be applied when the _weight_ or _price_ is < _weight_ or _price_ 
+    The weight or the currency is displayed depending on the option chosen above for the billing. By default, this field is empty
+Only numbers can be entered in the 2 ranges fields above. If one of the fields contains something other than a number the following error message is displayed: "This range is not valid" and the fields for all zones are disabled.
+If one of the ranges overlaps another, the following error message is displayed: "Ranges are overlapping" and the fields for all zones are disabled.
+    - **All** This field is disabled if the checkbox isn't checked. When the checkbox is checked, the field is enabled and all the zones below become checked"
  
 All fields below have checkboxes allowing to enable and complete the fields (only numbers are allowed, inputting any other symbol will result in the field being marked in red). The zones displayed below are the ones that are existing in International > Locations > Zones.
 
