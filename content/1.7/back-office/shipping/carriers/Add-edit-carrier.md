@@ -18,11 +18,11 @@ Firstly on the left, the logo is displayed as soon as it's uploaded. Once the lo
 
 ## Steps 
 
- - 1 General settings
- - 2 Multistore (If multistore is enabled)
- - 3 Shipping locations and costs
- - 4 Size, weight, and group access
- - 5 Summary
+ - **1 General settings**
+ - **2 Multistore (If multistore is enabled)**
+ - **3 Shipping locations and costs**
+ - **4 Size, weight, and group access**
+ - **5 Summary**
 
 ## Fields
 
@@ -58,11 +58,11 @@ Firstly on the left, the logo is displayed as soon as it's uploaded. Once the lo
 
 ## Steps 
 
- - 1 General settings
- - 2 Multistore (If multistore is enabled)
- - 3 Shipping locations and costs
- - 4 Size, weight, and group access
- - 5 Summary
+ - **1 General settings**
+ - **2 Multistore (If multistore is enabled)**
+ - **3 Shipping locations and costs**
+ - **4 Size, weight, and group access**
+ - **5 Summary**
 
 **This step is displayed only when the multistore is enabled and if there are several shops.**
 
