@@ -22,12 +22,14 @@ This input field allows to fill the second address line of the store. This field
 
 4) Zip/Postal code
 
-This input field allows to fill the zip/postal code of the store. The field is not marked as mandatory, but if the field is empty when trying to save, the following error message is displayed: "A Zip/Postal code is required.". If the postal code exceeds 12 characters when trying to save, the following error message is displayed: "The postcode field is too long (12 chars max).". If the format isn't correct when saving, the following error message is displayed: "The Zip/Postal code is invalid. It must be entered as follows: 00000". The format of the postal code is defined for each country in International > Locations > Countries > Add/edit country.
+This input field allows to fill the zip/postal code of the store. The field is mandatory, if the field is empty when trying to save, the following error message is displayed: "A Zip/Postal code is required.". If the postal code exceeds 12 characters when trying to save, the following error message is displayed: "The postcode field is too long (12 chars max).". If the format isn't correct when saving, the following error message is displayed: "The Zip/Postal code is invalid. It must be entered as follows: 00000". The format of the postal code is defined for each country in International > Locations > Countries > Add/edit country.
 
 5) City
 
 This input field allows to fill the city of the store and is mandatory.
-If the save button is pressed and if this field is empty, the following error message is displayed: "The city field is required."
+If more than 64 chars are filled the following message is dislayed: "The city field is too long (64 chars max)." 
+If invalid chars are filled the following message is displayed: "The city field is invalid."
+If the save button is pressed and if this field is empty, the following error message is displayed "The city field is required."
 
 6) Country
 
@@ -46,10 +48,14 @@ When the label is hovered, a tooltip is displayed: "Store coordinates (e.g. 45.2
 9) Phone
 
 This input field allows to fill the phone number of the store.
+If more than 64 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The phone field is invalid."
 
 10) Fax
 
 This input field allows to fill the fax number of the store.
+If more than 64 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The phone field is invalid."
 
 11) Email address
 
@@ -68,7 +74,7 @@ When the label is hovered, a tooltip is displayed: "Whether or not to display th
 
 This field allows to upload a picture for the store.
 While editing a store with an existing picture, the size of the picture is displayed under the field. When the label is hovered, a tooltip is displayed: "Storefront picture."
-When trying to upload an incorrect format file, the following error message is displayed: "Image format not recognized, allowed formats are: .gif, .jpg, .png"
+When trying to upload an incorrect format file, the following error message is displayed: "Image format not recognized, allowed formats are: gif, jpg, jpeg, jpe, png, webp"
 
 15) Shop association
 
