@@ -65,7 +65,7 @@ The shop association block is displayed when the multistore is enabled and if se
 
 A call to action button at the top right is displayed:
 
- - Cancel 
+ - Cancel :
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 ## Columns
@@ -111,7 +111,7 @@ There is a button below the table "Add new range". When the button is pressed, a
  
 A call to action button at the top right is displayed:
 
- - Cancel 
+ - Cancel :
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 ## Columns
@@ -133,6 +133,43 @@ A tooltip is displayed: "Mark the groups that are allowed access to this carrier
      - Visitor
      - Guest
      - Customer
+
+### Call to action
+
+ - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
+ - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
+ - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+# Summary (5th step)
+
+### Call to action
+ 
+A call to action button at the top right is displayed:
+
+ - Cancel :
+Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+## Columns
+
+Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
+
+On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
+
+ - 1 General settings
+ - 2 Multistore (If multistore is enabled)
+ - 3 Shipping locations and costs
+ - 4 Size, weight, and group access
+ - 5 Summary
+
+### Carrier summary
+
+Information about the carrier being created is displayed:
+
+![CarrierSummary](/img/CarrierSummary.png)
+
+The carrier's price, and transit time, how the shipping costs are handled, what is the weight range of the delivery that the carrier can make, how the carrier reacts if the weight is higher, what are the delivery zones, and for which customers the carrier is displayed.
+
+Below there is a toggle switch "Enabled". It can be selected as "yes" or "no". Has a tooltip: "Enable the carrier in the front office."
 
 ### Call to action
 
