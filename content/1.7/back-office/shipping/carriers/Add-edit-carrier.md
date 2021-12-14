@@ -109,23 +109,25 @@ A tooltip is displayed: "Include the handling costs (as set in Shipping > Prefer
 - **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier".
 A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
 
- 6. Ranges, this is a table with the tables in this section:
-    - "Will be applied when the weight is	>= Kg *by default the input is 0.0000*"
+ - **Ranges** this is a table with the tables in this section:
+    - Will be applied when the _weight_ or _price_ is >= _weight_ or _currency_
     - "Will be applied when the _weight_ or _price_ is < _weight_ or _price_ 
     The weight or the currency is displayed depending on the option chosen above for the billing. By default, this field is empty
 Only numbers can be entered in the 2 ranges fields above. If one of the fields contains something other than a number the following error message is displayed: "This range is not valid" and the fields for all zones are disabled.
 If one of the ranges overlaps another, the following error message is displayed: "Ranges are overlapping" and the fields for all zones are disabled.
     - **All** This field is disabled if the checkbox isn't checked. When the checkbox is checked, the field is enabled and all the zones below become checked"
  
-All fields below have checkboxes allowing to enable and complete the fields (only numbers are allowed, inputting any other symbol will result in the field being marked in red). The zones displayed below are the ones that are existing in International > Locations > Zones.
+All the zones existing in International > Locations > Zones are displayed below. The disabled zones are marked as inactive. 
+Each zone has a checkbox allowing to enable its field.
+Only numbers are allowed in zones fields, inputting any other symbol will result in the field being marked in red. 
 
 ### Call to action 
 
 There is a button below the table "Add new range". When the button is pressed, a new row near the "ranges" appear, the table is the same as 6th field, only the "All" row is not duplicated. With the duplicate table a button "Delete" also appears below it.
 
- - Previous. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - Next. If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+  - **Previous.** In the first step, this button is disabled. After clicking on it, the previous step is displayed.
+  - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
 # Size, weight, and group access (4th step)
 
@@ -158,9 +160,9 @@ A tooltip is displayed: "Mark the groups that are allowed access to this carrier
 
 ### Call to action
 
- - **Previous.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - **Next.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - **Finish.** Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
+ - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+ - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
 
 # Summary (5th step)
 
@@ -195,6 +197,6 @@ Below there is a toggle switch "Enabled". It can be selected as "yes" or "no". H
 
 ### Call to action
 
- - **Previous.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to the previous page. When in general settings, the button does not take anywhere.
- - **Next.** If any mandatory field was failed to enter, the button becomes non-pressable. If mandatory fields are correct, takes to he next page.
- - **Finish.** Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
+  - **Next.** In the last step, this button is disabled.
+  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
