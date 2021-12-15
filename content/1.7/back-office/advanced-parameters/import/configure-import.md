@@ -277,3 +277,9 @@ This redirected interface contains the imported data matching table.
 
 There is a brief table listed, in order to do a final check of the importing elements. Each table column header has a dropdown, with the values of the import type. The purpose of this dropdown is to match the targeted values with the values that were stored in the importing CSV file. Note, that there is a value _Ignore this column_, which prevents the import process of the specific column values from the CSV file. 
 
+## Notifications and messages after the import submission
+
+[Notification pop-up](static/img/advanced-parameters-import-success-popup.png)
+
+After the successful importing action, the interface prompts the pop-up element, where there is a success message _Data imported
+Look at your listings to make sure it's all there as you wished._, progress bars with the procentage and numeric values of the processes - Validated and Imported - and the CTA button to perform Closing the pop-up action. 
