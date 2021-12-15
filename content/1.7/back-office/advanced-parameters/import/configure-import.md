@@ -31,6 +31,10 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Send notification email** - enable or disable toggle switch button, that configures the email sending, when the import is complete. It can be useful when handling large files, as the import may take some time. This button setting is displayed as required.
 - **Next Step CTA** - clicking the CTA button, executes the redirection to the second UI of the import process. The second part process UI is described in the following topic ["Second part of Import process - Match your data UI specification"](#second-part-of-import-process---match-your-data-ui-specification).
 
+## History of uploaded files UI
+
+There is a history list to use already uploaded files. This widget is displayed once the _Choose from history / FT_ button is clicked. The list contains the actual file name with the file extension name, dropdown UI with the properties - use, download or delete the file.
+
 ## Available fields UI section
 
 Fields listed, that are included into the import execution process.
@@ -263,3 +267,5 @@ This section helps to orientate, how is the CSV file structure made. Administrat
 [Match your data](static/img/product-import-match-your-data.png)
 
 This redirected interface contains the imported data matching table.
+
+
