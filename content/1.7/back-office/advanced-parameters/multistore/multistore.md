@@ -44,9 +44,11 @@ This option can't be disabled once customers are registered.
 This option allows to share available quantities between shops of this group. <br/>
 When changing this option, all available products quantities will be reset to 0.
 - Share orders: Yes / No <br/>
-Once this option is enabled (which is only possible if customers and available quantities are shared among shops), the customer's cart will be shared by all shops in this group.<br/> 
+Once this option is enabled (which is only possible if customers and available quantities are shared among shops), the customer's cart and orders will be shared by all shops in this group.<br/> 
 This way, any purchase started in one shop will be able to be completed in another shop from the same group. <br/>
+Once logged in, the customer will be able to see his orders in another shop from the same group. <br/>
 This option can't be disabled once orders are made.
+If this option is disabled, the customer will not be able to see the carts and the orders created in a shop from another shop.
 - Status: Yes / No <br/>
 To enable or disable the shop group.
 
