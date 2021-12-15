@@ -29,7 +29,7 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Skip thumbnails regeneration (for Categories, Products, Brands, Suppliers and Store contacts only)** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the  product import. This button setting is displayed as required.
 - **Force all ID numbers** - enable or disable toggle switch button, that configures, if to keep imported items’ ID number as is already, otherwise, PrestaShop will ignore them and create auto-incremented ID numbers during import process. This button setting is displayed as required.
 - **Send notification email** - enable or disable toggle switch button, that configures the email sending, when the import is complete. It can be useful when handling large files, as the import may take some time. This button setting is displayed as required.
-- **Next Step CTA** - clicking the CTA button, executes the redirection to the second UI of the import process. The second part process UI is described in the following topic "Second part of Import process - UI specification".
+- **Next Step CTA** - clicking the CTA button, executes the redirection to the second UI of the import process. The second part process UI is described in the following topic ["Second part of Import process - UI specification"](#second-part-of-import-process---ui-specification).
 
 ## Available fields UI section
 
