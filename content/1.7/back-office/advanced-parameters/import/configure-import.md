@@ -5,9 +5,9 @@ weight: 1
 
 # CONFIGURE > Advanced Parameters > Import
 
-[Product Import](static/img/advanced-parameters-import.png)
+[Import](static/img/advanced-parameters-import.png)
 
-This UI page and functionality is based on the product import actions of the Prestashop application. The listing is specified of all the visible sections in page.
+This UI page and functionality is based on the import actions of the Prestashop application. The listing is specified of all the visible sections in page.
 
 ## Top UI section
 
@@ -26,7 +26,7 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Multiple value separator** - if values are very similar-typed and should be separated, there should be a multiple value separator defined. This field is displayed as required.
 - **Delete all Categories (also available for Products, Combinations, Customers, Addresses, Brands, Suppliers, Alias) before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required. Note, that if this setting is enabled, there will be a pop-up notification from browser, with the confirmation of the product deletion.
 - **Use product reference as key (for Products and Combinations only)** - this option can be enabled, if there are possible Product ID duplications between the existing and the importing products. Prestashop sets the reference instead of Product ID to the product.
-- **Skip thumbnails regeneration (for Categories, Products, Brands, Suppliers and Store contacts only)** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the  product import. This button setting is displayed as required.
+- **Skip thumbnails regeneration (for Categories, Products, Brands, Suppliers and Store contacts only)** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the import. This button setting is displayed as required.
 - **Force all ID numbers** - enable or disable toggle switch button, that configures, if to keep imported items’ ID number as is already, otherwise, PrestaShop will ignore them and create auto-incremented ID numbers during import process. This button setting is displayed as required.
 - **Send notification email** - enable or disable toggle switch button, that configures the email sending, when the import is complete. It can be useful when handling large files, as the import may take some time. This button setting is displayed as required.
 - **Next Step CTA** - clicking the CTA button, executes the redirection to the second UI of the import process. The second part process UI is described in the following topic ["Second part of Import process - Match your data UI specification"](#second-part-of-import-process---match-your-data-ui-specification).
@@ -251,7 +251,7 @@ Fields listed, that are included into the import execution process.
 
 ## Download sample csv files UI section
 
-This section helps to orientate, how is the CSV file structure made. Administrators can download the file examples, and to test the product import actions and analyse what values and fields are managed by Prestashop. Those CSV files contain random dummy values. The following CSV templates names and the file sizes are:<br>
+This section helps to orientate, how is the CSV file structure made. Administrators can download the file examples, and to test the import actions and analyse what values and fields are managed by Prestashop. Those CSV files contain random dummy values. The following CSV templates names and the file sizes are:<br>
 - **Sample Categories file** - 969 B
 - **Sample Products file** - 4.6 KB
 - **Sample Combinations file** - 5.8 KB
@@ -268,4 +268,5 @@ This section helps to orientate, how is the CSV file structure made. Administrat
 
 This redirected interface contains the imported data matching table.
 
-
+- **Please match each column of your source file to one of the destination columns.** - information message for the matching columns of the import process.
+- **Load a data matching configuration** - if there is any data match configuration file saved, it will be displayed in the dropdown list. After choosing the configuration file, it can be Loaded, in order to load the configurational data, or Deleted - removing the configurational data from the saved list.
