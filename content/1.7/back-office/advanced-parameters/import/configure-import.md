@@ -24,7 +24,7 @@ _You can read information on import at: https://doc.prestashop.com/display/PS17/
 - **Language of the file** - the language must be set manualy for the products importing. This dropdown input is set to English by default, or in the other case - to the default Prestashops' installation language. The locale must be installed. The field is displayed as required. 
 - **Field separator** - specific alphabetic symbol must be set, in order to separate the CSV data values. This field is displayed as required.
 - **Multiple value separator** - if values are very similar-typed and should be separated, there should be a multiple value separator defined. This field is displayed as required.
-- **Delete all Categories (also available for Products, Combinations, Customers, Addresses, Brands, Suppliers, Alias) before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required.
+- **Delete all Categories (also available for Products, Combinations, Customers, Addresses, Brands, Suppliers, Alias) before import** - enable or disable toggle switch button, that configures, if the old import entries will be erased before the new import execution. This button setting is displayed as required. Note, that if this setting is enabled, there will be a pop-up notification from browser, with the confirmation of the product deletion.
 - **Use product reference as key (for Products and Combinations only)** - this option can be enabled, if there are possible Product ID duplications between the existing and the importing products. Prestashop sets the reference instead of Product ID to the product.
 - **Skip thumbnails regeneration (for Categories, Products, Brands, Suppliers and Store contacts only)** - enable or disable toggle switch button, that configures, if the thumbnails regeneration should be executed aligned with the  product import. This button setting is displayed as required.
 - **Force all ID numbers** - enable or disable toggle switch button, that configures, if to keep imported items’ ID number as is already, otherwise, PrestaShop will ignore them and create auto-incremented ID numbers during import process. This button setting is displayed as required.
@@ -259,3 +259,4 @@ This section helps to orientate, how is the CSV file structure made. Administrat
 - **Sample Store Contacts file** - 1.3 KB
 
 ## Second part of Import process - UI specification
+
