@@ -261,3 +261,5 @@ This section helps to orientate, how is the CSV file structure made. Administrat
 ## Second part of Import process - Match your data UI specification
 
 [Match your data](static/img/product-import-match-your-data.png)
+
+This redirected interface contains the imported data matching table.
