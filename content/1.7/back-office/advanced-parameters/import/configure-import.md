@@ -275,4 +275,5 @@ This redirected interface contains the imported data matching table.
 
 ## Matching table UI specification
 
-There is a brief table listed, in order to do a final check of the importing elements. Each table column header has a dropdown, with the values of the import type. the purpose of this dropdown is to match the targeted values with the values that were stored in the importing CSV file.
+There is a brief table listed, in order to do a final check of the importing elements. Each table column header has a dropdown, with the values of the import type. The purpose of this dropdown is to match the targeted values with the values that were stored in the importing CSV file. Note, that there is a value _Ignore this column_, which prevents the import process of the specific column values from the CSV file. 
+
