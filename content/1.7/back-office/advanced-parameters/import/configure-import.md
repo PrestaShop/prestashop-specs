@@ -271,4 +271,8 @@ This redirected interface contains the imported data matching table.
 - **Please match each column of your source file to one of the destination columns.** - information message for the matching columns of the import process.
 - **Load a data matching configuration** - if there is any data match configuration file saved, it will be displayed in the dropdown list. After choosing the configuration file, it can be Loaded, in order to load the configurational data, or Deleted - removing the configurational data from the saved list.
 - **Save your data matching configuration** - alphabetic field where special data matching configuration can be saved for future import processes. By default, the field is empty. It can be saved by clicking CTA Save, after giving a name for the configuration.
-- 
+- **Rows to skip** - numeric input field, that indicades how many of the first rows of the importing file should be skipped when importing the data. By default the field is set to 1.
+
+## Matching table UI specification
+
+There is a brief table listed, in order to do a final check of the importing elements. Each table column header has a dropdown, with the values of the import type. the purpose of this dropdown is to match the targeted values with the values that were stored in the importing CSV file.
