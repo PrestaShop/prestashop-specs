@@ -48,14 +48,14 @@ When the label is hovered, a tooltip is displayed: "Store coordinates (e.g. 45.2
 9) Phone
 
 This input field allows to fill the phone number of the store.
-If more than 64 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
+If more than 16 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
 Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The phone field is invalid."
 
 10) Fax
 
 This input field allows to fill the fax number of the store.
-If more than 64 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
-Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The phone field is invalid."
+If more than 16 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The fax field is invalid."
 
 11) Email address
 
