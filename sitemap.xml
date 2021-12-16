@@ -23,6 +23,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html</loc>
+    <lastmod>2021-12-16T13:23:51+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
@@ -385,6 +388,12 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores.html</loc>
+    <lastmod>2021-11-11T13:42:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/stores-listing.html</loc>
+    <lastmod>2021-12-16T13:32:17+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>

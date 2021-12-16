@@ -80,6 +80,16 @@ Value  This field is mandatory and can be translated: When several languages are
     </item>
     
     <item>
+      <title>Add / Edit Store</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html</guid>
+      <description>Add / Edit Store While adding or editing a store, the following fields/toggles/drop downs/parameters are displayed:
+ Name  This input field allows to fill the name of the store. It can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.</description>
+    </item>
+    
+    <item>
       <title>Add / Edit tag</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -739,6 +749,18 @@ In the meantime, some technical and functional choices can have a huge impact (p
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</guid>
       <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; DATABASE &amp;gt; SQL MANAGER The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.
 1.7.8.x version The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.</description>
+    </item>
+    
+    <item>
+      <title>Stores listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/stores-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/stores-listing.html</guid>
+      <description>Stores listing This page lists all the stores. The stores enabled are displayed in the corresponding &amp;ldquo;stores&amp;rdquo; page of the front office.
+Multistore Only the stores created in the selected store or store group (through the context) are displayed.
+For example, let&amp;rsquo;s say I have the following configuration:
+ Group 1  Shop A Shop B   Group 2  Shop C    If I select group 1 as context, then the stores created in Shop A and Shop B will be displayed.</description>
     </item>
     
     <item>
