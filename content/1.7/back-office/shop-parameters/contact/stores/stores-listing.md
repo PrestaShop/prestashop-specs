@@ -159,6 +159,8 @@ Input field for the second address line of the store.
 
 Input field for the zip code.
 
+This input field allows to fill the zip/postal code of the store. The field is mandatory, if the field is empty when trying to save, the following error message is displayed: "A Zip/Postal code is required.". If the postal code exceeds 12 characters when trying to save, the following error message is displayed: "The postcode field is too long (12 chars max).". If the format isn't correct when saving, the following error message is displayed: "The Zip/Postal code is invalid. It must be entered as follows: 00000". The format of the postal code is defined for each country in International > Locations > Countries > Add/edit country.
+
 - City
 
 Input field for the city.
@@ -175,9 +177,15 @@ This is a drop-down with all the states associated with the country selected abo
 
 Input field for the phone.
 
+If more than 16 chars are filled the following message is dislayed: "The phone field is too long (16 chars max)."
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The phone field is invalid."
+
 - Fax
 
 Input field for the fax.
+
+If more than 16 chars are filled the following message is dislayed: "The fax field is too long (16 chars max)."
+Only numbers are allowed for these fields. When trying to input a character that is not a number, an error message is displayed: "The fax field is invalid."
 
 ## Multistore
 
