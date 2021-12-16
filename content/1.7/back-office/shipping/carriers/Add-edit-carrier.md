@@ -78,7 +78,7 @@ The shop association block is displayed when the multistore is enabled and if se
 
 # Shipping locations and costs (3rd step)
  
-### Call to action
+## Call to action
 
 A call to action button at the top right is displayed:
 
@@ -101,17 +101,19 @@ The different steps are displayed:
 
 ## Fields
 
-- **Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
-A tooltip is displayed: "Include the handling costs (as set in Shipping > Preferences) in the final carrier price."
-- **Free shipping.** This toggle allows choosing if the carrier is free or not. By default, this toggle is disabled. When this toggle is enabled, the toggle "Add handling costs" automatically switched to "no" and becomes disabled as all the input fields for "ranges".
-- **Billing.** 2 Checkboxes are present for this section: "According to total price.""and "According to total weight.". 
-- **Tax.** The drop-down menu displays all the enabled tax rules existing in International > Taxes > Taxes rules.
-- **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier".
+ - **Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
+A tooltip is displayed: "Include the handling costs (as set
+in Shipping > Preferences) in the final carrier price."
+ - **Free shipping.** This toggle allows choosing if the carrier is free or not. By default, this toggle is disabled. When this toggle is enabled, the toggle "Add handling costs" automatically switched to "no" and becomes disabled as all the input fields for "ranges".
+ - **Billing.** 2 radio buttons are displayed: "According to total price." and "According to total weight.". 
+When "According to total price." is selected, the ranges first 2 fields will be measured by currency, the currency displayed is the default one configured in International > Localization, when "According to total weight." is selected, the 2 fields will be measured by the according weight, it depends on the weight unit defined in International > Localization.
+ - **Tax.** The drop-down menu displays all the enabled tax rules existing in International > Taxes > Taxes rules.
+ - **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier".
 A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
 
  - **Ranges** this is a table with the tables in this section:
     - Will be applied when the _weight_ or _price_ is >= _weight_ or _currency_
-    - "Will be applied when the _weight_ or _price_ is < _weight_ or _price_ 
+    - Will be applied when the _weight_ or _price_ is < _weight_ or _price_ 
     The weight or the currency is displayed depending on the option chosen above for the billing. By default, this field is empty
 Only numbers can be entered in the 2 ranges fields above. If one of the fields contains something other than a number the following error message is displayed: "This range is not valid" and the fields for all zones are disabled.
 If one of the ranges overlaps another, the following error message is displayed: "Ranges are overlapping" and the fields for all zones are disabled.
@@ -121,63 +123,30 @@ All the zones existing in International > Locations > Zones are displayed below.
 Each zone has a checkbox allowing to enable its field.
 Only numbers are allowed in zones fields, inputting any other symbol will result in the field being marked in red. 
 
+![Ranges](/img/Ranges.png)
+
 ### Call to action 
 
 There is a button below the table "Add new range". When the button is pressed, a new row near the "ranges" appear, the table is the same as 6th field, only the "All" row is not duplicated. With the duplicate table a button "Delete" also appears below it.
 
   - **Previous.** In the first step, this button is disabled. After clicking on it, the previous step is displayed.
   - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
-  - Finish. Non pressable until all the pages mandatory fields are input correctly. When all mandatory fields are input correctly, takes to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
 
 # Size, weight, and group access (4th step)
 
-### Call to action
+## Call to action
  
 A call to action button at the top right is displayed:
 
  - Cancel:
 Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
 
-## Columns
+## Logo
 
-Input fields only accept numbers, when trying to add any other symbols, and trying to proceed to next page, an alert is prompted showing:
-"TECHNICAL ERROR:
-Details:
-Error thrown: [object Object]
-Text status: error"
-And an option to press "Ok".
+Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
- - Maximum package width (cm) an input field, has a tooltip: "Mazimum width managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
- - Maximum package height (cm) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
- - Maximum package depth (cm) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
- - Maximum package weight (Kg) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore."
- - Group access, displays the ID and group name in a table, all of them have a checkmark on the left, by default Vistor, guest and customer has checkmarks checked.
-A tooltip is displayed: "Mark the groups that are allowed access to this carrier."
-     - Group name, if this field id checkmarked, all the fields get checkmarked or checkmark gets removed.
-     - Visitor
-     - Guest
-     - Customer
-
-### Call to action
-
-  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
- - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
- - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
-
-# Summary (5th step)
-
-### Call to action
- 
-A call to action button at the top right is displayed:
-
- - Cancel:
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
-
-## Columns
-
-Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
-
-On the right side, from left to the right, the steps of adding/editing a carrier are displayed: 
+## Steps 
 
  - **1 General settings**
  - **2 Multistore (If multistore is enabled)**
@@ -185,18 +154,56 @@ On the right side, from left to the right, the steps of adding/editing a carrier
  - **4 Size, weight, and group access**
  - **5 Summary**
 
-### Carrier summary
+## Fields
 
-Information about the carrier being created is displayed:
+ - Maximum package width (cm) an input field, has a tooltip: "Mazimum width managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+If the integer is incorrect, an error message will be shown: "The max_width field is invalid."
+ - **Maximum package height (cm)** This is a field. The following tooltip is displayed: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+If the integer is incorrect, an error message will be shown: "The max_height field is invalid."
+ - **Maximum package depth (cm)** This is a field. The following tooltip is displayed: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore. The value must be an integer."
+If the integer is incorrect, an error message will be shown: "The max_depth field is invalid."
+ - Maximum package weight (Kg) an input field, has a tooltip: "Maximum height managed by this carrier. Set the value to "0", or leave this field blank to ignore."
+If the integer is incorrect, an error message will be shown: "The max_weight field is invalid."
+ - **Group access** The ID and the name of all existing customers' groups are displayed. A checkbox is displayed before each group to select or unselect them. A global checkbox allows selecting/unselecting all customers' groups in one click. By default, all the customers' groups are checked.
+The following tooltip is displayed: "Mark the groups that are allowed access to this carrier."
 
-![CarrierSummary](/img/CarrierSummary.png)
+## Call to action
 
-The carrier's price, and transit time, how the shipping costs are handled, what is the weight range of the delivery that the carrier can make, how the carrier reacts if the weight is higher, what are the delivery zones, and for which customers the carrier is displayed.
+  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
+ - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+ - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
 
-Below there is a toggle switch "Enabled". It can be selected as "yes" or "no". Has a tooltip: "Enable the carrier in the front office."
+# Summary (5th step)
 
-### Call to action
+## Call to action
+ 
+A call to action button at the top right is displayed:
+
+ - Cancel:
+Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
+## Logo
+
+Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
+
+## Steps
+
+ - **1 General settings**
+ - **2 Multistore (If multistore is enabled)**
+ - **3 Shipping locations and costs**
+ - **4 Size, weight, and group access**
+ - **5 Summary**
+
+## Carrier summary
+
+The informations about the carrier being created are displayed:
+
+The carrier's price, the transit time, if the shipping costs are calculated according to the price or to the weight, the tax rule, the different ranges, the behavior if the weight or the price is higher than the defined ranges, the delivery zones, the customers' groups, and the shops are displayed.
+
+Below, a toggle "Enabled" is displayed. It can be enabled or disabled. By default, it's enabled. The following tooltip is displayed: "Enable the carrier in the front office."
+
+## Call to action
 
   - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
   - **Next.** In the last step, this button is disabled.
-  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
+  - **Finish.** After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
