@@ -25,7 +25,7 @@ The following elements of this page are:
 - **Dragging dots indicator** - becomes available, once the mouse cursor is hovering the module listing item. The purpose of this element, is to make the module list draggable, and to manage the arrangement of the listings. While clicked and holded on the list, the element can be dragged to the other arranged position in the list.
 - **Icon of the module** - specific icon of the module, helps visualy find the module in the hook.
 - **Name of the module** - specific name of the module, helps visualy find the module in the hook.
-- **Version of the module** - specific version of the module indicated.
+- **Version of the module** - The version of the module indicated.
 - **Description of the module** - specific paragraph of the module, helps visualy find the module in the hook.
 - **Arrangement numeric value** - specific numeric value of the module arrangement, helps visualy find the module in the hook.
 - **Editing icon** - proceeds the editing of the module hooks.
