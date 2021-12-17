@@ -288,6 +288,8 @@ Look at your listings to make sure it's all there as you wished._, progress bars
 
 If there is no CSV file attached to the Import submission form, the outcoming message will be prompted _Please upload a file in order to continue._
 
+If the file is too large, the UI will be prompted with the error notification _File is too large_.
+
 ## Multistore functionality
 
 Prestashop multistores maintaining the same configuration in the import page, for all the multistores and shop groups, as administrator switches them. All the data values from the import process in CSV will be directly transferred to the selected multistore independently. 
