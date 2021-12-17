@@ -5,7 +5,7 @@ weight: 1
 
 # ORDERS > SHOPPING CARTS
 
-[Shopping Carts UI](static/img/orders-shopping-cart.png)
+![Shopping Carts UI](static/img/orders-shopping-cart.png)
 
 This specific page is for storing and editing all the Prestashop shopping carts, that were generated during the checkout process. All the listed UI elements are the following below.
 
