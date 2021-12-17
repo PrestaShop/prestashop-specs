@@ -283,3 +283,5 @@ There is a brief table listed, in order to do a final check of the importing ele
 
 After the successful importing action, the interface prompts the pop-up element, where there is a success message _Data imported
 Look at your listings to make sure it's all there as you wished._, progress bars with the procentage and numeric values of the processes - Validated and Imported - and the CTA button to perform Closing the pop-up action. 
+
+If there is no CSV file attached to the Import submission form, the outcomming message will be prompted _Please upload a file in order to continue._
