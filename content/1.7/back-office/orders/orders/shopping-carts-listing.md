@@ -11,7 +11,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 
 ## Top of the table UI
 
-- **Shopping Carts** - the unique ID name identifier.
+- **Shopping Carts** 
 - **Numeric value** - total sum of shopping carts identified.
 - **Export icon** - once clicked, a file is generated with the all the shopping carts data in a CSV format.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
