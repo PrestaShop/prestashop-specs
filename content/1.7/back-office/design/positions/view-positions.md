@@ -28,7 +28,7 @@ The following elements of this page are:
 - **Version of the module** - The version of the module indicated.
 - **Description of the module** - specific paragraph of the module, helps visualy find the module in the hook.
 - **Arrangement numeric value** - specific numeric value of the module arrangement, helps visualy find the module in the hook.
-- **Editing icon** - proceeds the editing of the module hooks.
+- **Editing icon** - Opens the transplant a module page with the module preselected. 
 - **Three-dot menu** - executes the dropdown element, where the unhooking action can be executed after the clicking on link _Unhook_.
 
 ## UI Notifications after submissions
