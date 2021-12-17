@@ -290,6 +290,8 @@ If there is no CSV file attached to the Import submission form, the outcoming me
 
 If the file is too large, the UI will be prompted with the error notification _File is too large_.
 
+If the file is with the incorrect extension, the UI will be prompted with the error notification _The extension of your file should be .csv._
+
 ## Multistore functionality
 
 Prestashop multistores maintaining the same configuration in the import page, for all the multistores and shop groups, as administrator switches them. All the data values from the import process in CSV will be directly transferred to the selected multistore independently. 
