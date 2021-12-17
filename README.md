@@ -109,6 +109,29 @@ Note that [`img`](https://github.com/PrestaShop/prestashop-specs/tree/master/img
 Contributions are welcome!
 To learn more, please have a look at the [CONTRIBUTING.md](/CONTRIBUTING.md) page.
 
+### Running the application locally
+
+First download a binary of Hugo from [hugo GitHub releases](https://github.com/gohugoio/hugo/releases) page. You need to select the binary that suits your environment.
+
+Then clone the project
+```
+git clone https://github.com/PrestaShop/prestashop-specs.git
+```
+
+This application uses the [ps-docs-theme](https://github.com/prestashop/ps-docs-theme) Hugo theme. It is embedded as a git submodule, so you need to check it out too:
+```
+git pull --recurse-submodules
+git submodule update --init --recursive
+```
+
+Now you use hugo built-in server:
+```
+hugo server
+```
+
+It will prompt an URL you can browse to see the application.
+
+
 ## Learn more about PrestaShop
 
 You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](https://doc.prestashop.com/).
