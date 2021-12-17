@@ -284,6 +284,11 @@ After the table matching corrections, there are 2 CTA buttons to proceed further
 [Notification pop-up](static/img/advanced-parameters-import-success-popup.png)
 
 After the successful importing action, the interface prompts the pop-up element, where there is a success message _Data imported
-Look at your listings to make sure it's all there as you wished._, progress bars with the procentage and numeric values of the processes - Validated and Imported - and the CTA button to perform Closing the pop-up action. 
+Look at your listings to make sure it's all there as you wished._, progress bars with the percentage and numeric values of the processes - Validated and Imported - and the CTA button to perform Closing the pop-up action. 
 
-If there is no CSV file attached to the Import submission form, the outcomming message will be prompted _Please upload a file in order to continue._
+If there is no CSV file attached to the Import submission form, the outcoming message will be prompted _Please upload a file in order to continue._
+
+## Multistore functionality
+
+Prestashop multistores maintaining the same configuration in the import page, for all the multistores and shop groups, as administrator switches them. All the data values from the import process in CSV will be directly transferred to the selected multistore independently. 
+
