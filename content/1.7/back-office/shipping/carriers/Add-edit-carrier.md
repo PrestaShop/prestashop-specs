@@ -35,7 +35,7 @@ The following tooltip is displayed: "The delivery time will be displayed during 
  - **Speed grade.** Only one number from 0 to 9 is allowed in this field. If an incorrect character is filled, the following error message is displayed: "The grade field is invalid.". If more than 1 number is filled, the following error message is displayed: "The grade field is too long (1 chars max).".
 The following tooltip is displayed: "Ented a "0" for a longest shipping delay, or "9" for the shortest shipping delay.".
 
- - **Logo.** This field allows uploading a logo. To upload a logo, there is a button on the right of the field named "Choose a file". A help text is displayed under the field: "Format: JPG, GIF, PNG. Filesize: 8.00 MB max. Current size: undefined.". “When trying to upload an image with a wrong format or > 8MB, the following error message is displayed: “Cannot upload file”".
+ - **Logo.** This field allows uploading a logo. To upload a logo, there is a button on the right of the field named "Choose a file". A help text is displayed under the field: "Format: JPG, GIF, PNG. Filesize: 8.00 MB max. Current size: undefined.". When trying to upload an image with a wrong format or > 8MB, the following error message is displayed: "Cannot upload file".
 
  - **Tracking URL.** A help text is displayed under the field: "For example: 'http://example.com/track.php?num=@' with '@' where the tracking number should appear.". 
 A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking number should appear. It will be automatically replaced by the tracking number." The URL should be written as displayed in the tooltip, otherwise, the following error message is displayed: "The url field is invalid.".
@@ -94,13 +94,11 @@ Firstly on the left, the logo is displayed as soon as it's uploaded. Once the lo
 
 ## Steps
 
-The different steps are displayed:  
-
- - 1 General settings
- - 2 Multistore (If multistore is enabled)
- - 3 Shipping locations and costs
- - 4 Size, weight, and group access
- - 5 Summary
+ - **1 General settings**
+ - **2 Multistore (If multistore is enabled)**
+ - **3 Shipping locations and costs**
+ - **4 Size, weight, and group access**
+ - **5 Summary**
 
 ## Fields
 
