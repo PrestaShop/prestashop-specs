@@ -156,7 +156,7 @@ Only numbers can be entered in this field. When trying to input characters that 
 Also, a tooltip is displayed: "Only words this size or larger will be indexed."
 
  - **Blacklisted words**: It allows choosing the terms that must not be found by the shop visitors. 
-A tooltip is displayed: "Please enter the index words separated by a".
+A tooltip is displayed: "Please enter the index words separated by a | ".
 This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. There is no drop-down button when only one language is defined.
 The default value of this field is: "a|about|above|after|again|against|all|am|an|and|any|are|aren|as|at|be|because|been|before|being|below|between|both|but|by|can|cannot|could|couldn|did|didn|do|does|doesn|doing|don|down|during|each|few|for|from|further|had|hadn|has|hasn|have|haven|having|he|ll|her|here|hers|herself|him|himself|his|how|ve|if|in|into|is|isn|it|its|itself|let|me|more|most|mustn|my|myself|no|nor|not|of|off|on|once|only|or|other|ought|our|ours|ourselves|out|over|own|same|shan|she|should|shouldn|so|some|such|than|that|the|their|theirs|them|themselves|then|there|these|they|re|this|those|through|to|too|under|until|up|very|was|wasn|we|were|weren|what|when|where|which|while|who|whom|why|with|won|would|wouldn|you|your|yours|yourself|yourselves"
 
