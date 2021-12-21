@@ -112,6 +112,16 @@ As a merchant, I want to be able to manually add an order to my back-office. Cre
     </item>
     
     <item>
+      <title>Add/edit alias</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/add-edit-alias.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/add-edit-alias.html</guid>
+      <description>Add / Edit alias In this page, there are 2 fields displayed:
+ Alias: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.&amp;rdquo; A tooltip for this field is displayed: &amp;ldquo;Enter each alias separated by a comma (e.g. &amp;lsquo;prestshop,preztashop,prestasohp&amp;rsquo;). Forbidden characters: &amp;lt;&amp;gt;;=#{}&amp;rdquo; Result: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.</description>
+    </item>
+    
+    <item>
       <title>Add/Edit Catalog Price Rules.md</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -704,6 +714,20 @@ Empty search results If the visitor&amp;rsquo;s search is unsuccessful, the page
 No matches were found for your search in Shop.Theme.Catalog Please try other keywords to describe what you are looking for. in Shop.Theme.Catalog
 A search bar is available right below to allow visitors to try another query: Search our catalog in Shop.Theme.Global.
 Empty catalog pages If the visitor reaches a page that contains no product, the page should display the following message:</description>
+    </item>
+    
+    <item>
+      <title>Search listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search-listing.html</guid>
+      <description>Search listing The &amp;ldquo;Search&amp;rdquo; page allows configuring the shop&amp;rsquo;s search features.
+Call to action A call to actions is displayed in the header of this page:
+ Add new alias  👉 See the specs of the add/edit alias
+Settings wheel When clicking on the settings wheel, the following options are displayed:
+ Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.
+Import  After clicking on it, the Advanced parameters &amp;gt; Import page is opened.</description>
     </item>
     
     <item>
