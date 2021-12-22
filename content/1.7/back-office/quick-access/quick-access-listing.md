@@ -36,7 +36,7 @@ There are two buttons:
 
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
-### Bulk actions
+## Bulk actions
 
 Clicking on the _Bulk actions_ button allows performing bulk actions for the selected quick accesses (using the checkboxes). A user can:
 
@@ -81,5 +81,5 @@ After clicking on "Delete" button, the quick access is deleted and a successful 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected quick access will be removed, and a successful message is displayed "The selection has been successfully deleted."
 
-#### Search
+### Search
 The search button is disabled as long as no search field has been filled. After clicking on "search", the "search" button is disabled and a "reset" button is displayed. If there is no results for the search done, the following message is displayed: "No records found". When clicking on "reset", the search is removed and all the results are displayed.
