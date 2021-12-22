@@ -5,7 +5,8 @@ weight: 1
 
 # Quick access listing
 
-Shortcuts of the most important pages can be accessed through the "Quick Access" menu, at the top left of every page of the PrestaShop back office.
+The quick access drop-down, displayed at the top left of every page of the PrestaShop back office lists all the pages added as quick access. 
+It's possible to add the current back office page to the quick access by clicking on "Add current page to QuickAccess". It's also possible to see the list of all the quick access by clicking on "Manage quick accesses".
 
 ## Call to action
 
