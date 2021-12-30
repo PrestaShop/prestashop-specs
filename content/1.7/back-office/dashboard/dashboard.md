@@ -101,19 +101,69 @@ Below the following metrics are displayed:
  - **Online visitors**
  - **Active shopping carts**
  - **Currently Pending**
-    - **Orders**
-    - **Return/Exchanges**
-    - **Abandoned Carts**
-    - **Out of stock products**
+    - **Orders** - when pressed reditrects to the Orders page.
+    - **Return/Exchanges** - when pressed, redirects to the Merchandise Returns page.
+    - **Abandoned Carts** - when pressed, redirects to the Shopping Carts page.
+    - **Out of stock products** - when pressed, redirects to the Monitoring page.
  - **Notifications**
-    - **New Messages**
-    - **Product Reviews**
+    - **New Messages** - when pressed, redirects to the Customer Service page.
+    - **Product Reviews** - when pressed, redirects to the Configure page.
  - **Customers & Newsletters (Displays the time frame which is enabled)**
-    - **New customers**
-    - **New subscriptions**
-    - **Total subscribers**
+    - **New customers** - when pressed, redirects to the Manage your Customers page.
+    - **New subscriptions** - when pressed, redirects to the Stats page.
+    - **Total subscribers** - when pressed, redirects to the Configure page.
  - **Traffic (Displays the time frame which is enabled)**
-    - **Link to your Google Analytics account**
-    - **Visits**
-    - **Unique visitors**
-    - **Traffic Sources**
+    - **Link to your Google Analytics account** - when pressed, redirects to the Module manager page.
+    - **Visits** - when pressed, redirects to the Stats page.
+    - **Unique visitors** - when pressed, redirects to the Stats page.
+    - **Traffic Sources** - below shows the sources by which the shop is reached, a circle graph below visualizes the statistics.
+
+## Lower central column 
+
+### Forecast
+
+Displays the year that the forecast is showing.
+
+#### Call to action
+
+Firstly 2 buttons are displayed:
+     
+ - **Arrow to the left** - when pressed, displays the forecast one year back.
+ - **Arrow to the right** - when pressed, displays the forecast one year up front.
+
+On the right of the block there are 2 buttons: 
+
+ - **Configure** - when pressed, the forecast graph turns to exact numbers of: year, traffic, conversion rate, average cart value, sales.
+ - **Refresh** - refreshes the stats of the Forecast.
+
+Below there are 4 different colors metric buttons that can be pressed to display the wanted graph accordingly below:
+
+ - **Traffic**
+ - **Convesrion**
+ - **Average Cart Value**
+ - **Sales**
+
+Below the graph shows graph of data by month and numbers.
+
+## Central column below 
+
+### Products and Sales
+
+#### Call to action
+
+ - **Configure** - when pressed the tab changes to a configuration where it's possible to edit the view of the products and sales
+ - **Refresh** - refreshes the stats of the Products and Sales.
+
+Below there are 4 buttons that can be chosen:
+
+ - **Recent orders** - when this option is selected, below the last 10 orders are displayed. Options displayed with this selection. Also every order has a search button at the right side of every field, when pressed redirects to the order.
+    - **Customer name** - when pressed on a customers name, will redirect to the page - Manage your Customers.
+    - **Products** 
+    - **Total Tax excl.**
+    - **Date**
+    - **Status**
+ - **Best sellers**
+ - **Most viewed** - when this option is selected, by default it will show a message: "You must enable the "Save global page views" option from the "Data mining for statistics" module in order to display the most viewed products, or use the Google Analytics module."
+ - **Top searches**
+
+Below there is a button: "Add more dashboard modules", when pressed, redirects to a new page, the marketplace for modules.
