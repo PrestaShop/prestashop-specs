@@ -68,7 +68,7 @@ There are 2 columns in the dashboard:
 
 On the top right of this field there are 2 buttons:
 
- - **Configure** - redirects to the "Average bank fees per payment method" page.
+ - **Configure** - opens a new page where various expenses of the store can be configured, in order to better indicate the trends. [dashboard-configure]({{<ref "dashboard-configure.md">}} "dashboard configure")
  - **Refresh** - refreshes the stats of the shop.
 
 #### Tabs
