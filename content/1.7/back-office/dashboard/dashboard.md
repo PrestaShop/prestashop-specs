@@ -138,7 +138,7 @@ Firstly 2 buttons are displayed:
 
 On the right of the block there are 2 buttons: 
 
- - **Configure** - when pressed, the forecast graph turns to exact numbers of: year, traffic, conversion rate, average cart value, sales.
+ - **Configure** - when pressed, the forecast graph turns to exact numbers of: year, traffic, conversion rate, average cart value, sales. Has all the months of the year listed, every month has input field for traffic, conversion rate (measured in percentages), average cart value (measured in default shop currency. And a "Save" button, which when pressed, reverts to the previous dashboard.
  - **Refresh** - refreshes the stats of the Forecast.
 
 Below there are 4 different colors metric buttons that can be pressed to display the wanted graph accordingly below:
