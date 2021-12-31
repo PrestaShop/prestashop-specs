@@ -93,7 +93,12 @@ Additionally, when comparing two time periods, it displays the evolution of each
 
 On the top right of this block there are 2 buttons:
 
- - **Configure** - redirects to the "Average bank fees per payment method" page.
+ - **Configure** - when pressed, changes the activity overview to a configuration block with the following field:
+    - **Active cart** - drop down field with options: 15, 30, 45, 60, 90, 120.
+    - **Online visitors** - drop down field with options: 15, 30, 45, 60, 90, 120.
+    - **Abandoned cart (min)** - input field measured by "d".
+    - **Abandoned cart (max)** - input field measured by "d".
+    - "Save" button, when pressed - reverts back to the dashboard activity block.
  - **Refresh** - refreshes the stats of the Activity Overview block.
 
 Below the following metrics are displayed:
@@ -151,7 +156,12 @@ Below the graph shows graph of data by month and numbers.
 
 #### Call to action
 
- - **Configure** - when pressed the tab changes to a configuration where it's possible to edit the view of the products and sales
+ - **Configure** - when pressed the tab changes to a configuration where it's possible to edit the view of the products and sales, 4 fields are displayed:
+   - **Number of "Recent Orders" to display** - drop down field with the options: 5, 10, 20, 50.
+   - **Number of "Best Sellers" to display** - drop down field with the options: 5, 10, 20, 50.
+   - **Number of "Most Viewed" to display** - drop down field with the options: 5, 10, 20, 50.
+   - **Number of "Top Searches" to display** - drop down field with the options: 5, 10, 20, 50.
+   - "Save", when pressed, reverts to the previous product and sales dashboard.
  - **Refresh** - refreshes the stats of the Products and Sales.
 
 Below there are 4 buttons that can be chosen:
