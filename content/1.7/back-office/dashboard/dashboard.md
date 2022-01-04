@@ -124,10 +124,10 @@ This block presents a table of the latest orders and a ranking of the products: 
 
    - **Configure** - The user can set the number of items to display in each by clicking on this button.
 When pressed, the stats disappear, and 4 dropdowns are displayed:
-   - **Number of "Recent Orders" to display** - drop down field with the options: 5, 10, 20, 50.
-   - **Number of "Best Sellers" to display** - drop down field with the options: 5, 10, 20, 50.
-   - **Number of "Most Viewed" to display** - drop down field with the options: 5, 10, 20, 50.
-   - **Number of "Top Searches" to display** - drop down field with the options: 5, 10, 20, 50.
+   - **Number of "Recent Orders" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
+   - **Number of "Best Sellers" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
+   - **Number of "Most Viewed" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
+   - **Number of "Top Searches" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
    - "Save" -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.
    - **Refresh** - refreshes the stats of the Products and Sales block.
 
@@ -145,7 +145,7 @@ In this table, the following columns are displayed:
     - **Status**
     - A search button at the right of every line is displayed. When pressed, the order detail page of this order is displayed.
  - **Best sellers**
- - **Most viewed** - when this option is selected, by default it will show a message: "You must enable the "Save global page views" option from the "Data mining for statistics" module in order to display the most viewed products, or use the Google Analytics module."
+ - **Most viewed** - when this tab is selected and if the "Save global page views" option from the "Data mining for statistics" module is disabled, the following message is displayed: "You must enable the "Save global page views" option from the "Data mining for statistics" module in order to display the most viewed products, or use the Google Analytics module."
  - **Top searches**
 
 ## Left column
@@ -157,10 +157,10 @@ In this table, the following columns are displayed:
 On the top right of this block there are 2 buttons:
 
  - **Configure** - when pressed, changes the activity overview to a configuration block with the following fields:
-    - **Active cart** - drop down field with options: 15, 30, 45, 60, 90, 120.
-    - **Online visitors** - drop down field with options: 15, 30, 45, 60, 90, 120.
-    - **Abandoned cart (min)** - input field measured by "d".
-    - **Abandoned cart (max)** - input field measured by "d".
+    - **Active cart** - drop down with the following options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: "How long (in minutes) a cart is to be considered as active after the last recorded change (default: 30 min)."
+    - **Online visitors** - drop down field with options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: "How long (in minutes) a visitor is to be considered as online after their last action (default: 30min)."
+    - **Abandoned cart (min)** - input field measured by "hrs". By default it is set to 24 mins. The tooltip displays: "How long (in hours) after the last action a cart is to be considered as abandoned (default: 24 hrs)."
+    - **Abandoned cart (max)** - input field measured by "hrs". By default it is set to 48 hours. The tooltip displays: "How long (in hours) after the last action a cart is no longer to be considered as abandoned (default: 24 hrs)."
     - "Save" - When this button is pressed, the configuration is saved and the Dashboard Activity is displayed.
  - **Refresh** - refreshes the stats of the Activity Overview block.
 
@@ -169,19 +169,19 @@ Below the following metrics are displayed:
  - **Online visitors**
  - **Active shopping carts**
  - **Currently Pending**
-    - **Orders** - when pressed reditrects to the Orders page.
+    - **Orders** - when pressed, redirects to the Orders list page.
     - **Return/Exchanges** - when pressed, redirects to the Merchandise Returns page.
-    - **Abandoned Carts** - when pressed, redirects to the Shopping Carts page.
+    - **Abandoned Carts** - when pressed, redirects to the Shopping Carts list page.
     - **Out of stock products** - when pressed, redirects to the Monitoring page.
  - **Notifications**
     - **New Messages** - when pressed, redirects to the Customer Service page.
     - **Product Reviews** - when pressed, redirects to the Configure page.
  - **Customers & Newsletters (Displays the time frame which is enabled)**
-    - **New customers** - when pressed, redirects to the Manage your Customers page.
-    - **New subscriptions** - when pressed, redirects to the Stats page.
-    - **Total subscribers** - when pressed, redirects to the Configure page.
+    - **New customers** - when pressed, redirects to the Customers list page.
+    - **New subscriptions** - when pressed, redirects to the Stats > Newsletter page.
+    - **Total subscribers** - when pressed, redirects to the configuration's page of the ps_emailsubscription module
  - **Traffic (Displays the time frame which is enabled)**
     - **Link to your Google Analytics account** - when pressed, redirects to the Module manager page.
-    - **Visits** - when pressed, redirects to the Stats page.
-    - **Unique visitors** - when pressed, redirects to the Stats page.
-    - **Traffic Sources** - below shows the sources by which the shop is reached, a circle graph below visualizes the statistics.
+    - **Visits** - when pressed, redirects to the Stats > Stats dashboard page.
+    - **Unique visitors** - when pressed, redirects to the Stats > Visits and visitors page.
+    - **Traffic Sources** - the sources from which the shop is reached are displayed in a circle graph below the statistics.
