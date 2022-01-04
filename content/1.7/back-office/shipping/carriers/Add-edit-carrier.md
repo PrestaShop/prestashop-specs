@@ -3,33 +3,37 @@ title: Add/edit carrier
 weight: 1
 ---
 
-# General settings (1st step)
+### Call to action
 
-## Call to action
- 
 A call to action button at the top right is displayed:
 
- - Cancel :
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+ - **Cancel** : Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+A call to action button at the bottom right is displayed:
 
-## Logo
-
+ - **Previous:** In the first step, this button is disabled.
+ - **Next:** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
+ - **Finish:** This button is enabled only if the settings reach the step "Summary" without errors. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
+ 
+#### Logo
+ 
 Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
-## Steps 
+#### Steps
 
- - **1 General settings**
- - **2 Multistore (If multistore is enabled)**
- - **3 Shipping locations and costs**
- - **4 Size, weight, and group access**
- - **5 Summary**
+ - 1 General settings
+ - 2 Multistore (If multistore is enabled)
+ - 3 Shipping locations and costs
+ - 4 Size, weight, and group access
+ - 5 Summary
+
+# General settings (1st step)
 
 ## Fields
 
  - **Carrier name.** This is a mandatory field, when trying to proceed to the next step without inputting this field, the following error message is displayed: "The name field is required." When trying to enter invalid characters to this field, and trying to proceed to the next step, the following error message is displayed: "The name field is invalid".
 The following tooltip is displayed: "Allowed characters: letters, spaces and "().-". The carrier's name will be displayed during checkout. For in-store pickup, enter 0 to replace the carrier name with your shop name.".
 
- - **Transit time.** This field is mandatory, when trying to proceed to the next step without inputting this field, the following error message is displayed: "The field delay is required at least in _default language_". This field can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+ - **Transit time.** This field is mandatory, when trying to proceed to the next step without inputting this field, the following error message is displayed: "The field delay is required at least in _default language_". When trying to enter invalid characters to this field, and trying to proceed to the next step, the following error message is displayed: "The delay field is invalid.". This field can be translated: When several languages are installed, a drop-down next to the field is displayed with default language selected. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 The following tooltip is displayed: "The delivery time will be displayed during checkout.".
 
  - **Speed grade.** Only one number from 0 to 9 is allowed in this field. If an incorrect character is filled, the following error message is displayed: "The grade field is invalid.". If more than 1 number is filled, the following error message is displayed: "The grade field is too long (1 chars max).".
@@ -47,17 +51,6 @@ A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking numb
  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
 
 # Multistore (2nd step)
-
-## Call to action
-
-A call to action button at the top right is displayed:
-
- - Cancel:
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
-
-## Logo
-
-Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
 ## Steps 
 
@@ -81,17 +74,6 @@ The shop association block is displayed when the multistore is enabled and if se
 
 # Shipping locations and costs (3rd step)
  
-## Call to action
-
-A call to action button at the top right is displayed:
-
- - Cancel:
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
-
-## Logo
-
-Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
-
 ## Steps
 
  - **1 General settings**
@@ -141,17 +123,6 @@ Under each range added, a "Delete" button is displayed. When clicking on it, a m
 
 # Size, weight, and group access (4th step)
 
-## Call to action
- 
-A call to action button at the top right is displayed:
-
- - Cancel:
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
-
-## Logo
-
-Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
-
 ## Steps 
 
  - **1 General settings**
@@ -179,17 +150,6 @@ The following tooltip is displayed: "Mark the groups that are allowed access to 
  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
 
 # Summary (5th step)
-
-## Call to action
- 
-A call to action button at the top right is displayed:
-
- - Cancel:
-Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
-
-## Logo
-
-Firstly on the left the logo is displayed. Whena  logo is uploaded, a trash can icon appears on the right of the logo. When trying to delete the logo, message appears: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default van logo will re-appear in the same place.
 
 ## Steps
 
