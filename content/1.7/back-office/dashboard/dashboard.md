@@ -144,9 +144,29 @@ In this table, the following columns are displayed:
     - **Date**
     - **Status**
     - A search button at the right of every line is displayed. When pressed, the order detail page of this order is displayed.
- - **Best sellers**
+   
+ - **Best sellers** - following tables are below:
+    - **Image**
+    - **Product** 
+    - **Category** 
+    - **Total sold**
+    - **Sales**
+    - **Net profit**
+ 
  - **Most viewed** - when this tab is selected and if the "Save global page views" option from the "Data mining for statistics" module is disabled, the following message is displayed: "You must enable the "Save global page views" option from the "Data mining for statistics" module in order to display the most viewed products, or use the Google Analytics module."
- - **Top searches**
+ 
+    - **Image** - Displays the image of the product.
+    - **Product** - Displays the product's name and price.
+    - **Views* - Displays the number of views that the product has.
+    - **Added to cart** - Displays the time that the product was added to a cart.
+    - **Purchased** - Displays the times that the product was purchased.
+    - **Percentage** - Displays the percetange of how many times the product was bought.
+
+ - **Top searches** - displays a table with the top searched keywords.
+ 
+    - **Term**
+    - **Search**
+    - **Results**
 
 ## Left column
 
