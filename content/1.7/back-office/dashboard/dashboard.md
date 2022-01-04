@@ -184,7 +184,7 @@ On the top right of this block there are 2 buttons:
     - "Save" - When this button is pressed, the configuration is saved and the Dashboard Activity is displayed.
  - **Refresh** - refreshes the stats of the Activity Overview block.
 
-Below the following metrics are displayed:
+Below in a table, these shop parameters are listed below:
 
  - **Online visitors**
  - **Active shopping carts**
@@ -193,13 +193,16 @@ Below the following metrics are displayed:
     - **Return/Exchanges** - when pressed, redirects to the Merchandise Returns page.
     - **Abandoned Carts** - when pressed, redirects to the Shopping Carts list page.
     - **Out of stock products** - when pressed, redirects to the Monitoring page.
+    
  - **Notifications**
     - **New Messages** - when pressed, redirects to the Customer Service page.
     - **Product Reviews** - when pressed, redirects to the Configure page.
+    
  - **Customers & Newsletters (Displays the time frame which is enabled)**
     - **New customers** - when pressed, redirects to the Customers list page.
     - **New subscriptions** - when pressed, redirects to the Stats > Newsletter page.
     - **Total subscribers** - when pressed, redirects to the configuration's page of the ps_emailsubscription module
+    
  - **Traffic (Displays the time frame which is enabled)**
     - **Link to your Google Analytics account** - when pressed, redirects to the Module manager page.
     - **Visits** - when pressed, redirects to the Stats > Stats dashboard page.
