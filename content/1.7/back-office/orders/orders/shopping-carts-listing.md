@@ -40,7 +40,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 
 The Shopping Cart entries in this table are generated while doing item purchasing steps both in Front-Office and Back-Office, after clicking the Add to Cart button in the Prestashop. The entries are generated using Visitor, Guest and Customer profiles.
 
-- **ID number of Shopping Cart** - specific numeric value, that is registered by Prestashop, every time the cart is created. By default, the ID numbering is set by the ascending arrangement.
+- **ID of Shopping Cart** - Numeric field - Each time a cart is created, the ID is incremented by 1 from the last created ID.
 - **Abandoned cart** - if the Cart is not validated through the last checkout step, and the Order is not created, the Cart is statused as Abandoned, and the status becomes _Abandoned Cart_ without any Order ID number.
 - **Customer name and last name** - the unique identifier that shows the Cart creator. If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart, because the Prestashop has not yet transformed the Cart ID into Client ID. If there is registered client, that created the Cart, it will be identified by first and last name.
 - **Total sum of Cart** - numeric value that shows the total amount in the Shopping Cart. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased.
