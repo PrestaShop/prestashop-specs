@@ -45,7 +45,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 - **Non ordered** - if the Cart is not validated through the last checkout step, and the Visitor, Customer or Guest had added item to cart recently, but did not finish to process the order, it becomes as _Non ordered_ labelled. 
 - **Customer name and last name** - If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart then the filed displays '--'.  If there is registered client then field displays the name and last name of the client.
 - **Total sum of Cart** - Shows the total amount of the Shopping Cart in currency of the cart.
-- **Carrier** - if the user has reached the Carrier step in the Checkout, then Prestashop will register and display the chosen Carrier in the Shopping Cart item.
+- **Carrier** - if the user has reached the Carrier step in the Checkout, then it displays the chosen Carrier in the Shopping Cart item. If not "--" is displayed.
 - **Date** - the exact time stamp, when the Cart was created.
 - **Online** - the text value, that can be displayed as Yes or No, according to conditioins.
 - **Shop** - if multistores are enabled, Prestashop will show the appropriate shop, where Cart was created.
