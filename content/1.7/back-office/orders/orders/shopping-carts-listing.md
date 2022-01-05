@@ -26,7 +26,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 - **Date** - input form, once validated, the Date matching the input will be displayed. Setting the date "From" to "To", will retrieve the appropriate date range information of the Shopping Carts. By default, the date range is blank empty.
 - **Online** - dropdown display, once validated, the Yes or No matching the input will be displayed. Once the Guest visitor is visiting the Prestashop Front-Office, and adding items to the Shopping Cart, the value then switches to Yes. By default, the indicator is in blank empty state.
 - **Shop** - filtering is not available, but the whole column is listed with the Shop names for each Shopping Cart, if there are several multistores configured.
-- **Search CTA button** - once clicked, the filtering criteria is executed.
+- **Search CTA button** - The search works either pressing the enter button or pressing this button. Once clicked, the filtering criteria is executed.
 
 ## The body of the Table UI
 
