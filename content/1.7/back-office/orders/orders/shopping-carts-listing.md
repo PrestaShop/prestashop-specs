@@ -18,7 +18,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 
 ## Table Filtering UI
 
-- **ID** - input field, that could be typed as numeric value in order to retrieve the required Shopping Cart ID. By default the input is blank empty.
+- **ID** - input field, once validated, the shopping cart's ID matching the input will be displayed. If there is none then the table will not display any value. By default the input is blank empty.
 - **Order ID** - input field, chat could be typed as numeric value in order to retrieve the required Order ID. By default the input is blank empty.
 - **Customer** - input field, that could be typed as alphabetic value in order to retrieve the required Customer name or last name. By default the input is blank empty.
 - **Total** - numeric value that shows the total amount in the Shopping Cart. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased. 
