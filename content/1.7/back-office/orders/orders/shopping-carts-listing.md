@@ -9,6 +9,10 @@ weight: 1
 
 The page stores all shopping carts created by clients of the PrestaShop's user, that were generated during the checkout process.
 
+## 4 KPI calculation UI
+
+- **Conversion rate** - 
+
 ## Top of the table UI
 
 - **Shopping Carts** 
