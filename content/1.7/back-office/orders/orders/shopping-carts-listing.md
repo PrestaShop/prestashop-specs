@@ -14,7 +14,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 - **Conversion Rate** - it is an icon, title, date, and the number of days with the percentage displayed. It indicates, how many Shopping Carts were generated during specific time range. The value is displayed in percentage.
 - **Abandoned Carts** - it is an icon, title, 2 and 3 days time range of passed days, and numeric value displayed. It indicates, how many Abandoned Shopping Carts were generated throught the period of time. Note, that clicking on this KPI indicator, Prestashop filters out and shows only Abandoned Carts in listing table.
 - **Average Order Value** - it is an icon, title, date, and the average sum with the main currency displayed. It indicates, what is the average sum of Orders in the  specific period of time. The numeric result is displayed dividing total revenue by the total number of orders placed, at that period.
-- **Net Profit per Visitor** - it is an icon, title, date and the average sum with the main currency displayed. It indicates the net profit per visitor numeric value, dividing the total revenue by the total number of visitors to in site.
+- **Net Profit per Visitor** - it is an icon, title, date and the average sum with the main currency displayed. It indicates the net profit per visitor numeric value, dividing the total revenue by the total number of visitors in site.
 
 ## Top of the table UI
 
