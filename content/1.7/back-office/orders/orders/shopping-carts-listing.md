@@ -47,7 +47,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 - **Total sum of Cart** - Shows the total amount of the Shopping Cart in currency of the cart.
 - **Carrier** - if the user has reached the Carrier step in the Checkout, then it displays the chosen Carrier in the Shopping Cart item. If not "--" is displayed.
 - **Date** - the exact time stamp, when the Cart was created.
-- **Online** - the text value, that can be displayed as Yes or No, according to conditioins.
+- **Online** - If the customer is online then it displays 'Yes', otherwise it displays 'No'.
 - **Shop** - if multistores are enabled, Prestashop will show the appropriate shop, where Cart was created.
 - **CTA button View and Delete** - if the Cart is abandoned or the Cart has not been converted to the Orded, the CTA button will be displayed only View. If the Cart has transformed to Order, there will be also a dropdown in View CTA, with the selection of Delete - in order to delete the Cart from Prestashop database.
 
