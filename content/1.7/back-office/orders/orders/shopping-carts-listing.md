@@ -21,7 +21,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 - **ID** - input field, once validated, the shopping cart's ID matching the input will be displayed. If there is none then the table will not display any value. By default the input is blank empty.
 - **Order ID** - input field, once validated, the Order's ID matching the input will be displayed. By default the input is blank empty.
 - **Customer** - input field, once validated, the Customer's first name letter and full last name will be displayed. By default the input is blank empty.
-- **Total** - numeric value that shows the total amount in the Shopping Cart. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased. 
+- **Total** - text field, once validated, the value is displayed. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased. By default, there are double dashes displayed.
 - **Carrier** - input field, that could be typed as alphabetic value in order to retrieve the required Carrier name. By default the input is blank empty.
 - **Date** - input form, that could be adjusted by the time values. Setting the date "From" to "To", will retrieve the appropriate date range information of the Shopping Carts. By default, the date range is blank empty.
 - **Online** - value indicator between Yes and No. Once the Guest visitor is visiting the Prestashop Front-Office, and adding items to the Shopping Cart, the value then switches to Yes. By default, the indicator is in blank empty state.
