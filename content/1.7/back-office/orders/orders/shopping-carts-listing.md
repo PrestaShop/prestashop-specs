@@ -13,7 +13,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 
 - **Shopping Carts** 
 - **Numeric value** - total sum of shopping carts identified.
-- **- Export icon** - when clicked, a file is generated with all **displayed** carts from the data list in CSV format.
+- **Export icon** - when clicked, a file is generated with all **displayed** carts from the data list in CSV format.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
 
 ## Table Filtering UI
