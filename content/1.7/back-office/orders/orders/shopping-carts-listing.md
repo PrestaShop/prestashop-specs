@@ -44,7 +44,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 - **Abandoned cart** - if the Cart is not validated through the last checkout step, and the Order is not created, the Cart is statused as Abandoned, and the status becomes _Abandoned Cart_ without any Order ID number.
 - **Non ordered** - if the Cart is not validated through the last checkout step, and the Visitor, Customer or Guest had added item to cart recently, but did not finish to process the order, it becomes as _Non ordered_ labelled. 
 - **Customer name and last name** - If the Cart is created by Guest User, there won't be first and last name in the Shopping Cart then the filed displays '--'.  If there is registered client then field displays the name and last name of the client.
-- **Total sum of Cart** - numeric value that shows the total amount in the Shopping Cart. It is displayed as a total sum of all the items in the appropriate currency, that is being purchased.
+- **Total sum of Cart** - Shows the total amount of the Shopping Cart in currency of the cart.
 - **Carrier** - if the user has reached the Carrier step in the Checkout, then Prestashop will register and display the chosen Carrier in the Shopping Cart item.
 - **Date** - the exact time stamp, when the Cart was created.
 - **Online** - the text value, that can be displayed as Yes or No, according to conditioins.
