@@ -11,7 +11,8 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 
 ## 4 KPI calculation UI
 
-- **Conversion rate** - it is an icon, title, and the number of days with the percentage displayed. It indicates how many Shopping Carts were generated during specific time range. The value is displayed in percentage.
+- **Conversion rate** - it is an icon, title, date, and the number of days with the percentage displayed. It indicates, how many Shopping Carts were generated during specific time range. The value is displayed in percentage.
+- **Abandoned Carts** - it is an icon, title, 2 and 3 days time range of passed days, and numeric value displayed. It indicates, how many Abandoned Shopping Carts were generated throught the period of time.
 
 ## Top of the table UI
 
