@@ -68,7 +68,7 @@ Bulk Actions has the following functionalities:
 
 The pagination can be selected both in showing the Shopping Carts listed in the table or navigating through the Shopping Cart pages. Shopping Cart lists can be displayed as 20, 50, 100, 300 and 1000 at one viewport screen.
 
-## Other Shopping Carts functionalities
+## Export carts
 
 **Export carts** - CTA button located in the top-right of the page. After clicking, Prestashop generates a specific CSV file for downloading. This CSV file contains all the Shopping Cart data from the table UI.
 
