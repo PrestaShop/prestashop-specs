@@ -70,7 +70,7 @@ The pagination can be selected both in showing the Shopping Carts listed in the 
 
 ## Export carts
 
-**Export carts** - CTA button located in the top-right of the page. After clicking, Prestashop generates a specific CSV file for downloading. This CSV file contains all the Shopping Cart data from the table UI.
+**Export carts** - CTA button located in the top-right of the page. After clicking, it generates and downloadd a CSV file. This CSV file contains all the Shopping Cart data, except Multistore title, from the table UI.
 
 ## Notifications after form submissions
 
