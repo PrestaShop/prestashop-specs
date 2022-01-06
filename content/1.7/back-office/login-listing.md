@@ -6,7 +6,7 @@ weight: 1
 
 [Login UI](static/login.png)
 
-This UI is the main feature to authorize the Prestashop Back-Office administrator, and to log-in to administrate and maintain all the Prestashop Back-Office  features and functionalities. This page contains only one main element - the log in form.
+This page allows any authorized user to connect to the PrestaShop back-office. 
 
 ## Top UI Section
 
