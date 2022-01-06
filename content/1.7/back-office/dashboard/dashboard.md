@@ -70,7 +70,7 @@ This block presents the goals defined for the coming months, and how the shop is
 Firstly, 2 buttons to navigate between years are displayed:
      
  - **Previous arrow** - when pressed, the forecast of the previous year is displayed.
- - **Next arrow ** - when pressed, the forecast of the following year is displayed.
+ - **Next arrow** - when pressed, the forecast of the following year is displayed.
 
 On the right of the block, 2 buttons are displayed: 
 
@@ -81,7 +81,7 @@ On the right of the block, 2 buttons are displayed:
 - Average cart value (default currency): The user can update his forthcoming average cart value (in the default currency) in this field.
 - Sales: This column will be updated according to the goals set in the other columns (for instance, for a 1000 visitors with a 2% conversion rate and a $10 average cart, you would get 1000*(2/100)*10 = $200).
   
-    year, traffic, conversion rate, average cart value, sales. Has all the months of the year listed, every month has input field for traffic, conversion rate (measured in percentages), average cart value (measured in default shop currency. And a "Save" button, which when pressed, reverts to the previous dashboard.
+ - **Save** -  When this button is pressed, the configuration is saved and the forecast stats are displayed.
  - **Refresh** - refreshes the graphic of the Forecast block.
 
 #### Tabs
@@ -95,7 +95,7 @@ On the right of the block, 2 buttons are displayed:
 
 ### Dashboard (Dashboard Trends module)
 
-### Call to action
+#### Call to action
 
 On the top right of this block, 2 buttons are displayed:
 
@@ -120,7 +120,7 @@ Additionally, when comparing two time periods, it displays the evolution of each
 
 This block presents a table of the latest orders and a ranking of the products: bestsellers, most viewed, and top searches (as searched in the shop's search form, not from search engines).
 
-### Call to action
+#### Call to action
 
    - **Configure** - The user can set the number of items to display in each by clicking on this button.
 When pressed, the stats disappear, and 4 dropdowns are displayed:
@@ -128,7 +128,7 @@ When pressed, the stats disappear, and 4 dropdowns are displayed:
    - **Number of "Best Sellers" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
    - **Number of "Most Viewed" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
    - **Number of "Top Searches" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
-   - "Save" -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.
+   - **Save** -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.
    - **Refresh** - refreshes the stats of the Products and Sales block.
 
 #### Tabs
@@ -139,13 +139,13 @@ When pressed, the stats disappear, and 4 dropdowns are displayed:
  
 In this table, the following columns are displayed:
     - **Customer name** - After clicking on the name, the customer's view page is displayed.
-    - **Products** 
-    - **Total Tax excl.**
-    - **Date**
-    - **Status**
+    - **Products** - Displays the number of produ
+    - **Total Tax excl.** of the order
+    - **Date** of the order
+    - **Status** of the order
     - A search button at the right of every line is displayed. When pressed, the order detail page of this order is displayed.
    
- - **Best sellers** - following tables are below:
+ - **Best sellers** - when this tab is selected, a table with the following columns are displayed:
     - **Image**
     - **Product** 
     - **Category** 
@@ -155,14 +155,16 @@ In this table, the following columns are displayed:
  
  - **Most viewed** - when this tab is selected and if the "Save global page views" option from the "Data mining for statistics" module is disabled, the following message is displayed: "You must enable the "Save global page views" option from the "Data mining for statistics" module in order to display the most viewed products, or use the Google Analytics module."
  
-    - **Image** - Displays the image of the product.
-    - **Product** - Displays the product's name and price.
-    - **Views* - Displays the number of views that the product has.
-    - **Added to cart** - Displays the time that the product was added to a cart.
-    - **Purchased** - Displays the times that the product was purchased.
-    - **Percentage** - Displays the percetange of how many times the product was bought.
+ The following columns are displayed:
+ 
+    - **Image** - The image of the product is displayed.
+    - **Product** - The product's name and price is displayed.
+    - **Views** - The number of times the product has been viewed is displayed.
+    - **Added to cart** - The number of times the product has been added to the cart is displayed.
+    - **Purchased** - The number of times the product has been purchased is displayed.
+    - **Percentage** - The percentage of how many times the product was bought is displayed.
 
- - **Top searches** - displays a table with the top searched keywords.
+ - **Top searches** - when this tab is selected, a table with the following columns are displayed:
  
     - **Term**
     - **Search**
@@ -172,11 +174,11 @@ In this table, the following columns are displayed:
 
 ### Activity overview (Dashboard Activity module)
 
-### Call to action 
+#### Call to action 
 
 On the top right of this block there are 2 buttons:
 
- - **Configure** - when pressed, changes the activity overview to a configuration block with the following fields:
+ - **Configure** - when pressed, the activity overview is changed to a configuration block with the following parameters:
     - **Active cart** - drop down with the following options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: "How long (in minutes) a cart is to be considered as active after the last recorded change (default: 30 min)."
     - **Online visitors** - drop down field with options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: "How long (in minutes) a visitor is to be considered as online after their last action (default: 30min)."
     - **Abandoned cart (min)** - input field measured by "hrs". By default it is set to 24 mins. The tooltip displays: "How long (in hours) after the last action a cart is to be considered as abandoned (default: 24 hrs)."
