@@ -60,8 +60,8 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 A selective UI, where certain global actions can be done, after checking - using checkboxes - in one or multiple Shopping Cart element rows. Bulk Actions has the following functionalities:<br>
 
 - **Select All** - selects all the shopping carts, that are Abandoned or Non ordered only.
-- **Unselect All** - unselects all the checkboxes, that are Abandoned or Non ordered only.
-- **Delete selected** - deletes the shopping cart selected after validating the validation's modal.
+- **Unselect All** - Unselects all the shopping carts in the list.
+- **Delete selected** - deletes the selected shopping carts.
 
 ### Pagination elements UI
 
