@@ -61,7 +61,7 @@ A selective UI, where certain global actions can be done, after checking - using
 
 - **Select All** - checking this option, Prestashop will select all the checkboxes in the Shopping Carts list.
 - **Unselect All** - checking this option, Prestashop will unselect all the checkboxes in the Shopping Carts list.
-- **Delete selected** - Prestashop will execute a deletion of the selected Shopping Carts rows from the listing. At first, there will be a prompt message informing about deletion.
+- **Delete selected** - It deletes the shopping cart selected after validating the validation's modal.
 
 ### Pagination elements UI
 
