@@ -55,7 +55,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 
 ### Bulk Actions UI
 
-[Bulk Actions in Shopping Cart](static/img/orders-shopping-carts-bulk-actions.png)
+![Bulk Actions in Shopping Cart](static/img/orders-shopping-carts-bulk-actions.png)
 
 Bulk Actions has the following functionalities:
 
