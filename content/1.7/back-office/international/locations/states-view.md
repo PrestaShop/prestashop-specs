@@ -81,4 +81,3 @@ Clicking on the _Bulk actions_ button allows performing bulk actions for the sel
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected state gets deleted, a successful message is displayed "The selection has been successfully deleted."
 - Assign to a new zone - Selected states are assigned to a new zone.
-
