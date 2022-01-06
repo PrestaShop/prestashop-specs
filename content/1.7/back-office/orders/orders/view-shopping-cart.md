@@ -14,7 +14,14 @@ This dashboard is displaying the information about the Shopping Cart initiator -
 ### Registered customer in Prestashop
 
 - **Total Cart** - Total amount of the cart
-- **Customer information** - a section, that describes the customer first name, last name, account registration date, valid orders placed, total spent since registration, and the customer email. The customer name and last name contains a link, that directs to the Customer Account page in Prestashop. Email link is also implemented with a link, once clicked initiates the email composing.
+- **Customer information** - a section, that lists the customer:
+-  first name,
+- last name, 
+- account registration date, 
+- valid orders placed, 
+- total spent since registration, 
+- the customer email.
+The customer name and last name contains a link, that directs to the Customer Account page in Prestashop. Email link is also implemented with a link, once clicked initiates the email composing.
 - **Order information** - if the Order is made, then the link appears with the Order number with the hashtag near. This link is clickable, it redirets to the specific order of the Customer has made.
 - **Made on** - the exact timestamp registered when the Order was made.
 - **Cart summary** - The whole section table, where the orders of the customer are displayed. The elements of UI are: product image, product name with the link into the product editing, unit price, quantity, stock and total cart sum.
