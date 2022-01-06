@@ -50,4 +50,4 @@ The following information message is displayed: "Method: Indicate the percentage
 
 #### Call to action
 
- - **Save** - when pressed, if the fields are input correctly, will show the following: "The settings have been successfully updated.".
+ - **Save** - When pressed and if there is no error, the following success message is displayed: "The settings have been successfully updated." and the form is saved.
