@@ -3,7 +3,9 @@ title: Add/edit carrier
 weight: 1
 ---
 
-### Call to action
+The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier
+
+# Call to action
 
 A call to action button at the top right is displayed:
 
@@ -12,13 +14,13 @@ A call to action button at the bottom right is displayed:
 
  - **Previous:** In the first step, this button is disabled.
  - **Next:** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
- - **Finish:** This button is enabled only if the settings reach the step "Summary" without errors. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
+ - **Finish:** This button is enabled only at the last "Summary" step and if there are no errors. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
  
-#### Logo
+# Logo
  
 Firstly on the left, the logo is displayed as soon as it's uploaded. Once the logo has been uploaded, a trash icon appears on the right of the logo. When trying to delete the logo, a message is displayed: "Are you sure you want to delete the logo?". Pressing "Ok" will remove the uploaded logo, and the default logo will re-appear in the same place.
 
-#### Steps
+# Steps
 
  - 1 General settings
  - 2 Multistore (If multistore is enabled)
