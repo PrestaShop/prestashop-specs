@@ -4,7 +4,7 @@ weight: 1
 ---
 # LOGIN
 
-[Login UI](static/login.png)
+![Login UI](static/login.png)
 
 This page allows any authorized user to connect to the PrestaShop back-office. 
 
