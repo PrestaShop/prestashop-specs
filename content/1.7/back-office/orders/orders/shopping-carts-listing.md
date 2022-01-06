@@ -59,7 +59,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 
 A selective UI, where certain global actions can be done, after checking - using checkboxes - in one or multiple Shopping Cart element rows. Bulk Actions has the following functionalities:<br>
 
-- **Select All** - checking this option, Prestashop will select all the checkboxes in the Shopping Carts list.
+- **Select All** - Selects all the shopping cart displayed in the list.
 - **Unselect All** - checking this option, Prestashop will unselect all the checkboxes in the Shopping Carts list.
 - **Delete selected** - It deletes the shopping cart selected after validating the validation's modal.
 
