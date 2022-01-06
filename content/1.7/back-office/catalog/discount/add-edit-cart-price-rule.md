@@ -28,7 +28,7 @@ If there are multiple cart rules applied at the checkout with the identical prio
 ## Conditions tab
 The condition tab, allows the ability to specify cart rule conditions to determine how the cart rule will be used in the Prestashop. 
 
-[Cart Rules: Conditions Tab](/static/img/cart-rules-conditions-tab.png)
+![Cart Rules: Conditions Tab](/static/img/cart-rules-conditions-tab.png)
 
 - **Limit to a single custome** - search input - the user can search by customer name or email in order to set the Cart rule condition for one customer.
 - **Valid** - 2 dates picker - The date picker "From" and "To" define the period of availability of the cart rule. Past these dates or before these dates, the cart rule can't be used. By default, "From" picker date is set to the date when the form was opened and the "To" one month after the From date.
@@ -43,7 +43,7 @@ Once the first restriction checkbox is marked, the external options will expand.
 - **Compatibility with other cart rules** - this option sets the including of what cart rules can be combined with another cart rules. By default, it is set as uncheckboxed condition, and this option is hidden, when there are no rules created, at least 1 rule should be created in list.
 - **Product selection** - this is kind of important condition for cart rule - it can be selected with specific products from whole webshop, that can have the cart rule. By default, it is set as uncheckboxed condition. 
 
-[Product Selection from Cart Rule Conditions tab](/static/img/cart-rules-restriction-product-select.png)
+![Product Selection from Cart Rule Conditions tab](/static/img/cart-rules-restriction-product-select.png)
 
 - Once the **Product selection** checkbox is marked, the UI will additioinally extend with the appropriate options to adjust. The CTA button with "(+) Product selection" will appear. Clicking the button will show additional operating values - "Number of products required in the cart to enjoy the discount", "Add a rule concerning", "The product(s) are matching one of these" list, Add (+), Remove (X), Choose, Product selection buttons and appropriate text input fields.
 - **Number** of products required in the cart to enjoy the discount - defines the oparating value, how many products should be added to the cart in Prestashop application in order to get the ability to get a discount. There is a numeric value input field near, which can be set.
@@ -54,7 +54,7 @@ Once the first restriction checkbox is marked, the external options will expand.
 ## Actions tab
 The certain action can be set after cart rule is created. The Actions tab values are all set up to disabled by default.
 
-[Cart Rules: Actions Tab](/static/img/cart-rules-actions-tab.png)
+![Cart Rules: Actions Tab](/static/img/cart-rules-actions-tab.png)
 
 - **Free shipping switch toggle button** - this setting creates rule that will initiate a free shipping method for customer in checkout form.
 - **Apply a discount** - there are 3 options that can be set - Percentage, Amount and None. Percentage can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. When the option is set with the certain Amount - the user will get a discount of a certain amount of price. Also the Currency can be set and the Taxes conditions as well. This option can set the action to None - in that case user of the checkout will not get any discounting at all.
