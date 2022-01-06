@@ -49,7 +49,7 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 - **Date** - the exact time stamp, when the Cart was created.
 - **Online** - If the customer is online then it displays 'Yes', otherwise it displays 'No'.
 - **Shop** - if multistores are enabled, it shows shop where the shopping cart was created.
-- **CTA button View and Delete** - if the Cart is abandoned or the Cart has not been converted to the Orded, the CTA button will be displayed only View. If the Cart has transformed to Order, there will be also a dropdown in View CTA, with the selection of Delete - in order to delete the Cart from Prestashop database.
+- **Actions button** - If the cart is an "abandoned Cart" or an "non ordered" cart, then the cart can be displayed and deleted. If the cart has turned into an order, then the cart can only be displayed. 
 
 ## The bottom of the Table UI
 
