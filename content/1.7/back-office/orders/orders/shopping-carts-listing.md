@@ -57,7 +57,8 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 
 [Bulk Actions in Shopping Cart](static/img/orders-shopping-carts-bulk-actions.png)
 
-A selective UI, where certain global actions can be done, after checking - using checkboxes - in one or multiple Shopping Cart element rows. Bulk Actions has the following functionalities:<br>
+Bulk Actions has the following functionalities:
+
 
 - **Select All** - selects all the shopping carts, that are Abandoned or Non ordered only.
 - **Unselect All** - Unselects all the shopping carts in the list.
