@@ -18,7 +18,7 @@ This page allows any authorized user to connect to the PrestaShop back-office.
 - **Shop name** - the shop name, that was defined during the installation process of Prestashop application.
 - **Email address** - email input - Email from a SuperAdmin or Employees acount must be used to log-in. 
 - **Password input** -  Password of the email account above from a SuperAdmin or Employees must be used to log-in. 
-- **Login CTA button** - the button, that executes the logging in action, the user then is instantly redirected to the default main dashboard page.
+- **Login button** - Allows access to the back office after verifying that the user is authorized to log-in.
 - **Stay logged in checkbox** - this checkbox and its function is common in many logging-in submission forms. Once the checkbox is marked, the browser will remember the logging-in status, and the administrator will not be required to input email and password in the next attempt of logging-in. The administrator will be authenticated and redirected to the dashboard instantly.
 - **I forgot my password** - specific link, in case administrator forgets the Prestashop authentication password. Once clicked, the UI instantly flips to the new UI which contains the email input. After submitting the email there, a link will be generated and sent to the defined email.
 
