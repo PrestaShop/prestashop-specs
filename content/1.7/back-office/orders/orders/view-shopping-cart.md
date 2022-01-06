@@ -22,7 +22,7 @@ This dashboard is displaying the information about the Shopping Cart initiator -
   - total spent since registration, 
   - the customer email.
 The customer name and last name contains a link, that directs to the Customer Account page in Prestashop. Email link is also implemented with a link, once clicked initiates the email composing.
-- **Order information** - if the Order is made, then the link appears with the Order number with the hashtag near. This link is clickable, it redirets to the specific order of the Customer has made.
+- **Order information** - if the Order is made, then the link appears with the Order number with the hashtag near. This link is clickable, it redirets to the specific order of the Customer has made. If Order is not made and Cart is stated as Non ordered cart - then new Order can be created by clicking the button _Create an order from this cart_.
 - **Made on** - the exact timestamp registered when the Order was made.
 - **Cart summary** - The whole section table, where the orders of the customer are displayed. The elements of UI are: product image, product name with the link into the product editing, unit price, quantity, stock and total cart sum.
 
