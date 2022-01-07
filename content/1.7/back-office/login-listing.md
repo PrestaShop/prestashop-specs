@@ -31,6 +31,8 @@ If submission attempt is successful, the UI will be prompted by success message 
 
 ### Notification messages
 
+If the email, that is being typed in the main login form, is incorrect, the UI will be prompted with the instant error message _Please enter a valid email address._
+
 If the email or password, that is being typed in the main login form, is incorrect, the UI will be prompted with the error message _There is one error. The employee does not exist, or the password provided is incorrect._
 
 If the password, that is being typed in the main login form, is incorrect, the UI will be prompted with the error message _There is one error. Invalid password._
