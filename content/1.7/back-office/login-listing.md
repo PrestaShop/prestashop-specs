@@ -29,6 +29,12 @@ After typing the email into the input, clicking the button _Send reset link_, a 
 The email message will contain unique URL. Clicking that unique URL from email, will redirect to **Reset your password** form. The form will contain **New password** and **Confirm new password** inputs, and those fields are mandatory to fill. After filling new password and retyping new password again in required fields, _Reset password_ button should be clicked. _Cancel_ button will back-flip the UI into the main login screen.
 If submission attempt is successful, the UI will be prompted by success message _Your password has been successfully changed. You will be redirected to the login page in a few seconds._ Then administrator will be able to login using the new password.
 
+### Notification messages
+
+If the email or password, that is being typed in the main login form, is incorrect, the UI will be prompted with the error message _There is one error. The employee does not exist, or the password provided is incorrect._
+
+If the password, that is being typed in the main login form, is incorrect, the UI will be prompted with the error message _There is one error. Invalid password._
+
 ## Bottom UI Section
 
 - **Back to Front-Office** - the link, navigating to the Prestashop Front-Office parent home page.
