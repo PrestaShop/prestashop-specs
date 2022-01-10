@@ -66,3 +66,4 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Based on** - dropdown element to choose from where and what location should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
 - **Use ecotax** - toggle switch button, controling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
 - **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown.
+- **Save** - CTA button saving the Tax configuration
