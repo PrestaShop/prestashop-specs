@@ -17,3 +17,7 @@ This page stores all the available Tax titles in Prestashop application.
 ## Middle elements - Tax table
 
 - **Taxes** - table title with the total taxes in the list.
+- **Numeric value** - total sum of shopping taxes identified.
+- **Export icon** - when clicked, a file is generated with all **displayed** taxes from the data list in CSV format.
+- **Refresh** - once clicked, the whole page reloads to display the latest data.
+
