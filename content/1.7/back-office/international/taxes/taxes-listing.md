@@ -58,3 +58,7 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
   - 20
   - 50
   - 100
+
+## Tax options
+
+- **Enable tex toggle switch button** - enabling or disabling Tax showing and calculations on the market in Prestashop items.
