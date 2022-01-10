@@ -63,4 +63,5 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 - **Enable tex** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
 - **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default ir is disabled.
-- **Based on** - dropdown element to choose from where should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**.
+- **Based on** - dropdown element to choose from where should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
+- **Use ecotax** - 
