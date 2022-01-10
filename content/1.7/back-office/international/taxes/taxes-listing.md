@@ -4,6 +4,8 @@ weight: 1
 ---
 # IMPROVE > International > Taxes
 
+![Taxes](static/img/international-taxes.png)
+
 This page stores all the available Tax titles in Prestashop application.
 
 ## Top elements
