@@ -53,8 +53,8 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 - **Page number input** - function that displays the desired page number of the listing, after inputting number and pressing Enter.
 - **Vewing indicator text** - text, indicating what pages the user is seeing
-- **Items per pag**e - dropdown with the numeric values:
-  - 10, 
-  - 20, 
-  - 50, 
+- **Items per pag**e - dropdown with the numeric values, how much items can be shown in listing:
+  - 10
+  - 20
+  - 50
   - 100
