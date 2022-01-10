@@ -48,3 +48,13 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax 
 - **Edit (pen icon)** - allows to edit specific Tax properties, after redirercting to the Edit interface
 - **Three-dot menu** - Tax deletion
+
+### Pagination
+
+- **Page number input** - function that displays the desired page number of the listing, after inputting number and pressing Enter.
+- **Vewing indicator text** - text, indicating what pages the user is seeing
+- **Items per pag**e - dropdown with the numeric values:
+  - 10, 
+  - 20, 
+  - 50, 
+  - 100
