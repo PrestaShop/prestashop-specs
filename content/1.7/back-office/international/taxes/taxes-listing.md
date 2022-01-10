@@ -21,3 +21,6 @@ This page stores all the available Tax titles in Prestashop application.
 - **Export icon** - when clicked, a file is generated with all **displayed** taxes from the data list in CSV format.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
 
+### Bulk Actioning
+
+Bulk action dropdown is disabled by default. Once some of the tax items are selected in the listing, bulk action dropdown becomes active.
