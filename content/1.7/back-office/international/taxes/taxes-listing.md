@@ -39,3 +39,10 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Enabled** - dropdown element, for arranging the Taxes by enabled or disabled
 - **Search button** - executes the filtering action, shows the results
 - **Reset** - resets the filtering, shows all the unfiltered Taxes
+
+### Tax listing
+
+- **Number** - specific Tax ID in numeric value
+- **Name** - specific Tax ID
+- **Rate** - specific Tax rate in numeric value
+- **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax 
