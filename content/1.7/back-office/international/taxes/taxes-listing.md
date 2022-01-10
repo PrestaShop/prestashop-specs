@@ -46,3 +46,5 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Name** - specific Tax ID
 - **Rate** - specific Tax rate in numeric value
 - **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax 
+- **Edit (pen icon)** - allows to edit specific Tax properties, after redirercting to the Edit interface
+- **Three-dot menu** - Tax deletion
