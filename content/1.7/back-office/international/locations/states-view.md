@@ -13,7 +13,7 @@ A call to action buttont at the top right is displayed:
 
 ### Settings wheel
 
-When clicking on the settings wheel, the following options are displayed
+When clicking on the settings wheel, the following options are displayed:
 
 1. Add new
 
@@ -29,14 +29,14 @@ After clicking on it, the SQL query is displayed in a modal. The SQL query takes
 
 There are two buttons:
 
-Close: After clicking on it, the modal is closed
-Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+Close: After clicking on it, the modal is closed.
+Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager.
 
 4. Export to SQL Manager
 
-After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager.
 
-The count of the states currently added is displayed on the left - "States - (current number of states added in the shop)"
+The count of the states currently added is displayed on the left - "States - (current number of states added in the shop)".
 
 ### Columns
 
