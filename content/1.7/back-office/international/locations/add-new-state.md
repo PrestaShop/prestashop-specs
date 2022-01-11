@@ -8,7 +8,7 @@ weight: 1
 While adding or editing a state, 5 fields below are shown:
 
  - **Name** - this is a mandatory field. A tooltip for this field shows: "Provide the state name to be displayed in addresses and on invoices.". When trying to save with the field empty will show an error message: "The name field is required.".
- - **ISO code** - this is a mandatory field. A tooltip for this field shows: "1 to 4 letter ISO code. You can prefix it with the country ISO code if needed.". When trying to save with the field empty will show an error message:  "The iso_code field is required."
+ - **ISO code** - this is a mandatory field. A tooltip for this field shows: "1 to 4 letter ISO code. You can prefix it with the country ISO code if needed.". When trying to save with the field while it's empty, will show an error message:  "The iso_code field is required."
  - **Country** - this is a mandatory drop-down field. A tooltip for this field shows: "Country where the state is located. Only the countries with the option "contains state" enabled are displayed."
  - **Zone** - this is a mandatory drop-down field. A tooltip for this field shows: "Geographical region where this state is located. Used for shipping".
  - **Status** - this is a mandatory toggle switch. It can be turned to "yes" or "no".
