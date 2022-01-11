@@ -172,7 +172,7 @@ In this table, the following columns are displayed:
 
 ## Left column
 
-### Activity overview (Dashboard Activity module)
+### Activity overview
 
 #### Call to action 
 
