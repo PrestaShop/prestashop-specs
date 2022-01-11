@@ -30,10 +30,6 @@ The following tooltip is displayed: "This mode displays sample data so you can t
 
  - **Save** - When pressed and if there is no error, the following success message is displayed: "The settings have been successfully updated." and the form is saved.
 
-When the multistore is enabled, there are checkboxes before each field of this page. The shop association block is displayed when the multistore is enabled and if several shops are configured.
-
-👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
-
 ## Average shipping fees per shipping method
 
 The following information message is displayed: "Method: Indicate the percentage of your carrier margin. For example, if you charge $10 of shipping fees to your customer for each shipment, but you really pay $4 to this carrier, then you should indicate "40" in the percentage field."
@@ -55,3 +51,9 @@ The following information message is displayed: "Method: Indicate the percentage
 #### Call to action
 
  - **Save** - When pressed and if there is no error, the following success message is displayed: "The settings have been successfully updated." and the form is saved.
+
+## Multistore
+
+When the multistore is enabled, there are checkboxes before each field of this page. The shop association block is displayed when the multistore is enabled and if several shops are configured.
+
+👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
