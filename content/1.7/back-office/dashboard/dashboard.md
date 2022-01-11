@@ -65,7 +65,7 @@ There are 3 columns in the dashboard:
 
 This block presents the goals defined for the coming months, and how the shop is doing as compared to them. When hovering the graphic with the mouse, the details are displayed.
 
-### Call to action
+#### Call to action
 
 Firstly, 2 buttons to navigate between years are displayed:
      
