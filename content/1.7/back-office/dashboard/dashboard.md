@@ -128,8 +128,8 @@ When pressed, the stats disappear, and 4 dropdowns are displayed:
    - **Number of "Best Sellers" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
    - **Number of "Most Viewed" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
    - **Number of "Top Searches" to display** - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.
-   - **Save** -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.
    - **Refresh** - refreshes the stats of the Products and Sales block.
+   - **Save** -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.
 
 #### Tabs
 
@@ -139,7 +139,7 @@ When pressed, the stats disappear, and 4 dropdowns are displayed:
  
 In this table, the following columns are displayed:
     - **Customer name** - After clicking on the name, the customer's view page is displayed.
-    - **Products** - Displays the number of produ
+    - **Products** - Displays the number of products of the order
     - **Total Tax excl.** of the order
     - **Date** of the order
     - **Status** of the order
