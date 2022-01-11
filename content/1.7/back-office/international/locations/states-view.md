@@ -9,7 +9,7 @@ weight: 1
 
 A call to action buttont at the top right is displayed:
 
- - Add new state - See the [specs of the add/edit new state]({{<ref "add-edit-new-state.md">}} "Add/edit new state") 
+ - **Add new state** - See the [specs of the add/edit new state]({{<ref "add-edit-new-state.md">}} "Add/edit new state") 
 
 ### Settings wheel
 
