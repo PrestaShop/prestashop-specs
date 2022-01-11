@@ -5,13 +5,13 @@ weight: 1
 
 # States
 
-#### Call to action
+## Call to action
 
 A call to action buttont at the top right is displayed:
 
  - **Add new state** - See the [specs of the add/edit new state]({{<ref "add-edit-new-state.md">}} "Add/edit new state") 
 
-## Settings wheel
+### Settings wheel
 
 When clicking on the settings wheel, the following options are displayed
 
