@@ -44,27 +44,27 @@ The count of the states currently added is displayed on the left - "States - (cu
 
 It's possible to sort by id asc or desc and search by id.
 
-3. Name
+2. Name
 
 It's possible to sort by name asc or desc and search by name.
 
-5. ISO code
+3. ISO code
 
 It's possible to sort by ISO code asc or desc and search by ISO code.
 
-7. Zone
+4. Zone
 
 This is a drop-down list of the continents that can be selected, and searched in the list.
 
-9. Country
+5. Country
 
 This is a drop-down list of the countries that can be searched.
 
-11. Enabled
+6. Enabled
 
 This is a drop-down list for selecting either "yes" or "no" can be searched.
 
-13. Actions
+7. Actions
 
  - **Search** - Button for searching in the list.
  - **Edit** - When pressed redirects to the edit page of the selected state.
