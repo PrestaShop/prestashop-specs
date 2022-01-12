@@ -29,3 +29,7 @@ If there is an empty Range field after submission, there will be a browser error
 If there is some invalid characters typed in name after submission, there will be an error below the Name field - _"{invalid character}" is invalid - Language: {the language of the name}_.
 
 If the Name field is left empty after submission, there will be an error below the Name field - _The field name is required at least in your default language._
+
+If the Range is typed with more than 6 characters, the UI will be prompted with the error - _This field cannot be longer than 6 characters_.
+
+If the Name is typed with more than 32 characters, the UI will be prompted with the error - _This field cannot be longer than 32 characters - Language: {the language of the name}_. 
