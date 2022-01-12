@@ -59,7 +59,7 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
   - 50
   - 100
 
-## Tax options
+## Tax options table
 
 - **Enable tex** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
 - **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default ir is disabled.
@@ -67,3 +67,9 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Use ecotax** - toggle switch button, controling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
 - **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory.
 - **Save** - CTA button saving the Tax configuration
+
+## Multistores compatibility
+
+Multistores are not affected separately, while managing the Tax properties in Tax listings. It means, that customizing Tax for one country will affect all the Taxes for other shop groups and multistores. 
+
+But the Tax Options table works differently - the settings can be saved separately for different multistores and shop groups.
