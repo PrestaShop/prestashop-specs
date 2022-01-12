@@ -19,6 +19,8 @@ There is an information notification with the text _Note that this feature is av
 - **Language dropdown** - enables to trigger the appropriate language for the Name of tax. There can different tax names set fro different languages.
 - **Rate** - numeric input field, allows to set the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
 - **Enable or Disable switch toggle button** - allows to Enable or Disable tax.
+- **Cancel** - button cancels the Tax editing form.
+- **Save** - button saves the configured form.
 
 ## Notifications after submissions
 
