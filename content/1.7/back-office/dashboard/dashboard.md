@@ -198,7 +198,7 @@ Below in a table, these shop parameters are listed below:
     
  - **Notifications**
     - **New Messages** - when pressed, redirects to the Customer Service page.
-    - **Product Reviews** - when pressed, redirects to the Configuration page of the product comments module
+    - **Product Reviews** - It's displayed only if the module product comments is installed and enabled. When pressed, redirects to the Configuration page of the product comments module
     
  - **Customers & Newsletters (Displays the time frame which is enabled)**
     - **New customers** - when pressed, redirects to the Customers list page.
