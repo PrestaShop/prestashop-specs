@@ -42,3 +42,13 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 - **Enabled or Disabled checkmark** - clicking the checkmark Enables the Tax Rule, or clicking the red cross - Disables specific Tax Rule.
 - **Edit button** - allows editing specific Tax Rule properties, after redirecting to the Edit interface.
 - **Edit button dropdown arrow** - deletes the Tax Rule.
+
+### Bulk Actioning
+
+Dropdown actions contain:<br>
+
+- **Select all** - selecting all the Tax Rules items.
+- **Unselect all** - unselecting all the Tax Rules items.
+- **Enable selection** - enables the certain Tax Rule.
+- **Disable selection** - disables the certain Tax Rule.
+- **Delete selected** - deletes the certain Tax Rule.
