@@ -64,3 +64,7 @@ Dropdown actions contain:<br>
   - 1000
 
 Also, there is a pagination widget, allowing to navigate to the next or previous page, or move through the pages by clicking the appropriate numeric values.
+
+## Multistores compatibility
+
+Multistores are affected separately, while managing the Tax Rules properties in Tax Rules listings. It means, that customizing Tax Rule for one item will not impact all the Tax Rules for other shop groups and multistores.
