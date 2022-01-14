@@ -33,9 +33,9 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 ### Filtering
 
-- **ID** - inpud field, for searching and filtering specific Tax by ID
-- **Name** - input field, for searching and filtering specifig Tax by name
-- **Rate** - input field, for searching and filtering specifig Tax by rate
+- **ID** - input field, for searching and filtering specific Tax by ID
+- **Name** - input field, for searching and filtering specific Tax by name
+- **Rate** - input field, for searching and filtering specific Tax by rate
 - **Enabled** - dropdown element, for arranging the Taxes by enabled or disabled
 - **Search button** - executes the filtering action, shows the results
 - **Reset** - resets the filtering, shows all the unfiltered Taxes
@@ -46,14 +46,14 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Name** - specific Tax ID
 - **Rate** - specific Tax rate in numeric value
 - **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax 
-- **Edit (pen icon)** - allows to edit specific Tax properties, after redirercting to the Edit interface
+- **Edit (pen icon)** - allows editing specific Tax properties, after redirecting to the Edit interface
 - **Three-dot menu** - Tax deletion
 
 ### Pagination
 
-- **Page number input** - function that displays the desired page number of the listing, after inputting number and pressing Enter.
-- **Vewing indicator text** - text, indicating what pages the user is seeing
-- **Items per pag**e - dropdown with the numeric values, how much items can be shown in listing:
+- **Page number input** - function that displays the desired page number of the listing, after inputting the number and pressing Enter.
+- **Viewing indicator text** - text, indicating what pages the user is seeing
+- **Items per page** - dropdown with the numeric values, how many items can be shown in listing:
   - 10
   - 20
   - 50
@@ -61,15 +61,15 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 ## Tax options table
 
-- **Enable tex** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
-- **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default ir is disabled.
+- **Enable tax** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
+- **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default it is disabled.
 - **Based on** - dropdown element to choose from where and what location should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
-- **Use ecotax** - toggle switch button, controling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
+- **Use ecotax** - toggle switch button, controlling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
 - **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory.
 - **Save** - CTA button saving the Tax configuration
 
 ## Multistores compatibility
 
-Multistores are not affected separately, while managing the Tax properties in Tax listings. It means, that customizing Tax for one country will affect all the Taxes for other shop groups and multistores. 
+Multistores are not affected separately, while managing the Tax properties in Tax listings. It means, that customizing Tax for one country will impact all the Taxes for other shop groups and multistores. 
 
 But the Tax Options table works differently - the settings can be saved separately for different multistores and shop groups.
