@@ -32,7 +32,7 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 - **Search button** - executes the filtering action, shows the results.
 - **Reset** - resets the filtering, shows all the unfiltered Tax Rules.
 
-## Tax Rules listing
+### Tax Rules listing
 
 - **Number** - specific Tax Rule ID in numeric value.
 - **Name** - specific Tax Rule ID with the structure:
@@ -52,3 +52,13 @@ Dropdown actions contain:<br>
 - **Enable selection** - enables the certain Tax Rule.
 - **Disable selection** - disables the certain Tax Rule.
 - **Delete selected** - deletes the certain Tax Rule.
+
+### Pagination
+
+- **Items per page** - dropdown with the numeric values, how many items can be shown in listing:
+
+  - 20
+  - 50
+  - 100
+  - 300
+  - 1000
