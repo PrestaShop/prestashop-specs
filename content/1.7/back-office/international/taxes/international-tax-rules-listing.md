@@ -31,3 +31,11 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 - **Enabled** - dropdown element, for arranging the Tax Rules by enabled or disabled.
 - **Search button** - executes the filtering action, shows the results.
 - **Reset** - resets the filtering, shows all the unfiltered Tax Rules.
+
+## Tax Rules listing
+
+- **Number** - specific Tax Rule ID in numeric value.
+- **Name** - specific Tax Rule ID.
+- **Enabled or Disabled checkmark** - clicking the checkmark Enables the Tax Rule, or clicking the red cross - Disables specific Tax Rule.
+- **Edit button** - allows editing specific Tax Rule properties, after redirecting to the Edit interface.
+- **Edit button dropdown arrow** - deletes the Tax Rule.
