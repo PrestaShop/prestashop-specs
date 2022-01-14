@@ -9,6 +9,13 @@ weight: 1
 
 This UI provides ability to add costomized tax or edit the existing tax of the Prestashop tax list.
 
+## Navigating to the Add or Edit Taxes form
+
+The form can be accessed in 2 ways:
+
+- If adding a new Tax, Add new tax CTA button must be clicked.
+- Or clicking the Edit pen icon on the right side of the Tax row in listing.
+
 ## Top elements of Add or Edit Taxes
 
 There is an information notification with the text _Note that this feature is available in all shops context only. It will be added to all your stores._ meaning that tax editing will be aligned the same with the all multistores anr shop groups.
