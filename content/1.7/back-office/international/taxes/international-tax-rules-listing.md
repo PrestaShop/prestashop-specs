@@ -62,3 +62,5 @@ Dropdown actions contain:<br>
   - 100
   - 300
   - 1000
+
+Also, there is a pagination widget, allowing to navigate to the next or previous page, or move through the pages by clicking the appropriate numeric values.
