@@ -27,32 +27,32 @@ This page stores all the available Tax titles in Prestashop application.
 
 Bulk action dropdown is disabled by default. Once some of the tax items are selected in the listing, bulk action dropdown becomes active. Dropdown actions contain:<br>
 
-- **Enable selection** - enables the certain Tax 
-- **Disable selection** - disables the certain Tax
-- **Delete selected** - deletes the certain Tax
+- **Enable selection** - enables the certain Tax.
+- **Disable selection** - disables the certain Tax.
+- **Delete selected** - deletes the certain Tax.
 
 ### Filtering
 
-- **ID** - input field, for searching and filtering specific Tax by ID
-- **Name** - input field, for searching and filtering specific Tax by name
-- **Rate** - input field, for searching and filtering specific Tax by rate
-- **Enabled** - dropdown element, for arranging the Taxes by enabled or disabled
-- **Search button** - executes the filtering action, shows the results
-- **Reset** - resets the filtering, shows all the unfiltered Taxes
+- **ID** - input field, for searching and filtering specific Tax by ID.
+- **Name** - input field, for searching and filtering specific Tax by name.
+- **Rate** - input field, for searching and filtering specific Tax by rate.
+- **Enabled** - dropdown element, for arranging the Taxes by enabled or disabled.
+- **Search button** - executes the filtering action, shows the results.
+- **Reset** - resets the filtering, shows all the unfiltered Taxes.
 
 ### Tax listing
 
-- **Number** - specific Tax ID in numeric value
-- **Name** - specific Tax ID
-- **Rate** - specific Tax rate in numeric value
-- **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax 
-- **Edit (pen icon)** - allows editing specific Tax properties, after redirecting to the Edit interface
-- **Three-dot menu** - Tax deletion
+- **Number** - specific Tax ID in numeric value.
+- **Name** - specific Tax ID.
+- **Rate** - specific Tax rate in numeric value.
+- **Enabled or Disabled switch toggle button** - switching the toggle button Enables or Disables specific Tax.
+- **Edit (pen icon)** - allows editing specific Tax properties, after redirecting to the Edit interface.
+- **Three-dot menu** - Tax deletion.
 
 ### Pagination
 
 - **Page number input** - function that displays the desired page number of the listing, after inputting the number and pressing Enter.
-- **Viewing indicator text** - text, indicating what pages the user is seeing
+- **Viewing indicator text** - text, indicating what pages the user is seeing.
 - **Items per page** - dropdown with the numeric values, how many items can be shown in listing:
   - 10
   - 20
@@ -66,7 +66,7 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Based on** - dropdown element to choose from where and what location should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
 - **Use ecotax** - toggle switch button, controlling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
 - **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory.
-- **Save** - CTA button saving the Tax configuration
+- **Save** - CTA button saving the Tax configuration.
 
 ## Multistores compatibility
 
