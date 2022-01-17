@@ -12,7 +12,6 @@ This page stores all the available Tax titles in Prestashop application.
 
 - **Taxes** - page title.
 - **Add new tax CTA button** - redirects to tax creating and editing page.
-- **Recommended Modules and Services** - redirects to recommended modules and services page.
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs: Taxes and Tax Rules** - navigation tabs for taxes and tax rules.
 
