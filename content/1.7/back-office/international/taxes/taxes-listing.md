@@ -69,6 +69,8 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 ## Multistores compatibility
 
+There is an information notification in Add or Edit Taxes UI - with the text _Note that this feature is available in all shops context only. It will be added to all your stores_ meaning that tax editing will be aligned the same with the all multistores and shop groups.
+
 Multistores are not affected separately, while managing the Tax properties in Tax listings. It means, that customizing Tax for one country will impact all the Taxes for other shop groups and multistores. 
 
 But the Tax Options table works differently - the settings can be saved separately for different multistores and shop groups.
