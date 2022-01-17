@@ -24,7 +24,7 @@ There is an information notification with the text _Note that this feature is av
 
 - **Name** - mandatory - text field for naming the specific Tax with a Language selector
 - **Range** - numeric input field, allows setting the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
-- **Enable** - toggle - allows to Enable or Disable tax.
+- **Enable** - toggle - allows to Enable or Disable tax. By default - Tax toggle is enabled.
 - **Cancel** - button cancels the Tax editing form.
 - **Save** - button saves the configured form.
 
