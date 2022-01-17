@@ -23,7 +23,6 @@ There is an information notification with the text _Note that this feature is av
 ## Tax Editing form
 
 - **Name** - mandatory - text field for naming the specific Tax with a Language selector
-- **Language dropdown** - enables to trigger the appropriate language for the Name of tax. There can different tax names set for different languages.
 - **Rate** - numeric input field, allows setting the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
 - **Enable or Disable switch toggle button** - allows to Enable or Disable tax.
 - **Cancel** - button cancels the Tax editing form.
