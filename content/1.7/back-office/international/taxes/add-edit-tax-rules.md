@@ -34,3 +34,12 @@ The form can be accessed in 2 ways:
   - **Uncheck all** - unchecks all the Multistores and Shop groups items in tree.
 - **Cancel** - button cancels the Tax editing form.
 - **Save** - button saves the configured form.
+
+## New Tax Rule table (appears after submitting the Tax Rules main form)
+
+- **Country** - dropdown, allows the selection of country for specific Tax Rule. By default it is set to All.
+- **Zip/Postal code range** - input, defines the zip or postal code for Tax Rule.
+- **Behavior** - dropdown, allows the Tax rule to have a specific behavior:
+  - **This tax only** - rule applies only one current tax.
+  - **Combine** - rule combines the current tax with another tax.
+  - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
