@@ -62,7 +62,7 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 - **Enable tax** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
 - **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default it is disabled.
-- **Based on** - dropdown element to choose from where and what location should the Taxes calculate. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
+- **Based on** - drop-down list item to choose from which address the tax should be calculated. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
 - **Use ecotax** - toggle switch button, controlling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
 - **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory.
 - **Save** - CTA button saving the Tax configuration.
