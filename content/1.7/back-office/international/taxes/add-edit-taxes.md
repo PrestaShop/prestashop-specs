@@ -16,10 +16,6 @@ The form can be accessed in 2 ways:
 - Adding a new Tax, Add new tax CTA button must be clicked.
 - Clicking on the Edit button of an item in the list
 
-## Top elements of Add or Edit Taxes
-
-There is an information notification with the text _Note that this feature is available in all shops context only. It will be added to all your stores_ meaning that tax editing will be aligned the same with the all multistores and shop groups.
-
 ## Tax Editing form
 
 - **Name** - mandatory - text field for naming the specific Tax with a Language selector
