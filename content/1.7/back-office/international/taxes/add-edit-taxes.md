@@ -23,7 +23,7 @@ There is an information notification with the text _Note that this feature is av
 ## Tax Editing form
 
 - **Name** - mandatory - text field for naming the specific Tax with a Language selector
-- **Rate** - numeric input field, allows setting the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
+- **Range** - numeric input field, allows setting the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
 - **Enable or Disable switch toggle button** - allows to Enable or Disable tax.
 - **Cancel** - button cancels the Tax editing form.
 - **Save** - button saves the configured form.
