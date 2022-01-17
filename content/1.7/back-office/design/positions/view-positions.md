@@ -23,10 +23,10 @@ The following elements of this page are:
 - **Selection UI element** - by default, UI element is hidden, and it is indicated once there are some modules selected from the listing. The UI table contains checkmark icon, title with the naming _Selection_, total amount of selected modules and CTA button _Unhook the selection_. Clicking the CTA button will unhook the selected modules from the selected hook.
 - **Checkbox in the item of module listing** - enables the Selection UI element, once it is checkboxed. Also enables the managing the bulk-actions of the modules in listing.
 - **Dragging dots indicator** - becomes available, once the mouse cursor is hovering the module listing item. The purpose of this element, is to make the module list draggable, and to manage the arrangement of the listings. While clicked and holded on the list, the element can be dragged to the other arranged position in the list.
-- **Icon of the module** - specific icon of the module, helps visualy find the module in the hook.
-- **Name of the module** - specific name of the module, helps visualy find the module in the hook.
+- **Icon of the module** - The icon of the module
+- **Name of the module** - The name of the module
 - **Version of the module** - The version of the module indicated.
-- **Description of the module** - specific paragraph of the module, helps visualy find the module in the hook.
+- **Description of the module** - description of the module.
 - **Arrangement numeric value** - specific numeric value of the module arrangement, helps visualy find the module in the hook.
 - **Editing icon** - Opens the transplant a module page with the module preselected. 
 - **Three-dot menu** - executes the dropdown element, where the unhooking action can be executed after the clicking on link _Unhook_.
