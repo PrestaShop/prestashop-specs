@@ -33,7 +33,7 @@ The form can be accessed in 2 ways:
   - **Check all** - checkmarks all the Multistores and Shop groups items in tree.
   - **Uncheck all** - unchecks all the Multistores and Shop groups items in tree.
 - **Cancel** - button cancels the Tax editing form.
-- **Save** - button saves the configured form.
+- **Save and stay** - button saves the configured form and redirects to the same page.
 
 ## New Tax Rule table (appears after submitting the Tax Rules main form)
 
@@ -45,3 +45,4 @@ The form can be accessed in 2 ways:
   - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
 - **Tax** - dropdown, allows to apply specific Tax from the list.
 - **Description** - allows to type specific description of the Tax Rule.
+- **Save and stay** - button saves the configured form and redirects to the same page.
