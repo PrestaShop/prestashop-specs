@@ -27,7 +27,7 @@ This page stores all the available Tax titles in Prestashop application.
 Bulk action dropdown is disabled by default. Once some of the tax items are selected in the listing, bulk action dropdown becomes active. Dropdown actions contain:<br>
 
 - **Enable selection** - enables the selected taxes.
-- **Disable selection** - disables the certain Tax.
+- **Disable selection** - disables the selected taxes.
 - **Delete selected** - deletes the certain Tax.
 
 ### Filtering
