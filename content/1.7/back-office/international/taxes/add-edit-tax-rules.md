@@ -39,7 +39,7 @@ The form can be accessed in 2 ways:
 
 - **Country** - dropdown, allows the selection of country for specific Tax Rule. By default it is set to All.
 - **Zip/Postal code range** - input, defines the zip or postal code for Tax Rule.
-- **Behavior** - dropdown, allows the Tax rule to have a specific behavior:
+- **Behavior** - dropdown, allows the Tax rule to have a specific behavior, when address matches multiple rules:
   - **This tax only** - rule applies only one current tax.
   - **Combine** - rule combines the current tax with another tax.
   - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
