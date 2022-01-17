@@ -13,7 +13,7 @@ This UI provides the ability to add customized tax or edit the existing tax of t
 
 The form can be accessed in 2 ways:
 
-- If adding a new Tax, Add new tax CTA button must be clicked.
+- Adding a new Tax, Add new tax CTA button must be clicked.
 - Or clicking the Edit pen icon on the right side of the Tax row in listing.
 
 ## Top elements of Add or Edit Taxes
