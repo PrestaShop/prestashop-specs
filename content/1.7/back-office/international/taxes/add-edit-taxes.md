@@ -19,14 +19,14 @@ The form can be accessed in 2 ways:
 ## Tax Editing form
 
 - **Name** - mandatory - text field for naming the specific Tax with a Language selector
-- **Range** - numeric input field, allows setting the Range of the tax. Range must be typed as a single numbers or single numbers with decimals.
+- **Rate** - numeric input field, allows setting the Rate of the tax. Range must be typed as a single numbers or single numbers with decimals.
 - **Enable** - toggle - allows to Enable or Disable tax. By default - Tax toggle is enabled.
 - **Cancel** - button cancels the Tax editing form.
 - **Save** - button saves the configured form.
 
 ## Notifications after submissions
 
-If there is an empty Range field after submission, there will be a browser error notification, requesting to fill the empty field.
+If there is an empty Rate field after submission, there will be a browser error notification, requesting to fill the empty field.
 
 If there are some invalid characters typed in the name after submission, there will be an error below the Name field - _"{invalid character}" is invalid - Language: {the language of the name}_.
 
