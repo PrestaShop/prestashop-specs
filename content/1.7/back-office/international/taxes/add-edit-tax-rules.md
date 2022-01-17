@@ -12,7 +12,7 @@ This page UI allows to edit existing or add a brand new Tax Rule to the Prestash
 ## Top elements
 
 - **Add New or Edit:{edited Tax Rule name}** - page title.
-- **Add new tax rule CTA button** - expands the Tax rule creating and editing section below.
+- **Add new tax rule CTA button** - toggles the expanding or subtracting the Tax rule creating and editing section below.
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs: Taxes and Tax Rules** - navigation tabs for taxes and tax rules.
 
