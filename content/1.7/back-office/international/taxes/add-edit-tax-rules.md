@@ -43,3 +43,5 @@ The form can be accessed in 2 ways:
   - **This tax only** - rule applies only one current tax.
   - **Combine** - rule combines the current tax with another tax.
   - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
+- **Tax** - dropdown, allows to apply specific Tax from the list.
+- **Description** - allows to type specific description of the Tax Rule.
