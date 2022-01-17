@@ -28,7 +28,7 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 - **Enable selection** - enables the selected taxes.
 - **Disable selection** - disables the selected taxes.
-- **Delete selected** - deletes the certain Tax.
+- **Delete selected** - deletes the selected taxes.
 
 ### Filtering
 
