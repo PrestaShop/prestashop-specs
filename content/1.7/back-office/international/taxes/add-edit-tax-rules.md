@@ -15,3 +15,15 @@ The form can be accessed in 2 ways:
 
 - Adding a new Tax Rule, Add new Tax Rule ir Add new Tax Rules group CTA button must be clicked.
 - Clicking on the Edit button of a Tax Rules item in the list.
+
+## Tax Rules Editing form
+
+- **Name** - mandatory - text field for naming the specific Tax Rule.
+- **Enable** - toggle - allows to Enable or Disable tax rule. By default - Tax rule toggle is disabled.
+- **Shop association** - a widget, that allows to select the desired Multistores or Shop Groups, where Tax Rules could be applied. The widget contains 4 CTA buttons:
+  - **Collapse all** - subtracts the Multistores and Shop groups tree.
+  - **Expand all** - expands the Multistores and Shop groups tree.
+  - **Check all** - checkmarks all the Multistores and Shop groups items in tree.
+  - **Uncheck all** - unchecks all the Multistores and Shop groups items in tree.
+- **Cancel** - button cancels the Tax editing form.
+- **Save** - button saves the configured form.
