@@ -39,7 +39,7 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
   - Language code. 
   - Tax Rule name. 
   - Numeric rate of the Tax.
-- **Enabled or Disabled checkmark** - clicking the checkmark Enables the Tax Rule, or clicking the red cross - Disables specific Tax Rule.
+- **Enabled or Disabled checkmark** - clicking the checkmark Enables the Tax Rule, or clicking the red cross - Disables a specific Tax Rule.
 - **Edit button** - allows editing specific Tax Rule properties, after redirecting to the Edit interface.
 - **Edit button dropdown arrow** - deletes the Tax Rule.
 
