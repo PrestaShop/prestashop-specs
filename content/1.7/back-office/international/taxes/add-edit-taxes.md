@@ -33,7 +33,7 @@ There is an information notification with the text _Note that this feature is av
 
 If there is an empty Range field after submission, there will be a browser error notification, requesting to fill the empty field.
 
-If there are some invalid characters typed in name after submission, there will be an error below the Name field - _"{invalid character}" is invalid - Language: {the language of the name}_.
+If there are some invalid characters typed in the name after submission, there will be an error below the Name field - _"{invalid character}" is invalid - Language: {the language of the name}_.
 
 If the Name field is left empty after submission, there will be an error below the Name field - _The field name is required at least in your default language._
 
