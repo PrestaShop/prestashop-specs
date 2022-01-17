@@ -9,6 +9,13 @@ weight: 1
 
 This page UI allows to edit existing or add a brand new Tax Rule to the Prestashop Tax system.
 
+## Top elements
+
+- **Add New or Edit:{edited Tax Rule name}** - page title.
+- **Add new tax rule CTA button** - redirects to tax rule creating and editing page.
+- **Help** - a side-bar with the helpful information, how to navigate in this page.
+- **Tabs: Taxes and Tax Rules** - navigation tabs for taxes and tax rules.
+
 ## Navigating to the Add or Edit Tax Rules form
 
 The form can be accessed in 2 ways:
