@@ -32,7 +32,6 @@ Under the helptext there are 5 fields that can be pressed, and when pressed on a
      - **Address** - in this section it's possible to press the "+" sign to add to the format the following inputs: company, lastname, firstname, address1, address2, postcode, city, other, phone, phone_mobile, vat_number, dni, htmlFields.
      
  Below there are 4 buttons with different actions:
- 
      - **Use the last registered format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
 When pressed "ok" will input the address format box with the last registered formats.
      - **Use the default format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
