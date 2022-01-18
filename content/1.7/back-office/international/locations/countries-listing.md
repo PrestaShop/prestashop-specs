@@ -17,7 +17,7 @@ When clicking on the settings wheel, the following options are displayed:
 
 1. Add new
 
-When pressed redirects to the [specs of the add/edit new country]({{<ref "add-edit-new-country.md">}} "Add/edit new country") 
+When pressed redirects to the [specs of the add new country]({{<ref "add-new-country.md">}} "Add new country") 
 
 2. Refresh list
 
