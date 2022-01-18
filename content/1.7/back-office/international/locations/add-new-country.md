@@ -34,7 +34,7 @@ Under the helptext there are 5 fields that can be pressed, and when pressed on a
  Below there are 4 buttons with different actions:
  
  
-   - **Use the last registered format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
+     - **Use the last registered format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
 When pressed "ok" will input the address format box with the last registered formats.
      - **Use the default format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
 When pressed "ok" will input the address format box with the default address formats.
