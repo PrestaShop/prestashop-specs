@@ -50,7 +50,7 @@ When pressed "ok" will remove all the formats.
 ## Call to action
 
 - **Save:**
-In the case of adding new country and if there is no error, the country is added and a success message is displayed on [the quick access listing]({{<ref "quick-access-listing.md">}} "quick access listing") : "Creation successful". In the case of editing quick access, the quick access is edited and a success message is displayed on [the quick access listing]({{<ref "quick-access-listing.md">}} "quick access listing") : "Successful update".
+In the case of adding new country and if there is no error, the country is added and a success message is displayed on [countries listing]({{<ref "countries-listing.md">}} "countries listing") : "Creation successful". In the case of editing a country, the country is edited and a success message is displayed on [country listing]({{<ref "country-listing.md">}} "country listing") : "Successful update".
 - **Cancel:**
-The country is not added/edited and [the quick access listing]({{<ref "quick-access-listing.md">}} "quick access listing") is displayed.
+The country is not added/edited and [country listing]({{<ref "country-listing.md">}} "country listing") is displayed.
 
