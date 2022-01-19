@@ -20,15 +20,15 @@ During the first Prestashop installation process on the server, Prestashop insta
 ## Image Settings table properties
 
 - **Checkboxes** - each image setting can be checkboxed separately, if there is a need of Bulk Actions executions with certain image setting. By default, there is nothing selected.
-- **ID** - specific digital value to describe the image setting unique operator. By default they are arranged automatically.
+- **ID** - value to describe the image setting unique operator. By default they are arranged automatically.
 - **Name** - specific image setting value names. By default they are installed automatically.
-- **Width** - specific image setting value, describing the width of the image in pixels.
-- **Height** - specific image setting value, describing the height of the image in pixels.
-- **Products** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
-- **Categories** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
-- **Brands** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
-- **Suppliers** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
-- **Stores** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Width** - describing the width of the image in pixels.
+- **Height** - describing the height of the image in pixels.
+- **Products** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Categories** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Brands** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Suppliers** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
+- **Stores** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 
 ## Image Settings table Filtering and UI elements
 
@@ -69,7 +69,7 @@ When there are multiple Image settings created, you can manage them and configur
 
 **JPEG Compression**
 
-This feature allows to change the JPEG files quality by compressing the images' quality. There is availability from 0 - which is the worst quality to the 100 - which is the best quality of the images. The recommended compression rate is 90. By default, the value is set to 90.
+This feature allows to change the JPEG files quality by compressing the images' quality. There is availability from 0 % - which is the worst quality to the 100 % - which is the best quality of the images. The recommended compression rate is 90 %. By default, the value is set to 90 %.
 
 **PNG Compression**
 
