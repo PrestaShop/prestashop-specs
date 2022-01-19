@@ -60,7 +60,13 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 
 ## Tax options table
 
-- **Enable tax** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default it is enabled.
+- **Enable tax** - toggle switch button, enabling or disabling Tax showing and calculations on the market in Prestashop items. By default the toggle is enabled. The tax calculations are not showed in Category page view, but the Taxes are displayed in:
+  - Product page.
+  - Quick View pop-up.
+  - Add-to-cart pop-up.
+  - All checkout steps in the top-right products summary panel.
+  - Order confirmation page in Order details.
+
 - **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default it is disabled.
 - **Based on** - drop-down list item to choose from which address the tax should be calculated. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
 - **Use ecotax** - toggle switch button, controlling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
