@@ -16,7 +16,7 @@ The second user interface will lead to Catalog Price rules creation page.
 
 ## Price Rules input fields and meanings
 
- **Name** - this input field is marked as required, meaning that this feald is mandatory. The name can be set for the first Price rule.<br>
+ **Name** - text input - mandatory - the name of the Catalog price rule
  **Shop** - this field is hidden unless there is Multistore functionality enabled on Prestashop.<br>
  **Currency** - it is a dropdown selection, for choosing what countries should be involved into pricing rules. For example, it can be set that only USA customers could see the price rules for Prestahop catalogs, then it should be selected as the USD currency here. By default, the Currency dropdown will be set for "All currencies". If the default option is set, Prestashop will execute reductions orientated by the Default Prestashop currency that is set in configuration settings. <br>
  **Country** - specific country can be set for the Catalog price rules. For example, it can be set that only German customers could see the certain price rules, Germany should be set in the dropdown. By default, the Country dropdown will be set for "All countries".<br>
