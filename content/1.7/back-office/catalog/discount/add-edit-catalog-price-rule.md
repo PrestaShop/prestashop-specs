@@ -30,7 +30,7 @@ The second user interface will lead to Catalog Price rules creation page.
 - **Reduction with or without taxes** - it can be chosen, if the prices should be discounted from the prices with taxes of without taxes. So as a result, it may be different deductions from the catalog prices. By default, the field is set to "Tax excluded".<br>
 - **Reduction** - it is an Amount or Percentage type of input here. It can be set as certain digits here for the catalog prices to be shown. By default, the input digital value is zero.
 
-It can be canceller by clicking **Cancel** your form and discard your changes, by clicking CANCEL button on the left, or you may just **Save** the new catalog price rule by clicking the SAVE button on the right.
+It can be cancelled by clicking **Cancel** your form and discard your changes, by clicking CANCEL button on the left, or you may just **Save** the new catalog price rule by clicking the SAVE button on the right.
 
 ### Adding several rules
 
