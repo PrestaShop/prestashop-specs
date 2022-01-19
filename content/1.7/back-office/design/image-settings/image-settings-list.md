@@ -23,7 +23,7 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **ID** - specific digital value to describe the image setting unique operator. By default they are arranged automatically.
 - **Name** - specific image setting value names. By default they are installed automatically.
 - **Width** - specific image setting value, describing the width of the image in pixels.
-- **Height** - specific image setting value, describing the height of the image in pixels. By default the specific height is installed.
+- **Height** - specific image setting value, describing the height of the image in pixels.
 - **Products** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 - **Categories** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 - **Brands** - specific image setting value, indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
