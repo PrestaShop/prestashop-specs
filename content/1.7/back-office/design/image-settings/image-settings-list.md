@@ -8,6 +8,8 @@ weight: 1
 
 ![Image Settings listing](static/img/image-settings-image-settings.png)
 
+During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties, that some are enabled and some are disabled.
+
 |**Name**|**Width**|**Height**|**Products**|**Categories**|**Brands**|**Suppliers**|**Stores**|
 |:------:|:-------:|:--------:|:----------:|:------------:|:--------:|:-----------:|:--------:|
 |cart_default|125px|125px|:white_check_mark:|:x:|:x:|:x:|:x:|
@@ -17,15 +19,6 @@ weight: 1
 |large_default|800px|800px|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|
 |category_default|141px|180px|:x:|:white_check_mark:|:x:|:x:|:x:|
 |stores_default|170px|115px|:x:|:x:|:x:|:x:|:white_check_mark:|
-
-During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties, that some are enabled and some are disabled.
-- **cart_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
-- **small_default** - Products is set to enabled, Categories is set to enabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
-- **medium_default** - Products is set to enabled, Categories is set to disabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
-- **home_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
-- **large_default** - Products is set to enabled, Categories is set to disabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
-- **category_default** - Products is set to disabled, Categories is set to enabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
-- **stores_default** - Products is set to disabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to enabled.
 
 ## Image Settings table properties
 
