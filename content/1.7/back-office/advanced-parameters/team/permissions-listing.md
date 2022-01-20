@@ -37,13 +37,10 @@ There are similar administration profiles, defined with Menu and Module permissi
 
 Has nothing to modify, because it is the top-layered profile in Prestashop. The notificatioin _Administrator permissions cannot be modified._ is displayed.
 
-#### Logistician profile permissions
+#### Logistician profile Menu permissions
 
-The permissions are listed as Enabled by default:
+These permissions are listed as Enabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|**All**|
 |--------------|:------:|:-----:|:------:|:--------:|:-----:|
-|Sell|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|Orders (parent and child menu links)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|Invoices|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|
+|Sell, Orders, Invoices, Credit Slips, Delivery Slips, Catalog, Products, Categories, Monitoring, Brands & Suppliers, Suppliers, Customers, Addresses, Customer Service, Merchandise Returns, Improve, Shipping, Carriers, Preferences, |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
