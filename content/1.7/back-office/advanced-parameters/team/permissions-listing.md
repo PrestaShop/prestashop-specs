@@ -33,3 +33,6 @@ The UI is constructed with 2 panels - while navigating the left panel, the conte
 Has nothing to modify, because it is the top-layered profile in Prestashop. The notificatioin _Administrator permissions cannot be modified._ is displayed in the right panel.
 
 #### Logistician profile
+
+|**View**|**Add**|**Edit**|**Delete**|**All**|**Brands**|**Suppliers**|**Stores**|
+|:------:|:-------:|:--------:|:----------:|
