@@ -22,17 +22,28 @@ This UI allows to modify the permissions of the Prestashop application.
 The UI is constructed with 2 panels - while navigating the left panel, the content of the menu is displayed in the right panel.
 
 ### Left panel
-- **SuperAdmin** - the main administration profile, created during the first installation of the Prestashop app. By default, this profile is highlighted. There are similar administration profiles, defined with Menu and Module permissions. Those are default created:<br>
+
+This UI shows the Permission names.
+
+- **SuperAdmin** - the main administration profile, created during the first installation of the Prestashop app. By default, this profile is highlighted. 
+
+There are similar administration profiles, defined with Menu and Module permissions. Those are default created:<br>
   - **Logistician** 
   - **Translator**
 
 ### Right panel
 
-#### SuperAdmin profile
+#### SuperAdmin profile permissions
 
-Has nothing to modify, because it is the top-layered profile in Prestashop. The notificatioin _Administrator permissions cannot be modified._ is displayed in the right panel.
+Has nothing to modify, because it is the top-layered profile in Prestashop. The notificatioin _Administrator permissions cannot be modified._ is displayed.
 
-#### Logistician profile
+#### Logistician profile permissions
 
-|**View**|**Add**|**Edit**|**Delete**|**All**|**Brands**|**Suppliers**|**Stores**|
-|:------:|:-------:|:--------:|:----------:|
+The permissions are listed as Enabled by default:
+
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|**All**|
+|--------------|:------:|:-----:|:------:|:--------:|:-----:|
+|Sell|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|Orders (parent and child menu links)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|Invoices|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|
