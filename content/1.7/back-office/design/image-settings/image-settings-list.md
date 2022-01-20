@@ -12,6 +12,11 @@ weight: 1
 |:------:|:-------:|:--------:|:----------:|:------------:|:--------:|:-----------:|:--------:|
 |cart_default|125px|125px|:white_check_mark:|:x:|:x:|:x:|:x:|
 |small_default|98px|98px|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|
+|medium_default|452px|452px|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|
+|home_default|250px|250px|:white_check_mark:|:x:|:x:|:x:|:x:|
+|large_default|800px|800px|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|
+|category_default|141px|180px|:x:|:white_check_mark:|:x:|:x:|:x:|
+|stores_default|170px|115px|:x:|:x:|:x:|:x:|:white_check_mark:|
 
 During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties, that some are enabled and some are disabled.
 - **cart_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
