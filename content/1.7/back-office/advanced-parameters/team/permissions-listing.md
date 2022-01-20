@@ -20,6 +20,6 @@ This UI allows to modify the permissions of the Prestashop application.
 ## Main elements
 
 ### Left panel
-- **SuperAdmin** - the main administration profile, created during the first installation of the Prestashop app. By default, this profile is highlighted. There are administration profiles, defined with Menu and Module permissioins:<br>
+- **SuperAdmin** - the main administration profile, created during the first installation of the Prestashop app. By default, this profile is highlighted. There are administration profiles, defined with Menu and Module permissions:<br>
   - **Logistician** 
   - **Translator**
