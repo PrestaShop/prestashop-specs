@@ -54,3 +54,17 @@ These permissions are listed as Disabled by default:
 #### Logistician profile Module permissions
 
 There are **View**, **Configure** and **Uninstall** Permissions in the Module panel, and all the permissions are Disabled by default.
+
+#### Translator profile Menu permissions
+
+These permissions are listed as Enabled by default:
+
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
+|Sell, Catalog, Products, Categories, Improve, International, Localization, Localization, Translations, Configure, Shop Parameters, Search, Search.|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+
+These permissions are listed as Disabled by default:
+
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
+|Dashboard, Shopping Carts, Attributes & Features, Attributes, Features, Brands, Files, Discounts, Cart rules, Catalog Price Rules, Stock, Customers, Outstanding,  Customer Service, Order Messages, Stats, Prestashop Metrics, Stats, Modules, Module Manager, Modules, Alerts, Updates, Module Catalog, Module Catalog, Module Catalog, Module Selections, Module Selections, Wishlist Module, Configuration, Statistics, Design, Theme & Logo, Theme & Logo, Pages Configuration, Advanced Customization, Theme Catalog, Theme Catalog, Email Theme, Email Theme, Pages, Positions, Image Settings, Link List, Payment, Payment Methods, Preferences, International, Localization, Localization, Languages, Currencies, Geolocation, Locations, Zones, Countries, States, Taxes, Tax Rules, Translations, Marketing, Facebook, Configure, Shop Parameters, General, General, Maintenance, Order Settings, Statuses, Product Settings, Customer Settings, Groups, Titles, Contact, Contacts, Stores, Traffic & SEO, SEO & URLs, Search Engines, Referrers, Search, Search, Tags, Merchant Expertise, Advanced Parameters, Information, Performance, Administration, E-mail, Import, Team, Employees, Profiles, Permissions, Database, SQL Manager, DB Backup, Logs, Webservice, Multistore, Multistore, Experimental Features, More, Welcome, AdminBlockListing, PrestaShop Account (ajax), PrestaShop Account (debug).|:x:|:x:|:x:|:x:|:x:|
