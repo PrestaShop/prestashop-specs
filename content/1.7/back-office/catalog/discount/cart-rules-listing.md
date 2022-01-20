@@ -50,4 +50,4 @@ And if multiple selections were executed, the default message would be:<br>
 "The selection has been successfully deleted. "
 
 ## Multistore 
-All these settings and input fields can be separately managed by Multistore functionality in Prestashop. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
+All these settings and input fields can be separately managed by Multistore functionality in Prestashop. But the Cart Rules listing is not aligned with separate multistores - listing is not affected by switching different multistores. [Learn more.](https://github.com/PrestaShop/prestashop-specs/blob/master/content/1.7/back-office/shop-parameters/general/maintenance.md#multistore-behavior)
