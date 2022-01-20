@@ -8,6 +8,10 @@ weight: 1
 
 ![Image Settings listing](static/img/image-settings-image-settings.png)
 
+|**Name**|**Width**|**Height**|**Products**|**Categories**|**Brands**|**Suppliers**|**Stores**|
+|--------|---------|----------|------------|--------------|----------|-------------|----------|
+|cart_default|125px|125px|:white_check_mark:|:x:
+
 During the first Prestashop installation process on the server, Prestashop installs 7 default image settings with the following default properties.
 - **cart_default** - Products is set to enabled, Categories is set to disabled, Brand is set to disabled, Suppliers is set to disabled, Stores is set to disabled.
 - **small_default** - Products is set to enabled, Categories is set to enabled, Brand is set to enabled, Suppliers is set to enabled, Stores is set to disabled.
@@ -30,7 +34,7 @@ During the first Prestashop installation process on the server, Prestashop insta
 - **Suppliers** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 - **Stores** - indicating the enabled checkbox or the disabled cross operator, which can be clickable. Clicking these operators can toggle the enabling and disabling functionality directly from listing page.
 
-## Image Settings table Filtering and UI elements
+## Image Settings table Filtering and UI action elements
 
 - **ID text field** - it can be set as numeric value, before filtering execution.
 - **Name field** - it can be set as text value, before filtering execution.
