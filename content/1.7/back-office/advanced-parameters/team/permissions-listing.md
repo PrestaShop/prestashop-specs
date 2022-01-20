@@ -41,12 +41,12 @@ Has nothing to modify, because it is the top-layered profile in Prestashop. The 
 
 These permissions are listed as Enabled by default:
 
-|**Permission**|**View**|**Add**|**Edit**|**Delete**|**All**|
-|--------------|:------:|:-----:|:------:|:--------:|:-----:|
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
 |Sell, Orders, Invoices, Credit Slips, Delivery Slips, Catalog, Products, Categories, Monitoring, Brands & Suppliers, Suppliers, Customers, Addresses, Customer Service, Merchandise Returns, Improve, Shipping, Carriers, Preferences.|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
 These permissions are listed as Disabled by default:
 
-|**Permission**|**View**|**Add**|**Edit**|**Delete**|**All**|
-|--------------|:------:|:-----:|:------:|:--------:|:-----:|
-|Dashboard, Shopping Carts, Attributes & Features, Attributes, Features, Brands, Files, Discounts, Cart rules, Catalog Price Rules, Stock, Customers, Outstanding,  Customer Service, Order Messages, Stats, Prestashop Metrics, Stats, Modules, Module Manager, Modules, Alerts, Updates, Module Catalog, Module Catalog, Module Catalog, Module Selections, Module Selections, Wishlist Module, Configuration, Statistics, Design, Theme & Logo, Theme & Logo, Pages Configuration, Advanced Customization, Theme Catalog, Theme Catalog, Email Theme, Email Theme, Pages, Positions, Image Settings, Link List, Payment, Payment Methods, Preferences, International, Localization, Localization, Languages, Currencies, Geolocation, Locations, Zones, Countries, States, Taxes, Tax Rules, Translations, Marketing, Facebook, 
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
+|Dashboard, Shopping Carts, Attributes & Features, Attributes, Features, Brands, Files, Discounts, Cart rules, Catalog Price Rules, Stock, Customers, Outstanding,  Customer Service, Order Messages, Stats, Prestashop Metrics, Stats, Modules, Module Manager, Modules, Alerts, Updates, Module Catalog, Module Catalog, Module Catalog, Module Selections, Module Selections, Wishlist Module, Configuration, Statistics, Design, Theme & Logo, Theme & Logo, Pages Configuration, Advanced Customization, Theme Catalog, Theme Catalog, Email Theme, Email Theme, Pages, Positions, Image Settings, Link List, Payment, Payment Methods, Preferences, International, Localization, Localization, Languages, Currencies, Geolocation, Locations, Zones, Countries, States, Taxes, Tax Rules, Translations, Marketing, Facebook, Configure, Shop Parameters, General, General, Maintenance, Order Settings, Statuses, Product Settings, Customer Settings, Groups, Titles, Contact, Contacts, Stores, Traffic & SEO, SEO & URLs, Search Engines, Referrers, Search, Search, Tags, Merchant Expertise, Advanced Parameters, Information, Performance
