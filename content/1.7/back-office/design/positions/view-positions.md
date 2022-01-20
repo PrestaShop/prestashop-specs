@@ -21,7 +21,7 @@ The following elements of this page are:
 - **Description of the hook** - some of the positioning hooks can have descriptions, and those will be displayed right above the **Enable or Disable toggle switch button and hook name**.
 - **Checkbox with the quantity of modules** - this checkbox is bulk-action style functionality that selects or unselects all the modules in the list.
 - **Selection UI element** - by default, UI element is hidden, and it is indicated once there are some modules selected from the listing. The UI table contains checkmark icon, title with the naming _Selection_, total amount of selected modules and CTA button _Unhook the selection_. Clicking the CTA button will unhook the selected modules from the selected hook.
-- **Checkbox in the item of module listing** - enables the Selection UI element, once it is checkboxed. Also enables the managing the bulk-actions of the modules in listing.
+- **Checkbox in the item of module listing** - enables the Selection UI element, once it is checkboxed. Also enables the managing to unhook the selected module.
 - **Dragging dots indicator** - becomes available, once the mouse cursor is hovering the module listing item. The purpose of this element, is to make the module list draggable, and to manage the arrangement of the listings. While clicked and holded on the list, the element can be dragged to the other arranged position in the list.
 - **Icon of the module** - The icon of the module
 - **Name of the module** - The name of the module
