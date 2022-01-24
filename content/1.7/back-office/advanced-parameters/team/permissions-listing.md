@@ -91,3 +91,7 @@ These permissions are listed as all Disabled by default:
 ### Salesman profile Module permissions
 
 There are **View**, **Configure** and **Uninstall** Permissions in the Module panel, and all the permissions are Disabled by default.
+
+## Multistores functionality
+
+Multistores are not impacted in the permission UI. Multistores top-right widget is available only in All Shops context. 
