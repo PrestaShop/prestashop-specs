@@ -17,11 +17,11 @@ This UI allows to modify the permissions of the Prestashop application. Permissi
   - Profiles.
   - Permissions.
 
-## Main elements
+## Main UI elements
 
 The UI is constructed with 2 panels - while navigating the left panel, the content of the menu is displayed in the right panel.
 
-### Left panel
+## Left panel
 
 This UI shows the Permission names.
 
@@ -31,7 +31,7 @@ There are similar administration profiles, defined with Menu and Module permissi
   - **Logistician** 
   - **Translator**
 
-### Right panel
+## Right panel
 
 ### SuperAdmin profile permissions
 
