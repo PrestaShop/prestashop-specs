@@ -39,13 +39,13 @@ Has nothing to modify, because it is the top-layered profile in Prestashop. The 
 
 #### Logistician profile Menu permissions
 
-These permissions are listed as Enabled by default:
+These permissions are listed as all Enabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|
 |--------------|:------:|:-----:|:------:|:--------:|
 |Sell, Orders, Invoices, Credit Slips, Delivery Slips, Catalog, Products, Categories, Monitoring, Brands & Suppliers, Suppliers, Customers, Addresses, Customer Service, Merchandise Returns, Improve, Shipping, Carriers, Preferences.|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
-These permissions are listed as Disabled by default:
+These permissions are listed as all Disabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|
 |--------------|:------:|:-----:|:------:|:--------:|
@@ -57,13 +57,13 @@ There are **View**, **Configure** and **Uninstall** Permissions in the Module pa
 
 #### Translator profile Menu permissions
 
-These permissions are listed as Enabled by default:
+These permissions are listed as all Enabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|
 |--------------|:------:|:-----:|:------:|:--------:|
 |Sell, Catalog, Products, Categories, Improve, International, Localization, Localization, Translations, Configure, Shop Parameters, Search, Search.|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
-These permissions are listed as Disabled by default:
+These permissions are listed as all Disabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|
 |--------------|:------:|:-----:|:------:|:--------:|
@@ -75,9 +75,15 @@ There are **View**, **Configure** and **Uninstall** Permissions in the Module pa
 
 #### Salesman profile Menu permissions
 
-These permissions are listed as Enabled by default:
+These permissions are listed as Enabled and Disabled by default:
 
 |**Permission**|**View**|**Add**|**Edit**|**Delete**|
 |--------------|:------:|:-----:|:------:|:--------:|
 |Sell, Orders, Orders, Invoices, Credit Slips, Shopping Carts, Catalog, Products, Categories, Brands & Suppliers, Customers, Addresses, Customer Service, Order Messages, Configure, Shop Parameters, Traffic & SEO, Referrers, Advanced Parameters, Webservice. |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |Brands, Search, Search|:white_check_mark:|:x:|:x:|:x:|:x:|
+
+These permissions are listed as all Disabled by default:
+
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
+|Dashboard, Delivery Slips, Monitoring, Attributes & Features, Attributes, Features, Suppliers, Files, Discounts, Cart Rules, Catalog Price Rules, Stock, Customers, Outstanding, Customer Service, Merchandise Returns, Stats, PrestaShop Metrics, Stats, Improve, Modules, Module Manager, Modules, Alerts, Updates, Module Catalog, Module Catalog, Module Catalog, Module Selections, Module Selections, Wishlist Module, Configuration, Statistics, Design, Theme & Logo, Theme & Logo, Pages Configuration, Advanced Customization, Theme Catalog, Theme Catalog, Email Theme, Email Theme, Pages, Positions, Image Settings, Link List, Shipping, Carriers, Preferences, Payment, Payment Methods, Preferences, International, Localization, Localization, Languages, Currencies, Geolocation, Locations, Zones, Countries, States, Taxes, Taxes, Tax Rules, Translations, Marketing, Facebook|:x:|:x:|:x:|:x:|:x:|
