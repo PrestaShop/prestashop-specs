@@ -4,7 +4,7 @@ weight: 1
 ---
 # ADVANCED PARAMETERS > Team > Employees > Permissions
 
-This UI allows to modify the permissions of the Prestashop application.
+This UI allows to modify the permissions of the Prestashop application. Permissions lets or firbids the access to the certain elements of the application. The permissions can be ticked or unticked on the certain checkboxes, system saves the Premission status instantly after the ticking.
 
 ![Permissions](static/img/team-permissions.png)
 
