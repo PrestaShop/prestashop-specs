@@ -72,3 +72,12 @@ These permissions are listed as Disabled by default:
 #### Translator profile Module permissions
 
 There are **View**, **Configure** and **Uninstall** Permissions in the Module panel, and all the permissions are Disabled by default.
+
+#### Salesman profile Menu permissions
+
+These permissions are listed as Enabled by default:
+
+|**Permission**|**View**|**Add**|**Edit**|**Delete**|
+|--------------|:------:|:-----:|:------:|:--------:|
+|Sell, Orders, Orders, Invoices, Credit Slips, Shopping Carts, Catalog, Products, Categories, Brands & Suppliers, Customers, Addresses, Customer Service, Order Messages, Configure, Shop Parameters, Traffic & SEO, Referrers, Advanced Parameters, Webservice. |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|Brands, Search, Search|:white_check_mark:|:x:|:x:|:x:|:x:|
