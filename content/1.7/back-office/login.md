@@ -11,6 +11,7 @@ This page allows any authorized user to connect to the PrestaShop back-office.
 ## Top UI Section
 
 - The top section represents the Prestashop main title name and the Prestashop version, that the administrator is accessing.
+- Prestashop version - 1.7.8.0.
 
 ## Middle UI Section
 
