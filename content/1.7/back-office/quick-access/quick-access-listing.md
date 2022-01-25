@@ -7,6 +7,7 @@ weight: 1
 
 The quick access drop-down, displayed at the top left of every page of the PrestaShop back office lists all the pages added as quick access. 
 It's possible to add the current back office page to the quick access by clicking on "Add current page to QuickAccess". It's also possible to see the list of all the quick access by clicking on "Manage quick accesses".
+It's possible to remove the current back office page from the quick access list by clicking on "Remove from Quick Access"
 
 ## Call to action
 
