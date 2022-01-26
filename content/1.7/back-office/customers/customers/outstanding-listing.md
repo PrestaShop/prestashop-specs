@@ -30,6 +30,7 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 - **Outstanding allowance** - input for arranging appropriate entries for customers with the Outstanding amount.
 - **Current outstanding, Invoice, Actions** - has no filtering function, only titles are displayed.
 - **Search CTA button** - once there are no entries from none of the filtering fields, the Search CTA button is disabled, once there are at least one filtering value managed, the button becomes enabled.
+- Reset (X) - after submission of the Filtering, there are the results shown in the table, together with the Reset and X icon. It resets the Filtering form.
 
 ### Table row elements
 
