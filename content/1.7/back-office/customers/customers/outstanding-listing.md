@@ -13,3 +13,17 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 
 - **Outstanding** - page title.
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
+
+## Main UI elements
+
+## Top table elements
+
+- **Outstanding** - table title with the total sum of outstanding entries.
+
+## Filtering
+
+- **Search ID** - input for searching certain entry with ID.
+- **Date widget** - allows to filter the entries for certaind time range.
+- **Customer** - ability to search and filter the customers.
+- **Company** - ability to search and filter the company.
+- **Risk** - dropdown element, allowing to arrange the risk priority values, and show only risk-prioritized Outstanding entries.
