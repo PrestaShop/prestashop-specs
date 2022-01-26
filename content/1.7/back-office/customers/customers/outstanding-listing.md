@@ -30,3 +30,17 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 - **Outstanding allowance** - input for arranging appropriate entries for customers with the Outstanding amount.
 - **Current outstanding, Invoice, Actions** - has no filtering function, only titles are displayed.
 - **Search CTA button** - once there are no entries from none of the filtering fields, the Search CTA button is disabled, once there are at least one filtering value managed, the button becomes enabled.
+
+### Table row elements
+
+- **ID** - numeric ID value.
+- **Date** - YYYY-MM-DD HH-MinMin-SecSec format.
+- **Company** - customer with the company value.
+- **Risk label** - the text with colorized outlined label, defining the Risk level of the entry.
+- **Outstanding amount** - the value with the numeric amount and currency prefix.
+- **Current outstanding amount** - the value with the numeric amount and currency prefix.
+- **Invoice sheet icon** - clicking initiates the download of the PDF invoice file.
+- **View lasso icon** - clicking initiates redirection to the Order in Back-Office, that customer has made.
+
+### Bottom UI elements
+
