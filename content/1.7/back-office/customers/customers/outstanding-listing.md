@@ -52,3 +52,7 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
   - 20
   - 50
   - 100
+
+## Multistores
+
+Multistores configuration is affected separately, while using different multistores. The Outstanding adjustments, that are made on 1st Multistore, will not affect the 2nd Multistore. Each Oustanding entries are stored in different Multistores databases.
