@@ -16,11 +16,11 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 
 ## Main UI elements
 
-## Top table elements
+### Top table elements
 
 - **Outstanding** - table title with the total sum of outstanding entries.
 
-## Filtering
+### Filtering
 
 - **Search ID** - input for searching certain entry with ID.
 - **Date widget** - allows to filter the entries for certaind time range.
@@ -29,3 +29,4 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 - **Risk** - dropdown element, allowing to arrange the risk priority values, and show only risk-prioritized Outstanding entries.
 - **Outstanding allowance** - input for arranging appropriate entries for customers with the Outstanding amount.
 - **Current outstanding, Invoice, Actions** - has no filtering function, only titles are displayed.
+- **Search CTA button** - once there are no entries from none of the filtering fields, the Search CTA button is disabled, once there are at least one filtering value managed, the button becomes enabled.
