@@ -27,3 +27,5 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 - **Customer** - ability to search and filter the customers.
 - **Company** - ability to search and filter the company.
 - **Risk** - dropdown element, allowing to arrange the risk priority values, and show only risk-prioritized Outstanding entries.
+- **Outstanding allowance** - input for arranging appropriate entries for customers with the Outstanding amount.
+- **Current outstanding, Invoice, Actions** - has no filtering function, only titles are displayed.
