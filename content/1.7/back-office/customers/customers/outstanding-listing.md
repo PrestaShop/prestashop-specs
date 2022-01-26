@@ -42,5 +42,12 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 - **Invoice sheet icon** - clicking initiates the download of the PDF invoice file.
 - **View lasso icon** - clicking initiates redirection to the Order in Back-Office, that customer has made.
 
-### Bottom UI elements
+### Pagination
 
+- **Page number input** - function that displays the desired page number of the listing, after inputting the number and pressing Enter.
+- **Viewing indicator text** - text, indicating what pages the user is seeing.
+- **Items per page** - dropdown with the numeric values, how many items can be shown in listing:
+  - 10
+  - 20
+  - 50
+  - 100
