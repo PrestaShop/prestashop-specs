@@ -11,7 +11,7 @@ A call to actions is displayed in the header of this page:
 
  - Add new zone
 
-👉  See the [specs of the add new address]({{<ref "add-new-addresses.md">}} "Add new address") 
+👉  See the [specs of the add new addresses]({{<ref "add-new-addresses.md">}} "Add new addresses") 
 
 ## Settings wheel
 
@@ -73,7 +73,7 @@ Drop-down list of all the countries that it can be searched by.
 
 **Edit.** This action can be performed by clicking on the line or on the button. 
 
-👉 See the [specs of the add new address({{<ref "add-new-address.md">}} "Add new address") 
+👉 See the [specs of the add new addresses({{<ref "add-new-addresses.md">}} "Add new addresses") 
 
 **Delete.** The zone can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
