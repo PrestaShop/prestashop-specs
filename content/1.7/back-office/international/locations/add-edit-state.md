@@ -18,3 +18,8 @@ While adding or editing a state, the following fields / drop-down / toggle are d
  There are 2 buttons at the bottom of this page: 
  - Cancel: redirects to the previous page, cancels any changes.
  - Save: In the case of adding a state, the state is added and a success message is displayed on the listing: "Successful creation.". In the case of editing a state, the state is edited and a success message is displayed on the listing: "Successful update.".
+ 
+## Multistore
+ 
+This page doesn’t have a shop association block. So, the state is added/edited for all shops, no matter the context selected.
+The following information message is displayed at the top of this page: "Note that this feature is available in all shops context only. It will be added to all your stores."
