@@ -72,8 +72,8 @@ It's possible to search for enabled or disabled countries by selecting either "y
 
 7. Actions
 
- - **Edit** - The user can edit a feature as often as necessary, when pressed redirects to the edit page of the selected state.
+ - **Edit** - This is the main action and it can be performed by clicking on the line. After clicking on it, the edit state page is displayed.
  
    👉 See the [specs of the add edit state]({{<ref "add-edit-state.md">}} "add edit state") 
    
- - **Delete** - Deletes the selected state, after deletion shows the message: "Successful deletion.".
+ - **Delete** - After clicking on it, the state is deleted and the following success message is displayed: "Successful deletion.".
