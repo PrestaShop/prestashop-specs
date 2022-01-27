@@ -3,13 +3,14 @@ title: Add/edit carrier
 weight: 1
 ---
 
-The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier
+**The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier**
 
 # Call to action
 
 A call to action button at the top right is displayed:
 
  - **Cancel** : Pressing the button redirects to the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page.
+
 A call to action button at the bottom right is displayed:
 
  - **Previous:** In the first step, this button is disabled.
@@ -46,21 +47,7 @@ The following tooltip is displayed: "Ented a "0" for a longest shipping delay, o
  - **Tracking URL.** A help text is displayed under the field: "For example: 'http://example.com/track.php?num=@' with '@' where the tracking number should appear.". 
 A tooltip is displayed: "Delivery tracking URL: Type '@' where the tracking number should appear. It will be automatically replaced by the tracking number." The URL should be written as displayed in the tooltip, otherwise, the following error message is displayed: "The url field is invalid.".
 
-## Call to action
- 
- - **Previous.** In the first step, this button is disabled.
- - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
- - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
-
 # Multistore (2nd step)
-
-## Steps 
-
- - **1 General settings**
- - **2 Multistore (If multistore is enabled)**
- - **3 Shipping locations and costs**
- - **4 Size, weight, and group access**
- - **5 Summary**
 
 **This step is displayed only when the multistore is enabled and if there are several shops.**
 
@@ -68,21 +55,7 @@ The shop association block is displayed when the multistore is enabled and if se
 
 👉 See the [specs of the shop association block]({{<ref "../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
-## Call to action
- 
- - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
- - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
-- **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if a carrier was added or "Successful update" if a carrier was edited.
-
 # Shipping locations and costs (3rd step)
- 
-## Steps
-
- - **1 General settings**
- - **2 Multistore (If multistore is enabled)**
- - **3 Shipping locations and costs**
- - **4 Size, weight, and group access**
- - **5 Summary**
 
 ## Fields
 
@@ -118,20 +91,7 @@ Only numbers are allowed in zones fields, inputting any other symbol will result
 There is a button "Add new range" below the table. When this button is pressed, a new column is displayed. When clicking on it and if one of the existing ranges isn't completed, the following message is displayed "Please validate the last range before creating a new one." 
 Under each range added, a "Delete" button is displayed. When clicking on it, a modal is displayed: "Are you sure to delete this range?". The range is deleted after clicking on "ok".
 
-  - **Previous.** In the first step, this button is disabled. After clicking on it, the previous step is displayed.
-  - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
-  If "free shipping" is disabled and if no zone is selected, the following error message is displayed: "Please select at least one zone".
-  - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
-
 # Size, weight, and group access (4th step)
-
-## Steps 
-
- - **1 General settings**
- - **2 Multistore (If multistore is enabled)**
- - **3 Shipping locations and costs**
- - **4 Size, weight, and group access**
- - **5 Summary**
 
 ## Fields
 
@@ -145,21 +105,7 @@ If what is filled is not an integer, the following error message is displayed: "
  - **Group access** The ID and the name of all existing customers' groups are displayed. A checkbox is displayed before each group to select or unselect them. A global checkbox allows selecting/unselecting all customers' groups in one click. By default, all the customers' groups are checked.
 The following tooltip is displayed: "Mark the groups that are allowed access to this carrier."
 
-## Call to action
-
-  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
- - **Next.** If there is an error, this button is disabled. After clicking on it, the next step is displayed.
- - **Finish.** If there is an error, this button is disabled. After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
-
 # Summary (5th step)
-
-## Steps
-
- - **1 General settings**
- - **2 Multistore (If multistore is enabled)**
- - **3 Shipping locations and costs**
- - **4 Size, weight, and group access**
- - **5 Summary**
 
 ## Carrier summary
 
@@ -168,9 +114,3 @@ The informations about the carrier being created are displayed:
 The carrier's price, the transit time, if the shipping costs are calculated according to the price or to the weight, the tax rule, the different ranges, the behavior if the weight or the price is higher than the defined ranges, the delivery zones, the customers' groups, and the shops are displayed.
 
 Below, a toggle "Enabled" is displayed. It can be enabled or disabled. By default, it's enabled. The following tooltip is displayed: "Enable the carrier in the front office."
-
-## Call to action
-
-  - **Previous.** If there is an error, this button is disabled. After clicking on it, the previous step is displayed.
-  - **Next.** In the last step, this button is disabled.
-  - **Finish.** After clicking on it, the carrier is saved and the [carriers listing]({{<ref "carriers-listing.md">}} "Carriers listing") page is displayed with the following success message: "Successful creation" if the carrier was added or "Successful update" if the carrier was edited.
