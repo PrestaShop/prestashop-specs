@@ -1,9 +1,9 @@
 ---
-title: Add new state
+title: Add edit state
 weight: 1
 ---
 
-# Add new state
+# Add edit state
 
 While adding or editing a state, the following fields / drop-down / toggle are displayed:
 
