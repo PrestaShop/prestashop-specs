@@ -14,9 +14,9 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 Once the B2B mode is enabled, new input fields are displayed in the Customer edit page by navigating to _Customers > Customers_ and editing the desired Customer. Customer must be registered in Prestashop himself, of added by Administrator. New input fields are the following:
 - **Allowed outstanding amount** - input can be filled with valid characters: 0-9 only. Default value is 0.
 - **Maximum number of payment days** - limit for Customer purchases in days. Default value is 0.
-- **Risk rating** - dropdown with the Risk value. The risk values are the following:
-  - None
-  - Love
+- **Risk rating** - dropdown with the Risk value. These labels appear in the Outstanding listing table in the Risk column. The risk values are the following:
+  - None - label appearance is with black text and the green outlined color.
+  - Low
   - Medium
   - High
 
