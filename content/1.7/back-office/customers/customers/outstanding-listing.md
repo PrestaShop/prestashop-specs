@@ -9,6 +9,17 @@ weight: 1
 
 This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGURE > Customer Settings_ and it allows to track the B2B customer behavior. 
 
+## Configuration of the new B2B input fields in Customer edit page
+
+Once the B2B mode is enabled, new input fields are displayed in the Customer edit page by navigating to _Customers > Customers_ and editing the desired Customer. Customer must be registered in Prestashop himself, of added by Administrator. New input fields are the following:
+- **Allowed outstanding amount** - input can be filled with valid characters: 0-9 only. Default value is 0.
+- **Maximum number of payment days** - limit for Customer purchases in days. Default value is 0.
+- **Risk rating** - dropdown with the Risk value. The risk values are the following:
+  - None
+  - Love
+  - Medium
+  - High
+
 ## Top UI elements
 
 - **Outstanding** - page title.
