@@ -1,11 +1,11 @@
 ---
-title: Add new country
+title: Add edit country
 weight: 1
 ---
 
-# Add new country
+# Add edit country
 
-When adding a new country, these are the fields shown below:
+When adding or editing a country, the following fields / drop-down / toggles are displayed:
 
  - **Country** - This is a mandatory field, when trying to proceed without enetering this field, the following error message is displayed: "The field name is required at least in English (English).". This field can be translated: When several languages are installed, a drop-down next to the field is displayed with default language selected. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 The following tooltip is displayed: "Country name - Invalid characters: <>;=#{}".
