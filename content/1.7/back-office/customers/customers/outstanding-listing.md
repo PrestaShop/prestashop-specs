@@ -12,13 +12,13 @@ This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGUR
 ## Configuration of the new B2B input fields in Customer edit page
 
 Once the B2B mode is enabled, new input fields are displayed in the Customer edit page by navigating to _Customers > Customers_ and editing the desired Customer. Customer must be registered in Prestashop himself, of added by Administrator. New input fields are the following:
-- **Allowed outstanding amount** - input can be filled with valid characters: 0-9 only. Default value is 0.
+- **Allowed outstanding amount** - input can be filled with valid characters: 0-9 only. Default value is 0. If characters are typed as latin letters, input erases the wrong text automatically. If there are more than 19 characters in the field, the instant error is displayed below the field - exclamation mark and message _This field is invalid._ 
 - **Maximum number of payment days** - limit for Customer purchases in days. Default value is 0.
 - **Risk rating** - dropdown with the Risk values. The values appear as labels in the Outstanding listing table in the Risk column. The risk values are the following:
   - None - label appearance is with black text and the green outlined color.
   - Low - label appearance is with the black text and the orange outlined color.
   - Medium - label appearance is with the white text and the red outlined color.
-  - High - label appearance is with the white text and the red outlined color
+  - High - label appearance is with the white text and the red outlined color.
 
 ## Top UI elements of the Outstanding page
 
@@ -46,8 +46,8 @@ Once the B2B mode is enabled, new input fields are displayed in the Customer edi
 ### Table row elements of the Outstanding page
 
 - **ID** - numeric ID value.
-- **Date** - YYYY-MM-DD HH-MinMin-SecSec format.
-- **Company** - customer with the company value.
+- **Date** - input with YYYY-MM-DD HH-MinMin-SecSec format.
+- **Company** - customer with the company name.
 - **Risk label** - the text with colorized outlined label, defining the Risk level of the entry.
 - **Outstanding amount** - the value with the numeric amount and currency prefix.
 - **Current outstanding amount** - the value with the numeric amount and currency prefix.
