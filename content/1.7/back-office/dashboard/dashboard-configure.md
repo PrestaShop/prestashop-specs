@@ -56,4 +56,4 @@ The following information message is displayed: "Method: Indicate the percentage
 
 When the multistore is enabled, there are checkboxes before each field of this page. The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
+👉 See the [specs of the shop association block]({{<ref "../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
