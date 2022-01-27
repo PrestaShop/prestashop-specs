@@ -9,7 +9,7 @@ weight: 1
 
 A call to action buttont at the top right is displayed:
 
- - **Add new country** - See the [specs of the add new country]({{<ref "add-new-country.md">}} "Add new country") 
+ - **Add new country** - See the [specs of the add edit country]({{<ref "add-edit-country.md">}} "Add edit country") 
 
 ### Settings wheel
 
@@ -17,7 +17,7 @@ When clicking on the settings wheel, the following options are displayed:
 
 1. Add new
 
-When pressed redirects to the [specs of the add new country]({{<ref "add-new-country.md">}} "Add new country") 
+When pressed redirects to the [specs of the add edit country]({{<ref "add-edit-country.md">}} "Add edit country") 
 
 2. Refresh list
 
