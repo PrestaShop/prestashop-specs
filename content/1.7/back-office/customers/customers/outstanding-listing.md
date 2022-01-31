@@ -49,8 +49,9 @@ Once the B2B mode is enabled, new input fields are displayed in the Customer edi
 - **Date** - input with YYYY-MM-DD HH-MinMin-SecSec format.
 - **Company** - customer with the company name.
 - **Risk label** - the text with colorized outlined label, defining the Risk level of the entry.
-- **Outstanding allowance amaount** - the value with the numeric amount and currency prefix.
-- **Current outstanding amount** - the value with the numeric amount and currency prefix.
+- **Outstanding allowance amaount** - the value with the numeric amount and currency prefix. Here is the limit displayed, that was set in Customer page and _Outstanding allowance_ field.
+- **Current outstanding amount** - the value with the numeric amount and currency prefix. This functionality is working with the logic as follwos:
+  - All the invoiceable Tax included amount, that Customer has in total is reduced by all the invoiceable amount at the current time, that has Payment accepted status. The rest unpaid amount is displayed in this column. After all the Orders fully completed and accepted, this amount should be equal to 0. 
 - **Invoice sheet icon** - clicking initiates the download of the PDF invoice file.
 - **View lasso icon** - clicking initiates redirection to the Order in Back-Office, that customer has made.
 
