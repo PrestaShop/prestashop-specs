@@ -28,3 +28,7 @@ This UI lets the administrator to edit or add Search Engine value to the list.
 ### Deletion
 
 If the Search Engine entry is bein deleted, there should be a green success notification with the message _Successful deletion_. 
+
+## Multistoring
+
+Once the entry of Search Engine is added or edited in separate Multistore, it affects all the rest of Multistores in the same way. The management will be done in all Multistores simultaneously.
