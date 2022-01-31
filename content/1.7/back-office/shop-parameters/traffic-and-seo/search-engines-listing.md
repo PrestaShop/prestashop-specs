@@ -68,6 +68,7 @@ There are 38 default Search Engines stored in Prestashop already:
 
 - **Search Engines** - table title with.
 - **Numeric value** - total sum of Search Engines identified.
+- **Plus icon** - the same as **(+) Add new search engine** CTA button in top-right UI - adds new Search Engine entry.
 - **Export icon** - when clicked, a file is generated with all **displayed** Search Engines from the data list in CSV format.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
 
@@ -77,3 +78,15 @@ There are 38 default Search Engines stored in Prestashop already:
 - **Server** - input field, for searching and filtering specific Search Engine Server by name.
 - **GET variable** - input field, for searching and filtering specific GET request variable by name.
 - **Search button** - executes the filtering action, shows the results.
+- **Reset** - resets the filtering, shows all the unfiltered Search Engines entries.
+
+### Listing
+
+- **Number** - ID of the entry.
+- **Server name** - name of the Search Engine.
+- **Letter or other string** - specific value, included in request syntax.
+- **Edit button with dropdown** - allows to edit the Search Engine or delete it.
+
+### Pagination
+
+The pagination can be selected by using the navigation widget, with the numbers and left and right sided arrows on the bottom-right of the UI. Search Engines lists can be displayed as 20, 50, 100, 300 and 1000 entries in a one page, by using a dropdown at the bottom-center of the UI. 
