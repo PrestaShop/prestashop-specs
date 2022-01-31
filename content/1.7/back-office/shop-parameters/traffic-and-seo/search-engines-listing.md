@@ -77,7 +77,7 @@ There are 38 default Search Engines stored in Prestashop already:
 - **ID** - input field, for searching and filtering specific Search Engine by ID.
 - **Server** - input field, for searching and filtering specific Search Engine Server by name.
 - **GET variable** - input field, for searching and filtering specific GET request variable by name.
-- **Search button** - executes the filtering action, shows the results.
+- **Search button** - executes the filtering action, shows the results. If the button is clicked without filling the filter inputs, the UI will be prompted with the warning message _Please fill at least one field to perform a search in this list._
 - **Reset** - resets the filtering, shows all the unfiltered Search Engines entries.
 
 ### Listing
