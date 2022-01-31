@@ -21,4 +21,10 @@ This UI lets the administrator to edit or add Search Engine value to the list.
 
 - **Refferer** - the title of the table.
 - **Server** - required - input, where exact Search Engine associated Server name is defined. It can also be added as a new name. The field has notification errors, once the field is left empty, after submission - _The server field is required._ If the field has invalid characters, the UI will show the error _The server field is invalid._ The field can handle max 34 characters, up to 34 characters are not stored in database.
-- ***$_GET variable*** - required - input, where Search Engine associated Variable name is defined. It can also be added as a new variable name. The field has notification errors, once the field is left empty, after submission - _The getvar field is required._ If the field has invalid characters, the UI will show the error _The getvar field is invalid._ The field can handle max 6 characters, up to 6 characters are not stored in database.
+- **$ GET variable** - required - input, where Search Engine associated Variable name is defined. It can also be added as a new variable name. The field has notification errors, once the field is left empty, after submission - _The getvar field is required._ If the field has invalid characters, the UI will show the error _The getvar field is invalid._ The field can handle max 6 characters, up to 6 characters are not stored in database.
+- **Cancel** - discards the editing or adding page, redirects ti the Sesarch Engine listing.
+- **Save** - executes the submission of the adding or editing form. If the submission is successful, the UI should be redirected to the Search Engine listing page with green success notification _Successful update._
+
+### Deletion
+
+If the Search Engine entry is bein deleted, there should be a green success notification with the message _Successful deletion_. 
