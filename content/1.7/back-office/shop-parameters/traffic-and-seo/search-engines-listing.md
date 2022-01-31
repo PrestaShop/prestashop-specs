@@ -53,3 +53,20 @@ There are 38 default Search Engines stored in Prestashop already:
 - Mynet
 - Ekolay
 - Rembler
+
+## Top UI elements
+
+- **Search Engines** - page title.
+- **(+) Add new search engine** - CTA button for adding a new Search Engine entry.
+- **Help** - a side-bar with the helpful information, how to navigate in this page.
+- **Tabs** - navigation tabs for Traffic & SEO menu:
+  - SEO & URLs.
+  - Search Engines.
+  - Referrers.
+
+## Middle elements - Search Engines table
+
+- **Search Engines** - table title with.
+- **Numeric value** - total sum of Search Engines identified.
+- **Export icon** - when clicked, a file is generated with all **displayed** Search Engines from the data list in CSV format.
+- **Refresh** - once clicked, the whole page reloads to display the latest data.
