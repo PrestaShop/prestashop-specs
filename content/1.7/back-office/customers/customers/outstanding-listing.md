@@ -9,6 +9,10 @@ weight: 1
 
 This UI is shown after Enabling the _Enable B2B mode_ toggle switch in _CONFIGURE > Customer Settings_ and it allows to track the B2B customer behavior. 
 
+## Outstanding counting
+
+The entries, that stored in this listing page, are produced by Visitor, Customer or Guest using Checkout process from Front-Office or adding a new Order in Back-Office.
+
 ## Configuration of the new B2B input fields in Customer edit page
 
 Once the B2B mode is enabled, new input fields are displayed in the Customer edit page by navigating to _Customers > Customers_ and editing the desired Customer. Customer must be registered in Prestashop himself, of added by Administrator. New input fields are the following:
