@@ -87,6 +87,14 @@ There are 38 default Search Engines stored in Prestashop already:
 - **Letter or other string** - specific value, included in request syntax.
 - **Edit button with dropdown** - allows to edit the Search Engine or delete it.
 
+### Bulk Actioning
+
+Dropdown actions contain:<br>
+
+- **Select all** - selecting all the Search Engine items.
+- **Unselect all** - unselecting all the Search Engine items.
+- **Delete selected** - deletes the certain selected Search Engine items.
+
 ### Pagination
 
 The pagination can be selected by using the navigation widget, with the numbers and left and right sided arrows on the bottom-right of the UI. Search Engines lists can be displayed as 20, 50, 100, 300 and 1000 entries in a one page, by using a dropdown at the bottom-center of the UI. 
