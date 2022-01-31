@@ -97,4 +97,8 @@ Dropdown actions contain:<br>
 
 ### Pagination
 
-The pagination can be selected by using the navigation widget, with the numbers and left and right sided arrows on the bottom-right of the UI. Search Engines lists can be displayed as 20, 50, 100, 300 and 1000 entries in a one page, by using a dropdown at the bottom-center of the UI. 
+The pagination can be selected by using the navigation widget, with the numbers and left and right sided arrows on the bottom-right of the UI. Search Engines lists can be displayed as 20, 50, 100, 300 and 1000 entries in a one page, by using a dropdown at the bottom-center of the UI.
+
+## Multistoring
+
+Once the entry of Search Engine is added in separate Multistore, it affects all the rest of Multistores in the same way. The management will be done in all Multistores simultaneously.
