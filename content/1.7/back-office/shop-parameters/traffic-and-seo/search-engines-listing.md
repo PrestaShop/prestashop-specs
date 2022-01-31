@@ -70,3 +70,10 @@ There are 38 default Search Engines stored in Prestashop already:
 - **Numeric value** - total sum of Search Engines identified.
 - **Export icon** - when clicked, a file is generated with all **displayed** Search Engines from the data list in CSV format.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
+
+### Filtering
+
+- **ID** - input field, for searching and filtering specific Search Engine by ID.
+- **Server** - input field, for searching and filtering specific Search Engine Server by name.
+- **GET variable** - input field, for searching and filtering specific GET request variable by name.
+- **Search button** - executes the filtering action, shows the results.
