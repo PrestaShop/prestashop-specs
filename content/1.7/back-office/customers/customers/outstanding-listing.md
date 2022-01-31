@@ -49,7 +49,7 @@ Once the B2B mode is enabled, new input fields are displayed in the Customer edi
 - **Date** - input with YYYY-MM-DD HH-MinMin-SecSec format.
 - **Company** - customer with the company name.
 - **Risk label** - the text with colorized outlined label, defining the Risk level of the entry.
-- **Outstanding amount** - the value with the numeric amount and currency prefix.
+- **Outstanding allowance amaount** - the value with the numeric amount and currency prefix.
 - **Current outstanding amount** - the value with the numeric amount and currency prefix.
 - **Invoice sheet icon** - clicking initiates the download of the PDF invoice file.
 - **View lasso icon** - clicking initiates redirection to the Order in Back-Office, that customer has made.
