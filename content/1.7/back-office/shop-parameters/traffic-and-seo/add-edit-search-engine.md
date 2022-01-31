@@ -20,8 +20,5 @@ This UI lets the administrator to edit or add Search Engine value to the list.
 ## Main table UI elements
 
 - **Refferer** - the title of the table.
-- **Server** - required - input, where exact Search Engine associated Server name is defined. It also can be added as new name. The field has erros, once the fields are left empty, after submission:
-_The server field is required._
-If the field has invalid characters, the UI will show the error:
-_The server field is invalid._
-The field can handle max 34 characters, up to 34 characters are not stored in database.
+- **Server** - required - input, where exact Search Engine associated Server name is defined. It can also be added as a new name. The field has notification errors, once the field is left empty, after submission - _The server field is required._ If the field has invalid characters, the UI will show the error _The server field is invalid._ The field can handle max 34 characters, up to 34 characters are not stored in database.
+- ***$_GET variable*** - required - input, where Search Engine associated Variable name is defined. It can also be added as a new variable name. The field has notification errors, once the field is left empty, after submission - _The getvar field is required._ If the field has invalid characters, the UI will show the error _The getvar field is invalid._ The field can handle max 6 characters, up to 6 characters are not stored in database.
