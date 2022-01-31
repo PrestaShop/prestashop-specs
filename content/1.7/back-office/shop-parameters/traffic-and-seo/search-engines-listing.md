@@ -14,7 +14,7 @@ Once the visitors are accessing the webshop, some of them come from Search Engin
 
 ## Default Search Engines
 
-There are 38 default Search Engines stored in Prestashop alreadey:
+There are 38 default Search Engines stored in Prestashop already:
 - Google
 - Aol
 - Yandex
@@ -41,3 +41,15 @@ There are 38 default Search Engines stored in Prestashop alreadey:
 - Alice
 - Najdi
 - Mama
+- Seznam
+- Onet
+- Szukacz
+- Yam
+- Pchome
+- Kvasir
+- Sesam
+- Ozu
+- Terra
+- Mynet
+- Ekolay
+- Rembler
