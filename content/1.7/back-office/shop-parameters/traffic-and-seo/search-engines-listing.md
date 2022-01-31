@@ -61,7 +61,7 @@ There are 38 default Search Engines stored in Prestashop already:
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs** - navigation tabs for Traffic & SEO menu:
   - SEO & URLs.
-  - Search Engines.
+  - Search Engines - highlighted tab.
   - Referrers.
 
 ## Middle elements - Search Engines table
