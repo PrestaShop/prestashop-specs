@@ -49,6 +49,13 @@
 	"content": "To save or change a Back-Office address, the following field must be filled in:\n the first name, last name, address1, country city  The others fields are optional\n"
 },
 {
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/add-edit-quick-access.html",
+	"title": "Add / edit quick access",
+	"tags": [],
+	"description": "",
+	"content": "Add / edit quick access The following fields/toggles are displayed:\n  Name: this field is mandatory for the default language. When trying to save and if the field is empty, the following error message is displayed: \u0026ldquo;The field name is required in default language.\u0026rdquo; The following tooltip is displayed: \u0026ldquo;Forbidden characters: \u0026lt;\u0026gt;;=#{}\u0026rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed with the default language selected. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down. The character limit is 32, it\u0026rsquo;s not possible to enter more characters in this field.\n  URL: this field is mandatory. The character limit is 128, it\u0026rsquo;s not possible to enter more characters in this field. The following tooltip is displayed: \u0026ldquo;If it\u0026rsquo;s a URL that comes from your back office, you MUST remove the security token\u0026rdquo;. Currently, an incorrect URL can be entered in this field. In this case, there is a redirection to the dashboard when the URL is clicked on the listing. (See issue #27490)\n  Open in new window This toggle can be enabled or disabled. By default, it is disabled.\n  Call to action  Save: In the case of adding new quick access and if there is no error, the quick access is added and a success message is displayed on the quick access listing : \u0026ldquo;Creation successful\u0026rdquo;. In the case of editing quick access, the quick access is edited and a success message is displayed on the quick access listing : \u0026ldquo;Successful update\u0026rdquo;. Cancel: The quick access is not added/edited and the quick access listing is displayed.  "
+},
+{
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html",
 	"title": "Add / Edit Store",
 	"tags": [],
@@ -144,7 +151,7 @@
 	"title": "Back Office",
 	"tags": [],
 	"description": "",
-	"content": "   Advanced Parameters   Catalog   Customer Service   Customers   Design   International   Modules   Orders   Payment   Shipping   Shop Parameters     General MultiStore Back Office   "
+	"content": "   Advanced Parameters   Catalog   Customer Service   Customers   Design   International   Modules   Orders   Payment   Quick access   Shipping   Shop Parameters     General MultiStore Back Office   "
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html",
@@ -838,6 +845,20 @@
 	"tags": [],
 	"description": "",
 	"content": "SPECIFICATIONS - ADVANCED PARAMETERS \u0026gt; TEAM \u0026gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit\nRow action does not apply to the ID\u0026rsquo;s checkbox column and to columns with enable/disable actions.\n"
+},
+{
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access.html",
+	"title": "Quick access",
+	"tags": [],
+	"description": "",
+	"content": "Quick access   Add / edit quick access   Quick access listing   "
+},
+{
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/quick-access-listing.html",
+	"title": "Quick access listing",
+	"tags": [],
+	"description": "",
+	"content": "Quick access listing The quick access drop-down, displayed at the top left of every page of the PrestaShop back office lists all the pages added as quick access. It\u0026rsquo;s possible to add the current back office page to the quick access by clicking on \u0026ldquo;Add current page to QuickAccess\u0026rdquo;. It\u0026rsquo;s also possible to see the list of all the quick access by clicking on \u0026ldquo;Manage quick accesses\u0026rdquo;. It\u0026rsquo;s possible to remove the current back office page from the quick access list by clicking on \u0026ldquo;Remove from Quick Access\u0026rdquo;\nCall to action A call to actions is displayed in the header of this page:\n Add new quick access  👉 See the specs of the add/edit quick access\nSettings wheel When clicking on the settings wheel, the following options are displayed:\n Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.\nShow SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.\nThere are two buttons:\n Close: After clicking on it, the modal is closed Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced parameters \u0026gt; Database \u0026gt; SQL Manager  Export to SQL Manager  After clicking on it, the SQL query is opened in Advanced parameters \u0026gt; Database \u0026gt; SQL Manager\nBulk actions Clicking on the Bulk actions button allows performing bulk actions for the selected quick accesses (using the checkboxes). A user can:\n Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing. Delete selected: This button will delete the selected quick access.  Columns The page displays the quick access list with the following columns:\n ID  It\u0026rsquo;s possible to sort by id asc or desc and search by id.\nName  It\u0026rsquo;s possible to sort by name of quick accesses asc or desc and search by name.\nLink  It\u0026rsquo;s possible to sort by link asc or desc and to search by link.\nNew window  A drop-down allows to select:\n Yes No When a search is performed with \u0026ldquo;yes\u0026rdquo; selected, only the quick accesses that open in a new window are displayed. When a search is performed with \u0026ldquo;no\u0026rdquo; selected, only the quick accesses that not open in a new window are displayed. It\u0026rsquo;s also possible to sort by new window asc or desc.  Actions  Edit. This is the main action and it can be performed by clicking on the line or on the button.\n👉 See the specs of the add/edit quick access\nDelete. The quick access can be deleted by clicking on this button. After clicking on \u0026ldquo;Delete\u0026rdquo;, a modal with the title \u0026ldquo;Delete selection\u0026rdquo; is opened asking to confirm or cancel the action: \u0026ldquo;Are you sure you want to delete the selected item(s)?\u0026rdquo; The action can be canceled by clicking on the cross or on the cancel button. After clicking on \u0026ldquo;Delete\u0026rdquo; button, the quick access is deleted and a successful message is displayed \u0026ldquo;Successful deletion.\u0026rdquo;\nAfter clicking on \u0026ldquo;Delete selected\u0026rdquo;, a modal with the title \u0026ldquo;Delete selection\u0026rdquo; is opened asking to confirm or cancel the action: \u0026ldquo;Are you sure you want to delete the selected item(s)?\u0026rdquo; (See issue #14462). The action can be canceled by clicking on the cross or on the cancel button. After clicking on \u0026ldquo;Delete\u0026rdquo; button, the selected quick access will be removed, and a successful message is displayed \u0026ldquo;The selection has been successfully deleted.\u0026rdquo;\nSearch The search button is disabled as long as no search field has been filled. After clicking on \u0026ldquo;search\u0026rdquo;, the \u0026ldquo;search\u0026rdquo; button is disabled and a \u0026ldquo;reset\u0026rdquo; button is displayed. If there is no results for the search done, the following message is displayed: \u0026ldquo;No records found\u0026rdquo;. When clicking on \u0026ldquo;reset\u0026rdquo;, the search is removed and all the results are displayed.\n"
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html",

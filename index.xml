@@ -80,6 +80,16 @@ Value  This field is mandatory and can be translated: When several languages are
     </item>
     
     <item>
+      <title>Add / edit quick access</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/add-edit-quick-access.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/add-edit-quick-access.html</guid>
+      <description>Add / edit quick access The following fields/toggles are displayed:
+  Name: this field is mandatory for the default language. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;The field name is required in default language.&amp;rdquo; The following tooltip is displayed: &amp;ldquo;Forbidden characters: &amp;lt;&amp;gt;;=#{}&amp;rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed with the default language selected.</description>
+    </item>
+    
+    <item>
       <title>Add / Edit Store</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -689,6 +699,15 @@ It also impacts the customer account on the front office, turning off the &amp;l
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</guid>
       <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
 Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Quick access listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/quick-access-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/quick-access-listing.html</guid>
+      <description>Quick access listing The quick access drop-down, displayed at the top left of every page of the PrestaShop back office lists all the pages added as quick access. It&amp;rsquo;s possible to add the current back office page to the quick access by clicking on &amp;ldquo;Add current page to QuickAccess&amp;rdquo;. It&amp;rsquo;s also possible to see the list of all the quick access by clicking on &amp;ldquo;Manage quick accesses&amp;rdquo;. It&amp;rsquo;s possible to remove the current back office page from the quick access list by clicking on &amp;ldquo;Remove from Quick Access&amp;rdquo;</description>
     </item>
     
     <item>
