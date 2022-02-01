@@ -7,17 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Add / Edit</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit.html</guid>
-      <description>Shipping-Carriers-add-edit SPECIFICATIONS - SHIPPING &amp;gt; CARRIERS &amp;gt; Add new/Edit What The Add new/Edit Carrier page allows users to create and edit carriers.
-Specifications As of Sept 9th 2019 Version : 1.7.6.1
-Elements in the page Logo Block Logo block: There is a logo block on the left of the page. The title is TITLE. It contains a thumbnail of the image uploaded as logo. Once an image has been uploaded a button with a trashcan icon is available in the block top right corner.</description>
-    </item>
-    
-    <item>
       <title>Add / edit attribute</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -132,6 +121,18 @@ As a merchant, I want to be able to manually add an order to my back-office. Cre
     </item>
     
     <item>
+      <title>Add/edit carrier</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit-carrier.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit-carrier.html</guid>
+      <description>The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier
+Call to action A call to action button at the top right is displayed:
+ Cancel : Pressing the button redirects to the carriers listing page.  A call to action button at the bottom right is displayed:
+ Previous: In the first step, this button is disabled. Next: If there is an error, this button is disabled.</description>
+    </item>
+    
+    <item>
       <title>Add/Edit Catalog Price Rules.md</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -187,6 +188,18 @@ This page presents a list of all the registered attributes. They can be edited o
 Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.
 Grid Adresses ManufacturerAddressGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
 Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
+    </item>
+    
+    <item>
+      <title>Carriers listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/carriers-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/carriers-listing.html</guid>
+      <description>Carriers listing The &amp;ldquo;Carriers&amp;rdquo; page displays a list of all the current carriers. From here, it&amp;rsquo;s possible to directly change their status, indicate if shipping is free or not, and change their position in the front office.
+Call to action A call to actions is displayed in the header of this page:
+ Add new carrier  👉 See the specs of the add/edit carrier
+Settings wheel When clicking on the settings wheel, the following options are displayed:</description>
     </item>
     
     <item>
