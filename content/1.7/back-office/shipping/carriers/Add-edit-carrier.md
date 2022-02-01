@@ -62,10 +62,10 @@ The shop association block is displayed when the multistore is enabled and if se
  - **Add handling costs.** This toggle allows choosing if the handling costs are added to the final price or not. By default, this toggle is disabled.
 A tooltip is displayed: "Include the handling costs (as set in Shipping > Preferences) in the final carrier price."
  - **Free shipping.** This toggle allows choosing if the carrier is free or not. By default, this toggle is disabled. When this toggle is enabled, the toggle "Add handling costs" automatically switched to "no" and becomes disabled as all the input fields for "ranges".
- - **Billing.** 2 radio buttons are displayed: "According to total price." and "According to total weight.". 
+ - **Billing.** 2 radio buttons are displayed: "According to total price." and "According to total weight.". By default, according to total weight is selected.
 When "According to total price" is selected, the ranges are defined by currency. The currency displayed is the default one configured in International > Localization. When "According to total weight" is selected, the ranges are defined by weight. The weight displayed is the one defined in International > Localization.
- - **Tax.** The drop-down menu displays all the enabled tax rules existing in International > Taxes > Taxes rules.
- - **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier".
+ - **Tax.** The drop-down menu displays all the enabled tax rules existing in International > Taxes > Taxes rules. By default the value "No tax " is selected.
+ - **Out-of-range behavior** this drop-down menu allows to select one of the 2 options: "Apply the cost of the highest defined range" or "Disable carrier". By default the option "Apply the cost of the highest defined range" is selected.
 A tooltip is displayed: "Out-of-range behavior occurs when no defined range matches the customer's cart (e.g. when the weight of the cart is greater than the highest weight limit is defined by the weight ranges)."
 
 If the total weight or total price of the cart is not in one of the defined ranges and if the chosen option is "Disable carrier", then the carrier will be disabled.
@@ -80,7 +80,8 @@ Only numbers can be entered in the 2 ranges fields above. If one of the fields c
 If one of the ranges overlaps another, the following error message is displayed: "Ranges are overlapping" and the fields for all zones are disabled.
     - **All** This field is disabled if the checkbox isn't checked. When the checkbox is checked, the field is enabled and all the zones below become checked
  
-All the zones existing in International > Locations > Zones are displayed below. The disabled zones are marked as inactive. 
+All the zones existing in International > Locations > Zones are displayed below. The disabled zones are marked as inactive.
+When trying to go to the next step without selecting any zone the following error message is displayed: "Please select at least one zone".
 Each zone has a checkbox allowing to enable its field.
 Only numbers are allowed in zones fields, inputting any other symbol will result in the field being marked in red. 
 
