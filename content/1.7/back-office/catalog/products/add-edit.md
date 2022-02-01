@@ -582,7 +582,7 @@ The new category will only be displayed when my product is offline, it is not sa
 3\) **Permanent redirection to a product \(301\)**: When my product is offline, I choose another product to redirect to. This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.         
 4\) **Temporary redirection to a product \(302\)**: When my product is offline, I can choose a product to which my current product is redirected.            
 The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache           
-5\) **No redirection \(404\)**: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available.” and the product isn’t displayed.        
+5\) **No redirection \(404 or 410\)**: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available.” and the product isn’t displayed.        
 If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”
 * **Target category**: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category.        
 There is a placeholder: “To which category the page should redirect ?”           
@@ -592,7 +592,7 @@ You can search by category name. When you start typing, if there are results, th
 There is a placeholder: “To which product the page should redirect ?”              
 You can search by product name or reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected product is displayed under the field.           
 Delete selected category or product: You can remove the selected product or category by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
-* **Information message**: No redirection \(404\) = Do not redirect anywhere and display a 404 "Not Found" page.     
+* **Information message**: No redirection \(404 or 410\) = Do not redirect anywhere and display a 404 "Not Found" or a  or 410 Gone page.     
 Permanent redirection \(301\) = Permanently display another product or category instead.     
 Temporary redirection \(302\) = Temporarily display another product or category instead.    
 
