@@ -98,7 +98,7 @@ Each checkbox has the interactions, once it is clicked. The clicking is initiate
 
 ### Select-all checkbox marking
 
-Each Permission column has a select-all type of checkbox marking. Once the **View**, **Add**, **Edit**, **Delete** or **All** permission is checked on the top of the column, the rest of column permissions are auto-checked for the all of values down the table.
+Each Permission column has a select-all type of checkbox marking. Once the **View**, **Add**, **Edit**, **Delete** or **All** for Menu, and **View**, **Configure** or **Uninstall** for Modules permission is checked on the top of the column, the rest of column permissions are auto-checked for the all of permission values down the table.
 
 ## Multistores functionality
 
