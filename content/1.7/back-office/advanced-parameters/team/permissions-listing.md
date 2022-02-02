@@ -92,6 +92,14 @@ These permissions are listed as all Disabled by default:
 
 There are **View**, **Configure** and **Uninstall** Permissions in the Module panel, and all the permissions are Disabled by default.
 
+## Notifications interaction
+
+Each checkbox has the interactions, once it is clicked. The clicking is initiated using Ajax request, and the response is instant, page is not reloading. If the checkbox marking or unmarking is successful, there will be green success notification _Update successful_ prompted, on the top right of the UI. 
+
+### Select-all checkbox marking
+
+Each Permission column has a select-all type of checkbox marking. Once the **View**, **Add**, **Edit**, **Delete** or **All** permission is checked on the top of the column, the rest of column permissions are auto-checked for the all of Menus and Modules.
+
 ## Multistores functionality
 
 Multistores are not impacted in the permission UI. Multistores top-right widget is available only in All Shops context. 
