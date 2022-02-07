@@ -31,7 +31,7 @@ If the email or password, that is being typed in the main login form, is incorre
 
 If the password, that is being typed in the main login form, is incorrect, the UI will be prompted with the error message _There is one error. Invalid password._
 
-### Send reset link form UI
+### Flipped send reset link form UI
 
 - **Logo** - PrestaShop's logo.
 - **Prestashp version** - numeric value of the Prestashop version.
