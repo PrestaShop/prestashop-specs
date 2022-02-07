@@ -68,7 +68,7 @@ It's possible to sort by country asc or desc and search for a country by selecti
 
 6. Enabled
 
-It's possible to search for enabled or disabled countries by selecting either "yes" or "no" in the drop-down.
+It's possible to search for enabled or disabled states by selecting either "yes" or "no" in the drop-down.
 
 7. Actions
 
