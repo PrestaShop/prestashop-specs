@@ -24,8 +24,8 @@ There are the following input text fields, that can be set:
 
  ## Call to action 
  There are 2 buttons at the bottom of this page: 
- - Cancel: The image type is not added/edited and the image settings page is displayed
- - Save: In the case of adding an image type and if there is no error, the image type is added and a success message is displayed on the top of image settings page : "Successful creation.". In the case of editing an image type, the image is edited and a success message is displayed on the top of the image settings page : "Successful update.".
+ - **Cancel**: The image type is not added/edited and the image settings page is displayed
+ - **Save**: In the case of adding an image type and if there is no error, the image type is added and a success message is displayed on the top of image settings page : "Successful creation.". In the case of editing an image type, the image is edited and a success message is displayed on the top of the image settings page : "Successful update.".
 
 ## UI notifications after submitting
 
