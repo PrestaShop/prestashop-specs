@@ -53,7 +53,9 @@ If the email that is typed, doesn't exist, there will be an error notification m
 
 If there is no email input text submitted, the Email address title becomes in red color, red notification message appears below the email input _This field is required._ and the input becomes with red background. 
 
-## Bottom UI Section
+## Bottom UI Section 
+
+The Bottom UI elements remain the same for main login form and flipped send reset link form:
 
 - **Back to Front-Office** - the link, navigating to the Prestashop Front-Office parent home page.
 - **Copyright** - Prestashop all rights declaration text.
