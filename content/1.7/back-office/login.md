@@ -2,7 +2,7 @@
 title: Login into Back-Office
 weight: 1
 ---
-# LOGIN
+# PRESTASHOP AUTHENTICATION WINDOW
 
 ![Login UI](static/login.png)
 
