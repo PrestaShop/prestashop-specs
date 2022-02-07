@@ -49,7 +49,9 @@ If the email reset attempt is successful, the message will appear _Please, check
 
 If users' email link clicking attempt is successful, there will be a redirection back to the Prestashop administration UI with the success message _Your password has been successfully changed. You will be redirected to the login page in a few seconds._ Then administrator will be able to login using the new password, in the main login form.
 
+If the email that is typed, doesn't exist, there will be an error notification message _There is one error. This account does not exist._ 
 
+If there is no email input text submitted, the Email address title becomes in red color, red notification message appears below the email input _This field is required._ and the input becomes with red background. 
 
 ## Bottom UI Section
 
