@@ -7,7 +7,7 @@ weight: 1
 
 When adding or editing a country, the following fields / drop-down / toggles are displayed:
 
- - **Country** - This is a mandatory field, when trying to proceed without enetering this field, the following error message is displayed: "The field name is required at least in English (English).". This field can be translated: When several languages are installed, a drop-down next to the field is displayed with default language selected. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
+ - **Country** - This field is mandatory. When trying to save without filling this field, the following error message is displayed: "The field name is required at least in _default language_.". This field can be translated: When several languages are installed, a drop-down next to the field is displayed with the default language selected. It allows choosing in which language the field is displayed and customizing it according to the language. Disabled languages are displayed in the drop-down.
 The following tooltip is displayed: "Country name - Invalid characters: <>;=#{}".
 
  - **ISO code** - This is a mandatory field, when trying to proceed without enetering this field, the following error message is displayed: "The iso_code field is required.". If the field input is invalid, the following error message is displayed: "The iso_code field is invalid." The following tooltip is displayed: "Two -- or three -- letter ISO code (e.g. "us" for United States).".
@@ -16,37 +16,34 @@ The following tooltip is displayed: "Country name - Invalid characters: <>;=#{}"
  
  - **Default currency** - This is a drop-down field which allows to seect a currency from the ones that are enabled on the shop.
  
- - **Zone** - This is a drop-down field with all the zones that can be selected. The following tooltip is displayed: "Geographical region.".
+ - **Zone** - This drop-down allows selecting a zone. All the zones are listed (both enabled and disabled ones). The following tooltip is displayed: "Geographical region.".
  
- - **Does it need Zip/Postal code?** - Toggle switch for either "yes" or "no". By default is set to "yes".
+ - **Does it need Zip/Postal code?** - This toggle indicates whether a user living in this country must give a zip code or not when signing up to the shop. The toggle can be put on "yes" or "no". By default, it is set to "yes". 
 
- - **Zip/Postal code format** - This is a mandatory field.
-The following helptext below is displayed: "Indicate the format of the postal code: use L for a letter, N for a number, and C for the country's ISO 3166-1 alpha-2 code. For example, NNNNN for the United States, France, Poland and many other; LNNNNLLL for Argentina, etc. If you do not want PrestaShop to verify the postal code for this country, leave it blank."
+ - **Zip/Postal code format** - This field is mandatory.
+The following help text is displayed: "Indicate the format of the postal code: use L for a letter, N for a number, and C for the country's ISO 3166-1 alpha-2 code. For example, NNNNN for the United States, France, Poland and many other; LNNNNLLL for Argentina, etc. If you do not want PrestaShop to verify the postal code for this country, leave it blank."
 
  - **Address format** - Firstly a box is displayed with the following default inputs: firstname lastname, company, address1, address2, city, State:name postcode, Country:name, phone. On the right a helptext is displayed: "Some countries require different elements than others. Click on the button below to get the valid default address format for this country."
-Under the helptext there are 5 fields that can be pressed, and when pressed on any of the selections will be added to the address format input box:
-     - **Customer** -  in this section it's possible to press the "+" sign to add to the format the following inputs: lastname, firstname, birthday, email, website, company, siret, reset_password_token, htmlFields. 
-     - **Warehouse** - in this section it's possible to press the "+" sign to add to the format the following inputs: reference, name, management_type, htmlFields
-     - **Country** - in this section it's possible to press the "+" sign to add to the format the following inputs: iso_code, name, zip_code_format, htmlFields
-     - **State** - in this section it's possible to press the "+" sign to add to the format the following inputs: iso_code, name, htmlFields 
-     - **Address** - in this section it's possible to press the "+" sign to add to the format the following inputs: company, lastname, firstname, address1, address2, postcode, city, other, phone, phone_mobile, vat_number, dni, htmlFields.
+Under the help text, the 5 following helper links are displayed and can be selected.  You can click on the various helper links on the side of the text-field in order to add more fields to the address format.
+     - **Customer** -  the following parameters can be added to the address format: lastname, firstname, birthday, email, website, company, siret, reset_password_token, htmlFields. 
+      - **Warehouse** - the following parameters can be added to the address format: reference, name, management_type, htmlFields
+     - **Country** - the following parameters can be added to the address format: iso_code, name, zip_code_format, htmlFields
+     - **State** - the following parameters can be added to the address format: iso_code, name, htmlFields 
+     - **Address** - ithe following parameters can be added to the address format: company, lastname, firstname, address1, address2, postcode, city, other, phone, phone_mobile, vat_number, dni, htmlFields.
      
  Below there are 4 buttons with different actions:
  
- 
-     - **Use the last registered format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
+     - **Use the last registered format** - When this button is pressed, the following modal is displayed: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
 When pressed "ok" will input the address format box with the last registered formats.
-     - **Use the default format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
+     - **Use the default format** - When this button is pressed, the following modal is displayed: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
 When pressed "ok" will input the address format box with the default address formats.
      - **Use my current modified format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
-When pressed "ok" will input the address format box with the current modified formats.
-     - **Clear format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel".
-When pressed "ok" will remove all the formats.
+     - **Clear format** - When pressed, prompts a message asking: "Are you sure you want to restore the default address format for this country?", the options are: "ok", "cancel". When "ok" is pressed, all the fields are removed from the address format.
      
- - **Active** - Toggle switch that can be turned to "Yes" or "No". By default is set to "yes".
- - **Contains states** - Toggle switch that can be turned to "Yes" or "No". By default is set to "no".
- - **Do you need a tax identification number?** - Toggle switch that can be turned to "Yes" or "No". By default is set to "no".
- - **Display tax label (e.g. "Tax incl.")** - Toggle switch that can be turned to "Yes" or "No". By default is set to "yes".
+ - **Active** - This toggle can be turned to "Yes" or "No" to enable or not the country. By default, it is set to "yes". A disabled country will not be suggested as an option when a visitor wants to register and create a new account.
+ - **Contains states** - This toggle indicates whether the country has "states" or not. It can be turned to "Yes" or "No". By default is set to "no". If set on "yes", this adds a new field to the address format.
+ - **Do you need a tax identification number?** - This toggle can be turned to "Yes" or "No". By default, it is set to "no".
+ - **Display tax label (e.g. "Tax incl.")** - This toggle allows choosing whether the tax status (included or excluded) should be displayed next to the prices or not. It can be turned to "Yes" or "No". By default, it is set to "yes".
 
 ## Call to action
 
