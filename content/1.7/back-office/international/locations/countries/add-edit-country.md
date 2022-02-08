@@ -12,7 +12,7 @@ The following tooltip is displayed: "Country name - Invalid characters: <>;=#{}"
 
  - **ISO code** - This is a mandatory field, when trying to proceed without enetering this field, the following error message is displayed: "The iso_code field is required.". If the field input is invalid, the following error message is displayed: "The iso_code field is invalid." The following tooltip is displayed: "Two -- or three -- letter ISO code (e.g. "us" for United States).". If you try to add a country with an already existing ISO, the following error will show: "This ISO code already exists.You cannot create two countries with the same ISO code."
 
- - **Call prefix** - This is a mandatory field. The following tooltip is displayed: "Internation call prefix, (e.g. 1 for United States)".
+ - **Call prefix** - This is a mandatory field. The following tooltip is displayed: "Internation call prefix, (e.g. 1 for United States)". When trying to proceed without enetering this field, the following error message is displayed: "The Call prefix field is required.". 
  
  - **Default currency** - This is a drop-down field which allows to seect a currency from the ones that are enabled on the shop. BY default the drop-down is set to: "Default store currency".
  
