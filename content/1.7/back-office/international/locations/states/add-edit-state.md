@@ -11,8 +11,8 @@ While adding or editing a state, the following fields / drop-down / toggle are d
 When trying to save and if the field is invalid, the following error message is displayed: "The name field is invalid.".
  - **ISO code** - this field is mandatory. A tooltip for this field is displayed: "1 to 4 letter ISO code. You can prefix it with the country ISO code if needed.". When trying to save and if the field is empty, the following error message is displayed:  "The iso_code field is required."
  When trying to save and if the field exceeds 4 characters or contains invalid characters, the following error message is displayed:  "The iso_code field is invalid.".
- - **Country** - this drop-down is mandatory. A tooltip is displayed: "Country where the state is located. Only the countries with the option "contains state" enabled are displayed." By default "United States" is selected.
- - **Zone** - this drop-down is mandatory. A tooltip is displayed: "Geographical region where this state is located. Used for shipping". By default the zone is set to: "North America".
+ - **Country** - this drop-down is mandatory. A tooltip is displayed: "Country where the state is located. Only the countries with the option "contains state" enabled are displayed.
+ - **Zone** - this drop-down is mandatory. A tooltip is displayed: "Geographical region where this state is located. Used for shipping". 
  - **Status** - this toggle is mandatory. It can be turned to "yes" or "no". By default it is set to: "yes".
 
 ## Call to action
