@@ -77,3 +77,6 @@ It's possible to search for enabled or disabled states by selecting either "yes"
    👉 See the [specs of the add edit state]({{<ref "add-edit-state.md">}} "add edit state") 
    
  - **Delete** - After clicking on it, the state is deleted and the following success message is displayed: "Successful deletion.".
+ 
+ ### Search
+The search button is disabled as long as no search field has been filled. After clicking on "search", the "search" button is disabled and a "reset" button is displayed. If there is no results for the search done, the following message is displayed: "No records found". When clicking on "reset", the search is removed and all the results are displayed.
