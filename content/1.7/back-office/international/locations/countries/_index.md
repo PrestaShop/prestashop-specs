@@ -1,6 +1,6 @@
 ---
 title: Countries
-menuTitle: Countriess
+menuTitle: Countries
 weight: 1
 pre: ""
 chapter: true
