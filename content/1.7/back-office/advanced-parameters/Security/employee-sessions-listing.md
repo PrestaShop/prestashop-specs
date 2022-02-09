@@ -36,7 +36,7 @@ There is 1 option:
 
 ### Select all checkboxes
 
-After checking the box, all the products displayed on the page are selected or unselected.
+After checking the box, all the rows displayed on the page are selected or unselected.
 
 ## Listing
 
