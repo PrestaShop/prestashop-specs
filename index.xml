@@ -100,6 +100,16 @@ Language  This drop-down menu allows selecting the language of the tag and is ma
     </item>
     
     <item>
+      <title>Add edit state</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/add-edit-state.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/add-edit-state.html</guid>
+      <description>Add edit state While adding or editing a state, the following fields / drop-down / toggle are displayed:
+ Name - this field is mandatory. A tooltip for this field is displayed: &amp;ldquo;Provide the state name to be displayed in addresses and on invoices.&amp;rdquo;. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;The name field is required.&amp;rdquo;. When trying to save and if the field is invalid, the following error message is displayed: &amp;ldquo;The name field is invalid.</description>
+    </item>
+    
+    <item>
       <title>Add new order</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -805,6 +815,18 @@ In the meantime, some technical and functional choices can have a huge impact (p
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</guid>
       <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; DATABASE &amp;gt; SQL MANAGER The SQL manager is a complex feature, which should be reserved for technical people who know how to explore a database using the SQL language. In return for this complexity, it can be extremely powerful and proves immensely useful to those who master it.
 1.7.8.x version The page is going to be migrated into a module. The type of module is still to be defined, the most likely solution seems to be a not installed module.</description>
+    </item>
+    
+    <item>
+      <title>States listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/states-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/states-listing.html</guid>
+      <description>States Call to action A call to action button is displayed:
+ Add new state - See the specs of the add edit state  Settings wheel When clicking on the settings wheel, the following options are displayed:
+ Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.
+Show SQL query  After clicking on it, the SQL query is displayed in a modal.</description>
     </item>
     
     <item>

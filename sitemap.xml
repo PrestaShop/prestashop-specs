@@ -29,6 +29,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/add-edit-state.html</loc>
+    <lastmod>2022-02-08T16:51:16+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -406,6 +409,12 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states.html</loc>
+    <lastmod>2022-01-27T17:19:42+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/states-listing.html</loc>
+    <lastmod>2022-02-09T10:09:55+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores.html</loc>
     <lastmod>2021-11-11T13:42:53+02:00</lastmod>
