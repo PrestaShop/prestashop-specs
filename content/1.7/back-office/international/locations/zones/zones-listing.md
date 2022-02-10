@@ -35,6 +35,8 @@ Clicking on the _Bulk actions_ button allows performing bulk actions for the sel
 
 - Enable/Disable selection: these buttons will enable/disable all the zones that are selected.
 - Delete selected: This button will delete the selected zone. 
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Delete" button, the selected zone gets deleted, a successful message is displayed "The selection has been successfully deleted."
 
 ## Columns
 
