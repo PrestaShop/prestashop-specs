@@ -25,17 +25,6 @@ There are the following input text fields, that can be set:
 - **Suppliers** - this toggle switch button can be set for using images type for Prestashop Suppliers. By default, the button is disabled. Tooltip: This type will be used for Supplier images.
 - **Stores** - this toggle switch button can be set for using images type for Prestashop Stores. By default, the button is disabled. Tooltip: This type will be used for Store images.
 
-After the invalid set of the configuration in this page, for all the input text fields, the UI is prompting the error: <br>
-_There are 3 errors.<br>
-The name field is invalid.<br>
-The width field is invalid.<br>
-The height field is invalid._<br>
-
-After leaving the required fields empty in this page, for all the input text fields, the UI is prompting the error: <br>
-_There are 3 errors.<br>
-The name field is required.<br>
-The width field is required.<br>
-The height field is required._<br>
 
 After setting up the Image type configuration, the UI prompts the warning notification: <br>
 _After modification, do not forget to regenerate thumbnails_
