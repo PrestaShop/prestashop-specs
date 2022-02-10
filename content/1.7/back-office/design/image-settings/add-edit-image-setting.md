@@ -14,6 +14,9 @@ This configuration UI is about adding the new Image type into the Image type lis
 During default Image type configuration, the notification is prompted as error: <br>
 _By default, all images settings are already installed in your store. Do not delete them, you will need it!_
 
+After setting up the Image type configuration, the UI prompts the warning notification: <br>
+_After modification, do not forget to regenerate thumbnails_
+
 There are the following input text fields, that can be set:
 
 - **Name for the image type**  - this is a required field, that describes the main name of the image type. The image type name should be used with underscores and hyphens only. Fore example, that could be _small_custom_, _large_, _custom-modified_small_. By default this input text field is empty. Tooltip: Letters, underscores and hyphens only (e.g. "small_custom", "cart_medium", "large", "thickbox_extra-large").
@@ -25,9 +28,17 @@ There are the following input text fields, that can be set:
 - **Suppliers** - this toggle switch button can be set for using images type for Prestashop Suppliers. By default, the button is disabled. Tooltip: This type will be used for Supplier images.
 - **Stores** - this toggle switch button can be set for using images type for Prestashop Stores. By default, the button is disabled. Tooltip: This type will be used for Store images.
 
+After the invalid set of the configuration in this page, for all the input text fields, the UI is prompting the error: <br>
+_There are 3 errors.<br>
+The name field is invalid.<br>
+The width field is invalid.<br>
+The height field is invalid._<br>
 
-After setting up the Image type configuration, the UI prompts the warning notification: <br>
-_After modification, do not forget to regenerate thumbnails_
+After leaving the required fields empty in this page, for all the input text fields, the UI is prompting the error: <br>
+_There are 3 errors.<br>
+The name field is required.<br>
+The width field is required.<br>
+The height field is required._<br>
 
  ## Call to action 
  There are 2 buttons at the bottom of this page: 
