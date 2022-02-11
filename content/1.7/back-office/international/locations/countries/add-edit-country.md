@@ -30,6 +30,7 @@ Under the help text, the 5 following helper links are displayed and can be selec
      - **Country** - the following parameters can be added to the address format: iso_code, name, zip_code_format, htmlFields
      - **State** - the following parameters can be added to the address format: iso_code, name, htmlFields 
      - **Address** - ithe following parameters can be added to the address format: company, lastname, firstname, address1, address2, postcode, city, other, phone, phone_mobile, vat_number, dni, htmlFields.
+When a parameter is already existing, when trying to save it, the error shows: "This key has already been used.: phone"
      
  Below there are 4 buttons with different actions:
  
