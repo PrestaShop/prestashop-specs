@@ -42,7 +42,8 @@ Clicking on the _Bulk actions_ button allows performing bulk actions for the sel
 - Delete selected: This button will delete the selected country. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
 After clicking on "Delete" button, the selected country gets deleted, a successful message is displayed "The selection has been successfully deleted."
-- Assign to a new zone - Selected countries are assigned to a new zone.
+- Assign to a new zone - Selected countries are assigned to a new zone. When "assign new zone" is used, a new drop-down appears below.
+In the drop-down all the possible zones in the shop are displayed, on the right of the drop-down a button "Assign to a new zone" button is displayed, when pressed, it changes the zone of the selected country.
 
 ## Columns
 
