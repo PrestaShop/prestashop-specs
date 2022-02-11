@@ -33,6 +33,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 Clicking on the _Bulk actions_ button allows performing bulk actions for the selected zones (using the checkboxes). A user can:
 
+- First checkbox allows to select/unselect all the zones in the list.
 - Enable/Disable selection: these buttons will enable/disable all the zones that are selected.
 - Delete selected: This button will delete the selected zone. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
@@ -46,7 +47,7 @@ It's possible to sort by id asc or desc and search by id.
 
 2. Zone
 
-It's possible to search and sort by a zone.
+It's possible to sort by zone asc or desc and search by zone.
 
 3. Enabled
 
@@ -59,7 +60,7 @@ When a search is performed with "no" selected, only the zones that are disabled 
 
 **Edit.** This is the main action and it can be performed by clicking on the line or on the button. 
 
-👉 See the [specs of the add edit zone({{<ref "add-edit-zone.md">}} "Add edit zone") 
+👉 See the [specs of the add edit zone]({{<ref "add-edit-zone.md">}} "Add edit zone") 
 
 **Delete.** The zone can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)).
 The action can be canceled by clicking on the cross or on the cancel button.
