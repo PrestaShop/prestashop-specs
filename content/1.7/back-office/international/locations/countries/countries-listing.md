@@ -7,7 +7,7 @@ weight: 1
 
 ## Call to action 
 
-A call to action buttont at the top right is displayed:
+A call to action button is displayed:
 
  - **Add new country** - See the [specs of the add edit country]({{<ref "add-edit-country.md">}} "Add edit country") 
 
