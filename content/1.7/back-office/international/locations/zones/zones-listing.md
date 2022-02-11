@@ -33,7 +33,7 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 Clicking on the _Bulk actions_ button allows performing bulk actions for the selected zones (using the checkboxes). A user can:
 
-- First checkbox allows to select/unselect all the zones in the list.
+Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Enable/Disable selection: these buttons will enable/disable all the zones that are selected.
 - Delete selected: This button will delete the selected zone. 
 After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
