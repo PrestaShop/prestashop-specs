@@ -676,7 +676,7 @@
 	"title": "Modules",
 	"tags": [],
 	"description": "",
-	"content": "   Date Of Delivery   Faceted Search   Linklist   Theme Customization   Wishlist   "
+	"content": "   Date Of Delivery   Faceted Search   Linklist   Theme Customization   Wishlist      "
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html",
@@ -1167,6 +1167,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Specification of forms Context: Rule to be applied after the migration of a from or creation of a new form\nMandatory fields:  Any mandatory string fields do not accept only spaces as a value.  "
+},
+{
+	"uri": "https://build.prestashop.com/prestashop-specs/1.7/modules/autoupgrade.html",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Upgrade Options  Regenerate RTL stylesheet - toggle - Yes/No - All RTL files detected in the installed themes will be regenerated in the upgrade process  help text: If enabled, any RTL-specific files that you might have added to all your themes might be deleted by the created stylesheet\n"
 },
 {
 	"uri": "https://build.prestashop.com/prestashop-specs/1.7.html",
