@@ -8,7 +8,7 @@ The statuses page has 2 lists for both the order statuses and the order return s
 
 ![page status global](https://user-images.githubusercontent.com/13449658/110355341-67ecde80-8039-11eb-9341-ae46c233bd52.png)
 
-## Order statuses
+## 1. Order statuses
 
 ![page status](https://user-images.githubusercontent.com/13449658/110355438-84891680-8039-11eb-9047-3d498d272771.png)
 
@@ -51,7 +51,7 @@ After clicking on "Delete" button, the selected order statuses are deleted, a su
 
 The **order statuses** list displays all the order statuses.
 
-#### Multistore behavior
+### Multistore behavior
 
 The whole listing page can be displayed only in all shops context, the others contexts are not displayed in the header.
 
@@ -170,11 +170,35 @@ When **enabled**, a **drop-down menu appears on the bottom of the option** to le
 
 **A preview button** is available to preview the email that is going to be sent.
 
-*   **Attach invoice PDF to an email**. Send an email to the customer with the invoice in PDF format attached.
-*   **Attach a delivery slip PDF to an email**. Send an email to the customer with the delivery slip in PDF format attached.
-*   **Set the order as shipped.** Be careful: once an order is set as "shipped", it cannot be set back to the previous status.
-*   **Set the order as paid.** Same here: once an order is set as "paid", it cannot be set back to the previous status.
-*   **Set the order as in transit.** Displays the delivery PDF.
+### Order status properties
+
+*   **Attach invoice PDF to an email** - Checkbox 
+
+WHEN checked  
+THEN it sends an email to the customer with the invoice in PDF format attached.
+
+*   **Attach a delivery slip PDF to an email** - Checkbox
+
+WHEN checked   
+THEN it sends an email to the customer with the delivery slip in PDF format attached.
+
+*   **Set the order as shipped.** - Checkbox
+
+WHEN checked   
+THEN the flag **shipped** from the order is activated 
+
+*   **Set the order as paid.** - Checkbox
+
+WHEN checked   
+THEN the flag **paid** from the order is activated 
+
+*   **Set the order as in transit.** - Checkbox - 
+
+WHEN checked   
+THEN the flag **delivery** from the order is activated AND it genarates the Delivery Slip.
+
+WHEN a order is set **as paid** OR **as shipped** OR **as in transit**   
+THEN the flag can't be remove from the order.
 
 Next to the label name and email template preview, there is a drop-down to select the language the user wants to edit or view the information.
 
