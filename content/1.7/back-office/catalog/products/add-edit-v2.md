@@ -73,6 +73,281 @@ If the user cancels the confirmation modal, then the modal is closed and the use
 **
 When there is no more space in the header after the reference, the other references start a new line below the first one.
 
+## Description tab
+
+## Details/Specification tab
+
+## Stock tab
+
+Delta Quantity
+
+## Virtual tab
+
+## Pack tab
+
+## Combination  tab
+
+### Combination generation
+
+- **Generate combinations** - Button
+When the Generate combinations is clicked
+THEN the modal to generates combinations opens
+
+- **Generate combinations** - Modal
+
+	* **Search for attributes** - Search bar - Search by attributs or attributs value
+	WHEN the user searchs by attributs or attributs value
+	THEN the results displays a list of matching "attributs : attributs value".
+	
+		WHEN a attributs is typed
+	THEN all the attributs value are listed
+
+	- **Attribute** - Block: 
+		- Attribute name - Checkbox - Header of the block
+		- Attributes value - List of attribut value of the attribut clickable - By default, the list is collapsed.
+		
+		WHEN the block's header is collasped and the users click on it
+		THEN the Attributes value is displayed/extended.	
+		
+		WHEN the block's header is displayed and the users click on it
+		THEN the Attributes value is hidden/collapsed.		
+		
+		WHEN the Attribute name is checked 
+		THEN all the attribut value from the Attribute are added to the selected list.
+		
+		WHEN the Attribute name is checked 
+		THEN all the attribut value from the Attribute are added to the selected list.
+		
+		WHEN the Attribute name is unchecked 
+		THEN all the attribut value from the Attribute are removed from the selected list.
+
+		WHEN the Attribute value is clicked 
+		THEN the attribut value from the Attribute is added to the selected list.
+		
+		WHEN the Attribute value is clicked 
+		THEN the attribut value from the Attribute is removed from the selected list.
+
+* **Generate combinations** - Button
+	IF there is no attribut selected 
+	THEN the button is disabled
+	
+	WHEN the generated combinations already exists
+	THEN "The combinations already exists."
+
+WHEN combinations have been selected on the list and the user click to the bulk action 
+THEN it opens the bulk action modal 
+
+- **Bulk action** - Modal
+	The all section by default are collasped. Press them to collaspse and collapse them.
+	- **Stock** - Section
+		* **Stocks** - Delta Quantity input
+		* **Stock location** - Text input
+		* **Low stock level** - Number input
+		* **Receive a low stock alert by email** - Checkbox
+		* **Availability date** - Date field 
+		* **Min. quantity for sale** - Numeric input
+
+	- **Price and Impact** - Section
+		* **Cost price** - Numeric input
+		* **Impact on price (tax excl.)**- Price input
+		* **Impact on price (tax incl.)** - Price input     
+		* **Ecotax (tax incl.)** - Price input 
+		* **Impact on price per unit (tax excl.)** - Price input
+		* **Impact on price per unit (tax incl.)** - Price input
+		* **Impact on weight** - Numeric input
+		* **Impact on additional shipping fees** - Numerc input
+
+	- **References** - Section
+		* **Reference** - Text input
+		* **ISBN code** -  Numerc input
+		* **EAN-13 or JAN barcode** - Numerc input   
+		* **UPC barcode** - Numerc input 
+		* **MPN** - Numerc input   
+
+
+	- **Supplier** - Section - (is displayed is the supplier are configured in the Option tab)
+		-  **List the suppliers with their input** - same component on the Option tab
+
+	- **Apply changes to % combinations** - Button 
+	WHEN pressing the Apply button
+	THEN all edited input are apply to the selected combination  
+	- **Cancel** - Button
+	WHEN pressing the Cancel button
+	THEN the modal is closed
+
+### Combination listing
+
+- **Filter by** - List of Attributes
+	* Attributes - Dropdown - List of Attributes values
+		* Attributes values - Checkbox
+	
+	WHEN attributes value are checked
+	THEN the listing displays all the combination containing thes attributs values
+
+* **Combinations list** - List all the combinations -
+	*  Columns: 
+		* Checkbox - Allow to select the combination for the bulks actions
+		* ID - Label - ID's combination - Sort by acascending or descending order.
+		* Combinations - Label - List the attributs of the combinationn
+		* Reference - Text input - Sort by alpahbatics order
+		* Impact on price (tax excl.) - Price input - Sort by acascending or descending order
+		* Final price (tax excl.) - Label - Sort by acascending or descending order
+		* Quantity - Delta Quantity input - Sort by acascending or descending order
+		* Default combination - Checkbox - Sort by checked and unchecked
+	
+		WHEN pressing the "Save" Button on the footer
+		THEN all the input above are saved
+
+		* Actions edit - Button 
+
+		WHEN the edit button is clicked
+THEN it opens the edition combination's modal
+		
+		* Delete action - Button 
+		
+		WHEN the delete button is clicked
+		THEN the combination is deleted
+
+	WHEN the list of items exceed 10 combinations 
+		THEN The list is paginated 
+
+	- Pagination: 
+		* First Page - Label 
+		* Previous Page - Button - Go to the previous page if the page exits
+		* Current Page - Input number
+	
+		WHEN a number is typed 
+		THEN the listing displays the corresponding page IF the page doesn't exist THEN listing stays on the page before the typing.
+		* Next page - Button - Go to the next page if the page exits
+		* Last Page  - Label
+		* Items per page - Dropdown - Lists 10, 20, 50 and 100
+	
+		WHEN the dropdown is updated
+		THEN its regroups combination by the new value selected.
+		
+		WHEN some inputs has beed edited and the users changes of page before saving
+		THEN a modal is displayed to confirm the action. The users can accepts to Continue & Save the data or Continue & lose the date
+
+### Edit combinations
+
+Edit combination now opens a modal, see mockups here: 
+* **Combination name** - 
+* **Images**: All the images uploaded in basic settings tab are displayed.       
+The cover image chosen in basic settings tab is automatically selected as default image when the combination is created.     
+The user can choose another default image for the combination. You can have only one "default" image per combination.
+When the user hovers an image, the caption configured in basic settings tab should be displayed.
+* **Stocks** - Delta Quantity input
+* **Stock location** - Text input
+* **Low stock level** - Number input
+* **Receive a low stock alert by email** - Checkbox
+WHEN the product reaches the low stock level and Receive a low stock alert by email is checked
+THEN a email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.
+* **Availability date** - Date field - The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
+* **Min. quantity for sale**: In front-office \(product page & quick-view\), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
+* **Référence**: The reference of the combination is displayed in the product details part in front-office, according to the selected combination.
+* **Cost price**: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.
+* **Impact on price (tax excl.)**- Price input -
+
+WHEN Impact on price (tax excl.) is updated
+THEN the Impact on price tax excl field is calculated automatically according to the tax rule chosen 
+AND is added to the Final Price (tax excl.)
+
+* **Impact on price (tax incl.)** - Price input -     
+
+WHEN the Impact on price (tax incl.) is updated
+THEN the Impact on price tax excl field is calculated automatically according to the tax rule chosen. 
+AND is added to the Final Price (tax incl.)
+* **Final retail price**: Displays the final price tax excl and tax incl. 
+
+Both final prices are updated when you modify the impact on price tax excl or tax incl.
+* **Ecotax (tax incl.)** - Price input - This field is displayed if the “ecotax” option is enabled in International &gt; Taxes.             
+
+The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”     
+
+The eco-tax is an amount that is informative and doesn't impact the final price.
+Editing the eco-tax on the product page reduces the retail price so the final price remains the same.
+
+To keep the same behavior on the edition on the combination, editing the eco-tax on a combination doesn't impact the final price. The impact on price compensates for the changes.
+
+IF a product with combination has an ecotax equal to 0 and the user adds a new ecotax price to the combination
+THEN
+The impact on the price of the combination is subtracted from the ecotax, so the final retail price is not impacted.
+
+IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination lower than the ecotax of the product
+THEN
+The impact on the price of the combination is increased from the ecotax combination, so the final retail price is not impacted.
+
+IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination superior than the ecotax of the product
+THEN
+The impact on the price of the combination is subtracted from the ecotax.
+The final retail price is not impacted and the ecotax from the combination is displayed in the front office
+
+The eco-tax from the combination is displayed in the front office
+
+* **Impact on price per unit (tax excl.)** - Price input
+
+WHEN Impact on price per unit (tax excl.) is updated
+THEN the Impact on price per unit (tax incl.) field is calculated automatically according to the tax rule chosen. 
+AND is added to the Final Impact on price per unit (tax excl.)
+
+* **Impact on price per unit (tax incl.)** - Price input
+
+WHEN Impact on price per unit (tax incl.) is updated
+THEN the Impact on price per unit (tax excl.) field is calculated automatically according to the tax rule chosen. 
+AND is added to the Final Impact on price per unit (tax incl.)
+
+* **Impact on weight** - Numeric Input - The weight unit displayed next to the field is the one defined in International &gt; Localization.       
+
+* **Impact on additional shipping fees**: \([Improvement 11305](https://github.com/PrestaShop/PrestaShop/issues/11305)\) By default, it’s filled with 0.000000       
+This amount is added to the additional shipping fees configured in Shipping tab for the product.       
+The total is added to the total shipping cost according to the carrier selected in front-office.
+* **ISBN code**: Only numbers are accepted.       
+The International Standard Book Number \(ISBN\) is used to identify books and other publications.      
+The ISBN is displayed in product details tab of the front-office and change accordingly to the selected combination.
+* **EAN-13 or JAN barcode**: Only numbers are accepted.      
+This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America.      
+The EAN is displayed in product details tab of the front-office and change accordingly to the selected combination.
+* **UPC barcode**: Only numbers are accepted.      
+This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries.     
+The UPC is displayed in product details tab of the front-office and change accordingly to the selected combination.
+* **MPN**: Numbers and characters are accepted.      
+The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
+- **Suppliers**  - Same component from the Option tab
+
+- **Save** - Button 
+WHEN pressing the save button
+THEN all edited input are saved
+- **Cancel** - Button
+WHEN pressing the Cancel button
+THEN the modal is closed
+- **Previous combination** - Button
+WHEN pressing the Previous combination button
+THEN the modal displays the next Combination
+- **Next combination** - Button
+WHEN pressing the Next combination button
+THEN the modal displays the previous Combination
+
+IF a input has been edited without be saved and the users presses Next combination OR Previous combination OR Cancel buttin
+THEN a modal is displayed to confirm the action 
+
+- **Discard changes** - Modal:
+	* Content: All unsaved modifications made on the combination %combination_name%  will be lost.
+	* **Cancel** - Close the modal 
+	* **Discard** - Close the modal and the edition modal
+
+### Availability preferences
+
+**Availability preferences, behavior when out of stock**: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead there is a message “Stock management is disabled”
+* **3 radios buttons**:      
+
+  1\) Deny orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.     
+  2\) Allow orders: when it’s checked and product quantity is &lt;= 0, in front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.      
+  3\) Use default behavior \(Deny orders or Allow orders\): the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+
+* **Label when in stock**: If completed and product quantity is &gt; 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.      
+A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
+* **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.       
+A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 
 ## Pricing tab
 
@@ -85,10 +360,10 @@ Tool tip: This is the net sales price for your customers. The retail price (tax 
 * **Retail price (tax excl.)** - Price input - By default, it’s set to 0.000000
 * **Retail price (tax incl.)** - Price input - By default, it’s set to 0.000000
 
-WHEN the retail price (tax incl.) is edited
+WHEN the Retail price (tax incl.) is edited
 THEN the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.
 
-WHEN the retail price (tax excl.) is edited
+WHEN the Retail price (tax excl.) is edited
 THEN the retail price (tax incl.) field is calculated automatically according to the tax rule selected.
 
 * **Tax rule** - Dropdown list - Displays all tax rules enabled and a “no tax” option. 
@@ -113,6 +388,17 @@ THEN it displays the tax of the first state configured.
 
 WHEN Use eco tax is enabled (option is enabled in International > Taxes. Except) and the product is not a virtual product
 THEN the input Ecotax (tax incl.) is displayed
+
+WHEN the users edit the field 
+THEN the amount of the Ecotax (tax excl.) is deducted from the Retail price (tax excl.). The Retail price (tax incl.) remains the same amount.
+
+WHEN Ecotax is enabled
+THEN 
+Retail price (tax incl.) =  Retail price (tax excl.) * (1 + Tax) + Ecotax (tax incl.)
+Retail price (tax excl.) =  Retail price (tax incl.) / (1 + Tax) - Ecotax (tax excl.)
+
+WHEN the Retail price (tax excl.) OR Retail price (tax excl.) OR Ecotax (tax incl.) is edited
+THEN All the ennumrated field are automatically updated according the calculation rule describe above.
 
  ### Cost price
 
@@ -145,29 +431,29 @@ Placeholder: “Per kilo, per litre”.
 ### Summary 
 
 Displays all the prices of the product in two blocks.
-Block 1:
-- *Retail price (tax excl.)%* + *Ecotax (tax excl.)* 
-- *Retail price (tax incl.)%* (tax incl.)
-- *Retail price per unit (tax excl.)* per *Unity*
-- Including *Ecotax (tax incl.)*  for ecotax
+- Block 1:
+	- *Retail price (tax excl.)%* + *Ecotax (tax excl.)* 
+	- *Retail price (tax incl.)%* (tax incl.)
+	- *Retail price per unit (tax excl.)* per *Unity*
+	- Including *Ecotax (tax incl.)*  for ecotax
 
-Block 2:
--  *%Retail price (tax excl.)%* - *%Cost Price% margin*
--  *%Cost Price%* * 100  / *%Retail price (tax excl.)%* % margin rate
-- %Cost Price% cost price
+- Block 2:
+	-  *%Retail price (tax excl.)%* - *%Cost Price% margin*
+	-  *%Cost Price%* * 100  / *%Retail price (tax excl.)%* % margin rate
+	- %Cost Price% cost price
 
 Ex with fake data:
 If the tax is at 20%.
-Block 1:
-- 10€ (tax excl.)
-- 12€  (tax incl.)
-- 2€ per kilo
-- Including €10.00 for ecotax
+- Block 1:
+	- 10€ (tax excl.)
+	- 12€  (tax incl.)
+	- 2€ per kilo
+	- Including €10.00 for ecotax
 
-Block 2:
-- 5€ margin 
-- 50% margin rate
-- 5€ cost price
+- Block 2:
+	- 5€ margin 
+	- 50% margin rate
+	- 5€ cost price
 
 
 * **Display the "On sale!" flag on the product page, and on product listings** - checkbox - By default, it is unchecked.
@@ -335,7 +621,7 @@ Temporary redirection \(302\) = Temporarily display another product or category 
 
 * **Information message**: “Tags facilitate the product search for customers using the search bar” There is a read more link to open the following info: “Choose terms and keywords which your potential customers commonly would search for when looking for this product. Make sure that they are consistent with the tags you may have already defined. You can manage tag aliases in the Search section. If you add new tags, you have to rebuild the index.”
 
-## Options tab \[[EPIC](https://github.com/PrestaShop/PrestaShop/issues/14777)\]
+## Options tab
 
 **As a merchant I want to be able to manage the options for my products.**
 
@@ -402,4 +688,3 @@ THEN Supplier references is displayed
     * **Supplier reference**: - Text - Field to specify the product reference for each supplier. 
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow to specify the product currency for each supplier.
-
