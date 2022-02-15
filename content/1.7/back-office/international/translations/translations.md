@@ -101,7 +101,13 @@ The behavior is exactly like "back office translations", only that translation d
 
 In this case, wordings are sourced by analyzing all the theme's files. Since this process is slow, the result of this analysis is stored as XLF files in local filesystem cache. If the cache is found, then wordings are read from there. The user can refresh this cache by clicking on the "Find new wordings" button at the top of the page.
 
-Translations are sourced from XLF files within the theme in its `translations/{locale_code}` directory, one per domain. These files may or may not be present.
+Translations are sourced exactly like if the user had chosen "Core translations", then adding the ones from database translations starting with **"Shop"** and where "theme" is empty, then adding the XLF files within the theme in its `translations/{locale_code}` directory, one per domain. Each catalog replaces the translations from the previous one. Catalogs must be loaded in this order:
+
+1. Core xlf files (translated)
+2. Core database translation (no theme)
+3. Theme xlf files (translated)
+
+Note: the core catalog must be filtered as to not include translations that are not used by the theme (otherwise you end up with all the Core translations).
 
 User-edited translations are stored in database. To avoid collisions, theme translations must be kept associated to the theme they belong. If a theme redefines a Core translation (ie. same domain, same wording), then the redefined translation should only be used when the FO is using that theme (eg. in case of multishop with different themes for each shop, each theme should use the its own translation even if they both use the same given wording/domain pair). Redefined core translations should only be saved if they're different than the ones defined when not in the theme's context.
 
@@ -213,7 +219,15 @@ fr-FR
 
 #### Export Theme translations
 
-Translations are sourced in the same way as specified in "Front office - theme".
+Translations are sourced in the same way as specified in "Front office - theme":
+
+The catalogs are loaded and overridden in this order (the last one being the one that "wins" if it exists):
+
+1. default catalogue (untranslated)
+2. core xlf (translated)
+3. database translation (no theme)
+4. theme xlf (translated)
+5. database translation (theme)
 
 **Note:** this export may include core translation domains if they are used by the theme's files. However, only the wordings used by the theme are to be included in the exported file.
 
