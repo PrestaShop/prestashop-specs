@@ -78,3 +78,5 @@ Below the following information is showed:
  - Name
 
 **Addresses** - Displays the addresses and their count. Has an "add" button, when pressed, redirects to the customer addresses page.
+
+**Wishlist** - Displays the count of the items added to the wishlist by the customer.
