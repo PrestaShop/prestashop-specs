@@ -93,6 +93,11 @@ Delta Quantity
 
 ## Pack tab
 
+### Stock 
+
+- **Edit quantity** - See the component on the stock page
+- **Recent stock movements** - See the component on the stock page
+
 ### List of products for this pack
 - **List of products for this pack** - List of products 
 	- Product :
