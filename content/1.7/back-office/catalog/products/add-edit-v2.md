@@ -91,6 +91,46 @@ Delta Quantity
 
 ## Pack tab
 
+## Pack tab
+
+### List of products for this pack
+- **List of products for this pack** - List of products 
+	- Product :
+		* Product Image
+		* Product Name
+		* REF - Label - Displays the product reference (ex: "REF: demo_2)
+		* Delete - Button - Deletes the product from the list
+
+### Add products to your pack
+-   **Search for a product** - Search Bar - Lists all the product matching the product name or product reference.  
+
+	WHEN the user selects a product from the list
+	THEN The product name is inserted in the search bar 
+
+- **x** - Number Input  
+
+- **Add** - Button - Pressed, it adds the the product from the Search Bar with specified quantity to the pack
+
+WHEN the user adds a product already in the pack
+THEN it only increases the quantity of the product from the number input     
+
+-   **Pack quantities** - Dropdown with 4 options: 
+	* **Decrement pack only**
+	* **Decrement products in pack only**
+	* **Decrement both**
+	* **Default**
+	
+Options | Impacts
+-------- | -----
+**Decrement pack only** | Only the pack quantity is impacted when the pack is ordered and shipped.   |
+**Decrement products in pack only** | The quantity of each pack's products is impacted when the pack is ordered and shipped.  |
+**Decrement both** | The pack and the products stocks are impacted |
+**Default** | Can be one of the 3 values above, it depends on what is selected in Shop parameters > Products > Default pack stock management.| 
+
+- **Availibilty preferences**   -  see the Availibilty preferences component of the Stock page
+- **Stock location**   -  see the Stock location component of the Stock page
+- **Low stock level**   -  see the Low stock level component of the Stock page
+
 ## Combination  tab
 
 ### Combination generation
