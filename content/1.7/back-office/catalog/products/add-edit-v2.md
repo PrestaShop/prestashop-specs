@@ -91,8 +91,6 @@ Delta Quantity
 
 ## Pack tab
 
-## Pack tab
-
 ### Stock 
 
 - **Edit quantity** - See the component on the stock page
