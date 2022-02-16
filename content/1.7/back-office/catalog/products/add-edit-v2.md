@@ -1,3 +1,4 @@
+
 ---
 title: Product Page
 weight: 1
@@ -89,6 +90,29 @@ Delta Quantity
 
 ## Virtual tab
 
+-  **Quantity** - see the component in the stock page
+-   **Minimum quantity for sale**  - see the component in the stock page
+
+-   **Low stock level**  - see the component in the stock page
+-   **Send me an email when the quantity is below or equals this level**  - see the component in the stock page
+-   **Associated files ?** -Switch button - Yes / No  
+    If you check Yes, new fields are ungreyed:
+    -   **Browse file**: You can search and upload a file. This field disappears after uploading a file and clicking on save. It’s replaced by “Download file” and “Delete this file” actions, so you can upload only one associated file.
+    -   **File name**: This field is automatically completed with the name of the file uploaded, but you can edit it.
+    -   **Number of allowed download**: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “You have reached the maximum number of downloads allowed.” The number of downloads allowed is displayed in the mail download_product sent to the customer.
+    -   **Expiration date**: Date field. After this date, the customer can’t download the file anymore. If you try to download it, a message is displayed “Expiration date has passed, you cannot download this product.”. The expiration date is displayed in the mail download_product sent to the customer.
+    -   **Number of days**: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “The product deadline is in the past.”
+    -   **Delete file**: Once the file uploaded and clicking on Save, you can delete the file. When you click on “delete this file”, a modal is displayed to cancel or confirm the action. If you confirm the deletion, the file is deleted and “delete file” and “download file” actions are replaced by the browse file field.
+    -   **Download file**: Once the file uploaded and clicking on Save, you can download your file.
+    - **Unlimited** - Checkbox - A checkbox next to the input Maximum number of downloads, Download link validity and Expiration date. WHEN checked THE the input is disabled and the value of the fields become infinite.
+    
+- **Edit quantity** - See the component on the stock page
+- **Recent stock movements** - See the component on the stock page
+
+- **Availibilty preferences** -  see the Availibilty preferences component of the Stock page
+- **Stock location**   -  see the Stock location component of the Stock page
+- **Low stock level**   -  see the Low stock level component of the Stock page
+ 
 ## Pack tab
 
 ### Stock 
@@ -130,7 +154,7 @@ Options | Impacts
 **Decrement both** | The pack and the products stocks are impacted |
 **Default** | Can be one of the 3 values above, it depends on what is selected in Shop parameters > Products > Default pack stock management.| 
 
-- **Availibilty preferences**   -  see the Availibilty preferences component of the Stock page
+- **Availibilty preferences** -  see the Availibilty preferences component of the Stock page
 - **Stock location**   -  see the Stock location component of the Stock page
 - **Low stock level**   -  see the Low stock level component of the Stock page
 
