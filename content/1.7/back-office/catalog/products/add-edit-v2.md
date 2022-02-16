@@ -86,15 +86,35 @@ When there is no more space in the header after the reference, the other referen
 
 ## Stock tab
 
-Delta Quantity
+###   **Availability preferences, behavior when out of stock:**
+
+### Stocks
+
+- **Edit quantity** - Number input - Descreases or Increases the physical quantity by the specified quantity
+
+- **Recent Stock Movements** - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock mouvement it is displayed a Grouped stock movements linked to the order
+
+	- **Grouped stock movements linked to the order:** accumulation of all the stock movements related to an Order such as Customer Order and Product return.
+
+-   **Minimum quantity for sale**: In front-office (product page & quick-view), this value is indicated in the quantity field. When this value is > 1, a message is displayed under the quantity field in front-office “The minimum purchase order quantity for the product is X.”
+
+This field is not displayed if stock management is disabled in Shop parameters > Products settings.
+
+3 radios buttons:  
+1)  **Deny orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  
+2)  **Allow orders**: when it’s checked and product quantity is <= 0, in front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.  
+3)  **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
+
+-   **Label when in stock**: If completed and product quantity is > 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products.  
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+-   **Label when out of stock (and back order allowed)**: If completed and product quantity is <= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders.  
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+-   **Availability date**: Date field. The date should be displayed in front-office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ## Virtual tab
 
--  **Quantity** - see the component in the stock page
--   **Minimum quantity for sale**  - see the component in the stock page
+### Associated files ?
 
--   **Low stock level**  - see the component in the stock page
--   **Send me an email when the quantity is below or equals this level**  - see the component in the stock page
 -   **Associated files ?** -Switch button - Yes / No  
     If you check Yes, new fields are ungreyed:
     -   **Browse file**: You can search and upload a file. This field disappears after uploading a file and clicking on save. It’s replaced by “Download file” and “Delete this file” actions, so you can upload only one associated file.
@@ -105,9 +125,17 @@ Delta Quantity
     -   **Delete file**: Once the file uploaded and clicking on Save, you can delete the file. When you click on “delete this file”, a modal is displayed to cancel or confirm the action. If you confirm the deletion, the file is deleted and “delete file” and “download file” actions are replaced by the browse file field.
     -   **Download file**: Once the file uploaded and clicking on Save, you can download your file.
     - **Unlimited** - Checkbox - A checkbox next to the input Maximum number of downloads, Download link validity and Expiration date. WHEN checked THE the input is disabled and the value of the fields become infinite.
-    
+  
+  ### Stocks
+
 - **Edit quantity** - See the component on the stock page
 - **Recent stock movements** - See the component on the stock page
+-  **Quantity** - see the component in the stock page
+-   **Minimum quantity for sale**  - see the component in the stock page
+
+-   **Low stock level**  - see the component in the stock page
+-   **Send me an email when the quantity is below or equals this level**  - see the component in the stock page
+
 
 - **Availibilty preferences** -  see the Availibilty preferences component of the Stock page
 - **Stock location**   -  see the Stock location component of the Stock page
