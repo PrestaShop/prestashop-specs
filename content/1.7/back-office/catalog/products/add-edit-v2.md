@@ -1,3 +1,9 @@
+---
+title: Product Page
+weight: 1
+---
+# SPECS PRODUCT PAGE V2
+
 ## Add a new product <a name="addproduct"></a>
 
 As a merchant, when I create a new product, I want to select the type of product before.
