@@ -54,4 +54,4 @@ Once the category value is selected, the UI arranges all the list according the 
 
 The arrangement results are retrieved instantly below the dropdown.
 
-- **Bulk actions** - by default the dropdown is disabled, but once there is a selection of a module in the list, the dropdown becomes active.
+- **Bulk actions** - by default the dropdown is disabled, but once there is a selection of a module in the list, the dropdown becomes active. When the dropdown is active, there are available values to click:
