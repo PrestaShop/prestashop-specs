@@ -63,3 +63,9 @@ The arrangement results are retrieved instantly below the dropdown.
   - Disable Mobile - disables the Mobile view for the module or modules.
 
 Once the Bulk action pop-up is shown, there is a title _Bulk action confirmation_ and secondary confirmation text _You are about to the following modules:_ and the list of module names. As well as 2 CTA buttons - **Cancel** - closes the pop-up, discards further actions - or **Yes, I want to do it** - proceeds the selected Bulk action.
+
+## Module row
+
+Each Module listing UI is constructed as a separate row and with the following elements:
+- Icon - specific module icon, that identifies the module in visual side.
+- Name - full module name.
