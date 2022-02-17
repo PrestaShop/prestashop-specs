@@ -30,7 +30,7 @@ This UI contains the listing management of all the Modules installed in webshop.
 ## The main UI elements
 
 - **Search input** - a wide input field that helps to find desired module, by typing module name or a part of the module name. This search converts the texted words to tags with the X icons, suggesting to delete the word later. The search results are retrieved instantly, right after the word has been typed and mouse pointer clicked on Lasso icon search button. Alternatively, mouse clicking on other UI elements, pressing Tab button, or any other button on keyboard will initiate the search action as well. There is no limit of characters in the search field.
-- **Category** - a dropdown that can segment the Modules displayed in this page. By default, if the dropdown is not clicked, it is named by _Categories_. All the Categories, except _Recentrly used_, contain names and numeric values of total modules. The Categories names are:
+- **Category** - a dropdown that can segment the Modules displayed in this page by Categories. By default, if the dropdown is not clicked, it is named by _Categories_. All the Categories, except _Recentrly used_, contain names and numeric values of total modules. The Categories names are:
 
   - Recently used
   - Administration
@@ -46,3 +46,7 @@ This UI contains the listing management of all the Modules installed in webshop.
   - Other
 
 Once the category value is selected, the UI arranges all the list according the Category. If there are no modules in the Category, the notification box is prompted - _You do not have module in « {category name} ». Discover the best-selling modules of this category in the {category name link} page._ Once a Category is selected and managed, returning to the all modules list is called _All Categories_ dropdown menu link.
+- **Status** - a dropdown that can segment the Modules in this page by Status. By default _Show all modules_ is as placeholder for dropdown. The Status names are:
+  - **Show all modules** - shows all the modules in the listing.
+  - **Enabled modules** - shows only Enabled modules in webshop.
+  - **Disabled modules** - shows only Disabled modules in webshop.
