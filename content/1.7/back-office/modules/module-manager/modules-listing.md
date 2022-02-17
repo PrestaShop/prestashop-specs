@@ -61,3 +61,5 @@ The arrangement results are retrieved instantly below the dropdown.
   - Reset - resets selected module or modules.
   - Enable Mobile - enables the Mobile view for the module or modules.
   - Disable Mobile - disables the Mobile view for the module or modules.
+
+Once the Bulk action pop-up is shown, there is confirmation text _You are about to the following modules:_ and the list of module names. As well as 2 CTA buttons - **Cancel** or **Yes, I want to do it**.
