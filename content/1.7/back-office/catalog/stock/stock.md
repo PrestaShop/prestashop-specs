@@ -12,7 +12,7 @@ weight: 1
   
 | Stock's type | Definition | When impacted | 
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Physical stock | Number of products that are physically in my stock.| When a merchant can add or remove physical stock 
+| Physical stock | Number of products that are physically in my stock.| When a merchant can add or remove physical stock, when ordered products leave or return in stock, ...
 | Reserved stock | Number of products that are part of customer orders that aren’t shipped yet.| When customers order products |
 | Available stock | Number of products that are available for sale. Available stock = physical stock - reserved stock | When Physical and Reserved Stock are impacted
 
