@@ -71,5 +71,5 @@ Below a text is shown: "figure your page layouts. Each page can use a different 
 
 ### Call to action
 
- - Choose layouts
- - Reset to defaults
+ - Choose layouts - when pressed redirects to the [specs of the theme&logo-choose-layouts]({{<ref "theme&logo-choose-layouts.md">}} "theme&logo-choose-layouts.")
+ - Reset to defaults - resets everything to the default values.
