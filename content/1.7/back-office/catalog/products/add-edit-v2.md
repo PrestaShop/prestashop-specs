@@ -1,4 +1,3 @@
-
 ---
 title: Product Page
 weight: 1
@@ -82,8 +81,160 @@ When there is no more space in the header after the reference, the other referen
 
 ## Description tab
 
-## Details/Specification tab
+### Images
 
+-   **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images her or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”  
+    You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.  
+    When there is already an image, you can click only on the frame with the “+” to open the selector.
+    
+-   **Image order**: You can move the images in the product sheet, the order is well changed in front-office.  
+    The drag icon isn’t displayed when many images are selected and you can’t move many images
+    
+-   **Image caption**: You can click on an uploaded image and add a caption.  
+    You can put a caption by language.  
+    The caption is displayed in front-office when you hover the thumbnail image according to the selected language.
+    
+-   **Cover image**: You can click on an uploaded image to assign it as cover image. There is necessarily a cover image. There can be only one cover image.  
+    If you upload many images, the first image selected is the cover image.  
+    The cover image is displayed in product list in front-office.  
+    You can change the cover image by clicking on an image, check the checkbox “cover image” and click on Save. If it was checked for another image, then it’s unchecked.
+    
+-   **Zoom**: You can zoom on an uploaded image by clicking on it and click on “Zoom”.  
+    The image is open in its default size. You can close it by clicking on the cross, outside the image or pressing ESC key. Merchants should be able to navigate between several images in zoom view to have an easy last check before saving the page.
+    
+-   **Delete**: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for cancel or confirm the action.
+    
+-   **Bulk actions**: ([issue #12773](https://github.com/PrestaShop/PrestaShop/issues/12773)) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:
+    
+    -   The number of images selected
+    -   An “Unselect all” link to unselect images and close the frame
+    -   The “zoom” button to open the first image of the list zoomed
+    -   A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for cancel or confirm the action.
+        
+    -   The cross to close the frame and unselect images
+        
+    -   Caption field: You can enter a caption which will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.
+        
+        If more than one image is selected the checkbox “cover” disappears
+
+### Description & Description
+
+-   **Summary**: The text can be formatted thanks to the TinyMCE editor
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic
+    
+-   **Description**: The text can be formatted thanks to the TinyMCE editor
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic
+
+### Categories
+
+- **Associated categories**:
+The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents is different.
+
+EX:
+Product: Comics
+Categories 1: US comics > Best-sellers > Thor > Marvel
+Categories 2 : Home > Classical > Thor > Marvel
+If the product is associated to the categories 1 and 2
+then the tags will display:
+Tag1: Best-sellers > Thor > Marvel
+Tag2: Classical > Thor > Marvel
+
+Deleting a tag, removes the tag of the list and deletes the association between the category and the product at the save.
+
+**Add categories:**
+Below the tags’ lists is displayed the “Add categories” button. The button opens a modal with the search component and the category tree.
+
+The user can search by category and the parent’s categories. The search result list displays the breadcrumb of the category.  
+The list of categories associated is also displayed below the search component.
+
+If the product is not associated to any category except the ‘Home’ branch, then ‘Home’’s child categories are displayed, just the first level of the tree is displayed/opened.
+
+If the product is already associated with categories, then the categories branches are opened until the categories associated are displayed.
+
+Main category - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category.
+
+The main category defines the product URL and the breadcrumb of the front-office.
+
+Below the drop-list is display the breadcrumb of the product. Updating the main category updates the breadcrum displayed below the list and the breadcrum of the front office.
+
+### Brand
+- **Brand** - Drop-down list - By default, the selected option is “No brand”, meaning there is no brand associated with the product.
+
+All the brands enabled are displayed in the drop-down. If there are several brands with the same name, then the ID of the brand is displayed before its name. The brand is displayed on the product page in front office in the product details tab. The logo of the brand is displayed if the brand has a logo, otherwise, the name of the brand is displayed. When you add a brand, it’s added in all languages enabled.
+
+### Related product: 
+
+- **Search product**:
+	The user can search by product name or product reference. You can click on it to associate to the product. An associated product can only once be associated with the same product. You can't associate a product to itself.
+
+	There is no limit to the number of associated products.
+
+- **Delete a related product**:
+
+	If you want to delete only one associated product, you can click on the delete icon.
+	Add and delete actions are only saved when the users save the form.
+	Once the product added, It displays the product name with its reference and the product cover.
+
+## Details tab
+
+### References
+
+-   **ISBN** - Text input - only numbers are accepted and X at the end. The International Standard Book Number (ISBN) is used to identify books and other publications.
+    
+-   **EAN-13 or JAN barcode** - Text input - only numbers are accepted. This type of product code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is added at the end of the product URL in front-office.
+    
+-   **UPC barcode** - Text input - Field, only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand and in other countries.
+    
+-   **MPN** - Text input - numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
+    
+### Features
+
+-   **Add a feature**: By default the selected option is “Choose a feature”. All the features are displayed in the drop-down and are sorted by position ASC. If there are several features with the same name, then the ID of the feature is displayed before its name If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
+    When you select a feature, both fields (pre-defined & customized value) are enabled.  
+    The features and the associated values are displayed in product details tab of the front-office.
+    
+-   **Feature pre-defined value**: All the values of the selected feature are displayed in the drop-down and are sorted by name ASC.  
+    If there are several features' values with the same name, then the ID of the feature’s value is displayed before its name If you select a pre-defined value, the customized value should be disabled because a feature can’t have both ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
+    When you add a feature with a pre-defined value, it’s added in all languages enabled.
+    
+-   **Feature customized value**: If you start enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
+    When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.  
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+    
+-   **Delete feature**: Button to delete the feature. When you click on it, you have a modal for cancel or confirm the action. When you delete a feature, it’s deleted in all languages.
+
+### Attached files
+    
+-   **Search** - Search Bar - The user search for exsiting files
+When selected, the file is added to the file list.
+The list display the title, file name, type and the delete button to revome the file from the list.
+-  **Add a new file**: Button allowing to add files to the product page. When clicked, it opens a modal.
+**Modal:**
+	-   **File name**: Field with the title of the document, displayed in front-office
+	-   **Description**: Field with the description of the document, displayed in front-office
+	-   **Files** - Browse component - The user can browse and choose files from their file manager
+	-   **Save**: Button to add the files and save the file 
+	-   **Cancel**: Button to close the modal
+
+### Display condition on product page
+
+- **Display condition on product page** - Switch button - When enable, it enable Condition dropdown, otherwise it is disabled
+
+-   **Condition**: Drop-down with 3 options: New, Used, Refurbished. By default, New is selected.
+
+### Allow customers to add a text or an image
+Help text: You can use this file to personalize the customer's product.
+
+ - **Field name**: Enter the name of the field which is displayed on the product page in front-office. A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+    
+  -   **Type**: Drop-down with 3 options: text, file & numeric. By default text is selected. If you choose “text” in front-office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers ([improvement 11795](https://github.com/PrestaShop/PrestaShop/issues/11795))
+
+  -   **Required** - Checkbox not checked by default. When checked the field is required in front-office and you can’t add the product to the cart while it’s not completed.
+  - **Add customization field** - Button - 
+When the button is pressed then add the item into a list
+
+  -   **Delete** - Button - to remove the customization field
+    
 ## Stock tab
 
 ###   **Availability preferences, behavior when out of stock:**
@@ -449,6 +600,53 @@ THEN a modal is displayed to confirm the action
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
 * **Label when out of stock \(and back order allowed\)**: If completed and product quantity is &lt;= 0, it is displayed in front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.       
 A drop-down next to the field is displayed when there are several languages installed \(disabled languages are diplayed in the drop-down\). It allows to choose in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
+
+## Shipping tab
+
+**As a merchant I want to be able to manage carriers information for my products.**
+
+This tab is not displayed for a virtual product.
+
+### Package dimension
+
+-   **Width** - Unit Input - By default it’s set to 0.     
+-   **Height**- Unit Input - By default it’s set to 0.  
+-   **Depth**- Unit Input - By default it’s set to 0.  
+-   **Weight**- Unit Input - By default it’s set to 0.  
+    
+   
+### Delivery Time
+ 
+ -   **Delivery time**  - Radio buttons - 
+		- **None**: No delivery time is displayed on the product page in front-office  
+		- **Default delivery time**: 
+		
+			If the product is in stock, the value filled in Shop parameters > Products settings > “Delivery time of in-stock products” is displayed on the product page in front-office. 
+		
+			If the product is out of stock but orders are allowed, the value filled in Shop parameters > Products settings > “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in front-office. 
+
+			There is an “edit” link that opens Shop parameters > Products settings in a new browser tab next to the radio button label.  
+	
+		- **Specific delivery time to this product**
+
+			If this option is used then Delivery time of in-stock products and Delivery time of out-of-stock products with allowed orders are enabled, otherwise it is disabled
+    
+-   **Delivery time of in-stock products**- Text input - Placeholder: “Delivered within 3-4 days”.
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). 
+    
+-   **Delivery time of out-of-stock products with allowed orders**- Text input - Placeholder: “Delivered within 5-7 days”.
+    A drop-down next to the field is displayed when there are several languages installed (disabled languages are diplayed in the drop-down). 
+    
+-   **Additional shipping fees**: By default, it’s filled with 0.000000  
+    The amount is added to the total shipping cost according to the carrier selected in front-office.
+    
+-   **Available carriers** - Radio buttons - 
+	* All carriers -  All the carrier can delivered this product
+	* Only selected carriers - Dropdown 
+
+If Only selected carriers is selected then the dropdown is enabled otherwise it is disabled
+	The dropdown lists all the carriers in checkboxes with the id of the carrier, the name and the delay. The users checks the carriers that can delivered the product.
+	The selected carriers are displayed in below the dropdown.
 
 ## Pricing tab
 
