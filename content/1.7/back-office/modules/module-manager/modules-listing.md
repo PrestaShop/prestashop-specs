@@ -29,4 +29,4 @@ This UI contains the listing management of all the Modules installed in webshop.
 
 ## The main UI elements
 
-- **Search input** - a wide input field that helps to find desired module, by typing module name or a part of the module name. This search converts the texted words to tags with the X icons, suggesting to delete the word later. 
+- **Search input** - a wide input field that helps to find desired module, by typing module name or a part of the module name. This search converts the texted words to tags with the X icons, suggesting to delete the word later. The search results are retrieved instantly, right after the word has been typed and mouse pointer clicked on Lasso icon search button. Alternatively, mouse clicking on other UI elements, pressing Tab button, or any other button on keyboard will initiate the search action as well.
