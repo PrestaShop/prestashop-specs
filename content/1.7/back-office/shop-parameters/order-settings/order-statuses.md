@@ -195,7 +195,7 @@ THEN the flag **paid** from the order is activated
 *   **Set the order as in transit.** - Checkbox - 
 
 WHEN checked   
-THEN the flag **delivery** from the order is activated AND it genarates the Delivery Slip.
+THEN the flag **delivery** from the order is activated AND it generates the Delivery Slip.
 
 WHEN a order is set **as paid** OR **as shipped** OR **as in transit**   
 THEN the flag can't be remove from the order.
