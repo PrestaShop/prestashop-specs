@@ -17,6 +17,6 @@ This UI contains the listing management of all the Modules installed in webshop.
 - **Upload a module Call-toaction (CTA) button with the cloud-style icon with the arrow pointed up** - allows to upload and install the module to the store. Once the mouse pointer is hovered this button, additional tooltip is visible with the advicible text _Upload a module_. After the button is clicked, a pop-up will appear, containing:
   - **Upload a module** - pop-up title identifier.
   - **X icon** - closes the pop-up instantly.
-  - **Dotted borders section area** - where the archive can be uploaded by dragging and dropping the archive file right into this area.
+  - **Dotted borders section area** - where the archive can be uploaded by draging and dropping the archive file right into this area.
   - **Cloud-style icon with the arrow pointed up** - visually identifies the upload function in pop-up.
-  - **_Drop your module archive here or select file_** - describes the ability to dragg and drop the archive in the area or by clicking the _select file_ link, choosing the appropriate archive by the Browse function of the browser.
+  - **_Drop your module archive here or select file_** - describes the ability to drag and drop the archive in the area or by clicking the _select file_ link, choosing the appropriate archive by the Browse function of the browser.
