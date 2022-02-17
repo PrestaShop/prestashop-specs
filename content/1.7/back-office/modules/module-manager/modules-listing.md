@@ -45,8 +45,13 @@ This UI contains the listing management of all the Modules installed in webshop.
   - Specialized Platforms
   - Other
 
-Once the category value is selected, the UI arranges all the list according the Category. If there are no modules in the Category, the notification box is prompted - _You do not have module in « {category name} ». Discover the best-selling modules of this category in the {category name link} page._ Once a Category is selected and managed, returning to the all modules list is called _All Categories_ dropdown menu link.
+Once the category value is selected, the UI arranges all the list according the Category. The arrangement results are retrieved instantly below the dropdown. If there are no modules in the Category, the notification box is prompted - _You do not have module in « {category name} ». Discover the best-selling modules of this category in the {category name link} page._ Once a Category is selected and managed, returning to the all modules list is called _All Categories_ dropdown menu link.
 - **Status** - a dropdown that can segment the Modules in this page by Status. By default _Show all modules_ is as placeholder for dropdown. The Status names are:
+
   - **Show all modules** - shows all the modules in the listing.
   - **Enabled modules** - shows only Enabled modules in webshop.
   - **Disabled modules** - shows only Disabled modules in webshop.
+
+The arrangement results are retrieved instantly below the dropdown.
+
+- **Bulk actions** - by default the dropdown is disabled, but once there is a selection of a module in the list, the dropdown becomes active.
