@@ -5,4 +5,6 @@ weight: 1
 
 # MODULES > MODULE MANAGER > MODULES
 
+![Modules UI](static/img/modules-listing.png)
+
 This UI contains the listing management of all the Modules installed in webshop.
