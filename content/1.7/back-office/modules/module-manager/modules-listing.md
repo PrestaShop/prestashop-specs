@@ -19,4 +19,4 @@ This UI contains the listing management of all the Modules installed in webshop.
   - **X icon** - closes the pop-up instantly.
   - **Dotted borders section area** - where the archive can be uploaded by dragging and dropping the archive file right into this area.
   - **Cloud-style icon with the arrow pointed up** - visually identifies the upload function in pop-up.
-  - **Drop your module archive here or select file** - describes the ability to dragg and drop the archive in the area or by clicking the _select file_ link, choosing the appropriate archive by the Browse function of the browser.
+  - **_Drop your module archive here or select file_** - describes the ability to dragg and drop the archive in the area or by clicking the _select file_ link, choosing the appropriate archive by the Browse function of the browser.
