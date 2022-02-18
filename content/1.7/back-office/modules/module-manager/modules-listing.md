@@ -71,4 +71,4 @@ Each Module listing UI is displayed as a separate row and with the following ele
 - **Name** - full module name.
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
-- Description paragraph - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link.
+- **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
