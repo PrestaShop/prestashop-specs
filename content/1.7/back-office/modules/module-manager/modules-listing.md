@@ -55,6 +55,7 @@ Once the category value is selected, the UI arranges all the list according the 
 The arrangement results are retrieved instantly below the dropdown.
 
 - **Bulk actions** - by default the dropdown is disabled, but once there is a selection of a module in the list, the dropdown becomes active. When the dropdown is active, there are available values to click:
+
   - **Uninstall** - uninstalls selected module or modules.
   - **Disable** - disables selected module or modules.
   - **Enable** - enables selected module or modules.
@@ -67,9 +68,17 @@ Once the Bulk action pop-up is shown, there is a title _Bulk action confirmation
 ### Module row
 
 Each Module listing UI is displayed as a separate row and with the following elements:
+
 - **Icon** - specific module icon, that identifies the module in visual side.
 - **Name** - full module name.
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
 - **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
-- CTA button - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_.
+- **CTA button** - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
+
+  - **Uninstall** - uninstalls selected module.
+  - **Disable** - disables selected module.
+  - **Enable** - enables selected module.
+  - **Reset** - resets selected module.
+  - **Enable Mobile** - enables the Mobile view for the module.
+  - **Disable Mobile** - disables the Mobile view for the module.
