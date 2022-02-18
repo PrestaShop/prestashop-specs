@@ -99,4 +99,10 @@ This pop-up appears right after clicking the _Read more_ link and extends the in
   - **Changelog** - the list of module updates in version history.
 - **Manufacturer icon**
 - **Price**
-- **Configure CTA button**
+- **Configure CTA button** - with the functions (like in Bulk actions and in separate module listing row):
+  - **Uninstall** - uninstalls selected module.
+  - **Disable** - disables selected module.
+  - **Enable** - enables selected module.
+  - **Reset** - resets selected module.
+  - **Enable Mobile** - enables the Mobile view for the module.
+  - **Disable Mobile** - disables the Mobile view for the module.
