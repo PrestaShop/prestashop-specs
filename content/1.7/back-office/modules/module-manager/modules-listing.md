@@ -64,7 +64,7 @@ The arrangement results are retrieved instantly below the dropdown.
 
 Once the Bulk action pop-up is shown, there is a title _Bulk action confirmation_ and secondary confirmation text _You are about to the following modules:_ and the list of module names. As well as 2 CTA buttons - **Cancel** - closes the pop-up, discards further actions - or **Yes, I want to do it** - proceeds the selected Bulk action.
 
-## Module row
+### Module row
 
 Each Module listing UI is displayed as a separate row and with the following elements:
 - **Icon** - specific module icon, that identifies the module in visual side.
@@ -72,3 +72,4 @@ Each Module listing UI is displayed as a separate row and with the following ele
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
 - **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
+- CTA button - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_.
