@@ -23,9 +23,9 @@ This UI contains the listing management of all the Modules installed in webshop.
   - **_Please upload one file at a time, .zip or tarball format (.tar, .tar.gz or .tgz). Your module will be installed right after that._** - additional advicible text indicating the all correct archive extensions, that can be validated and accepted by the webshop. As well, the archive will be executed to the installation phase right after the upload action. Once the installation execution starts, the UI will show spinning loader icon at the top, the text title _Installing module..._, the advicible text _It will close as soon as the module is installed. It won't be long!_. Once the installation process finishes, the spinning loader icon becomes a checkmark icon, text phrase _Module installed!_ appears, indicating that the archive installation was successful. **Configure** CTA button appears also, leading to the module configuration page, for instant module management.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs** - navigation tabs for Modules listing menu:
-  - Modules - highlighted tab.
-  - Alerts
-  - Updates
+  - **Modules** - highlighted tab.
+  - **Alerts**
+  - **Updates**
 
 ## The main UI elements
 
@@ -83,3 +83,20 @@ Each Module listing UI is displayed as a separate row and with the following ele
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
 
+## Read More popup
+
+This pop-up appears right after clicking the _Read more_ link and extends the information about the module. The pop-up contains:
+- **Icon of the module**
+- **Version of the module**
+- **Developer of the module**
+- **X icon for closing the pop-up**
+- **Bigger image of the module UI or other screenshots**
+- **Tabs for navigating through the information in pop-up** - sometimes in other modules tabs are few but usually the tabs are:
+  - **Overview** - full description of the module.
+  - **Additional information** - additional description of the module.
+  - **Benefits** - listing the benefeits of the module.
+  - **Features** - lists the features of the module.
+  - **Changelog** - the list of module updates in version history.
+- **Manufacturer icon**
+- **Price**
+- **Configure CTA button**
