@@ -110,3 +110,7 @@ This pop-up appears right after clicking the _Read more_ link and extends the in
   - **Reset** - resets selected module.
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
+
+## Multistores functionality
+
+Different module functions - **Disable**, **Enable**, **Disable Mobile**, **Enable Mobile** - can be set separately for each Shop group or Multistore. 
