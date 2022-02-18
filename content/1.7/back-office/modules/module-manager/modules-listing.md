@@ -39,7 +39,7 @@ If the archive size is too big or there were other code failures when uploading 
 
 ## The main UI elements
 
-- **Search input** - a wide input field that helps to find desired module, by typing module name or a part of the module name. This search converts the texted words to tags with the X icons, suggesting to delete the word later. The search results are retrieved instantly, right after the word has been typed and mouse pointer clicked on Lasso icon search button. Alternatively, mouse clicking on other UI elements, pressing Tab button, or any other button on keyboard will initiate the search action as well. There is no limit of characters in the search field.
+- **Search input** - a wide input field that helps to find desired module, by typing module name or a part of the module name. This search converts the texted words to tags with the X icons, suggesting to delete the word later. The search results are retrieved instantly, right after the word has been typed and mouse pointer clicked on Magnifying glass icon search button. Alternatively, mouse clicking on other UI elements, pressing Tab button, or any other button on keyboard will initiate the search action as well. There is no limit of characters in the search field.
 - **Category** - a dropdown that can segment the Modules displayed in this page by Categories. By default, if the dropdown is not clicked, it is named by _Categories_. All the Categories, except _Recentrly used_, contain names and numeric values of total modules. Note, that Categories are displayed as bolded titles and segmenting the module rows in listing. The Categories names are:
 
   - **Recently used**
