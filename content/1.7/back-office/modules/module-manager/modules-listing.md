@@ -85,6 +85,8 @@ Each Module listing UI is displayed as a separate row and with the following ele
 
 Once one of the functions are executed, the CTA button transforms to spinning loader. After the loader finishes the process, the green success notification will prompt in the top-right side of UI, with the message _{function name} action on module {module name} succeeded._
 
+If one of the action responses as unsuccessful, the top-right side UI prompts the message _Cannot {action name} module {module name}. The module is invalid and cannot be loaded._
+
 ## Read More pop-up
 
 This pop-up appears right after clicking the _Read more_ link and extends the information about the module. The pop-up contains:
