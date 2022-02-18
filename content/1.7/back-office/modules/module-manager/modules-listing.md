@@ -83,7 +83,7 @@ Each Module listing UI is displayed as a separate row and with the following ele
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
 
-Once one of the functions are executed, the CTA button transforms to spinning loader. After the loader finishes the process, the green success notification will prompt in the top-right side of UI, with the message _{function name} action on module relatedproductspremium succeeded._
+Once one of the functions are executed, the CTA button transforms to spinning loader. After the loader finishes the process, the green success notification will prompt in the top-right side of UI, with the message _{function name} action on module {module name} succeeded._
 
 ## Read More pop-up
 
