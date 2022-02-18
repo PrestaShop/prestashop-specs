@@ -83,7 +83,9 @@ Each Module listing UI is displayed as a separate row and with the following ele
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
 
-## Read More popup
+Once one of the functions are executed, the CTA button transforms to spinning loader. After the loader finishes the process, the green success notification will prompt in the top-right side of UI, with the message _{function name} action on module relatedproductspremium succeeded._
+
+## Read More pop-up
 
 This pop-up appears right after clicking the _Read more_ link and extends the information about the module. The pop-up contains:
 - **Icon of the module**
