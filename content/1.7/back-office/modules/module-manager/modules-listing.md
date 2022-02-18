@@ -33,7 +33,8 @@ This UI contains the listing management of all the Modules installed in webshop.
 If the archive size is too big or there were other code failures when uploading the archive to the webshop, the pop-up will display the following elements, right after the upload:
 - **_Oops... Upload failed._** - the information text about the failed module upload or install.
 - **_What happened?_** - a question with a link to the details, why the archive upload or install has failed.
-- Failure details - if the _What happened?_ link is clicked, there will be detailed failure explanations. Sometimes it is described as text, for example, _File is too big (78.42MiB). Max filesize: 50MiB._ or sometimes it could be shown as a Symfony PHP exception error, when **Debug mode** is enabled in Prestashop.
+- Failure details - if the _What happened?_ link is clicked, there will be detailed failure explanations. Sometimes it is described as text, for example, _File is too big (78.42MiB). Max filesize: 50MiB._ or sometimes it could be shown as a Symfony PHP exception error, for example, _This file does not seem to be a valid module zip in src/Adapter/Module/ModuleZipManager.php (line 139)_, when **Debug mode** is enabled in Prestashop.
+- **Try again** - clicking this will lead to the default pop-up of the archive upload, suggesting to attempt a file upload once again.
 
 ## The main UI elements
 
