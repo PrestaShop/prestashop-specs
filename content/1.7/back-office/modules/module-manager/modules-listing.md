@@ -54,7 +54,7 @@ Once the category value is selected, the UI arranges all the list according the 
 
 The arrangement results are retrieved instantly below the dropdown.
 
-- **Bulk actions** - by default the dropdown is disabled, but once there is a selection of a module in the list, the dropdown becomes active. When the dropdown is active, there are available values to click:
+- **Bulk actions** - by default the dropdown is disabled, but once there is a selection - checkbox marking - of a module in the list, the dropdown becomes active. When the dropdown is active, there are available values to click:
 
   - **Uninstall** - uninstalls selected module or modules.
   - **Disable** - disables selected module or modules.
@@ -65,7 +65,7 @@ The arrangement results are retrieved instantly below the dropdown.
 
 Once the Bulk action pop-up is shown, there is a title _Bulk action confirmation_ and secondary confirmation text _You are about to the following modules:_ and the list of module names. As well as 2 CTA buttons - **Cancel** - closes the pop-up, discards further actions - or **Yes, I want to do it** - proceeds the selected Bulk action.
 
-### Module row
+## Module row
 
 Each Module listing UI is displayed as a separate row and with the following elements:
 
@@ -82,3 +82,4 @@ Each Module listing UI is displayed as a separate row and with the following ele
   - **Reset** - resets selected module.
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
+
