@@ -26,3 +26,11 @@ This UI displays the marketing suggestions for the webshop, to optimize and incr
   - **Paragraph image**
   - **Paragraph title**
   - **Paragraph description**
+
+These topics are clickable - link opens new blank page - they link to the official Prestashop Addons Marketplace, where additional useful Addons can be added to the wehshop.
+
+- **Prestashop banner** - information banner that contains the following elements:
+  - **Prestashop Addons marketplace logo**
+  - **_Optimize your online store with PrestaShop’s Official Marketplace!_**
+  - **_Search on PrestaShop Addons_**
+  - **Search input field** - manages the search of a desired Addons Marketplace modules. Once the Magnifying glass icon is clicked or Enter key is pressed, the search results are visible in the new blank page and in the Addons Marketplace website.
