@@ -8,13 +8,17 @@ weight: 1
 
 The empty state card appears WHEN there is no product
 
-1. Header
+## Header
+
 - New product - Button - Opens the "Add new product modal"
-1. Top of the listing
 
-## **Settings wheel component**
+If multistore is enabled then Shop-Selector-Modal (title:"Add new product") is opened before the "Add new product modal"
 
-**Bulk actions** - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled
+## Top of the listing
+
+- **Settings wheel component**
+
+- **Bulk actions** - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled
 
 The 4 options open the Progress Bar Modal while performing the options:
 
@@ -38,11 +42,11 @@ There are 3 buttons in the dropdown:
 
 After clicking on it, the whole category tree is opened
 
-1. Collapse
+2. Collapse
 
 After clicking on it, it folds the whole category tree
 
-1. Unselect
+3. Unselect
 
 After clicking on it, if a category was selected, it's no longer selected
 
@@ -52,14 +56,16 @@ When a category is selected:
 - (%Category_name%) - The name of the selected category is displayed between brackets in the dropdown
 - If a sort and/or search were done on a column, they are still applied after selecting a category
 - A column position is added in the table between status and actions with a "Rearrange" button allowing to change the position of the products in the selected category.
-1. Rearrange button
+
+1. Rearrange button:
 
 After clicking on it:
 
 - If a sort and/or search were done they are removed and products are sorted by position in the selected category.
 - The rearrange button becomes a "Save & refresh" disabled button
 - It's possible to change the position of the products in the category by clicking on the line or the icon
-1. Changing the position of products
+
+2. Changing the position of products:
 
 After clicking on the icon or the line, the checkbox is checked and the product is selected (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/15291](https://github.com/PrestaShop/PrestaShop/issues/15291)">15291</a>)
 
@@ -170,6 +176,6 @@ After selecting another shop than the current, I should return to the first page
 
 If on the last page all products are deleted, I should return to the first page (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/14713](https://github.com/PrestaShop/PrestaShop/issues/14713)">14713</a>), it's the same behavior another listing
 
-## 9. Deleted categories and products associated
+## Deleted categories and products associated
 
 When I delete the main category of product A, then if product A is re-associated with category B, then category B must become the "default category" for product A (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/9811](https://github.com/PrestaShop/PrestaShop/issues/9811)">9811</a>)
