@@ -1,10 +1,8 @@
-# Listing products
-
-## title: Listing
-
+---
+title: Product Page
 weight: 1
-
-# SPECS LISTING PRODUCT PAGE
+---
+# SPECS LISTING PRODUCT PAGE V2
 
 ## Empty state
 
