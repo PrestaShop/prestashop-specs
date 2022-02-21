@@ -11,7 +11,7 @@ As a merchant, when I create a new product, I want to select the type of product
 When I press add new product button, a modal is displayed.
 
 
-The modal lists all the PrestaShop product types (simple product, combination product, virtual product, and products’ pack).
+The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack).
 A simple product is selected by default.
 
 Each product type has its shorts' description. Selecting a product type displays its description.
