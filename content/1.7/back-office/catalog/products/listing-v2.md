@@ -1,5 +1,5 @@
 ---
-title: Listing Page V2
+title: Listing Page - 8.0
 weight: 1
 ---
 # SPECS LISTING PRODUCT PAGE V2
