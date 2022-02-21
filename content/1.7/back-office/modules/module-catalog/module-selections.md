@@ -43,9 +43,9 @@ There are plenty of useful modules that are suggested for shop owner. The sugges
 - **Easily increase your customers' average cart size!** and the new blank page link **View all the Business modules {arrow icon}**.
 - **Find out about our partners' offers now** and the new blank page link **View the entire selection {arrow icon}**.
 
-## Module suggestion div UI
+## Module suggestion blocks UI
 
-The div (rectangle box) of the module suggestion contains:
+The div (rectangle box block) of the module suggestion contains:
 - **Icon**
 - **Full module name**
 - **The developer of module**
@@ -71,3 +71,13 @@ The div (rectangle box) of the module suggestion contains:
 - **Shipment modules - Opt for speed** - title.
 - **32% of e-commerce sites are chosen for their speed of delivery. Consider suggesting different delivery methods to win over more customers.** - excert paragraph.
 - **Discover the delivery solutions {arrow icon}** - link to Addons Marketplace useful shipment modules.
+
+## Bottom UI elements
+
+There is a block at the bottom, with the inspiring text _Anything is possible for your store! Discover all the features for your e-commerce success_ and the wide CTA button named _View all modules_. Clicking the button redirects with new blank page to the Addons Marketplace page.
+
+There is also a PNG first visit header, displaying the Prestashop Addons Marketplace thematic.
+
+## Multistores functionality
+
+Module suggestions do not affect the display by changing the other Multistores or Shop Groups.
