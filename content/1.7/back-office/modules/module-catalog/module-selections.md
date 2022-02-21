@@ -34,3 +34,15 @@ These topics are clickable - link opens new blank page - they link to the offici
   - **_Optimize your online store with PrestaShop’s Official Marketplace!_**
   - **_Search on PrestaShop Addons_**
   - **Search input field** - manages the search of a desired Addons Marketplace modules. Once the Magnifying glass icon is clicked or Enter key is pressed, the search results are visible in the new blank page and in the Addons Marketplace website.
+
+## Module suggestions in grid
+
+There are plenty of useful modules that are suggested for shop owner. The suggestions are segmented with the inspiring H2 class title phrases and links to all the other groups in Addons Marketplace:
+- **Be visible This is the key to your success** and the new blank page link to certain group **View all the Traffic modules {arrow icon}**.
+- **Boost your sales and your store’s turnover!** and the new blank page link to certain group **View all the Conversion modules {arrow icon}**.
+- **Easily increase your customers' average cart size!** and the new blank page link to certain group **View all the Business modules {arrow icon}**.
+- **Find out about our partners' offers now** and the new blank page link to certain group **View the entire selection {arrow icon}**.
+
+## Module suggestion div UI
+
+
