@@ -16,10 +16,12 @@ A simple product is selected by default.
 
 Each product type has its shorts' description. Selecting a product type displays its description.
 
-- Simple product → A physical product that needs to be shipped.
-- Product with combination → A product with different variations (size, color, etc.) from which customers can choose.
--  Pack of products → A collection of products from your catalog.
-- Virtual product → An intangible product that doesn't require shipping. You can also add a downloadable file.
+| Product type | Description |
+| --- | --- |
+| Standard product | A physical product that needs to be shipped. |
+| Product with combination | A product with different variations (size, color, etc.) from which customers can choose. |
+| Pack of products |  A collection of products from your catalog. |
+| Virtual product | An intangible product that doesn't require shipping. You can also add a downloadable file. |
 
 Modules can hook into the modal to add a new product type, with its description and icon/image.
 The module is allowed to add any image or icon at the same size as the icon of the product type of PrestaShop.
@@ -32,7 +34,7 @@ After selecting the product type, the product page is opened
 ### Product header <a name="product-header"></a>
 
 The product header displays the product:
-- name
+- Name - Text Input - Language-Selector 
 - Cover image
 - price tax excluded 
 - price tax included 
@@ -45,10 +47,7 @@ And 3 buttons:
 - View statistics redirected to the stats page 
 - Help button
 
-
-
-**Quantity
-**
+**Quantity**
 The quantity background colors change depending on the quantity.
 If the quantity is strictly superior to the low stock level
 Then the color background is green
@@ -59,24 +58,31 @@ Then the color background is orange
 If the quantity is inferior or equal to 0
 Then the color background is red
 
-**Change of product type
-**
-When clicking on the product type, a modal is displayed to change the product type. The current type and the button “Change product type” are disabled. By default, none of the product types are preselected.
+### Change of product type
 
+When clicking on the product type, a modal is displayed to change the product type. The current type and the button “Change product type” are disabled. By default, none of the product types are preselected.
 
 Once the user selects a product different from the current product type, then the button “Change product type” becomes enabled.
 Pressing the button opens closes the current modal to open the confirmation modal.
 
-If the user changes the product type, only the common data between the product type will be saved.
+Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
 
-List the common data  
-How a PrestaShop product type can switch to another module product, how can they surcharge the feature
+| Changing the Product type form| Impact | warning-alert in the modal |
+| --- | --- | --- |
+| Standard product | No impact, the data is common between the standard product and the others products. | |
+| Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>This will reset the stock of this product. |
+| Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
+| Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
+**Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
+
+**Cancel** - Close the modal
 If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type
 
 
-**References**
-When there is no more space in the header after the reference, the other references start a new line below the first one.
+### **References**
+
+List all the references fulfilled next to its label.  When there is no more space in the header after the reference, the other references start a new line below the first one.
 
 ## Description tab
 
@@ -89,9 +95,8 @@ When there is no more space in the header after the reference, the other referen
 -   **Image order**: You can move the images in the product sheet, the order is well changed in the front office.  
     The drag icon isn’t displayed when many images are selected and you can’t move many images
     
--   **Image caption**: You can click on an uploaded image and add a caption.  
-    You can put a caption by language.  
-    The caption is displayed in the front office when you hover the thumbnail image according to the selected language.
+-   **Image caption** - Text input - Language-Selector - The user can click on an uploaded image and add a caption.  
+    The caption is displayed in the front office when the customer hovers the thumbnail image according to the selected language.
     
 -   **Cover image**: You can click on an uploaded image to assign it as a cover image. There is necessarily a cover image. There can be only one cover image.  
     If you upload many images, the first image selected is the cover image.  
@@ -118,12 +123,10 @@ When there is no more space in the header after the reference, the other referen
 
 ### Description & Description
 
--   **Summary**: The text can be formatted thanks to the TinyMCE editor
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic
-    
--   **Description**: The text can be formatted thanks to the TinyMCE editor
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic
-
+-   **Summary** - Text input - Language-Selector - The text can be formatted thanks to the TinyMCE editor
+  
+-   **Description** - Text input - Language-Selector - The text can be formatted thanks to the TinyMCE editor
+ 
 ### Categories
 
 - **Associated categories**:
@@ -196,9 +199,8 @@ All the brands enabled are displayed in the drop-down. If there are several bran
     If there are several features' values with the same name, then the ID of the feature’s value is displayed before its name If you select a pre-defined value, the customized value should be disabled because a feature can’t have both ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
     When you add a feature with a pre-defined value, it’s added in all languages enabled.
     
--   **Feature customized value**: If you start to enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
+-   **Feature customized value** - Text input - Language Selector - If you start to enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both ([issue 16306](https://github.com/PrestaShop/PrestaShop/issues/16306))  
     When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.  
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
     
 -   **Delete feature**: Button to delete the feature. When you click on it, you have a modal for canceling or confirming the action. When you delete a feature, it’s deleted in all languages.
 
@@ -225,7 +227,7 @@ remove the file from the list.
 ### Allow customers to add a text or an image
 Help text: You can use this file to personalize the customer's product.
 
- - **Field name**: Enter the name of the field which is displayed on the product page in the front office. A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+ - **Field name** - Input text - Language Selector -  Enter the name of the field which is displayed on the product page in the front office. 
     
   -   **Type**: Drop-down with 3 options: text, file & numeric. By default text is selected. If you choose “text” in the front office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers ([improvement 11795](https://github.com/PrestaShop/PrestaShop/issues/11795))
 
@@ -236,8 +238,7 @@ When the button is pressed then add the item to a list
   -   **Delete** - Button - to remove the customization field
     
 ## Stock tab
-
-###   **Availability preferences, behavior when out of stock:**
+The tab is displayed only if the product is a standard product.
 
 ### Stocks
 
@@ -251,19 +252,22 @@ When the button is pressed then add the item to a list
 
 This field is not displayed if stock management is disabled in Shop parameters > Products settings.
 
+###   Availability preferences, 
+
+**behavior when out of stock**
 3 radios buttons:  
 1)  **Deny orders**: when it’s checked and product quantity is <= 0, in the front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  
 2)  **Allow orders**: when it’s checked and product quantity is <= 0, in the front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.  
 3)  **Use default behavior (Deny orders or Allow orders)**: the default behavior is set in Shop parameters > Product settings > Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.
 
--   **Label when in stock**: If completed and product quantity is > 0, it is displayed on the front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products.  
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
--   **Label when out of stock (and backorder allowed)**: If completed and product quantity is <= 0, it is displayed in the front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders.  
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic. ([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299))
+-   **Label when in stock** - Text input - Language-Selector - If completed and product quantity is > 0, it is displayed on the front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of in-stock products.  
+ 
+-   **Label when out of stock (and backorder allowed)** - Input Text - if completed and product quantity is <= 0, it is displayed in the front-office product page and quick view, instead of the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders.  
+  
 -   **Availability date**: Date field. The date should be displayed in the front office in the product details part (as long as it is not passed), no matter the availability of the product.
 
 ## Virtual tab
-
+The tab is displayed only if the product is a virtual product.
 ### Associated files ?
 
 -   **Associated files ?** -Switch button - Yes / No  
@@ -293,7 +297,7 @@ This field is not displayed if stock management is disabled in Shop parameters >
 - **Low stock level**   -  see the Low stock level component of the Stock page
  
 ## Pack tab
-
+The tab is displayed only if the product is a pack of products.
 ### Stock 
 
 - **Edit quantity** - See the component on the stock page
@@ -338,6 +342,7 @@ Options | Impacts
 - **Low stock level**   -  see the Low stock level component of the Stock page
 
 ## Combination  tab
+The tab is displayed only if the product is a combination product.
 
 ### Combination generation
 
@@ -615,7 +620,7 @@ This tab is not displayed for a virtual product.
 -   **Weight**- Unit Input - By default it’s set to 0.  
     
    
-### Delivery Time
+### Delivery time
  
  -   **Delivery time**  - Radio buttons - 
 		- **None**: No delivery time is displayed on the product page in front-office  
@@ -631,11 +636,9 @@ This tab is not displayed for a virtual product.
 
 			If this option is used then Delivery time of in-stock products and Delivery time of out-of-stock products with allowed orders are enabled, otherwise, it is disabled
     
--   **Delivery time of in-stock products**- Text input - Placeholder: “Delivered within 3-4 days”.
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). 
-    
--   **Delivery time of out-of-stock products with allowed orders**- Text input - Placeholder: “Delivered within 5-7 days”.
-    A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). 
+-   **Delivery time of in-stock products**- Text input - Placeholder: “Delivered within 3-4 days” - Language Selector
+ 
+-   **Delivery time of out-of-stock products with allowed orders**- Text input - Placeholder: “Delivered within 5-7 days” - Language Selector 
     
 -   **Additional shipping fees**: By default, it’s filled with 0.000000  
     The amount is added to the total shipping cost according to the carrier selected in the front office.
@@ -876,17 +879,17 @@ If the meta description field is empty, the product description is displayed.
 If I click on Basic Settings, change the description, save, refresh the page and return to SEO, the description of the preview has changed.             
 When you start to complete meta title, meta description, and friendly URL fields, it’s displayed directly in the preview.     
 The preview is displayed in the selected language. \([Issue 14984](https://github.com/PrestaShop/PrestaShop/issues/14984)\)
-* **Meta title**: There is a placeholder: “To have a different title from the product name, enter it here.”     
+* **Meta title** - Input Text - Language Selector -  There is a placeholder: “To have a different title from the product name, enter it here.”     
 This data is displayed in the code of the page in the tag.        
 If the field is empty, the product name will be used. A counter indicates the number of characters used on 70 characters recommended.        
-A drop-down next to the field is displayed when there are several languages installed \(disabled languages are displayed in the drop-down\). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Meta description**: There is a placeholder: “To have a different description than your product summary in search results pages, write it here.”         
+
+* **Meta description** - Input Text - Language Selector -  There is a placeholder: “To have a different description than your product summary in search results pages, write it here.”         
 This data is displayed in the code of the page in the tag.         
 If the field is empty, the product description will be used. A counter indicates the number of characters used on 160 characters recommended.           
-A drop-down next to the field is displayed when there are several languages installed \(disabled languages are displayed in the drop-down\). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)
-* **Friendly URL**: This field is automatically filled when you enter the product name.      
+
+* **Friendly URL** - Input Text - Language Selector -  This field is automatically filled when you enter the product name.      
 The spaces are replaced by dashes.         
-A drop-down next to the field is displayed when there are several languages installed \(disabled languages are displayed in the drop-down\). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\)          
+    
 When many languages are installed, if I fill the product name only for the default language, I want the friendly-URL field to be automatically filled in other languages with the same content as in default language \([improvement 15936](https://github.com/PrestaShop/PrestaShop/issues/15936)\)
 * **Indexation by search engines**: Yes / No toggle. When set on Yes, the product is indexed. Otherwise, it's not.
 * **Reset URL**: This button allows to reset the friendly URL field as it was before the last change.
@@ -916,7 +919,7 @@ Delete selected category or product: You can remove the selected product or cate
 Permanent redirection \(301\) = Permanently display another product or category instead.     
 Temporary redirection \(302\) = Temporarily display another product or category instead.   
 
-* **Tags**: There is a placeholder: “Use a comma to create separate tags. E.g.: dress, cotton, party dresses.” To validate a tag, you can push Enter or comma key. The tags appear in Shop parameters &gt; Search &gt; Tags and are associated with the product. You can remove a tag by clicking on the cross. The tag is also removed in Shop parameters &gt; Search &gt; Tags. A drop-down next to the field is displayed when there are several languages installed \(disabled languages are displayed in the drop-down\). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic \([improvement 16299](https://github.com/PrestaShop/PrestaShop/issues/16299)\) 
+* **Tags**: There is a placeholder: “Use a comma to create separate tags. E.g.: dress, cotton, party dresses.”  - Input Tag - Language Selector -  To validate a tag, you can push Enter or comma key. The tags appear in Shop parameters &gt; Search &gt; Tags and are associated with the product. You can remove a tag by clicking on the cross. The tag is also removed in Shop parameters &gt; Search &gt; Tags. 
 
 * **Information message**: “Tags facilitate the product search for customers using the search bar” There is a read more link to open the following info: “Choose terms and keywords which your potential customers commonly would search for when looking for this product. Make sure that they are consistent with the tags you may have already defined. You can manage tag aliases in the Search section. If you add new tags, you have to rebuild the index.”
 
@@ -990,26 +993,32 @@ THEN Supplier references are displayed
 
 ## Footer
 
-**Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
-**Preview** - When you click on this button, it saves and opens a new browser tab with the product displayed in the front office.
+- **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
+
+- **Preview** - When you click on this button, it saves and opens a new browser tab with the product displayed in the front office.
 If the product is disabled (offline), you have on the product page in the front office a message displayed: “This product is not visible to your customers.”
 Keyboard shortcut: ALT + SHIFT + V
-**Online** - When you click on this button, it saves and makes the product visible in the front office.
-**Offline** - When you click on this button, it saves and makes the product invisible in the front office.
-**Save & Publish** - Button to save all changes made in all tabs.
+
+- **Online** - When you click on this button, it saves and makes the product visible in the front office.
+
+- **Offline** - When you click on this button, it saves and makes the product invisible in the front office.
+
+- **Save & Publish** - Button to save all changes made in all tabs.
 Keyboard shortcut: ALT + SHIFT + S.
 If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
 If the product is Offline then the button name change to "Save".
-**Duplicate** - When you click on this button, it saves and duplicates the current product (the duplicated product will be offline). 
-**Duplicate images** - checkbox - Checked, duplicates product with the images 
+
+- **Duplicate** - When you click on this button, it saves and duplicates the current product (the duplicated product will be offline). 
+
+- **Duplicate images** - checkbox - Checked, duplicates product with the images 
 The duplicated product must be exactly the same. Keyboard shortcut:
 ALT + SHIFT + D
 
-**Go to catalog** - When you click on this button, it saves and redirects to the catalog product list.
+- **Go to catalog** - When you click on this button, it saves and redirects to the catalog product list.
 Keyboard shortcut: ALT + SHIFT + Q
-**Add new product** - When you click on this button, it saves and opens a new empty product page.
-Keyboard shortcut: ALT + SHIFT + P
 
+- **Add new product** - When you click on this button, it saves and opens a new empty product page.
+Keyboard shortcut: ALT + SHIFT + P
 
 ## Multistore
 
