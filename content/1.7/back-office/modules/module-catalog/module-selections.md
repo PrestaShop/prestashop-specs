@@ -45,4 +45,13 @@ There are plenty of useful modules that are suggested for shop owner. The sugges
 
 ## Module suggestion div UI
 
-
+The div (rectangle box) of the module suggestion contains:
+- **Icon**
+- **Full module name**
+- **The developer of module**
+- **Excert description of the module**
+- **Break line**
+- **Five-star rating scale and total sum of raters** - indicates the rating of the suggested module, how many stars it is covered in yellow and how many raters were included.
+- **Price**
+- **Discover CTA button** - main link to the Addons Marketplace, where the certain module can be afforded.
+- **On Marketplace PrestaShop Addons** - indication, where the module can be afforded.
