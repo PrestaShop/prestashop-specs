@@ -55,3 +55,19 @@ The div (rectangle box) of the module suggestion contains:
 - **Price**
 - **Discover CTA button** - main link to the Addons Marketplace, where the certain module can be afforded. Clicking the button redirects to new blank page.
 - **On Marketplace PrestaShop Addons** - indication, where the module can be afforded.
+
+## Payment and Shippment blocks
+
+### Payment block
+
+- **Icon**
+- **Payment modules - Build trust with your customers** - title.
+- **With payment methods adapted to your customers and that they can have faith in, you are guaranteed to pump up the conversion rate of your online store.** - excert paragraph.
+- **Discover the payment modules {arrow icon}** - link to Addons Marketplace useful payment modules.
+
+### Shipment block
+
+- **Icon**
+- **Shipment modules - Opt for speed** - title.
+- **32% of e-commerce sites are chosen for their speed of delivery. Consider suggesting different delivery methods to win over more customers.** - excert paragraph.
+- **Discover the delivery solutions {arrow icon}** - link to Addons Marketplace useful shipment modules.
