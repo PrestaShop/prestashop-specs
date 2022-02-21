@@ -1,8 +1,8 @@
 ---
-title: Product Page V2
+title: Product Page - 8.0
 weight: 1
 ---
-# SPECS PRODUCT PAGE V2
+# SPECS PRODUCT PAGE
 
 ## Add a new product <a name="addproduct"></a>
 
