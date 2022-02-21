@@ -1,5 +1,5 @@
 ---
-title: Product Page
+title: Product Page V2
 weight: 1
 ---
 # SPECS PRODUCT PAGE V2
