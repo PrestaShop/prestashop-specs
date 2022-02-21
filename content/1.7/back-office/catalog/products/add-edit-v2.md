@@ -1,3 +1,4 @@
+
 ---
 title: Product Page - 8.0
 weight: 1
@@ -85,6 +86,8 @@ Confirmation Modal - The modal displays the info-alert: “Changing the product 
 List all the references fulfilled next to its label.  When there is no more space in the header after the reference, the other references start a new line below the first one.
 
 ## Description tab
+
+**As a merchant I want to be able to complete the basic information of my products.**
 
 ### Image Manager
 
@@ -179,6 +182,8 @@ All the brands enabled are displayed in the drop-down. If there are several bran
 
 ## Details tab
 
+**As a merchant I want to be able to complete the basic information of my products.**
+
 ### References
 
 -   **ISBN** - Text input - only numbers are accepted and X at the end. The International Standard Book Number (ISBN) is used to identify books and other publications.
@@ -240,6 +245,8 @@ When the button is pressed then add the item to a list
 ## Stock tab
 The tab is displayed only if the product is a standard product.
 
+**As a merchant I want to be able to manage my products quantities.**
+
 ### Stocks
 
 - **Edit quantity** - Number input - Decreases or Increases the physical quantity by the specified quantity
@@ -268,6 +275,9 @@ This field is not displayed if stock management is disabled in Shop parameters >
 
 ## Virtual tab
 The tab is displayed only if the product is a virtual product.
+
+**As a merchant I want to be able to manage my virtual products.**
+
 ### Associated files ?
 
 -   **Associated files ?** -Switch button - Yes / No  
@@ -298,6 +308,9 @@ The tab is displayed only if the product is a virtual product.
  
 ## Pack tab
 The tab is displayed only if the product is a pack of products.
+
+**As a merchant I want to be able to manage my pack of products.**
+
 ### Stock 
 
 - **Edit quantity** - See the component on the stock page
@@ -342,7 +355,10 @@ Options | Impacts
 - **Low stock level**   -  see the Low stock level component of the Stock page
 
 ## Combination  tab
+
 The tab is displayed only if the product is a combination product.
+
+**As a merchant I want to be able to manage my products with combinations.**
 
 ### Combination generation
 
@@ -653,7 +669,7 @@ If Only selected carriers are selected then the dropdown is enabled otherwise it
 
 ## Pricing tab
 
-**As a merchant, I want to be able to manage the prices of my products**
+**As a merchant, I want to be able to manage the prices of my products.**
 
  ### Retail price
 
