@@ -47,7 +47,7 @@ And 3 buttons:
 - View statistics redirected to the stats page 
 - Help button
 
-**Quantity**
+- **Quantity**
 The quantity background colors change depending on the quantity.
 If the quantity is strictly superior to the low stock level
 Then the color background is green
@@ -74,10 +74,10 @@ Confirmation Modal - The modal displays the info-alert: “Changing the product 
 | Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
 | Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
-**Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
+	- **Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
 
-**Cancel** - Close the modal
-If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type
+	- **Cancel** - Close the modal
+	If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type
 
 
 ### **References**
@@ -143,7 +143,7 @@ Tag2: Classical > Thor > Marvel
 
 Deleting a tag, removes the tag of the list and deletes the association between the category and the product at the save.
 
-**Add categories:**
+- **Add categories:**
 Below the tags’ lists is displayed the “Add categories” button. The button opens a modal with the search component and the category tree.
 
 The user can search by category and the parent’s categories. The search result list displays the breadcrumb of the category.  
@@ -153,7 +153,7 @@ If the product is not associated with any category except the ‘Home’ branch,
 
 If the product is already associated with categories, then the categories branches are opened until the categories associated are displayed.
 
-Main category - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category.
+- **Main category** - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category.
 
 The main category defines the product URL and the breadcrumb of the front office.
 
@@ -991,6 +991,7 @@ THEN Supplier references are displayed
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.
 
+
 ## Footer
 
 - **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
@@ -1024,21 +1025,21 @@ Keyboard shortcut: ALT + SHIFT + P
 
 ### Multistore Header
 
-It only displays stores associated with the product
-**Add to other stores** - Button - Open modal to select new stores to associate or dissociate with the product.
+It only displays stores associated with the product.
+- **Add to other stores** - Button - Open modal to select new stores to associate or dissociate with the product.
 List of stores grouped by group shop with a checkbox
-Cancel button 
-Save Button - Displays the confirmation modal summarizing all the deleted and added stores
+	- Cancel button 
+	- Save Button - Displays the confirmation modal summarizing all the deleted and added stores
 When a store is unchecked, it deletes the product related to the store.
 When stores are checked, it duplicates the product related to the store offline.
 
 	
 ### Multistore behavior
 
-**Apply changes to all stores** - Checkbox - It's displayed below each input compatible with the multistore.
+- **Apply changes to all stores** - Checkbox - It's displayed below each input compatible with the multistore.
 Once checked and the product form is saved, the changes will be applied to all the stores.
 
-**Save & Publish**: Button to save all changes made in all tabs.
+- **Save & Publish**: Button to save all changes made in all tabs.
 If one checkbox **Apply changes to all stores** is checked then its opens a modal summarizing the changes.
 Summarizing multistore changes:
 Lists the input label applied to all the store
@@ -1046,11 +1047,11 @@ Lists all the associated shops impacted
 Cancel button 
 Save & Publish button
 
-**Manage images** - Open a modal with a table with all the images associated with the product from all the shops associated.
+- **Manage images** - Open a modal with a table with all the images associated with the product from all the shops associated.
 The columns are all the stores associated with the product
 The rows are checkboxes
-Cancel button
-Save Button
+	- Cancel button
+	- Save Button
 
 When an image for a shop is unchecked then the image is not from the product, hidden in the image manager of the shop's product, and not displayed in the front office.
 
