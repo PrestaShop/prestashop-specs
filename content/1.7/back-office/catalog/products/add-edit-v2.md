@@ -75,13 +75,12 @@ How a PrestaShop product type can switch to another module product, how can they
 If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type
 
 
-**References
-**
+**References**
 When there is no more space in the header after the reference, the other references start a new line below the first one.
 
 ## Description tab
 
-### Images
+### Image Manager
 
 -   **Image upload**: Upload zone. When there is no image, you have the following message displayed “Drop images here or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”  
     You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.  
@@ -214,7 +213,7 @@ remove the file from the list.
 	-   **Filename**: Field with the title of the document, displayed in front-office
 	-   **Description**: Field with the description of the document, displayed in front-office
 	-   **Files** - Browse component - The user can browse and choose files from their file manager
-	-   **Save**: Button to add the files and save the file 
+	-   **Save and Publish**: Button to add the files and save the file 
 	-   **Cancel**: Button to close the modal
 
 ### Display condition on product page
@@ -485,7 +484,7 @@ THEN it opens the edition combination's modal
 
 Edit combination now opens a modal, see mockups here: 
 * **Combination name** - 
-* **Images**: All the images uploaded in basic settings tab are displayed.       
+* **Images**: All the images uploaded in the Detail tab are displayed.       
 The cover image chosen in the description tab is automatically selected as the default image when the combination is created.     
 The user can choose another default image for the combination. You can have only one "default" image per combination.
 When the user hovers an image, the caption configured in the Description tab should be displayed.
@@ -567,7 +566,7 @@ The UPC is displayed in the product details tab of the front office and changed 
 The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
 - **Suppliers**  - Same component from the Option tab
 
-- **Save** - Button 
+- **Save & Publish** - Button 
 WHEN pressing the save button
 THEN all edited input are saved
 - **Cancel** - Button
@@ -804,7 +803,7 @@ THEN the user can set percentage or amount of Discount tax included or tax exclu
 	- Dropdown - 2 options: tax included and tax excluded - By default, tax included is selected
 
 
-* **Set specific price**:  Switch button - by default, it's disable.
+* **Set specific price**:  Switch button - by default, it's disabled.
 
 WHEN enabled
 THEN the user can set Retail price (tax excl.) to the product
@@ -988,3 +987,64 @@ THEN Supplier references are displayed
     * **Supplier reference**: - Text - Field to specify the product reference for each supplier. 
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.
+
+## Footer
+
+**Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
+**Preview** - When you click on this button, it saves and opens a new browser tab with the product displayed in the front office.
+If the product is disabled (offline), you have on the product page in the front office a message displayed: “This product is not visible to your customers.”
+Keyboard shortcut: ALT + SHIFT + V
+**Online** - When you click on this button, it saves and makes the product visible in the front office.
+**Offline** - When you click on this button, it saves and makes the product invisible in the front office.
+**Save & Publish** - Button to save all changes made in all tabs.
+Keyboard shortcut: ALT + SHIFT + S.
+If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
+If the product is Offline then the button name change to "Save".
+**Duplicate** - When you click on this button, it saves and duplicates the current product (the duplicated product will be offline). 
+**Duplicate images** - checkbox - Checked, duplicates product with the images 
+The duplicated product must be exactly the same. Keyboard shortcut:
+ALT + SHIFT + D
+
+**Go to catalog** - When you click on this button, it saves and redirects to the catalog product list.
+Keyboard shortcut: ALT + SHIFT + Q
+**Add new product** - When you click on this button, it saves and opens a new empty product page.
+Keyboard shortcut: ALT + SHIFT + P
+
+
+## Multistore
+
+### Multistore Header
+
+It only displays stores associated with the product
+**Add to other stores** - Button - Open modal to select new stores to associate or dissociate with the product.
+List of stores grouped by group shop with a checkbox
+Cancel button 
+Save Button - Displays the confirmation modal summarizing all the deleted and added stores
+When a store is unchecked, it deletes the product related to the store.
+When stores are checked, it duplicates the product related to the store offline.
+
+	
+### Multistore behavior
+
+**Apply changes to all stores** - Checkbox - It's displayed below each input compatible with the multistore.
+Once checked and the product form is saved, the changes will be applied to all the stores.
+
+**Save & Publish**: Button to save all changes made in all tabs.
+If one checkbox **Apply changes to all stores** is checked then its opens a modal summarizing the changes.
+Summarizing multistore changes:
+Lists the input label applied to all the store
+Lists all the associated shops impacted
+Cancel button 
+Save & Publish button
+
+**Manage images** - Open a modal with a table with all the images associated with the product from all the shops associated.
+The columns are all the stores associated with the product
+The rows are checkboxes
+Cancel button
+Save Button
+
+When an image for a shop is unchecked then the image is not from the product, hidden in the image manager of the shop's product, and not displayed in the front office.
+
+When an image for a shop is checked then the image is added to the product and displayed by the image manager of the shop's product and available in the front office.
+
+The cover image from one shop can't be unchecked. An image that is unchecked to all the stores is deleted after the "Save and publish".
