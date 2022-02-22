@@ -2,13 +2,15 @@
 title: Alerts Page
 weight: 1
 ---
-# MODULES > MODULE MANAGER > ALERTS
+# MODULES > MODULE MANAGER > ALERTS AND UPDATES
 
 ![Alerts tab](static/img/alerts-listing.png)
 
-This UI displays the modules that are strongly recommended to update.
+![Updates tab](static/img/updates-listing.png)
 
-## Top UI elements
+These UI, displayed in separate Alerts and Updates tabs, indicate the modules, that should be strongly recommended to finish the full configuration in order to make module fully operational, or to upgrade the module to the newest version.
+
+## Top UI elements for Alerts and Updates tabs
 
 - **Multistore switching dropdown** - allows to navigate through the available Multistores. Note, that the notifications and alerts indications appear in All of Mulstistores or Shop groups also simultaneously.
 - **View my shop and icon** - allows to open the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore.
@@ -19,15 +21,12 @@ This UI displays the modules that are strongly recommended to update.
 - **Tabs** - navigation tabs for Modules menu:
   - **Modules**
   - **Alerts** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
-  - **Updates** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
-
-## Main UI elements
-
+  - **Updates** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates
 - **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to configure. These modules require your attention: you need to take some action to ensure they are fully operational._ appears in dark box. 
 
-## Module row
+## Module row blocks for Alerts tab
 
-Module row block is displayed the same as in other Module Manager or Module Selections listings. More information - please navigate to ![Modules listing specification](/modules-listing.md).
+Module row block for Alerts tab is displayed the same as in other Module Manager or Module Selections listings. More information - please navigate to ![Modules listing specification](/modules-listing.md).
 
 Each Module block is displayed as a separate row and with the following elements:
 
@@ -44,3 +43,4 @@ Each Module block is displayed as a separate row and with the following elements
   - **Reset** - resets selected module.
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
+
