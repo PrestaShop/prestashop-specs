@@ -50,7 +50,17 @@ Each Module block is displayed as a separate row and with the following elements
 ## Updates tab
 
 - **Balded title with the tooltip** - {modules number in total} modules to update and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to update. Update these modules to enjoy their latest versions._ appears in dark box.
-- **Ghost button CTA Upgrade All** - initiates the Bulk action for upgrading all the available modules at the same time.
+- **Ghost button CTA Upgrade All** - initiates the Bulk action for upgrading all the available modules at the same time. The next actions are specified in the next topic.
+
+### Upgrade All Pop-up structure
+
+Once the **Ghost CTA Upgrade All** or single **Upgrade** button is clicked, the pop-up is prompted in UI with the following displayed elements:
+- **_Are you sure you want to upgrade this module?_**
+- **X icon** - for closing the pop-up.
+- **_We strongly advise you to upgrade the modules on maintenance mode to avoid any cache issues._**
+- **Cancel** - closes the pop-up.
+- Go to maintenance page CTA - clicking this will redirect to the Maintenance page, to enable the maintenance mode, so that the webshop visitors will get the notification in homepage, that something in the webshop is being updated, in case something would fail in code during upgrade process.
+- **Upgrade anyway** - initiates the upgrade action instantly and ignores the suggestions from this pop-up.
 
 ### Module row blocks for Updates tab
 
@@ -66,3 +76,7 @@ Each Module block is displayed as a separate row and with the following elements
   - **Reset** - resets selected module.
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
+
+## Multistores functionality
+
+The modules, that are displayed in Alerts and Updates tabs, are not maintained and managed separately in different Multistores or Shop groups. All the actions for one module in one Multistore or Shop group will result the same outcome in the other Multistore or Shop group.
