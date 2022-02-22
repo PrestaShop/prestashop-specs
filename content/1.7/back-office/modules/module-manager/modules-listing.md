@@ -97,6 +97,8 @@ Once one of the functions are executed, the CTA button transforms to spinning lo
 
 If one of the action responses as unsuccessful, the top-right side UI prompts the message _Cannot {action name} module {module name}. The module is invalid and cannot be loaded._
 
+Sometimes, there are errors reffered to Addons Marketplace authentication - _Exception thrown by module {module name} on upgrade. Error sent by Addons. You may need to be logged.
+
 ## Read More pop-up
 
 This pop-up appears right after clicking the _Read more_ link and extends the information about the module. The pop-up contains:
