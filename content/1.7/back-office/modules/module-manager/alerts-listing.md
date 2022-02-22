@@ -18,9 +18,29 @@ This UI displays the modules that are strongly recommended to update.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs** - navigation tabs for Modules menu:
   - **Modules**
-  - **Alerts**
-  - **Updates**
+  - **Alerts** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
+  - **Updates** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
 
 ## Main UI elements
 
-- **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip
+- **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to configure. These modules require your attention: you need to take some action to ensure they are fully operational._ appears in dark box. 
+
+## Module row
+
+Module row block is displayed the same as in other Module Manager or Module Selections listings. More information - please navigate to ![Modules listing specification](/modules-listing.md).
+
+Each Module block is displayed as a separate row and with the following elements:
+
+- **Icon** - specific module icon, that identifies the module in visual side.
+- **Name** - full module name.
+- **Numeric value with dots** - module version.
+- **Bolded smaller text** - the name of the module developer.
+- **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
+- **CTA button** - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
+
+  - **Uninstall** - uninstalls selected module.
+  - **Disable** - disables selected module.
+  - **Enable** - enables selected module.
+  - **Reset** - resets selected module.
+  - **Enable Mobile** - enables the Mobile view for the module.
+  - **Disable Mobile** - disables the Mobile view for the module.
