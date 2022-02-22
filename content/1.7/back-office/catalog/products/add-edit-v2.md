@@ -1,3 +1,4 @@
+
 ---
 title: Product Page - 8.0
 weight: 1
@@ -38,9 +39,9 @@ The product header displays the product:
 - Cover image - Image
 - Price Tax Excluded 
 - Price Tax Included 
-- Tax - Label - see the component in the Pricing Tab
+- Tax - Label - see component in the Pricing Tab
 - Quantity - Lable 
-For a product with combination, it displays the total quantity from all the combination
+For product with combination, it displays the total of quantity from all the combination
 - Product type and product type’s icon - Button
 - References - List of labels 
 
@@ -250,7 +251,7 @@ The tab is displayed only if the product is a standard product
 
 ### Stocks
 
-- **Edit quantity** - Number input - Decreases or Increases the physical quantity by the specified quantity
+- **Edit quantity** - Number input - Decreases or Increases the physical stock by the specified quantity
 
 - **Recent Stock Movements** - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock movement, it is displayed a Grouped stock movements linked to the order
 
@@ -293,7 +294,7 @@ The tab is displayed only if the product is a virtual product.
     - **Unlimited** - Checkbox - A checkbox next to the input Maximum number of downloads, Download link validity, and Expiration date. WHEN checked THE the input is disabled and the value of the fields becomes infinite.
   
   ### Stocks
-The stock section is hidden if Enable stock management is disabled.
+The stock section is hiden if Enable stock management is disabled.
 
 - **Edit quantity** - See the component on the stock page
 - **Recent stock movements** - See the component on the stock page
@@ -314,7 +315,7 @@ The tab is displayed only if the product is a pack of products.
 **As a merchant I want to be able to manage my pack of products.**
 
 ### Stock 
-The stock section is hidden if Enable stock management is disabled.
+The stock section is hiden if Enable stock management is disabled.
 - **Edit quantity** - See the component on the stock page
 - **Recent stock movements** - See the component on the stock page
 
@@ -412,13 +413,13 @@ THEN the modal to generates combinations opens
 WHEN combinations have been selected on the list and the user clicks to the bulk action 
 THEN it opens the bulk action modal 
 
-The bulk action is enabled when the user selects one product combination from the list. 
+The bulk action is enabled when the user selects at one product combination from the list. 
 - **Bulk action** - Dropdown - 
 	- Edit %s combination - %s number of combination selected
 	- Delete %s combinations - %s number of combination deleted
-If the user clicks on Delete %s combinations then it displays the Progress-Bar- Modal (title: Deleting combinations), the product is deleted and the list refreshed.
+If the user clicks on Delete %s combinations then it displays the Progress-Bar- Modal (title: Deleting combinations), the product are deleted and the list refreshed.
 
-If the user clicks on Edit %s combination then it displays Bulk actions Modal 
+If the user clicks on Edit %s combination then it displays Bulck actions Modal 
 All sections by default are collapsed. Press them to collapse and collapse them.
 - **Bulk action** - Modal: 
 	- **Stock** - Section
@@ -451,7 +452,7 @@ All sections by default are collapsed. Press them to collapse and collapse them.
 
 	- **Apply changes to % combinations** - Button 
 		WHEN pressing the Apply button
-		THEN Progress-Bar-Modal (title: Applying changes) is displayed all the edited input is saved to the selected combinations.  
+		THEN Progress-Bar-Modal (title: Applying chages) is displayed all the edited input are saved to the selected combinations.  
 	- **Cancel** - Button
 		WHEN pressing the Cancel button
 		THEN the modal is closed
@@ -594,7 +595,7 @@ The UPC is displayed in the product details tab of the front office and changed 
 * **MPN**: Numbers and characters are accepted.      
 The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
 
-- **List of all the suppliers associated** - 
+- **List of all the supliers associated** - 
 	 * **Supplier name** - Label 
 	 * **Supplier reference** - Text - Field to specify the product reference for each supplier. 
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
@@ -991,7 +992,7 @@ WHEN several suppliers are associated with a product
 THEN unchecking one of them should delete the related data while keeping the values of the other suppliers intact.
 
   * **Default supplier**: 
-IF more than one supplier are checked
+IF more than one suppliers is checked
 THEN it can be set as the default supplier by selecting the radio 
 
 WHEN there is only one supplier checked
@@ -1066,6 +1067,7 @@ When stores are checked, it duplicates the product related to the store offline.
 
 - **Apply changes to all stores** - Checkbox - It's displayed below each input compatible with the multistore.
 Once checked and the product form is saved, the changes will be applied to all the stores.
+	*  **Edit quantity** - Increases/Decreases with same amount the different shops
 
 - **Save & Publish**: Button to save all changes made in all tabs.
 If one checkbox **Apply changes to all stores** is checked then its opens a modal summarizing the changes.
@@ -1087,14 +1089,15 @@ When an image for a shop is checked then the image is added to the product and d
 
 The cover image from one shop can't be unchecked. An image that is unchecked to all the stores is deleted after the "Save and publish".
 
+
 ### Changement of multistore context
 
-To avoid the user saving the product data in the wrong shop, a confirmation modal is displayed before saving.
+To avoid the user to save the product data in the wrong shop, a confirmation modal is displayed before saving.
 
-When the user edits his product in a shop and saves his product while he has changed shop on another page then a confirmation modal is opened.
+When the user edits his product in a shop and saves his product while he has changed shop in another page then a confirmation modal is opened.
 
 Confirmation modal - 
-* Title: "Are you sure ?"
+* title: "Are you sure ?"
 * Description: "Your modifications will be saved in the *shop-name*"
 * Choose a store  - Open Shop-Selector-Modal (title: Choose a store)
 	* Save the product in the store context selected
@@ -1107,6 +1110,6 @@ When the products shared the stocks with another store then it is displayed in a
 
 ##   Stock management is Disabled
 
-When Stock management is Disabled Then the fields **Edit quantity**, **Recent stock movements**, **Pack quantities**, and **Behavior out of stocks** are hidden.
+When Stock management is Disabled Then the fields **Edit quantity**, **Recent stock movements**, **Pack quantities** and **Behavior out of stocks** are hiden.
 
 **Behavior out of stocks** is replaced by the label "Stock management is disabled"
