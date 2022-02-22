@@ -10,7 +10,6 @@ In this page 1 table is present for the shop layouts.
 Below there 3 rows:
 
  - Page - by default there are 47 pages. 
- 
  - Description - by default there are 10 descriptions.
  
  - Layout, this section is a drop-down field, it has 4 selections when pressed:
