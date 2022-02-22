@@ -62,7 +62,7 @@ Once the **Ghost CTA Upgrade All** or single **Upgrade** button is clicked, the 
 - Go to maintenance page CTA - clicking this will redirect to the Maintenance page, to enable the maintenance mode, so that the webshop visitors will get the notification in homepage, that something in the webshop is being updated, in case something would fail in code during upgrade process.
 - **Upgrade anyway** - initiates the upgrade action instantly and ignores the suggestions from this pop-up.
 
-After the upgrade action, the pop-up will close automatically, and the spinner will be loading instead of the module CTA button place. Once the spinner finishes the interaction, it will become as **Disabled CTA**, and there will be a success message _Upgrade action on module {module name} succeeded._ in the top-right of the whole page UI. If there are some failures in the module upgrading process, the UI will prompt the same error messages like in the ![Modules listing specification page](/modules-listing.md).
+After the upgrade action, the pop-up will close automatically, and the spinner will be loading instead of the module CTA button place. Once the spinner finishes the interaction, it will become as **Disabled CTA**, and there will be a success message _Upgrade action on module {module name} succeeded._ in the top-right of the whole page UI. If there are some failures in the module upgrading process, the UI will prompt the same error messages like in the ![Modules listing specification page](/modules-listing.md#module-row).
 
 ### Module row blocks for Updates tab
 
