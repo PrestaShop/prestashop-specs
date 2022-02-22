@@ -20,3 +20,7 @@ This UI displays the modules that are strongly recommended to update.
   - **Modules**
   - **Alerts**
   - **Updates**
+
+## Main UI elements
+
+- **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip
