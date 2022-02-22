@@ -1,4 +1,3 @@
-
 ---
 title: Product Page - 8.0
 weight: 1
@@ -36,12 +35,14 @@ After selecting the product type, the product page is opened
 
 The product header displays the product:
 - Name - Text Input - Language-Selector 
-- Cover image
-- price tax excluded 
-- price tax included 
-- quantity
-- product type and product type’s icon
-- References
+- Cover image - Image
+- Price Tax Excluded 
+- Price Tax Included 
+- Tax - Label - see the component in the Pricing Tab
+- Quantity - Lable 
+For a product with combination, it displays the total quantity from all the combination
+- Product type and product type’s icon - Button
+- References - List of labels 
 
 And 3 buttons:
 - Open another product, the button displays a list of product
@@ -243,7 +244,7 @@ When the button is pressed then add the item to a list
   -   **Delete** - Button - to remove the customization field
     
 ## Stock tab
-The tab is displayed only if the product is a standard product.
+The tab is displayed only if the product is a standard product
 
 **As a merchant I want to be able to manage my products quantities.**
 
@@ -261,7 +262,7 @@ This field is not displayed if stock management is disabled in Shop parameters >
 
 ###   Availability preferences, 
 
-**behavior when out of stock**
+**Behavior when out of stock**
 3 radios buttons:  
 1)  **Deny orders**: when it’s checked and product quantity is <= 0, in the front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  
 2)  **Allow orders**: when it’s checked and product quantity is <= 0, in the front-office product page and quick view, the message filled in Shop parameters > Product settings > Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.  
@@ -292,6 +293,7 @@ The tab is displayed only if the product is a virtual product.
     - **Unlimited** - Checkbox - A checkbox next to the input Maximum number of downloads, Download link validity, and Expiration date. WHEN checked THE the input is disabled and the value of the fields becomes infinite.
   
   ### Stocks
+The stock section is hidden if Enable stock management is disabled.
 
 - **Edit quantity** - See the component on the stock page
 - **Recent stock movements** - See the component on the stock page
@@ -312,7 +314,7 @@ The tab is displayed only if the product is a pack of products.
 **As a merchant I want to be able to manage my pack of products.**
 
 ### Stock 
-
+The stock section is hidden if Enable stock management is disabled.
 - **Edit quantity** - See the component on the stock page
 - **Recent stock movements** - See the component on the stock page
 
@@ -410,8 +412,15 @@ THEN the modal to generates combinations opens
 WHEN combinations have been selected on the list and the user clicks to the bulk action 
 THEN it opens the bulk action modal 
 
-- **Bulk action** - Modal
-	All sections by default are collapsed. Press them to collapse and collapse them.
+The bulk action is enabled when the user selects one product combination from the list. 
+- **Bulk action** - Dropdown - 
+	- Edit %s combination - %s number of combination selected
+	- Delete %s combinations - %s number of combination deleted
+If the user clicks on Delete %s combinations then it displays the Progress-Bar- Modal (title: Deleting combinations), the product is deleted and the list refreshed.
+
+If the user clicks on Edit %s combination then it displays Bulk actions Modal 
+All sections by default are collapsed. Press them to collapse and collapse them.
+- **Bulk action** - Modal: 
 	- **Stock** - Section
 		* **Stocks** - Delta Quantity input
 		* **Stock location** - Text input
@@ -437,16 +446,15 @@ THEN it opens the bulk action modal
 		* **UPC barcode** - Numerc input 
 		* **MPN** - Numerc input   
 
-
 	- **Supplier** - Section - (is displayed is the supplier are configured in the Option tab)
-		-  **List the suppliers with their input** - same component on the Option tab
+		-   **List the suppliers with their input** - same component on the Option tab
 
 	- **Apply changes to % combinations** - Button 
-	WHEN pressing the Apply button
-	THEN all the edited input are applied to the selected combination  
+		WHEN pressing the Apply button
+		THEN Progress-Bar-Modal (title: Applying changes) is displayed all the edited input is saved to the selected combinations.  
 	- **Cancel** - Button
-	WHEN pressing the Cancel button
-	THEN the modal is closed
+		WHEN pressing the Cancel button
+		THEN the modal is closed
 
 ### Combination listing
 
@@ -585,7 +593,12 @@ This type of product code is widely used in the United States, Canada, the Unite
 The UPC is displayed in the product details tab of the front office and changed accordingly to the selected combination.
 * **MPN**: Numbers and characters are accepted.      
 The Manufacturer Part Number is used to identify a specific product of a given manufacturer.
-- **Suppliers**  - Same component from the Option tab
+
+- **List of all the suppliers associated** - 
+	 * **Supplier name** - Label 
+	 * **Supplier reference** - Text - Field to specify the product reference for each supplier. 
+    * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
+    * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier. 
 
 - **Save & Publish** - Button 
 WHEN pressing the save button
@@ -610,7 +623,7 @@ THEN a modal is displayed to confirm the action
 
 ### Availability preferences
 
-**Availability preferences, behavior when out of stock**: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead, there is a message “Stock management is disabled”
+- **Behavior when out of stock**: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead, there is a message “Stock management is disabled”
 * **3 radios buttons**:      
 
   1\) Deny orders: when it’s checked and product quantity is &lt;= 0, in the front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.     
@@ -692,13 +705,13 @@ THEN the price (tax incl.) is updated and the tax's label.
 IF there are several taxes rules with the same name
 THEN the ID of the tax rule is displayed before its name.
 
+* **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
+
 IF the tax rule doesn't include a tax of the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
 THEN it displays the tax of the first state configured.
-
-* **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
 
 * **Manage tax rule** - Link - Open in a new browser tab International > Taxes  
   
@@ -857,7 +870,7 @@ Here are also listed the catalog prices rules that apply to this product. Rule c
 WHEN the user edits a specific price
 THEN  It opens a modal with all the fields completed with the specific price data. 
 
-* **Edit a catalog prices rule**- Button 
+* **Edit a catalog prices rule** - Button 
 WHEN the user edits a catalog prices rule
 THEN It opens an iframe of the catalog price rule edition page 
 
@@ -978,7 +991,7 @@ WHEN several suppliers are associated with a product
 THEN unchecking one of them should delete the related data while keeping the values of the other suppliers intact.
 
   * **Default supplier**: 
-IF all suppliers checked
+IF more than one supplier are checked
 THEN it can be set as the default supplier by selecting the radio 
 
 WHEN there is only one supplier checked
@@ -1007,7 +1020,7 @@ THEN Supplier references are displayed
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.
 
-## Buttons of the footer
+## Footer
 
 - **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 
@@ -1073,3 +1086,27 @@ When an image for a shop is unchecked then the image is not from the product, hi
 When an image for a shop is checked then the image is added to the product and displayed by the image manager of the shop's product and available in the front office.
 
 The cover image from one shop can't be unchecked. An image that is unchecked to all the stores is deleted after the "Save and publish".
+
+### Changement of multistore context
+
+To avoid the user saving the product data in the wrong shop, a confirmation modal is displayed before saving.
+
+When the user edits his product in a shop and saves his product while he has changed shop on another page then a confirmation modal is opened.
+
+Confirmation modal - 
+* Title: "Are you sure ?"
+* Description: "Your modifications will be saved in the *shop-name*"
+* Choose a store  - Open Shop-Selector-Modal (title: Choose a store)
+	* Save the product in the store context selected
+* Continue - Save the product in the current store context
+
+
+### Shared stocks
+
+When the products shared the stocks with another store then it is displayed in a help text below the stock input "The stock is shared between the store in the %Group-Name%".
+
+##   Stock management is Disabled
+
+When Stock management is Disabled Then the fields **Edit quantity**, **Recent stock movements**, **Pack quantities**, and **Behavior out of stocks** are hidden.
+
+**Behavior out of stocks** is replaced by the label "Stock management is disabled"
