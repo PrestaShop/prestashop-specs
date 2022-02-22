@@ -50,9 +50,11 @@ Each Module block is displayed as a separate row and with the following elements
 ## Updates tab
 
 - **Balded title with the tooltip** - {modules number in total} modules to update and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to update. Update these modules to enjoy their latest versions._ appears in dark box.
+- **Ghost button CTA Upgrade All** - initiates the Bulk action for upgrading all the available modules at the same time.
 
 ### Module row blocks for Updates tab
 
 - **Icon**
 - **Module title**
-- **Versions from the current {arrow to the right symbol} to the newest numeric expression** - it helps visually to orientate, which is the current outdated module version and what will be the next module version aftere the upgrade finishes.
+- **Versions from the current {arrow to the right symbol} to the newest numeric expression** - it helps visually to orientate, which is the current outdated module version and what will be the next module version after the upgrade finishes.
+- **Changelog** - displays the log of the newest version module update.
