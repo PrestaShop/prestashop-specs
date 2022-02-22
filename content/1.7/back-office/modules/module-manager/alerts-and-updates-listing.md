@@ -18,13 +18,16 @@ These UI, displayed in separate Alerts and Updates tabs, indicate the modules, t
 - **Module notifications** - H1 class title for the page.
 - **Upload a module Call-to-action (CTA) button with the cloud-style icon with the arrow pointed up** - allows to upload and install the module to the store. Once the mouse pointer is hovered this button, additional tooltip is visible with the advicible text _Upload a module_. After the button is clicked, a pop-up will appear (more details in the next paragraph _Upload pop-up_).
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
-- **Tabs** - navigation tabs for Modules menu:
+- **Tabs** - navigation tabs for Modules menu. The editing tab is indicated as highlighted:
   - **Modules**
   - **Alerts** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
-  - **Updates** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates
-- **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to configure. These modules require your attention: you need to take some action to ensure they are fully operational._ appears in dark box. 
+  - **Updates** - yellow notification circle with white number in the top-right place of tab, indicating, how many modules can be triggered for alerts or updates.
 
-## Module row blocks for Alerts tab
+## Alerts 
+
+- **Balded title with the tooltip** - {modules number in total} modules to configure and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to configure. These modules require your attention: you need to take some action to ensure they are fully operational._ appears in dark box.
+
+### Module row blocks for Alerts tab
 
 Module row block for Alerts tab is displayed the same as in other Module Manager or Module Selections listings. More information - please navigate to ![Modules listing specification](/modules-listing.md).
 
@@ -44,3 +47,12 @@ Each Module block is displayed as a separate row and with the following elements
   - **Enable Mobile** - enables the Mobile view for the module.
   - **Disable Mobile** - disables the Mobile view for the module.
 
+## Updates tab
+
+- **Balded title with the tooltip** - {modules number in total} modules to update and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to update. Update these modules to enjoy their latest versions._ appears in dark box.
+
+### Module row blocks for Updates tab
+
+- **Icon**
+- **Module title**
+- **Versions from the current {arrow to the right symbol} to the newest numeric expression** - it helps visually to orientate, which is the current outdated module version and what will be the next module version aftere the upgrade finishes.
