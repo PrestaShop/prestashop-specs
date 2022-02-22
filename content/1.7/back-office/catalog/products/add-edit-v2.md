@@ -1054,7 +1054,7 @@ Keyboard shortcut: ALT + SHIFT + P
 
 ### Multistore Header
 
-It only displays stores associated with the product.
+It only displays stores associated with the product and stores that users can access.
 - **Add to other stores** - Button - Open modal to select new stores to associate or dissociate with the product.
 List of stores grouped by group shop with a checkbox
 	- Cancel button 
