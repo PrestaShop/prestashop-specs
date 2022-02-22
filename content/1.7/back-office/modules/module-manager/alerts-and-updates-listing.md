@@ -57,4 +57,12 @@ Each Module block is displayed as a separate row and with the following elements
 - **Icon**
 - **Module title**
 - **Versions from the current {arrow to the right symbol} to the newest numeric expression** - it helps visually to orientate, which is the current outdated module version and what will be the next module version after the upgrade finishes.
-- **Changelog** - displays the log of the newest version module update.
+- **Changelog** - displays the log of the newest version module release. Sometimes, if module has no changelog in the newest version, there will be _No changelog provided_ placeholder texted.
+- **CTA Upgrade button** - If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module:
+
+  - **Uninstall** - uninstalls selected module.
+  - **Disable** - disables selected module.
+  - **Enable** - enables selected module.
+  - **Reset** - resets selected module.
+  - **Enable Mobile** - enables the Mobile view for the module.
+  - **Disable Mobile** - disables the Mobile view for the module.
