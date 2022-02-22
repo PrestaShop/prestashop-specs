@@ -8,7 +8,7 @@ weight: 1
 
 ![Updates tab](static/img/updates-listing.png)
 
-These UI, displayed in separate Alerts and Updates tabs, indicate the modules, that should be strongly recommended to finish the full configuration in order to make module fully operational, or to upgrade the module to the newest version.
+These UI, displayed in separate Alerts and Updates tabs, indicate the modules, that should be with full configuration in order to make module fully operational, or to upgrade the module to the newest version.
 
 ## Top UI elements for Alerts and Updates tabs
 
