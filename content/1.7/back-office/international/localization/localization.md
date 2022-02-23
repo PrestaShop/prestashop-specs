@@ -1,5 +1,5 @@
 ---
-title: Languages
+title: Localization
 weight: 1
 ---
 # SPECIFICATIONS - INTERNATIONAL &gt; LOCALIZATION &gt; LOCALIZATION 
