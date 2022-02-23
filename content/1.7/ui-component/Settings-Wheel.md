@@ -17,7 +17,7 @@ After clicking on it, the is a redirection to the import page in advanced parame
 
 3. Show SQL query
 
-After clicking on it, the sql query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
+After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.
 
 There are two buttons:
 
