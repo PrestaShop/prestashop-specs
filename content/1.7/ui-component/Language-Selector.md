@@ -11,5 +11,5 @@ By default, if the input text is mandatory, then only the default language is ex
 
 If the input is displayed in the Front-Office and only the default language is fulfilled, then Front-Office displays for the other languages the text from the default language.
 
-If the input text is mandatory for all the language or just the default language, then It must be warned in the message which language is problematic.
+If the input text is mandatory for all the languages or just the default language, then It must be warned in the message which language is problematic.
 
