@@ -68,19 +68,20 @@ When clicking on the product type, a modal is displayed to change the product ty
 Once the user selects a product different from the current product type, then the button “Change product type” becomes enabled.
 Pressing the button opens closes the current modal to open the confirmation modal.
 
-Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
+* Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
+	* **Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
 
-| Changing the Product type form| Impact | warning-alert in the modal |
+	* **Cancel** - Close the modal  
+	If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type.
+	
+| Changing the Product type form| Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
 | Standard product | No impact, the data is common between the standard product and the others products. | |
 | Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>This will reset the stock of this product. |
 | Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
 | Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
-	- **Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
 
-	- **Cancel** - Close the modal
-	If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type
 
 
 ### **References**
