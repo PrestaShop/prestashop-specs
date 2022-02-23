@@ -11,11 +11,11 @@ This UI contains the listing management of all the Modules installed in webshop.
 
 ## Top UI elements
 
-- **Multistore switching dropdown** - allows to navigate through the available Multistores. Note, that if the module is installed in one Multistores, it appears in the rest of Mulstistores or Shop groups also.
-- **View my shop and icon** - allows to open the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore.
+- **Multistore switching dropdown** - allows navigating through the available Multistores. Note, that if the module is installed in one Multistores, it appears in the rest of Mulstistores or Shop groups also.
+- **View my shop and icon** - allows opening the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore.
 - **Breadcrumbs navigation** - identifies the page level.
 - **Module manager** - H1 class title for the page.
-- **Upload a module Call-to-action (CTA) button with the cloud-style icon with the arrow pointed up** - allows to upload and install the module to the store. Once the mouse pointer is hovered this button, additional tooltip is visible with the advicible text _Upload a module_. After the button is clicked, a pop-up will appear (more details in the next paragraph _Upload pop-up_).
+- **Upload a module Call-to-action (CTA) button with the cloud-style icon with the arrow pointed up** - allows uploading and installing the module to the store. Once the mouse pointer is hovered to this button, an additional tooltip is visible with the advisable text _Upload a module_. After the button is clicked, a pop-up will appear (more details in the next paragraph _Upload pop-up_).
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs** - navigation tabs for Modules listing menu:
   - **Modules** - highlighted tab.
@@ -26,16 +26,16 @@ This UI contains the listing management of all the Modules installed in webshop.
 
   - **Upload a module** - pop-up title identifier.
   - **X icon** - closes the pop-up instantly.
-  - **Dotted borders section area** - where the archive can be uploaded by draging and dropping the archive file right into this area.
+  - **Dotted borders section area** - where the archive can be uploaded by dragging and dropping the archive file right into this area.
   - **Cloud-style icon with the arrow pointed up** - visually identifies the upload function in pop-up.
   - **_Drop your module archive here or select file_** - describes the ability to drag and drop the archive in the area or by clicking the _select file_ link, choosing the appropriate archive by the Browse function of the browser.
-  - **_Please upload one file at a time, .zip or tarball format (.tar, .tar.gz or .tgz). Your module will be installed right after that._** - additional advicible text indicating the all correct archive extensions, that can be validated and accepted by the webshop. As well, the archive will be executed to the installation phase right after the upload action. Once the installation execution starts, the UI will show spinning loader icon at the top, the text title _Installing module..._, the advicible text _It will close as soon as the module is installed. It won't be long!_. Once the installation process finishes, the spinning loader icon becomes a checkmark icon, text phrase _Module installed!_ appears, indicating that the archive installation was successful. **Configure** CTA button appears also, leading to the module configuration page, for instant module management.
+  - **_Please upload one file at a time, .zip or tarball format (.tar, .tar.gz or .tgz). Your module will be installed right after that._** - additional advisable text indicating the all correct archive extensions, that can be validated and accepted by the webshop. As well, the archive will be executed to the installation phase right after the upload action. Once the installation execution starts, the UI will show a spinning loader icon at the top, the text title _Installing module..._, the advisable text _It will close as soon as the module is installed. It won't be long!_. Once the installation process finishes, the spinning loader icon becomes a checkmark icon, text phrase _Module installed!_ appears, indicating that the archive installation was successful. **Configure** CTA button appears also, leading to the module configuration page, for instant module management.
 
 If the archive size is too big or there were other code failures when uploading the archive to the webshop, the pop-up will display the following elements, right after the upload:
 - **_Oops... Upload failed._** - the information text about the failed module upload or install.
 - **_What happened?_** - a question with a link to the details, why the archive upload or install has failed.
 - Failure details - if the _What happened?_ link is clicked, there will be detailed failure explanations. Sometimes it is described as text, for example, _File is too big (78.42MiB). Max filesize: 50MiB._ or sometimes it could be shown as a Symfony PHP exception error, for example, _This file does not seem to be a valid module zip in src/Adapter/Module/ModuleZipManager.php (line 139)_, when **Debug mode** is enabled in Prestashop.
-- **Try again** - clicking this will lead to the default pop-up of the archive upload, suggesting to attempt a file upload once again.
+- **Try again** - clicking this will lead to the default pop-up of the archive upload, suggesting attempting a file upload once again.
 
 ## The main UI elements
 
@@ -55,7 +55,7 @@ If the archive size is too big or there were other code failures when uploading 
   - **Specialized Platforms**
   - **Other**
 
-Once the category value is selected, the UI arranges all the list according the Category. The arrangement results are retrieved instantly below the dropdown. If there are no modules in the Category, the notification box is prompted - _You do not have module in « {category name} ». Discover the best-selling modules of this category in the {category name link} page._ Once a Category is selected and managed, returning to the all modules list is called _All Categories_ dropdown menu link.
+Once the category value is selected, the UI arranges all the list according to the Category. The arrangement results are retrieved instantly below the dropdown. If there are no modules in the Category, the notification box is prompted - _You do not have module in « {category name} ». Discover the best-selling modules of this category in the {category name link} page._ Once a Category is selected and managed, returning to the all modules list is called _All Categories_ dropdown menu link.
 - **Status** - a dropdown that can segment the Modules in this page by Status. By default _Show all modules_ is as placeholder for dropdown. The Status names are:
 
   - **Show all modules** - shows all the modules in the listing.
@@ -83,7 +83,7 @@ Each Module listing UI is displayed as a separate row and with the following ele
 - **Name** - full module name.
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
-- **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
+- **Description paragraph** - description of the module. Sometimes there is a huge paragraph, so a module row shows only an excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in a separate paragraph).
 - **CTA button** - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
 
   - **Uninstall** - uninstalls selected module.
