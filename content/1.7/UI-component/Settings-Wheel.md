@@ -1,5 +1,5 @@
 ---
-title: Product Page
+title: Settings Wheel
 weight: 1
 ---
 # SPECS Settings Wheel
