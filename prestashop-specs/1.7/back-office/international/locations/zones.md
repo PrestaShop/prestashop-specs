@@ -1,5 +1,8 @@
-# GENERAL SPECS ZONES BACKOFFICE
-
+---
+title: Languages
+weight: 1
+---
+# SPECIFICATIONS - INTERNATIONAL &gt; LOCATION &gt; ZONES
 As a merchant I need to be able to manage the zone, add, edit, and/or delete them.
 
 ## WHAT
