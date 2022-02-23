@@ -1,3 +1,9 @@
+---
+title: Language-Selector
+weight: 1
+---
+# Spec Language-Selector
+
 **Language selector** - drop-down - Next to the text field, it is displayed when there are several languages installed (disabled languages are displayed in the drop-down). 
 It allows choosing in which language the content of the field. 
 
