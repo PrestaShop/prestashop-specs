@@ -36,8 +36,8 @@ The empty state card appears ONLY when there is no value (by default or created)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</guid>
-      <description>Specifications for the order view page for 1.7.7 - 2019
-User Story: As a merchant, I need to be able to manage all my orders processed on my website. As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
+      <description>Specifications for the order view page for 1.7.7 - 2019 As a merchant, I need to be able to manage all my orders processed on my website.
+As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
  Check the order’s products to prepare it Manage the order’s progress, Edit the customer information or send him messages, Print his invoice, Handle payment methods, Follow my shipping through activities, Manage returns and refunds  WHY</description>
     </item>
     

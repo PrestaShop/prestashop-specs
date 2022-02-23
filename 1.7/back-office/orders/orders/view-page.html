@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1644766304" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1644766304" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1644766304" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1644766304" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1644766304" rel="stylesheet">
-    <link href="../../../../style.css?1644766304" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1645624009" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1645624009" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1645624009" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1645624009" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1645624009" rel="stylesheet">
+    <link href="../../../../style.css?1645624009" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1644766304"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1645624009"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -5257,15 +5257,61 @@
     <div id="toc-title">Table of Contents</div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#user-story"><strong>User Story:</strong></a></li>
-    <li><a href="#as-a-merchant-i-need-to-be-able-to-manage-all-my-orders-processed-on-my-website">As a merchant, I need to be able to manage all my orders processed on my website.</a>
+    <li><a href="#specifications-for-the-order-view-page-for-177---2019"><strong>Specifications for the order view page for 1.7.7 - 2019</strong></a>
       <ul>
-        <li><a href="#i-action-panel">I. <strong>Action panel</strong></a></li>
-        <li><a href="#merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong></a></li>
-        <li><a href="#ii-customer-panel">II. <strong>Customer panel</strong></a></li>
-        <li><a href="#iii-messages-panel">III. <strong>Messages panel</strong></a></li>
-        <li><a href="#iv-products-panel">IV. <strong>Products panel</strong></a></li>
-        <li><a href="#v-tabs-panel">V. Tabs panel</a></li>
+        <li><a href="#i-action-panel">I. <strong>Action panel</strong></a>
+          <ul>
+            <li><a href="#1--update-the-order-status">1.  <strong>Update the order status</strong></a></li>
+            <li><a href="#2--print-order-button">2.  <strong>Print order button</strong></a></li>
+            <li><a href="#3--view-invoice-show">3.  <strong>View invoice show</strong></a></li>
+            <li><a href="#4--view-delivery-slip">4.  <strong>View delivery slip</strong></a></li>
+            <li><a href="#5-summary-of-the-standard-refund-partial-refund-and-return-product-feature">5. <strong>Summary of the standard refund, partial refund and return product feature</strong></a>
+              <ul>
+                <li><a href="#merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong></a></li>
+              </ul>
+            </li>
+            <li><a href="#6--partial-refund-button">6.  <strong>Partial refund button</strong></a></li>
+            <li><a href="#7-cancel-products-button">7. <strong>Cancel products button</strong></a></li>
+            <li><a href="#8-standard-products-button">8. <strong>Standard products button</strong></a></li>
+            <li><a href="#9--return-products-button">9.  <strong>Return products button</strong></a></li>
+            <li><a href="#10--nextprevious-button">10.  <strong>Next/Previous button</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#ii-customer-panel">II. <strong>Customer panel</strong></a>
+          <ul>
+            <li><a href="#1-deleted-customer">1. <strong>Deleted customer</strong></a></li>
+            <li><a href="#2-guest-customer">2. <strong>Guest customer</strong></a></li>
+            <li><a href="#3-shipping-and-invoice-address">3. <strong>Shipping and Invoice address</strong></a></li>
+            <li><a href="#4-private-customer-note">4. <strong>Private customer note</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#iii-messages-panel">III. <strong>Messages panel</strong></a>
+          <ul>
+            <li><a href="#1-messages-display">1. <strong>Messages display</strong></a></li>
+            <li><a href="#2-predefined-messages">2. <strong>Predefined messages</strong></a></li>
+            <li><a href="#3-sending-messages">3. <strong>Sending messages</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#iv-products-panel">IV. <strong>Products panel</strong></a>
+          <ul>
+            <li><a href="#1-the-product-list">1. <strong>The Product list</strong></a></li>
+            <li><a href="#2-add-new-products">2. <strong>Add new products</strong></a></li>
+            <li><a href="#3-remove-products-from-the-order">3. <strong>Remove products from the order</strong></a></li>
+            <li><a href="#5-cart-rule-list">5. <strong>Cart rule list</strong></a></li>
+            <li><a href="#6-add-a-new-cart-rule">6. <strong>Add a new cart rule</strong></a></li>
+            <li><a href="#7-invoice-generation">7. <strong>Invoice generation</strong></a></li>
+            <li><a href="#8-order-summary">8. <strong>Order Summary</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#v-tabs-panel">V. Tabs panel</a>
+          <ul>
+            <li><a href="#1--status-tab">1.  <strong>Status tab</strong></a></li>
+            <li><a href="#2--documents-tab">2.  <strong>Documents tab</strong></a></li>
+            <li><a href="#3--shipping-tab">3.  <strong>Shipping tab</strong></a></li>
+            <li><a href="#4--merchandising-returns-tab">4.  <strong>Merchandising returns tab</strong></a></li>
+            <li><a href="#5--payment-panel">5.  <strong>Payment panel</strong></a></li>
+          </ul>
+        </li>
         <li><a href="#vi-sources">VI. Sources</a></li>
         <li><a href="#vii-links">VII. Links</a></li>
         <li><a href="#viii-multistore">VIII. Multistore</a></li>
@@ -7945,9 +7991,8 @@
 
 
 
-<p><strong>Specifications for the order view page for 1.7.7 - 2019</strong></p>
-<h1 id="user-story"><strong>User Story:</strong></h1>
-<h1 id="as-a-merchant-i-need-to-be-able-to-manage-all-my-orders-processed-on-my-website">As a merchant, I need to be able to manage all my orders processed on my website.</h1>
+<h1 id="specifications-for-the-order-view-page-for-177---2019"><strong>Specifications for the order view page for 1.7.7 - 2019</strong></h1>
+<p>As a merchant, I need to be able to manage all my orders processed on my website.</p>
 <p>As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:</p>
 <ul>
 <li>Check the order’s products to prepare it</li>
@@ -8027,28 +8072,18 @@ All date and time formats are defined according to CLDR and the display language
 <li><strong>Cancel products button</strong></li>
 <li><strong>Next/Previous button</strong></li>
 </ul>
-<ol>
-<li><strong>Update the order status</strong></li>
-</ol>
+<h3 id="1--update-the-order-status">1.  <strong>Update the order status</strong></h3>
 <p>The current status is displayed by default on the droplist. It can be changed by selecting the new order&rsquo;s status from the droplist after validating the confirmation button.</p>
-<ol start="2">
-<li><strong>Print order button</strong></li>
-</ol>
+<h3 id="2--print-order-button">2.  <strong>Print order button</strong></h3>
 <p>Opens the Print page of the browser with the order’s content.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/386350135_Order_Details_-_Print_Order_1">pdf file result 1/2</a></p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/386350136_Order_Details_-_Print_Order_2">pdf file result 2/2</a></p>
-<ol start="3">
-<li><strong>View invoice show</strong></li>
-</ol>
+<h3 id="3--view-invoice-show">3.  <strong>View invoice show</strong></h3>
 <p>The Invoice can be downloaded if the current or new order status has <strong>the generation of the invoice activated</strong> or if the user has generated it manually.</p>
-<ol start="4">
-<li><strong>View delivery slip</strong></li>
-</ol>
+<h3 id="4--view-delivery-slip">4.  <strong>View delivery slip</strong></h3>
 <p>If the current or new order status has <strong>the generation of the delivery slip</strong> then <strong>the button to download the delivery slip is shown.</strong></p>
-<ol start="5">
-<li><strong>Summary of the standard refund, partial refund and return product feature</strong></li>
-</ol>
-<h2 id="merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong></h2>
+<h3 id="5-summary-of-the-standard-refund-partial-refund-and-return-product-feature">5. <strong>Summary of the standard refund, partial refund and return product feature</strong></h3>
+<h4 id="merchandise-return-has-to-be-enabled-if-the-merchant-wants-to-use-the-standard-refund-partial-refund-and-return-product-feature"><strong>Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature</strong></h4>
 <table>
 <thead>
 <tr>
@@ -8103,18 +8138,14 @@ All date and time formats are defined according to CLDR and the display language
 <p>If this order has been partially paid by voucher. The merchant can refund either by selecting the total amount of the selected products or this total minus the amount of the vouchers.</p>
 <p>Before 1.7.7, it used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied to the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
 To harmonize the behaviors, we put the specific custom edition into the partial refund button and set the return product button with straightforward options. The merchant can customize the voucher on the partial refund feature.</p>
-<ol start="6">
-<li><strong>Partial refund button</strong></li>
-</ol>
+<h3 id="6--partial-refund-button">6.  <strong>Partial refund button</strong></h3>
 <p>If the current or new order status of the order is considered <strong>as paid</strong> then <strong>the button is shown.</strong> After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refund and then enter a selected refund amount per product line. The maximum refundable amount is written below all the amount input in tax included.</p>
 <p>By default, the entered quantity has 0 pre-filled. To release a partial refund, the user must have selected a minimum quantity of 1. The maximum refund is determined by the product totals. The limitation of the refund does not take into account the amount paid whether it is partially or paid by the customer.</p>
 <p><strong>Before validating a partial refund,</strong> the user can choose to re-stock or generate a voucher by checking the checkboxes.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/385922519__Order_Details_-_Partial_Refund">Partial Refund screen</a></p>
 <p><strong>After the validation of a partial refund,</strong> a new column is added with the quantity previously selected and the amount entered.</p>
 <p>When the status &ldquo;Refunded&rdquo; is applied to the order, the refund amount is deducted from the total spent by the customer since registration and the number of valid orders placed decreases by 1.</p>
-<ol start="7">
-<li><strong>Cancel products button</strong></li>
-</ol>
+<h3 id="7-cancel-products-button">7. <strong>Cancel products button</strong></h3>
 <p>The cancel button is only displayed by default on the creation of an order.
 The button <strong>is hidden</strong> when the order is <strong>considered as paid</strong></p>
 <p>When pressing the button, the product list takes the full with of the page and the column cancel is added.
@@ -8125,9 +8156,7 @@ The quantity input can still be editable.</p>
 <p>To cancel products at least one of the products must be selected.</p>
 <p><strong>When all the products are canceled, the status automatically changes for &ldquo;Canceled&rdquo;.</strong></p>
 <p><strong>When the status &ldquo;Canceled&rdquo; is applied to the order, the quantity of products in the order is returned to stock.</strong></p>
-<ol start="8">
-<li><strong>Standard products button</strong></li>
-</ol>
+<h3 id="8-standard-products-button">8. <strong>Standard products button</strong></h3>
 <p>Standard refund <strong>is only displayed when the merchandise returns are activated and the order is considered as paid</strong> and <strong>is hidden when the order is considered as shipped.</strong></p>
 <p>When the user presses the button a column &ldquo;Refund&rdquo; is added with a checkbox and the input quantity.</p>
 <p>A quantity of greater than 0 must be selected to refund a product.</p>
@@ -8136,9 +8165,7 @@ The quantity input can still be editable.</p>
 <p>A product can&rsquo;t be refund multiple times.</p>
 <p>After refunding, it shows on a column &ldquo;Refunded&rdquo;, the quantity and the price of the refund per products.</p>
 <p><img src="https://user-images.githubusercontent.com/43613217/69959612-e211e780-1507-11ea-945a-934fe5441d37.png" alt="after standard refund"></p>
-<ol start="9">
-<li><strong>Return products button</strong></li>
-</ol>
+<h3 id="9--return-products-button">9.  <strong>Return products button</strong></h3>
 <p>Return product <strong>is only displayed when the merchandise returns are activated and the order is considered as paid</strong> and <strong>is hidden when the order is considered as shipped.</strong></p>
 <p>When the user presses the button a column &ldquo;Refund&rdquo; is added with a checkbox and the input quantity.</p>
 <p>A quantity must be selected to refund a product.
@@ -8148,9 +8175,7 @@ A product can&rsquo;t be refund multiple times.</p>
 <p><img src="https://user-images.githubusercontent.com/43613217/69962213-cd385280-150d-11ea-8eca-1e245e5e408f.png" alt="before return product"></p>
 <p>After returning the products, it shows on a column &ldquo;Return&rdquo; and &ldquo;Refund&rdquo; with the return quantity and the price of the refund per products if a generated slip was checked in the option.</p>
 <p><img src="https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png" alt="after return product"></p>
-<ol start="10">
-<li><strong>Next/Previous button</strong></li>
-</ol>
+<h3 id="10--nextprevious-button">10.  <strong>Next/Previous button</strong></h3>
 <p>![arrows next/prev](INSERT IMG)</p>
 <p>Pressing the left arrow opens the next older order.
 Pressing the right arrow opens the next recent order.
@@ -8171,22 +8196,16 @@ If the last order (the newest one) is opened, the right arrow is disabled.</p>
 <li><strong>valid orders placed on a black background</strong></li>
 <li><strong>total spend since registration on a black background.</strong></li>
 </ul>
-<ol>
-<li><strong>Deleted customer</strong></li>
-</ol>
+<h3 id="1-deleted-customer">1. <strong>Deleted customer</strong></h3>
 <p>When a customer is deleted:</p>
 <p>The customer information such as <strong>the email, the date of the account registered, the valid orders placed, the total spend since registration</strong>, shipping and invoice address drop-down button, and the private note block are not displayed.</p>
 <p>The customer name is changed to <strong>&ldquo;Deteled customer&rdquo;</strong>. It removes the icon account box and the link to redirect to the full details customer page.</p>
-<ol start="2">
-<li><strong>Guest customer</strong></li>
-</ol>
+<h3 id="2-guest-customer">2. <strong>Guest customer</strong></h3>
 <p>If the customer is a guest:
 The fields &ldquo;account registered&rdquo; and &ldquo;total spent&rdquo; are hidden.
 Below the customer name, &ldquo;Guest&rdquo; in grey (Open sans semibold 14px #6C868E) is displayed.</p>
 <p>The button to transform a guest into a customer is removed. The feature is still available on the customer page. The order is not the place to handle customer management. It was removed to not encourage the merchant to transform Guest to a Customer account by letting a button on the order page.</p>
-<ol start="3">
-<li><strong>Shipping and Invoice address</strong></li>
-</ol>
+<h3 id="3-shipping-and-invoice-address">3. <strong>Shipping and Invoice address</strong></h3>
 <p>Each address has <strong>a button</strong> to update or change it. The button opens a list to select to edit or update it.
 Editing an address creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/386397109_Edit_Adress">Edit/Change Addresse behaviors</a></p>
@@ -8194,36 +8213,26 @@ Editing an address creates a new address and soft-deletes the old one. So, if th
 <p>And <strong>change address</strong> opens the pop in that allows the user to choose the new address form a droplist.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress">Popin - Change address</a></p>
 <p>When all the products in the order are virtual products, only the invoice address is displayed.</p>
-<ol start="4">
-<li><strong>Private customer note</strong></li>
-</ol>
+<h3 id="4-private-customer-note">4. <strong>Private customer note</strong></h3>
 <p><strong>Private customer note</strong> saves or displays a note for the corresponding customer. The same note will be share for all the orders from the same customer. It is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press the save button to save it.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior">Customer private note</a></p>
 <h2 id="iii-messages-panel">III. <strong>Messages panel</strong></h2>
 <p>Bellow the customer panel, you have the messages panel. <strong>The total of the exchanged messages</strong> is displayed next to the panel&rsquo;s title.</p>
-<ol>
-<li><strong>Messages display</strong></li>
-</ol>
+<h3 id="1-messages-display">1. <strong>Messages display</strong></h3>
 <p><strong>Only the 4 last messages</strong> private or public are displayed showing <strong>the sender’s name, delivery’s date, and the content’s message. The private message</strong> is displayed with a dark background and a specific icon for the sender pic.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/378991321__Order_Details">Messages Panel</a></p>
 <p>If the merchant has added a message to the order during the creation, the message is displayed here as a private message</p>
 <p><strong>To see all the past messages</strong>, the merchant can click on <strong>View full conversation</strong> to open on a popup.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History">Message History</a></p>
-<ol start="2">
-<li><strong>Predefined messages</strong></li>
-</ol>
+<h3 id="2-predefined-messages">2. <strong>Predefined messages</strong></h3>
 <p>Bellow the messages displayed, the user can <strong>choose an order message</strong> to send into the droplist containing <strong>the predefined messages</strong> of the <strong>order messages page</strong>. Selecting the message prefills <strong>the message input text</strong>. By default, there is no prefilled message so the droplist shows “-”. below the droplist, the link named <strong>&ldquo;configure predefined messages&rdquo;</strong> is available. It redirects to<strong>the order messages page</strong> to access the predefined messages.</p>
 <p>After selecting the droplist selection, the prefilled text is still editable.</p>
-<ol start="3">
-<li><strong>Sending messages</strong></li>
-</ol>
+<h3 id="3-sending-messages">3. <strong>Sending messages</strong></h3>
 <p><strong>A checkbox</strong> is available to choose <strong>to write a private message hidden from the customer.</strong></p>
 <p>Using the prefilled message or writing the message from scratch, the user sends it by clicking on <strong>Send message</strong> . It sends the message by email and adds the message on the front-office on the message section of <strong>the order historic page and an email</strong> as presented on the screenshots below.</p>
 <p>The maximum of character in the text input is 1200 char. If the merchant manages to send a message of more than 1200 characters, the message is not sent and the warning message &ldquo;This field cannot be longer than 1200 characters&rdquo; is displayed below the text input.</p>
 <h2 id="iv-products-panel">IV. <strong>Products panel</strong></h2>
-<ol>
-<li><strong>The Product list</strong></li>
-</ol>
+<h3 id="1-the-product-list">1. <strong>The Product list</strong></h3>
 <p>Below the actions button and on the right of the customer panel, the product panel displays <strong>the order’s products into the table list</strong> showing:</p>
 <ul>
 <li><strong>the product’s image,</strong></li>
@@ -8255,9 +8264,7 @@ Editing an address creates a new address and soft-deletes the old one. So, if th
 <li>add new cart rules to the order</li>
 </ul>
 <p>Below the totals, a warning message is displayed to warn the user that <strong>for this customer group, prices are displayed as HT</strong> or <strong>for this customer group, prices are displayed as TTC</strong> depending on the customer group setting and also <strong>that returns are disabled.</strong> when the merchandise return is disabled on the merchandise returns page.</p>
-<ol start="2">
-<li><strong>Add new products</strong></li>
-</ol>
+<h3 id="2-add-new-products">2. <strong>Add new products</strong></h3>
 <p>When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :</p>
 <ul>
 <li>the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.</li>
@@ -8319,9 +8326,7 @@ Editing the quantity of the product to a quantity less than the minimum quantity
 </ul>
 <p>When the order has several invoices, it is possible to add an already existing product to the order if they are related to a different invoice.
 There is only one possible price per product even if they are from different invoices. Therefore, if a product is added with a different price in another invoice, the price will be updated on the first invoice. To avoid confusion, a pop-up window will be displayed before the addition to confirm that the action may have an impact on the other order.</p>
-<ol start="3">
-<li><strong>Remove products from the order</strong></li>
-</ol>
+<h3 id="3-remove-products-from-the-order">3. <strong>Remove products from the order</strong></h3>
 <p>Deleting one or several products is very easy: a remove icon is available to remove one or several quantities of a paid product.</p>
 <p>When a product is removed from the order, a notification is displayed: &ldquo;The item was successfully removed.&rdquo; in Admin.Notifications.Error.
 Then the product list is refreshed behind the loading spinner to check if any gift product has to be removed as well. The user is redirected to the page where the user was when the product has been removed. If the removed product was on the last page, the user is redirected to the second-last page.</p>
@@ -8355,9 +8360,7 @@ The <strong>Update button</strong> saves the modification and <strong>Cancel but
 <p>If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order.</p>
 </li>
 </ul>
-<ol start="5">
-<li><strong>Cart rule list</strong></li>
-</ol>
+<h3 id="5-cart-rule-list">5. <strong>Cart rule list</strong></h3>
 <p>The below the product panel, there is the order&rsquo;s summary:</p>
 <ul>
 <li><strong>Products total with taxes excluded</strong></li>
@@ -8371,9 +8374,7 @@ The <strong>Update button</strong> saves the modification and <strong>Cancel but
 <ul>
 <li>temporal discount does not affect</li>
 </ul>
-<ol start="6">
-<li><strong>Add a new cart rule</strong></li>
-</ol>
+<h3 id="6-add-a-new-cart-rule">6. <strong>Add a new cart rule</strong></h3>
 <ul>
 <li><strong>Add a new discount</strong>: opens a pop in to create your new cart rule between the percentage, the amount (taxes included), and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of the products (the shipping cost is not included).</li>
 </ul>
@@ -8381,16 +8382,12 @@ The <strong>Update button</strong> saves the modification and <strong>Cancel but
 <p>The vouchers will be added to the table list displaying the discount name, value, and the delete button on the top of the summary order. The new discount created is added with the status deactivated on the cart rule page with zero quantity.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/385922052__Order_Details_-_Discounts_Applied">Carts rules list</a></p>
 <p><strong>If the order status is considered as paid</strong>, either on adding a product or adding a discount adding, the user has to specify on <strong>which generated invoices will be applied.</strong></p>
-<ol start="7">
-<li><strong>Invoice generation</strong></li>
-</ol>
+<h3 id="7-invoice-generation">7. <strong>Invoice generation</strong></h3>
 <p><strong>Specific scenarios</strong>:
 When a new invoice is created with free shipping, a discount is generated at the value of the shipping cost with the name:&quot;[gGenerated] CartRule for Free Shipping&quot;.
 On the invoice, the discount is not displayed. It only displays the free shipping in Shipping Costs.</p>
-<ol start="8">
-<li><strong>Order Summary</strong>
-The below the product panel, there is the order&rsquo;s summary:</li>
-</ol>
+<h3 id="8-order-summary">8. <strong>Order Summary</strong></h3>
+<p>The below the product panel, there is the order&rsquo;s summary:</p>
 <ul>
 <li><strong>Products total with taxes excluded</strong></li>
 <li><strong>Total shipping</strong></li>
@@ -8404,9 +8401,7 @@ The below the product panel, there is the order&rsquo;s summary:</li>
 <p>All the tabs are located in the same panel below the products list.</p>
 <p>The label &ldquo;Wrapping gift&rdquo; and &ldquo;Recycled packaging&rdquo; are only shown when the feature is present in the order. It must be shown on all the tabs.
 <img src="../../../../img/wrapping_recycled_on.png" alt="Wrapping and recycled packing are included in the order"></p>
-<ol>
-<li><strong>Status tab</strong></li>
-</ol>
+<h3 id="1--status-tab">1.  <strong>Status tab</strong></h3>
 <p>The table <strong>list of the latest order status</strong> is displayed composed:</p>
 <ul>
 <li><strong>The status with associated colored</strong></li>
@@ -8416,9 +8411,7 @@ The below the product panel, there is the order&rsquo;s summary:</li>
 </ul>
 <p>Below the list, a drop list of all the status available is displayed to update the current status through the <strong>button Update Status</strong> next to it. Updating the order status will trigger all the actions set by the order status.</p>
 <p>On the bottom of the block, there is the <strong>Order comment</strong>. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press the save button to save it.</p>
-<ol start="2">
-<li><strong>Documents tab</strong></li>
-</ol>
+<h3 id="2--documents-tab">2.  <strong>Documents tab</strong></h3>
 <p>The document tab <strong>regrouped all the document</strong> as invoices and delivery slips <strong>in a table</strong>. The table displays <strong>the date, document type, reference, and the amount.</strong> The reference is a clickable link to download the document.</p>
 <p>Each table’s rows as 2 possible <strong>button actions</strong>:</p>
 <ul>
@@ -8426,21 +8419,15 @@ The below the product panel, there is the order&rsquo;s summary:</li>
 <li><strong>Add note/Edit note</strong>: it displays a text input that can be saved or cancel. The saved note will be integrated into the related document.</li>
 </ul>
 <p><strong>If there is no document</strong>, <strong>a button is available to generate an invoice</strong> with all the information saved so far in the order.</p>
-<ol start="3">
-<li><strong>Shipping tab</strong></li>
-</ol>
+<h3 id="3--shipping-tab">3.  <strong>Shipping tab</strong></h3>
 <p>If there is a gift wrapping message for the order, it&rsquo;s displayed in the Shipping tab, before the table.</p>
 <p>The carrier table shows <strong>the date, the carrier, the weight, the shipping cost, the tracking number, and the edit button.</strong></p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/381874233__Order_Details_-_Shipping">Shipping tab</a></p>
 <p>The edit shipping button on each row can edit the information in a pop in. You can edit the text input the tracking number and in the drop list the carrier method.</p>
 <p><a href="https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit">Edit shipping details</a></p>
-<ol start="4">
-<li><strong>Merchandising returns tab</strong></li>
-</ol>
+<h3 id="4--merchandising-returns-tab">4.  <strong>Merchandising returns tab</strong></h3>
 <p>The merchandise return tab lists <strong>the date, the type, the carrier (= return status), and the number (= return reference number)</strong>. When the merchandise return is disabled the tab displayed: &ldquo;no merchandise returned yet&rdquo;.</p>
-<ol start="5">
-<li><strong>Payment panel</strong></li>
-</ol>
+<h3 id="5--payment-panel">5.  <strong>Payment panel</strong></h3>
 <p>The payment section displays all the transactions made in the order from the payment module or the manual inputs.</p>
 <p>The table shows <strong>the date and hours, the payment method, the transaction ID, the amount with the currency, and the button detail.</strong></p>
 <p>To fill a payment transaction, the user has <strong>to select the date, one payment method from a droplist, the amount, and currency then press the add button. The amount</strong> can be a <strong>positive or negative value</strong>.</p>
@@ -8470,9 +8457,9 @@ If &ldquo;All shops&rdquo; is selected as context in the order list, then the us
 <footer class="article-footer">
 	
 <div>
-  Last updated on July 12, 2021
+  Last updated on February 23, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/5661f21c540ead164582cb00a380e1fb20901577">"Update view-page.md" (5661f21c)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/38286e277c0109bc9eec38079473f99561ccd05d">"Update view-page.md" (38286e27)</a>
   
 </div>
 
@@ -8493,17 +8480,17 @@ If &ldquo;All shops&rdquo; is selected as context in the order list, then the us
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1644766304"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1644766304"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1644766304"></script>
-    <script src="../../../../js/jquery.sticky.js?1644766304"></script>
-    <script src="../../../../js/featherlight.min.js?1644766304"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1644766304"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1644766304"></script>
-    <script src="../../../../js/learn.js?1644766304"></script>
-    <script src="../../../../js/hugo-learn.js?1644766304"></script>
+    <script src="../../../../js/clipboard.min.js?1645624009"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1645624009"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1645624009"></script>
+    <script src="../../../../js/jquery.sticky.js?1645624009"></script>
+    <script src="../../../../js/featherlight.min.js?1645624009"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1645624009"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1645624009"></script>
+    <script src="../../../../js/learn.js?1645624009"></script>
+    <script src="../../../../js/hugo-learn.js?1645624009"></script>
     
-    <script src="../../../../main.js?1644766304"></script>
+    <script src="../../../../main.js?1645624009"></script>
     
     
 
