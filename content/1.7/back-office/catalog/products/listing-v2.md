@@ -12,7 +12,7 @@ The empty state card appears WHEN there is no product
 
 - New product - Button - Opens the "Add new product modal"
 
-If multistore is enabled then Shop-Selector-Modal (title:"Add new product") is opened before the "Add new product modal"
+If multistore is enabled then Shop-Selector-Modal (title: "Add new product") is opened before the "Add new product modal"
 
 ## Top of the listing
 
@@ -151,23 +151,23 @@ When "all shops" is selected, lists all the products and groups products associa
 
 For products associated with different shops, it displays the default shop data in the list’s row. If the product is not linked to the default shop then it displays use the data of the first shop in the alphabetic order.
 
-A product associated to differents shops:
+A product associated with different shops:
 
 - Can’t be disabled from the list - the list displays “-”
 - Stores(s) - Dropdown button - List all the shops associated with the product. When the dropdown is clicked THEN it displays the selected product and all products associated with the product. The clicked product row is emptied, it only keeps the data concerning the store list and its product image.
 - The store column displays the shop name and the color with which it is associated
 - Actions button wording depending on the multistore context:
 
-| Is the product row has more than one shop in the Store(s) column ? | Duplicate | Enable | Disable | Delete | Preview |
+| Is the product row has more than one shop in the Store(s) column? | Duplicate | Enable | Disable | Delete | Preview |
 | --- | --- | --- | --- | --- | --- |
 | No | Duplicate from shop | Enable from shop | Disable from shop | Delete from shop | Not displayed |
 | Yes | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Preview |
-- Actions button impact depending of the multistore context:
+- Actions button impact depending on the multistore context:
 
-| Is the product row has more than one shop in the Store(s) column ? | Shop contexts | Edit | Duplicate | Enable | Disable | Delete | Preview |
+| Is the product row has more than one shop in the Store(s) column? | Shop contexts | Edit | Duplicate | Enable | Disable | Delete | Preview |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | No | Single shop | Opens the edit page in same shop context  | Duplicates the product in the same shop context | Enables the product in the same shop context | Disables the product in the same shop context | Deletes the product in the same shop context | Open a new tab the product page in FO  |
-| No | All shops / Groups shops | Opens the edition page in the shop context associated to the product | Duplicates the product in the shop context associated to the product | Enables the product in the shop context associated with the product | Disables the product in the shop context associated with the product | Deletes the product n the shop context associated with the product | Open a new tab the product page in FO in the shop context associated with the product |
+| No | All shops / Groups shops | Opens the edition page in the shop context associated with the product | Duplicates the product in the shop context associated with the product | Enables the product in the shop context associated with the product | Disables the product in the shop context associated with the product | Deletes the product n the shop context associated with the product | Open a new tab the product page in FO in the shop context associated with the product |
 | Yes | All shops / Groups shops | Opens the Shop-Selector-Modal before the edit page. <br> Modal title: ‘Choose a Store’ | Duplicates the selected product and all products associated with the selected product with the same shops association | Enables the selected product and all products associated with the selected product from all shops/groups shops.  | Disables the selected product and all products associated with the selected product from all shops/groups shops.  | Deletes the selected product and all products associated with the selected product from all shops/groups shops.  | Not displayed |
 
 When a specific shop is selected, only the products belonging to this shop are displayed.
