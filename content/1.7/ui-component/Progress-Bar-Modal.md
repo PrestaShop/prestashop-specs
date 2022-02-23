@@ -22,7 +22,7 @@ The modal can be closed with the cross or the close button. If the modal is clos
 The modal can be closed with the cross or the close button. If the modal is closed during the process, the action is still done
 
 WHEN the completion is finished
-| Did it result in any errors ? | Modal is oponed ? | THEN |
+| Did it result in any errors ? | Modal is opened ? | THEN |
 | --- | --- | --- |
 | No | Yes | The modal is closed and it is displays an alert-success |
 | No | No | It is displays an alert-success |
