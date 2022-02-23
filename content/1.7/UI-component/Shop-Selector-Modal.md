@@ -1,5 +1,5 @@
 ---
-title: Product Page
+title: Shop Selector Modal
 weight: 1
 ---
 # SPECS Shop Selector Modal
