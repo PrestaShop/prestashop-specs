@@ -1,5 +1,5 @@
 ---
-title: Languages
+title: Zones
 weight: 1
 ---
 # SPECIFICATIONS - INTERNATIONAL &gt; LOCATION &gt; ZONES
