@@ -10,4 +10,4 @@ weight: 1
     - Color of the store
     - Store name
 
-Once the store selected, it continues the previous action with shop context
+Once the store is selected, it continues the previous action with shop context
