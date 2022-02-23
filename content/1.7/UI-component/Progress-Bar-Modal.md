@@ -1,5 +1,5 @@
 ---
-title: Product Page
+title: Progress Bar Modal
 weight: 1
 ---
 # SPECS Progress Bar Modal
