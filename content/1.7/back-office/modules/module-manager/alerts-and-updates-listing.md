@@ -37,8 +37,8 @@ Each Module block is displayed as a separate row and with the following elements
 - **Name** - full module name.
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
-- **Description paragraph** - description of the module. Sometimes there is huge paragraph, so a module row shows only excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in separate paragraph).
-- **CTA button** - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
+- **Description paragraph** - description of the module. Sometimes there is a huge paragraph, so a module row shows only an excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in a separate paragraph).
+- **CTA button** - these buttons are used for module management. By default, once the module is installed in the system, the CTA button becomes _Configure_ named. Clicking configure leads to a module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
 
   - **Uninstall** - uninstalls selected module.
   - **Disable** - disables selected module.
@@ -49,7 +49,7 @@ Each Module block is displayed as a separate row and with the following elements
 
 ## Updates tab
 
-- **Balded title with the tooltip** - {modules number in total} modules to update and a hover tooltip. A tooltip is displayed as blue information _i_ icon, and when hovered, the text _Modules to update. Update these modules to enjoy their latest versions._ appears in dark box.
+- **Balded title with the tooltip** - {modules number in total} modules to update and a hover tooltip. A tooltip is displayed as a blue information _i_ icon, and when hovered, the text _Modules to update. Update these modules to enjoy their latest versions._ appears in dark box.
 - **Ghost button CTA Upgrade All** - initiates the Bulk action for upgrading all the available modules at the same time. The next actions are specified in the next topic.
 
 ### Upgrade All Pop-up UI
@@ -69,7 +69,7 @@ After the upgrade action, the pop-up will close automatically, and the spinner w
 - **Icon**
 - **Module title**
 - **Versions from the current {arrow to the right symbol} to the newest numeric expression** - it helps visually to orientate, which is the current outdated module version and what will be the next module version after the upgrade finishes.
-- **Changelog** - displays the log of the newest version module release. Sometimes, if module has no changelog in the newest version, there will be _No changelog provided_ placeholder texted.
+- **Changelog** - displays the log of the newest version module release. Sometimes, if a module has no changelog in the newest version, there will be _No changelog provided_ placeholder texted.
 - **CTA Upgrade button** - If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module:
 
   - **Uninstall** - uninstalls selected module.
@@ -81,4 +81,4 @@ After the upgrade action, the pop-up will close automatically, and the spinner w
 
 ## Multistores functionality
 
-The modules, that are displayed in Alerts and Updates tabs, are not maintained and managed separately in different Multistores or Shop groups. All the actions for one module in one Multistore or Shop group will result the same outcome in the other Multistore or Shop group.
+The modules, that are displayed in Alerts and Updates tabs, are not maintained and managed separately in different Multistores or Shop groups. All the actions for one module in one Multistore or Shop group will result in the same outcome in the other Multistore or Shop group.
