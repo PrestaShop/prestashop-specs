@@ -59,7 +59,7 @@ Input field for the mobile phone.
 
 13) Other
 
-Input field for other information. Has a help text below: "Invalid characters: <>{}". When trying to save with invalid characters entered, will show the following error: " "*invalid characters that were input*" is invalid. 
+Input field for other information. Has a help text below: "Invalid characters: <>{}". When trying to save with invalid characters entered, will show the following error: "*invalid characters that were input*" is invalid. 
 
 ### Call to action
 
