@@ -84,7 +84,7 @@ Each Module listing UI is displayed as a separate row and with the following ele
 - **Numeric value with dots** - module version.
 - **Bolded smaller text** - the name of the module developer.
 - **Description paragraph** - description of the module. Sometimes there is a huge paragraph, so a module row shows only an excerpt of the description and the rest of the text is expanded under the _Read more_ link (more information about the Read more pop-up is in a separate paragraph).
-- **CTA button** - these buttons are used for module management. By default, once the module is installed in system, the CTA buttom becomes _Configure_ named. Clicking configure leads to module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
+- **CTA button** - these buttons are used for module management. By default, once the module is installed in the system, the CTA button becomes _Configure_ named. Clicking configure leads to the module management dashboard page. If the module is outdated, the CTA button can be shown as _Upgrade_. Clicking Upgrade will update the module to the latest version according to the latest module release. There is a **dropdown arrow** near the button - clicking on the arrow, shows additional functions for the certain module (the same, as Bulk action functions):
 
   - **Uninstall** - uninstalls selected module.
   - **Disable** - disables selected module.
@@ -97,7 +97,7 @@ Once one of the functions are executed, the CTA button transforms to spinning lo
 
 If one of the action responses as unsuccessful, the top-right side UI prompts the message _Cannot {action name} module {module name}. The module is invalid and cannot be loaded._
 
-Sometimes, there are errors reffered to Addons Marketplace authentication - _Exception thrown by module {module name} on upgrade. Error sent by Addons. You may need to be logged.
+Sometimes, there are errors referred to Addons Marketplace authentication - _Exception thrown by module {module name} on upgrade. Error sent by Addons. You may need to be logged.
 
 ## Read More pop-up
 
@@ -107,10 +107,10 @@ This pop-up appears right after clicking the _Read more_ link and extends the in
 - **Developer of the module**
 - **X icon for closing the pop-up**
 - **Bigger image of the module UI or other screenshots**
-- **Tabs for navigating through the information in pop-up** - sometimes in other modules tabs are few but usually the tabs are:
+- **Tabs for navigating through the information in pop-up** - sometimes in other modules tabs are few, but usually the tabs are:
   - **Overview** - full description of the module.
   - **Additional information** - additional description of the module.
-  - **Benefits** - listing the benefeits of the module.
+  - **Benefits** - listing the benefits of the module.
   - **Features** - lists the features of the module.
   - **Changelog** - the list of module updates in version history.
 - **Manufacturer icon**
