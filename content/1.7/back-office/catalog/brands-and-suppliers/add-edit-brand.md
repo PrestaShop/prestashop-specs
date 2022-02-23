@@ -48,3 +48,9 @@ This is a toggle switch that can be turned to "Yes" or "No", by default it is se
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
 👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
+
+### Call to action
+
+ - Cancel, when pressed redirects back to the [specs of the brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") 
+
+ - Save, when pressed redirects back to the [specs of the brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") shows the following message: "Successful creation.".
