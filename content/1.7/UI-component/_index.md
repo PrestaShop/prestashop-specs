@@ -1,6 +1,6 @@
 ---
-title: Back Office
-menuTitle: Back Office
+title: UI component
+menuTitle: UI component
 weight: 1
 pre: ""
 chapter: true
