@@ -773,9 +773,9 @@ Displays all the prices of the product in two blocks.
 - Block 2:
 	-  *%Retail price (tax excl.)%* - *%Cost Price% margin*
 	-  *%Cost Price%* * 100  / *%Retail price (tax excl.)%* % margin rate
-	- %Cost Price% cost price
+	- *%Cost Price%* cost price
 
-Ex with fake data:
+Ex with data:
 If the tax is at 20%.
 - Block 1:
 	- 10€ (tax excl.)
@@ -863,7 +863,7 @@ THEN the modal with all specifics prices fields are closed.
 IF the user clicks again to Add a specific price
 THEN all fields are reset to their default values.
 
-* **List of specific prices & catalog price rules**: Lists the specific price with all the details: 
+#### **List of specific prices & catalog price rules**: Lists the specific price with all the details: 
 ID, Rule, Combination, Currency, Country, Group, Customer, Specific price (tax excl.), Discount, Duration, Units, actions (delete, edit). Rule column contains “--” for a specific price.
 
 Here are also listed the catalog prices rules that apply to this product. Rule column contains the name of the catalog price rule.
@@ -874,15 +874,13 @@ THEN  It opens a modal with all the fields completed with the specific price dat
 
 * **Edit a catalog prices rule** - Button 
 WHEN the user edits a catalog prices rule
-THEN It opens an iframe of the catalog price rule edition page 
+THEN It opens a new tab the catalog price rule edit page
 
 * **Delete a specific price** - Button
 WHEN the user clicks on it
 THEN a modal opens to cancel or confirm the action.
 
-* **Delete a catalog prices rule** - Button
-WHEN the user clicks on it
-THEN a modal opens to cancel or confirm the action.
+The user can't delete the catalog price rule.
 
 ### Priorities
 
