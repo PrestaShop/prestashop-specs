@@ -3,11 +3,9 @@ title: View Page
 weight: 1
 ---
 
-**Specifications for the order view page for 1.7.7 - 2019**
+# **Specifications for the order view page for 1.7.7 - 2019**
 
-# **User Story:**
-
-# As a merchant, I need to be able to manage all my orders processed on my website.
+As a merchant, I need to be able to manage all my orders processed on my website.
 
 As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
 
@@ -100,11 +98,11 @@ Order documents like invoices and delivery slips are, by default, in the custome
 -   **Cancel products button**
 -   **Next/Previous button**
 
-1.  **Update the order status**
+### 1.  **Update the order status**
 
 The current status is displayed by default on the droplist. It can be changed by selecting the new order's status from the droplist after validating the confirmation button.
 
-2.  **Print order button**
+### 2.  **Print order button**
 
 Opens the Print page of the browser with the order’s content.
 
@@ -112,17 +110,17 @@ Opens the Print page of the browser with the order’s content.
 
 [pdf file result 2/2](https://invis.io/YKTGGFZAMCB#/386350136_Order_Details_-_Print_Order_2)
 
-3.  **View invoice show**
+### 3.  **View invoice show**
 
 The Invoice can be downloaded if the current or new order status has **the generation of the invoice activated** or if the user has generated it manually.
 
-4.  **View delivery slip**
+### 4.  **View delivery slip**
 
 If the current or new order status has **the generation of the delivery slip** then **the button to download the delivery slip is shown.**
 
-5. **Summary of the standard refund, partial refund and return product feature**
+### 5. **Summary of the standard refund, partial refund and return product feature**
 
-## **Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature**
+#### **Merchandise return has to be enabled if the merchant wants to use the standard refund, partial refund and return product feature**
 
 | **Button** | **Why** | **What is does** | **When is it displayed** | **When is it hidden** | **Option** | **Summarise Behaviours** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -136,7 +134,7 @@ If this order has been partially paid by voucher. The merchant can refund either
 Before 1.7.7, it used to have an input to select the specific amount for the voucher. The objective of the field was to customize the voucher value but it was only displayed when a voucher was applied to the order. So to customize a voucher on return product or standard refund, the order has to have a voucher applied in the order.
 To harmonize the behaviors, we put the specific custom edition into the partial refund button and set the return product button with straightforward options. The merchant can customize the voucher on the partial refund feature.
 
-6.  **Partial refund button**
+### 6.  **Partial refund button**
 
 If the current or new order status of the order is considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refund and then enter a selected refund amount per product line. The maximum refundable amount is written below all the amount input in tax included.
 
@@ -150,7 +148,7 @@ By default, the entered quantity has 0 pre-filled. To release a partial refund, 
 
 When the status "Refunded" is applied to the order, the refund amount is deducted from the total spent by the customer since registration and the number of valid orders placed decreases by 1.
 
-7. **Cancel products button**
+### 7. **Cancel products button**
 
 The cancel button is only displayed by default on the creation of an order.
 The button **is hidden** when the order is **considered as paid**
@@ -169,7 +167,7 @@ To cancel products at least one of the products must be selected.
 
 **When the status "Canceled" is applied to the order, the quantity of products in the order is returned to stock.**
 
-8. **Standard products button**
+### 8. **Standard products button**
 
 Standard refund **is only displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
@@ -187,7 +185,7 @@ After refunding, it shows on a column "Refunded", the quantity and the price of 
 
 ![after standard refund](https://user-images.githubusercontent.com/43613217/69959612-e211e780-1507-11ea-945a-934fe5441d37.png)
 
-9.  **Return products button**
+### 9.  **Return products button**
 
 Return product **is only displayed when the merchandise returns are activated and the order is considered as paid** and **is hidden when the order is considered as shipped.**
 
@@ -205,7 +203,7 @@ After returning the products, it shows on a column "Return" and "Refund" with th
 
 ![after return product](https://user-images.githubusercontent.com/43613217/69962570-9878cb00-150e-11ea-89a0-85d97a681244.png)
 
-10.  **Next/Previous button**
+### 10.  **Next/Previous button**
 
 ![arrows next/prev](INSERT IMG)
 
@@ -232,7 +230,7 @@ The customer panel is divided into 3 parts:
 -   **valid orders placed on a black background**
 -   **total spend since registration on a black background.**
 
-1. **Deleted customer**
+### 1. **Deleted customer**
 
 When a customer is deleted:
 
@@ -240,7 +238,7 @@ The customer information such as **the email, the date of the account registered
 
 The customer name is changed to **"Deteled customer"**. It removes the icon account box and the link to redirect to the full details customer page.
 
-2. **Guest customer**
+### 2. **Guest customer**
 
 If the customer is a guest:
 The fields "account registered" and "total spent" are hidden.
@@ -248,7 +246,7 @@ Below the customer name, "Guest" in grey (Open sans semibold 14px #6C868E) is di
 
 The button to transform a guest into a customer is removed. The feature is still available on the customer page. The order is not the place to handle customer management. It was removed to not encourage the merchant to transform Guest to a Customer account by letting a button on the order page.
 
-3. **Shipping and Invoice address**
+### 3. **Shipping and Invoice address**
 
 Each address has **a button** to update or change it. The button opens a list to select to edit or update it.
 Editing an address creates a new address and soft-deletes the old one. So, if the edited address is used by an old order, it will not be updated with the new address.
@@ -263,7 +261,7 @@ And **change address** opens the pop in that allows the user to choose the new a
 
 When all the products in the order are virtual products, only the invoice address is displayed.
 
-4. **Private customer note**
+### 4. **Private customer note**
 
 **Private customer note** saves or displays a note for the corresponding customer. The same note will be share for all the orders from the same customer. It is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press the save button to save it.
 
@@ -273,7 +271,7 @@ When all the products in the order are virtual products, only the invoice addres
 
 Bellow the customer panel, you have the messages panel. **The total of the exchanged messages** is displayed next to the panel's title.
 
-1. **Messages display**
+### 1. **Messages display**
 
 **Only the 4 last messages** private or public are displayed showing **the sender’s name, delivery’s date, and the content’s message. The private message** is displayed with a dark background and a specific icon for the sender pic.
 
@@ -285,13 +283,13 @@ If the merchant has added a message to the order during the creation, the messag
 
 [Message History](https://invis.io/YKTGGFZAMCB#/386399527__Order_Details_-_Message_History)
 
-2. **Predefined messages**
+### 2. **Predefined messages**
 
 Bellow the messages displayed, the user can **choose an order message** to send into the droplist containing **the predefined messages** of the **order messages page**. Selecting the message prefills **the message input text**. By default, there is no prefilled message so the droplist shows “-”. below the droplist, the link named **"configure predefined messages"** is available. It redirects to**the order messages page** to access the predefined messages.
 
 After selecting the droplist selection, the prefilled text is still editable.
 
-3. **Sending messages**
+### 3. **Sending messages**
 
 **A checkbox** is available to choose **to write a private message hidden from the customer.**
 
@@ -302,7 +300,7 @@ The maximum of character in the text input is 1200 char. If the merchant manages
 
 ## IV. **Products panel**
 
-1. **The Product list**
+### 1. **The Product list**
 
 Below the actions button and on the right of the customer panel, the product panel displays **the order’s products into the table list** showing:
 
@@ -346,7 +344,7 @@ In an existing order (until it gets the order status “Processing in progress�
 
 Below the totals, a warning message is displayed to warn the user that **for this customer group, prices are displayed as HT** or **for this customer group, prices are displayed as TTC** depending on the customer group setting and also **that returns are disabled.** when the merchandise return is disabled on the merchandise returns page.
 
-2. **Add new products** 
+### 2. **Add new products** 
 
 When clicking on Add a product, it adds a row on the table list with a search bar on the product name column. The merchant can search for any available product. If the desired product has combinations, a drop list appears below the search bar. After selecting the product, the user can edit if needed :
 - the base price tax excluded or tax included. When modifying one field, it automatically modifies the second field according to the product tax.
@@ -418,7 +416,7 @@ When I add a product when an invoice is already generated, the merchant can choo
 When the order has several invoices, it is possible to add an already existing product to the order if they are related to a different invoice.
 There is only one possible price per product even if they are from different invoices. Therefore, if a product is added with a different price in another invoice, the price will be updated on the first invoice. To avoid confusion, a pop-up window will be displayed before the addition to confirm that the action may have an impact on the other order.
 
-3. **Remove products from the order**
+### 3. **Remove products from the order**
 
 Deleting one or several products is very easy: a remove icon is available to remove one or several quantities of a paid product. 
 
@@ -455,7 +453,7 @@ These rules apply for all types of products, with or without combinations. Never
 
 - If the product has additional shipping fees associated with it, then the fees are added to the final shipping fees of the order.
 
-5. **Cart rule list**
+### 5. **Cart rule list**
 
 The below the product panel, there is the order's summary:
 
@@ -469,7 +467,7 @@ The below the product panel, there is the order's summary:
 Condition of cart rule:
 -	temporal discount does not affect
 
-6. **Add a new cart rule**
+### 6. **Add a new cart rule**
 
 -   **Add a new discount**: opens a pop in to create your new cart rule between the percentage, the amount (taxes included), and Free shipping type. The value must be a percent or amount value greater than 0. The percent value cannot exceed 100 and the discount value cannot exceed the total price of the products (the shipping cost is not included).
 
@@ -481,13 +479,13 @@ The vouchers will be added to the table list displaying the discount name, value
 
 **If the order status is considered as paid**, either on adding a product or adding a discount adding, the user has to specify on **which generated invoices will be applied.**
 
-7. **Invoice generation**
+### 7. **Invoice generation**
 
 **Specific scenarios**:
 When a new invoice is created with free shipping, a discount is generated at the value of the shipping cost with the name:"[gGenerated] CartRule for Free Shipping".
 On the invoice, the discount is not displayed. It only displays the free shipping in Shipping Costs.
 
-8. **Order Summary**
+### 8. **Order Summary**
 The below the product panel, there is the order's summary:
 
 -   **Products total with taxes excluded**
@@ -506,7 +504,7 @@ All the tabs are located in the same panel below the products list.
 The label "Wrapping gift" and "Recycled packaging" are only shown when the feature is present in the order. It must be shown on all the tabs.
 ![Wrapping and recycled packing are included in the order](/img/wrapping_recycled_on.png)
 
-1.  **Status tab**
+### 1.  **Status tab**
 
 The table **list of the latest order status** is displayed composed:
 
@@ -519,7 +517,7 @@ Below the list, a drop list of all the status available is displayed to update t
 
 On the bottom of the block, there is the **Order comment**. The order comment saves a comment for the corresponding order. It is closed by default when it is empty and open when filled. To add a comment when it is empty, the user has to click on the + button and has to press the save button to save it.
 
-2.  **Documents tab**
+### 2.  **Documents tab**
 
 The document tab **regrouped all the document** as invoices and delivery slips **in a table**. The table displays **the date, document type, reference, and the amount.** The reference is a clickable link to download the document.
 
@@ -530,7 +528,7 @@ Each table’s rows as 2 possible **button actions**:
 
 **If there is no document**, **a button is available to generate an invoice** with all the information saved so far in the order.
 
-3.  **Shipping tab**
+### 3.  **Shipping tab**
 
 If there is a gift wrapping message for the order, it's displayed in the Shipping tab, before the table.
 
@@ -543,11 +541,11 @@ The edit shipping button on each row can edit the information in a pop in. You c
 [Edit shipping details](https://invis.io/YKTGGFZAMCB#/381874230__Order_Details_-_Shipping_-_Edit)
 
 
-4.  **Merchandising returns tab**
+### 4.  **Merchandising returns tab**
 
 The merchandise return tab lists **the date, the type, the carrier (= return status), and the number (= return reference number)**. When the merchandise return is disabled the tab displayed: "no merchandise returned yet".
 
-5.  **Payment panel**
+### 5.  **Payment panel**
 
 The payment section displays all the transactions made in the order from the payment module or the manual inputs.
 
