@@ -11,8 +11,8 @@ This UI displays the marketing suggestions for the webshop, to optimize and incr
 
 ## Top UI elements
 
-- **Multistore switching dropdown** - allows to navigate through the available Multistores.
-- **View my shop and icon** - allows to open the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore.
+- **Multistore switching dropdown** - allows navigating through the available Multistores.
+- **View my shop and icon** - allows opening the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore.
 - **Breadcrumbs navigation** - identifies the page level.
 - **Module selection** - H1 class title for the page.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
@@ -27,7 +27,7 @@ This UI displays the marketing suggestions for the webshop, to optimize and incr
   - **Paragraph title**
   - **Paragraph description**
 
-These topics are clickable - link opens new blank page - they link to the official Prestashop Addons Marketplace, where additional useful Addons can be added to the wehshop.
+These topics are clickable - link opens a new blank page - they link to the official Prestashop Addons Marketplace, where additional useful Addons can be added to the wehshop.
 
 - **Prestashop banner** - information banner that contains the following elements:
   - **Prestashop Addons marketplace logo**
