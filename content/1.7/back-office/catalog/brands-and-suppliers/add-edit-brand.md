@@ -16,10 +16,42 @@ This field is mandatory, when trying to ssave it without entering the name, it w
 2) Short description
 
 This is a text input block, here it's possible select in which language the text will be written, all the imported languages to the shop will be shown. Below the allowed characters limit is shown: "0 of 21844 characters allowed", when trying to save with an exceeded number of characters entered (See issue [#27782](https://github.com/PrestaShop/PrestaShop/issues/27782)).
+Above the text field there is a text editor with the following options:
+ - **Source code**
+ - **Color picker**
+ - **Bold**
+ - **Italic**
+ - **Underline**
+ - **Strikethrough**
+ - **Blockquote**
+ - **Insert/edit link**
+ - **Allign selections**
+ - **Bullet list**
+ - **Numbered list**
+ - **Table**
+ - **Insert/edit image**
+ - **Insert/edit video**
+ - **Paragraph**
 
 3) Description
 
 This is a text input block, here it's possible select in which language the text will be written, all the imported languages to the shop will be shown. Below the allowed characters limit is shown: "0 of 21844 characters allowed", when trying to save with an exceeded number of characters entered (See issue [#27782](https://github.com/PrestaShop/PrestaShop/issues/27782)).
+Above the text field there is a text editor with the following options:
+ - **Source code**
+ - **Color picker**
+ - **Bold**
+ - **Italic**
+ - **Underline**
+ - **Strikethrough**
+ - **Blockquote**
+ - **Insert/edit link**
+ - **Allign selections**
+ - **Bullet list**
+ - **Numbered list**
+ - **Table**
+ - **Insert/edit image**
+ - **Insert/edit video**
+ - **Paragraph**
 
 4) Logo
 
