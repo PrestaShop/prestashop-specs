@@ -51,4 +51,4 @@ This UI block provides ability to download the PDF invoices of the selected orde
 
 ## Multistores functionality
 
-Each Multistore has its separate webshop multistore. 
+Each Multistore has its separate webshop databases. It means, one configuration on one Multistore or Shop group will not affect the other Multistore or Shop group.
