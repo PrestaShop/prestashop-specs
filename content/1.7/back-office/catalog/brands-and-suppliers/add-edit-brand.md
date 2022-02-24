@@ -17,41 +17,141 @@ This field is mandatory, when trying to ssave it without entering the name, it w
 
 This is a text input block, here it's possible select in which language the text will be written, all the imported languages to the shop will be shown. Below the allowed characters limit is shown: "0 of 21844 characters allowed", when trying to save with an exceeded number of characters entered (See issue [#27782](https://github.com/PrestaShop/PrestaShop/issues/27782)).
 Above the text field there is a text editor with the following options:
- - **Source code**
- - **Color picker**
- - **Bold**
- - **Italic**
- - **Underline**
- - **Strikethrough**
- - **Blockquote**
- - **Insert/edit link**
- - **Allign selections**
- - **Bullet list**
- - **Numbered list**
- - **Table**
- - **Insert/edit image**
- - **Insert/edit video**
- - **Paragraph**
+
+ - **Source code** - when pressed, the source code pop up shows up, and can be edited.
+
+ - **Color picker** - when pressed a color picker pop-up appears, in there i'ts possible to choose a color from the color palette. There's also input for "HEX", as well as FOR "R:", "G:" and "B:". Also there are 3 call to action buttons: 
+    - Cancel - when pressed, closes the pop-up.
+    - Back color - when pressed, uses the the selected color for the background.
+    - Text color - when pressed, uses the selected color for the text.
+
+ - **Bold** - when pressed, makes the text bold.
+
+ - **Italic** - when pressed, makes the text fromat italic.
+
+ - **Underline** - when pressed, underlines the text.
+
+ - **Strikethrough** - when the text gets crossed with a line.
+
+ - **Blockquote** - when pressed, moves the text aside as a quote.
+
+ - **Insert/edit link** - when pressed, a pop-up appears for entering the "URL", "text to display", below there are 3 drop-downs:
+    - Rel - when pressed, can select "None" or "nofollow"
+    - Target - when pressed, can select "None" or "New window"
+    - button style - when pressed, can select "None" or "button"
+Call to action buttons are: "Ok" and "cancel"
+
+ - **Allign selections** - Drop-down menu, from it can select:
+    - Allign left - alligns text to the left.
+    - Alligh right - alligns text to the right.
+    - Allign center - alligns text to the center.
+    - Justify - alligns the text evenly.
+
+ - **Bullet list** - Drop-down menu, possible selections:
+    - Default
+    - Circle
+    - Disc
+    - Square
+
+ - **Numbered list** - Drop-down menu, possible selections:
+    - Default
+    - Lower Alpha
+    - Lower Greek
+    - Lower Roman
+    - Lower Alpha
+    - Upper Roman
+    
+ - **Table** - Drop-down menu, possible selections:
+    - Insert table, when pressed, a 10x10 active table selection appears that can input a selected table to the description.
+    - Table properties
+    - Delete table
+    - Cell, when pressed 3 more options appear: Cell properties, Merge cells, Split cells
+    - Row - when pressed 8 more options appear: Insert row before, Insert row after, Delete row, Row properties, Cut row, Copy row, Paste row before, Paste row after
+    - Column - when pressed 3 more options appear: Insert column before, Insert column after, Delete column
+    
+ - **Insert/edit image** - when pressed, a pop-up appears for:
+    - Source
+    - Image description
+    - Dimensions (2 tables have a check mark on the right for "Constrain proportions" by default it is checked).
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+    
+ - **Insert/edit video** - when pressed 2 sections are available: General (default) and Embed
+    - When General is selected the following options appear: Source input, Alternative source input, Poster input, dimensions input (2 tables have a check mark on the right for "Constrain proportions" by default it is checked).
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+When Embed is pressed, the following text is shown: "Paste your embed code below:" and an input field below is displayed.
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+     
+ - **Paragraph** - when pressed 8 selections are offered: Paragraph, Heading 1, Heading 2, Heading 3, Heading 4, Heading 5, Heading 6, Preformatted
 
 3) Description
 
 This is a text input block, here it's possible select in which language the text will be written, all the imported languages to the shop will be shown. Below the allowed characters limit is shown: "0 of 21844 characters allowed", when trying to save with an exceeded number of characters entered (See issue [#27782](https://github.com/PrestaShop/PrestaShop/issues/27782)).
-Above the text field there is a text editor with the following options:
- - **Source code**
- - **Color picker**
- - **Bold**
- - **Italic**
- - **Underline**
- - **Strikethrough**
- - **Blockquote**
- - **Insert/edit link**
- - **Allign selections**
- - **Bullet list**
- - **Numbered list**
- - **Table**
- - **Insert/edit image**
- - **Insert/edit video**
- - **Paragraph**
+bove the text field there is a text editor with the following options:
+
+ - **Source code** - when pressed, the source code pop up shows up, and can be edited.
+
+ - **Color picker** - when pressed a color picker pop-up appears, in there i'ts possible to choose a color from the color palette. There's also input for "HEX", as well as FOR "R:", "G:" and "B:". Also there are 3 call to action buttons: 
+    - Cancel - when pressed, closes the pop-up.
+    - Back color - when pressed, uses the the selected color for the background.
+    - Text color - when pressed, uses the selected color for the text.
+
+ - **Bold** - when pressed, makes the text bold.
+
+ - **Italic** - when pressed, makes the text fromat italic.
+
+ - **Underline** - when pressed, underlines the text.
+
+ - **Strikethrough** - when the text gets crossed with a line.
+
+ - **Blockquote** - when pressed, moves the text aside as a quote.
+
+ - **Insert/edit link** - when pressed, a pop-up appears for entering the "URL", "text to display", below there are 3 drop-downs:
+    - Rel - when pressed, can select "None" or "nofollow"
+    - Target - when pressed, can select "None" or "New window"
+    - button style - when pressed, can select "None" or "button"
+Call to action buttons are: "Ok" and "cancel"
+
+ - **Allign selections** - Drop-down menu, from it can select:
+    - Allign left - alligns text to the left.
+    - Alligh right - alligns text to the right.
+    - Allign center - alligns text to the center.
+    - Justify - alligns the text evenly.
+
+ - **Bullet list** - Drop-down menu, possible selections:
+    - Default
+    - Circle
+    - Disc
+    - Square
+
+ - **Numbered list** - Drop-down menu, possible selections:
+    - Default
+    - Lower Alpha
+    - Lower Greek
+    - Lower Roman
+    - Lower Alpha
+    - Upper Roman
+    
+ - **Table** - Drop-down menu, possible selections:
+    - Insert table, when pressed, a 10x10 active table selection appears that can input a selected table to the description.
+    - Table properties
+    - Delete table
+    - Cell, when pressed 3 more options appear: Cell properties, Merge cells, Split cells
+    - Row - when pressed 8 more options appear: Insert row before, Insert row after, Delete row, Row properties, Cut row, Copy row, Paste row before, Paste row after
+    - Column - when pressed 3 more options appear: Insert column before, Insert column after, Delete column
+    
+ - **Insert/edit image** - when pressed, a pop-up appears for:
+    - Source
+    - Image description
+    - Dimensions (2 tables have a check mark on the right for "Constrain proportions" by default it is checked).
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+    
+ - **Insert/edit video** - when pressed 2 sections are available: General (default) and Embed
+    - When General is selected the following options appear: Source input, Alternative source input, Poster input, dimensions input (2 tables have a check mark on the right for "Constrain proportions" by default it is checked).
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+When Embed is pressed, the following text is shown: "Paste your embed code below:" and an input field below is displayed.
+    - 2 call to action buttons are displayed: "Ok" and "Cancel".
+     
+ - **Paragraph** - when pressed 8 selections are offered: Paragraph, Heading 1, Heading 2, Heading 3, Heading 4, Heading 5, Heading 6, Preformatted
 
 4) Logo
 
