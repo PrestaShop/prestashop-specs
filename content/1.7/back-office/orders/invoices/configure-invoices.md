@@ -34,3 +34,10 @@ This UI block provides ability to download the PDF invoices of the selected orde
 - **Clock icon and title By date** - title of the UI block
 - **From and tooltip _i_ icon** - once hovered, the tooltip is with the white-colored text in the dark box _You can also export orders which have not been charged yet._
 - **Checkboxes, square icons with red or green backgrounds, and numeric values in the squares, Order status names** - the square background color indicates if there are some invoices in total counted for the certain Order status - square with green background. Or there are no incvoices in total for the certain Order status - red square. The **total number of the invocies** are displayed in the squares.
+
+## Screw icon and Invoice options section
+
+- **Enable invoices and tooltip _i_ icon** - Enables or disables Invoices, once the tooltip is hovered, there is a text in the dark box _If enabled, your customers will receive an invoice for the purchase._
+- **Enable tax breakdown and tooltip _i_ icon** - Enables or disables showing the Tax details in the Invoice, once the tooltip is hovered, there is a text in the dark box _If required, show the total amount per rate of the corresponding tax._
+- **Enable product image and _i_ icon** - Enables or disables showing the product image in the Invoice, once the tooltip is hovered, there is a text in the dark box _Adds an image in front of the product name on the invoice_.
+- **Invoice prefix and tooltip _i_ icon** - input field where specific prefix, for Invoice can be set. The prefix will be displayed in the first characters of the Invocie file name and in the beginning of the Invoice number displayed. Once the tooltip is hovered, there is a text in the dark box _Freely definable prefix for invoice number (e.g. #IN00001)._ There is a dropdown with the arrow-down icon, where the prefix can be set for different languages.
