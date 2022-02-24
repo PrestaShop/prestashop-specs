@@ -16,3 +16,4 @@ This UI displays the Invoices configuration page and allows to generate the appr
 - **Breadcrumbs navigation** - identifies the page level.
 - **Invoices** - H1 class title for the page.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
+
