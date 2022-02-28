@@ -32,3 +32,19 @@ This block allows to set the desired date range and to download the Delivery Sli
 - **From and _i_ tooltip icon** - setting the date range using the date widget. When the icon is hovered, the tooltip text is _Format: 2011-12-31 (inclusive)_.
 - **To and _i_ tooltip icon** - setting the date range using the date widget. When the icon is hovered, the tooltip text is _Format: 2011-12-31 (inclusive)_.
 - **Generate PDF Call-to-action** - clicking the button initiates the PDF download process.
+
+## Delivery Slip PDF structure
+
+- **Logo** - top-right logo of the shop.
+- **DELIVERY, date and the Delivery Slip name** - delivery slip title, timestamp and factual delivery name, containing latin letters and numbers with hashtag (#) prefix.
+- **Shop name**
+- **Billing & Delivery Address and the address**
+- **Order Reference**
+- **Order Date**
+- **Carrier**
+- **Reference**
+- **Product **
+- **Qty** - meaning Quantity.
+- **Payment Method** - the name payment method.
+- **Price amount with the currency symbol**
+
