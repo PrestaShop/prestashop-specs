@@ -58,3 +58,7 @@ This block allows to set the desired date range and to download the Delivery Sli
 If the settings update is successful, there will be green notification with the checkmark icon and text _Update successful_.
 
 If the settings update is not successful, because the Delivery number is typed with latin letters or up to 19 characters, there will be an error with red exclamation mark and the text with _This value is not valid._
+
+## Multistores functionality
+
+All the configuration inputs and PDF downloads are separately maintained by separate Multistores, because these settings are saved in different databases. It means, that settings saved in one Multistore will not be reflected in the other ones.
