@@ -25,7 +25,7 @@ Once the Order is being entered to the Shipped status, the PDF of the Delivery S
 - **Delivery Slips** - H1 class title for the page.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
 
-## Printer icon and Print PDF block title
+## Printer icon and Print PDF block
 
 This block allows to set the desired date range and to download the Delivery Slips one after one in single PDF file.
 
@@ -48,3 +48,7 @@ This block allows to set the desired date range and to download the Delivery Sli
 - **Payment Method** - the name payment method.
 - **Price amount with the currency symbol**
 
+## Screw icon and Delivery slip options block
+
+- **Delivery prefix with _i_ tooltip icon** - input field, where cusom Delivery Slip charecter prefix can be modified or added. It can be managed with the different languages, using the dropdown with the language list installed in the system. Once hovered on tooltip icon, the text is prompted _Prefix used for delivery slips._
+- **Delivery number with _i_ tooltip icon** - input field, where cusom Delivery Slip number can be modified or added. The number entered will mark the beginning number of all Delivery Slip numbers further. Once hovered on tooltip icon, the text is prompted _The next delivery slip will begin with this number and then increase with each additional slip._
