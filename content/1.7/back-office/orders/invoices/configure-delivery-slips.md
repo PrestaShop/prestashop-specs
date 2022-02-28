@@ -51,5 +51,10 @@ This block allows to set the desired date range and to download the Delivery Sli
 ## Screw icon and Delivery slip options block
 
 - **Delivery prefix with _i_ tooltip icon** - input field, where cusom Delivery Slip charecter prefix can be modified or added. It can be managed with the different languages, using the dropdown with the language list installed in the system. Once hovered on tooltip icon, the text is prompted _Prefix used for delivery slips._
-- **Delivery number with _i_ tooltip icon** - input field, where cusom Delivery Slip number can be modified or added. The number entered will mark the beginning number of all Delivery Slip numbers further. Once hovered on tooltip icon, the text is prompted _The next delivery slip will begin with this number and then increase with each additional slip._
+- **Delivery number with _i_ tooltip icon** - input field, where cusom Delivery Slip number can be modified or added. The number entered will mark the beginning number of all Delivery Slip numbers further. Once hovered on tooltip icon, the text is prompted _The next delivery slip will begin with this number and then increase with each additional slip._ Max 19 characters allowed to input.
 - **Enable product image with _i_ tooltip icon** - Enable or Disable toggle button, that Enables or Disables displaying product image, in the PDF file. Once hovered on tooltip icon, the text is prompted _Add an image before product name on delivery slip_. By default, the toggle switch is Disabled.
+- **Save CTA** - executes the settings saving process.
+
+If the settings update is successful, there will be green notification with the checkmark icon and text _Update successful_.
+
+If the settings update is not successful, because the Delivery number is typed with latin letters or up to 19 characters, there will be an error with red exclamation mark and the text with _This value is not valid._
