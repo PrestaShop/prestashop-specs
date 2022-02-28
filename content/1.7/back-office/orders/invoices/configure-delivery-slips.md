@@ -25,4 +25,10 @@ Once the Order is being entered to the Shipped status, the PDF of the Delivery S
 - **Delivery Slips** - H1 class title for the page.
 - **Help ghost CTA** - a side-bar with the helpful information, how to navigate in this page.
 
-## Print PDF block
+## Printer icon and Print PDF block title
+
+This block allows to set the desired date range and to download the Delivery Slips one after one in single PDF file.
+
+- **From and _i_ tooltip icon** - setting the date range using the date widget. When the icon is hovered, the tooltip text is _Format: 2011-12-31 (inclusive)_.
+- **To and _i_ tooltip icon** - setting the date range using the date widget. When the icon is hovered, the tooltip text is _Format: 2011-12-31 (inclusive)_.
+- **Generate PDF Call-to-action** - clicking the button initiates the PDF download process.
