@@ -63,5 +63,5 @@ Input field for other information. Has a help text below: "Invalid characters: <
 
 ### Call to action
 
- - Cancel, when pressed redirects back to the [specs of the brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") 
- - Save, when pressed redirects back to the [specs of the brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") shows the following message: "Successful creation.".
+ - Cancel, when pressed redirects back to the [specs of the brands and suppliers brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") 
+ - Save, when pressed redirects back to the [specs of the brands and suppliers brands]({{<ref "brands-and-suppliers-brands.md">}} "brands") shows the following message: "Successful creation.".
