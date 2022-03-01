@@ -494,6 +494,17 @@ A warning notification should be displayed to let the users know about a possibl
     </item>
     
     <item>
+      <title>Language-Selector</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</guid>
+      <description>Spec Language-Selector Language selector - drop-down - Next to the text field, it is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the content of the field.
+By default, if the input text is mandatory, then only the default language is expected to be fulfilled.
+If the input is displayed in the Front-Office and only the default language is fulfilled, then Front-Office displays for the other languages the text from the default language.</description>
+    </item>
+    
+    <item>
       <title>Languages</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -571,6 +582,29 @@ The empty state card appears ONLY when there is no value (by default or created)
 2. Header In the header, there is &amp;ldquo;Add new order&amp;rdquo; button allowing to open the form to create a manual order.
 3. Top of the listing Settings wheel When clicking on it, 4 options are displayed:
  Export  After clicking on it, the list is exported in CSV format.</description>
+    </item>
+    
+    <item>
+      <title>Listing Page - 8.0</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</guid>
+      <description>SPECS LISTING PRODUCT PAGE V2 Empty state The empty state card appears WHEN there is no product
+Header  New product - Button - Opens the &amp;ldquo;Add new product modal&amp;rdquo;  If multistore is enabled then Shop-Selector-Modal (title: &amp;ldquo;Add new product&amp;rdquo;) is opened before the &amp;ldquo;Add new product modal&amp;rdquo;
+Top of the listing   Settings wheel component
+  Bulk actions - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled</description>
+    </item>
+    
+    <item>
+      <title>Localization</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LOCALIZATION As a merchant, I need to be able to manage my localizations to handle the importation packages, the language and the currency configuration of the Front-Office, the local units used by the shop.
+WHAT In this page, we aim at describing the current and expected behaviors when we add, edit, or delete localizations.
+WHY As a merchant, being able to manage localizations will help to have my own units, languages, and currencies for each country separately or adding and/or modifying my own states and zones for each country as well.</description>
     </item>
     
     <item>
@@ -728,6 +762,18 @@ Prices If a product has a discount, merchants can choose to display the discount
     </item>
     
     <item>
+      <title>Product Page - 8.0</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</guid>
+      <description>SPECS PRODUCT PAGE Add a new product  As a merchant, when I create a new product, I want to select the type of product before.
+When I press add new product button, a modal is displayed.
+The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack). A simple product is selected by default.
+Each product type has its shorts&#39; description. Selecting a product type displays its description.</description>
+    </item>
+    
+    <item>
       <title>Product Settings Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -746,6 +792,15 @@ It also impacts the customer account on the front office, turning off the &amp;l
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</guid>
       <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
 Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+    </item>
+    
+    <item>
+      <title>Progress Bar Modal</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/progress-bar-modal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/progress-bar-modal.html</guid>
+      <description>SPECS Progress Bar Modal  Title - Label Progress bar - Shows the completion progress into a bar with the percentage of completion warning-alert - it displays the last error message in a warning-alert View %x% errors - Button - Opens the Errors log. %x% is the number of errors  Errors log - Lists in the modal all the error messages in a warning-alert Back to processing - Button - Go back to the Progress bat Download errors log (.</description>
     </item>
     
     <item>
@@ -829,6 +884,27 @@ URLs set up Friendly URL. By default, this option is enabled.</description>
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</guid>
       <description>Specifications related to SEO in PrestaShop Introduction SEO is key when choosing an ecommerce solution. A CMS which is SEO optimized is a strategic added value for many merchants, and an important selection criterion. It’s also a key factor for brand image and differentiation with our competitors.
 In the meantime, some technical and functional choices can have a huge impact (positive or negative) on stores’ SEO. It is exactly what happened between 1.</description>
+    </item>
+    
+    <item>
+      <title>Settings Wheel</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/settings-wheel.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/settings-wheel.html</guid>
+      <description>SPECS Settings Wheel When clicking on it, 4 options are displayed:
+ Export  After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done
+Import  After clicking on it, the is a redirection to the import page in advanced parameters
+Show SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
+    
+    <item>
+      <title>Shop Selector Modal</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</guid>
+      <description>SPECS Shop Selector Modal  Title Choose a store - Search bar - Search a shop List of stores segmented by group:  Color of the store Store name    Once the store is selected, it continues the previous action with shop context</description>
     </item>
     
     <item>
@@ -1052,6 +1128,17 @@ Information message An information message is displayed: &amp;ldquo;It is prefer
       <description>Rules of the vouchers displayed in the customer&amp;rsquo;s account in front-office Vouchers are displayed in the customer account in the front-office, according to their parameters:
 On the table below are listed all the different cases.
    Cases Code Highlighted Group restriction User restriction Available in the FO vouchers page?     1 Yes or No Yes Yes or No Yes or No Yes   2 Yes or No Yes or No Yes or No Yes Yes   3 Yes No No No No   4 No No Yes No Yes   5 No No No No Yes   6 Yes No Yes No No    When there is no voucher for the customer, the page displays a notification: You do not have any vouchers.</description>
+    </item>
+    
+    <item>
+      <title>Zones</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCATION &amp;gt; ZONES As a merchant I need to be able to manage the zone, add, edit, and/or delete them.
+WHAT Thus, in this project we aim at the current and expected behaviours when we add, edit or delete zones.
+WHY As a merchant, being able to manage zones will help to have my own subregions and manage my countries and shipping behaviours based on them as well.</description>
     </item>
     
     <item>

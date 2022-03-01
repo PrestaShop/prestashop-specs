@@ -27,5 +27,16 @@ WHY We have understood there is a big complexity on the currency display choose 
 Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
     
+    <item>
+      <title>Localization</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</guid>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LOCALIZATION As a merchant, I need to be able to manage my localizations to handle the importation packages, the language and the currency configuration of the Front-Office, the local units used by the shop.
+WHAT In this page, we aim at describing the current and expected behaviors when we add, edit, or delete localizations.
+WHY As a merchant, being able to manage localizations will help to have my own units, languages, and currencies for each country separately or adding and/or modifying my own states and zones for each country as well.</description>
+    </item>
+    
   </channel>
 </rss>

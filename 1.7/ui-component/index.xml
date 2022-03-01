@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UI component on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component.html</link>
+    <description>Recent content in UI component on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/ui-component/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language-Selector</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</guid>
+      <description>Spec Language-Selector Language selector - drop-down - Next to the text field, it is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the content of the field.
+By default, if the input text is mandatory, then only the default language is expected to be fulfilled.
+If the input is displayed in the Front-Office and only the default language is fulfilled, then Front-Office displays for the other languages the text from the default language.</description>
+    </item>
+    
+    <item>
+      <title>Progress Bar Modal</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/progress-bar-modal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/progress-bar-modal.html</guid>
+      <description>SPECS Progress Bar Modal  Title - Label Progress bar - Shows the completion progress into a bar with the percentage of completion warning-alert - it displays the last error message in a warning-alert View %x% errors - Button - Opens the Errors log. %x% is the number of errors  Errors log - Lists in the modal all the error messages in a warning-alert Back to processing - Button - Go back to the Progress bat Download errors log (.</description>
+    </item>
+    
+    <item>
+      <title>Settings Wheel</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/settings-wheel.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/settings-wheel.html</guid>
+      <description>SPECS Settings Wheel When clicking on it, 4 options are displayed:
+ Export  After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done
+Import  After clicking on it, the is a redirection to the import page in advanced parameters
+Show SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
+    
+    <item>
+      <title>Shop Selector Modal</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</guid>
+      <description>SPECS Shop Selector Modal  Title Choose a store - Search bar - Search a shop List of stores segmented by group:  Color of the store Store name    Once the store is selected, it continues the previous action with shop context</description>
+    </item>
+    
+  </channel>
+</rss>

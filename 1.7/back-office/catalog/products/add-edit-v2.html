@@ -1,0 +1,9801 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="Specifications of the PrestaShop project">
+<meta name="twitter:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta name="twitter:site" content="@prestashop" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Product Page - 8.0" />
+<meta name="twitter:description" content="Specifications of the PrestaShop project">
+<meta property="og:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta property="og:site_name" content="PrestaShop" />
+<meta property="og:title" content="Product Page - 8.0" />
+<meta property="og:description" content="Specifications of the PrestaShop project">
+<meta name="author" content="PrestaShop">
+
+
+    <link rel="icon" href="../../../../images/preston-logo@2x.png" type="image/png">
+
+    <title>Product Page - 8.0 :: PrestaShop Specs</title>
+
+    
+
+    
+    <link href="../../../../css/font-awesome.min.css?1646126115" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1646126115" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1646126115" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1646126115" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1646126115" rel="stylesheet">
+    <link href="../../../../style.css?1646126115" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+
+    <script src="../../../../js/jquery-3.3.1.min.js?1646126115"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+
+  </head>
+  <body class="" data-url="../../../../1.7/back-office/catalog/products/add-edit-v2.html">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../../../">PrestaShop Specs</a>
+
+    </div>
+    
+  </div>
+
+  <div class="highlightable">
+
+    
+  
+
+
+    <ul class="topics">
+
+      
+      
+      
+          
+              
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office.html" title="Back Office" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office.html">
+          <span>
+            Back Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters.html" title="Advanced Parameters" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters.html">
+          <span>
+            Advanced Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/administration.html" title="Administration" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/administration.html">
+          <span>
+            Administration
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/administration/administration.html" title="Administration Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/administration/administration.html">
+        Administration Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/database.html" title="Database" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/database.html">
+          <span>
+            Database
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/dbbackup.html" title="DB Backup" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/database/dbbackup.html">
+        DB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/sql_manager.html" title="SQL Manager" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/database/sql_manager.html">
+        SQL Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/email.html" title="Email" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/email.html">
+          <span>
+            Email
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/import.html" title="Import" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/import.html">
+          <span>
+            Import
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/information.html" title="Information" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/information.html">
+          <span>
+            Information
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/information/information.html" title="Information Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/information/information.html">
+        Information Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html" title="Listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/security/customer-sessions-listing.html">
+        Listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/employee-sessions-listing.html" title="Listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/security/employee-sessions-listing.html">
+        Listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/logs.html" title="Logs" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/logs.html">
+          <span>
+            Logs
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/menu.html" title="Menu" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/menu.html">
+          <span>
+            Menu
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/menu/menu.html" title="Menu Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/menu/menu.html">
+        Menu Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/multistore.html" title="MultiStore" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/multistore.html">
+          <span>
+            MultiStore
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/multistore.html" title="MultiStore" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/multistore/multistore.html">
+        MultiStore
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/performance.html" title="Performance" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/performance.html">
+          <span>
+            Performance
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/team.html" title="Team" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/team.html">
+          <span>
+            Team
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/employees.html" title="Employees" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/team/employees.html">
+        Employees
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/profiles.html" title="Profiles Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/team/profiles.html">
+        Profiles Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/webservice.html" title="WebService" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/advanced-parameters/webservice.html">
+          <span>
+            WebService
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/webservice/webservice.html" title="Webservice" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/webservice/webservice.html">
+        Webservice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/security.html" title="" class="dd-item ">
+        <a href="../../../../1.7/back-office/advanced-parameters/security/security.html">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog.html" title="Catalog" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog.html">
+          <span>
+            Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features.html" title="Attributes &amp; Features" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/attributes-and-features.html">
+          <span>
+            Attributes &amp; Features
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes.html" title="Attributes" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/attributes-and-features/attributes.html">
+          <span>
+            Attributes
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html" title="Add / edit attribute" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html">
+        Add / edit attribute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html" title="Add / edit attribute value" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html">
+        Add / edit attribute value
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html" title="Attributes listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html">
+        Attributes listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html" title="View attribute" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html">
+        View attribute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features.html" title="Features" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/attributes-and-features/features.html">
+          <span>
+            Features
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html" title="Add / Edit Feature" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html">
+        Add / Edit Feature
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html" title="Add / Edit Feature Value" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html">
+        Add / Edit Feature Value
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/features-listing.html" title="Features listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/features/features-listing.html">
+        Features listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/view-feature.html" title="View Feature" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/attributes-and-features/features/view-feature.html">
+        View Feature
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers.html" title="Brands &amp; Suppliers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/brands-and-suppliers.html">
+          <span>
+            Brands &amp; Suppliers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/brands.html" title="Brands" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/brands.html">
+        Brands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/suppliers.html" title="Supliers Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html">
+        Supliers Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/categories.html" title="Categories" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/categories.html">
+          <span>
+            Categories
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/categories.html" title="Categories" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/categories/categories.html">
+        Categories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/add-edit.html" title="Category Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/categories/add-edit.html">
+        Category Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/discount.html" title="Discount" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/discount.html">
+          <span>
+            Discount
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html" title="Add/Edit Catalog Price Rules.md" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html">
+        Add/Edit Catalog Price Rules.md
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html" title="How does Cart Rule works ?" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/discount/how-does-cart-rule-works-.html">
+        How does Cart Rule works ?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/products.html" title="Products" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/catalog/products.html">
+          <span>
+            Products
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/listing.html" title="Listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/products/listing.html">
+        Listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/listing-v2.html" title="Listing Page - 8.0" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/products/listing-v2.html">
+        Listing Page - 8.0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/add-edit.html" title="Product Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/catalog/products/add-edit.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/add-edit-v2.html" title="Product Page - 8.0" class="dd-item active currentPage">
+        <a href="../../../../1.7/back-office/catalog/products/add-edit-v2.html">
+        Product Page - 8.0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customer-service/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/customer-service/dashboard.html" title="Dashboard" class="dd-item ">
+        <a href="../../../../1.7/back-office/customer-service/customer-service/dashboard.html">
+        Dashboard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/merchandise-returns.html" title="Merchandise Returns" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/customer-service/merchandise-returns.html">
+          <span>
+            Merchandise Returns
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/order-messages.html" title="Order Messages" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/customer-service/order-messages.html">
+          <span>
+            Order Messages
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/addresses.html" title="Addresses" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers/addresses.html">
+          <span>
+            Addresses
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/addresses/add-edit.html" title="Add / Edit Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/customers/addresses/add-edit.html">
+        Add / Edit Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/customers/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/list.html" title="List" class="dd-item ">
+        <a href="../../../../1.7/back-office/customers/customers/list.html">
+        List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design.html" title="Design" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design.html">
+          <span>
+            Design
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/email-theme.html" title="Email Theme" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/email-theme.html">
+          <span>
+            Email Theme
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/image-settings.html" title="Image Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/image-settings.html">
+          <span>
+            Image Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/generation-options.html" title="Generation Options" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/image-settings/generation-options.html">
+        Generation Options
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/regenerate-thumbnails.html" title="Regenerate Thumbnails" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html">
+        Regenerate Thumbnails
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/link-widget.html" title="Link Widget" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/link-widget.html">
+          <span>
+            Link Widget
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/pages.html" title="Pages" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/pages.html">
+          <span>
+            Pages
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/pages/pages.html" title="Pages" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/pages/pages.html">
+        Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/positions.html" title="Positions" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/positions.html">
+          <span>
+            Positions
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-and-logo.html" title="Themes &amp; Logo" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/design/themes-and-logo.html">
+          <span>
+            Themes &amp; Logo
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/theme-logo.html" title="Theme &amp; Logo" class="dd-item ">
+        <a href="../../../../1.7/back-office/design/themes-and-logo/theme-logo.html">
+        Theme &amp; Logo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-catalog.html" title="Themes Catalog" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/design/themes-catalog.html">
+          <span>
+            Themes Catalog
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/multistoregeneralspecs.html" title="General MultiStore Back Office" class="dd-item ">
+        <a href="../../../../1.7/back-office/multistoregeneralspecs.html">
+        General MultiStore Back Office
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international.html" title="International" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international.html">
+          <span>
+            International
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/localization.html" title="Localization" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/localization.html">
+          <span>
+            Localization
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/currencies.html" title="Currencies" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/localization/currencies.html">
+        Currencies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/languages.html" title="Languages" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/localization/languages.html">
+        Languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/localization.html" title="Localization" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/localization/localization.html">
+        Localization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations.html" title="Locations" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/locations.html">
+          <span>
+            Locations
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations/states.html" title="States" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/locations/states.html">
+          <span>
+            States
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/states/add-edit-state.html" title="Add edit state" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/locations/states/add-edit-state.html">
+        Add edit state
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/states/states-listing.html" title="States listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/locations/states/states-listing.html">
+        States listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/zones.html" title="Zones" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/locations/zones.html">
+        Zones
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/taxes.html" title="Taxes" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/taxes.html">
+          <span>
+            Taxes
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/taxes.html" title="Taxes Tab" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/taxes/taxes.html">
+        Taxes Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/translations.html" title="Translations" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/international/translations.html">
+          <span>
+            Translations
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/translations/translations.html" title="Translations" class="dd-item ">
+        <a href="../../../../1.7/back-office/international/translations/translations.html">
+        Translations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-catalog.html" title="Module Catalog" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules/module-catalog.html">
+          <span>
+            Module Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-catalog/module-catalog.html" title="Module Catalog Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-catalog/module-catalog.html">
+        Module Catalog Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-manager.html" title="Module Manager" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/modules/module-manager.html">
+          <span>
+            Module Manager
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/alerts.html" title="Alerts Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/alerts.html">
+        Alerts Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/modules.html" title="Modules Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/modules.html">
+        Modules Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/updates.html" title="Updates Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/modules/module-manager/updates.html">
+        Updates Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/credit-slips.html" title="Credit Slips" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/credit-slips.html">
+          <span>
+            Credit Slips
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/delivery-slips.html" title="Delivery Slips" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/delivery-slips.html">
+          <span>
+            Delivery Slips
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/invoices.html" title="Invoices" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/invoices.html">
+          <span>
+            Invoices
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/orders/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/add.html" title="Add new order" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/add.html">
+        Add new order
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/listing.html" title="Listing Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/listing.html">
+        Listing Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/view-page.html" title="View Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/orders/orders/view-page.html">
+        View Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/shopping-carts.html" title="Shopping Carts" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/orders/shopping-carts.html">
+          <span>
+            Shopping Carts
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment.html" title="Payment" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/payment.html">
+          <span>
+            Payment
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/payment-methods.html" title="Payment Methods" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/payment/payment-methods.html">
+          <span>
+            Payment Methods
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/payment/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/quick-access.html" title="Quick access" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/quick-access.html">
+          <span>
+            Quick access
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/quick-access/add-edit-quick-access.html" title="Add / edit quick access" class="dd-item ">
+        <a href="../../../../1.7/back-office/quick-access/add-edit-quick-access.html">
+        Add / edit quick access
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/quick-access/quick-access-listing.html" title="Quick access listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/quick-access/quick-access-listing.html">
+        Quick access listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping.html" title="Shipping" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shipping.html">
+          <span>
+            Shipping
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/carriers.html" title="Carriers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shipping/carriers.html">
+          <span>
+            Carriers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shipping/carriers/add-edit-carrier.html" title="Add/edit carrier" class="dd-item ">
+        <a href="../../../../1.7/back-office/shipping/carriers/add-edit-carrier.html">
+        Add/edit carrier
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shipping/carriers/carriers-listing.html" title="Carriers listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/shipping/carriers/carriers-listing.html">
+        Carriers listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/shipping/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters.html" title="Shop Parameters" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters.html">
+          <span>
+            Shop Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/contact.html" title="Contact" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/contact.html">
+          <span>
+            Contact
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/add-edit-contacts.html" title="Add / edit contact" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/contact/add-edit-contacts.html">
+        Add / edit contact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/contacts-listing.html" title="Contacts listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/contact/contacts-listing.html">
+        Contacts listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores.html" title="Stores" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/contact/stores.html">
+          <span>
+            Stores
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html" title="Add / Edit Store" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/contact/stores/add-edit-store.html">
+        Add / Edit Store
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores/stores-listing.html" title="Stores listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/contact/stores/stores-listing.html">
+        Stores listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings.html" title="Customer Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/customer-settings.html">
+          <span>
+            Customer Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/customers.html" title="Customers Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/customers.html">
+        Customers Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/groups.html" title="Groups Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/groups.html">
+        Groups Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/titles.html" title="Titles Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/customer-settings/titles.html">
+        Titles Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/general.html" title="General" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/general.html">
+          <span>
+            General
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/general/maintenance.html" title="Maintenance Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/general/maintenance.html">
+        Maintenance Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/merchant-expertise.html" title="Merchant Expertise" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/merchant-expertise.html">
+          <span>
+            Merchant Expertise
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/order-settings.html" title="Order Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/order-settings.html">
+          <span>
+            Order Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-statuses.html" title="Order Statuses" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html">
+        Order Statuses
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-settings.html" title="Settings" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/order-settings/order-settings.html">
+        Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/product-settings.html" title="Product Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/product-settings.html">
+          <span>
+            Product Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/product-settings/page.html" title="Product Settings Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/product-settings/page.html">
+        Product Settings Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/search.html" title="Search" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/search.html">
+          <span>
+            Search
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/add-edit-alias.html" title="Add/edit alias" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/add-edit-alias.html">
+        Add/edit alias
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/search-listing.html" title="Search listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/search-listing.html">
+        Search listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/search.html" title="Search Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/search.html">
+        Search Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/search/tags.html" title="Tags" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/search/tags.html">
+          <span>
+            Tags
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html" title="Add / Edit tag" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/tags/add-edit-tag.html">
+        Add / Edit tag
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/tags/tags-listing.html" title="Tags listing" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/search/tags/tags-listing.html">
+        Tags listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo.html" title="Traffic &amp; SEO" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo.html">
+          <span>
+            Traffic &amp; SEO
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" title="SEO &amp; URLs Page" class="dd-item ">
+        <a href="../../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html">
+        SEO &amp; URLs Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/broader-topics.html" title="Broader Topics" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/broader-topics.html">
+          <span>
+            Broader Topics
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/ecotax.html" title="EcoTax" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/ecotax.html">
+        EcoTax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/image-file-formats.html" title="Image File Formats" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/image-file-formats.html">
+        Image File Formats
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/multistorespecialsspecs.html" title="Multistore Specials Cases" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/multistorespecialsspecs.html">
+        Multistore Specials Cases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/price-calculation-rules.html" title="Price Calculation" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/price-calculation-rules.html">
+        Price Calculation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/seo-rules-and-behaviours.html" title="SEO Rules &amp; Behaviours" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/seo-rules-and-behaviours.html">
+        SEO Rules &amp; Behaviours
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/symfony-migration.html" title="Symfony Migration" class="dd-item ">
+        <a href="../../../../1.7/broader-topics/symfony-migration.html">
+        Symfony Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office.html" title="Front Office" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/front-office.html">
+          <span>
+            Front Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/checkout.html" title="Checkout" class="dd-item ">
+        <a href="../../../../1.7/front-office/checkout.html">
+        Checkout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/customer-account.html" title="Customer Account" class="dd-item ">
+        <a href="../../../../1.7/front-office/customer-account.html">
+        Customer Account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office/discounts.html" title="Discounts" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/front-office/discounts.html">
+          <span>
+            Discounts
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/discounts/cart-rules-free-gift.html" title="Free Gift" class="dd-item ">
+        <a href="../../../../1.7/front-office/discounts/cart-rules-free-gift.html">
+        Free Gift
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/maintenance.html" title="Maintenance Mode" class="dd-item ">
+        <a href="../../../../1.7/front-office/maintenance.html">
+        Maintenance Mode
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-images.html" title="Product Images" class="dd-item ">
+        <a href="../../../../1.7/front-office/product-images.html">
+        Product Images
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/products-list.html" title="Product List" class="dd-item ">
+        <a href="../../../../1.7/front-office/products-list.html">
+        Product List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-page.html" title="Product Page" class="dd-item ">
+        <a href="../../../../1.7/front-office/product-page.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/search.html" title="Search" class="dd-item ">
+        <a href="../../../../1.7/front-office/search.html">
+        Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/your-vouchers.html" title="Your vouchers" class="dd-item ">
+        <a href="../../../../1.7/front-office/your-vouchers.html">
+        Your vouchers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/installer.html" title="Installer" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/installer.html">
+          <span>
+            Installer
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/installer/installer.html" title="Installer" class="dd-item ">
+        <a href="../../../../1.7/installer/installer.html">
+        Installer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/dateofdelivery.html" title="Date Of Delivery" class="dd-item ">
+        <a href="../../../../1.7/modules/dateofdelivery.html">
+        Date Of Delivery
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_facetedsearch.html" title="Faceted Search" class="dd-item ">
+        <a href="../../../../1.7/modules/ps_facetedsearch.html">
+        Faceted Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_linklist.html" title="Linklist" class="dd-item ">
+        <a href="../../../../1.7/modules/ps_linklist.html">
+        Linklist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/psthemecusto.html" title="Theme Customization" class="dd-item ">
+        <a href="../../../../1.7/modules/psthemecusto.html">
+        Theme Customization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/wishlist.html" title="Wishlist" class="dd-item ">
+        <a href="../../../../1.7/modules/wishlist.html">
+        Wishlist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/autoupgrade.html" title="" class="dd-item ">
+        <a href="../../../../1.7/modules/autoupgrade.html">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/spec-templates.html" title="Templates" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/spec-templates.html">
+          <span>
+            Templates
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/functionnal-and-behaviors-specs-template.html" title="Functional and behaviors specs" class="dd-item ">
+        <a href="../../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html">
+        Functional and behaviors specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/technical-characteristics-template.html" title="Technical characteristics specs" class="dd-item ">
+        <a href="../../../../1.7/spec-templates/technical-characteristics-template.html">
+        Technical characteristics specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/ui-component.html" title="UI component" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../../1.7/ui-component.html">
+          <span>
+            UI component
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/language-selector.html" title="Language-Selector" class="dd-item ">
+        <a href="../../../../1.7/ui-component/language-selector.html">
+        Language-Selector
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/progress-bar-modal.html" title="Progress Bar Modal" class="dd-item ">
+        <a href="../../../../1.7/ui-component/progress-bar-modal.html">
+        Progress Bar Modal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/settings-wheel.html" title="Settings Wheel" class="dd-item ">
+        <a href="../../../../1.7/ui-component/settings-wheel.html">
+        Settings Wheel
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/shop-selector-modal.html" title="Shop Selector Modal" class="dd-item ">
+        <a href="../../../../1.7/ui-component/shop-selector-modal.html">
+        Shop Selector Modal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+              
+          
+      
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p><a href="https://github.com/PrestaShop/PrestaShop/"><i class="fa fa-github" aria-hidden="true"></i> PrestaShop on GitHub</a></p>
+<p><a href="https://github.com/PrestaShop/PrestaShop/issues"><i class="fa fa-bug" aria-hidden="true"></i> Report a bug</a></p>
+<p><a href="https://www.prestashop-project.org/slack/readme/"><i class="fa fa-comment" aria-hidden="true"></i> Join us on Slack</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+
+      <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+<div>
+  <div id="top-bar">
+    
+      
+      <div id="top-github-link">
+        <a class="github-link" title='Improve this page' href="https://github.com/PrestaShop/prestashop-specs/edit/master/content/1.7/back-office/catalog/products/add-edit-v2.md" target="blank">
+          <i class="fa fa-pencil"></i>
+          <span id="top-github-link-text">Improve this page</span>
+        </a>
+        <a class="how-to-improve" href="https://devdocs.prestashop.com/1.7/contribute/documentation/how/">
+          <i class="fa fa-question-circle"></i>
+          <span>How</span>
+        </a>
+      </div>
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://schema.org/breadcrumb">
+      <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="links">
+        
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              <a href='../../../../'>Home</a> > <a href='../../../../1.7.html'>Specifications</a> > <a href='../../../../1.7/back-office.html'>Back Office</a> > <a href='../../../../1.7/back-office/catalog.html'>Catalog</a> > <a href='../../../../1.7/back-office/catalog/products.html'>Products</a> > Product Page - 8.0
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+
+        
+        
+          
+            <div id="toc">
+  <div class="wrapper">
+    <div id="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#specs-product-page">SPECS PRODUCT PAGE</a>
+      <ul>
+        <li><a href="#add-a-new-product-a-nameaddproducta">Add a new product <a name="addproduct"></a></a></li>
+        <li><a href="#addedit-product-page-a-nameadd-edit-producta">Add/Edit product page <a name="add-edit-product"></a></a>
+          <ul>
+            <li><a href="#product-header-a-nameproduct-headera">Product header <a name="product-header"></a></a></li>
+            <li><a href="#change-of-product-type">Change of product type</a></li>
+            <li><a href="#references"><strong>References</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#description-tab">Description tab</a>
+          <ul>
+            <li><a href="#image-manager">Image Manager</a></li>
+            <li><a href="#description--description">Description &amp; Description</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#brand">Brand</a></li>
+            <li><a href="#related-product">Related product:</a></li>
+          </ul>
+        </li>
+        <li><a href="#details-tab">Details tab</a>
+          <ul>
+            <li><a href="#references-1">References</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#attached-files">Attached files</a></li>
+            <li><a href="#display-condition-on-product-page">Display condition on product page</a></li>
+            <li><a href="#allow-customers-to-add-a-text-or-an-image">Allow customers to add a text or an image</a></li>
+          </ul>
+        </li>
+        <li><a href="#stock-tab">Stock tab</a>
+          <ul>
+            <li><a href="#stocks">Stocks</a></li>
+            <li><a href="#availability-preferences">Availability preferences,</a></li>
+          </ul>
+        </li>
+        <li><a href="#virtual-tab">Virtual tab</a>
+          <ul>
+            <li><a href="#associated-files-">Associated files ?</a></li>
+            <li><a href="#stocks-1">Stocks</a></li>
+          </ul>
+        </li>
+        <li><a href="#pack-tab">Pack tab</a>
+          <ul>
+            <li><a href="#stock">Stock</a></li>
+            <li><a href="#list-of-products-for-this-pack">List of products for this pack</a></li>
+            <li><a href="#add-products-to-your-pack">Add products to your pack</a></li>
+          </ul>
+        </li>
+        <li><a href="#combination--tab">Combination  tab</a>
+          <ul>
+            <li><a href="#combination-generation">Combination generation</a></li>
+            <li><a href="#combination-listing">Combination listing</a></li>
+            <li><a href="#edit-combinations">Edit combinations</a></li>
+            <li><a href="#availability-preferences-1">Availability preferences</a></li>
+          </ul>
+        </li>
+        <li><a href="#shipping-tab">Shipping tab</a>
+          <ul>
+            <li><a href="#package-dimension">Package dimension</a></li>
+            <li><a href="#delivery-time">Delivery time</a></li>
+          </ul>
+        </li>
+        <li><a href="#pricing-tab">Pricing tab</a>
+          <ul>
+            <li><a href="#retail-price">Retail price</a></li>
+            <li><a href="#cost-price">Cost price</a></li>
+            <li><a href="#display-retail-price-per-unit">Display retail price per unit</a></li>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#specific-prices">Specific prices</a></li>
+            <li><a href="#priorities">Priorities</a></li>
+          </ul>
+        </li>
+        <li><a href="#seo-tab">SEO tab</a></li>
+        <li><a href="#options-tab">Options tab</a>
+          <ul>
+            <li><a href="#product-display">Product display</a></li>
+            <li><a href="#availability">Availability</a></li>
+            <li><a href="#supplier">Supplier</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer">Footer</a></li>
+        <li><a href="#multistore">Multistore</a>
+          <ul>
+            <li><a href="#multistore-header">Multistore Header</a></li>
+            <li><a href="#multistore-behavior">Multistore behavior</a></li>
+            <li><a href="#changement-of-multistore-context">Changement of multistore context</a></li>
+            <li><a href="#shared-stocks">Shared stocks</a></li>
+          </ul>
+        </li>
+        <li><a href="#stock-management-is-disabled">Stock management is Disabled</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <div id="navigation">
+  
+  
+
+  
+
+  
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+
+  
+  
+  <a class="nav nav-next" href="../../../../1.7/back-office/customer-service.html" title="Customer Service" style="margin-right: 0px;">
+    <i class="fa fa-chevron-right"></i>
+    Next article
+  </a>
+  
+</div>
+
+  </div>
+</div>
+
+          
+        
+
+        <div id="body-inner">
+
+          
+
+
+
+
+
+
+<h1 id="specs-product-page">SPECS PRODUCT PAGE</h1>
+<h2 id="add-a-new-product-a-nameaddproducta">Add a new product <a name="addproduct"></a></h2>
+<p>As a merchant, when I create a new product, I want to select the type of product before.</p>
+<p>When I press add new product button, a modal is displayed.</p>
+<p>The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack).
+A simple product is selected by default.</p>
+<p>Each product type has its shorts' description. Selecting a product type displays its description.</p>
+<table>
+<thead>
+<tr>
+<th>Product type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard product</td>
+<td>A physical product that needs to be shipped.</td>
+</tr>
+<tr>
+<td>Product with combination</td>
+<td>A product with different variations (size, color, etc.) from which customers can choose.</td>
+</tr>
+<tr>
+<td>Pack of products</td>
+<td>A collection of products from your catalog.</td>
+</tr>
+<tr>
+<td>Virtual product</td>
+<td>An intangible product that doesn&rsquo;t require shipping. You can also add a downloadable file.</td>
+</tr>
+</tbody>
+</table>
+<p>Modules can hook into the modal to add a new product type, with its description and icon/image.
+The module is allowed to add any image or icon at the same size as the icon of the product type of PrestaShop.</p>
+<h2 id="addedit-product-page-a-nameadd-edit-producta">Add/Edit product page <a name="add-edit-product"></a></h2>
+<p>After selecting the product type, the product page is opened</p>
+<h3 id="product-header-a-nameproduct-headera">Product header <a name="product-header"></a></h3>
+<p>The product header displays the product:</p>
+<ul>
+<li>Name - Text Input - Language-Selector</li>
+<li>Cover image - Image</li>
+<li>Price Tax Excluded</li>
+<li>Price Tax Included</li>
+<li>Tax - Label - see component in the Pricing Tab</li>
+<li>Quantity - Lable
+For product with combination, it displays the total of quantity from all the combination</li>
+<li>Product type and product type’s icon - Button</li>
+<li>References - List of labels</li>
+</ul>
+<p>And 3 buttons:</p>
+<ul>
+<li>
+<p>Open another product, the button displays a list of product</p>
+</li>
+<li>
+<p>View statistics redirected to the stats page</p>
+</li>
+<li>
+<p>Help button</p>
+</li>
+<li>
+<p><strong>Quantity</strong>
+The quantity background colors change depending on the quantity.
+If the quantity is strictly superior to the low stock level
+Then the color background is green</p>
+</li>
+</ul>
+<p>If the quantity is inferior or equal to the low stock level
+Then the color background is orange</p>
+<p>If the quantity is inferior or equal to 0
+Then the color background is red</p>
+<h3 id="change-of-product-type">Change of product type</h3>
+<p>When clicking on the product type, a modal is displayed to change the product type. The current type and the button “Change product type” are disabled. By default, none of the product types are preselected.</p>
+<p>Once the user selects a product different from the current product type, then the button “Change product type” becomes enabled.
+Pressing the button opens closes the current modal to open the confirmation modal.</p>
+<ul>
+<li>Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
+<ul>
+<li>
+<p><strong>Change product type</strong> - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.</p>
+</li>
+<li>
+<p><strong>Cancel</strong> - Close the modal<br>
+If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type.</p>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Changing the Product type form</th>
+<th>Impact</th>
+<th>warning-alert in the Confirmation modal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard product</td>
+<td>No impact, the data is common between the standard product and the others products.</td>
+<td></td>
+</tr>
+<tr>
+<td>Product with combination</td>
+<td>Deletes the combination and reset the stock to 0.</td>
+<td>This will delete all combinations. <br>This will reset the stock of this product.</td>
+</tr>
+<tr>
+<td>Pack of products</td>
+<td>Deletes the products associated with the packs.</td>
+<td>This will delete the list of products in this pack.</td>
+</tr>
+<tr>
+<td>Virtual product</td>
+<td>Deletes the file associated with the virtual product.</td>
+<td>This will delete the associated virtual file.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="references"><strong>References</strong></h3>
+<p>List all the references fulfilled next to its label.  When there is no more space in the header after the reference, the other references start a new line below the first one.</p>
+<h2 id="description-tab">Description tab</h2>
+<p><strong>As a merchant I want to be able to complete the basic information of my products.</strong></p>
+<h3 id="image-manager">Image Manager</h3>
+<ul>
+<li>
+<p><strong>Image upload</strong>: Upload zone. When there is no image, you have the following message displayed “Drop images here or select files. Recommended size 800 x 800px for default theme. JPG, GIF or PNG format.”<br>
+You can click in the entire zone to open the selector or you can drop one or many images in the entire zone.<br>
+When there is already an image, you can click only on the frame with the “+” to open the selector.</p>
+</li>
+<li>
+<p><strong>Image order</strong>: You can move the images in the product sheet, the order is well changed in the front office.<br>
+The drag icon isn’t displayed when many images are selected and you can’t move many images</p>
+</li>
+<li>
+<p><strong>Image caption</strong> - Text input - Language-Selector - The user can click on an uploaded image and add a caption.<br>
+The caption is displayed in the front office when the customer hovers the thumbnail image according to the selected language.</p>
+</li>
+<li>
+<p><strong>Cover image</strong>: You can click on an uploaded image to assign it as a cover image. There is necessarily a cover image. There can be only one cover image.<br>
+If you upload many images, the first image selected is the cover image.<br>
+The cover image is displayed in the product list in the front office.<br>
+You can change the cover image by clicking on an image, checking the checkbox “cover image” and clicking on Save. If it was checked for another image, then it’s unchecked.</p>
+</li>
+<li>
+<p><strong>Zoom</strong>: You can zoom on an uploaded image by clicking on it and clicking on “Zoom”.<br>
+The image is open in its default size. You can close it by clicking on the cross, outside the image, or pressing ESC key. Merchants should be able to navigate between several images in zoom view to have an easy last check before saving the page.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: You can click on an uploaded image to delete it. When you click on “delete”, you have a modal for canceling or confirming the action.</p>
+</li>
+<li>
+<p><strong>Bulk actions</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/12773">issue #12773</a>) You can select many images with the checkboxes. After selecting more than one image, the frame on the right is opened with:</p>
+<ul>
+<li>
+<p>The number of images selected</p>
+</li>
+<li>
+<p>An “Unselect all” link to unselect images and close the frame</p>
+</li>
+<li>
+<p>The “zoom” button to open the first image of the list zoomed</p>
+</li>
+<li>
+<p>A “delete all” button to delete all the product images. When you click on “delete all”, you have a modal for canceling or confirming the action.</p>
+</li>
+<li>
+<p>The cross to close the frame and unselect images</p>
+</li>
+<li>
+<p>Caption field: You can enter a caption that will be applied to all images. If some selected images already had captions, they are replaced when clicking on Save.</p>
+<p>If more than one image is selected the checkbox “cover” disappears</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="description--description">Description &amp; Description</h3>
+<ul>
+<li>
+<p><strong>Summary</strong> - Text input - Language-Selector - The text can be formatted thanks to the TinyMCE editor</p>
+</li>
+<li>
+<p><strong>Description</strong> - Text input - Language-Selector - The text can be formatted thanks to the TinyMCE editor</p>
+</li>
+</ul>
+<h3 id="categories">Categories</h3>
+<ul>
+<li><strong>Associated categories</strong>:
+The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents are different.</li>
+</ul>
+<p>EX:
+Product: Comics
+Categories 1: US comics &gt; Best-sellers &gt; Thor &gt; Marvel
+Categories 2 : Home &gt; Classical &gt; Thor &gt; Marvel
+If the product is associated with categories 1 and 2
+then the tags will display:
+Tag1: Best-sellers &gt; Thor &gt; Marvel
+Tag2: Classical &gt; Thor &gt; Marvel</p>
+<p>Deleting a tag, removes the tag of the list and deletes the association between the category and the product at the save.</p>
+<ul>
+<li><strong>Add categories:</strong>
+Below the tags’ lists is displayed the “Add categories” button. The button opens a modal with the search component and the category tree.</li>
+</ul>
+<p>The user can search by category and the parent’s categories. The search result list displays the breadcrumb of the category.<br>
+The list of categories associated is also displayed below the search component.</p>
+<p>If the product is not associated with any category except the ‘Home’ branch, then ‘Home’’s child categories are displayed, just the first level of the tree is displayed/opened.</p>
+<p>If the product is already associated with categories, then the categories branches are opened until the categories associated are displayed.</p>
+<ul>
+<li><strong>Main category</strong> - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category.</li>
+</ul>
+<p>The main category defines the product URL and the breadcrumb of the front office.</p>
+<p>Below the drop-list is display the breadcrumb of the product. Updating the main category updates the breadcrumb displayed below the list and the breadcrumb of the front office.</p>
+<h3 id="brand">Brand</h3>
+<ul>
+<li><strong>Brand</strong> - Drop-down list - By default, the selected option is “No brand”, meaning there is no brand associated with the product.</li>
+</ul>
+<p>All the brands enabled are displayed in the drop-down. If there are several brands with the same name, then the ID of the brand is displayed before its name. The brand is displayed on the product page in the front office in the product details tab. The logo of the brand is displayed if the brand has a logo, otherwise, the name of the brand is displayed. When you add a brand, it’s added in all languages enabled.</p>
+<h3 id="related-product">Related product:</h3>
+<ul>
+<li>
+<p><strong>Search product</strong>:
+The user can search by product name or product reference. You can click on it to associate with the product. An associated product can only once be associated with the same product. You can&rsquo;t associate a product with itself.</p>
+<p>There is no limit to the number of associated products.</p>
+</li>
+<li>
+<p><strong>Delete a related product</strong>:</p>
+<p>If you want to delete only one associated product, you can click on the delete icon.
+Add and delete actions are only saved when the users save the form.
+Once the product is added, It displays the product name with its reference and the product cover.</p>
+</li>
+</ul>
+<h2 id="details-tab">Details tab</h2>
+<p><strong>As a merchant I want to be able to complete the basic information of my products.</strong></p>
+<h3 id="references-1">References</h3>
+<ul>
+<li>
+<p><strong>ISBN</strong> - Text input - only numbers are accepted and X at the end. The International Standard Book Number (ISBN) is used to identify books and other publications.</p>
+</li>
+<li>
+<p><strong>EAN-13 or JAN barcode</strong> - Text input - only numbers are accepted. This type of product code is specific to Europe and Japan but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is added at the end of the product URL in the front office.</p>
+</li>
+<li>
+<p><strong>UPC barcode</strong> - Text input - Field, only numbers are accepted. This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand, and other countries.</p>
+</li>
+<li>
+<p><strong>MPN</strong> - Text input - numbers and characters are accepted. The Manufacturer Part Number is used to identify a specific product of a given manufacturer.</p>
+</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li>
+<p><strong>Add a feature</strong>: By default, the selected option is “Choose a feature”. All the features are displayed in the drop-down and are sorted by position ASC. If there are several features with the same name, then the ID of the feature is displayed before its name If you have not yet selected a feature, the “pre-defined value” drop-down is disabled and the “customized value” fields should be also disabled (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)<br>
+When you select a feature, both fields (pre-defined &amp; customized value) are enabled.<br>
+The features and the associated values are displayed in the product details tab of the front office.</p>
+</li>
+<li>
+<p><strong>Feature pre-defined value</strong>: All the values of the selected feature are displayed in the drop-down and are sorted by name ASC.<br>
+If there are several features' values with the same name, then the ID of the feature’s value is displayed before its name If you select a pre-defined value, the customized value should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)<br>
+When you add a feature with a pre-defined value, it’s added in all languages enabled.</p>
+</li>
+<li>
+<p><strong>Feature customized value</strong> - Text input - Language Selector - If you start to enter a customized value, the pre-defined value drop-down should be disabled because a feature can’t have both (<a href="https://github.com/PrestaShop/PrestaShop/issues/16306">issue 16306</a>)<br>
+When you add a feature with a customized value, the feature is added in all languages enabled but the customized value field stays empty in the other languages than the selected one.</p>
+</li>
+<li>
+<p><strong>Delete feature</strong>: Button to delete the feature. When you click on it, you have a modal for canceling or confirming the action. When you delete a feature, it’s deleted in all languages.</p>
+</li>
+</ul>
+<h3 id="attached-files">Attached files</h3>
+<ul>
+<li><strong>Search</strong> - Search Bar - The user search for existing files
+When selected, the file is added to the file list.
+The list displays the title, file name, type, and the delete button to
+remove the file from the list.</li>
+<li><strong>Add a new file</strong>: Button allowing to add files to the product page. When clicked, it opens a modal.
+<strong>Modal:</strong>
+<ul>
+<li><strong>Filename</strong>: Field with the title of the document, displayed in front-office</li>
+<li><strong>Description</strong>: Field with the description of the document, displayed in front-office</li>
+<li><strong>Files</strong> - Browse component - The user can browse and choose files from their file manager</li>
+<li><strong>Save and Publish</strong>: Button to add the files and save the file</li>
+<li><strong>Cancel</strong>: Button to close the modal</li>
+</ul>
+</li>
+</ul>
+<h3 id="display-condition-on-product-page">Display condition on product page</h3>
+<ul>
+<li>
+<p><strong>Display condition on product page</strong> - Switch button - When enabled, it enables Condition dropdown, otherwise it is disabled</p>
+</li>
+<li>
+<p><strong>Condition</strong>: Drop-down with 3 options: New, Used, Refurbished. By default, New is selected.</p>
+</li>
+</ul>
+<h3 id="allow-customers-to-add-a-text-or-an-image">Allow customers to add a text or an image</h3>
+<p>Help text: You can use this file to personalize the customer&rsquo;s product.</p>
+<ul>
+<li>
+<p><strong>Field name</strong> - Input text - Language Selector -  Enter the name of the field which is displayed on the product page in the front office.</p>
+</li>
+<li>
+<p><strong>Type</strong>: Drop-down with 3 options: text, file &amp; numeric. By default text is selected. If you choose “text” in the front office you can complete the field with alphanumeric chars. If you choose “file”, you can upload a file. If you choose “numeric” you can enter only numbers (<a href="https://github.com/PrestaShop/PrestaShop/issues/11795">improvement 11795</a>)</p>
+</li>
+<li>
+<p><strong>Required</strong> - Checkbox not checked by default. When checked the field is required in the front office and you can’t add the product to the cart while it’s not completed.</p>
+</li>
+<li>
+<p><strong>Add customization field</strong> - Button -
+When the button is pressed then add the item to a list</p>
+</li>
+<li>
+<p><strong>Delete</strong> - Button - to remove the customization field</p>
+</li>
+</ul>
+<h2 id="stock-tab">Stock tab</h2>
+<p>The tab is displayed only if the product is a standard product</p>
+<p><strong>As a merchant I want to be able to manage my products quantities.</strong></p>
+<h3 id="stocks">Stocks</h3>
+<ul>
+<li>
+<p><strong>Edit quantity</strong> - Number input - Decreases or Increases the physical stock by the specified quantity</p>
+</li>
+<li>
+<p><strong>Recent Stock Movements</strong> - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock movement, it is displayed a Grouped stock movements linked to the order</p>
+<ul>
+<li><strong>Grouped stock movements linked to the order:</strong> accumulation of all the stock movements related to an Order such as Customer Order and Product return.</li>
+</ul>
+</li>
+<li>
+<p><strong>Minimum quantity for sale</strong>: In the front-office (product page &amp; quick-view), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in the front office “The minimum purchase order quantity for the product is X.”</p>
+</li>
+</ul>
+<p>This field is not displayed if stock management is disabled in Shop parameters &gt; Products settings.</p>
+<h3 id="availability-preferences">Availability preferences,</h3>
+<p><strong>Behavior when out of stock</strong>
+3 radios buttons:</p>
+<ol>
+<li><strong>Deny orders</strong>: when it’s checked and product quantity is &lt;= 0, in the front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.</li>
+<li><strong>Allow orders</strong>: when it’s checked and product quantity is &lt;= 0, in the front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.</li>
+<li><strong>Use default behavior (Deny orders or Allow orders)</strong>: the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.</li>
+</ol>
+<ul>
+<li>
+<p><strong>Label when in stock</strong> - Text input - Language-Selector - If completed and product quantity is &gt; 0, it is displayed on the front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.</p>
+</li>
+<li>
+<p><strong>Label when out of stock (and backorder allowed)</strong> - Input Text - if completed and product quantity is &lt;= 0, it is displayed in the front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.</p>
+</li>
+<li>
+<p><strong>Availability date</strong>: Date field. The date should be displayed in the front office in the product details part (as long as it is not passed), no matter the availability of the product.</p>
+</li>
+</ul>
+<h2 id="virtual-tab">Virtual tab</h2>
+<p>The tab is displayed only if the product is a virtual product.</p>
+<p><strong>As a merchant I want to be able to manage my virtual products.</strong></p>
+<h3 id="associated-files-">Associated files ?</h3>
+<ul>
+<li><strong>Associated files ?</strong> -Switch button - Yes / No<br>
+If you check Yes, new fields are ungreyed:
+<ul>
+<li><strong>Browse file</strong>: You can search and upload a file. This field disappears after uploading a file and clicking on save. It’s replaced by “Download file” and “Delete this file” actions, so you can upload only one associated file.</li>
+<li><strong>Filename</strong>: This field is automatically completed with the name of the file uploaded, but you can edit it.</li>
+<li><strong>Number of allowed downloads</strong>: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “You have reached the maximum number of downloads allowed.” The number of downloads allowed is displayed in the mail download_product sent to the customer.</li>
+<li><strong>Expiration date</strong>: Date field. After this date, the customer can’t download the file anymore. If you try to download it, a message is displayed “Expiration date has passed, you cannot download this product.”. The expiration date is displayed in the mail download_product sent to the customer.</li>
+<li><strong>Number of days</strong>: Once this number reaches, the customer can’t download the file anymore. If you try to download it, a message is displayed “The product deadline is in the past.”</li>
+<li><strong>Delete file</strong>: Once the file is uploaded and clicking on Save, you can delete the file. When you click on “delete this file”, a modal is displayed to cancel or confirm the action. If you confirm the deletion, the file is deleted, and “delete file” and “download file” actions are replaced by the browse file field.</li>
+<li><strong>Download file</strong>: Once the file is uploaded and clicked on Save, you can download your file.</li>
+<li><strong>Unlimited</strong> - Checkbox - A checkbox next to the input Maximum number of downloads, Download link validity, and Expiration date. WHEN checked THE the input is disabled and the value of the fields becomes infinite.</li>
+</ul>
+</li>
+</ul>
+<h3 id="stocks-1">Stocks</h3>
+<p>The stock section is hiden if Enable stock management is disabled.</p>
+<ul>
+<li>
+<p><strong>Edit quantity</strong> - See the component on the stock page</p>
+</li>
+<li>
+<p><strong>Recent stock movements</strong> - See the component on the stock page</p>
+</li>
+<li>
+<p><strong>Quantity</strong> - see the component on the stock page</p>
+</li>
+<li>
+<p><strong>Minimum quantity for sale</strong>  - see the component on the stock page</p>
+</li>
+<li>
+<p><strong>Low stock level</strong>  - see the component on the stock page</p>
+</li>
+<li>
+<p><strong>Send me an email when the quantity is below or equals this level</strong>  - see the component on the stock page</p>
+</li>
+<li>
+<p><strong>Availability preferences</strong> -  see the Availability preferences component of the Stock page</p>
+</li>
+<li>
+<p><strong>Stock location</strong>   -  see the Stock location component of the Stock page</p>
+</li>
+<li>
+<p><strong>Low stock level</strong>   -  see the Low stock level component of the Stock page</p>
+</li>
+</ul>
+<h2 id="pack-tab">Pack tab</h2>
+<p>The tab is displayed only if the product is a pack of products.</p>
+<p><strong>As a merchant I want to be able to manage my pack of products.</strong></p>
+<h3 id="stock">Stock</h3>
+<p>The stock section is hiden if Enable stock management is disabled.</p>
+<ul>
+<li><strong>Edit quantity</strong> - See the component on the stock page</li>
+<li><strong>Recent stock movements</strong> - See the component on the stock page</li>
+</ul>
+<h3 id="list-of-products-for-this-pack">List of products for this pack</h3>
+<ul>
+<li><strong>List of products for this pack</strong> - List of products
+<ul>
+<li>Product :
+<ul>
+<li>Product Image</li>
+<li>Product Name</li>
+<li>REF - Label - Displays the product reference (ex: &ldquo;REF: demo_2)</li>
+<li>Delete - Button - Deletes the product from the list</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="add-products-to-your-pack">Add products to your pack</h3>
+<ul>
+<li>
+<p><strong>Search for a product</strong> - Search Bar - Lists all the products matching the product name or product reference.</p>
+<p>WHEN the user selects a product from the list
+THEN The product name is inserted in the search bar</p>
+</li>
+<li>
+<p><strong>x</strong> - Number Input</p>
+</li>
+<li>
+<p><strong>Add</strong> - Button - Pressed, it adds the product from the Search Bar with a specified quantity to the pack</p>
+</li>
+</ul>
+<p>WHEN the user adds a product already in the pack
+THEN it only increases the quantity of the product from the number of input</p>
+<ul>
+<li><strong>Pack quantities</strong> - Dropdown with 4 options:
+<ul>
+<li><strong>Decrement pack only</strong></li>
+<li><strong>Decrement products in pack only</strong></li>
+<li><strong>Decrement both</strong></li>
+<li><strong>Default</strong></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Impacts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Decrement pack only</strong></td>
+<td>Only the pack quantity is impacted when the pack is ordered and shipped.</td>
+</tr>
+<tr>
+<td><strong>Decrement products in the pack only</strong></td>
+<td>The quantity of each pack&rsquo;s products is impacted when the pack is ordered and shipped.</td>
+</tr>
+<tr>
+<td><strong>Decrement both</strong></td>
+<td>The pack and the stocks of the products are impacted</td>
+</tr>
+<tr>
+<td><strong>Default</strong></td>
+<td>Can be one of the 3 values above, it depends on what is selected in Shop parameters &gt; Products &gt; Default pack stock management.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Availability preferences</strong> -  see the Availability preferences component of the Stock page</li>
+<li><strong>Stock location</strong>   -  see the Stock location component of the Stock page</li>
+<li><strong>Low stock level</strong>   -  see the Low stock level component of the Stock page</li>
+</ul>
+<h2 id="combination--tab">Combination  tab</h2>
+<p>The tab is displayed only if the product is a combination product.</p>
+<p><strong>As a merchant I want to be able to manage my products with combinations.</strong></p>
+<h3 id="combination-generation">Combination generation</h3>
+<ul>
+<li>
+<p><strong>Generate combinations</strong> - Button
+When the Generate combinations are clicked
+THEN the modal to generates combinations opens</p>
+</li>
+<li>
+<p><strong>Generate combinations</strong> - Modal</p>
+<ul>
+<li>
+<p><strong>Search for attributes</strong> - Search bar - Search by attributes or attribute value
+WHEN the user searches by attributes or attribute value
+THEN the results display a list of matching &ldquo;attribute : attribute value&rdquo;.</p>
+<p>WHEN an attribute is typed
+THEN all the attribute values are listed</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong>Attribute</strong> - Block:</p>
+<ul>
+<li>Attribute name - Checkbox - Header of the block</li>
+<li>Attributes value - List of attribut value of the attribut clickable - By default, the list is collapsed.</li>
+</ul>
+<p>WHEN the block&rsquo;s header is collapsed and the users click on it
+THEN the Attributes value is displayed/extended.</p>
+<p>WHEN the block&rsquo;s header is displayed and the users click on it
+THEN the Attributes value is hidden/collapsed.</p>
+<p>WHEN the Attribute name is checked
+THEN all the attribute values from the Attribute are added to the selected list.</p>
+<p>WHEN the Attribute name is checked
+THEN all the attribute values from the Attribute are added to the selected list.</p>
+<p>WHEN the Attribute name is unchecked
+THEN all the attribute values from the Attribute are removed from the selected list.</p>
+<p>WHEN the Attribute value is clicked
+THEN the attribute value from the Attribute is added to the selected list.</p>
+<p>WHEN the Attribute value is clicked
+THEN the attribute value from the Attribute is removed from the selected list.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong>Generate combinations</strong> - Button
+IF there is no attribut selected
+THEN the button is disabled</p>
+<p>WHEN the generated combinations already exist
+THEN &ldquo;The combinations already exist.&rdquo;</p>
+</li>
+</ul>
+<p>WHEN combinations have been selected on the list and the user clicks to the bulk action
+THEN it opens the bulk action modal</p>
+<p>The bulk action is enabled when the user selects at one product combination from the list.</p>
+<ul>
+<li><strong>Bulk action</strong> - Dropdown -
+<ul>
+<li>Edit %s combination - %s number of combination selected</li>
+<li>Delete %s combinations - %s number of combination deleted
+If the user clicks on Delete %s combinations then it displays the Progress-Bar- Modal (title: Deleting combinations), the product are deleted and the list refreshed.</li>
+</ul>
+</li>
+</ul>
+<p>If the user clicks on Edit %s combination then it displays Bulck actions Modal
+All sections by default are collapsed. Press them to collapse and collapse them.</p>
+<ul>
+<li><strong>Bulk action</strong> - Modal:
+<ul>
+<li>
+<p><strong>Stock</strong> - Section</p>
+<ul>
+<li><strong>Stocks</strong> - Delta Quantity input</li>
+<li><strong>Stock location</strong> - Text input</li>
+<li><strong>Low stock level</strong> - Number input</li>
+<li><strong>Receive a low stock alert by email</strong> - Checkbox</li>
+<li><strong>Availability date</strong> - Date field</li>
+<li><strong>Min. quantity for sale</strong> - Numeric input</li>
+</ul>
+</li>
+<li>
+<p><strong>Price and Impact</strong> - Section</p>
+<ul>
+<li><strong>Cost price</strong> - Numeric input</li>
+<li><strong>Impact on price (tax excl.)</strong>- Price input</li>
+<li><strong>Impact on price (tax incl.)</strong> - Price input</li>
+<li><strong>Ecotax (tax incl.)</strong> - Price input</li>
+<li><strong>Impact on price per unit (tax excl.)</strong> - Price input</li>
+<li><strong>Impact on price per unit (tax incl.)</strong> - Price input</li>
+<li><strong>Impact on weight</strong> - Numeric input</li>
+<li><strong>Impact on additional shipping fees</strong> - Numerc input</li>
+</ul>
+</li>
+<li>
+<p><strong>References</strong> - Section</p>
+<ul>
+<li><strong>Reference</strong> - Text input</li>
+<li><strong>ISBN code</strong> -  Numerc input</li>
+<li><strong>EAN-13 or JAN barcode</strong> - Numerc input</li>
+<li><strong>UPC barcode</strong> - Numerc input</li>
+<li><strong>MPN</strong> - Numerc input</li>
+</ul>
+</li>
+<li>
+<p><strong>Supplier</strong> - Section - (is displayed is the supplier are configured in the Option tab)</p>
+<ul>
+<li><strong>List the suppliers with their input</strong> - same component on the Option tab</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply changes to % combinations</strong> - Button
+WHEN pressing the Apply button
+THEN Progress-Bar-Modal (title: Applying chages) is displayed all the edited input are saved to the selected combinations.</p>
+</li>
+<li>
+<p><strong>Cancel</strong> - Button
+WHEN pressing the Cancel button
+THEN the modal is closed</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="combination-listing">Combination listing</h3>
+<ul>
+<li>
+<p><strong>Filter by</strong> - List of Attributes</p>
+<ul>
+<li>Attributes - Dropdown - List of Attributes values
+<ul>
+<li>Attributes values - Checkbox</li>
+</ul>
+</li>
+</ul>
+<p>WHEN attributes values are checked
+THEN the listing displays all the combinations containing the values of the attributes</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong>Combinations list</strong> - List all the combinations -</p>
+<ul>
+<li>
+<p>Columns:</p>
+<ul>
+<li>Checkbox - Allow to select the combination for the bulks actions</li>
+<li>ID - Label - ID&rsquo;s combination - Sort by acascending or descending order.</li>
+<li>Combinations - Label - List the attributs of the combinationn</li>
+<li>Reference - Text input - Sort by alpahbatics order</li>
+<li>Impact on price (tax excl.) - Price input - Sort by acascending or descending order</li>
+<li>Final price (tax excl.) - Label - Sort by acascending or descending order</li>
+<li>Quantity - Delta Quantity input - Sort by acascending or descending order</li>
+<li>Default combination - Checkbox - Sort by checked and unchecked</li>
+</ul>
+<p>WHEN pressing the &ldquo;Save&rdquo; button on the footer
+THEN all the input above are saved</p>
+<ul>
+<li>Actions edit - Button</li>
+</ul>
+<p>WHEN the edit button is clicked
+THEN it opens the edition combination&rsquo;s modal</p>
+<ul>
+<li>Delete action - Button</li>
+</ul>
+<p>WHEN the delete button is clicked
+THEN the combination is deleted</p>
+</li>
+</ul>
+<p>WHEN the list of items exceeds 10 combinations
+THEN The list is paginated</p>
+<ul>
+<li>
+<p>Pagination:</p>
+<ul>
+<li>First Page - Label</li>
+<li>Previous Page - Button - Go to the previous page if the page exits</li>
+<li>Current Page - Input number</li>
+</ul>
+<p>WHEN a number is typed
+THEN the listing displays the corresponding page IF the page doesn&rsquo;t exist THEN the listing stays on the page before the typing.</p>
+<ul>
+<li>Next page - Button - Go to the next page if the page exits</li>
+<li>Last Page  - Label</li>
+<li>Items per page - Dropdown - Lists 10, 20, 50 and 100</li>
+</ul>
+<p>WHEN the dropdown is updated
+THEN its regroups combination by the new value selected.</p>
+<p>WHEN some inputs have been edited and the user changes of page before saving
+THEN a modal is displayed to confirm the action. The users can accept to Continue &amp; Save the data or Continue &amp; lose the date</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="edit-combinations">Edit combinations</h3>
+<p>Edit combination now opens a modal, see mockups here:</p>
+<ul>
+<li><strong>Combination name</strong> -</li>
+<li><strong>Images</strong>: All the images uploaded in the Detail tab are displayed.    <br>
+The cover image chosen in the description tab is automatically selected as the default image when the combination is created.  <br>
+The user can choose another default image for the combination. You can have only one &ldquo;default&rdquo; image per combination.
+When the user hovers an image, the caption configured in the Description tab should be displayed.</li>
+<li><strong>Stocks</strong> - Delta Quantity input</li>
+<li><strong>Stock location</strong> - Text input</li>
+<li><strong>Low stock level</strong> - Number input</li>
+<li><strong>Receive a low stock alert by email</strong> - Checkbox
+WHEN the product reaches the low stock level and Receive a low stock alert by email is checked
+THEN an email is sent to all the employees who have at least the “view” right on the stock page when the quantity is below or equal to this value.</li>
+<li><strong>Availability date</strong> - Date field - The date should be displayed in the front office in the product details part (as long as it is not passed), no matter the availability of the product.</li>
+<li><strong>Min. quantity for sale</strong>: In front-office (product page &amp; quick-view), this value is indicated in the quantity field. When this value is &gt; 1, a message is displayed under the quantity field in the front office “The minimum purchase order quantity for the product is X.”</li>
+<li><strong>Référence</strong>: The reference of the combination is displayed in the product details part in the front office, according to the selected combination.</li>
+<li><strong>Cost price</strong>: It’s used for margin calculations. To separate decimals a dot or a comma can be used, both should work no matter the language.</li>
+<li><strong>Impact on price (tax excl.)</strong>- Price input -</li>
+</ul>
+<p>WHEN Impact on price (tax excl.) is updated
+THEN the Impact on price tax excl field is calculated automatically according to the tax rule chosen
+AND is added to the Final Price (tax excl.)</p>
+<ul>
+<li><strong>Impact on price (tax incl.)</strong> - Price input -</li>
+</ul>
+<p>WHEN the Impact on the price (tax incl.) is updated
+THEN the Impact on price tax excl field is calculated automatically according to the tax rule chosen.
+AND is added to the Final Price (tax incl.)</p>
+<ul>
+<li><strong>Final retail price</strong>: Displays the final price tax excl and tax incl.</li>
+</ul>
+<p>Both final prices are updated when you modify the impact on price tax excl or tax incl.</p>
+<ul>
+<li><strong>Ecotax (tax incl.)</strong> - Price input - This field is displayed if the “ecotax” option is enabled in International &gt; Taxes.</li>
+</ul>
+<p>The ecotax is displayed in FO under the product price: “Including €X.XX for ecotax”</p>
+<p>The eco-tax is an amount that is informative and doesn&rsquo;t impact the final price.
+Editing the eco-tax on the product page reduces the retail price so the final price remains the same.</p>
+<p>To keep the same behavior on the edition on the combination, editing the eco-tax on a combination doesn&rsquo;t impact the final price. The impact on price compensates for the changes.</p>
+<p>IF a product with combination has an ecotax equal to 0 and the user adds a new ecotax price to the combination
+THEN
+The impact on the price of the combination is subtracted from the ecotax, so the final retail price is not impacted.</p>
+<p>IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination lower than the ecotax of the product
+THEN
+The impact on the price of the combination is increased from the ecotax combination, so the final retail price is not impacted.</p>
+<p>IF a product with combination has an ecotax set and the user adds a new ecotax price to the combination superior to the ecotax of the product
+THEN
+The impact on the price of the combination is subtracted from the ecotax.
+The final retail price is not impacted and the ecotax from the combination is displayed in the front office</p>
+<p>The eco-tax from the combination is displayed in the front office</p>
+<ul>
+<li><strong>Impact on price per unit (tax excl.)</strong> - Price input</li>
+</ul>
+<p>WHEN Impact on price per unit (tax excl.) is updated
+THEN the Impact on price per unit (tax incl.) field is calculated automatically according to the tax rule chosen.
+AND is added to the Final Impact on price per unit (tax excl.)</p>
+<ul>
+<li><strong>Impact on price per unit (tax incl.)</strong> - Price input</li>
+</ul>
+<p>WHEN Impact on price per unit (tax incl.) is updated
+THEN the Impact on price per unit (tax excl.) field is calculated automatically according to the tax rule chosen.
+AND is added to the Final Impact on price per unit (tax incl.)</p>
+<ul>
+<li>
+<p><strong>Impact on weight</strong> - Numeric Input - The weight unit displayed next to the field is the one defined in International &gt; Localization.</p>
+</li>
+<li>
+<p><strong>Impact on additional shipping fees</strong>: (<a href="https://github.com/PrestaShop/PrestaShop/issues/11305">Improvement 11305</a>) By default, it’s filled with 0.000000    <br>
+This amount is added to the additional shipping fees configured in the Shipping tab for the product.    <br>
+The total is added to the total shipping cost according to the carrier selected in the front office.</p>
+</li>
+<li>
+<p><strong>ISBN code</strong>: Only numbers are accepted.    <br>
+The International Standard Book Number (ISBN) is used to identify books and other publications.   <br>
+The ISBN is displayed in the product details tab of the front office and changed accordingly to the selected combination.</p>
+</li>
+<li>
+<p><strong>EAN-13 or JAN barcode</strong>: Only numbers are accepted.   <br>
+This type of product code is specific to Europe and Japan but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America.   <br>
+The EAN is displayed in the product details tab of the front office and changed accordingly to the selected combination.</p>
+</li>
+<li>
+<p><strong>UPC barcode</strong>: Only numbers are accepted.   <br>
+This type of product code is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand, and other countries.  <br>
+The UPC is displayed in the product details tab of the front office and changed accordingly to the selected combination.</p>
+</li>
+<li>
+<p><strong>MPN</strong>: Numbers and characters are accepted.   <br>
+The Manufacturer Part Number is used to identify a specific product of a given manufacturer.</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong>List of all the supliers associated</strong> -</p>
+<ul>
+<li><strong>Supplier name</strong> - Label</li>
+<li><strong>Supplier reference</strong> - Text - Field to specify the product reference for each supplier.</li>
+<li><strong>Cost price (tax excl.)</strong> - Price - Field to specify the product&rsquo;s cost price for each supplier.</li>
+<li><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save &amp; Publish</strong> - Button
+WHEN pressing the save button
+THEN all edited input are saved</p>
+</li>
+<li>
+<p><strong>Cancel</strong> - Button
+WHEN pressing the Cancel button
+THEN the modal is closed</p>
+</li>
+<li>
+<p><strong>Previous combination</strong> - Button
+WHEN pressing the Previous combination button
+THEN the modal displays the next Combination</p>
+</li>
+<li>
+<p><strong>Next combination</strong> - Button
+WHEN pressing the Next combination button
+THEN the modal displays the previous Combination</p>
+</li>
+</ul>
+<p>IF an input has been edited without being saved and the users press Next combination OR Previous combination OR Cancel button
+THEN a modal is displayed to confirm the action</p>
+<ul>
+<li><strong>Discard changes</strong> - Modal:
+<ul>
+<li>Content: All unsaved modifications made on the combination %combination_name%  will be lost.</li>
+<li><strong>Cancel</strong> - Close the modal</li>
+<li><strong>Discard</strong> - Close the modal and the edition modal</li>
+</ul>
+</li>
+</ul>
+<h3 id="availability-preferences-1">Availability preferences</h3>
+<ul>
+<li><strong>Behavior when out of stock</strong>: This part is not displayed if stock management is disabled in Shop parameters &gt; Products settings. Instead, there is a message “Stock management is disabled”</li>
+</ul>
+<ul>
+<li>
+<p><strong>3 radios buttons</strong>:</p>
+<p>1) Deny orders: when it’s checked and product quantity is &lt;= 0, in the front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with denied backorders is displayed under the add to cart button, which is disabled.  <br>
+2) Allow orders: when it’s checked and product quantity is &lt;= 0, in the front-office product page and quick view, the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders is displayed under the add to cart button, which is enabled.   <br>
+3) Use default behavior (Deny orders or Allow orders): the default behavior is set in Shop parameters &gt; Product settings &gt; Allow ordering of out-of-stock products: Yes or No. This value is checked when you create a new product.</p>
+</li>
+<li>
+<p><strong>Label when in stock</strong>: If completed and product quantity is &gt; 0, it is displayed in the front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of in-stock products.   <br>
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+<li>
+<p><strong>Label when out of stock (and backorder allowed)</strong>: If completed and product quantity is &lt;= 0, it is displayed on the front-office product page and quick view, instead of the message filled in Shop parameters &gt; Product settings &gt; Label of out-of-stock products with allowed backorders.    <br>
+A drop-down next to the field is displayed when there are several languages installed (disabled languages are displayed in the drop-down). It allows choosing in which language the field is displayed. Also, in the case of multilanguage, if an error occurs, then I must be warned in the message which language is problematic (<a href="https://github.com/PrestaShop/PrestaShop/issues/16299">improvement 16299</a>)</p>
+</li>
+</ul>
+<h2 id="shipping-tab">Shipping tab</h2>
+<p><strong>As a merchant I want to be able to manage carriers' information for my products.</strong></p>
+<p>This tab is not displayed for a virtual product.</p>
+<h3 id="package-dimension">Package dimension</h3>
+<ul>
+<li><strong>Width</strong> - Unit Input - By default it’s set to 0.</li>
+<li><strong>Height</strong>- Unit Input - By default it’s set to 0.</li>
+<li><strong>Depth</strong>- Unit Input - By default it’s set to 0.</li>
+<li><strong>Weight</strong>- Unit Input - By default it’s set to 0.</li>
+</ul>
+<h3 id="delivery-time">Delivery time</h3>
+<ul>
+<li>
+<p><strong>Delivery time</strong>  - Radio buttons -</p>
+<ul>
+<li>
+<p><strong>None</strong>: No delivery time is displayed on the product page in front-office</p>
+</li>
+<li>
+<p><strong>Default delivery time</strong>:</p>
+<p>If the product is in stock, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of in-stock products” is displayed on the product page in the front office.</p>
+<p>If the product is out of stock but orders are allowed, the value filled in Shop parameters &gt; Products settings &gt; “Delivery time of out-of-stock products with allowed backorders” is displayed on the product page in the front office.</p>
+<p>There is an “edit” link that opens Shop parameters &gt; Products settings in a new browser tab next to the radio button label.</p>
+</li>
+<li>
+<p><strong>Specific delivery time to this product</strong></p>
+<p>If this option is used then Delivery time of in-stock products and Delivery time of out-of-stock products with allowed orders are enabled, otherwise, it is disabled</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Delivery time of in-stock products</strong>- Text input - Placeholder: “Delivered within 3-4 days” - Language Selector</p>
+</li>
+<li>
+<p><strong>Delivery time of out-of-stock products with allowed orders</strong>- Text input - Placeholder: “Delivered within 5-7 days” - Language Selector</p>
+</li>
+<li>
+<p><strong>Additional shipping fees</strong>: By default, it’s filled with 0.000000<br>
+The amount is added to the total shipping cost according to the carrier selected in the front office.</p>
+</li>
+<li>
+<p><strong>Available carriers</strong> - Radio buttons -</p>
+<ul>
+<li>All carriers -  All the carrier can delivered this product</li>
+<li>Only selected carriers - Dropdown</li>
+</ul>
+</li>
+</ul>
+<p>If Only selected carriers are selected then the dropdown is enabled otherwise it is disabled
+The dropdown lists all the carriers in checkboxes with the id of the carrier, the name, and the delay. The users check the carriers that can be delivered the product.
+The selected carriers are displayed below the dropdown.</p>
+<h2 id="pricing-tab">Pricing tab</h2>
+<p><strong>As a merchant, I want to be able to manage the prices of my products.</strong></p>
+<h3 id="retail-price">Retail price</h3>
+<p>Tooltip: This is the net sales price for your customers. The retail price (tax incl.) will automatically be calculated using the selected tax rate.</p>
+<ul>
+<li><strong>Retail price (tax excl.)</strong> - Price input - By default, it’s set to 0.000000</li>
+<li><strong>Retail price (tax incl.)</strong> - Price input - By default, it’s set to 0.000000</li>
+</ul>
+<p>WHEN the Retail price (tax incl.) is edited
+THEN the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.</p>
+<p>WHEN the Retail price (tax excl.) is edited
+THEN the retail price (tax incl.) field is calculated automatically according to the tax rule selected.</p>
+<ul>
+<li><strong>Tax rule</strong> - Dropdown list - Displays all tax rules enabled and a “no tax” option.</li>
+</ul>
+<p>WHEN the user changes the tax rules
+THEN the price (tax incl.) is updated and the tax&rsquo;s label.</p>
+<p>IF there are several taxes rules with the same name
+THEN the ID of the tax rule is displayed before its name.</p>
+<ul>
+<li><strong>Tax</strong> - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop&rsquo;s country and the tax corresponding shop&rsquo;s country and the tax rule selected.</li>
+</ul>
+<p>IF the tax rule doesn&rsquo;t include a tax of the shop&rsquo;s country
+THEN it displays on the Tax label 0% next to the country ISO code.</p>
+<p>IF the shop&rsquo;s country has states configured with different tax per states
+THEN it displays the tax of the first state configured.</p>
+<ul>
+<li>
+<p><strong>Manage tax rule</strong> - Link - Open in a new browser tab International &gt; Taxes</p>
+</li>
+<li>
+<p><strong>Ecotax (tax incl.)</strong> - Price input - the input is hidden - By default, it’s set to 0.000000</p>
+</li>
+</ul>
+<p>WHEN Use eco-tax is enabled (option is enabled in International &gt; Taxes. Except) and the product is not a virtual product
+THEN the input Ecotax (tax incl.) is displayed</p>
+<p>WHEN the users edit the field
+THEN the amount of the Ecotax (tax excl.) is deducted from the Retail price (tax excl.). The Retail price (tax incl.) remains the same amount.</p>
+<p>WHEN Ecotax is enabled
+THEN
+Retail price (tax incl.) =  Retail price (tax excl.) * (1 + Tax) + Ecotax (tax incl.)
+Retail price (tax excl.) =  Retail price (tax incl.) / (1 + Tax) - Ecotax (tax excl.)</p>
+<p>WHEN the Retail price (tax excl.) OR Retail price (tax excl.) OR Ecotax (tax incl.) is edited
+THEN All the enumerated fields are automatically updated according to the calculation rule described above.</p>
+<h3 id="cost-price">Cost price</h3>
+<ul>
+<li><strong>Cost price (tax excl.)</strong> - Price input - By default, it’s set to 0.000000</li>
+<li><strong>Supplier Label</strong> - Label - Displays the label &ldquo;This value matches the price of default supplier: %default_supplier_name%&rdquo; when a default supplier is configured.</li>
+</ul>
+<p>WHEN a product has a default supplier
+THEN the cost price is synchronized with the cost price of the default supplier (cf. Option tab &gt; Supplier &gt; Default supplier).</p>
+<p>IF the user edit the Cost price (tax excl)
+THEN it updates the Cost price (tax excl) in the Option Tab</p>
+<p>IF the user edit the Cost price (tax excl) in the Option Tab
+THEN it updates the Cost price (tax excl) in the Pricing Tab</p>
+<h3 id="display-retail-price-per-unit">Display retail price per unit</h3>
+<ul>
+<li><strong>Retail price per unit (tax excl.)</strong> - Price input - By default, it’s set to 0.000000</li>
+<li><strong>Retail price per unit (tax incl.)</strong> - Price input - By default, it’s set to 0.000000</li>
+</ul>
+<p>WHEN Retail price per unit (tax incl.) is edited
+THEN Retail price per unit (tax excl.) field is calculated automatically according to the tax rule chosen.</p>
+<p>WHEN Retail price per unit (tax excl.) is edited
+THEN Retail price per unit (tax incl.) field is calculated automatically according to the tax rule selected.</p>
+<ul>
+<li><strong>Unity field</strong> - Text
+Placeholder: “Per kilo, per liter”.</li>
+</ul>
+<h3 id="summary">Summary</h3>
+<p>Displays all the prices of the product in two blocks.</p>
+<ul>
+<li>
+<p>Block 1:</p>
+<ul>
+<li><em>Retail price (tax excl.)%</em> + <em>Ecotax (tax excl.)</em></li>
+<li><em>Retail price (tax incl.)%</em> (tax incl.)</li>
+<li><em>Retail price per unit (tax excl.)</em> per <em>Unity</em></li>
+<li>Including <em>Ecotax (tax incl.)</em>  for ecotax</li>
+</ul>
+</li>
+<li>
+<p>Block 2:</p>
+<ul>
+<li><em>%Retail price (tax excl.)%</em> - <em>%Cost Price% margin</em></li>
+<li><em>%Cost Price%</em> * 100  / <em>%Retail price (tax excl.)%</em> % margin rate</li>
+<li><em>%Cost Price%</em> cost price</li>
+</ul>
+</li>
+</ul>
+<p>Ex with data:
+If the tax is at 20%.</p>
+<ul>
+<li>
+<p>Block 1:</p>
+<ul>
+<li>10€ (tax excl.)</li>
+<li>12€  (tax incl.)</li>
+<li>2€ per kilo</li>
+<li>Including €10.00 for ecotax</li>
+</ul>
+</li>
+<li>
+<p>Block 2:</p>
+<ul>
+<li>5€ margin</li>
+<li>50% margin rate</li>
+<li>5€ cost price</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Display the &ldquo;On sale!&rdquo; flag on the product page, and on product listings</strong> - checkbox - By default, it is unchecked.</li>
+</ul>
+<p>WHEN the checkbox is checked
+THEN it displays a banner &ldquo;PROMO !&rdquo;  on the image of the product in the product listing and on the product page in the front office.</p>
+<h3 id="specific-prices">Specific prices</h3>
+<ul>
+<li><strong>Add a specific price</strong> - Button - Opens Specific price modal</li>
+</ul>
+<p>This button opens a form with the following fields :</p>
+<ul>
+<li>
+<p><strong>All store</strong> - Dropdown - Lists all the stores from the multistore and &ldquo;All store&rdquo; - By default, &ldquo;All store&rdquo; is selected.</p>
+</li>
+<li>
+<p><strong>All currencies</strong> - Dropdown - Lists all the currencies enabled and &ldquo;All store&rdquo; - By default, &ldquo;All currencies&rdquo; is selected.</p>
+</li>
+<li>
+<p><strong>All countries</strong> - Dropdown - Lists all the countries enabled and &ldquo;All countries&rdquo; - By default, &ldquo;All countries&rdquo; is selected.</p>
+</li>
+<li>
+<p><strong>All groups</strong> - Dropdown - Lists all the groups enabled and &ldquo;All groups&rdquo; - By default, &ldquo;All groups&rdquo; is selected.</p>
+</li>
+<li>
+<p><strong>Customers</strong> -  There is a placeholder: “All customers”.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Apply to all customers</strong> - Switch button - By default, the switch button is enabled
+WHEN the switch is disabled
+THEN the user can search for a specific customer by name, last name, or email.</li>
+</ul>
+<p>IF the modal is saved and no specific customer is selected then
+THEN error message</p>
+<ul>
+<li><strong>All Combinations</strong> - Dropdown - Lists all the combinations enabled and &ldquo;All combinations&rdquo; - By default, &ldquo;All combinations&rdquo; is selected.</li>
+</ul>
+<ul>
+<li><strong>Warning information</strong> - &ldquo;Note that if you want to base a quantity discount on a product, it will apply to all of its combinations. Go in Shop Parameters &gt; Product Settings to modify it&rdquo; (<a href="https://github.com/PrestaShop/PrestaShop/issues/12363">issue 12363</a>).</li>
+</ul>
+<ul>
+<li><strong>Available from</strong> - Datefield</li>
+<li><strong>Available to</strong> - Datefield</li>
+</ul>
+<p>IF the user types a wrong value (numbers or letters) and clicks outside the date field
+THEN the date previously selected (when you opened the calendar) is completed.</p>
+<ul>
+<li><strong>Unlimited</strong> - Checkbox - By default, it is unchecked.</li>
+</ul>
+<ul>
+<li>
+<p><strong>Minimum number of units purchased</strong> - Numeric input - By default, it’s set to 1.</p>
+</li>
+<li>
+<p><strong>Apply a discount to the initial price</strong> - Switch button - by default, it&rsquo;s enabled.</p>
+</li>
+</ul>
+<p>WHEN enabled
+THEN the user can set percentage or amount of Discount tax included or tax excluded</p>
+<ul>
+<li><strong>Discount</strong>
+<ul>
+<li>Price - By default, it’s set to 0.000000</li>
+<li>Dropdown - 2 option: % (percentage) and € (amount) - By default, amount is selected</li>
+<li>Dropdown - 2 options: tax included and tax excluded - By default, tax included is selected</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Set specific price</strong>:  Switch button - by default, it&rsquo;s disabled.</li>
+</ul>
+<p>WHEN enabled
+THEN the user can set Retail price (tax excl.) to the product</p>
+<ul>
+<li><strong>Retail price (tax excl.)</strong> - Price</li>
+</ul>
+<ul>
+<li><strong>Preview</strong></li>
+</ul>
+<ul>
+<li><strong>Save and Publish</strong> - Button</li>
+</ul>
+<p>WHEN the users click on it
+THEN the specific price is created and you have a success message “Settings updated”.</p>
+<p>The specific price is applied to the product when the user matches all the conditions.</p>
+<p>When the same specific price with same conditions twice
+THEN an error message “A specific price already exists for these parameters.” and the second specific price isn’t created.</p>
+<ul>
+<li><strong>Cancel</strong> - Button</li>
+</ul>
+<p>IF the user clicks on Cancel
+THEN the modal with all specifics prices fields are closed.</p>
+<p>IF the user clicks again to Add a specific price
+THEN all fields are reset to their default values.</p>
+<ul>
+<li><strong>List of specific prices &amp; catalog price rules</strong>: Lists the specific price with all the details:
+ID, Rule, Combination, Currency, Country, Group, Customer, Specific price (tax excl.), Discount, Duration, Units, actions (delete, edit). Rule column contains “&ndash;” for a specific price.</li>
+</ul>
+<p>Here are also listed the catalog prices rules that impacts this product. Rule column contains the name of the catalog price rule.</p>
+<ul>
+<li>
+<p><strong>Edit a specific price</strong> - Button
+WHEN the user edits a specific price
+THEN  It opens a modal with all the fields completed with the specific price data.</p>
+</li>
+<li>
+<p><strong>Edit a catalog prices rule</strong> - Button
+WHEN the user edits a catalog prices rule
+THEN It opens a new tab the catalog price rule edit page</p>
+</li>
+<li>
+<p><strong>Delete a specific price</strong> - Button
+WHEN the user clicks on it
+THEN a modal opens to cancel or confirm the action.</p>
+</li>
+</ul>
+<p>The user can&rsquo;t delete the catalog price rule.</p>
+<h3 id="priorities">Priorities</h3>
+<p><strong>Priorities</strong> - Option selector
+2 options:</p>
+<ul>
+<li>Default (Displays the configuration settings from the Product Setting page)</li>
+<li>Specific to this product</li>
+</ul>
+<p>When Specific to this product is selected
+THEN the user can select the order of the condition and displays 4 dropdowns with the 4 options: Shop, Currency, Country, Group.</p>
+<p>By default, “Group” is selected for the first dropdown, “Currency” for the second, “Country” for the third, and “Shop” for the last.</p>
+<h2 id="seo-tab">SEO tab</h2>
+<p><strong>As a merchant I want to be able to manage my SEO information for my products.</strong></p>
+<p>Here is the list of the elements of the SEO tab:</p>
+<ul>
+<li>
+<p><strong>SEO preview</strong>: It is a preview of your search engine result, it allows you to see how your product page will appear in search engines results.     <br>
+If the meta title field is empty, the product name is displayed.       <br>
+If I edit the product name and if there is nothing in the meta title field, it’s displayed directly in the preview.     <br>
+If I change the name of the product, the preview will not change until the meta title field is complete.      <br>
+If the meta description field is empty, the product description is displayed.        <br>
+If I click on Basic Settings, change the description, save, refresh the page and return to SEO, the description of the preview has changed.          <br>
+When you start to complete meta title, meta description, and friendly URL fields, it’s displayed directly in the preview.  <br>
+The preview is displayed in the selected language. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14984">Issue 14984</a>)</p>
+</li>
+<li>
+<p><strong>Meta title</strong> - Input Text - Language Selector -  There is a placeholder: “To have a different title from the product name, enter it here.”  <br>
+This data is displayed in the code of the page in the tag.     <br>
+If the field is empty, the product name will be used. A counter indicates the number of characters used on 70 characters recommended.</p>
+</li>
+<li>
+<p><strong>Meta description</strong> - Input Text - Language Selector -  There is a placeholder: “To have a different description than your product summary in search results pages, write it here.”      <br>
+This data is displayed in the code of the page in the tag.      <br>
+If the field is empty, the product description will be used. A counter indicates the number of characters used on 160 characters recommended.</p>
+</li>
+<li>
+<p><strong>Friendly URL</strong> - Input Text - Language Selector -  This field is automatically filled when you enter the product name.   <br>
+The spaces are replaced by dashes.</p>
+</li>
+</ul>
+<p>When many languages are installed, if I fill the product name only for the default language, I want the friendly-URL field to be automatically filled in other languages with the same content as in default language (<a href="https://github.com/PrestaShop/PrestaShop/issues/15936">improvement 15936</a>)</p>
+<ul>
+<li>
+<p><strong>Indexation by search engines</strong>: Yes / No toggle. When set on Yes, the product is indexed. Otherwise, it&rsquo;s not.</p>
+</li>
+<li>
+<p><strong>Reset URL</strong>: This button allows to reset the friendly URL field as it was before the last change.</p>
+</li>
+<li>
+<p><strong>Information message</strong>: Friendly URLs are currently disabled. To enable it, go to SEO and URLs.          <br>
+Friendly URLs are currently enabled. To disable it, go to SEO and URLs.       <br>
+SEO and URLs link is opened in a new tab.</p>
+</li>
+<li>
+<p><strong>Indexation by search engines</strong>: Yes / No. By default, it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, the product URL isn’t indexed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14317">improvement 14317</a>)</p>
+</li>
+<li>
+<p><strong>Redirection when offline</strong>: Dropdown with 5 options:             <br>
+1) <strong>Permanent redirection to a category (301)</strong>: When my product is offline, I choose a category to redirect to.   <br>
+This is a &ldquo;definitive&rdquo; redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.    <br>
+2) <strong>Temporary redirection to a category (302)</strong>: When my product is offline, I can choose a category to which my current product is redirected.          <br>
+The new category will only be displayed when my product is offline, it is not saved in the browser cache   <br>
+3) <strong>Permanent redirection to a product (301)</strong>: When my product is offline, I choose another product to redirect to. This is a &ldquo;definitive&rdquo; redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.      <br>
+4) <strong>Temporary redirection to a product (302)</strong>: When my product is offline, I can choose a product to which my current product is redirected.         <br>
+The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache        <br>
+5) <strong>No redirection (404)</strong>: When my product is offline, if I try to accede to the product in the front office a message is displayed: “This product is no longer available.” and the product isn’t displayed.     <br>
+If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”</p>
+</li>
+<li>
+<p><strong>Target category</strong>: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category.     <br>
+There is a placeholder: “To which category the page should redirect ?”        <br>
+If no category is selected, the Main Category is used.      <br>
+You can search by category name. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected category is displayed under the field.</p>
+</li>
+<li>
+<p><strong>Target product</strong>: This search field is displayed if you select in the dropdown Permanent redirection to a product or Temporary redirection to a product.       <br>
+There is a placeholder: “To which product the page should redirect ?”           <br>
+You can search by product name or reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected product is displayed under the field.        <br>
+Delete selected category or product: You can remove the selected product or category by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.</p>
+</li>
+<li>
+<p><strong>Information message</strong>: No redirection (404) = Do not redirect anywhere and display a 404 &ldquo;Not Found&rdquo; page.  <br>
+Permanent redirection (301) = Permanently display another product or category instead.  <br>
+Temporary redirection (302) = Temporarily display another product or category instead.</p>
+</li>
+<li>
+<p><strong>Tags</strong>: There is a placeholder: “Use a comma to create separate tags. E.g.: dress, cotton, party dresses.”  - Input Tag - Language Selector -  To validate a tag, you can push Enter or comma key. The tags appear in Shop parameters &gt; Search &gt; Tags and are associated with the product. You can remove a tag by clicking on the cross. The tag is also removed in Shop parameters &gt; Search &gt; Tags.</p>
+</li>
+<li>
+<p><strong>Information message</strong>: “Tags facilitate the product search for customers using the search bar” There is a read more link to open the following info: “Choose terms and keywords which your potential customers commonly would search for when looking for this product. Make sure that they are consistent with the tags you may have already defined. You can manage tag aliases in the Search section. If you add new tags, you have to rebuild the index.”</p>
+</li>
+</ul>
+<h2 id="options-tab">Options tab</h2>
+<p><strong>As a merchant I want to be able to manage the options for my products.</strong></p>
+<p>Here is the list of the elements of the options tab:</p>
+<h3 id="product-display">Product display</h3>
+<ul>
+<li><strong>Visibility</strong>: Option selector -  4 options. By default, everywhere is selected.
+<ul>
+<li><strong>Everywhere</strong>: The product is displayed in the catalog (categories) and can be found if you search for it.</li>
+<li><strong>Catalog only</strong>: The product is displayed in the catalog (categories) and can’t be found if you search for it.</li>
+<li><strong>Search only</strong>: The product is not displayed in the catalog (categories) and can be found if you search for it.</li>
+<li><strong>Nowhere</strong>: The product is not displayed in the catalog (categories) and can’t be found if you search for it.</li>
+</ul>
+</li>
+</ul>
+<h3 id="availability">Availability</h3>
+<ul>
+<li>
+<p><strong>Available for order</strong> - Switch button - Checkbox checked by default.
+IF you uncheck it
+THEN the add to cart button is disabled in the product page in the front office and the “Show price” checkbox is displayed (checked).</p>
+</li>
+<li>
+<p><strong>Show price</strong>  - Switch button<br>
+IF the user unchecks it
+THEN the product price isn’t displayed on the product page and product lists in the front office. For a pack, the price of the pack and the prices of the products contained in the pack are not displayed.</p>
+</li>
+<li>
+<p><strong>Web-only</strong>  - Switch button -  Checkbox not checked by default.
+WHEN checked AND “available for order” OR “show price” is checked
+THEN a label “Online only” is displayed on the product page and product lists in the front office.</p>
+</li>
+</ul>
+<h3 id="supplier">Supplier</h3>
+<p>WHEN at least one supplier is enabled
+THEN this section is displayed</p>
+<ul>
+<li>
+<p><strong>Information message about suppliers</strong> - Information message - “This interface allows you to specify the suppliers of the current product and its combinations, if any. You can specify supplier references according to previously associated suppliers.” Click on the read more link to display the following information: “When using the advanced stock management tool (see Shop Parameters &gt; Products settings), the values you define (price, references) will be used in supply orders.”</p>
+</li>
+<li>
+<p><strong>Choose the suppliers associated with this product</strong>: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated with the supplier and displayed on the supplier page in the front office.
+WHEN several suppliers are associated with a product
+THEN unchecking one of them should delete the related data while keeping the values of the other suppliers intact.</p>
+</li>
+<li>
+<p><strong>Default supplier</strong>:
+IF more than one suppliers is checked
+THEN it can be set as the default supplier by selecting the radio</p>
+</li>
+</ul>
+<p>WHEN there is only one supplier checked
+THEN the default supplier radio button is automatically checked for the supplier</p>
+<p>WHEN there are many suppliers checked, you can change the default supplier.</p>
+<p>WHEN a default supplier is used
+THEN the product&rsquo;s cost price is set by the default supplier&rsquo;s cost price.</p>
+<p>WHEN the user changes the cost price in the Price tab
+THEN the value of the default supplier&rsquo;s cost price is also updated by the new changed value. And vice versa, when the user changes the default supplier cost price, the product cost price on the Price tab is updated with the new value filled in.</p>
+<p>WHEN the user saves the product form
+THEN the default supplier&rsquo;s cost price and the product&rsquo;s cost price should always be equal.</p>
+<p>IF  at least one supplier is associated with the product
+THEN Supplier references are displayed</p>
+<ul>
+<li>
+<p><strong>Supplier reference(s)</strong>  - Information message - &ldquo;You can specify product reference(s) for each associated supplier. Click &ldquo;Save&rdquo; after changing selected suppliers to display the associated product references.&rdquo;</p>
+</li>
+<li>
+<p><strong>Supplier dropdown</strong>: A dropdown list appears to select the supplier for which the user wants to change supplier costs for his products.</p>
+</li>
+<li>
+<p><strong>Products list</strong>:</p>
+<ul>
+<li><strong>The product name</strong> - Text - Display the product name</li>
+<li><strong>Supplier reference</strong>: - Text - Field to specify the product reference for each supplier.</li>
+<li><strong>Cost price (tax excl.)</strong> - Price - Field to specify the product&rsquo;s cost price for each supplier.</li>
+<li><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.</li>
+</ul>
+</li>
+</ul>
+<h2 id="footer">Footer</h2>
+<ul>
+<li>
+<p><strong>Delete</strong> - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.</p>
+</li>
+<li>
+<p><strong>Preview</strong> - When you click on this button, it saves and opens a new browser tab with the product displayed in the front office.
+If the product is disabled (offline), you have on the product page in the front office a message displayed: “This product is not visible to your customers.”
+Keyboard shortcut: ALT + SHIFT + V</p>
+</li>
+<li>
+<p><strong>Online</strong> - When you click on this button, it saves and makes the product visible in the front office.</p>
+</li>
+<li>
+<p><strong>Offline</strong> - When you click on this button, it saves and makes the product invisible in the front office.</p>
+</li>
+<li>
+<p><strong>Save &amp; Publish</strong> - Button to save all changes made in all tabs.
+Keyboard shortcut: ALT + SHIFT + S.
+If it’s saved with success, there is a green success message “Settings updated”. Otherwise, there is an error message.
+If the product is Offline then the button name change to &ldquo;Save&rdquo;.</p>
+</li>
+<li>
+<p><strong>Duplicate</strong> - When you click on this button, it saves and duplicates the current product (the duplicated product will be offline).</p>
+</li>
+<li>
+<p><strong>Duplicate images</strong> - checkbox - Checked, duplicates product with the images
+The duplicated product must be exactly the same. Keyboard shortcut:
+ALT + SHIFT + D</p>
+</li>
+<li>
+<p><strong>Go to catalog</strong> - When you click on this button, it saves and redirects to the catalog product list.
+Keyboard shortcut: ALT + SHIFT + Q</p>
+</li>
+<li>
+<p><strong>Add new product</strong> - When you click on this button, it saves and opens a new empty product page.
+Keyboard shortcut: ALT + SHIFT + P</p>
+</li>
+</ul>
+<h2 id="multistore">Multistore</h2>
+<h3 id="multistore-header">Multistore Header</h3>
+<p>It only displays stores associated with the product and stores that users can access.</p>
+<ul>
+<li><strong>Add to other stores</strong> - Button - Open modal to select new stores to associate or dissociate with the product.
+List of stores grouped by group shop with a checkbox
+<ul>
+<li>Cancel button</li>
+<li>Save Button - Displays the confirmation modal summarizing all the deleted and added stores
+When a store is unchecked, it deletes the product related to the store.
+When stores are checked, it duplicates the product related to the store offline.</li>
+</ul>
+</li>
+</ul>
+<h3 id="multistore-behavior">Multistore behavior</h3>
+<ul>
+<li>
+<p><strong>Apply changes to all stores</strong> - Checkbox - It&rsquo;s displayed below each input compatible with the multistore.
+Once checked and the product form is saved, the changes will be applied to all the stores.</p>
+<ul>
+<li><strong>Edit quantity</strong> - Increases/Decreases with same amount the different shops</li>
+</ul>
+</li>
+<li>
+<p><strong>Save &amp; Publish</strong>: Button to save all changes made in all tabs.
+If one checkbox <strong>Apply changes to all stores</strong> is checked then its opens a modal summarizing the changes.
+Summarizing multistore changes:
+Lists the input label applied to all the store
+Lists all the associated shops impacted
+Cancel button
+Save &amp; Publish button</p>
+</li>
+<li>
+<p><strong>Manage images</strong> - Open a modal with a table with all the images associated with the product from all the shops associated.
+The columns are all the stores associated with the product
+The rows are checkboxes</p>
+<ul>
+<li>Cancel button</li>
+<li>Save Button</li>
+</ul>
+</li>
+</ul>
+<p>When an image for a shop is unchecked then the image is not from the product, hidden in the image manager of the shop&rsquo;s product, and not displayed in the front office.</p>
+<p>When an image for a shop is checked then the image is added to the product and displayed by the image manager of the shop&rsquo;s product and available in the front office.</p>
+<p>The cover image from one shop can&rsquo;t be unchecked. An image that is unchecked to all the stores is deleted after the &ldquo;Save and publish&rdquo;.</p>
+<h3 id="changement-of-multistore-context">Changement of multistore context</h3>
+<p>To avoid the user to save the product data in the wrong shop, a confirmation modal is displayed before saving.</p>
+<p>When the user edits his product in a shop and saves his product while he has changed shop in another page then a confirmation modal is opened.</p>
+<p>Confirmation modal -</p>
+<ul>
+<li>title: &ldquo;Are you sure ?&rdquo;</li>
+<li>Description: &ldquo;Your modifications will be saved in the <em>shop-name</em>&rdquo;</li>
+<li>Choose a store  - Open Shop-Selector-Modal (title: Choose a store)
+<ul>
+<li>Save the product in the store context selected</li>
+</ul>
+</li>
+<li>Continue - Save the product in the current store context</li>
+</ul>
+<h3 id="shared-stocks">Shared stocks</h3>
+<p>When the products shared the stocks with another store then it is displayed in a help text below the stock input &ldquo;The stock is shared between the store in the %Group-Name%&rdquo;.</p>
+<h2 id="stock-management-is-disabled">Stock management is Disabled</h2>
+<p>When Stock management is Disabled Then the fields <strong>Edit quantity</strong>, <strong>Recent stock movements</strong>, <strong>Pack quantities</strong> and <strong>Behavior out of stocks</strong> are hiden.</p>
+<p><strong>Behavior out of stocks</strong> is replaced by the label &ldquo;Stock management is disabled&rdquo;</p>
+
+
+<footer class="article-footer">
+	
+<div>
+  Last updated on February 23, 2022
+  :
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/c39ade3fadeaaf65955010c9ecfcae47c410d12e">"Update add-edit-v2.md" (c39ade3f)</a>
+  
+</div>
+
+
+	<div class="license">
+		This article is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	</div>
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1646126115"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1646126115"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1646126115"></script>
+    <script src="../../../../js/jquery.sticky.js?1646126115"></script>
+    <script src="../../../../js/featherlight.min.js?1646126115"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1646126115"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1646126115"></script>
+    <script src="../../../../js/learn.js?1646126115"></script>
+    <script src="../../../../js/hugo-learn.js?1646126115"></script>
+    
+    <script src="../../../../main.js?1646126115"></script>
+    
+    
+
+
+
+    
+
+  </body>
+</html>
+

@@ -19,6 +19,18 @@ https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
     </item>
     
     <item>
+      <title>Listing Page - 8.0</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</guid>
+      <description>SPECS LISTING PRODUCT PAGE V2 Empty state The empty state card appears WHEN there is no product
+Header  New product - Button - Opens the &amp;ldquo;Add new product modal&amp;rdquo;  If multistore is enabled then Shop-Selector-Modal (title: &amp;ldquo;Add new product&amp;rdquo;) is opened before the &amp;ldquo;Add new product modal&amp;rdquo;
+Top of the listing   Settings wheel component
+  Bulk actions - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled</description>
+    </item>
+    
+    <item>
       <title>Product Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -26,6 +38,18 @@ https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</guid>
       <description>SPECS PRODUCT PAGE As a merchant I need to be able to correctly create, edit and delete my products.
 WHY The add / edit product page (Catalog &amp;gt; Products) has already been migrated to Symfony for the 1.7.0 version, but many behaviours are not specified which have introduced regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test and avoid any new bugs.</description>
+    </item>
+    
+    <item>
+      <title>Product Page - 8.0</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</guid>
+      <description>SPECS PRODUCT PAGE Add a new product  As a merchant, when I create a new product, I want to select the type of product before.
+When I press add new product button, a modal is displayed.
+The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack). A simple product is selected by default.
+Each product type has its shorts&#39; description. Selecting a product type displays its description.</description>
     </item>
     
   </channel>

@@ -233,6 +233,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</loc>
+    <lastmod>2022-02-23T23:26:12+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -257,8 +260,14 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/listing.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</loc>
+    <lastmod>2022-02-23T23:28:34+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</loc>
+    <lastmod>2022-02-23T18:35:04+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -365,6 +374,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</loc>
+    <lastmod>2022-02-23T23:40:17+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -376,6 +388,9 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/progress-bar-modal.html</loc>
+    <lastmod>2022-02-23T23:26:46+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access.html</loc>
     <lastmod>2021-12-21T12:02:06+02:00</lastmod>
@@ -404,11 +419,17 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</loc>
     <lastmod>2021-06-14T11:58:36+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/settings-wheel.html</loc>
+    <lastmod>2022-02-23T23:27:24+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</loc>
+    <lastmod>2022-02-23T23:27:47+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/shopping-carts.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -479,6 +500,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/translations/translations.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component.html</loc>
+    <lastmod>2022-02-23T18:27:20+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -502,6 +526,9 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</loc>
     <lastmod>2021-06-14T12:09:43+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</loc>
+    <lastmod>2022-02-23T18:42:01+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</loc>
     <lastmod>2021-10-29T13:55:04+02:00</lastmod>
