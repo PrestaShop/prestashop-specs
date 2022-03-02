@@ -20,9 +20,11 @@ In this section there 8 columns are displayed:
 
 ### Call to action
 
-- Edit, when pressed redirects to the [specs of the add/edit brand address]({{<ref "add-edit-brand-address.md">}} "Add/edit brand address") 
+- Edit, when pressed redirects to the [add/edit brand address]({{<ref "add-edit-brand-address.md">}} "Add/edit brand address")
 
 ## Products
+
+Every product name is a link as well, when pressed the [Product page]({{<ref "../../catalog/Products/">}} "Products Page") is opened.
 
 Below all the products under the brand are listed, the following product information is provided:
 
