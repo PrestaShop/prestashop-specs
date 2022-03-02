@@ -45,7 +45,9 @@ On the right 2 buttons are presented:
 
 On the left there ir a checkbox for "Bulk edit quantity", when the checkbox is marked, all the products get marked. There is also an input for numbers that can be increased or decreased with arrows up and down.
 
-When a number is entered in the field, if the number is entered, and the checkbox is marked, a button on the right can be clickable:
+When a number is entered in the field, if the number is entered, and the checkbox is marked, every product's elow "Physical" and "Available" sections have an additional arrow appeared on the right of them with a new number, that the amount would be increased to. The number that will be increased depends on the "Bulk edit quantity" field entered number.
+
+a button on the right can be clickable:
  
   - Apply new quantity
 
