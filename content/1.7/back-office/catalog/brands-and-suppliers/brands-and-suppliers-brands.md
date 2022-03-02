@@ -3,7 +3,7 @@ title: Brands and suppliers brands
 weight: 1
 ---
 
-In this page Brands are addresses are displayed.
+In this page Brands and suppliers are displayed.
 
 ### Call to action
 
@@ -22,7 +22,7 @@ In this page Brands are addresses are displayed.
 When clicking on the settings wheel, the following options are displayed:
 1) Import
 
-After clicking on it, the Advanced parameters > Import page is opened.
+After clicking on it, the [Import page]({{<ref "../../advanced-parameters/import/">}} "Import Page") is opened.
 
 2) Refresh list
 
@@ -39,7 +39,7 @@ There are two buttons:
 
 4) Export to SQL Manager
 
-After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
+After clicking on it, the SQL query is opened in [SQL manager]({{<ref "../..//advanced-parameters/database/sql_manager.md">}} "SQL Manager")
 
 
 ### Bulk actions
@@ -111,7 +111,7 @@ Drop-down list of all the countries which can be selected and searched.
 
 **Edit.** The brand can be edited as often as necessary.
 
-👉 See the [specs of the add/edit brand address]({{<ref "add-edit-brand-address.md">}} "Add/edit brand address") 
+👉 See the [add/edit address]({{<ref "add-edit-address.md">}} "Add/edit address")
 
 **Delete.** The address can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
