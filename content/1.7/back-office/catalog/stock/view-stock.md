@@ -49,7 +49,8 @@ When a number is entered in the field, if the number is entered, and the checkbo
 
 a button on the right can be clickable:
  
-  - Apply new quantity
+  - Apply new quantity, when a number in the "Bulk edit quantity" is entered, and the button is pressed, the quantities will be added to the products, with a message shown: "Stock successfully updated".
+If a number is tried to be added without the checkbox marked, a message will show: "Use checkboxes to bulk edit quantities".
 
 Below the products are listed, and the following rows are presented:
 
