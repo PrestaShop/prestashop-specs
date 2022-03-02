@@ -7,7 +7,7 @@ In this page the information about the brand and it's products is displayed.
 
 ## Addresses
 
-In this section there 8 collumns are displayed:
+In this section there 8 columns are displayed:
 
  - Name
  - Address
