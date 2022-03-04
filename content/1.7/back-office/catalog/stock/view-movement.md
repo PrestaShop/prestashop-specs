@@ -3,7 +3,7 @@ title: Movements view
 weight: 1
 ---
 
-# Movement view
+# Movements view
 
 ### Search
 
