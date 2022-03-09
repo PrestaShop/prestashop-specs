@@ -67,8 +67,29 @@ Mandatory toggle switch, by default is set to "Yes". A help text below is shown:
 
  12) Main Shop Activity
 
-A drop-down table with the following options:
+A drop-down table (has a placolder - -- Please choose your main activity --) with the following options:
+
+ - Animals and pets
+ - Art and Culture
+ - Babies
+ - Beauty and Personal Care
+ - Cars
+ - Computer Hardware and Software
+ - Download
+ - Fashion and accessories
+ - Flowers, Gifts and Crafts
+ - Food and beverage
+ - HiFi, Photo and Video
+ - Home and Garden
+ - Home Appliances
+ - Jewelry
+ - Lingerie and Adult
+ - Mobile and Telcom
+ - Services
+ - Shoes and accessories
+ - Sport and entertainment
+ - Travel
 
 ### Call to action
 
- - Save
+ - Save, when pressed a following message appears: "Successful update."
