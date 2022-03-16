@@ -1107,7 +1107,7 @@ Confirmation modal -
 
 When the products shared the stocks with another store then it is displayed in a help text below the stock input "The stock is shared between the store in the %Group-Name%".
 
-##   Stock management is Disabled
+## Stock management is Disabled on BO > Shop Parameters > Product Settings
 
 When Stock management is Disabled Then the fields listed bellow are not displayed:
 - **Edit quantity**
