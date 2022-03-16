@@ -39,7 +39,17 @@ The product header displays the product:
 - Cover image - Image
 - Price Tax Excluded 
 - Price Tax Included 
-- Tax - Label - see component in the Pricing Tab
+- Tax - Label
+
+IF the tax rule has a tax for the shop's country
+THEN it displays on the Tax label 0% next to the country ISO code.
+
+IF the shop's country has states configured with different tax per states
+THEN it displays the tax of the first state configured.
+
+IF the tax is disabled in Back-Office 
+THEN the label is not displayed.
+
 - Quantity - Lable 
 For product with combination, it displays the total of quantity from all the combination
 - Product type and product type’s icon - Button
@@ -69,19 +79,21 @@ Once the user selects a product different from the current product type, then th
 Pressing the button opens closes the current modal to open the confirmation modal.
 
 * Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
-	* **Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
+	* **Change product type** - Button - Save the new product type and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
 
 	* **Cancel** - Close the modal  
 	If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type.
-	
-| Changing the Product type form| Impact | warning-alert in the Confirmation modal |
+
+| Changing the Product type from | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
-| Standard product | No impact, the data is common between the standard product and the others products. | |
+| Standard product | No impact, the data is common between the standard product and the others products. |  |
 | Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>This will reset the stock of this product. |
 | Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
 | Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
-
+| Changing the Product type to | Impact | warning-alert in the Confirmation modal |
+| --- | --- | --- |
+| Product with combination | Deletes the combination and reset the stock to 0. | This will reset the stock of this product. |
 
 
 ### **References**
@@ -699,6 +711,10 @@ THEN the retail price (tax excl.) field is calculated automatically according to
 WHEN the Retail price (tax excl.) is edited
 THEN the retail price (tax incl.) field is calculated automatically according to the tax rule selected.
 
+WHEN the tax are disabled 
+THEN the Retail price (tax incl.) equals the Retail price (tax excl.)
+
+
 * **Tax rule** - Dropdown list - Displays all tax rules enabled and a “no tax” option. 
 
 WHEN the user changes the tax rules 
@@ -709,11 +725,14 @@ THEN the ID of the tax rule is displayed before its name.
 
 * **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
 
-IF the tax rule doesn't include a tax of the shop's country
+IF the tax rule has a tax for the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
 THEN it displays the tax of the first state configured.
+
+IF the tax is disabled in Back-Office 
+THEN it displays "Tax feature is disabled, it will not affect price tax included." (final wording to define)
 
 * **Manage tax rule** - Link - Open in a new browser tab International > Taxes  
   
