@@ -35,32 +35,24 @@ After selecting the product type, the product page is opened
 ### Product header <a name="product-header"></a>
 
 The product header displays the product:
-- Name - Text Input - Language-Selector 
-- Cover image - Image
-- Price Tax Excluded 
-- Price Tax Included 
-- Tax - Label
+- **Name** - Text Input - Language-Selector 
+- **Cover image** - Image
+- **Price Tax Excluded **
+- **Price Tax Included **
+- **Tax** - Label
 
-IF the tax rule has a tax for the shop's country
+IF the tax rule has not a tax for the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
 THEN it displays the tax of the first state configured.
 
-IF the tax is disabled in Back-Office 
+IF the tax is disabled in BO > International > Taxes page
 THEN the label is not displayed.
 
-- Quantity - Lable 
-For product with combination, it displays the total of quantity from all the combination
-- Product type and product type’s icon - Button
-- References - List of labels 
+- **Quantity** - Label 
+For product with combination, it displays the total of quantity from all the combination.
 
-And 3 buttons:
-- Open another product, the button displays a list of product
-- View statistics redirected to the stats page 
-- Help button
-
-- **Quantity**
 The quantity background colors change depending on the quantity.
 If the quantity is strictly superior to the low stock level
 Then the color background is green
@@ -70,6 +62,14 @@ Then the color background is orange
 
 If the quantity is inferior or equal to 0
 Then the color background is red
+
+- Product type and product type’s icon - Button
+- References - List of labels 
+
+And 3 buttons:
+- Open another product, the button displays a list of product
+- View statistics redirected to the stats page 
+- Help button
 
 ### Change of product type
 
@@ -725,13 +725,13 @@ THEN the ID of the tax rule is displayed before its name.
 
 * **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
 
-IF the tax rule has a tax for the shop's country
+IF the tax rule has not a tax for the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
 THEN it displays the tax of the first state configured.
 
-IF the tax is disabled in Back-Office 
+IF the tax is disabled in BO > International > Taxes page
 THEN it displays "Tax feature is disabled, it will not affect price tax included." (final wording to define)
 
 * **Manage tax rule** - Link - Open in a new browser tab International > Taxes  
