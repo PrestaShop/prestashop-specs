@@ -27,6 +27,8 @@ As a merchant, I want to associate a stock edition with a movement type to track
 | Employee edition | When the merchant edits the physical stock, without any link to a customer order | The physical stock is increased or decreased |
 | Customer Order | When an order has been flagged as shipped | The physical stock is decreased from the reserved quantity |
 
+The stock movement is not applied for virtual product.
+
 An example of the stocks life cycle for one product:
 
 | Action | Order | Operation | Order State | Physical stock | Reserved Stock | Available Stock | Stock movement |
