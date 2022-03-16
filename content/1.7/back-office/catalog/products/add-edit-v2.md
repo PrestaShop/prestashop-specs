@@ -1109,6 +1109,10 @@ When the products shared the stocks with another store then it is displayed in a
 
 ##   Stock management is Disabled
 
-When Stock management is Disabled Then the fields **Edit quantity**, **Recent stock movements**, **Pack quantities** and **Behavior out of stocks** are hiden.
+When Stock management is Disabled Then the fields listed bellow are not displayed:
+- **Edit quantity**
+- **Recent stock movements**
+- **Pack quantities**
+- **Behavior out of stocks**.
 
 **Behavior out of stocks** is replaced by the label "Stock management is disabled"
