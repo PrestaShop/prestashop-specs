@@ -1113,6 +1113,7 @@ When Stock management is Disabled Then the fields listed bellow are not displaye
 - **Edit quantity**
 - **Recent stock movements**
 - **Pack quantities**
-- **Behavior out of stocks**.
+- **Behavior out of stocks**
+- **Quantity** in the header.
 
 **Behavior out of stocks** is replaced by the label "Stock management is disabled"
