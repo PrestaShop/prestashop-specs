@@ -1,5 +1,5 @@
 ---
-title: Listing
+title: Listing sessions (Employees)
 weight: 1
 ---
 # SPECS LISTING EMPLOYEE SESSIONS
