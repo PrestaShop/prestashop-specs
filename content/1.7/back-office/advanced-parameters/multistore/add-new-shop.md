@@ -3,6 +3,16 @@ title: Add a new shop
 weight: 1
 ---
 
+## Multistore tree
+
+In this section firstly 2 buttons are presented:
+
+ - Collapse all, when pressed, shows all the directories for the stores.
+ - Expand all, when pressed, hides all the directories for the stores.
+
+By default the folder in which the stores are kept is shown, it can be pressed, and a redirection to the folder will happen.
+Below the stores that are kept within the folder can also be pressed, when any of the are pressed, the options are set to be made on the shop which was last pressed.
+
 ## Shop
 
 In this section 6 fields are presented:
