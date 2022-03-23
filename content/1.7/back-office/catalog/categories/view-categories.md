@@ -9,7 +9,7 @@ In this page the categories of the shop are shown.
 
 ### Call to action
 
- - Add new category, when pressed redirects to the [specs of the add new edit category]({{<ref "add-new-edit-category.md">}} "Add new edit category") 
+ - Add new category, when pressed redirects to the [specs of the add new edit category]({{<ref "add-edit-category.md">}} "Add edit category") 
 
 Below there is a table with the following metrics:
 
@@ -20,7 +20,7 @@ Below there is a table with the following metrics:
 
 And a "refresh" button, when pressed refreshes the metrics.
 
-Below Home category location is shown, and there is an: "Edit" button, when pressed redirects to the [specs of the add new edit category]({{<ref "add-new-edit-category.md">}} "Add new edit category") 
+Below Home category location is shown, and there is an: "Edit" button, when pressed redirects to the [specs of the add new edit category]({{<ref "add-edit-category.md">}} "Add edit category") 
 
 ### Settings wheel
 
