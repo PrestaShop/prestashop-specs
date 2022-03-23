@@ -1,5 +1,5 @@
 ---
-title: Categories view
+title: View categories
 weight: 1
 ---
 
