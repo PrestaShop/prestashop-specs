@@ -151,5 +151,5 @@ Customer - All people who have created an account on this site.
 
 ### Call to action
 
- - Cancel, redirects back to [specs of the categories]({{<ref "view-categories.md">}} "view categories")
- - Save, when pressed shows the following message: "Successful creation.", redirects back to [specs of the categories]({{<ref "view-categories.md">}} "categories").
+ - Cancel, redirects back to [specs of the view categories]({{<ref "view-categories.md">}} "view categories")
+ - Save, when pressed shows the following message: "Successful creation.", redirects back to [specs of the view categories]({{<ref "view-categories.md">}} "categories").
