@@ -9,7 +9,7 @@ In this page the categories of the shop are shown.
 
 ### Call to action
 
- - Add new category, when pressed redirects to the [specs of the add new edit categories]({{<ref "add-new-edit-categories.md">}} "Add new edit categories") 
+ - Add new category, when pressed redirects to the [specs of the add new edit category]({{<ref "add-new-edit-category.md">}} "Add new edit category") 
 
 Below there is a table with the following metrics:
 
