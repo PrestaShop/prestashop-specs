@@ -86,7 +86,7 @@ Drop-down menu, can be searched by "Yes" or "No". The toggle switch in every cat
 
 **View.** This is the main action and it can be performed by clicking on the line. 
 
-👉 See the [specs of the view categories]({{<ref "view-categories.md">}} "View categories") 
+Shows the same view categories page when clicked.
 
 **Edit.** The category can be edited as often as necessary.
 
