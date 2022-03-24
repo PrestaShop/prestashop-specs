@@ -93,7 +93,7 @@ Pressing the button opens closes the current modal to open the confirmation moda
 
 | Changing the Product type to | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
-| Product with combination | Deletes the combination and reset the stock to 0. | This will reset the stock of this product. |
+| Product with combination | Reset the stock to 0. | This will reset the stock of this product. |
 
 
 ### **References**
