@@ -111,7 +111,7 @@ Drop-down list of all the countries which can be selected and searched.
 
 **Edit.** The brand can be edited as often as necessary.
 
-👉 See the [add/edit address]({{<ref "add-edit-address.md">}} "Add/edit address")
+👉 See the [add/edit address]({{<ref "add-edit-brand-address.md">}} "Add/edit brand address")
 
 **Delete.** The address can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
