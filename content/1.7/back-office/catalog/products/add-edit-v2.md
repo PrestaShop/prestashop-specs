@@ -907,11 +907,14 @@ The user can't delete the catalog price rule.
 2 options:
 * Default (Displays the configuration settings from the Product Setting page)
 * Specific to this product
+	- 4 dropdowns
+
+By default, the Default option is selected. 
+If the Default option is selected then the 4 dropdowns are disabled 
 
 When Specific to this product is selected
-THEN the user can select the order of the condition and displays 4 dropdowns with the 4 options: Shop, Currency, Country, Group. 
+THEN the user can select the order of the condition and  4 dropdowns are enabled with the 4 options: Shop, Currency, Country, Group pre-selected.
 
-By default, “Group” is selected for the first dropdown, “Currency” for the second, “Country” for the third, and “Shop” for the last.
 
 ## SEO tab
 
