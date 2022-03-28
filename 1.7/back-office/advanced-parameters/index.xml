@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Listing</title>
+      <title>Listing sessions (Customers)</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
