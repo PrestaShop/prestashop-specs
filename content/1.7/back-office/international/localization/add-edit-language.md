@@ -25,14 +25,26 @@ Mandatory date format field. Has a help text below: "Short date format (e.g., Y-
 
 5) Date format (full)
 
-
+Mandatory date format (full) field, by default has entered in the field: "Y-m-d". Below has a helpt text: "Full date format (e.g., Y-m-d H:i:s).". When trying to save without entering this field: "Please fill out this field".
 
 6) Flag
 
+This is a mandatory field for uploading a flag image, has a button on the right "Browse", when pressed, opens a window for uploading a flag image. Has a help text below: "Upload the country flag from your computer.". When trying to save without uploading a file, it will show a text by the field saying: "Please select a file.".
+
 7) "No-picture" image 
+
+This is a mandatory field for uploading a flag image, has a button on the right "Browse", when pressed, opens a window for uploading a flag image. Has a help text below: "Image is displayed when no picture is found.". When trying to save without uploading a file, it will show a text by the field saying: "Please select a file.".
 
 8) Is RTL language 
 
+This is a toggle switch, by default it is set to "No". Has a help text below: "Enable if this language is read from right to left.(Experimental: your theme must be compliant with RTL languages).".
+
 9) Status
 
+This is a toggle switch, by default it is set to "Yes". Has a help text below: "Activate this language.".
+
 10) Shop association
+
+The shop association block is displayed when the multistore is enabled and if several shops are configured.
+
+👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
