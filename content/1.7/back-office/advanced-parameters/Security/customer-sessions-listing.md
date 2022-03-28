@@ -1,5 +1,5 @@
 ---
-title: Listing
+title: Listing sessions (Customers)
 weight: 1
 ---
 # SPECS LISTING customer SESSIONS
