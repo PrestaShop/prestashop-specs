@@ -37,8 +37,8 @@ After selecting the product type, the product page is opened
 The product header displays the product:
 - **Name** - Text Input - Language-Selector 
 - **Cover image** - Image
-- **Price Tax Excluded **
-- **Price Tax Included **
+- **Price Tax Excluded**
+- **Price Tax Included**
 - **Tax** - Label
 
 IF the tax rule has not a tax for the shop's country
