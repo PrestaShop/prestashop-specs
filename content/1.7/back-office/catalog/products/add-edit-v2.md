@@ -87,13 +87,13 @@ Pressing the button opens closes the current modal to open the confirmation moda
 | Changing the Product type from | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
 | Standard product | No impact, the data is common between the standard product and the others products. |  |
-| Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>This will reset the stock of this product. |
+| Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
 | Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
 | Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
 | Changing the Product type to | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
-| Product with combination | Reset the stock to 0. | This will reset the stock of this product. |
+| Product with combination | Reset the stock to 0. | IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
 
 
 ### **References**
