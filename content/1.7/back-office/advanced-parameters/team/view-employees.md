@@ -9,7 +9,7 @@ weight: 1
 
 1 call to action button is present at the top of the page:
 
- - Add new employee, when pressed redirects to the [specs of the add/edit new employee]({{<ref "../team/add-edit.md">}} "Add/edit new employee") 
+ - Add new employee, when pressed redirects to the [specs of the add/edit new employee]({{<ref "../team/add-edit-employee.md">}} "Add/edit new employee") 
 
 In this page 2 sections are present 
 
@@ -82,7 +82,7 @@ This is a drop-down field, can be sorted by asc or desc, when pressed the follow
 
 **Edit.** The user can edit edit the employee as often as necessary.
 
-👉 See the [specs of the add/edit new employee]({{<ref "../team/add-edit.md">}} "Add/edit new employee") 
+👉 See the [specs of the add/edit new employee]({{<ref "../team/add-edit-employee.md">}} "Add/edit new employee") 
 
 **Delete.** An employee can be deleted by clicking this button. After clicking on Delete, a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
