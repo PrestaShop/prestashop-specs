@@ -231,6 +231,8 @@ fr-FR
 
 Translations are sourced in the same way as specified in "Installed module translations".
 
+**Note:** Only the wordings used by the module are to be included in the exported file.
+
 The exported package should include all XLF files stored under a language directory, like so:
 
 ```
