@@ -231,15 +231,12 @@ fr-FR
 
 Translations are sourced in the same way as specified in "Installed module translations".
 
-**Note:** this export may include core translation domains if they are used by the module's files. However, only the wordings used by the module are to be included in the exported file.
-
 The exported package should include all XLF files stored under a language directory, like so:
 
 ```
 fr-FR
-├── ModulesymoduleAdmin.fr-FR.xlf
-├── ModuleMymoduleShop.fr-FR.xlf
-├── ShopNotificationsError.fr-FR.xlf
+├── ModulesMymoduleAdmin.fr-FR.xlf
+├── ModulesMymoduleShop.fr-FR.xlf
 └── ...
 ```
 
