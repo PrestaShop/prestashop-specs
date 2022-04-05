@@ -7,3 +7,14 @@ weight: 1
 ![Add or Edit Meta Tags](static/img/SEO_and_URLs_configure.png)
 
 This UI represents the function of editing or adding a new SEO & URL page, which is dedicated to Meta Tags section.
+
+## Top UI section
+
+- **Multishop switcher** - it is an ability to switch the available multistores while being on the current SEO page editing page, and to view the shop Front-Office homepage by redirection.
+- **Breadcrumbs, page title, Recommended modules and Help CTA's** - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation.
+- **Tabs** - there are 3 tabs in the Traffic & SEO section:
+  - **SEO & URLs** - the current opened tab.
+  - **Search Engines** 
+  - **Referrers**
+
+
