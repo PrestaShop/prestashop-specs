@@ -2,7 +2,7 @@
 title: Add new SEO page
 weight: 1
 ---
-# **CONFIGURE > SHOP PARAMETERS > TRAFFIC & SEO > ADD / EDIT a new page
+# CONFIGURE > SHOP PARAMETERS > TRAFFIC & SEO > ADD / EDIT a new page
 
 ![Add / Edit new SEO page](static/img/SEO_and_URLs_configure.png)
 
@@ -30,3 +30,7 @@ There is an explanation placeholder _Name of the related page._ right below the 
 - **Rewritten URL** - required field - by default this field is empty. The URL can be changed with a new URL for a specific Page name, so that the URL will be shown as rewritten in the URL path. The text can be stored in different languages, according to ones that are installed in the webshop. The language can be selected using the **language dropdown**, where all the available languages are listed. This input field has no character limit. There is a small description _For instance, "contacts" for http://example.com/shop/contacts to redirect to http://example.com/shop/contact-form.php Only letters and hyphens are allowed._ right down the input field, indicating, what this field is used for and what characters should be used. Once, there is a mistake or invalid character typed in the URL, after the form submission, the user will be notified by the error below the _Rewrite URL_ field - _"{invalid text}" is invalid. - {showing the language, where the error is coming from}_ 
 - **Save CTA button** - saves the configuration, that was created. After the page refreshes, there is a success notification _Successful creation._ in top of UI.
 - **Cancel ghost CTA button** - quits the configuration page and redirects it to the main SEO and URLs configuration page.
+
+## Multishop funcionality
+
+The SEO URL edition can be done in All Shops context, but if there is a need to **Edit** the existing SEO URL, it can be Edited by switching the content to single shop context.
