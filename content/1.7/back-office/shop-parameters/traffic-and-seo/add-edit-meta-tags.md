@@ -17,4 +17,9 @@ This UI represents the function of editing or adding a new SEO & URL page, which
   - **Search Engines** 
   - **Referrers**
 
+## Table UI section
 
+- **Meta tags** - table title.
+- Page name - required field - there is a dropdown selection, of available page names, that can be selected for SEO edition. Once the dropdown is clicked, a box is dropped-down with the list of page names, and the text input field, for searching the desired page name. If there are few letters typed, search will show the appropriate results according to the input. The search result strings are generated from 2 segments divided with the dash "-":
+  - **Module name**
+  - **Page name**
