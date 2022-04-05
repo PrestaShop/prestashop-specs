@@ -22,6 +22,6 @@ This UI represents the function of editing or adding a new SEO & URL page, which
 - **Meta tags** - table title.
 - **Page name** - required field - there is a dropdown selection, of available page names, that can be selected for SEO edition. Once the dropdown is clicked, a box is dropped-down with the list of page names, and the text input field, for searching the desired page name. If there are few letters typed, search will show the appropriate results according to the input. The search result strings are generated from 2 segments divided with the dash "-":
   - **Module name**
-  - **Page name**
+  - **Page name string**
 There is an explanation placeholder _Name of the related page._ right below the input field. By default, the first page name _pdf-invoice_ is automatically selected in this field.
-- **Page title** - by default this field is empty. A new page Title can be stored in this text field. The text can be stored in different languages, according to ones that are installed in the webshop. The language can be selected using the **language dropdown**, where all the available languages are listed.
+- **Page title** - by default this field is empty. A new page Title can be stored in this text field. The text can be stored in different languages, according to ones that are installed in the webshop. The language can be selected using the **language dropdown**, where all the available languages are listed. This input field has no character limit.
