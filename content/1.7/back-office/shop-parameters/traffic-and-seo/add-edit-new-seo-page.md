@@ -1,12 +1,12 @@
 ---
-title: Add / Edit Meta Tags Page
+title: Add new SEO page
 weight: 1
 ---
-# **CONFIGURE > SHOP PARAMETERS > TRAFFIC & SEO > ADD / EDIT META TAGS**
+# **CONFIGURE > SHOP PARAMETERS > TRAFFIC & SEO > ADD / EDIT a new page
 
-![Add or Edit Meta Tags](static/img/SEO_and_URLs_configure.png)
+![Add / Edit new SEO page](static/img/SEO_and_URLs_configure.png)
 
-This UI represents the function of editing or adding a new SEO & URL page, which is dedicated to Meta Tags section.
+This UI represents the function of adding / editing a SEO & URL page, which is dedicated to Meta Tags section.
 
 ## Top UI section
 
