@@ -30,8 +30,7 @@ After clicking on it, the SQL query is displayed in a modal. The SQL query takes
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
 # Bulk actions
-
-Clicking on the _Bulk actions_ button allows performing bulk actions for the selected zones (using the checkboxes). A user can:
+The _Bulk actions_ button is active only if at least one row of the contact list is selected.Clicking on the _Bulk actions_ button allows performing bulk actions for the selected zones (using the checkboxes). A user can:
 
 Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Enable/Disable selection: these buttons will enable/disable all the zones that are selected.
