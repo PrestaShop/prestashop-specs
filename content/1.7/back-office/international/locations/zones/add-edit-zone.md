@@ -7,9 +7,9 @@ weight: 1
 
 The following fields/toggles are displayed:
 
- - **Name**: this field is mandatory. When trying to save and if the field is empty, the following error message appears: "Please fillout this field". A tooltip is displayed: "Zone name (e.g. Africa, West Coast, Neighboring Countries).".
+ - **Name**: this field is mandatory. When trying to save and if the field is empty, the following error message appears: "Please fillout this field". If more than 64 chars are filled the following error message appears "This field cannot be longer than 64 characters.". When trying to save and if the field is invalid, the following error message is displayed " "the entered name" is invalid." A help text is displayed: "Zone name (e.g. Africa, West Coast, Neighboring Countries)." 
  
-- **Active** This toggle can be enabled or disabled. By default, it is enabled. A tooltip is displayed: "Allow or disallow shipping to this zone."
+- **Active** This toggle can be enabled or disabled. By default, it is enabled. A help text is displayed: "Allow or disallow shipping to this zone."
 
 ## Call to action
 
