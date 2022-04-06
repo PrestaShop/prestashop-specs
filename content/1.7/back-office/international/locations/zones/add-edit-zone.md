@@ -14,7 +14,7 @@ The following fields/toggles are displayed:
 ## Call to action
 
 - **Save:**
-In the case of adding a new zone and if there is no error, the zone is added and a success message is displayed on [zones listing]({{<ref "zones-listing.md">}} "zone listing") : "Creation successful". In the case of editing a zone, the zone is edited and a success message is displayed on [zones listing]({{<ref "zones-listing.md">}} "zone listing") : "Successful update".
+In the case of adding a new zone and if there is no error, the zone is added and a success message is displayed on [zones listing]({{<ref "zones-listing.md">}} "zone listing") : "Creation successful". In the case of editing a zone, the zone is edited and a success message is displayed on [zones listing]({{<ref "zones-listing.md">}} "zones listing") : "Successful update".
 - **Cancel:**
 The zone is not added/edited and [zones listing]({{<ref "zones-listing.md">}} "zones listing") is displayed.
 
