@@ -21,4 +21,16 @@ This UI displays the webshop Databse backuping functionality features.
 
 First blue-boxed **notification**, that informs about All Shops context - _Note that this feature is available in all shops context only. It will be added to all your stores._, meaning, that the Database backups will be taken from all the shops at the same time, not related to single webshop. 
 
-**Disclaimer** - effective reminding plan for webshop administrator, before creating a Database backup.
+**Disclaimer** - effective reminding plan for webshop administrator, before creating a Database backup. The disclaimer is printed out in yellow box notification, with warning symbol - exclamation mark in yellow triangle. The text is:
+
+__Disclaimer before creating a new backup__
+
+    1. PrestaShop is not responsible for your database, its backups and/or recovery.
+    2. PrestaShop is open-source software. You are using it at your own risk under the license agreement.
+    3. You should back up your data on a regular basis (both files and database).
+    4. This function only backs up your database, not your files.
+    5. By default, your existing database tables will be dropped during the backup recovery (see "Backup options" below).
+    6. Always verify the quality and integrity of your backup files!
+    7. Always verify that your backup files are complete, up-to-date and valid, even if you had a success message appear during the backup process.
+    8. Always check your data.
+    9. Never restore a backup on a live site.
