@@ -1,10 +1,10 @@
 ---
-title: Add new SEO page
+title: Configure SEO and URLs
 weight: 1
 ---
 # CONFIGURE > SHOP PARAMETERS > TRAFFIC & SEO 
 
-![SEO and URLs page](static/img/seo-and-urls.png)
+![SEO and URLs page in single Shop context](static/img/seo-and-urls.png)
 
 This UI represents the configuration of SEO and URLs of the webshop.
 
@@ -19,5 +19,10 @@ This UI represents the configuration of SEO and URLs of the webshop.
 
 ## SEO & URLs section
 
-If the page is on All shops context, there will be a blue-boxed information message _You can only display the page list in a shop context._ (as mentioned in [Add or Edit SEO URL specification page](/content/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.md)) meaning, that the SEL URL listing will be shown in each shop context separately.
+If the page is on All shops context, there will be a blue-boxed information message _You can only display the page list in a shop context._ (as mentioned in [Add or Edit SEO URL specification page](/content/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.md)) meaning, that the SEO URL listing will be shown in each shop context separately.
 
+- **SEO & URLs title and total number of URLs in brackets** - helpful indicator of the section title and the total number of URLs listed.
+- **Gear icon** - clicking the icon initiates the:
+  - **Refresh** - reloads the whole page.
+  - **Show SQL query**
+  - **Export to SQL manager**
