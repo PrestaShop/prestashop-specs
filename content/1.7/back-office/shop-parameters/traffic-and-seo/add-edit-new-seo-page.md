@@ -20,7 +20,7 @@ This UI represents the function of adding / editing a SEO & URL page, which is d
 ## Table UI section
 
 - **Meta tags** - table title.
-- **Page name** - required field - there is a dropdown selection, of available page names, that can be selected for SEO edition. Once the dropdown is clicked, a box is dropped-down with the list of page names, and the text input field, for searching the desired page name. If there are few letters typed, search will show the appropriate results according to the input. The search result strings are generated from 2 segments divided with the dash "-" character:
+- **Page name** - required field - there is a dropdown selection, of available page names, that can be selected for SEO edition. Once the dropdown is clicked, a box is dropped-down with the list of page names, and the text input field, for searching the desired page name. If there are few letters typed, the search will show the appropriate results according to the input. The search result strings are generated from 2 segments divided with the dash "-" character:
   - **Module name**
   - **Page name string**
 There is an explanation placeholder _Name of the related page._ right below the input field. By default, the first page name _pdf-invoice_ is automatically selected in this field.
@@ -33,4 +33,4 @@ There is an explanation placeholder _Name of the related page._ right below the 
 
 ## Multishop funcionality
 
-There is a blue information message in the Top UI of the page, containting message _You can only display the page list in a shop context._, meaning, that the SEO URL edition can be done in All Shops context, but if there is a need to **Edit** the existing SEO URL, it can be Edited by switching the content to single shop context. 
+There is a blue information message in the Top UI of the page, containing message _You can only display the page list in a shop context._, meaning, that the SEO URL edition can be done in All Shops context, but if there is a need to **Edit** the existing SEO URL, it can be Edited by switching the content to single shop context. 
