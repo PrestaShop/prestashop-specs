@@ -33,4 +33,4 @@ There is an explanation placeholder _Name of the related page._ right below the 
 
 ## Multishop funcionality
 
-The SEO URL edition can be done in All Shops context, but if there is a need to **Edit** the existing SEO URL, it can be Edited by switching the content to single shop context.
+There is a blue information message in the Top UI of the page, containting message _You can only display the page list in a shop context._, meaning, that the SEO URL edition can be done in All Shops context, but if there is a need to **Edit** the existing SEO URL, it can be Edited by switching the content to single shop context. 
