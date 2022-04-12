@@ -23,7 +23,8 @@ First blue-boxed **notification**, that informs about All Shops context - _Note 
 
 **Disclaimer** - effective reminding plan for webshop administrator, before creating a Database backup. The disclaimer is printed out in yellow box notification, with warning symbol - exclamation mark in yellow triangle. The text is:
 
-__Disclaimer before creating a new backup__
+```
+Disclaimer before creating a new backup
 
     1. PrestaShop is not responsible for your database, its backups and/or recovery.
     2. PrestaShop is open-source software. You are using it at your own risk under the license agreement.
@@ -34,3 +35,4 @@ __Disclaimer before creating a new backup__
     7. Always verify that your backup files are complete, up-to-date and valid, even if you had a success message appear during the backup process.
     8. Always check your data.
     9. Never restore a backup on a live site.
+```
