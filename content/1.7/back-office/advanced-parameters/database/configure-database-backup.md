@@ -47,5 +47,35 @@ Disclaimer before creating a new backup
 - **Never restore a backup on a live site.** - means, that the owner of the shop should not restore database backup right on the live production website, because if there is a failure in backuping process, huge amount of site visitors can be lost.
 
 - **CTA button "I have read the disclaimer. Please create a new backup." with a Save material icon** - once clicked, the Prestashop initiates the database file creation in background, until there is a green successful notification message with green checkmark icon, and text called _It appears the backup was successful, however you must download and carefully verify the backup file before proceeding_, meaning that the creation succeeded. Right after the notification, a material-style cloud icon and the title _Download_ section appears. The section contains:
-  - **CTA Download the backup file ({size of file} MB)** - initiates the .bz2 file download process.
-  - Tip: You can also download this file from your FTP server. Backup files are located in the "/adminXXXX/backups" directory.
+  - **CTA Download the backup file ({size of file} MB)** - initiates the .bz2 archive file download process.
+  - _Tip: You can also download this file from your FTP server. Backup files are located in the "/adminXXXX/backups" directory._
+
+Easy steps plan in blue notification block with information material icon, contains an understandable self-explanatory steps to process for webshop owner:
+
+```
+How to restore a database backup in 10 easy steps
+
+1. Set "Enable Shop" to "No" in the "Maintenance" page under the "Preferences" menu.
+2. Download the backup from the list below or from your FTP server (in the folder "admin/backups").
+3. Check the backup integrity: Look for errors, incomplete file, etc... Be sure to verify all of your data.
+4. Please ask your hosting provider for "phpMyAdmin" access to your database.
+5. Connect to "phpMyAdmin" and select your current database.
+6. Unless you enabled the "Drop existing tables" option, you must delete all tables from your current database.
+7. At the top of the screen, please select the "Import" tab
+8. Click on the "Browse" button and select the backup file from your hard drive.
+9. Check the maximum filesize allowed (e.g. Max: 16MB)
+10.If your backup file exceeds this limit, contact your hosting provider for assistance.
+11.Click on the "Go" button and please wait patiently for the import process to conclude. This may take several minutes. 
+```
+
+## DB Backup section
+
+- **Title and the total backups in brackets**
+- **Bulk actions dropdown** - it is disabled by default, once there is a Database backup element selected, Bulk actions become enabled. The only action is **Delete** action.
+- **Checkboxes** - enables ability to select desired backups.
+- **Date** - actual timestamp, when the database file is created - the format is MM/DD/YYYY HH:MM:SS.
+- **Age** - counts the time that passed from the database file creation.
+- **Filename** - exact database archive file name stored.
+- **Filesize** - exact database archive file size displayed.
+- **Material cloud-style download icon** - once clicked, it initiates the archive download.
+- **Three-dot menu** - once clicked, the dropdown will be shown with the only option - **Delete** the database file.
