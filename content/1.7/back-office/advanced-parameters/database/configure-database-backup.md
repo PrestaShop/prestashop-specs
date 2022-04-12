@@ -79,3 +79,9 @@ How to restore a database backup in 10 easy steps
 - **Filesize** - exact database archive file size displayed.
 - **Material cloud-style download icon** - once clicked, it initiates the archive download.
 - **Three-dot menu** - once clicked, the dropdown will be shown with the only option - **Delete** the database file.
+
+## Backup options
+
+Section contains 2 toggle buttons:
+
+- **Ignore statistics tables** - required option, by default, the toggle button is disabled - drops the following tables during the backup of the database - _ps_connections, ps_connections_page ps_connections_source, ps_guest, ps_statssearch_.
