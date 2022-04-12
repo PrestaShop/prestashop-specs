@@ -37,4 +37,5 @@ Disclaimer before creating a new backup
     9. Never restore a backup on a live site.
 ```
 - **PrestaShop is not responsible for your database, its backups and/or recovery.** - meaning, that all the database entries are unique, when there are design or code development modifications in Prestashop application, the shop administrator should take the responsibility about the data saving for himself.
-- **PrestaShop is open-source software. You are using it at your own risk under the license agreement.** - meaning, that Prestashop can be modified by the custom development, and many developers or other software development roles can contribute to the Prestashop software. More information can be accessed in the Prestashop's ![FAQ page](https://www.prestashop.com/en/faq).
+- **PrestaShop is open-source software. You are using it at your own risk under the license agreement.** - meaning, that Prestashop can be modified by the custom development, and many developers or other software development roles can contribute to the Prestashop software. More information about the licence can be accessed in the Prestashop's ![FAQ page](https://www.prestashop.com/en/faq).
+- **You should back up your data on a regular basis (both files and database)** - meaning, that the webshop database copy should be saved to the cloud or server space regulary. 
