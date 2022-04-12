@@ -45,3 +45,6 @@ Disclaimer before creating a new backup
 - **Always verify that your backup files are complete, up-to-date and valid, even if you had a success message appear during the backup process.** - means, that before the files backup process, files needs to be reviewed by a member of technical team, in order to check if the files are not corrupted.
 - **Always check your data.** - means, that the information of the database should be double checked.
 - **Never restore a backup on a live site.** - means, that the owner of the shop should not restore database backup right on the live production website, because if there is a failure in backuping process, huge amount of site visitors can be lost.
+
+- **CTA button "I have read the disclaimer. Please create a new backup." with a Save material icon** - once clicked, the Prestashop initiates the database file creation in background, until there is a green successful notification message with green checkmark icon, and text called _It appears the backup was successful, however you must download and carefully verify the backup file before proceeding_, meaning that the creation succeeded. Right after the notification, a material-style cloud icon and the title _Download_ section appears. The section contains:
+  - **CTA Download the backup file ({size of file} MB)** - initiates the .bz2 file download process.
