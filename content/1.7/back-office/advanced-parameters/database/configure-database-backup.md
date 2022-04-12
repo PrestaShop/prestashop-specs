@@ -48,3 +48,4 @@ Disclaimer before creating a new backup
 
 - **CTA button "I have read the disclaimer. Please create a new backup." with a Save material icon** - once clicked, the Prestashop initiates the database file creation in background, until there is a green successful notification message with green checkmark icon, and text called _It appears the backup was successful, however you must download and carefully verify the backup file before proceeding_, meaning that the creation succeeded. Right after the notification, a material-style cloud icon and the title _Download_ section appears. The section contains:
   - **CTA Download the backup file ({size of file} MB)** - initiates the .bz2 file download process.
+  - Tip: You can also download this file from your FTP server. Backup files are located in the "/adminXXXX/backups" directory.
