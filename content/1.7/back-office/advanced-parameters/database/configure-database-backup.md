@@ -84,4 +84,6 @@ How to restore a database backup in 10 easy steps
 
 Section contains 2 toggle buttons:
 
-- **Ignore statistics tables** - required option, by default, the toggle button is disabled - drops the following tables during the backup of the database - _ps_connections, ps_connections_page ps_connections_source, ps_guest, ps_statssearch_.
+- **Ignore statistics tables** - required option, by default, the toggle button is disabled. If button is enabled - drops the following tables during the backup of the database - _ps_connections, ps_connections_page ps_connections_source, ps_guest, ps_statssearch_. The description text is - _Drop existing tables during import.
+ps_connections, ps_connections_page ps_connections_source, ps_guest, ps_statssearch_.
+- **Drop existing tables during import** - required option, by default, the toggle button is enabled, the database backup process will drop all the database tables, and then initiate the new backuped restoration. The description text is - _If enabled, the backup script will drop your tables prior to restoring data. (ie. "DROP TABLE IF EXISTS"_.
