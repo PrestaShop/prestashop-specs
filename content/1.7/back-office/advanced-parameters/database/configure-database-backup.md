@@ -78,7 +78,9 @@ How to restore a database backup in 10 easy steps
 - **Filename** - exact database archive file name stored.
 - **Filesize** - exact database archive file size displayed.
 - **Material cloud-style download icon** - once clicked, it initiates the archive download.
-- **Three-dot menu** - once clicked, the dropdown will be shown with the only option - **Delete** the database file.
+- **Three-dot menu** - once clicked, the dropdown will be shown with the only option - **Delete** the database file. Once the Deletion is clicked, the pop-up will be prompted with the text - _Delete selection Are you sure you want to delete the selected item(s)?_ and 2 common CTA's:
+  - **Cancel ghost button CTA** - for cancelling the action and closing the popup.
+  - **Delete red-colored CTA** - for deleting the backup archive instantly. After deletion is successful, the UI will prompt a green success notification _Successful deletion._
 
 ## Backup options
 
