@@ -21,6 +21,7 @@ Below there is a drop-table with a placeholder "Advanced filters", when pressed,
     - Home
 
 When expanded the following additional checkboxes appear:
+
     - Clothes
     - Men
     - Women
@@ -32,6 +33,7 @@ When expanded the following additional checkboxes appear:
 When any of the checkboxes are pressed, below only the selected filtered categories are shown.
 
  - Filter by status, three filters can be selected:
+ 
     - Enabled (selected by default)
     - Disabled
     - All
