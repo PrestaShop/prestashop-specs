@@ -5,7 +5,7 @@ weight: 1
 
 ## Stock management
 
-### Search
+### Search products
 
 In this page firstly a text is presented: Search products (search by name, reference, supplier) 
 
