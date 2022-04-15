@@ -73,7 +73,7 @@ Overrides made in the shop will be displayed here.
 
 ### List of changed files 
 
-If there will be any changed or missing items there will be a message at the top of the section: "Changed/missing files have been detected."
+If there will be any changed or missing items there will be a message at the top of the section: "Changed/missing files have been detected.".
 
 As well as:
 
