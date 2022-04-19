@@ -948,7 +948,7 @@ When many languages are installed, if I fill the product name only for the defau
 Friendly URLs are currently enabled. To disable it, go to SEO and URLs.          
 SEO and URLs link is opened in a new tab.
 * **Indexation by search engines**: Yes / No. By default, it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, the product URL isn’t indexed. \([improvement 14317](https://github.com/PrestaShop/PrestaShop/issues/14317)\)
-* **Redirection when offline**: Dropdown with 5 options:                
+* **Redirection when offline**: Dropdown with 6 options:
 1\) **Permanent redirection to a category \(301\)**: When my product is offline, I choose a category to redirect to.      
 This is a "definitive" redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.       
 2\) **Temporary redirection to a category \(302\)**: When my product is offline, I can choose a category to which my current product is redirected.             
@@ -958,6 +958,7 @@ The new category will only be displayed when my product is offline, it is not sa
 The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache           
 5\) **No redirection \(404\)**: When my product is offline, if I try to accede to the product in the front office a message is displayed: “This product is no longer available.” and the product isn’t displayed.        
 If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”
+6\) **No redirection \(410\)**: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available yet.” and the product isn’t displayed.
 * **Target category**: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category.        
 There is a placeholder: “To which category the page should redirect ?”           
 If no category is selected, the Main Category is used.         
@@ -966,7 +967,8 @@ You can search by category name. When you start typing, if there are results, th
 There is a placeholder: “To which product the page should redirect ?”              
 You can search by product name or reference. When you start typing, if there are results, they are displayed under and you can click on it. Then, the selected product is displayed under the field.           
 Delete selected category or product: You can remove the selected product or category by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.
-* **Information message**: No redirection \(404\) = Do not redirect anywhere and display a 404 "Not Found" page.     
+* **Information message**: No redirection \(404\) = Do not redirect anywhere and display a 404 "Not Found" page.
+No redirection \(410)\ = Do not redirect anywhere and display a 410 "Gone" page.     
 Permanent redirection \(301\) = Permanently display another product or category instead.     
 Temporary redirection \(302\) = Temporarily display another product or category instead.   
 
