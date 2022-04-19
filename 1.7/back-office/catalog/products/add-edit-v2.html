@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1648456344" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1648456344" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1648456344" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1648456344" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1648456344" rel="stylesheet">
-    <link href="../../../../style.css?1648456344" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1650372913" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1650372913" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1650372913" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1650372913" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1650372913" rel="stylesheet">
+    <link href="../../../../style.css?1650372913" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1648456344"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1650372913"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -8407,38 +8407,39 @@ The module is allowed to add any image or icon at the same size as the icon of t
 <h3 id="product-header-a-nameproduct-headera">Product header <a name="product-header"></a></h3>
 <p>The product header displays the product:</p>
 <ul>
-<li>Name - Text Input - Language-Selector</li>
-<li>Cover image - Image</li>
-<li>Price Tax Excluded</li>
-<li>Price Tax Included</li>
-<li>Tax - Label - see component in the Pricing Tab</li>
-<li>Quantity - Lable
-For product with combination, it displays the total of quantity from all the combination</li>
+<li><strong>Name</strong> - Text Input - Language-Selector</li>
+<li><strong>Cover image</strong> - Image</li>
+<li><strong>Price Tax Excluded</strong></li>
+<li><strong>Price Tax Included</strong></li>
+<li><strong>Tax</strong> - Label</li>
+</ul>
+<p>IF the tax rule has not a tax for the shop&rsquo;s country
+THEN it displays on the Tax label 0% next to the country ISO code.</p>
+<p>IF the shop&rsquo;s country has states configured with different tax per states
+THEN it displays the tax of the first state configured.</p>
+<p>IF the tax is disabled in BO &gt; International &gt; Taxes page
+THEN the label is not displayed.</p>
+<ul>
+<li><strong>Quantity</strong> - Label
+For product with combination, it displays the total of quantity from all the combination.</li>
+</ul>
+<p>The quantity background colors change depending on the quantity.
+If the quantity is strictly superior to the low stock level
+Then the color background is green</p>
+<p>If the quantity is inferior or equal to the low stock level
+Then the color background is orange</p>
+<p>If the quantity is inferior or equal to 0
+Then the color background is red</p>
+<ul>
 <li>Product type and product type’s icon - Button</li>
 <li>References - List of labels</li>
 </ul>
 <p>And 3 buttons:</p>
 <ul>
-<li>
-<p>Open another product, the button displays a list of product</p>
-</li>
-<li>
-<p>View statistics redirected to the stats page</p>
-</li>
-<li>
-<p>Help button</p>
-</li>
-<li>
-<p><strong>Quantity</strong>
-The quantity background colors change depending on the quantity.
-If the quantity is strictly superior to the low stock level
-Then the color background is green</p>
-</li>
+<li>Open another product, the button displays a list of product</li>
+<li>View statistics redirected to the stats page</li>
+<li>Help button</li>
 </ul>
-<p>If the quantity is inferior or equal to the low stock level
-Then the color background is orange</p>
-<p>If the quantity is inferior or equal to 0
-Then the color background is red</p>
 <h3 id="change-of-product-type">Change of product type</h3>
 <p>When clicking on the product type, a modal is displayed to change the product type. The current type and the button “Change product type” are disabled. By default, none of the product types are preselected.</p>
 <p>Once the user selects a product different from the current product type, then the button “Change product type” becomes enabled.
@@ -8447,7 +8448,7 @@ Pressing the button opens closes the current modal to open the confirmation moda
 <li>Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
 <ul>
 <li>
-<p><strong>Change product type</strong> - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.</p>
+<p><strong>Change product type</strong> - Button - Save the new product type and refresh the page. If the user changes the product type, only the common data between the product type will be saved.</p>
 </li>
 <li>
 <p><strong>Cancel</strong> - Close the modal<br>
@@ -8459,7 +8460,7 @@ If the user cancels the confirmation modal, then the modal is closed and the use
 <table>
 <thead>
 <tr>
-<th>Changing the Product type form</th>
+<th>Changing the Product type from</th>
 <th>Impact</th>
 <th>warning-alert in the Confirmation modal</th>
 </tr>
@@ -8473,7 +8474,7 @@ If the user cancels the confirmation modal, then the modal is closed and the use
 <tr>
 <td>Product with combination</td>
 <td>Deletes the combination and reset the stock to 0.</td>
-<td>This will delete all combinations. <br>This will reset the stock of this product.</td>
+<td>This will delete all combinations. <br>IF the Stock Management is enabled THEN &lsquo;This will reset the stock of this product.&rsquo; is displayed</td>
 </tr>
 <tr>
 <td>Pack of products</td>
@@ -8484,6 +8485,22 @@ If the user cancels the confirmation modal, then the modal is closed and the use
 <td>Virtual product</td>
 <td>Deletes the file associated with the virtual product.</td>
 <td>This will delete the associated virtual file.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Changing the Product type to</th>
+<th>Impact</th>
+<th>warning-alert in the Confirmation modal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product with combination</td>
+<td>Reset the stock to 0.</td>
+<td>IF the Stock Management is enabled THEN &lsquo;This will reset the stock of this product.&rsquo; is displayed</td>
 </tr>
 </tbody>
 </table>
@@ -9263,6 +9280,8 @@ The selected carriers are displayed below the dropdown.</p>
 THEN the retail price (tax excl.) field is calculated automatically according to the tax rule chosen.</p>
 <p>WHEN the Retail price (tax excl.) is edited
 THEN the retail price (tax incl.) field is calculated automatically according to the tax rule selected.</p>
+<p>WHEN the tax are disabled
+THEN the Retail price (tax incl.) equals the Retail price (tax excl.)</p>
 <ul>
 <li><strong>Tax rule</strong> - Dropdown list - Displays all tax rules enabled and a “no tax” option.</li>
 </ul>
@@ -9273,10 +9292,12 @@ THEN the ID of the tax rule is displayed before its name.</p>
 <ul>
 <li><strong>Tax</strong> - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop&rsquo;s country and the tax corresponding shop&rsquo;s country and the tax rule selected.</li>
 </ul>
-<p>IF the tax rule doesn&rsquo;t include a tax of the shop&rsquo;s country
+<p>IF the tax rule has not a tax for the shop&rsquo;s country
 THEN it displays on the Tax label 0% next to the country ISO code.</p>
 <p>IF the shop&rsquo;s country has states configured with different tax per states
 THEN it displays the tax of the first state configured.</p>
+<p>IF the tax is disabled in BO &gt; International &gt; Taxes page
+THEN it displays &ldquo;Tax feature is disabled, it will not affect price tax included.&rdquo; (final wording to define)</p>
 <ul>
 <li>
 <p><strong>Manage tax rule</strong> - Link - Open in a new browser tab International &gt; Taxes</p>
@@ -9483,11 +9504,16 @@ THEN a modal opens to cancel or confirm the action.</p>
 2 options:</p>
 <ul>
 <li>Default (Displays the configuration settings from the Product Setting page)</li>
-<li>Specific to this product</li>
+<li>Specific to this product
+<ul>
+<li>4 dropdowns</li>
 </ul>
+</li>
+</ul>
+<p>By default, the Default option is selected.
+If the Default option is selected then the 4 dropdowns are disabled</p>
 <p>When Specific to this product is selected
-THEN the user can select the order of the condition and displays 4 dropdowns with the 4 options: Shop, Currency, Country, Group.</p>
-<p>By default, “Group” is selected for the first dropdown, “Currency” for the second, “Country” for the third, and “Shop” for the last.</p>
+THEN the user can select the order of the condition and  4 dropdowns are enabled with the 4 options: Shop, Currency, Country, Group pre-selected.</p>
 <h2 id="seo-tab">SEO tab</h2>
 <p><strong>As a merchant I want to be able to manage my SEO information for my products.</strong></p>
 <p>Here is the list of the elements of the SEO tab:</p>
@@ -9762,9 +9788,9 @@ The rows are checkboxes</p>
 <footer class="article-footer">
 	
 <div>
-  Last updated on March 16, 2022
+  Last updated on March 29, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/cc2860a96a5dae22d0f22289f6f3046249e8a855">"Update add-edit-v2.md" (cc2860a9)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/562b47b97653475041c59da9d11b2df965211606">"Update add-edit-v2.md" (562b47b9)</a>
   
 </div>
 
@@ -9785,17 +9811,17 @@ The rows are checkboxes</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1648456344"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1648456344"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1648456344"></script>
-    <script src="../../../../js/jquery.sticky.js?1648456344"></script>
-    <script src="../../../../js/featherlight.min.js?1648456344"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1648456344"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1648456344"></script>
-    <script src="../../../../js/learn.js?1648456344"></script>
-    <script src="../../../../js/hugo-learn.js?1648456344"></script>
+    <script src="../../../../js/clipboard.min.js?1650372913"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1650372913"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1650372913"></script>
+    <script src="../../../../js/jquery.sticky.js?1650372913"></script>
+    <script src="../../../../js/featherlight.min.js?1650372913"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1650372913"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1650372913"></script>
+    <script src="../../../../js/learn.js?1650372913"></script>
+    <script src="../../../../js/hugo-learn.js?1650372913"></script>
     
-    <script src="../../../../main.js?1648456344"></script>
+    <script src="../../../../main.js?1650372913"></script>
     
     
 
