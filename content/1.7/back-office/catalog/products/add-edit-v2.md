@@ -35,22 +35,24 @@ After selecting the product type, the product page is opened
 ### Product header <a name="product-header"></a>
 
 The product header displays the product:
-- Name - Text Input - Language-Selector 
-- Cover image - Image
-- Price Tax Excluded 
-- Price Tax Included 
-- Tax - Label - see component in the Pricing Tab
-- Quantity - Lable 
-For product with combination, it displays the total of quantity from all the combination
-- Product type and product type’s icon - Button
-- References - List of labels 
+- **Name** - Text Input - Language-Selector 
+- **Cover image** - Image
+- **Price Tax Excluded**
+- **Price Tax Included**
+- **Tax** - Label
 
-And 3 buttons:
-- Open another product, the button displays a list of product
-- View statistics redirected to the stats page 
-- Help button
+IF the tax rule has not a tax for the shop's country
+THEN it displays on the Tax label 0% next to the country ISO code.
 
-- **Quantity**
+IF the shop's country has states configured with different tax per states
+THEN it displays the tax of the first state configured.
+
+IF the tax is disabled in BO > International > Taxes page
+THEN the label is not displayed.
+
+- **Quantity** - Label 
+For product with combination, it displays the total of quantity from all the combination.
+
 The quantity background colors change depending on the quantity.
 If the quantity is strictly superior to the low stock level
 Then the color background is green
@@ -61,6 +63,14 @@ Then the color background is orange
 If the quantity is inferior or equal to 0
 Then the color background is red
 
+- Product type and product type’s icon - Button
+- References - List of labels 
+
+And 3 buttons:
+- Open another product, the button displays a list of product
+- View statistics redirected to the stats page 
+- Help button
+
 ### Change of product type
 
 When clicking on the product type, a modal is displayed to change the product type. The current type and the button “Change product type” are disabled. By default, none of the product types are preselected.
@@ -69,19 +79,21 @@ Once the user selects a product different from the current product type, then th
 Pressing the button opens closes the current modal to open the confirmation modal.
 
 * Confirmation Modal - The modal displays the info-alert: “Changing the product type will immediately save the product and refresh the page.”
-	* **Change product type** - Button - Save the new product type, set the product as offline, and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
+	* **Change product type** - Button - Save the new product type and refresh the page. If the user changes the product type, only the common data between the product type will be saved.
 
 	* **Cancel** - Close the modal  
 	If the user cancels the confirmation modal, then the modal is closed and the user remains with the product type.
-	
-| Changing the Product type form| Impact | warning-alert in the Confirmation modal |
+
+| Changing the Product type from | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
-| Standard product | No impact, the data is common between the standard product and the others products. | |
-| Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>This will reset the stock of this product. |
+| Standard product | No impact, the data is common between the standard product and the others products. |  |
+| Product with combination | Deletes the combination and reset the stock to 0. | This will delete all combinations. <br>IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
 | Pack of products | Deletes the products associated with the packs. | This will delete the list of products in this pack. |
 | Virtual product | Deletes the file associated with the virtual product. | This will delete the associated virtual file. |
 
-
+| Changing the Product type to | Impact | warning-alert in the Confirmation modal |
+| --- | --- | --- |
+| Product with combination | Reset the stock to 0. | IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
 
 
 ### **References**
@@ -699,6 +711,10 @@ THEN the retail price (tax excl.) field is calculated automatically according to
 WHEN the Retail price (tax excl.) is edited
 THEN the retail price (tax incl.) field is calculated automatically according to the tax rule selected.
 
+WHEN the tax are disabled 
+THEN the Retail price (tax incl.) equals the Retail price (tax excl.)
+
+
 * **Tax rule** - Dropdown list - Displays all tax rules enabled and a “no tax” option. 
 
 WHEN the user changes the tax rules 
@@ -709,11 +725,14 @@ THEN the ID of the tax rule is displayed before its name.
 
 * **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
 
-IF the tax rule doesn't include a tax of the shop's country
+IF the tax rule has not a tax for the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
 THEN it displays the tax of the first state configured.
+
+IF the tax is disabled in BO > International > Taxes page
+THEN it displays "Tax feature is disabled, it will not affect price tax included." (final wording to define)
 
 * **Manage tax rule** - Link - Open in a new browser tab International > Taxes  
   
@@ -888,11 +907,14 @@ The user can't delete the catalog price rule.
 2 options:
 * Default (Displays the configuration settings from the Product Setting page)
 * Specific to this product
+	- 4 dropdowns
+
+By default, the Default option is selected. 
+If the Default option is selected then the 4 dropdowns are disabled 
 
 When Specific to this product is selected
-THEN the user can select the order of the condition and displays 4 dropdowns with the 4 options: Shop, Currency, Country, Group. 
+THEN the user can select the order of the condition and  4 dropdowns are enabled with the 4 options: Shop, Currency, Country, Group pre-selected.
 
-By default, “Group” is selected for the first dropdown, “Currency” for the second, “Country” for the third, and “Shop” for the last.
 
 ## SEO tab
 
