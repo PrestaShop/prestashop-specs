@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1650372913" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1650372913" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1650372913" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1650372913" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1650372913" rel="stylesheet">
-    <link href="../../../../style.css?1650372913" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1650373039" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1650373039" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1650373039" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1650373039" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1650373039" rel="stylesheet">
+    <link href="../../../../style.css?1650373039" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1650372913"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1650373039"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -9560,7 +9560,7 @@ SEO and URLs link is opened in a new tab.</p>
 <p><strong>Indexation by search engines</strong>: Yes / No. By default, it should be on “Yes”. If set on “Yes”, the product URL is indexed. If set on “No”, the product URL isn’t indexed. (<a href="https://github.com/PrestaShop/PrestaShop/issues/14317">improvement 14317</a>)</p>
 </li>
 <li>
-<p><strong>Redirection when offline</strong>: Dropdown with 5 options:             <br>
+<p><strong>Redirection when offline</strong>: Dropdown with 6 options:
 1) <strong>Permanent redirection to a category (301)</strong>: When my product is offline, I choose a category to redirect to.   <br>
 This is a &ldquo;definitive&rdquo; redirection and therefore this parameter is saved in the browser cache and even when I reactivate the product, the redirection can still be effective until the browser cache is cleared.    <br>
 2) <strong>Temporary redirection to a category (302)</strong>: When my product is offline, I can choose a category to which my current product is redirected.          <br>
@@ -9569,7 +9569,8 @@ The new category will only be displayed when my product is offline, it is not sa
 4) <strong>Temporary redirection to a product (302)</strong>: When my product is offline, I can choose a product to which my current product is redirected.         <br>
 The new product sheet will only be displayed when my product is offline, it is not saved in the browser cache        <br>
 5) <strong>No redirection (404)</strong>: When my product is offline, if I try to accede to the product in the front office a message is displayed: “This product is no longer available.” and the product isn’t displayed.     <br>
-If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”</p>
+If I click on Preview, I can see the product but a message is displayed “This product is not visible to your customers.”
+6) <strong>No redirection (410)</strong>: When my product is offline, if I try to accede to the product in font-office a message is displayed: “This product is no longer available yet.” and the product isn’t displayed.</p>
 </li>
 <li>
 <p><strong>Target category</strong>: This search field is displayed if you select in the dropdown Permanent redirection to a category or Temporary redirection to a category.     <br>
@@ -9584,7 +9585,8 @@ You can search by product name or reference. When you start typing, if there are
 Delete selected category or product: You can remove the selected product or category by clicking on the cross. When you click on it, you have a modal to cancel or confirm the action.</p>
 </li>
 <li>
-<p><strong>Information message</strong>: No redirection (404) = Do not redirect anywhere and display a 404 &ldquo;Not Found&rdquo; page.  <br>
+<p><strong>Information message</strong>: No redirection (404) = Do not redirect anywhere and display a 404 &ldquo;Not Found&rdquo; page.
+No redirection (410)\ = Do not redirect anywhere and display a 410 &ldquo;Gone&rdquo; page.  <br>
 Permanent redirection (301) = Permanently display another product or category instead.  <br>
 Temporary redirection (302) = Temporarily display another product or category instead.</p>
 </li>
@@ -9788,9 +9790,9 @@ The rows are checkboxes</p>
 <footer class="article-footer">
 	
 <div>
-  Last updated on March 29, 2022
+  Last updated on April 19, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/562b47b97653475041c59da9d11b2df965211606">"Update add-edit-v2.md" (562b47b9)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/5b770e5de985ed061539318765e7591e7a73cb9b">"Migration -&gt; Add 410 gone page for redirection" (5b770e5d)</a>
   
 </div>
 
@@ -9811,17 +9813,17 @@ The rows are checkboxes</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1650372913"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1650372913"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1650372913"></script>
-    <script src="../../../../js/jquery.sticky.js?1650372913"></script>
-    <script src="../../../../js/featherlight.min.js?1650372913"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1650372913"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1650372913"></script>
-    <script src="../../../../js/learn.js?1650372913"></script>
-    <script src="../../../../js/hugo-learn.js?1650372913"></script>
+    <script src="../../../../js/clipboard.min.js?1650373039"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1650373039"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1650373039"></script>
+    <script src="../../../../js/jquery.sticky.js?1650373039"></script>
+    <script src="../../../../js/featherlight.min.js?1650373039"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1650373039"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1650373039"></script>
+    <script src="../../../../js/learn.js?1650373039"></script>
+    <script src="../../../../js/hugo-learn.js?1650373039"></script>
     
-    <script src="../../../../main.js?1650372913"></script>
+    <script src="../../../../main.js?1650373039"></script>
     
     
 
