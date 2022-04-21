@@ -30,4 +30,4 @@ This is a toggle switch, by default it is set to: "Yes". Has a help text below: 
 
 The shop association block is displayed when the multistore is enabled and if several shops are configured.
 
-👉 See the [specs of the shop association block]({{<ref "../../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
+👉 See the [specs of the shop association block]({{<ref "../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
