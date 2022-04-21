@@ -44,15 +44,16 @@ No invalid character notifications are prompted, after typing letters or symbols
 
 - **Save CTA** - saves the configuration in Upload quota section, by prompting the green success notification _Update successful_.
 
-## Notifications
+## Notifications section
 
 Section title includes an exclamation icon and a blue circle element. The circle element includes the text _Notifications are numbered bubbles displayed at the very top of your back office, right next to the shop's name. They display the number of new items since you last clicked on them._ once it is hovered.
 
 - **Show notifications for new orders** - required toggle button, by default it is enabled. This feature allows showing notifications of the new orders on the top-right of the Prestashop UI. The new notifications will appear in the block.
 - **Show notifications for new customers** - required toggle button, by default it is enabled. This feature allows showing notifications of the new customers on the top-right of the Prestashop UI. The new notifications will appear in the block.
 - **Show notifications for new messages** - required toggle button, by default it is enabled. This feature allows showing notifications of the new messages on the top-right of the Prestashop UI. The new notifications will appear in the block.
+- **Save CTA** - saves the configuration in Upload quota section, by prompting the green success notification _Update successful_.
 
-### Notifications dropdown block
+### Notifications dropdown block in top-right UI panel
 
 ![Notifications dropdown block with new Order notification](static/img/notifications-dropdown-block.png)
 
