@@ -50,9 +50,11 @@ Section title includes an exclamation icon and a blue circle element. The circle
 
 ### Notifications dropdown block
 
-![Notifications dropdown block](static/img/notifications-dropdown-block.png)
+![Notifications dropdown block with new Order notification](static/img/notifications-dropdown-block.png)
 
 Notifications are displayed in the dropdown block once the bell icon is clicked. The block contains 3 following tabs, with the content rows:
-- **Orders** - containing the total amount of newest Orders made, also displaying the **order number**, **order creator**, **country code**, **shop name** and **the amount** of the order with currency.
+
+- **Orders tab** - containing the total amount of newest Orders made, also displaying the **order number**, **order creator**, **country code**, **shop name** and **the amount** of the order with currency. After viewing the new Order notification for 2 minutes, the notification removes itself from the list. If the list is empty, the placeholder _No new order for now :( Have you checked your abandoned carts? Your next order could be hiding there!_ appears in the block, with the link to the Abandoned Carts.
+- **Customers tab** - containing the total amount of newest Customers registered to the webshop.
 
 - **Show notifications for new orders** - required toggle button, by default it is enabled. This feature allows showing notifications on the top-right of the Prestashop UI. The new notifications will appear in the block.
