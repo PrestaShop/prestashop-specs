@@ -13,3 +13,11 @@ This UI shows the list of features, that needs the attention from administrator.
 
 - **Multishop switcher** - it is an ability to switch the available multistores while being on the current SEO editing page, and to view the shop Front-Office homepage by redirection.
 - **Breadcrumbs, page title, Recommended modules and Help CTA's** - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation. 
+
+## Commercial pop-up block
+
+There is a 808×295.867 pixels pop-up block, right after the Top UI section. The block has a commercial message, and contains the elements:
+- **Closing icon (X)**
+- **Focus on your catalog** - insipartional title of the pop-up block. 
+- **The text** says _Empty categories, disabled products, items that lack image or price... check the monitoring section to optimize your products management and make sure you forgot nothing._ 
+- **Learn more CTA** - ghost button CTA, linking to a documentation page.
