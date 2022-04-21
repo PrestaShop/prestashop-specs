@@ -48,8 +48,11 @@ No invalid character notifications are prompted, after typing letters or symbols
 
 Section title includes an exclamation icon and a blue circle element. The circle element includes the text _Notifications are numbered bubbles displayed at the very top of your back office, right next to the shop's name. They display the number of new items since you last clicked on them._ once it is hovered.
 
+### Notifications dropdown block
+
 ![Notifications dropdown block](static/img/notifications-dropdown-block.png)
 
-Notifications are displayed in the dropdown block once the bell icon is clicked. 
+Notifications are displayed in the dropdown block once the bell icon is clicked. The block contains 3 following tabs, with the content rows:
+- **Orders** - containing the total amount of newest Orders made, also displaying the **order number**, **order creator**, **country code**, **shop name** and **the amount** of the order with currency.
 
-- **Show notifications for new orders** - required toggle button, by default it is enabled. This feature allows showing notifications on the top-right of the Prestashop UI. 
+- **Show notifications for new orders** - required toggle button, by default it is enabled. This feature allows showing notifications on the top-right of the Prestashop UI. The new notifications will appear in the block.
