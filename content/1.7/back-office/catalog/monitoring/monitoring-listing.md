@@ -16,8 +16,8 @@ This UI shows the list of features, that needs the attention from administrator.
 
 ## Commercial pop-up block
 
-There is a 808×295.867 pixels pop-up block, right after the Top UI section. The block has a commercial message, and contains the elements:
-- **Closing icon (X)**
+There is a 808×295.867 pixels pop-up block, right after the Top UI section. The block has a commercial message containing the elements:
+- **Closing icon (X)** - once the icon is clicked, the system stores information to Cookies, and the pop-up block is not showing again.
 - **Focus on your catalog** - insipartional title of the pop-up block. 
 - **The text** says _Empty categories, disabled products, items that lack image or price... check the monitoring section to optimize your products management and make sure you forgot nothing._ 
 - **Learn more CTA** - ghost button CTA, linking to a documentation page.
