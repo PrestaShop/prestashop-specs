@@ -51,7 +51,7 @@ Section title includes an exclamation icon and a blue circle element. The circle
 - **Show notifications for new orders** - required toggle button, by default it is enabled. This feature allows showing notifications of the new orders on the top-right of the Prestashop UI. The new notifications will appear in the block.
 - **Show notifications for new customers** - required toggle button, by default it is enabled. This feature allows showing notifications of the new customers on the top-right of the Prestashop UI. The new notifications will appear in the block.
 - **Show notifications for new messages** - required toggle button, by default it is enabled. This feature allows showing notifications of the new messages on the top-right of the Prestashop UI. The new notifications will appear in the block.
-- **Save CTA** - saves the configuration in Upload quota section, by prompting the green success notification _Update successful_.
+- **Save CTA** - saves the configuration in Notifications section, by prompting the green success notification _Update successful_.
 
 ### Notifications dropdown block in top-right UI panel
 
@@ -63,6 +63,10 @@ Section title includes an exclamation icon and a blue circle element. The circle
 
 Notifications are displayed in the dropdown block once the bell icon is clicked. The block contains 3 following tabs, with the content rows:
 
-  - **Orders tab** - title containing the total amount of newest Orders made, also displaying the **order number**, **order creator**, **country code**, **shop name** and **the amount** of the order with currency. After viewing the new Order notification for 2 minutes, the notification removes itself from the list. If the list is empty, the placeholder _No new order for now :( Have you checked your abandoned carts? Your next order could be hiding there!_ appears in the block, with the link to the Abandoned Carts.
-  - **Customers tab** - title containing the total amount of newest Customers registered to the webshop. The displayed elements are - **Customer number**, **Name** and **Last name**, the date when the customer has registered from Front or Back Office - with the format MM/DD/YYY.
-  - **Messages tab** - containing the total amount of newest Messages sent by client from Order details from Front Office side. The displayed elements are - **circle notification** element, **open** status indicator, **First** and **Last** name of the Customer, a **clock** icon and time, when the message has been sent - with the format MM/DD/YYY.
+  - **Orders tab** - title containing the total amount of newest Orders made, also displaying the **order number**, **order creator**, **country code**, **shop name** and **the amount** of the order with currency. All the row is linking to the latest Order page. After viewing the new Order notification for 2 minutes, the notification removes itself from the list. If the list is empty, the placeholder _No new order for now :( Have you checked your abandoned carts? Your next order could be hiding there!_ and a large bell icon appears in the block, with the link to the Abandoned Carts.
+  - **Customers tab** - title containing the total amount of newest Customers registered to the webshop. The displayed elements are - **Customer number**, **Name** and **Last name**, the date when the customer has registered from Front or Back Office - with the format MM/DD/YYY. All the row is linking to the latest Customer page. If the list is empty, the placeholder _No new customer for now :( Are you active on social media these days?_ and a large bell icon appears in the block.
+  - **Messages tab** - containing the total amount of newest Messages sent by client from Order details from Front Office side. The displayed elements are - **circle notification** element, **open** status indicator, **First** and **Last** name of the Customer, a **clock** icon and time, when the message has been sent - with the format MM/DD/YYY. All the row is linking to the latest Message page. If the list is empty, the placeholder _No new message for now. Seems like all your customers are happy :)_ and a large bell icon appears in the block.
+
+## Multistores functionality
+
+Each Multistore or Shop group can be configured in All Shops mode or in separate Shops or Shop groups in this page. The configuration is being stored in separate databases of Shops and Shop groups, so the stored data can not be mixed between content.
