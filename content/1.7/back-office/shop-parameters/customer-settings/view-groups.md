@@ -81,7 +81,7 @@ It's possible to sort by date asc or desc and search by selecting the "From" and
 
 Bulk actions can only be used on custom created groups, when they are created, only then bulk actions will appear.
 
-Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected attribute values (using the checkboxes). A user can:
+Clicking on the _Bulk actions_ button allows users to perform bulk actions for selected group (using the checkboxes). A user can:
 
 - Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
 - Delete selected: This button will delete the selected groups. 
