@@ -3,8 +3,6 @@ title: View titles
 weight: 1
 ---
 
-# Titles
-
 ### Call to action
 
  - Add new social title, when pressed redirects to the [specs of the add/edit social titles]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
