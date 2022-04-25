@@ -42,3 +42,12 @@ There is a **ID**, **Name**, **Description**, **Displayed**, **Actions** arragem
 - **Search name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate name results.
 - **Description** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
 - **Blank dropdown** - a dropdown element, having Blank, YES or NO value.
+
+### The list in section
+
+- **Number** - unique number of the category.
+- **Category name** - unique category name displayed.
+- **Description text** - individual description text of the category.
+- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries.
+- **Magnifier icon** - clicking redirects to categories listing.
+- **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
