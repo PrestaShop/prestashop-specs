@@ -1,9 +1,9 @@
 ---
-title: Add edit social title
+title: Add edit social titles
 weight: 1
 ---
 
-# Social title 
+# Social titles
 
 In this section 5 fields are presented:
 
