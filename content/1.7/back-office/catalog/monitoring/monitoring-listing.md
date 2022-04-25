@@ -25,4 +25,20 @@ There is a 808×295.867 pixels pop-up block, right after the Top UI section. The
 ## List of empty categories section
 
 - **Title of the section** - includes the title and the total number in brackets of the empty categories in the webshop.
+- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
 - **Notification** - the section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
+
+### Arranging actions in section
+
+There is a **ID**, **Name**, **Description**, **Displayed**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
+- **ID** - unique indentificator of the category.
+- **Name** - unique category name.
+- **Description** - category description text.
+- **Displayed** - Enabled toggle button or Disabled toggle button values arrangement.
+
+### Filtering actions in section
+
+- **Search ID field** - a text input field with the placeholder, inputting number, clicking Search CTA, will filtrate the numeric results.
+- **Search name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate name results.
+- **Description** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
+- **Blank dropdown** - a dropdown element, having Blank, YES or NO value.
