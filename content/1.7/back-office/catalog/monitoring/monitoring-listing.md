@@ -21,3 +21,8 @@ There is a 808×295.867 pixels pop-up block, right after the Top UI section. The
 - **Focus on your catalog** - insipartional title of the pop-up block. 
 - **The text** says _Empty categories, disabled products, items that lack image or price... check the monitoring section to optimize your products management and make sure you forgot nothing._ 
 - **Learn more CTA** - ghost button CTA, linking to a documentation page.
+
+## List of empty categories section
+
+- **Title of the section** - includes the title and the total number in brackets of the empty categories in the webshop.
+- **Notification** - the section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
