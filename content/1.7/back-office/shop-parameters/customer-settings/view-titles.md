@@ -5,13 +5,13 @@ weight: 1
 
 ### Call to action
 
- - Add new social title, when pressed redirects to the [specs of the add/edit social title]({{<ref "add-edit-social-title.md">}} "Add/edit social title") 
+ - Add new social title, when pressed redirects to the [specs of the add/edit social titles]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
 
 ### Settings wheel 
 
 1) Add new
 
-After clicking on it, redirects to the [specs of the add/edit social title]({{<ref "add-edit-social-title.md">}} "Add/edit social title") 
+After clicking on it, redirects to the [specs of the add/edit social titles]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
 
 2) Refresh list
 
@@ -54,7 +54,7 @@ Shows an image of the tile.
 
 **Edit.** The title can be edited as often as necessary.
 
-👉 See the [specs of the add/edit social title]({{<ref "add-edit-social-title.md">}} "Add/edit social title") 
+👉 See the [specs of the add/edit social title]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
 
 **Delete.** The title can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
 The action can be canceled by clicking on the cross or on the cancel button.
