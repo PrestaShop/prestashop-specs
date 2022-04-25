@@ -50,3 +50,19 @@ It's possible to sort by picking the gender from a drop-down menu.
 
 Shows an image of the tile.
 
+5) Actions
+
+**Edit.** The title can be edited as often as necessary.
+
+👉 See the [specs of the add/edit social title]({{<ref "add-edit-social-title.md">}} "Add/edit social title") 
+
+**Delete.** The title can be deleted by clicking on this button. After clicking on "Delete", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?"
+The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Delete" button, the title is deleted, a successful message is displayed "Successful deletion."
+
+### Bulk actions 
+
+- Select all/Unselect all: this button will select/unselect all the checkboxes at the beginning of each row of the listing.
+- Delete selected: This button will delete the selected titles. 
+After clicking on "Delete selected", a modal with the title "Delete selection" is opened asking to confirm or cancel the action: "Are you sure you want to delete the selected item(s)?" (See issue [#14462](https://github.com/PrestaShop/PrestaShop/issues/14462)). The action can be canceled by clicking on the cross or on the cancel button.
+After clicking on "Delete" button, the selected title is deleted, a successful message is displayed "The selection has been successfully deleted."
