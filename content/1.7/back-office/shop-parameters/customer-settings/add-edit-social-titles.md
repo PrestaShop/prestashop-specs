@@ -10,7 +10,8 @@ In this section 5 fields are presented:
 1) Social title
 
 This is a mandatory input field, the field is multi language, can be translated to a selected language that is installed on the shop. Has a tooltip: "Invalid characters: 0-9!<>,;?=+()@#"{}_$%:". Trying to save with the field empty will show an error: "The field name is required at least in *default shop language*".
-Trying to save with invalid characters, will show an error (See issue [#28320](https://github.com/PrestaShop/PrestaShop/issues/28320))
+Trying to save with invalid characters, will show an error (See issue [#28320](https://github.com/PrestaShop/PrestaShop/issues/28320)).
+The social title has a limit of 20 characters, if any more will be entered, when trying to save will show an error: "Your entry in field name exceeds max length 20 chars (incl. HTML tags). 
 
 2) Gender
 
