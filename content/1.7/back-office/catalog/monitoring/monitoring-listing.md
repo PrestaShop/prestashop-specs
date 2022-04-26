@@ -30,7 +30,7 @@ There is a 808×295.867 pixels pop-up block, right after the Top UI section. The
 
 ### Arranging actions in section
 
-There is a **ID**, **Name**, **Description**, **Displayed**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
+There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
 - **ID** - unique indentificator of the category.
 - **Name** - unique category name.
 - **Description** - category description text.
@@ -53,3 +53,15 @@ There is a **ID**, **Name**, **Description**, **Displayed**, **Actions** arragem
 - **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
 
 ## List of products with combinations but without available quantities for sale section
+
+- **Title of the section** - includes the title and the total number in brackets of the empty List of products with combinations but without available quantities for sale in the webshop.
+- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
+
+### Arranging actions in section
+
+There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
+- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete**. Clicking it deletes the desired product or products from the list.
+- **ID** - unique indentificator of the product.
+- **Name** - unique product name.
+- **Description** - product description text.
+- **Displayed** - Enabled toggle button or Disabled toggle button values arrangement.
