@@ -38,13 +38,15 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 
 ### Filtering actions in section
 
-- **Search ID field** - a text input field with the placeholder, inputting number, clicking Search CTA, will filtrate the numeric results.
-- **Search name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate name results.
-- **Description** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
-- **Blank dropdown** - a dropdown element, having Blank, YES or NO value.
+- **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
+- **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name results.
+- **Description** - a text input field with the placeholder _Search description_, inputting letters, clicking Search CTA will filtrate the appropriate description results.
+- **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
+- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active.
 
 ### The list in section
 
+- **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
 - **Number** - unique number of the category.
 - **Category name** - unique category name displayed.
 - **Description text** - individual description text of the category.
@@ -66,4 +68,20 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement co
 - **Name** - product name.
 - **Status** - Enabled toggle button or Disabled toggle button values arrangement.
 
+### Filtering actions in section
 
+- **Search ID field** - a text input field with the placeholder, inputting number, clicking Search CTA, will filtrate the numeric results.
+- **Search reference** - a text input field with the placeholder, inputting letters and numbers, clicking Search CTA will filtrate the appropriate reference results.
+- **Name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
+- **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
+- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active.
+
+### The list in section
+
+- **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
+- **Number** - unique number of the category.
+- **Category name** - unique category name displayed.
+- **Description text** - individual description text of the category.
+- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries.
+- **Magnifier icon** - clicking redirects to categories listing.
+- **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
