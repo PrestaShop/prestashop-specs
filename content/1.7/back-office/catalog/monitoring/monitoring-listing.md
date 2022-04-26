@@ -65,4 +65,5 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement co
 - **Reference** - unique product name.
 - **Name** - product name.
 - **Status** - Enabled toggle button or Disabled toggle button values arrangement.
-- 
+
+
