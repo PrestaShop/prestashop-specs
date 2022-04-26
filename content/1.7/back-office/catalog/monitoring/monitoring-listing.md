@@ -60,8 +60,9 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 ### Arranging actions in section
 
 There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
-- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete**. Clicking it deletes the desired product or products from the list.
+- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete selection**. The pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 - **ID** - unique indentificator of the product.
-- **Name** - unique product name.
-- **Description** - product description text.
-- **Displayed** - Enabled toggle button or Disabled toggle button values arrangement.
+- **Reference** - unique product name.
+- **Name** - product name.
+- **Status** - Enabled toggle button or Disabled toggle button values arrangement.
+- 
