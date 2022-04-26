@@ -51,3 +51,5 @@ There is a **ID**, **Name**, **Description**, **Displayed**, **Actions** arragem
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries.
 - **Magnifier icon** - clicking redirects to categories listing.
 - **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
+
+## List of products with combinations but without available quantities for sale section
