@@ -50,9 +50,11 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Number** - unique number of the category.
 - **Category name** - unique category name displayed.
 - **Description text** - individual description text of the category.
-- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries.
+- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the category in Front-Office.
 - **Magnifier icon** - clicking redirects to categories listing.
-- **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
+- **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. 
+
+[TODO]
 
 ## List of products with combinations but without available quantities for sale section
 
@@ -79,9 +81,13 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement co
 ### The list in section
 
 - **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
-- **Number** - unique number of the category.
-- **Category name** - unique category name displayed.
-- **Description text** - individual description text of the category.
-- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries.
-- **Magnifier icon** - clicking redirects to categories listing.
-- **Three-dot menu** - clicking shows dropdown with the options - Edit, which leads to Category editing page and Delete, which leads to Category deletion action.
+- **Number** - unique number of the product.
+- **Reference name** - unique product reference name displayed.
+- **Product name** - individual name of the product.
+- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the product in Front-Office.
+- **Pen icon** - clicking redirects to product editing page.
+- **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action.
+
+[TODO]
+
+
