@@ -52,19 +52,18 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Description text** - individual description text of the category.
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the category in Front-Office.
 - **Magnifier icon** - clicking redirects to categories listing.
-- **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. 
-
-[TODO]
+- **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
 ## List of products with combinations but without available quantities for sale section
 
 - **Title of the section** - includes the title and the total number in brackets of the empty List of products with combinations but without available quantities for sale in the webshop.
 - **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
+- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete selection**. After clicking it, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
 ### Arranging actions in section
 
 There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
-- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete selection**. The pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
+
 - **ID** - unique indentificator of the product.
 - **Reference** - unique product name.
 - **Name** - product name.
@@ -86,8 +85,4 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement co
 - **Product name** - individual name of the product.
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the product in Front-Office.
 - **Pen icon** - clicking redirects to product editing page.
-- **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action.
-
-[TODO]
-
-
+- **Three-dot menu** - clicking shows dropdown with the option **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
