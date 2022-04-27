@@ -5,7 +5,7 @@ weight: 1
 
 ### Call to action
 
- - Add new social title, when pressed redirects to the [specs of the add/edit social titles]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
+ - Add new social title button: call to action, when pressed redirects to the [specs of the add/edit social titles]({{<ref "add-edit-social-titles.md">}} "Add/edit social titles") 
 
 ### Settings wheel 
 
