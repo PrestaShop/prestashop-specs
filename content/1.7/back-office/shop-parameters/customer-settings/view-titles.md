@@ -32,7 +32,25 @@ After clicking on it, the SQL query is opened in Advanced parameters > Database 
 
 # Titles
 
-### Columns
+### Data columns
+
+1) ID
+
+Displays the ID of the title
+
+2) Social title
+
+Displays the social title.
+
+3) Gender
+
+Displays the gender of the title.
+
+4) Image
+
+Displays the uploaded image for the title.
+
+### Filter columns
 
 1) ID
 
