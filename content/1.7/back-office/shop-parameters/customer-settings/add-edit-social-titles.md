@@ -37,5 +37,5 @@ Has a tooltip: "Image height in pixels. Enter "0" to use the original size.
 
 ### Call to action
 
- - Cancel, when pressed redirects back to [specs of the view titles]({{<ref "view-titles.md">}} "view titles"), shows a message: "Successful update."
- - Save, when pressed redirects back to [specs of the view titles]({{<ref "view-titles.md">}} "view titles"), shows a message: "Successful update."
+ - Cancel, when pressed redirects back to [specs of the view titles]({{<ref "view-titles.md">}} "view titles"), shows a message: "Successful update.". When an error is shown after trying to save, pressing "cancel" will cancel the error, after pressing again, the redirection to [specs of the view titles]({{<ref "view-titles.md">}} "view titles") will happen.
+ - Save, when pressed redirects back to [specs of the view titles]({{<ref "view-titles.md">}} "view titles"), shows a message: "Successful update." Unless any of the fields have incorrect input, then the according error will be shown, and it will not allow to save until the error is fixed.
