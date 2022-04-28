@@ -17,6 +17,7 @@ This UI shows the list of features, that needs the attention from administrator.
 ## Commercial pop-up block
 
 There is a 808×295.867 pixels pop-up block, right after the Top UI section. The block has a commercial message containing the elements:
+
 - **Closing icon (X)** - once the icon is clicked, the system stores information to Cookies, and the pop-up block is not showing again.
 - **Focus on your catalog** - insipartional title of the pop-up block. 
 - **The text** says _Empty categories, disabled products, items that lack image or price... check the monitoring section to optimize your products management and make sure you forgot nothing._ 
@@ -34,7 +35,7 @@ There are 7 sections for monitoring purposes. They are:
 - **List of products without description and summary**
 - **List of products without price**
 
-## Section elements
+## Top section elements
 
 - **Title of the section** - includes the title and the total number in brackets of the empty categories in the webshop.
 - **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
@@ -42,7 +43,8 @@ There are 7 sections for monitoring purposes. They are:
 
 ## Arranging actions in sections
 
-There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
+There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Name**, **Description**, **Displayed**, **Actions** in **List or empty categories** section) arragement column titles on the top row of each table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting **Actions** column title click.
+
 - **ID** - unique indentificator of the category.
 - **Name** - unique category name.
 - **Description** - category description text.
@@ -63,7 +65,7 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Category name** - unique category name displayed.
 - **Description text** - individual description text of the category.
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the category in Front-Office.
-- **Magnifier icon** - clicking redirects to categories listing.
+- **Magnifier icon** - clicking redirects to categories listing - in **List of empty categories** section only, all the rest sections contain **Pen** icon, which leads to the edition of the element entry.
 - **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
 ## Pagination
