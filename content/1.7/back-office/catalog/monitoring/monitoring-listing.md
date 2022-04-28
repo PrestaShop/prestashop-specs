@@ -64,7 +64,7 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Na
 - **Number** - unique number of the category.
 - **Reference or Name** - unique reference or name displayed.
 - **Description or Name text** - individual entry description or name text displayed.
-- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the entry in Front-Office.
+- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the entry in Front-Office. Once the button is clicked, the notification will prompt in the top-right corner of the page UI - _The status has been successfully updated._
 - **Pen icon** - clicking redirects to the edition of the element entry (**Magnifier icon** - redirects to the categories editing page - in the List of empty categories only).
 - **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to entry editing page and **Delete**, which leads to the deletion action (only **Delete** - in List of empty categories section). After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired entry. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
@@ -80,3 +80,6 @@ The element stands in the bottom of all the sections, if there are more than 10 
 - **Viewing {value}-{value} out of {value} (page {value} / {value})** - displays the current indication in page navigation.
 - **Items per page** - displays possibility to change the maximum entries to show in one page - **10**, **20**, **50**, **100**.
 
+## Multilanguage
+
+The listing is displayed separately from all the available Multistores in webshop, because of the separate databases in each Multistore.
