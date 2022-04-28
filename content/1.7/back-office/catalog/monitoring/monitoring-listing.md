@@ -22,13 +22,25 @@ There is a 808×295.867 pixels pop-up block, right after the Top UI section. The
 - **The text** says _Empty categories, disabled products, items that lack image or price... check the monitoring section to optimize your products management and make sure you forgot nothing._ 
 - **Learn more CTA** - ghost button CTA, linking to a documentation page.
 
-## List of empty categories section
+## The names of the sections
+
+There are 7 sections for monitoring purposes. They are:
+
+- **List of empty categories**
+- **List of products with combinations but without available quantities for sale**
+- **List of products without combinations and without available quantities for sale**
+- **List of disabled products**
+- **List of products without images**
+- **List of products without description and summary**
+- **List of products without price**
+
+## Section elements
 
 - **Title of the section** - includes the title and the total number in brackets of the empty categories in the webshop.
 - **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
 - **Notification** - the section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
 
-### Arranging actions in section
+## Arranging actions in sections
 
 There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
 - **ID** - unique indentificator of the category.
@@ -36,7 +48,7 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Description** - category description text.
 - **Displayed** - Enabled toggle button or Disabled toggle button values arrangement.
 
-### Filtering actions in section
+## Filtering actions in sections
 
 - **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
 - **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name results.
@@ -44,7 +56,7 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
 - **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
 
-### The list in section
+## The content elements in sections
 
 - **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
 - **Number** - unique number of the category.
@@ -54,75 +66,9 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Magnifier icon** - clicking redirects to categories listing.
 - **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
-## List of products with combinations but without available quantities for sale section
+## Pagination
 
-- **Title of the section** - includes the title and the total number in brackets of the empty List of products with combinations but without available quantities for sale in the webshop.
-- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
-- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete selection**. After clicking it, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
-
-### Arranging actions in section
-
-There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
-
-- **ID** - unique indentificator of the product.
-- **Reference** - unique product name.
-- **Name** - product name.
-- **Status** - Enabled toggle button or Disabled toggle button values arrangement.
-
-### Filtering actions in section
-
-- **Search ID field** - a text input field with the placeholder, inputting number, clicking Search CTA, will filtrate the numeric results.
-- **Search reference** - a text input field with the placeholder, inputting letters and numbers, clicking Search CTA will filtrate the appropriate reference results.
-- **Name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
-- **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
-- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
-
-### The list in section
-
-- **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
-- **Number** - unique number of the product displayed.
-- **Reference name** - unique product reference name displayed.
-- **Product name** - individual name of the product.
-- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the product in Front-Office.
-- **Pen icon** - clicking redirects to product editing page.
-- **Three-dot menu** - clicking shows dropdown with the option **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
-
-## List of products without combinations but without available quantities for sale section
-
-- **Title of the section** - includes the title and the total number in brackets of the empty List of products with combinations but without available quantities for sale in the webshop.
-- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
-- **Bulk actions CTA** - by default the button is disabled. Once there is any product in list marked, the CTA becomes enabled. Then this button has a dropdown named **Delete selection**. After clicking it, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
-
-### Arranging actions in section
-
-There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be showm on second click. This functionality is not affecting **Actions** column title.
-
-- **ID** - unique indentificator of the product.
-- **Reference** - unique product name.
-- **Name** - product name.
-- **Status** - Enabled toggle button or Disabled toggle button values arrangement.
-
-### Filtering actions in section
-
-- **Search ID field** - a text input field with the placeholder, inputting number, clicking Search CTA, will filtrate the numeric results.
-- **Search reference** - a text input field with the placeholder, inputting letters and numbers, clicking Search CTA will filtrate the appropriate reference results.
-- **Name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
-- **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
-- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
-
-### The list in section
-
-- **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
-- **Number** - unique number of the product displayed.
-- **Reference name** - unique product reference name displayed.
-- **Product name** - individual name of the product.
-- **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the product in Front-Office.
-- **Pen icon** - clicking redirects to product editing page.
-- **Three-dot menu** - clicking shows dropdown with the option **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
-
-### Pagination
-
-The element stands in the bottom of the section, helps to edit and navigate through the enormous amount of entries in the table. 
+The element stands in the bottom of all the sections, if there are more than 10 entries, it helps to edit and navigate through the enormous amount of entries in the table. 
 
 - **First page number value 1** - when there is the 1st page of the table displayed, the number will be greyed, once the user navigates to the further pages, the first number value becomes active.
 - **Left arrow (<)** - initiates navigation through pages backwards.
