@@ -54,7 +54,7 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Na
 
 - **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
 - **Search reference** - a text input field with the placeholder _Search reference_, inputting letters, clicking Search CTA will filtrate the appropriate reference results (**Search name** - in List of empty categories only).
-- **Description** - a text input field with the placeholder _Search description_, inputting letters, clicking Search CTA will filtrate the appropriate description results.
+- **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name results (**Search description** - in List of empty categories only)
 - **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
 - **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
 
@@ -65,7 +65,7 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Na
 - **Category name** - unique category name displayed.
 - **Description text** - individual description text of the category.
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the category in Front-Office.
-- **Magnifier icon** - clicking redirects to categories listing - in **List of empty categories** section only, all the rest sections contain **Pen** icon, which leads to the edition of the element entry.
+- **Pen icon** - clicking redirects to the edition of the element entry (**Magnifier icon** - redirects to the categories editing page - in the List of empty categories only).
 - **Three-dot menu** - clicking shows dropdown with the options - **Edit**, which leads to Category editing page and **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
 
 ## Pagination
@@ -79,3 +79,4 @@ The element stands in the bottom of all the sections, if there are more than 10 
 - **Biggest page number value** - displays the biggest number of pages in table.
 - **Viewing {value}-{value} out of {value} (page {value} / {value})** - displays the current indication in page navigation.
 - **Items per page** - displays possibility to change the maximum entries to show in one page - **10**, **20**, **50**, **100**.
+
