@@ -37,23 +37,23 @@ There are 7 sections for monitoring purposes. They are:
 
 ## Top section elements
 
-- **Title of the section** - includes the title and the total number in brackets of the empty categories in the webshop.
+- **Title of the section** - includes the title and the total number of available entries - those are displayed in brackets.
 - **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
-- **Notification** - the section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
+- **Notification** - only List of empty categories section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
 
 ## Arranging actions in sections
 
-There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Name**, **Description**, **Displayed**, **Actions** in **List or empty categories** section) arragement column titles on the top row of each table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting **Actions** column title click.
+There are **ID**, **Reference**, **Name**, **Status**, **Actions** (**ID**, **Name**, **Description**, **Displayed**, **Actions** in the **List of empty categories** section) arragement column titles on the top row of each table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting **Actions** column title click.
 
-- **ID** - unique indentificator of the category.
-- **Name** - unique category name.
-- **Description** - category description text.
-- **Displayed** - Enabled toggle button or Disabled toggle button values arrangement.
+- **ID** - unique indentificator of the entry. Arrange the list by ID.
+- **Reference** - unique entry reference. Arrange the list by Reference. (**Name** - in List of empty categories only)
+- **Name** - entry name description text. Arrange the list by Name. (**Description** - in List of empty categories only)
+- **Displayed** - Enabled toggle button or Disabled toggle button values arrangement. Arrange the list by shown or hidden entries. (**Status** - in List of empty categories only)
 
 ## Filtering actions in sections
 
 - **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
-- **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name results.
+- **Search reference** - a text input field with the placeholder _Search reference_, inputting letters, clicking Search CTA will filtrate the appropriate reference results (**Search name** - in List of empty categories only).
 - **Description** - a text input field with the placeholder _Search description_, inputting letters, clicking Search CTA will filtrate the appropriate description results.
 - **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
 - **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
