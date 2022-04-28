@@ -80,6 +80,6 @@ The element stands in the bottom of all the sections, if there are more than 10 
 - **Viewing {value}-{value} out of {value} (page {value} / {value})** - displays the current indication in page navigation.
 - **Items per page** - displays possibility to change the maximum entries to show in one page - **10**, **20**, **50**, **100**.
 
-## Multilanguage
+## Multistores functionality
 
-The listing is displayed separately from all the available Multistores in webshop, because of the separate databases in each Multistore.
+The listing is displayed separately from all the available Multistores in webshop, because of the separate databases in each Multistore. 
