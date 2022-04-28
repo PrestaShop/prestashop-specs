@@ -42,7 +42,7 @@ There are **ID**, **Name**, **Description**, **Displayed**, **Actions** arrageme
 - **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name results.
 - **Description** - a text input field with the placeholder _Search description_, inputting letters, clicking Search CTA will filtrate the appropriate description results.
 - **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
-- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active.
+- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
 
 ### The list in section
 
@@ -75,14 +75,16 @@ There are **ID**, **Reference**, **Name**, **Status**, **Actions** arragement co
 - **Search reference** - a text input field with the placeholder, inputting letters and numbers, clicking Search CTA will filtrate the appropriate reference results.
 - **Name** - a text input field with the placeholder, inputting letters, clicking Search CTA will filtrate the appropriate description results.
 - **Blank dropdown** - a dropdown element, having Blank value by default, YES or NO value.
-- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active.
+- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
 
 ### The list in section
 
 - **Checkbox** - category marking element which appears if there are more than 1 entries in a list.
-- **Number** - unique number of the product.
+- **Number** - unique number of the product displayed.
 - **Reference name** - unique product reference name displayed.
 - **Product name** - individual name of the product.
 - **Enable or Disable toggle switch button** - by default, the button is Enabled on the entries. It enables showing or hiding the product in Front-Office.
 - **Pen icon** - clicking redirects to product editing page.
 - **Three-dot menu** - clicking shows dropdown with the option **Delete**, which leads to Category deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired product. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
+
+### 
