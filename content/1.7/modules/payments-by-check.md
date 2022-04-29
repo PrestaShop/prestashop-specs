@@ -3,6 +3,10 @@ title: Payments by check
 weight: 1
 ---
 
+## Front-Office
+
+The module when enabled appears within the payment methods when checking out can be selected as payment method.
+
 ### Call to action
 
 1) Back 
