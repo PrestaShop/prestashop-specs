@@ -71,7 +71,7 @@ How to restore a database backup in 10 easy steps
 ## DB Backup section
 
 - **Title and the total backups in brackets**
-- **Bulk actions dropdown** - it is disabled by default, once there is a Database backup element selected, Bulk actions become enabled. The only action is **Delete** action.
+- **Bulk actions dropdown** - it is disabled by default, once there is a Database backup element selected, Bulk actions become enabled. The only action is **Delete** action, by clicking **Delete selected** dropdown.
 - **Checkboxes** - enables ability to select desired backups.
 - **Date** - actual timestamp, when the database file is created - the format is MM/DD/YYYY HH:MM:SS.
 - **Age** - counts the time that passed from the database file creation.
