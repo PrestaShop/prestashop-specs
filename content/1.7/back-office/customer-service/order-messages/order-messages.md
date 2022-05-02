@@ -32,3 +32,9 @@ There are **ID**, **Name**, **Message** arragement column titles on the top row 
 - **ID** - unique indentificator of the entry. Arrange the list by ID.
 - **Name** - entry name description text. Arrange the list by Name.
 - **Message** - the message text content displayed.
+
+## Filtering actions in sections
+
+- **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
+- **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name result.
+- **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
