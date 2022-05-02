@@ -23,4 +23,4 @@ This UI shows the list of messages, that were sent by webshop customer, who crea
   - **Show SQL query** - the link with double left-right arrows. It prompts the SQL query popup.
   - **Export to SQL Manager** - the link with server icon. It redirects to **Prestashop SQL Manager**.
 
-- **Bulk actions dropdown** - it is disabled by default, once there is a Order message element selected, Bulk actions become enabled. The only action is **Delete** action, by clicking **Delete selected** dropdown.
+- **Bulk actions dropdown** - it is disabled by default, once there is a Order message element selected, Bulk actions become enabled. The only action is **Delete** action, by clicking **Delete selected** dropdown. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired entry. Delete confirmation _Successful deletion._ appears right after clicking the **Delete**, and pop-up closes right after clicking the **Close** button.
