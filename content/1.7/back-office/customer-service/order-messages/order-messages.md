@@ -20,4 +20,5 @@ This UI shows the list of messages, that were sent by webshop customer, who crea
 - **Title of the section** - includes the title and the total number of available entries - those are displayed in brackets.
 - **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown block:
   - **Refresh list** - the link with the rotation style icon. It refreshes the whole page.
-  - 
+  - **Show SQL query** - the link with double left-right arrows. It prompts the SQL query popup.
+  - **Export to SQL Manager** - the link with server icon. It redirects to **Prestashop SQL Manager**.
