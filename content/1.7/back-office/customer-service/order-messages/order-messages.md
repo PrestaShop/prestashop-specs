@@ -27,4 +27,8 @@ This UI shows the list of messages, that were sent by webshop customer, who crea
 
 ## Arranging action in Order messages section
 
-There are **ID**, **Name**, **Message** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting Actions column title click.
+There are **ID**, **Name**, **Message** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting **Actions** column title click.
+
+- **ID** - unique indentificator of the entry. Arrange the list by ID.
+- **Name** - entry name description text. Arrange the list by Name.
+- **Message** - the message text content displayed.
