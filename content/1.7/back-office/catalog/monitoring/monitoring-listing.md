@@ -38,7 +38,7 @@ There are 7 sections for monitoring purposes. They are:
 ## Top section elements
 
 - **Title of the section** - includes the title and the total number of available entries - those are displayed in brackets.
-- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
+- **Gear icon** - it is a Gear style icon in the corner - top-right position of the section. This icon has a short rotation animation once clicked. Clicking on this icon, leads to dropdown **Refresh list** link with the rotation style icon. It refreshes the whole page.
 - **Notification** - only List of empty categories section starts with informative blue-box notification with the information icon, with the text saying _An empty category is a category that has no product directly associated to it. An empty category may however contain products through its subcategories._. 
 
 ## Arranging actions in sections
