@@ -9,7 +9,7 @@ In this section 5 sections are presented:
 
 1) Name
 
-This is a mandatory input field, also it is multi language, so can be translated to any language which is enabled on the shop. When trying to save with the field empty, will show a message: "The field name is required at least in *selected language*".
+This is a mandatory input field, also it is multi language, so can be translated to any language which is enabled on the shop. When trying to save with the field empty, will show a message: "The field name is required at least in (language)".
 
 2) Discount
 
