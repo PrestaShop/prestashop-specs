@@ -49,6 +49,10 @@ Below are the other group accesses listed:
  - Guest
  - Customer
  - And all custom ones
+ 
+The shop association block is displayed when the multistore is enabled and if several shops are configured.
+
+👉 See the [specs of the shop association block]({{<ref "../../multistoregeneralspecs.md#shop-association-block">}} "Shop association block") 
 
 10) Default customer group
 
