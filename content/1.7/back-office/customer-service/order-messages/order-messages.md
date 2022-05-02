@@ -24,3 +24,7 @@ This UI shows the list of messages, that were sent by webshop customer, who crea
   - **Export to SQL Manager** - the link with server icon. It redirects to **Prestashop SQL Manager**.
 
 - **Bulk actions dropdown** - it is disabled by default, once there is a Order message element selected, Bulk actions become enabled. The only action is **Delete** action, by clicking **Delete selected** dropdown. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired entry. Delete confirmation _Successful deletion._ appears right after clicking the **Delete**, and pop-up closes right after clicking the **Close** button.
+
+## Arranging action in Order messages section
+
+There are **ID**, **Name**, **Message** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting Actions column title click.
