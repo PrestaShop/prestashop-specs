@@ -5,7 +5,7 @@ weight: 1
 
 # Customer group
 
-In this section 5 sections are presented:
+In this section 6 sections are presented (when multistore is enabled the count is 7):
 
 1) Name
 
