@@ -3,6 +3,8 @@ title: Edit customer
 weight: 1
 ---
 
+# Customer
+
 In this section the customer details which are already input will show, and all of them can be edited:
 
 1) Social title
@@ -19,7 +21,7 @@ This is a mandatory field, has a help text below: "Only letters and the dot (.) 
 
 4) Email
 
-This is a mandatory email field. If an incorrect email is input, when trying to save, it will not allow to save.
+This is a mandatory email field. If an incorrect email is input, when trying to save, it will not allow to save. Correct email should have the format: "email@email.xyz"
 
 5) Password
 
