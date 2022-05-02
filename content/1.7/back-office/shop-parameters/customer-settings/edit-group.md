@@ -56,5 +56,5 @@ The shop association block is displayed when the multistore is enabled and if se
 
 ### Call to action
 
-- Cancel, when pressed redirect to [view groups]({{<ref "view-groups.md">}} "view groups")
-- Save, when pressed redirect to [view groups]({{<ref "view-groups.md">}} "view groups"), shows a message: "Successful update."
+- Cancel, when pressed redirect to [view group]({{<ref "view-group.md">}} "view group")
+- Save, when pressed redirect to [view group]({{<ref "view-group.md">}} "view group"), shows a message: "Successful update."
