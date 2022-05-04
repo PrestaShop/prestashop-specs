@@ -25,7 +25,7 @@ This UI shows the list of messages, that were sent by webshop customer, who crea
 
 - **Bulk actions dropdown** - it is disabled by default, once there is a Order message element selected, Bulk actions become enabled. The only action is **Delete** action, by clicking **Delete selected** dropdown. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired entry. Delete confirmation _Successful deletion._ appears right after clicking the **Delete**, and pop-up closes right after clicking the **Close** button.
 
-## Arranging action in Order messages section
+## Arranging action in section
 
 There are **ID**, **Name**, **Message** arragement column titles on the top row of the table. Once those column titles are clicked, the table column will arrange the information using the A-Z and 1-9 scheme, then Z-A and 9-1 method will be shown on second click. This functionality is not affecting **Actions** column title click.
 
@@ -33,8 +33,17 @@ There are **ID**, **Name**, **Message** arragement column titles on the top row 
 - **Name** - entry name description text. Arrange the list by Name.
 - **Message** - the message text content displayed.
 
-## Filtering actions in sections
+## Filtering actions in section
 
 - **Search ID field** - a text input field with the placeholder _Search ID_, inputting number, clicking Search CTA, will filtrate the numeric results.
 - **Search name** - a text input field with the placeholder _Search name_, inputting letters, clicking Search CTA will filtrate the appropriate name result.
 - **Search CTA** - by default the button is disabled. Once there is something typed in the Filtering fields, the button becomes active. After clicking the button, the search results will be returned in the table. If there are no results found, there will be a black triangle icon with with a white exclamation mark displayed in table, and a small description above _No records found_. X icon and _Reset_ near Search CTA indicates about resetting the search.
+
+## The content element in section
+
+- **Checkbox** - entry marking element.
+- **Number** - unique number of the entry.
+- **Name** - unique name displayed.
+- **Message** - individual entry description or name text displayed.
+- **Pen icon** - clicking redirects to the edition page of the element entry.
+- **Three-dot menu** - clicking shows dropdown with the option **Delete**, which leads to the deletion action. After clicking **Delete**, the pop-up with confirmation text will appear named _Delete selection Are you sure you want to delete the selected item(s)?_ and two buttons - one ghost button to **Cancel** the action and red CTA button to **Delete** the desired entry. Delete confirmation _Successful deletion._ appears right after clicking the Delete, and pop-up closes right after clicking the Close button.
