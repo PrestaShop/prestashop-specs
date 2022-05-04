@@ -5,7 +5,7 @@ weight: 1
 
 ## SELL > CUSTOMER SERVICE > Order Messages > Add / Edit Order Message
 
-![Order Messages editing UI]()
+![Order Messages editing UI](static/img/add-edit-order-message.png)
 
 This UI shows the Order Message adding or editing form.
 
