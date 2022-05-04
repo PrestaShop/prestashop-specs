@@ -26,7 +26,7 @@ This is a mandatory toggle switch, by default it is set to: "No". Has a help tex
 
 5) Ask for birth date 
 
-This is a mandatory toggle switch, by default it is set to: "No". Has a help text below: "Display or not the birth date field.". 
+This is a mandatory toggle switch, by default it is set to: "No". Has a help text below: "Display or not the birth date field.". This toggle switch either turns on the field for date of birth or removes it.
 
 6) Enable partner offers
 
