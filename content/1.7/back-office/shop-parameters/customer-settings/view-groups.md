@@ -14,6 +14,10 @@ Below an explanation is shown:
     Guest - All persons who placed an order through Guest Checkout.
     Customer - All persons who created an account on this site.
 
+# Groups
+
+In this page the customer groups are displayed
+
 ## Settings wheel
 
 When clicking on the settings wheel, the following options are displayed:
@@ -39,7 +43,7 @@ Export to SQL Manager: After clicking on it, the SQL query is opened in Advanced
 
 After clicking on it, the SQL query is opened in Advanced parameters > Database > SQL Manager
 
-# Groups 
+## Groups 
 
 ## Columns 
 
