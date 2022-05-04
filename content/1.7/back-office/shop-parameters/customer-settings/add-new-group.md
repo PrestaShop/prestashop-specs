@@ -14,7 +14,7 @@ When trying to save with forbidden characters input will show an error: "The nam
 
 2) Discount
 
-The field is measured in percentages, only numbers can be entered, when saving with any other inputs, will show an error: "The discount value is incorrect (must be a percentage).". Has a tooltip: "Automatically apply this value as a discount on all products for members of this customer group.".
+The field is measured in percentages, only numbers can be entered, when saving with any other inputs, will show an error: "The discount value is incorrect (must be a percentage).". Has a tooltip: "Automatically apply this value as a discount on all products for members of this customer group.". see issue [28415](https://github.com/PrestaShop/PrestaShop/issues/28415)
 
 3) Price display method
 
