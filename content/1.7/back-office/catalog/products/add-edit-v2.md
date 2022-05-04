@@ -1044,7 +1044,7 @@ THEN Supplier references are displayed
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.
 
-## Footer
+## Buttons' Footer
 
 - **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 
