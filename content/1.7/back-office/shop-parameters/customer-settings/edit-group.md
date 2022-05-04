@@ -49,6 +49,8 @@ Expands all the group categories from the shop, and they can be selected, by def
 
 This is an input for the discount, only numbers can be used, by default the input is: "0.00". When trying to save with anything other than numbers, an alert will show: "The discount value is incorrect (must be a percentage).
 
+When a discount is added, it appears below the button, and has a "Delete" button, when pressed removes the 
+
 6) Authorized modules:
 
 In this section all the possible modules on the shop are listed, all of them have toggle switches, by default they are all set to: "Yes".
