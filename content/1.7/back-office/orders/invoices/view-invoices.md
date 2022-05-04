@@ -21,7 +21,7 @@ This is a field for selecting a date for the invoice, when pressed a calendar ap
 
 ### Call to action
 
- - Generate PDF file by date, when pressed generates the PDF file by date, if on the selected date there were no invoices, will show a message: "No invoice has been found for this period.".
+ - Generate by file date button : call to action, when pressed generates the PDF file by date, if on the selected date there were no invoices, will show a message: "No invoice has been found for this period.".
 
 ## By order status
 
