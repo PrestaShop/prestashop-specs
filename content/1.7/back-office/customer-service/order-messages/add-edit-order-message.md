@@ -24,3 +24,7 @@ There is a blue information message with _i_ icon, displaying the text _Note tha
 - **Language dropdown for Message** - if there is a need to input the Message on specific language, dropdown with the appropriate language inicials can be selected. Languages in the list will be shown only those, that are installed in webshop.
 - **Save CTA button** - saves the form with the successful green notification message _Successful update._ or _Successful creation._
 - **Cancel CTA button** - redirects back to the Order messages listing page.
+
+## Multistores functionality
+
+The eiditing form is displayed the same for all the available Multistores in webshop, switching the Multistores shows the same editing form UI.
