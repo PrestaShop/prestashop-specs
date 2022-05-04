@@ -7,7 +7,7 @@ weight: 1
 
 ![Order Messages](static/img/order-messages.png)
 
-This UI shows the list of messages, that were sent by webshop customer, who created an Order.
+This UI shows the list of messages, that were sent by webshop customer, who created an Order. By default, _Delay_ message is already created in the list.
 
 ## Top UI section
 
