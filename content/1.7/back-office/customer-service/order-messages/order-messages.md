@@ -59,3 +59,7 @@ The element stands in the bottom of all the sections, if there are more than 10 
 - **Biggest page number value** - displays the biggest number of pages in table.
 - **Viewing {value}-{value} out of {value} (page {value} / {value})** - displays the current indication in page navigation.
 - **Items per page** - displays possibility to change the maximum entries to show in one page - **10**, **20**, **50**, **100**.
+
+## Multistores functionality
+
+The listing is displayed the same for all the available Multistores in webshop, switching the Multistores shows the same Order messages listing.
