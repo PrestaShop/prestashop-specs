@@ -43,7 +43,7 @@ Expands all the group categories from the shop, and they can be selected, by def
 
 "Caution: The discount applied to a category does not stack with the overall reduction but instead replaces it."
 
-"Only products that have this category as the default category will be affected."
+"Only products that have this category as the default category will be affected.". Meaning that product that do not have the category selected as a default one will not be eligible for a discount.
 
 - Discount (%)
 
