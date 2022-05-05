@@ -19,9 +19,9 @@ Input field for the date, by default has the current day entered. Has a tooltip:
 
 Input field for the date, by default has the current day entered. Has a tooltip: "Format: 2011-12-31 (inclusive)". When pressed opens a calendar to choose a date.
 
-### Call to action
+### Generate PDF - Call to action
 
- - Generate PDF, when pressed, if no PDF was done on the selected time, will show the message: "No delivery slip was found for this period."
+ When pressed, if no PDF was done on the selected time, will show the message: "No delivery slip was found for this period."
 
 ## Delivery slip options
 
@@ -33,7 +33,7 @@ This is an input field for the delivery prefix, depending on the countries insta
 
 2) Delivery number
 
-Input field for the delivery number, by default has a number entered: "1". Has a tooltip: "The next delivery slip will begin with this number and then increase with each additional slip.".
+Input field for the delivery number, by default has a number entered: "1". Has a tooltip: "The next delivery slip will begin with this number and then increase with each additional slip.". Only numbers are allowed in this field, entering any other characters, when saving will show an error: "This value is not valid.".
 
 3) Enable product image
 
