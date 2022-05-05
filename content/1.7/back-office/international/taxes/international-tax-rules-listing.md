@@ -32,7 +32,7 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 - **Name** - input field, for searching and filtering specific Tax Rule by name.
 - **Enabled** - dropdown element, for arranging the Tax Rules by enabled or disabled.
 - **Search button** - executes the filtering action, shows the results.
-- **Reset** - resets the filtering, shows all the unfiltered Tax Rules.
+- **Reset** - appears when a search has been executed. Resets the filtering, shows all the unfiltered Tax Rules.
 
 ### Tax Rules listing
 
