@@ -21,8 +21,10 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 
 - **Taxes** - table title with the total tax rules in the list.
 - **Numeric value** - total sum of shopping tax rules identified.
-- **Export icon** - when clicked, a file is generated with all **displayed** tax rules from the data list in CSV format.
+- **Add icon** - when clicked, the add form is opened.
 - **Refresh** - once clicked, the whole page reloads to display the latest data.
+- **See the SQL Request** - once clicked, the SQL request is displayed on top of the table.
+- **Export icon** - when clicked, a file is generated with all displayed tax rules from the data list in CSV format.
 
 ### Filtering
 
