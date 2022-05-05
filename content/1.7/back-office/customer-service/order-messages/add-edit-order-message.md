@@ -27,4 +27,4 @@ There is a blue information message with _i_ icon, displaying the text _Note tha
 
 ## Multistores functionality
 
-The eiditing form is displayed the same for all the available Multistores in webshop, switching the Multistores shows the same editing form UI.
+The editing form is displayed the same for all the available Multistores in webshop, switching the Multistores shows the same editing form UI.
