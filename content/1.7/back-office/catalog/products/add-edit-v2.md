@@ -339,16 +339,13 @@ The stock section is hiden if Enable stock management is disabled.
 		* Product Name
 		* REF - Label - Displays the product reference (ex: "REF: demo_2)
 		* Delete - Button - Deletes the product from the list
-
+		* Quantity - Input - Edits the quanity of the product
+		
 ### Add products to your pack
 -   **Search for a product** - Search Bar - Lists all the products matching the product name or product reference.  
 
 	WHEN the user selects a product from the list
-	THEN The product name is inserted in the search bar 
-
-- **x** - Number Input  
-
-- **Add** - Button - Pressed, it adds the product from the Search Bar with a specified quantity to the pack
+	THEN The product is added to the list of the products 
 
 WHEN the user adds a product already in the pack
 THEN it only increases the quantity of the product from the number of input     
