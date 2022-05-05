@@ -39,3 +39,15 @@ The widgets are displayed as 2 in a one row. Each widget has its specific UI ele
 
 ### Bottom of the widget
 
+Pagination stands in the bottom of the sections, if there are more than 10 entries, it helps to edit and navigate through the enormous amount of entries in the table. 
+
+- **First page number value 1** - when there is the 1st page of the table displayed, the number will be greyed, once the user navigates to the further pages, the first number value becomes active.
+- **Left arrow (<)** - initiates navigation through pages backwards.
+- **Input field** - setting the desired number of page, clicking Enter or somewhere blank on UI, initiates the page changing.
+- **Right arrow (>)** - initiates navigation through pages forward.
+- **Biggest page number value** - displays the biggest number of pages in table.
+- **Viewing {value}-{value} out of {value} (page {value} / {value})** - displays the current indication in page navigation.
+- **Items per page** - displays possibility to change the maximum entries to show in one page - **10**, **20**, **50**, **100**.
+
+## Multistores functionality
+
