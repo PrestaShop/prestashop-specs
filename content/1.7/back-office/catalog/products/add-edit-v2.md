@@ -347,8 +347,7 @@ The stock section is hiden if Enable stock management is disabled.
 	WHEN the user selects a product from the list
 	THEN The product is added to the list of the products 
 
-WHEN the user adds a product already in the pack
-THEN it only increases the quantity of the product from the number of input     
+The user can't add the same product multiple times from the Search Bar.     
 
 -   **Pack quantities** - Dropdown with 4 options: 
 	* **Decrement pack only**
