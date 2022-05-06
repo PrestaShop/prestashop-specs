@@ -51,3 +51,4 @@ Pagination stands in the bottom of the sections, if there are more than 10 entri
 
 ## Multistores functionality
 
+All the Widget block entries and hooks are displayed the same for all the Multistores. 
