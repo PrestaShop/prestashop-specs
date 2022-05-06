@@ -58,21 +58,33 @@ The certain action can be set after cart rule is created. The Actions tab values
 ![Cart Rules: Actions Tab](/static/img/cart-rules-actions-tab.png)
 
 - **Free shipping switch toggle button** - this setting creates rule that will initiate a free shipping method for customer in checkout form.
-**Apply a discount** - there are 3 options that can be set - Percentage, Amount and None.
+- **Apply a discount** - there are 3 options that can be set - Percentage, Amount and None.
 
-  - **Percentage** - can be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. If this value is set, the following elements will load in the UI:
-    - **Value** - numeric input field with percentage icon, to set the percentage amount.
-    - **Apply a discount to** - available values to set for **Order (without shipping)**, **Specific product** (search product field appears below), **Cheapest product** or **Selected product(s)** (appears only when Conditions tab is assigned to some product or products, as the exclamation mark indicator with link displays this as well).
-    - **Exclude discounted products** - toggle switch button.
-
-  - **Amount** - the user will get a discount of a certain amount of price. Also the Currency can be set and the Taxes conditions in the following inputs as well.
-    - **Apply a discount to** - available values to set for **Order (without shipping)** and **Specific product** (search product field appears below).
-
-  - **None** - in that case user of the checkout will not get any discounting at all.
+### Percentage
  
+It canan be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. If this value is set, the following elements will load in the UI:
+- **Value** - numeric input field with percentage icon, to set the percentage amount.
+- **Apply a discount to** - available values to set for:
+  - **Order (without shipping)**
+  - **Specific product** - search product field appears below - it will set the ability to search the certain product. 
+  - **Matching products dropdown** - it will appear when there will be some characters typed in the "Product" field.
+  - **Cheapest product** - apply the discount contidions to the cheapest product.
+  - **Selected product(s)** - appears only when Conditions tab is assigned to some product or products, as the exclamation mark indicator with link displays this as well.
+- **Exclude discounted products** - toggle switch button, if enabled, voucher will not apply to products already on sale.
+
+### Amount
+
+The user will get a discount of a certain amount of price. Also the **Currency** can be set and the **Taxes conditions** in the following inputs as well.
+- **Apply a discount to** - available values to set for:
+  - **Order (without shipping)**
+  - **Specific product** - search product field appears below - it will set the ability to search the certain product.
+  - **Matching products dropdown** - it will appear when there will be some characters typed in the "Product" field.
+
+### None
+
+In that case user of the checkout will not get any discounting at all.
+
 - **Send a free gift switch toggle button** - this option enables ability to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
-- **Search a product field** - it will set the ability to search the certain product.
-- **Matching products dropdown** - it will appear when there will be some characters typed in the "Search a product" field.
 
 ## Call-to-action (CTA) functionalities
 **Cancel** - initiates the action to discard all the Cart rule changes that were before Saving action
