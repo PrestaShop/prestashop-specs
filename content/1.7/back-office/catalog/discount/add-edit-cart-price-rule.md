@@ -64,7 +64,6 @@ The certain action can be set after cart rule is created. The Actions tab values
 The Apply a discount options are:
 
 ### Percentage
- 
 It canan be set, and the cart price will be affected by certain amount of percentage discount, after executing the voucher. If this value is set, the following elements will load in the UI:
 - **Value** - numeric input field with percentage icon, to set the percentage amount.
 - **Apply a discount to** - available values to set for:
@@ -76,7 +75,6 @@ It canan be set, and the cart price will be affected by certain amount of percen
 - **Exclude discounted products** - toggle switch button, if enabled, voucher will not apply to products already on sale.
 
 ### Amount
-
 The user will get a discount of a certain amount of price. Also the **Currency** can be set and the **Taxes conditions** in the following inputs as well.
 - **Apply a discount to** - available values to set for:
   - **Order (without shipping)**
@@ -84,7 +82,6 @@ The user will get a discount of a certain amount of price. Also the **Currency**
   - **Matching products dropdown** - it will appear when there will be some characters typed in the "Product" field.
 
 ### None
-
 In that case user of the checkout will not get any discounting at all.
 - **Exclude discounted products** - toggle switch button, if enabled, voucher will not apply to products already on sale.
 
