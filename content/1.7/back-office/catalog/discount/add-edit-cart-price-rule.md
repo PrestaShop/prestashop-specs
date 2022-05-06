@@ -59,6 +59,9 @@ The certain action can be set after cart rule is created. The Actions tab values
 
 - **Free shipping switch toggle button** - this setting creates rule that will initiate a free shipping method for customer in checkout form.
 - **Apply a discount** - there are 3 options that can be set - Percentage, Amount and None.
+- **Send a free gift** - switch toggle button, once Enabled, it shows Search a product field, where a specific product can be added as a gift.
+
+The Apply a discount options are:
 
 ### Percentage
  
@@ -83,8 +86,7 @@ The user will get a discount of a certain amount of price. Also the **Currency**
 ### None
 
 In that case user of the checkout will not get any discounting at all.
-
-- **Send a free gift switch toggle button** - this option enables ability to set an additional free product for the customer, or every customers, who accepted the cart rule / voucher.
+- **Exclude discounted products** - toggle switch button, if enabled, voucher will not apply to products already on sale.
 
 ## Call-to-action (CTA) functionalities
 **Cancel** - initiates the action to discard all the Cart rule changes that were before Saving action
