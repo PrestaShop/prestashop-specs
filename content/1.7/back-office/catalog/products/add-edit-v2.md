@@ -1008,7 +1008,9 @@ THEN this section is displayed
   
   * **Choose the suppliers associated with this product**: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated with the supplier and displayed on the supplier page in the front office.
 WHEN several suppliers are associated with a product
-THEN unchecking one of them should delete the related data while keeping the values of the other suppliers intact.
+THEN unchecking one of them should keep the related data while keeping the values of the other suppliers intact.
+
+IF there are several suppliers with the same name, then the ID of all suppliers is displayed in front of their name.
 
   * **Default supplier**: 
 IF more than one suppliers is checked
@@ -1035,7 +1037,8 @@ THEN Supplier references are displayed
 
   * **Supplier dropdown**: A dropdown list appears to select the supplier for which the user wants to change supplier costs for his products.
   * **Products list**:
-    * **The product name** - Text - Display the product name
+    * **The product name** - Text - Display the product name. If there are several suppliers with the same name, then the ID of all suppliers is displayed in front of their name.
+
     * **Supplier reference**: - Text - Field to specify the product reference for each supplier. 
     * **Cost price \(tax excl.\)** - Price - Field to specify the product's cost price for each supplier.
     * **Currency**: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.
