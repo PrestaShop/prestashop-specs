@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1651765391" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1651765391" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1651765391" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1651765391" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1651765391" rel="stylesheet">
-    <link href="../../../../style.css?1651765391" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1652170865" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1652170865" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1652170865" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1652170865" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1652170865" rel="stylesheet">
+    <link href="../../../../style.css?1652170865" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1651765391"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1652170865"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -9633,13 +9633,14 @@ THEN this section is displayed</p>
 <li>
 <p><strong>Choose the suppliers associated with this product</strong>: All enabled suppliers are displayed with a checkbox before their names. If it’s checked, the product is associated with the supplier and displayed on the supplier page in the front office.
 WHEN several suppliers are associated with a product
-THEN unchecking one of them should delete the related data while keeping the values of the other suppliers intact.</p>
+THEN unchecking one of them should keep the related data while keeping the values of the other suppliers intact.</p>
 </li>
-<li>
-<p><strong>Default supplier</strong>:
+</ul>
+<p>IF there are several suppliers with the same name, then the ID of all suppliers is displayed in front of their name.</p>
+<ul>
+<li><strong>Default supplier</strong>:
 IF more than one suppliers is checked
-THEN it can be set as the default supplier by selecting the radio</p>
-</li>
+THEN it can be set as the default supplier by selecting the radio</li>
 </ul>
 <p>WHEN there is only one supplier checked
 THEN the default supplier radio button is automatically checked for the supplier</p>
@@ -9662,10 +9663,18 @@ THEN Supplier references are displayed</p>
 <li>
 <p><strong>Products list</strong>:</p>
 <ul>
-<li><strong>The product name</strong> - Text - Display the product name</li>
-<li><strong>Supplier reference</strong>: - Text - Field to specify the product reference for each supplier.</li>
-<li><strong>Cost price (tax excl.)</strong> - Price - Field to specify the product&rsquo;s cost price for each supplier.</li>
-<li><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.</li>
+<li>
+<p><strong>The product name</strong> - Text - Display the product name. If there are several suppliers with the same name, then the ID of all suppliers is displayed in front of their name.</p>
+</li>
+<li>
+<p><strong>Supplier reference</strong>: - Text - Field to specify the product reference for each supplier.</p>
+</li>
+<li>
+<p><strong>Cost price (tax excl.)</strong> - Price - Field to specify the product&rsquo;s cost price for each supplier.</p>
+</li>
+<li>
+<p><strong>Currency</strong>: Dropdown with all installed and enabled currencies. If there are many currencies, the default one is selected by default. Allow specifying the product currency for each supplier.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -9784,9 +9793,9 @@ The rows are checkboxes</p>
 <footer class="article-footer">
 	
 <div>
-  Last updated on May 5, 2022
+  Last updated on May 10, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/7b40deabf881d0d9645c290d5750c300c0614e08">"Update add-edit-v2.md" (7b40deab)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/b02d79872a53188a4e22581abf910c701c3c92a1">"Update add-edit-v2.md" (b02d7987)</a>
   
 </div>
 
@@ -9807,17 +9816,17 @@ The rows are checkboxes</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1651765391"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1651765391"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1651765391"></script>
-    <script src="../../../../js/jquery.sticky.js?1651765391"></script>
-    <script src="../../../../js/featherlight.min.js?1651765391"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1651765391"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1651765391"></script>
-    <script src="../../../../js/learn.js?1651765391"></script>
-    <script src="../../../../js/hugo-learn.js?1651765391"></script>
+    <script src="../../../../js/clipboard.min.js?1652170865"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1652170865"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1652170865"></script>
+    <script src="../../../../js/jquery.sticky.js?1652170865"></script>
+    <script src="../../../../js/featherlight.min.js?1652170865"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1652170865"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1652170865"></script>
+    <script src="../../../../js/learn.js?1652170865"></script>
+    <script src="../../../../js/hugo-learn.js?1652170865"></script>
     
-    <script src="../../../../main.js?1651765391"></script>
+    <script src="../../../../main.js?1652170865"></script>
     
     
 
