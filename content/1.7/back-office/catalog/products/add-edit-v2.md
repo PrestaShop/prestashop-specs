@@ -148,7 +148,7 @@ List all the references fulfilled next to its label.  When there is no more spac
 ### Categories
 
 - **Associated categories**:
-The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays all category IDs and all its parents.
+The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays its category IDs and all its parents categories.
 
 EX:
 Product: Comics
@@ -171,7 +171,7 @@ If the product is not associated with any category except the ‘Home’ branch,
 
 If the product is already associated with categories, then the categories branches are opened until the categories associated are displayed.
 
-- **Main category** - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category. If categories have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays all category IDs and all its parents.
+- **Main category** - Drop-list - It displays the full path of the associated categories. By default, at the creation of the product, the ‘Home’ category is selected as the main category. If categories have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays its category IDs and all its parents categories.
 
 The main category defines the product URL and the breadcrumb of the front office.
 
