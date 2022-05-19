@@ -148,7 +148,7 @@ List all the references fulfilled next to its label.  When there is no more spac
 ### Categories
 
 - **Associated categories**:
-The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents are different.
+The component displays all the associated categories as a list of tags. If categories have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays all category IDs and all its parents.
 
 EX:
 Product: Comics
@@ -165,7 +165,7 @@ Deleting a tag, removes the tag of the list and deletes the association between 
 Below the tags’ lists is displayed the “Add categories” button. The button opens a modal with the search component and the category tree.
 
 The user can search by category and the parent’s categories. The search result list displays the breadcrumb of the category.  
-The list of categories associated is also displayed below the search component.
+The list of categories associated is also displayed below the search component. 
 
 If the product is not associated with any category except the ‘Home’ branch, then ‘Home’’s child categories are displayed, just the first level of the tree is displayed/opened.
 
