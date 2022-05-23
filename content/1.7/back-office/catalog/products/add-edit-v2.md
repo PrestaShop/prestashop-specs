@@ -95,6 +95,8 @@ Pressing the button opens closes the current modal to open the confirmation moda
 | --- | --- | --- |
 | Product with combination | Reset the stock to 0. | IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
 
+When the eco-tax is enabled and the user changes the product from the virtual product to anther type.
+Then the eco-tax is rest to 0.
 
 ### **References**
 
