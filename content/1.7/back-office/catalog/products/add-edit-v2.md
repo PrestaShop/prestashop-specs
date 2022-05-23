@@ -94,6 +94,7 @@ Pressing the button opens closes the current modal to open the confirmation moda
 | Changing the Product type to | Impact | warning-alert in the Confirmation modal |
 | --- | --- | --- |
 | Product with combination | Reset the stock to 0. | IF the Stock Management is enabled THEN 'This will reset the stock of this product.' is displayed |
+| Product with virtual product | IF the ecotax is enabled THEN the ecotax is reset to 0. The new retail price tax excluded is equals to the ecotax excluded + old retail price tax. | 'This will reset the ecotax value and may impact your retail price tax included.’ |
 
 WHEN the ecotax is enabled and the user changes the product from the virtual product to anther type
 
