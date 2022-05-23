@@ -32,6 +32,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/add-edit-state.html</loc>
     <lastmod>2022-02-08T16:51:16+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/add-edit-zone.html</loc>
+    <lastmod>2022-04-06T13:18:13+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
@@ -529,6 +532,12 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</loc>
     <lastmod>2022-02-23T18:42:01+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</loc>
+    <lastmod>2022-02-08T15:21:56+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/zones-listing.html</loc>
+    <lastmod>2022-04-06T13:17:35+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</loc>
     <lastmod>2021-10-29T13:55:04+02:00</lastmod>

@@ -110,6 +110,16 @@ Language  This drop-down menu allows selecting the language of the tag and is ma
     </item>
     
     <item>
+      <title>Add edit zone</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/add-edit-zone.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/add-edit-zone.html</guid>
+      <description>Add edit zone The following fields/toggles are displayed:
+  Name: this field is mandatory. When trying to save and if the field is empty, the following error message appears: &amp;ldquo;Please fillout this field&amp;rdquo;. If more than 64 chars are filled the following error message appears &amp;ldquo;This field cannot be longer than 64 characters.&amp;rdquo;. When trying to save and if the field is invalid, the following error message is displayed &amp;quot; &amp;ldquo;the entered name&amp;rdquo; is invalid.</description>
+    </item>
+    
+    <item>
       <title>Add new order</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1139,6 +1149,19 @@ On the table below are listed all the different cases.
       <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCATION &amp;gt; ZONES As a merchant I need to be able to manage the zone, add, edit, and/or delete them.
 WHAT Thus, in this project we aim at the current and expected behaviours when we add, edit or delete zones.
 WHY As a merchant, being able to manage zones will help to have my own subregions and manage my countries and shipping behaviours based on them as well.</description>
+    </item>
+    
+    <item>
+      <title>Zones listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/zones-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/zones-listing.html</guid>
+      <description>Zones listing Call to action A call to actions is displayed in the header of this page:
+ Add new zone  👉 See the specs of the add edit zone
+Settings wheel When clicking on the settings wheel, the following options are displayed:
+ Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.
+Show SQL query  After clicking on it, the SQL query is displayed in a modal.</description>
     </item>
     
     <item>
