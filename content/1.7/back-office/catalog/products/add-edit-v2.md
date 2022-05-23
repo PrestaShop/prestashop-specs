@@ -98,7 +98,7 @@ Pressing the button opens closes the current modal to open the confirmation moda
 
 WHEN the ecotax is enabled and the user changes the product from the virtual product to anther type
 
-THEN It displays 'This will reset the ecotax value and may impact your retail price tax included.' in the changing type modal and the ecotax is rest to 0. The retail price tax excluded of the virtual product is equals to the ecotax excluded + old retail price tax.
+THEN It displays 'This will reset the ecotax value and may impact your retail price tax included.' in the changing type modal and the ecotax is rest to 0. The retail price tax excluded of the virtual product is equals to the ecotax excluded + old retail price tax excluded.
 
 ### **References**
 
