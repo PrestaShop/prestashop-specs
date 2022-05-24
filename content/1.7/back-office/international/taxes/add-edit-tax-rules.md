@@ -35,7 +35,7 @@ The form can be accessed in 2 ways:
 - **Cancel** - button cancels the Tax editing form.
 - **Save and stay** - button saves the configured form and redirects to the same page.
 
-## New Tax Rule table (appears after submitting the Tax Rules main form)
+## New Tax Rule panel (appears after submitting the Tax Rules main form)
 
 - **Country** - dropdown, allows the selection of country for specific Tax Rule. By default it is set to All.
 - **Zip/Postal code range** - input, defines the zip or postal code for Tax Rule.
