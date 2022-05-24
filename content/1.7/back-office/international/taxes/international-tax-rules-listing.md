@@ -12,7 +12,7 @@ This page defines and lists all the Tax Rules stored in the Prestashop applicati
 ## Top elements
 
 - **Tax Rules** - page title.
-- **Add new tax rule CTA button** - redirects to tax rule creating and editing page.
+- **Add new tax rule button** - redirects to tax rule creating and editing page.
 - **Recommended Modules and Services** - redirects to recommended modules and services page.
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs: Taxes and Tax Rules** - navigation tabs for taxes and tax rules.
