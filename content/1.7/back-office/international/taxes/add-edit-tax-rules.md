@@ -7,12 +7,12 @@ weight: 1
 
 ![Adding or Editing Tax Rules](static/img/international-add-edit-tax-rules.png)
 
-This page UI allows to edit existing or add a brand new Tax Rule to the Prestashop Tax system.
+This page interface allows to edit existing or add a brand new Tax Rule to the Prestashop Tax system.
 
 ## Top elements
 
 - **Add New or Edit:{edited Tax Rule name}** - page title.
-- **Add new tax rule CTA button** - toggles the expanding or subtracting the Tax rule creating and editing section below.
+- **Add new tax rule button** - toggles the expanding or subtracting the Tax rule creating and editing section below.
 - **Help** - a side-bar with the helpful information, how to navigate in this page.
 - **Tabs: Taxes and Tax Rules** - navigation tabs for taxes and tax rules.
 
@@ -20,14 +20,14 @@ This page UI allows to edit existing or add a brand new Tax Rule to the Prestash
 
 The form can be accessed in 2 ways:
 
-- Add new Tax Rules group CTA button must be clicked from the Tax Rules listing.
+- Add new Tax Rules group button must be clicked from the Tax Rules listing.
 - Clicking on the Edit button of a Tax Rules item in the listing.
 
 ## Tax Rules Editing form
 
 - **Name** - mandatory - text field for naming the specific Tax Rule. Once hovered, there is a tooltip text prompted - _Invalid characters: <>;=#{}_.
 - **Enable** - toggle - allows to Enable or Disable tax rule. By default - Tax rule toggle is disabled.
-- **Shop association** - a widget, that allows to select the desired Multistores or Shop Groups, where Tax Rules could be applied. The widget contains 4 CTA buttons:
+- **Shop association** - a widget, that allows to select the desired Multistores or Shop Groups, where Tax Rules could be applied. The widget contains 4 buttons:
   - **Collapse all** - subtracts the Multistores and Shop groups tree.
   - **Expand all** - expands the Multistores and Shop groups tree.
   - **Check all** - checkmarks all the Multistores and Shop groups items in tree.
@@ -50,7 +50,7 @@ The Behavior dropdown values are the following: **This tax only** - rule applies
 
 - **Tax** - dropdown, allows to apply specific Tax from the list. Once hovered, there will be a text promted _(Total tax: 9%)_.
 - **Description** - allows to type specific description of the Tax Rule.
-- **Save and stay CTA** - button saves the configured form and redirects to the same page with the green success notification _Successful update._
+- **Save and stay** - button saves the configured form and redirects to the same page with the green success notification _Successful update._
 
 ## Country panel
 
