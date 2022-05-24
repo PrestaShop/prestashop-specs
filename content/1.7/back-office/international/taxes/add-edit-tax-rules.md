@@ -52,7 +52,12 @@ The form can be accessed in 2 ways:
 If there are specific countries added, after clicking **Save and stay**, the lower panel will appear with the countries list. The table has the following headers:
 - **Country** - displays the country name.
 - **State** - if defined country has a state, it can be displayed.
-- **Zip/Postal code** - if there is available Zip or Postal code, it can be displayed here.
+- **Zip/Postal code** - if there is available Zip or Postal code, it can be displayed here. If the field is typed with the invalid characters, there will be an error notification prompted:
+
+    _There are 2 errors. 
+    The Zip/Postal code is invalid. It must be typed as follows: 0000 for Afghanistan.
+    zipcode_from is invalid._
+
 - **Behavior** - displays the Tax behavior selected for specific country.
 - **Tax** - displays the Tax rule code.
 - **Description** - displays the specific description for the Tax rule.
