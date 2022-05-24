@@ -45,4 +45,17 @@ The form can be accessed in 2 ways:
   - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
 - **Tax** - dropdown, allows to apply specific Tax from the list.
 - **Description** - allows to type specific description of the Tax Rule.
-- **Save and stay** - button saves the configured form and redirects to the same page.
+- **Save and stay CTA** - button saves the configured form and redirects to the same page.
+
+## Country panel
+
+If there are specific countries added, after clicking **Save and stay**, the lower panel will appear with the countries list. The table has the following headers:
+- **Country** - displays the country name.
+- **State** - if defined country has a state, it can be displayed.
+- **Zip/Postal code** - if there is available Zip or Postal code, it can be displayed here.
+- **Behavior** - displays the Tax behavior selected for specific country.
+- **Tax** - displays the Tax rule code.
+- **Description** - displays the specific description for the Tax rule.
+- **Edit** - redirects to the same page for editing the current Tax rule.
+- **Dropdown > Delete** - deletes the specific country Tax rule from list. After clicking the **Delete**, there is a pop-up prompted with the exclamation error sign and text _Delete selected item?_ and possible values - **Yes** or **No**. No leads to closing the pop-up, Yes - deletes the country tax rule, with the page reloading and the success message _Successful update._
+- **Bulk actions widget** - if there are more than 1 currency Tax rule in the list, some of them can be selected by checkboxes separately, or can be **Selected all** or **Unselected all**. After the selections, **Delete selected** will delete the selected Tax rules from the list (confirmation pop-up will be prompted as well).
