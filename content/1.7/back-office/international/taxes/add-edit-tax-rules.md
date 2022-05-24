@@ -25,7 +25,7 @@ The form can be accessed in 2 ways:
 
 ## Tax Rules Editing form
 
-- **Name** - mandatory - text field for naming the specific Tax Rule.
+- **Name** - mandatory - text field for naming the specific Tax Rule. Once hovered, there is a tooltip text prompted - _Invalid characters: <>;=#{}_.
 - **Enable** - toggle - allows to Enable or Disable tax rule. By default - Tax rule toggle is disabled.
 - **Shop association** - a widget, that allows to select the desired Multistores or Shop Groups, where Tax Rules could be applied. The widget contains 4 CTA buttons:
   - **Collapse all** - subtracts the Multistores and Shop groups tree.
