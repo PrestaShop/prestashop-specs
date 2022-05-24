@@ -48,7 +48,7 @@ One after another: Apply taxes one after another (e.g.: 100 + 10% =&gt; 110 + 5%
 
 The Behavior dropdown values are the following: **This tax only** - rule applies only one current tax. **Combine** - rule combines the current tax with another tax. **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
 
-- **Tax** - dropdown, allows to apply specific Tax from the list.
+- **Tax** - dropdown, allows to apply specific Tax from the list. Once hovered, there will be text promted _(Total tax: 9%)_.
 - **Description** - allows to type specific description of the Tax Rule.
 - **Save and stay CTA** - button saves the configured form and redirects to the same page.
 
