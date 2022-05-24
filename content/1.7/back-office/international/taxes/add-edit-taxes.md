@@ -7,13 +7,13 @@ weight: 1
 
 ![Taxes](static/img/international-add-edit-taxes.png)
 
-This UI provides the ability to add customized tax or edit the existing tax of the Prestashop tax list.
+This inteface provides the ability to add customized tax or edit the existing tax of the Prestashop tax list.
 
 ## Navigating to the Add or Edit Taxes form
 
 The form can be accessed in 2 ways:
 
-- Adding a new Tax, Add new tax CTA button must be clicked.
+- Adding a new Tax, Add new tax button must be clicked.
 - Clicking on the Edit button of an item in the list
 
 ## Tax Editing form
@@ -32,6 +32,6 @@ If there are some invalid characters typed in the name after submission, there w
 
 If the Name field is left empty after submission, there will be an error below the Name field - _The field name is required at least in your default language._
 
-If the Range is typed with more than 6 characters, the UI will be prompted with the error - _This field cannot be longer than 6 characters_.
+If the Range is typed with more than 6 characters, the interface will be prompted with the error - _This field cannot be longer than 6 characters_.
 
-If the Name is typed with more than 32 characters, the UI will be prompted with the error - _This field cannot be longer than 32 characters - Language: {the language of the name}_. 
+If the Name is typed with more than 32 characters, the interface will be prompted with the error - _This field cannot be longer than 32 characters - Language: {the language of the name}_. 
