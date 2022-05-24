@@ -39,10 +39,15 @@ The form can be accessed in 2 ways:
 
 - **Country** - dropdown, allows the selection of country for specific Tax Rule. By default it is set to All.
 - **Zip/Postal code range** - input, defines the zip or postal code for Tax Rule.
-- **Behavior** - dropdown, allows the Tax rule to have a specific behavior, when address matches multiple rules:
-  - **This tax only** - rule applies only one current tax.
-  - **Combine** - rule combines the current tax with another tax.
-  - **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
+- **Behavior** - dropdown, allows the Tax rule to have a specific behavior, when address matches multiple rules. Once hovered, there is an explanation prompted:
+
+_You must define the behavior if an address matches multiple rules:<br>
+This tax only: Will apply only this tax<br>
+Combine: Combine taxes (e.g.: 10% + 5% = 15%)<br>
+One after another: Apply taxes one after another (e.g.: 100 + 10% =&gt; 110 + 5% = 115.5)_
+
+The Behavior dropdown values are the following: **This tax only** - rule applies only one current tax. **Combine** - rule combines the current tax with another tax. **One after another** - rule combines the current tax, and then after the combination result it combines the next rule.
+
 - **Tax** - dropdown, allows to apply specific Tax from the list.
 - **Description** - allows to type specific description of the Tax Rule.
 - **Save and stay CTA** - button saves the configured form and redirects to the same page.
