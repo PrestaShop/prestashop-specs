@@ -70,12 +70,12 @@ Bulk action dropdown is disabled by default. Once some of the tax items are sele
 - **Display tax in the shopping cart** - toggle switch button, enabling or disabling Tax showing in the Cart. By default it is disabled.
 - **Based on** - drop-down list item to choose from which address the tax should be calculated. Possible values are **Invoice Address** and **Delivery Address**. By default, there is Invoice address value selected.
 - **Use ecotax** - toggle switch button, controlling the ecotaxes availability. Enabling the ecotaxes, creates additional field in Pricing area in Product Page editing. By default, the ecotaxes are disabled.
-- **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory. After enabling Ecotaxes, the new input with Ecotaxes becomes available in each product editing page in Back-Office. Also, the Ecotax numeric value is displayed in Product Page, between the Product title and Quantity with CTA Add to cart UI elements.
+- **Ecotax** - if _Use ecotax_ is enabled, this _Ecotax_ dropdown field appears. There can be certain ecotax and range set from the dropdown. This field becomes mandatory. After enabling Ecotaxes, the new input with Ecotaxes becomes available in each product editing page in Back-Office. Also, the Ecotax numeric value is displayed in Product Page, between the Product title and Quantity with CTA Add to cart interface elements.
 - **Save** - CTA button saving the Tax configuration.
 
 ## Multistores compatibility
 
-There is an information notification in Add or Edit Taxes UI - with the text _Note that this feature is available in all shops context only. It will be added to all your stores_ meaning that tax editing will be aligned the same with the all multistores and shop groups.
+There is an information notification in Add or Edit Taxes interface - with the text _Note that this feature is available in all shops context only. It will be added to all your stores_ meaning that tax editing will be aligned the same with the all multistores and shop groups.
 
 Multistores are not affected separately, while managing the Tax properties in Tax listings. It means, that customizing Tax for one country will impact all the Taxes for other shop groups and multistores. 
 
