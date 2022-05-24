@@ -18,20 +18,12 @@ The form can be accessed in 2 ways:
 
 ## Tax Editing form
 
-- **Name** - mandatory - text field for naming the specific Tax with a Language selector
-- **Rate** - numeric input field, allows setting the Rate of the tax. Range must be typed as a single numbers or single numbers with decimals.
+- **Name** - mandatory - text field for naming the specific Tax with a Language selector. The help text is _Tax name to display in carts and on invoices (e.g. "VAT"). Invalid characters: <>;=#{}_. If the webshop has multiple languages installed, the language dropdown switcher will appear. Different Names can be saved on the different languages, by changing the dropdown value, and clicking Save. If the Name field is left empty after submission, there will be an error below the Name field - _The field name is required at least in your default language._ If the Name is typed with more than 32 characters, the interface will be prompted with the error - _This field cannot be longer than 32 characters - Language: {the language of the name}_. 
+- **Rate** - numeric input field, allows setting the Rate of the tax. Range must be typed as a single numbers or single numbers with decimals. If there is an empty Rate field after submission, there will be a browser error notification, requesting to fill the empty field. If the Rate is typed with more than 6 characters, the interface will be prompted with the error - _This field cannot be longer than 6 characters_.
 - **Enable** - toggle - allows to Enable or Disable tax. By default - Tax toggle is enabled.
 - **Cancel** - button cancels the Tax editing form.
-- **Save** - button saves the configured form.
+- **Save** - button saves the configured form. Notification will be prompted _Successful update._
 
 ## Notifications after submissions
 
-If there is an empty Rate field after submission, there will be a browser error notification, requesting to fill the empty field.
-
 If there are some invalid characters typed in the name after submission, there will be an error below the Name field - _"{invalid character}" is invalid - Language: {the language of the name}_.
-
-If the Name field is left empty after submission, there will be an error below the Name field - _The field name is required at least in your default language._
-
-If the Range is typed with more than 6 characters, the interface will be prompted with the error - _This field cannot be longer than 6 characters_.
-
-If the Name is typed with more than 32 characters, the interface will be prompted with the error - _This field cannot be longer than 32 characters - Language: {the language of the name}_. 
