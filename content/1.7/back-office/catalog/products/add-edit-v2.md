@@ -985,10 +985,10 @@ Here is the list of the elements of the options tab:
 ### Product display
 
 * **Visibility**: Option selector -  4 options. By default, everywhere is selected.       
-	- **Everywhere**: The product is displayed in the catalog \(categories\) and can be found if you search for it.  
-	- **Catalog only**: The product is displayed in the catalog \(categories\) and can’t be found if you search for it.    
-	- **Search only**: The product is not displayed in the catalog \(categories\) and can be found if you search for it.  
-	- **Nowhere**: The product is not displayed in the catalog \(categories\) and can’t be found if you search for it.     
+	- **Everywhere**: The product is displayed in the catalog \(categories\) and can be found if you search for it. Help text: Customers can access the product  by browsing the catalog, using the search bar, or the link.
+	- **Catalog only**: The product is displayed in the catalog \(categories\) and can’t be found if you search for it. Help text: Customers can access the product only by browsing the catalog. This is particularly useful to avoid displaying too many similar products in a search.   
+	- **Search only**: The product is not displayed in the catalog \(categories\) and can be found if you search for it. Help text: Customers can access the product only by using the search bar.
+	- **Nowhere**: The product is not displayed in the catalog \(categories\) and can’t be found if you search for it. Help text: Only customers with the link can access the product.   
 
 ### Availability
 
