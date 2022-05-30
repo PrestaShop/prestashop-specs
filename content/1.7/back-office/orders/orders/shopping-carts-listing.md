@@ -64,7 +64,7 @@ Bulk Actions has the following functionalities:
 - **Unselect All** - Unselects all the shopping carts in the list.
 - **Delete selected** - deletes the selected shopping carts.
 
-Note, that Bulk Actions are not available, when there are demo carts created and when the carts are transformed to finished orders.
+Note, that Bulk Actions are not available, when there are demo carts created and when the carts are transformed to finished orders. As well, the selection of the items separately are not available, during those conditions.
 
 ### Pagination elements UI
 
