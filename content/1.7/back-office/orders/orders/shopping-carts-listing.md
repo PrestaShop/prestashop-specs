@@ -60,10 +60,11 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 
 Bulk Actions has the following functionalities:
 
-
 - **Select All** - selects all the shopping carts, that are Abandoned or Non ordered only.
 - **Unselect All** - Unselects all the shopping carts in the list.
 - **Delete selected** - deletes the selected shopping carts.
+
+Note, that Bulk Actions are not available, when there are demo carts created and when the carts are transformed to finished orders.
 
 ### Pagination elements UI
 
