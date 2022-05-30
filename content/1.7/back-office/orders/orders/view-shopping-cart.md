@@ -36,7 +36,7 @@ The customer name and last name contains a link, that directs to the Customer Ac
 
 The whole section table, where the orders of the customer are displayed. The elements of UI are basic: product image, product name with the link into the product editing, unit price, quantity, stock and total cart sum.
 
-Tax included or Tax ecluded yellow warning notification is displayed _For this particular customer group, prices are displayed as: Tax included_ or _For this particular customer group, prices are displayed as: Tax excluded_ in the end of the Cart summary list.
+Tax included or Tax excluded yellow warning notification is displayed _For this particular customer group, prices are displayed as: Tax included_ or _For this particular customer group, prices are displayed as: Tax excluded_ in the end of the Cart summary list.
 
 ## Multistore functionality
 
