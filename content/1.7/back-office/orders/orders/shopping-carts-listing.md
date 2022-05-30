@@ -35,6 +35,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 - **Shop** - filtering is not available, but the whole column is listed with the Shop names for each Shopping Cart, if there are several multistores configured.
 - **Search CTA button** - The search works either pressing the enter button or pressing this button. Once clicked, the filtering criteria is executed.
 - **Reset CTA button** - Once the search has been executed, the return page shows the Reset button. Clicking this button removes the filtering function from the table.
+- **Sorting arrows (up and down)** - once clicked, the webshop page will reaload, and arrange the table data from the higher on top or the lower on top values.
 
 ## The body of the Table UI
 
