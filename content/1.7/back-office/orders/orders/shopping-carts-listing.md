@@ -76,14 +76,19 @@ The pagination can be selected both in showing the Shopping Carts listed in the 
 
 ## Notifications after form submissions
 
-After deleting the single Shopping Cart row, using the dropdown View > Delete, the success notification is prompted:<br>
+After deleting the single Shopping Cart row, using the dropdown View > Delete, the pop-up appears with the text _Delete selected items?_, there will be 2 options - **Cancel** (closes the pop-up) the deletion or clicking **OK** will lead to the success notification:<br>
 _Successful deletion._
 
-After using the Bulk Actions successful Cart deletion, the success notification is prompted:<br>
+After using the Bulk Actions successful Cart deletion, the pop-up appears with the text _Delete selected items?_, there will be 2 options - **Cancel** (closes the pop-up) the deletion or clicking **OK** will lead to the success notification:<br>
 _The selection has been successfully deleted._
 
 After using the Bulk Actions unsiccessful Cart deletion, the failure notification is prompted:<br>
 _You must select at least one element to delete._
+
+## Useful edge cases
+
+- When shopping cart is deleted from Back-Office, it is also deleted in Front-Office cart page.
+- When the Customer is deleted, all its Carts are deleted as well.
 
 ## Multistore functionality in Shopping Carts
 
