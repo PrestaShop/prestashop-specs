@@ -1,4 +1,5 @@
 
+
 ---
 title: Product Page - 8.0
 weight: 1
@@ -205,7 +206,7 @@ All the brands enabled are displayed in the drop-down. If there are several bran
 
 ### References
 
--   **ISBN** - Text input - only numbers are accepted and X at the end. The International Standard Book Number (ISBN) is used to identify books and other publications.
+-   **ISBN**: Field, numbers, spaces, hyphen and X are accepted. The International Standard Book Number \(ISBN\) is used to identify books and other publications.
     
 -   **EAN-13 or JAN barcode** - Text input - only numbers are accepted. This type of product code is specific to Europe and Japan but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America. The EAN is added at the end of the product URL in the front office.
     
@@ -455,7 +456,7 @@ All sections by default are collapsed. Press them to collapse and collapse them.
 
 	- **References** - Section
 		* **Reference** - Text input
-		* **ISBN code** -  Numerc input
+		* **ISBN code** -  Text input
 		* **EAN-13 or JAN barcode** - Numerc input   
 		* **UPC barcode** - Numerc input 
 		* **MPN** - Numerc input   
@@ -596,7 +597,7 @@ AND is added to the Final Impact on price per unit (tax incl.)
 * **Impact on additional shipping fees**: \([Improvement 11305](https://github.com/PrestaShop/PrestaShop/issues/11305)\) By default, it’s filled with 0.000000       
 This amount is added to the additional shipping fees configured in the Shipping tab for the product.       
 The total is added to the total shipping cost according to the carrier selected in the front office.
-* **ISBN code**: Only numbers are accepted.       
+* **ISBN code**: Numbers, spaces, hyphen and X are accepted.
 The International Standard Book Number \(ISBN\) is used to identify books and other publications.      
 The ISBN is displayed in the product details tab of the front office and changed accordingly to the selected combination.
 * **EAN-13 or JAN barcode**: Only numbers are accepted.      
