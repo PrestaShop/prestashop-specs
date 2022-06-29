@@ -1049,11 +1049,19 @@ THEN Supplier references are displayed
 
 ## Buttons' Footer
 
+WHEN the form has been edited
+THEN the input ‘go to catalog”, ‘duplicate, preview and new product are disabled
+
+IF the form has been edited and tha value saved 
+THEN the input ‘go to catalog”, ‘duplicate, preview and new product are enabled and the button cancel and save are disabled.
+
+WHEN the form has not been edited,
+THEN the button cancel and save are disabled.
+
 - **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 
 - **Preview** - When you click on this button, it saves and opens a new browser tab with the product displayed in the front office.
 If the product is disabled (offline), you have on the product page in the front office a message displayed: “This product is not visible to your customers.”
-Keyboard shortcut: ALT + SHIFT + V
 
 - **Online** - When you click on this button, it saves and makes the product visible in the front office.
 
@@ -1066,15 +1074,9 @@ If the product is Offline then the button name change to "Save".
 
 - **Duplicate** - When you click on this button, it saves and duplicates the current product (the duplicated product will be offline). 
 
-- **Duplicate images** - checkbox - Checked, duplicates product with the images 
-The duplicated product must be exactly the same. Keyboard shortcut:
-ALT + SHIFT + D
-
 - **Go to catalog** - When you click on this button, it saves and redirects to the catalog product list.
-Keyboard shortcut: ALT + SHIFT + Q
 
 - **Add new product** - When you click on this button, it saves and opens a new empty product page.
-Keyboard shortcut: ALT + SHIFT + P
 
 ## Multistore
 
