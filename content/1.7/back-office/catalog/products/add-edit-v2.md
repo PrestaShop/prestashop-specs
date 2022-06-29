@@ -1050,13 +1050,13 @@ THEN Supplier references are displayed
 ## Buttons' Footer
 
 WHEN the form has been edited
-THEN the input ‘go to catalog”, ‘duplicate, preview and new product are disabled
+THEN the input ‘go to catalog”, ‘duplicate', 'preview' and 'new product' are disabled
 
 IF the form has been edited and tha value saved 
-THEN the input ‘go to catalog”, ‘duplicate, preview and new product are enabled and the button cancel and save are disabled.
+THEN the input ‘go to catalog”, ‘duplicate', 'preview' and 'new product' are enabled and the button cancel and save are disabled.
 
 WHEN the form has not been edited,
-THEN the button cancel and save are disabled.
+THEN the button 'cancel' and 'save'/'save and publish' are disabled.
 
 - **Delete** - Button to delete the product. When you click on it, you have a modal to cancel or confirm the action.
 
