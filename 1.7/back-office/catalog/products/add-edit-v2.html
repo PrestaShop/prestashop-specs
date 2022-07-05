@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1657014015" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1657014015" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1657014015" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1657014015" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1657014015" rel="stylesheet">
-    <link href="../../../../style.css?1657014015" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1657014593" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1657014593" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1657014593" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1657014593" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1657014593" rel="stylesheet">
+    <link href="../../../../style.css?1657014593" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1657014015"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1657014593"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -5641,7 +5641,15 @@
             <li><a href="#shared-stocks">Shared stocks</a></li>
           </ul>
         </li>
-        <li><a href="#stock-management-is-disabled-on-bo--shop-parameters--product-settings">Stock management is Disabled on BO &gt; Shop Parameters &gt; Product Settings</a></li>
+        <li><a href="#stock-management-is-disabled-on-bo--shop-parameters--product-settings">Stock management is Disabled on BO &gt; Shop Parameters &gt; Product Settings</a>
+          <ul>
+            <li><a href="#business-rules">Business rules</a>
+              <ul>
+                <li><a href="#product-deletion">Product deletion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -8642,6 +8650,10 @@ If the user cancels the confirmation modal, then the modal is closed and the use
 </table>
 <p>WHEN the ecotax is enabled and the user changes the product from the virtual product to anther type</p>
 <p>THEN It displays &lsquo;This will reset the ecotax value and may impact your retail price tax included.&rsquo; in the changing type modal and the ecotax is rest to 0. The retail price tax excluded of the virtual product is equals to the ecotax excluded + old retail price tax excluded.</p>
+<p>IF the user changes product type into a pack and the product is already associated to pack t
+THEN the user is blocked in the process, and an error is displayed.</p>
+<p>IF the product is already associated to a pack
+THEN the user can’t change a product type to pack.</p>
 <h3 id="references"><strong>References</strong></h3>
 <p>List all the references fulfilled next to its label.  When there is no more space in the header after the reference, the other references start a new line below the first one.</p>
 <h2 id="description-tab">Description tab</h2>
@@ -8958,7 +8970,8 @@ If you check Yes, new fields are ungreyed:
 THEN The product is added to the list of the products</p>
 </li>
 </ul>
-<p>The user can&rsquo;t add the same product multiple times from the Search Bar.</p>
+<p>The user can&rsquo;t add the same product multiple times from the Search Bar.<br>
+A pack can add a product disabled or enabled, and can add a product without a name.</p>
 <ul>
 <li><strong>Pack quantities</strong> - Dropdown with 4 options:
 <ul>
@@ -9924,14 +9937,20 @@ The rows are checkboxes</p>
 <li><strong>Quantity</strong> in the header.</li>
 </ul>
 <p><strong>Behavior out of stocks</strong> is replaced by the label &ldquo;Stock management is disabled&rdquo;</p>
+<h3 id="business-rules">Business rules</h3>
+<h4 id="product-deletion">Product deletion</h4>
+<p>IF the user deletes a product or a specific combination associated with a pack
+THEN the product is removed from the pack.</p>
+<p>IF the user deletes a product standard associated with a pack
+THEN the product is removed from the pack.</p>
 
 
 <footer class="article-footer">
 	
 <div>
-  Last updated on June 29, 2022
+  Last updated on July 5, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/c700e5bf8deed19dd25ed8d43f9dc1ebbfa939f4">"grammar" (c700e5bf)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/930f1af0b628d1ede7c053dacf743204f703dba2">"pack case: when a product associated to pack change of type or is deleted." (930f1af0)</a>
   
 </div>
 
@@ -9952,17 +9971,17 @@ The rows are checkboxes</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1657014015"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1657014015"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1657014015"></script>
-    <script src="../../../../js/jquery.sticky.js?1657014015"></script>
-    <script src="../../../../js/featherlight.min.js?1657014015"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1657014015"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1657014015"></script>
-    <script src="../../../../js/learn.js?1657014015"></script>
-    <script src="../../../../js/hugo-learn.js?1657014015"></script>
+    <script src="../../../../js/clipboard.min.js?1657014593"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1657014593"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1657014593"></script>
+    <script src="../../../../js/jquery.sticky.js?1657014593"></script>
+    <script src="../../../../js/featherlight.min.js?1657014593"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1657014593"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1657014593"></script>
+    <script src="../../../../js/learn.js?1657014593"></script>
+    <script src="../../../../js/hugo-learn.js?1657014593"></script>
     
-    <script src="../../../../main.js?1657014015"></script>
+    <script src="../../../../main.js?1657014593"></script>
     
     
 
