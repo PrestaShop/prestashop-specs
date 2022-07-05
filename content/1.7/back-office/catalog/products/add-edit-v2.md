@@ -101,6 +101,13 @@ WHEN the ecotax is enabled and the user changes the product from the virtual pro
 
 THEN It displays 'This will reset the ecotax value and may impact your retail price tax included.' in the changing type modal and the ecotax is rest to 0. The retail price tax excluded of the virtual product is equals to the ecotax excluded + old retail price tax excluded.
 
+
+IF the user changes product type into a pack and the product is already associated to pack t
+THEN the user is blocked in the process, and an error is displayed.
+
+IF the product is already associated to a pack
+THEN the user can’t change a product type to pack.
+
 ### **References**
 
 List all the references fulfilled next to its label.  When there is no more space in the header after the reference, the other references start a new line below the first one.
@@ -352,7 +359,9 @@ The stock section is hiden if Enable stock management is disabled.
 	WHEN the user selects a product from the list
 	THEN The product is added to the list of the products 
 
-The user can't add the same product multiple times from the Search Bar.     
+The user can't add the same product multiple times from the Search Bar.  
+A pack can add a product disabled or enabled, and can add a product without a name.
+
 
 -   **Pack quantities** - Dropdown with 4 options: 
 	* **Decrement pack only**
@@ -1147,3 +1156,13 @@ When Stock management is Disabled Then the fields listed bellow are not displaye
 - **Quantity** in the header.
 
 **Behavior out of stocks** is replaced by the label "Stock management is disabled"
+
+### Business rules
+
+#### Product deletion
+
+IF the user deletes a product or a specific combination associated with a pack
+THEN the product is removed from the pack.
+
+IF the user deletes a product standard associated with a pack
+THEN the product is removed from the pack.
