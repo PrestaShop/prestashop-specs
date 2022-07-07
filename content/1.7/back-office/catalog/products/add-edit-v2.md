@@ -892,10 +892,9 @@ THEN the modal with all specifics prices fields are closed.
 IF the user clicks again to Add a specific price
 THEN all fields are reset to their default values.  
 
-* **List of specific prices & catalog price rules**: Lists the specific price with all the details: 
+* **List of specific prices**: Lists the specific price with all the details: 
 ID, Rule, Combination, Currency, Country, Group, Customer, Specific price (tax excl.), Discount, Duration, Units, actions (delete, edit). Rule column contains “--” for a specific price.
 
-Here are also listed the catalog prices rules that impacts this product. Rule column contains the name of the catalog price rule.
 
 * **Edit a specific price** - Button 
 WHEN the user edits a specific price
@@ -909,7 +908,26 @@ THEN It opens a new tab the catalog price rule edit page
 WHEN the user clicks on it
 THEN a modal opens to cancel or confirm the action.
 
+
+### Catalog price rules
+
+* **Show catalog price rules** - Button 
+IF the user press the button
+THEN the catalog price rules is displayed and the button hidden.
+IF the page is refreshed THEN the button is displayed and the button hidden.
+
+* **List catalog price rules**: Lists the catalog price rules with all the details: 
+ID, Name, Currency, Country, Group, Customer, Shop, Reduction, Reduction type, Units, From, To.
+
+Here are also listed the catalog prices rules that impacts this product. Rule column contains the name of the catalog price rule.
+
+* **Edit a catalog prices rule** - Button 
+WHEN the user edits a catalog prices rule
+THEN It opens a new tab the catalog price rule edit page
+
 The user can't delete the catalog price rule.
+
+* **Manage catalog price rules** - Link - Open in new tab the catalog price rules' list
 
 ### Priorities
 
