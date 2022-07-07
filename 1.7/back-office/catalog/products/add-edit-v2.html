@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1657196946" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1657196946" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1657196946" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1657196946" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1657196946" rel="stylesheet">
-    <link href="../../../../style.css?1657196946" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1657202127" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1657202127" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1657202127" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1657202127" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1657202127" rel="stylesheet">
+    <link href="../../../../style.css?1657202127" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1657196946"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1657202127"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -5621,6 +5621,7 @@
             <li><a href="#display-retail-price-per-unit">Display retail price per unit</a></li>
             <li><a href="#summary">Summary</a></li>
             <li><a href="#specific-prices">Specific prices</a></li>
+            <li><a href="#catalog-price-rules">Catalog price rules</a></li>
             <li><a href="#priorities">Priorities</a></li>
           </ul>
         </li>
@@ -9622,11 +9623,10 @@ THEN the modal with all specifics prices fields are closed.</p>
 <p>IF the user clicks again to Add a specific price
 THEN all fields are reset to their default values.</p>
 <ul>
-<li><strong>List of specific prices &amp; catalog price rules</strong>: Lists the specific price with all the details:
-ID, Rule, Combination, Currency, Country, Group, Customer, Specific price (tax excl.), Discount, Duration, Units, actions (delete, edit). Rule column contains “&ndash;” for a specific price.</li>
-</ul>
-<p>Here are also listed the catalog prices rules that impacts this product. Rule column contains the name of the catalog price rule.</p>
-<ul>
+<li>
+<p><strong>List of specific prices</strong>: Lists the specific price with all the details:
+ID, Rule, Combination, Currency, Country, Group, Customer, Specific price (tax excl.), Discount, Duration, Units, actions (delete, edit). Rule column contains “&ndash;” for a specific price.</p>
+</li>
 <li>
 <p><strong>Edit a specific price</strong> - Button
 WHEN the user edits a specific price
@@ -9643,7 +9643,29 @@ WHEN the user clicks on it
 THEN a modal opens to cancel or confirm the action.</p>
 </li>
 </ul>
+<h3 id="catalog-price-rules">Catalog price rules</h3>
+<ul>
+<li>
+<p><strong>Show catalog price rules</strong> - Button
+IF the user press the button
+THEN the catalog price rules is displayed and the button hidden.
+IF the page is refreshed THEN the button is displayed and the button hidden.</p>
+</li>
+<li>
+<p><strong>List catalog price rules</strong>: Lists the catalog price rules with all the details:
+ID, Name, Currency, Country, Group, Customer, Shop, Reduction, Reduction type, Units, From, To.</p>
+</li>
+</ul>
+<p>Here are also listed the catalog prices rules that impacts this product. Rule column contains the name of the catalog price rule.</p>
+<ul>
+<li><strong>Edit a catalog prices rule</strong> - Button
+WHEN the user edits a catalog prices rule
+THEN It opens a new tab the catalog price rule edit page</li>
+</ul>
 <p>The user can&rsquo;t delete the catalog price rule.</p>
+<ul>
+<li><strong>Manage catalog price rules</strong> - Link - Open in new tab the catalog price rules' list</li>
+</ul>
 <h3 id="priorities">Priorities</h3>
 <p><strong>Priorities</strong> - Option selector
 2 options:</p>
@@ -9949,7 +9971,7 @@ THEN the product is removed from the pack.</p>
 <div>
   Last updated on July 7, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/ac25b3fb7e2aaf13cbde3f524e0e217bdb2ce68b">"Update Show price behavior" (ac25b3fb)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/8ed3c9765fa7f8e62216f3c48c5df6cc0bf7aed9">"Catalog price rule list" (8ed3c976)</a>
   
 </div>
 
@@ -9970,17 +9992,17 @@ THEN the product is removed from the pack.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1657196946"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1657196946"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1657196946"></script>
-    <script src="../../../../js/jquery.sticky.js?1657196946"></script>
-    <script src="../../../../js/featherlight.min.js?1657196946"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1657196946"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1657196946"></script>
-    <script src="../../../../js/learn.js?1657196946"></script>
-    <script src="../../../../js/hugo-learn.js?1657196946"></script>
+    <script src="../../../../js/clipboard.min.js?1657202127"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1657202127"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1657202127"></script>
+    <script src="../../../../js/jquery.sticky.js?1657202127"></script>
+    <script src="../../../../js/featherlight.min.js?1657202127"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1657202127"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1657202127"></script>
+    <script src="../../../../js/learn.js?1657202127"></script>
+    <script src="../../../../js/hugo-learn.js?1657202127"></script>
     
-    <script src="../../../../main.js?1657196946"></script>
+    <script src="../../../../main.js?1657202127"></script>
     
     
 
