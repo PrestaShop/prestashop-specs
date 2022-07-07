@@ -1002,12 +1002,12 @@ Here is the list of the elements of the options tab:
 
 ### Availability
 
-* **Available for order** - Switch button - Checkbox checked by default. 
-IF you uncheck it
-THEN the add to cart button is disabled in the product page in the front office and the “Show price” checkbox is displayed (checked).
-* **Show price**  - Switch button  
-IF the user unchecks it
-THEN the product price isn’t displayed on the product page and product lists in the front office. For a pack, the price of the pack and the prices of the products contained in the pack are not displayed.
+* **Available for order** - Switch button - by default, the switch is ON.
+IF the user switches to OFF, THEN the add to cart button is disabled on the product page in the front office and the “Show price” switch input is enabled and set to ON.
+IF the user switches to ON, THEN “Show price” switch input is disabled and set to ON.
+
+* **Show price** - Switch button
+IF the user switches to OFF, THEN the product price isn’t displayed on the product page and product lists in the front office. For a pack, the price of the pack and the prices of the products contained in the pack are not displayed.
 
 * **Web-only**  - Switch button -  Checkbox not checked by default. 
 WHEN checked AND “available for order” OR “show price” is checked
