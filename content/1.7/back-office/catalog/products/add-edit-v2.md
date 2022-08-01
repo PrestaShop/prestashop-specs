@@ -279,6 +279,7 @@ The tab is displayed only if the product is a standard product
 - **Edit quantity** - Number input - Decreases or Increases the physical stock by the specified quantity
 
 - **Recent Stock Movements** - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock movement, it is displayed a Grouped stock movements linked to the order
+The employee name is saved , so if the employee name is changed or deleted
 
 	- **Grouped stock movements linked to the order:** accumulation of all the stock movements related to an Order such as Customer Order and Product return.
 
@@ -733,13 +734,13 @@ THEN the price (tax incl.) is updated and the tax's label.
 IF there are several taxes rules with the same name
 THEN the ID of the tax rule is displayed before its name.
 
-* **Tax** - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected.
+* **Tax** - Label - Tax %ISO_code_country%: %tax_value% % - Displays the country ISO code of the shop's country and the tax corresponding shop's country and the tax rule selected. 
 
 IF the tax rule has not a tax for the shop's country
 THEN it displays on the Tax label 0% next to the country ISO code.
 
 IF the shop's country has states configured with different tax per states
-THEN it displays the tax of the first state configured.
+THEN it displays the tax of the first state configured and it displays the label: Tax %_country_country%-%ISO_code_State%
 
 IF the tax is disabled in BO > International > Taxes page
 THEN it displays "Tax feature is disabled, it will not affect price tax included." (final wording to define)
