@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1657202127" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1657202127" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1657202127" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1657202127" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1657202127" rel="stylesheet">
-    <link href="../../../../style.css?1657202127" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1659357786" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1659357786" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1659357786" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1659357786" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1659357786" rel="stylesheet">
+    <link href="../../../../style.css?1659357786" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1657202127"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1659357786"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -8859,7 +8859,8 @@ When the button is pressed then add the item to a list</p>
 <p><strong>Edit quantity</strong> - Number input - Decreases or Increases the physical stock by the specified quantity</p>
 </li>
 <li>
-<p><strong>Recent Stock Movements</strong> - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock movement, it is displayed a Grouped stock movements linked to the order</p>
+<p><strong>Recent Stock Movements</strong> - List the 5 last stock movements of Employee Edition with the Employee name and date. Between each stock movement, it is displayed a Grouped stock movements linked to the order
+The employee name is saved , so if the employee name is changed or deleted</p>
 <ul>
 <li><strong>Grouped stock movements linked to the order:</strong> accumulation of all the stock movements related to an Order such as Customer Order and Product return.</li>
 </ul>
@@ -9436,12 +9437,12 @@ THEN the price (tax incl.) is updated and the tax&rsquo;s label.</p>
 <p>IF there are several taxes rules with the same name
 THEN the ID of the tax rule is displayed before its name.</p>
 <ul>
-<li><strong>Tax</strong> - Label - Tax %ISO_code%: %tax_value% % - Displays the country ISO code of the shop&rsquo;s country and the tax corresponding shop&rsquo;s country and the tax rule selected.</li>
+<li><strong>Tax</strong> - Label - Tax %ISO_code_country%: %tax_value% % - Displays the country ISO code of the shop&rsquo;s country and the tax corresponding shop&rsquo;s country and the tax rule selected.</li>
 </ul>
 <p>IF the tax rule has not a tax for the shop&rsquo;s country
 THEN it displays on the Tax label 0% next to the country ISO code.</p>
 <p>IF the shop&rsquo;s country has states configured with different tax per states
-THEN it displays the tax of the first state configured.</p>
+THEN it displays the tax of the first state configured and it displays the label: Tax %_country_country%-%ISO_code_State%</p>
 <p>IF the tax is disabled in BO &gt; International &gt; Taxes page
 THEN it displays &ldquo;Tax feature is disabled, it will not affect price tax included.&rdquo; (final wording to define)</p>
 <ul>
@@ -9969,9 +9970,9 @@ THEN the product is removed from the pack.</p>
 <footer class="article-footer">
 	
 <div>
-  Last updated on July 7, 2022
+  Last updated on August 1, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/8ed3c9765fa7f8e62216f3c48c5df6cc0bf7aed9">"Catalog price rule list" (8ed3c976)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/08241aff5dd4dc79b534bdce71cb8c6858fe776e">"Catalog price rule list" (08241aff)</a>
   
 </div>
 
@@ -9992,17 +9993,17 @@ THEN the product is removed from the pack.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1657202127"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1657202127"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1657202127"></script>
-    <script src="../../../../js/jquery.sticky.js?1657202127"></script>
-    <script src="../../../../js/featherlight.min.js?1657202127"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1657202127"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1657202127"></script>
-    <script src="../../../../js/learn.js?1657202127"></script>
-    <script src="../../../../js/hugo-learn.js?1657202127"></script>
+    <script src="../../../../js/clipboard.min.js?1659357786"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1659357786"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1659357786"></script>
+    <script src="../../../../js/jquery.sticky.js?1659357786"></script>
+    <script src="../../../../js/featherlight.min.js?1659357786"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1659357786"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1659357786"></script>
+    <script src="../../../../js/learn.js?1659357786"></script>
+    <script src="../../../../js/hugo-learn.js?1659357786"></script>
     
-    <script src="../../../../main.js?1657202127"></script>
+    <script src="../../../../main.js?1659357786"></script>
     
     
 
