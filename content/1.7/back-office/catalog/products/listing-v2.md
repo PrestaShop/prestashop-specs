@@ -147,9 +147,14 @@ If the product is standard without combinations or a pack, open it in the same b
 
 WHEN all shops or a group of shops is selected THEN the column of Stores(s) is added to the listing.
 
-When "all shops" is selected, lists all the products and groups products associated with different shops together. When a group of shops is selected, only the products list all the products belonging to the shop group and groups products associated with different shops together.
+Each item in the product list displays the product with a list of the names of the stores associated with the product, the image, the reference, the price of the product without and with, the quantity of the product, the status and the actions.
 
-For products associated with different shops, it displays the default shop data in the list’s row. If the product is not linked to the default shop then it displays use the data of the first shop in the alphabetic order.
+The list of associated stores displays a maximum of 3 stores and then displays (...) the remaining stores.
+
+The list of stores is displayed by id in ascending order. The first shop in the list is used to display the image, reference, price and quantity of the product. 
+The first shop is displayed in bold.
+
+When "all shops" is selected, lists all the products and groups the products associated with different shops together. When a group of shops is selected, only the products list all the products belonging to the shop group and groups products associated with different shops together.
 
 A product associated with different shops:
 
