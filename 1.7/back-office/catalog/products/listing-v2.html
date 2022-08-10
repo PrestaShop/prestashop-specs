@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1659624903" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1659624903" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1659624903" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1659624903" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1659624903" rel="stylesheet">
-    <link href="../../../../style.css?1659624903" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1660119812" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1660119812" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1660119812" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1660119812" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1660119812" rel="stylesheet">
+    <link href="../../../../style.css?1660119812" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1659624903"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1660119812"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -5566,7 +5566,12 @@
             <li><a href="#links">Links</a></li>
           </ul>
         </li>
-        <li><a href="#multistore">Multistore</a></li>
+        <li><a href="#multistore">Multistore</a>
+          <ul>
+            <li><a href="#product-list">Product List</a></li>
+            <li><a href="#product-preview">Product Preview</a></li>
+          </ul>
+        </li>
         <li><a href="#deleted-categories-and-products-associated">Deleted categories and products associated</a></li>
       </ul>
     </li>
@@ -8586,8 +8591,9 @@
 <p>If the product is virtual, open it in the same browser tab on the virtual product tab</p>
 <p>If the product is standard without combinations or a pack, open it in the same browser tab on the quantities tab</p>
 <h2 id="multistore">Multistore</h2>
+<h3 id="product-list">Product List</h3>
 <p>WHEN all shops or a group of shops is selected THEN the column of Stores(s) is added to the listing.</p>
-<p>Each item in the product list displays the product with a list of the names of the stores associated with the product, the image, the reference, the price of the product without and with, the quantity of the product, the status and the actions.</p>
+<p>Each item in the product list displays the product with a list of the names of the stores associated with the product, the image, the reference, main category, the price of the product without and with, the quantity of the product, the status and the actions.</p>
 <p>The list of associated stores displays a maximum of 3 stores and then displays (&hellip;) the remaining stores.</p>
 <p>The list of stores is displayed by id in ascending order. The first shop in the list is used to display the image, reference, price and quantity of the product.
 The first shop is displayed in bold.</p>
@@ -8681,6 +8687,12 @@ The first shop is displayed in bold.</p>
 <p>When a specific shop is selected, only the products belonging to this shop are displayed.</p>
 <p>After selecting another shop than the current, I should return to the first page (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/9612](https://github.com/PrestaShop/PrestaShop/issues/9612)">9612</a>)</p>
 <p>If on the last page all products are deleted, I should return to the first page (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/14713](https://github.com/PrestaShop/PrestaShop/issues/14713)">14713</a>), it&rsquo;s the same behavior another listing</p>
+<h3 id="product-preview">Product Preview</h3>
+<p>WHEN the product is associated to more than one store
+THEN A dropdown is displayed next to the list of store.</p>
+<p>WHEN the dropdown is pressed
+THEN
+It add to the product list all the product in each store in a preview panel. The inital row displays &lsquo;-&rsquo; for all the column</p>
 <h2 id="deleted-categories-and-products-associated">Deleted categories and products associated</h2>
 <p>When I delete the main category of product A, then if product A is re-associated with category B, then category B must become the &ldquo;default category&rdquo; for product A (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/9811](https://github.com/PrestaShop/PrestaShop/issues/9811)">9811</a>)</p>
 
@@ -8688,9 +8700,9 @@ The first shop is displayed in bold.</p>
 <footer class="article-footer">
 	
 <div>
-  Last updated on August 4, 2022
+  Last updated on August 10, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/40119dd5dbf5f6600c8810409fd4439553f270c6">"Update listing-v2.md" (40119dd5)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/fa6f7235b7645aaba59719e52db618e3ea4e0c38">"New behavior from PR #28141" (fa6f7235)</a>
   
 </div>
 
@@ -8711,17 +8723,17 @@ The first shop is displayed in bold.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1659624903"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1659624903"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1659624903"></script>
-    <script src="../../../../js/jquery.sticky.js?1659624903"></script>
-    <script src="../../../../js/featherlight.min.js?1659624903"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1659624903"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1659624903"></script>
-    <script src="../../../../js/learn.js?1659624903"></script>
-    <script src="../../../../js/hugo-learn.js?1659624903"></script>
+    <script src="../../../../js/clipboard.min.js?1660119812"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1660119812"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1660119812"></script>
+    <script src="../../../../js/jquery.sticky.js?1660119812"></script>
+    <script src="../../../../js/featherlight.min.js?1660119812"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1660119812"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1660119812"></script>
+    <script src="../../../../js/learn.js?1660119812"></script>
+    <script src="../../../../js/hugo-learn.js?1660119812"></script>
     
-    <script src="../../../../main.js?1659624903"></script>
+    <script src="../../../../main.js?1660119812"></script>
     
     
 
