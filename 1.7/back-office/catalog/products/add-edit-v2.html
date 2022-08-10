@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1660119812" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1660119812" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1660119812" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1660119812" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1660119812" rel="stylesheet">
-    <link href="../../../../style.css?1660119812" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1660140044" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1660140044" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1660140044" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1660140044" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1660140044" rel="stylesheet">
+    <link href="../../../../style.css?1660140044" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1660119812"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1660140044"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -5651,6 +5651,19 @@
             </li>
           </ul>
         </li>
+        <li><a href="#2----type-of-each-field--errors-message-a-iderrorsa">2.    Type of each field &amp; errors message <a id="errors"></a></a>
+          <ul>
+            <li><a href="#elements-in-all-tabs-a-iderrorsalltabsa">Elements in all tabs <a id="errorsalltabs"></a></a></li>
+            <li><a href="#basic-settings-tab-a-idbasicsettingsa">Basic settings tab <a id="basicsettings"></a></a></li>
+            <li><a href="#quantities-tab-a-iderrorsquantitiesa">Quantities tab <a id="errorsquantities"></a></a></li>
+            <li><a href="#virtual-product-tab-a-iderrorsvirtualproducta">Virtual product tab <a id="errorsvirtualproduct"></a></a></li>
+            <li><a href="#combinations-tab-a-iderrorscombinationsa">Combinations tab <a id="errorscombinations"></a></a></li>
+            <li><a href="#shipping-tab-a-iderrorsshippinga">Shipping tab <a id="errorsshipping"></a></a></li>
+            <li><a href="#pricing-tab-a-iderrorspricinga">Pricing tab <a id="errorspricing"></a></a></li>
+            <li><a href="#seo-tab-a-iderrorsseoa">SEO tab <a id="errorsseo"></a></a></li>
+            <li><a href="#options-tab-a-iderrorsoptionsa">Options tab <a id="errorsoptions"></a></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -9966,6 +9979,141 @@ The rows are checkboxes</p>
 THEN the product is removed from the pack.</p>
 <p>IF the user deletes a product standard associated with a pack
 THEN the product is removed from the pack.</p>
+<h2 id="2----type-of-each-field--errors-message-a-iderrorsa">2.    Type of each field &amp; errors message <a id="errors"></a></h2>
+<p><strong>As a merchant I want to know if there are errors when I complete a field.</strong></p>
+<h3 id="elements-in-all-tabs-a-iderrorsalltabsa">Elements in all tabs <a id="errorsalltabs"></a></h3>
+<ul>
+<li>
+<p><strong>Errors in tabs behavior</strong>: When one or several inputs are incorrect, an error message appears on top of the tabs and a red dot notification appears next to the name of the tabs containing errors.</p>
+</li>
+<li>
+<p><strong>Product name</strong>: If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” Prohibited characters are: ={}&lt;&gt;;# If you enter an invalid character, an error message is displayed under the field: ”This value is not valid.” If it’s not filled in the default language, when you save, a message “This value should not be blank.” is displayed under the field</p>
+</li>
+</ul>
+<h3 id="basic-settings-tab-a-idbasicsettingsa">Basic settings tab <a id="basicsettings"></a></h3>
+<ul>
+<li><strong>Reference</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Summary</strong>: Long text editor with tiny MCE. By default, maximum 800 characters (can be changed in Shop parameters &gt; Products &gt; Max size of short description). A counter indicates the number of characters remaining. If you enter more characters than the number allowed and save, an error is displayed “This value is too long. It should have XX characters or less.”</li>
+<li><strong>Description</strong>: Long text editor with tiny MCE. Maximum 21844 characters. A counter indicates the number of characters remaining. If you enter more characters than the number allowed and save, an error is displayed “This value is too long. It should have 21844 characters or less.”</li>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Price tax incl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>New category name</strong>: Alphanumeric field. Maximum 128 characters. Invalid characters are: &lt;&gt;;=#{} When you save, if your category name contains an invalid character, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Image upload</strong>: If you try to upload another format than JPG, GIF or PNG, you have an error: “image_name.ext: Image format not recognized, allowed format are: .gif, .jpg, .png”</li>
+<li><strong>Image caption</strong>: When you click on “Save image settings” it shows at the top left a green message “Settings updated”. Alphanumeric field. Maximum 128 characters. Invalid characters are: ={}&lt;&gt; If you try to enter more than 128 chars, an error message is displayed under the field: “This value is too long. It should have 128 character or less.” When you save, if your image caption name contains an invalid char, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Feature customized value</strong>: Alphanumeric field. Maximum 255 characters. Prohibited characters are: ={}&lt;&gt; If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” When you save, if your customized value contains an invalid char, an error message under the field should be displayed “This value is not valid.”</li>
+<li><strong>Pack quantity</strong>: Integer field, only integers are allowed. If you enter a number with decimal (ex 1,5 or 1.5) and click on add, an error should be displayed under the field “This value is not valid.”. If you try to enter anything other than numbers, it’s not filled in the field.</li>
+<li><strong>Minimum quantity for sale</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+</ul>
+<h3 id="quantities-tab-a-iderrorsquantitiesa">Quantities tab <a id="errorsquantities"></a></h3>
+<ul>
+<li><strong>Stock location</strong>: Alphanumeric field. It should have maximum 64 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 64 character or less.” Prohibited characters are: ={}&lt;&gt;; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<h3 id="virtual-product-tab-a-iderrorsvirtualproducta">Virtual product tab <a id="errorsvirtualproduct"></a></h3>
+<ul>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Associated files (file name field)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Number of allowed download</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed “This value is not valid.”</li>
+<li><strong>Number of days</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed “This value is not valid.”</li>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<h3 id="combinations-tab-a-iderrorscombinationsa">Combinations tab <a id="errorscombinations"></a></h3>
+<p><strong>Bulk actions</strong></p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Cost price</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Reference</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Minimum quantity</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+</ul>
+<p><strong>Availability preferences</strong></p>
+<ul>
+<li><strong>Label when in stock</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Label when out of stock (and back order allowed)</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<p><strong>Edit combination</strong></p>
+<ul>
+<li><strong>Quantity</strong>: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>Min. quantity for sale</strong>: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Référence</strong>: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message (currently they are not).</li>
+<li><strong>Stock location</strong>: Alphanumeric field. It should have maximum 64 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 64 character or less.” Prohibited characters are: ={}&lt;&gt;; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Low stock level</strong>: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal (ex 30,5 or 30.5) and save, an error is displayed under the field “This value is not valid.”.</li>
+<li><strong>Cost price</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Ecotax (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on price per unit (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Impact on weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>ISBN code</strong>: Varchar field but only numbers are accepted. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>EAN-13 or JAN barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 13 characters. If you try to enter more than 13 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>UPC barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 12 characters. If you try to enter more than 12 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>MPN</strong>: Varchar field, numbers and characters are accepted. It should have maximum 40 characters. If you try to enter more than 40 chars, an error message should be displayed under the field: “This value is too long. It should have 40 characters or less.” .</li>
+</ul>
+<h3 id="shipping-tab-a-iderrorsshippinga">Shipping tab <a id="errorsshipping"></a></h3>
+<ul>
+<li><strong>Width</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Height</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Depth</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Weight</strong>: Decimal field. When there is more than 15 numbers, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter more than 3 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Delivery time of in-stock products</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Delivery time of out-of-stock products with allowed orders</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: ={}&lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Additional shipping fees</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+</ul>
+<h3 id="pricing-tab-a-iderrorspricinga">Pricing tab <a id="errorspricing"></a></h3>
+<ul>
+<li><strong>Retail price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Retail price (tax incl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Price per unit tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Unity field</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 character or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Ecotax tax incl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Cost price (tax excl.)</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Add a specific price:</strong>
+<ul>
+<li><strong>Starting at</strong>: Integer field, only integers are allowed. When there is more than 10 numbers, an error should be displayed under the field “This value is not valid”. If you enter a number with decimal (ex 30,5 or 30.5) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error should be displayed “This value is not valid.”</li>
+<li><strong>Impact on product price tax excl</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+<li><strong>Apply a discount of</strong>: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”. If you don’t complete this field and click on Apply, you have an error message “No reduction value has been submitted”.</li>
+</ul>
+</li>
+</ul>
+<h3 id="seo-tab-a-iderrorsseoa">SEO tab <a id="errorsseo"></a></h3>
+<ul>
+<li><strong>Meta title</strong>: Alphanumeric field. It should have maximum 128 characters. If you try to enter more than 128 chars, an error message should be displayed under the field: “This value is too long. It should have 128 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Meta description</strong>: Alphanumeric field. It should have maximum 512 characters. If you try to enter more than 512 chars, an error message should be displayed under the field: “This value is too long. It should have 512 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Friendly URL</strong>: Alphanumeric field. It should have maximum 128 characters. If you try to enter more than 128 chars, an error message should be displayed under the field: “This value is too long. It should have 128 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+<h3 id="options-tab-a-iderrorsoptionsa">Options tab <a id="errorsoptions"></a></h3>
+<ul>
+<li><strong>Tags</strong>: Alphanumeric field. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is too long. It should have 32 characters or less.” Prohibited characters are: &lt;&gt;;=#{} If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>ISBN</strong>: Varchar field but only numbers are accepted. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>EAN-13 or JAN barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 13 characters. If you try to enter more than 13 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>UPC barcode</strong>: Varchar field but only numbers are accepted. It should have maximum 12 characters. If you try to enter more than 12 chars, an error message should be displayed under the field: “This value is not valid.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”</li>
+<li><strong>MPN</strong>: Varchar field, numbers and characters are accepted. It should have maximum 40 characters. If you try to enter more than 40 chars, an error message should be displayed under the field: “This value is too long. It should have 40 characters or less.”</li>
+<li><strong>Add a customization field</strong>:
+<ul>
+<li><strong>Label</strong>: Alphanumeric field. It should have maximum 255 characters. If you try to enter more than 255 chars, an error message should be displayed under the field: “This value is too long. It should have 255 characters or less.” Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+</li>
+<li><strong>Attach a new file</strong>:
+<ul>
+<li><strong>Browse file</strong>: If you click on “Add” without selecting a file an error message is displayed under the field “Please select a file”</li>
+<li><strong>Title:</strong> Alphanumeric field. It should have maximum 32 characters. If you try to enter more than 32 chars, an error message should be displayed under the field: “This value is too long. It should have 32 characters or less.” Prohibited characters are: &lt;&gt;={} If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Description</strong>: Alphanumeric field. There is no maximum characters. Prohibited characters are: &lt;&gt; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+</ul>
+</li>
+<li><strong>Table of suppliers</strong>:
+<ul>
+<li><strong>Supplier reference</strong>: Alphanumeric field. It should have maximum 65 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 65 characters or less.” Prohibited characters are: &lt;&gt;={}; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”</li>
+<li><strong>Price (tax excl.)</strong>: Decimal field. If you enter more than 20 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.</li>
+</ul>
+</li>
+</ul>
 
 
 <footer class="article-footer">
@@ -9973,7 +10121,7 @@ THEN the product is removed from the pack.</p>
 <div>
   Last updated on August 10, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/fa6f7235b7645aaba59719e52db618e3ea4e0c38">"New behavior from PR #28141" (fa6f7235)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/40e795c5caf4bd367e66d0769f604b8d5cfe879b">"Update errors message" (40e795c5)</a>
   
 </div>
 
@@ -9994,17 +10142,17 @@ THEN the product is removed from the pack.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1660119812"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1660119812"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1660119812"></script>
-    <script src="../../../../js/jquery.sticky.js?1660119812"></script>
-    <script src="../../../../js/featherlight.min.js?1660119812"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1660119812"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1660119812"></script>
-    <script src="../../../../js/learn.js?1660119812"></script>
-    <script src="../../../../js/hugo-learn.js?1660119812"></script>
+    <script src="../../../../js/clipboard.min.js?1660140044"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1660140044"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1660140044"></script>
+    <script src="../../../../js/jquery.sticky.js?1660140044"></script>
+    <script src="../../../../js/featherlight.min.js?1660140044"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1660140044"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1660140044"></script>
+    <script src="../../../../js/learn.js?1660140044"></script>
+    <script src="../../../../js/hugo-learn.js?1660140044"></script>
     
-    <script src="../../../../main.js?1660119812"></script>
+    <script src="../../../../main.js?1660140044"></script>
     
     
 
