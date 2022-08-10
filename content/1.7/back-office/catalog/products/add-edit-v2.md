@@ -178,6 +178,7 @@ Below the tags’ lists is displayed the “Add categories” button. The button
 
 The user can search by category and the parent’s categories. The search result list displays the breadcrumb of the category.  
 The list of categories associated is also displayed below the search component. 
+If categories result from the search have the same name, the tags display the parent’s path association until the parents are different. If 2 categories have the same complete tree structure then it displays its category IDs and all its parents categories.
 
 If the product is not associated with any category except the ‘Home’ branch, then ‘Home’’s child categories are displayed, just the first level of the tree is displayed/opened.
 

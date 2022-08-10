@@ -145,9 +145,10 @@ If the product is standard without combinations or a pack, open it in the same b
 
 ## Multistore
 
+### Product List
 WHEN all shops or a group of shops is selected THEN the column of Stores(s) is added to the listing.
 
-Each item in the product list displays the product with a list of the names of the stores associated with the product, the image, the reference, the price of the product without and with, the quantity of the product, the status and the actions.
+Each item in the product list displays the product with a list of the names of the stores associated with the product, the image, the reference, main category, the price of the product without and with, the quantity of the product, the status and the actions.
 
 The list of associated stores displays a maximum of 3 stores and then displays (...) the remaining stores.
 
@@ -180,6 +181,15 @@ When a specific shop is selected, only the products belonging to this shop are d
 After selecting another shop than the current, I should return to the first page (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/9612](https://github.com/PrestaShop/PrestaShop/issues/9612)">9612</a>)
 
 If on the last page all products are deleted, I should return to the first page (issue <a href="[https://github.com/PrestaShop/PrestaShop/issues/14713](https://github.com/PrestaShop/PrestaShop/issues/14713)">14713</a>), it's the same behavior another listing
+
+### Product Preview
+
+WHEN the product is associated to more than one store
+THEN A dropdown is displayed next to the list of store. 
+
+WHEN the dropdown is pressed 
+THEN
+It add to the product list all the product in each store in a preview panel. The inital row displays '-' for all the column
 
 ## Deleted categories and products associated
 
