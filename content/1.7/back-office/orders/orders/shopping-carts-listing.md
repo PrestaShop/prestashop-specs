@@ -90,6 +90,6 @@ _You must select at least one element to delete._
 - When shopping cart is deleted from Back-Office, it is also deleted in Front-Office cart page.
 - When the Customer is deleted, all its Carts are deleted as well.
 
-## Multistore functionality in Shopping Carts
+## Multistore functionality
 
 Shopping Carts are stored separately in separate Prestashop multistore databases, so the generated Carts are differently listed in other Multistores and Shop Groups.
