@@ -29,7 +29,7 @@ That is why we decided to create this repository.
 
 Our specifications at PrestaShop are mostly functional, but include some technical information too, when needed.
 
-Advanced technical concepts are covered in the [Developer Documentation](https://devdocs.prestashop.com).
+Advanced technical concepts are covered in the [Developer Documentation](https://devdocs.prestashop-project.org).
 
 
 ## How does this repository work?
@@ -134,4 +134,4 @@ It will prompt an URL you can browse to see the application.
 
 ## Learn more about PrestaShop
 
-You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop.com/1.7/basics/introduction/) and the [user Documentation](https://doc.prestashop.com/).
+You can visit the [PrestaShop](https://github.com/PrestaShop/PrestaShop) repository to learn more about the project, the [Developer Documentation](https://devdocs.prestashop-project.org/8/basics/introduction/) and the [user Documentation](https://docs.prestashop-project.org/).
