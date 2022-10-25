@@ -24,15 +24,15 @@
     
 
     
-    <link href="../../../../css/font-awesome.min.css?1665414242" rel="stylesheet">
-    <link href="../../../../css/syntax-github.css?1665414242" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1665414242" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1665414242" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1665414242" rel="stylesheet">
-    <link href="../../../../style.css?1665414242" rel="stylesheet">
+    <link href="../../../../css/font-awesome.min.css?1666705045" rel="stylesheet">
+    <link href="../../../../css/syntax-github.css?1666705045" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1666705045" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1666705045" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1666705045" rel="stylesheet">
+    <link href="../../../../style.css?1666705045" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1665414242"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1666705045"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -8532,7 +8532,13 @@
 <p>The behavior is exactly like &ldquo;back office translations&rdquo;, only that translation domains are filtered by domains starting with <strong>&ldquo;Shop&rdquo;</strong> instead.</p>
 <p><strong>ii. If the user chooses a theme.</strong></p>
 <p>In this case, wordings are sourced by analyzing all the theme&rsquo;s files. Since this process is slow, the result of this analysis is stored as XLF files in local filesystem cache. If the cache is found, then wordings are read from there. The user can refresh this cache by clicking on the &ldquo;Find new wordings&rdquo; button at the top of the page.</p>
-<p>Translations are sourced from XLF files within the theme in its <code>translations/{locale_code}</code> directory, one per domain. These files may or may not be present.</p>
+<p>Translations are sourced exactly like if the user had chosen &ldquo;Core translations&rdquo;, then adding the ones from database translations starting with <strong>&ldquo;Shop&rdquo;</strong> and where &ldquo;theme&rdquo; is empty, then adding the XLF files within the theme in its <code>translations/{locale_code}</code> directory, one per domain. Each catalog replaces the translations from the previous one. Catalogs must be loaded in this order:</p>
+<ol>
+<li>Core xlf files (translated)</li>
+<li>Core database translation (no theme)</li>
+<li>Theme xlf files (translated)</li>
+</ol>
+<p>Note: the core catalog must be filtered as to not include translations that are not used by the theme (otherwise you end up with all the Core translations).</p>
 <p>User-edited translations are stored in database. To avoid collisions, theme translations must be kept associated to the theme they belong. If a theme redefines a Core translation (ie. same domain, same wording), then the redefined translation should only be used when the FO is using that theme (eg. in case of multishop with different themes for each shop, each theme should use the its own translation even if they both use the same given wording/domain pair). Redefined core translations should only be saved if they&rsquo;re different than the ones defined when not in the theme&rsquo;s context.</p>
 <h4 id="installed-module-translations">Installed module translations</h4>
 <p>Note: modules have to opt-in for this feature (see <a href="https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/#translating-your-module">documentation</a>).</p>
@@ -8613,7 +8619,15 @@ When chosen, a select box containing the installed modules appears below.</li>
 ├── AdminAdvparametersHelp.fr-FR.xlf
 └── ...
 </code></pre></div><h4 id="export-theme-translations">Export Theme translations</h4>
-<p>Translations are sourced in the same way as specified in &ldquo;Front office - theme&rdquo;.</p>
+<p>Translations are sourced in the same way as specified in &ldquo;Front office - theme&rdquo;:</p>
+<p>The catalogs are loaded and overridden in this order (the last one being the one that &ldquo;wins&rdquo; if it exists):</p>
+<ol>
+<li>default catalogue (untranslated)</li>
+<li>core xlf (translated)</li>
+<li>database translation (no theme)</li>
+<li>theme xlf (translated)</li>
+<li>database translation (theme)</li>
+</ol>
 <p><strong>Note:</strong> this export may include core translation domains if they are used by the theme&rsquo;s files. However, only the wordings used by the theme are to be included in the exported file.</p>
 <p>The exported package should include all XLF files stored under a language directory, like so:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">fr-FR
@@ -8645,9 +8659,9 @@ When chosen, a select box containing the installed modules appears below.</li>
 <footer class="article-footer">
 	
 <div>
-  Last updated on June 4, 2021
+  Last updated on February 15, 2022
   :
-  <a href="https://github.com/PrestaShop/prestashop-specs/commit/0c247475ad6861c7288afae318c935a2175de0e8">"Markdown : Adapt header, remove .gitkeep &amp; add _index.md in all directories" (0c247475)</a>
+  <a href="https://github.com/PrestaShop/prestashop-specs/commit/bf0b3bd703e5df8f750613c96505ea66b430e092">"Clarify translation and export of theme translations" (bf0b3bd7)</a>
   
 </div>
 
@@ -8668,17 +8682,17 @@ When chosen, a select box containing the installed modules appears below.</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1665414242"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1665414242"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1665414242"></script>
-    <script src="../../../../js/jquery.sticky.js?1665414242"></script>
-    <script src="../../../../js/featherlight.min.js?1665414242"></script>
-    <script src="../../../../js/html5shiv-printshiv.min.js?1665414242"></script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1665414242"></script>
-    <script src="../../../../js/learn.js?1665414242"></script>
-    <script src="../../../../js/hugo-learn.js?1665414242"></script>
+    <script src="../../../../js/clipboard.min.js?1666705045"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1666705045"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1666705045"></script>
+    <script src="../../../../js/jquery.sticky.js?1666705045"></script>
+    <script src="../../../../js/featherlight.min.js?1666705045"></script>
+    <script src="../../../../js/html5shiv-printshiv.min.js?1666705045"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1666705045"></script>
+    <script src="../../../../js/learn.js?1666705045"></script>
+    <script src="../../../../js/hugo-learn.js?1666705045"></script>
     
-    <script src="../../../../main.js?1665414242"></script>
+    <script src="../../../../main.js?1666705045"></script>
     
     
 
