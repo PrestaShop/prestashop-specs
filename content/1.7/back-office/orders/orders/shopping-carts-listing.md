@@ -35,6 +35,7 @@ The page stores all shopping carts created by clients of the PrestaShop's user, 
 - **Shop** - filtering is not available, but the whole column is listed with the Shop names for each Shopping Cart, if there are several multistores configured.
 - **Search CTA button** - The search works either pressing the enter button or pressing this button. Once clicked, the filtering criteria is executed.
 - **Reset CTA button** - Once the search has been executed, the return page shows the Reset button. Clicking this button removes the filtering function from the table.
+- **Sorting arrows (up and down)** - once clicked, the webshop page will reaload, and arrange the table data from the higher on top or the lower on top values.
 
 ## The body of the Table UI
 
@@ -59,10 +60,11 @@ The Shopping Cart entries in this table are generated while doing item purchasin
 
 Bulk Actions has the following functionalities:
 
-
 - **Select All** - selects all the shopping carts, that are Abandoned or Non ordered only.
 - **Unselect All** - Unselects all the shopping carts in the list.
 - **Delete selected** - deletes the selected shopping carts.
+
+Note, that Bulk Actions are not available, when there are demo carts created and when the carts are transformed to finished orders. As well, the selection of the items separately are not available, during those conditions.
 
 ### Pagination elements UI
 
@@ -74,15 +76,20 @@ The pagination can be selected both in showing the Shopping Carts listed in the 
 
 ## Notifications after form submissions
 
-After deleting the single Shopping Cart row, using the dropdown View > Delete, the success notification is prompted:<br>
+After deleting the single Shopping Cart row, using the dropdown View > Delete, the pop-up appears with the text _Delete selected items?_, there will be 2 options - **Cancel** (closes the pop-up) the deletion or clicking **OK** will lead to the success notification:<br>
 _Successful deletion._
 
-After using the Bulk Actions successful Cart deletion, the success notification is prompted:<br>
+After using the Bulk Actions successful Cart deletion, the pop-up appears with the text _Delete selected items?_, there will be 2 options - **Cancel** (closes the pop-up) the deletion or clicking **OK** will lead to the success notification:<br>
 _The selection has been successfully deleted._
 
 After using the Bulk Actions unsiccessful Cart deletion, the failure notification is prompted:<br>
 _You must select at least one element to delete._
 
-## Multistore functionality in Shopping Carts
+## Useful edge cases
+
+- When shopping cart is deleted from Back-Office, it is also deleted in Front-Office cart page.
+- When the Customer is deleted, all its Carts are deleted as well.
+
+## Multistore functionality
 
 Shopping Carts are stored separately in separate Prestashop multistore databases, so the generated Carts are differently listed in other Multistores and Shop Groups.

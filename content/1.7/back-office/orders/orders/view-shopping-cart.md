@@ -22,7 +22,7 @@ This dashboard is displaying the information about the Shopping Cart initiator -
   - total spent since registration, 
   - the customer email.
 The customer name and last name contains a link, that directs to the Customer Account page in Prestashop. Email link is also implemented with a link, once clicked initiates the email composing.
-- **Order information** - if the Order is made, then the link appears with the Order number with the hashtag near. This link is clickable, it redirets to the specific order of the Customer has made. If Order is not made and Cart is stated as Non ordered cart - then new Order can be created by clicking the button _Create an order from this cart_.
+- **Order information** - if the Order is made, then the link appears with the Order number with the hashtag near. This link is clickable, it redirects to the specific order of the Customer has made. If Order is not made and Cart is stated as Non ordered cart - then new Order can be created by clicking the button _Create an order from this cart_.
 - **Made on** - the exact timestamp registered when the Order was made.
 
 ### Unregistered customer in Prestashop
@@ -36,7 +36,9 @@ The customer name and last name contains a link, that directs to the Customer Ac
 
 The whole section table, where the orders of the customer are displayed. The elements of UI are basic: product image, product name with the link into the product editing, unit price, quantity, stock and total cart sum.
 
-Tax included or Tax ecluded yellow warning notification is displayed _For this particular customer group, prices are displayed as: Tax included_ or _For this particular customer group, prices are displayed as: Tax excluded_ in the end of the Cart summary list.
+**Total cost of products** and **Total** summary is defined also, counting the total sum from the products.
+
+Tax included or Tax excluded yellow warning notification is displayed _For this particular customer group, prices are displayed as: Tax included_ or _For this particular customer group, prices are displayed as: Tax excluded_ in the end of the Cart summary list.
 
 ## Multistore functionality
 
