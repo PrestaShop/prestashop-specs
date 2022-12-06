@@ -115,7 +115,7 @@ If the current or new order status as **the generation of the delivery slip** th
 
 If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
 
-By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimun 1 quantity.
+By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimum 1 quantity.
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
