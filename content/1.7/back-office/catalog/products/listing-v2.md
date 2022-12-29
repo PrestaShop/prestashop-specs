@@ -162,12 +162,6 @@ A product associated with different shops:
 - Can’t be disabled from the list - the list displays “-”
 - Stores(s) - Dropdown button - List all the shops associated with the product. When the dropdown is clicked THEN it displays the selected product and all products associated with the product. The clicked product row is emptied, it only keeps the data concerning the store list and its product image.
 - The store column displays the shop name and the color with which it is associated
-- Actions button wording depending on the multistore context:
-
-| Is the product row has more than one shop in the Store(s) column? | Duplicate | Enable | Disable | Delete | Preview |
-| --- | --- | --- | --- | --- | --- |
-| No | Duplicate from shop | Enable from shop | Disable from shop | Delete from shop | Not displayed |
-| Yes | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Duplicate on all shops/groups shops  | Preview |
 - Actions button impact depending on the multistore context:
 
 | Is the product row has more than one shop in the Store(s) column? | Shop contexts | Edit | Duplicate | Enable | Disable | Delete | Preview |
