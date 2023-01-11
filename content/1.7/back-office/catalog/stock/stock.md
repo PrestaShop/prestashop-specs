@@ -5,6 +5,12 @@ weight: 1
 ---
 # SPECS Stock & Stock movement
 
+## Product type
+
+In PrestaShop, there is 2 types of products:
+- Physical product = pack, simple and combination product
+- Virtual product = virtual product
+
 ## Stock
 
 As a merchant, I want to know the remaing stock of my product
@@ -25,13 +31,13 @@ As a merchant, I want to associate a stock edition with a movement type to track
 | --- | --- | --- |
 | Product return | When a merchant restocks a product from an Order that has been flagged as _shipped_ | The restocked quantity increases the product's physical stock, and implicitly its available stock |
 | Employee edition | When the merchant edits the physical stock, without any link to a customer order | The physical stock is increased or decreased |
-| Customer Order | When an order has been flagged as shipped | The physical stock is decreased from the reserved quantity |
+| Customer Order | When an order has been flagged as shipped, all the physical product in the order generates a customer stock movement. When an order has been flagged as paid, all the virtual product generates a stock movement | The stock is decreased from the reserved quantity from the order |
 
 The stock movement is not applied for virtual product.
 
 An example of the stocks life cycle for one product:
 
-| Action | Order | Operation | Order State | Physical stock | Reserved Stock | Available Stock | Stock movement |
+| Action | Order | Operation | Order State | Stock | Reserved Stock | Available Stock | Stock movement |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Create a new product, a TV, with 10 quantities  |  | Physical stock = 10 |  | 10 | 0 | 10 | None |
 | A customer orders 5 TV | Order 1 | Reserved Stock = 5 | Paid | 10 | 5 | 5 | None |
