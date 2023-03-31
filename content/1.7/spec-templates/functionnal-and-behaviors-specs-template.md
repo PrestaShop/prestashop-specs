@@ -115,7 +115,7 @@ If the current or new order status as **the generation of the delivery slip** th
 
 If the current or new order status of order considered **as paid** then **the button is shown.** After clicking on the button, then the product table will take the full width of the page. The user can edit the refund amount by product and also the shipping cost. He must select the quantity of the product concerned for the refunded and then write refund amount chosen by product rows. The maximum refundable amount is written bellow all the amount input in tax included.
 
-By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimun 1 quantity.
+By default, the quantity input has 0 prefilled. To validate a partial refund, the user must must as selected minimum 1 quantity.
 
 **Before the validating a partial refund,** the user can choose to re-stock or generate a voucher by checking the checkboxes.
 
@@ -211,7 +211,7 @@ And **change address** opens the popin that allows the user to choose the new ad
 
 [Popin - Change address](https://invis.io/YKTGGFZAMCB#/382686482__Order_Details_-_Change_Adress)
 
-**Private customer note** is closed by default when it is empty and open bu default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
+**Private customer note** is closed by default when it is empty and open by default when filled. To add a note when it is empty, the user has to click on the + button and has to press on the save button to save it.
 
 [Customer private note](https://invis.io/YKTGGFZAMCB#/386397644_Private_Note_Behavior)
 
@@ -287,7 +287,7 @@ At the end of the table list, there are **2 buttons**:
 
 [Add a product old design but the same behaviours](https://github.com/PrestaShop/prestashop-specs/blob/master)
 
--   **Add a new discount**: opens a popin to create your new voucher between the Pourcentage, the Amount (taxes included) and Free shipping type.
+-   **Add a new discount**: opens a popin to create your new voucher between the Percent, the Amount (taxes included) and Free shipping type.
 
 [Popin add discount](https://invis.io/YKTGGFZAMCB#/381874231__Order_Details_-_Add_Discount)
 

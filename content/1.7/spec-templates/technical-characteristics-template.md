@@ -16,7 +16,7 @@ Do not attempt to build what is written below
 
 This template presents how to write **technical characteristics** specs.
 
-It corresponds to the features' "Technical characteristics" int he schema below
+It corresponds to the features' "Technical characteristics" in the schema below
 
 
 ![specs structure](/img/ps_specs_structure.jpg)
@@ -107,7 +107,7 @@ A drop-down next to the field is displayed when there are several languages inst
 If simple product is selected, under the quantity field, there is a “quantities” link. When you click on it, you switch to quantities tab \(for a standard product\) or to virtual product tab \(for a virtual product\).
 When you update the field in basic settings tab, the same field in quantities \(for a standard product\) / virtual product tab is updated.
 The quantity is displayed in front-office if the option “Display available quantities on the product page” in Shop parameters &gt; Product settings is set to yes.
-This value is decremented when an order is placed except if the order status is Payement error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
+This value is decremented when an order is placed except if the order status is Payment error. This value is incremented when the order status is cancelled, when you make a partial refund and check “Re-stock products” and when you return products and check “Re-stock products”.
 * **Price tax excl**: When a value is filled, the price tax incl field is calculated automatically according to the tax rule chosen.
 To separate decimals a dot or a comma can be used, both should work no matter the language.
 When you change it, the same field in pricing tab is also updated.
@@ -685,7 +685,7 @@ Here is the list of the elements of options tab:
 
 * **Quantity**: This field is not displayed for a standard product with combinations. Integer field, only integers are allowed. When there is more than 10 numbers, an error is displayed “This value is not valid”. If you enter a number with decimal \(ex 30,5 or 30.5\) and save, an error should be displayed “This value is not valid”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.”
 * **Min. quantity for sale**: Integer field, only integers are allowed. By default it’s set to 1. I can’t order less, only equal or more. If you put nothing in this field and save, an error is displayed under the field “This value should not be blank.” If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal \(ex 30,5 or 30.5\) and save, an error is displayed under the field “This value is not valid.”.
-* **Référence**: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message \(currently they are not\).
+* **Reference**: Alphanumeric field. Maximum 128 characters. Prohibited characters: ={}&lt;&gt;; They should be listed in the error message \(currently they are not\).
 * **Stock location**: Alphanumeric field. It should have maximum 64 characters. If you try to enter more than 64 chars, an error message should be displayed under the field: “This value is too long. It should have 64 character or less.” Prohibited characters are: ={}&lt;&gt;; If you enter an invalid character, an error message should be displayed under the field: ”This value is not valid.”
 * **Low stock level**: Integer field, only integers are allowed. There is a placeholder “Leave empty to disable”. If you enter anything other than numbers and save an error is displayed under the field “This value is not valid.” If you enter a number with decimal \(ex 30,5 or 30.5\) and save, an error is displayed under the field “This value is not valid.”.
 * **Cost price**: Decimal field. If you enter more than 10 numbers before the dot/comma and save, an error is displayed under the field “This value is not valid”. If you enter anything other than numbers and save, an error is displayed under the field “This value is not valid”. If you enter more than 6 numbers after the dot/comma and save, an error is displayed under the field “This value is not valid”.

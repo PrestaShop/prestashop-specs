@@ -12,7 +12,7 @@ Thus, this project aims at specifying the current and expected behaviour of the 
 
 ## SPECIFICATIONS
 
-### Multisotre header
+### Multistore header
 The multistore header is displayed, the specifications of this component are described in the [multistore general specs](../back-office/multistoregeneralspecs.md#multistore-header-only-from-178) in back-office/multistoregeneralspecs.md
 
 ### Shop association block
