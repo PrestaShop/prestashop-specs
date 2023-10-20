@@ -1,4 +1,4 @@
-baseURL: "https://build.prestashop.com/prestashop-specs/"
+baseURL: "https://build.prestashop-project.org/prestashop-specs/"
 languageCode: "en-us"
 defaultContentLanguage: "en"
 title: "PrestaShop Specs"
@@ -15,7 +15,7 @@ params:
   editURL: "https://github.com/PrestaShop/prestashop-specs/edit/master/content/"
   ghRepoURL: "https://github.com/PrestaShop/prestashop-specs/"
   ghCommitURL: "https://github.com/PrestaShop/prestashop-specs/commit/"
-  howToContributeURL: "https://devdocs.prestashop.com/1.7/contribute/documentation/how/"
+  howToContributeURL: "https://devdocs.prestashop-project.org/8/contribute/documentation/how/"
   description: "Specifications of the PrestaShop project"
   author: "PrestaShop"
   showVisitedLinks: false
