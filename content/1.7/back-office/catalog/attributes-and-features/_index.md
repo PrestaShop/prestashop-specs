@@ -8,4 +8,4 @@ chapter: true
 
 # Attributes & Features
 
-{{% children %}}
+{{% children /%}}

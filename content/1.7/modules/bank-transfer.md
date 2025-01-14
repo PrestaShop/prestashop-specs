@@ -7,7 +7,7 @@ weight: 1
 
 1) Back 
 
-When pressed redirect back to the module manager (Modules > Module manager]({{<ref "../view-module-manager.md">}} "View module manager")).
+When pressed redirect back to the module manager [Modules > Module manager]({{<ref "../back-office/modules/module-manager/_index.md">}} "View module manager")).
 
 2) Translate
 
@@ -19,7 +19,7 @@ Checks for updates on the module.
 
 4) Manage hooks
 
-When pressed redirects to the (Design > Positions]({{<ref "../../back-office/design/positions/view-positions.md">}} "View positions")).
+When pressed redirects to the [Design > Positions]({{<ref "../back-office/design/positions/view-positions.md">}} "View positions")).
 
 The module has 3 sections for configurations:
 
@@ -50,7 +50,7 @@ This is a mandatory input field for the name of the account owner. Leaving it bl
 
 1) Reservation period
 
-Input field for the reservation period, has a help text below: "Number of days the items remain reserved". When saving with input as anything apart from numbers should show an error [#28354](https://github.com/PrestaShop/PrestaShop/issues/28354)).
+Input field for the reservation period, has a help text below: "Number of days the items remain reserved". When saving with input as anything apart from numbers should show an error [#28354](https://github.com/PrestaShop/PrestaShop/issues/28354).
 
 2) Customer information
 

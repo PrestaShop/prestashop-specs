@@ -14,7 +14,7 @@ In this page the categories of the shop are shown.
 Below there is a table with the following metrics:
 
  - Disabled categories
- - Empty categories (can be pressed, when pressed redirects to the [Monitoring page]({{<ref "../Catalog/Monitoring/">}} "Monitoring Page")
+ - Empty categories (can be pressed, when pressed redirects to the [Monitoring page]({{<ref "../monitoring/monitoring-listing.md">}} "Monitoring Page")
  - Top categories
  - Average number of products per category
 

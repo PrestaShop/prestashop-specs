@@ -11,7 +11,7 @@ The module when enabled appears within the payment methods when checking out can
 
 1) Back 
 
-When pressed redirect back to the module manager (Modules > Module manager]({{<ref "../view-module-manager.md">}} "View module manager")).
+When pressed redirect back to the module manager [Modules > Module manager]{{<ref "../back-office/modules/module-manager/_index.md">}} "View module manager")).
 
 2) Translate
 
@@ -23,7 +23,7 @@ Checks for updates on the module.
 
 4) Manage hooks
 
-When pressed redirects to the (Design > Positions]({{<ref "../../back-office/design/positions/view-positions.md">}} "View positions")).
+When pressed redirects to the [Design > Positions]({{<ref "../back-office/design/positions/view-positions.md">}} "View positions")).
 
 The module has 2 sections for configurations:
 
