@@ -5,6 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns.html</link>
     <description>Recent content in Merchandise Returns on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Merchandise Returns edit</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/add-edit-merchandise-returns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/add-edit-merchandise-returns.html</guid>
+      <description>SELL &amp;gt; Customer Service &amp;gt; Merchandise Returns &amp;gt; EditMerchandise Returns Editing&#xA;This functionality ables to make a return action of purchased goods via Prestashop. It is described as Return Merchandise Authorization (RMA). All the Editing page UI elements are described below.&#xA;Table contents UI and functionalities Customer - the details of the customer - first and last name, and link to the Customer profile. Order - the exact date when order was created by the customer, as well as link to the exact order in Order page.</description>
+    </item>
+    <item>
+      <title>Merchandise Returns listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/merchandise-returns-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/merchandise-returns-listing.html</guid>
+      <description>SELL &amp;gt; Customers Service &amp;gt; Merchandise ReturnsMerchandise Returns UI&#xA;This UI is listed as 2 sections - Merchandise Returns and Merchandise return (RMA) options .&#xA;Merchandise Returns listing Filtering section ID - the unique numeric value, describing the each Return. By default, the field is empty. Order ID - the numeric value, describing the exact Order, from where the Return will be executed. By default, the field is empty. Status - the alphabetic vaule, describing the Return status.</description>
+    </item>
   </channel>
 </rss>

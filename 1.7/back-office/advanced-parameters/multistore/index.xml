@@ -5,17 +5,35 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore.html</link>
     <description>Recent content in MultiStore on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add a new shop</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-new-shop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-new-shop.html</guid>
+      <description>Multistore treeIn this section firstly 2 buttons are presented:&#xA;Collapse all, when pressed, shows all the directories for the stores. Expand all, when pressed, hides all the directories for the stores. By default the folder in which the stores are kept is shown, it can be pressed, and a redirection to the folder will happen. Below the stores that are kept within the folder can also be pressed, when any of the are pressed, the options are set to be made on the shop which was last pressed.</description>
+    </item>
+    <item>
+      <title>Add/edit shop group</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-edit-shop-group.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-edit-shop-group.html</guid>
+      <description>Multistore treeIn this section firstly 2 buttons are presented:&#xA;Collapse all, when pressed, shows all the directories for the stores. Expand all, when pressed, hides all the directories for the stores. By default the folder in which the stores are kept is shown, it can be pressed, and a redirection to the folder will happen. Below the stores that are kept within the folder can also be pressed, when any of the are pressed, the options are set to be made on the shop which was last pressed.</description>
+    </item>
     <item>
       <title>MultiStore</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/multistore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/multistore.html</guid>
-      <description>SPECS TO SETUP THE MULTISTORE As a merchant I need to be able to create as many stores as I need with a single back office. The main uses cases of the mutistore are:
- B2B/B2C shop, international shop (many languages, many currencies), several brands  WHAT Thus, this project aims at specifying the current and expected behaviour to setup many stores
-SPECIFICATIONS Enable the multistore The multistore is disabled by default and can be enabled in Shop parameters &amp;gt; General  Once enabled, a new &amp;ldquo;Multistore&amp;rdquo; menu is displayed in Advanced parameters &amp;gt; Multistore  There are two types of main actions in this page :</description>
+      <description>SPECS TO SETUP THE MULTISTOREAs a merchant I need to be able to create as many stores as I need with a single back office. The main uses cases of the mutistore are:&#xA;B2B/B2C shop, international shop (many languages, many currencies), several brands WHATThus, this project aims at specifying the current and expected behaviour to setup many stores&#xA;SPECIFICATIONS Enable the multistoreThe multistore is disabled by default and can be enabled in Shop parameters &amp;gt; General Once enabled, a new &amp;ldquo;Multistore&amp;rdquo; menu is displayed in Advanced parameters &amp;gt; Multistore There are two types of main actions in this page :</description>
     </item>
-    
+    <item>
+      <title>View multistore</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/view-multistore.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/view-multistore.html</guid>
+      <description>Multistore Call to action2 call to action buttons are presented:&#xA;Add a new shop group Add new shop Multistore treeIn this section firstly 2 buttons are presented:&#xA;Collapse all, when pressed, shows all the directories for the stores. Expand all, when pressed, hides all the directories for the stores. By default the folder in which the stores are kept is shown, it can be pressed, and a redirection to the folder will happen.</description>
+    </item>
   </channel>
 </rss>

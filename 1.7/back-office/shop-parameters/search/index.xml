@@ -5,41 +5,28 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search.html</link>
     <description>Recent content in Search on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add/edit alias</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/add-edit-alias.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/add-edit-alias.html</guid>
-      <description>Add / Edit alias In this page, there are 2 fields displayed:
- Alias: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.&amp;rdquo; A tooltip for this field is displayed: &amp;ldquo;Enter each alias separated by a comma (e.g. &amp;lsquo;prestshop,preztashop,prestasohp&amp;rsquo;). Forbidden characters: &amp;lt;&amp;gt;;=#{}&amp;rdquo; Result: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.</description>
+      <description>Add / Edit aliasIn this page, there are 2 fields displayed:&#xA;Alias: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.&amp;rdquo; A tooltip for this field is displayed: &amp;ldquo;Enter each alias separated by a comma (e.g. &amp;lsquo;prestshop,preztashop,prestasohp&amp;rsquo;). Forbidden characters: &amp;lt;&amp;gt;;=#{}&amp;rdquo; Result: this field is mandatory. When trying to save and if the field is empty, the following error message is displayed: &amp;ldquo;Aliases and results are both required.</description>
     </item>
-    
     <item>
       <title>Search listing</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search-listing.html</guid>
-      <description>Search listing The &amp;ldquo;Search&amp;rdquo; page allows configuring the shop&amp;rsquo;s search features.
-Call to action A call to actions is displayed in the header of this page:
- Add new alias  👉 See the specs of the add/edit alias
-Settings wheel When clicking on the settings wheel, the following options are displayed:
- Refresh list  After clicking on it, the page is reloaded. Sorts and searches are kept.
-Import  After clicking on it, the Advanced parameters &amp;gt; Import page is opened.</description>
+      <description>Search listingThe &amp;ldquo;Search&amp;rdquo; page allows configuring the shop&amp;rsquo;s search features.&#xA;Call to actionA call to actions is displayed in the header of this page:&#xA;Add new alias 👉 See the specs of the add/edit alias&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.&#xA;Import After clicking on it, the Advanced parameters &amp;gt; Import page is opened.</description>
     </item>
-    
     <item>
       <title>Search Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search.html</guid>
-      <description>SPECIFICATIONS - SEARCH PAGE Search As a merchant, I want to make sure visitors can find the product they are looking for on my online store.
-A table lists all the aliases defined by the merchant. He/she can add and edit aliases.
-Add an alias Clicking &amp;lsquo;Add new alias&amp;rsquo; or on the &amp;lsquo;+&amp;rsquo; icon on the top right-hand corner of the table should redirect to a new page, where there are two fields to fill:</description>
+      <description>SPECIFICATIONS - SEARCH PAGE SearchAs a merchant, I want to make sure visitors can find the product they are looking for on my online store.&#xA;A table lists all the aliases defined by the merchant. He/she can add and edit aliases.&#xA;Add an aliasClicking &amp;lsquo;Add new alias&amp;rsquo; or on the &amp;lsquo;+&amp;rsquo; icon on the top right-hand corner of the table should redirect to a new page, where there are two fields to fill:</description>
     </item>
-    
   </channel>
 </rss>

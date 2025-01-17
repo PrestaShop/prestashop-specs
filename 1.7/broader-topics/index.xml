@@ -5,70 +5,49 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics.html</link>
     <description>Recent content in Broader Topics on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/broader-topics/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/broader-topics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EcoTax</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/ecotax.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/ecotax.html</guid>
-      <description>SPECIFICATIONS - ECOTAX WHAT IS THE ECOTAX The ecotax is a contribution in France to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. The ecotax is not a tax per se, but a fixed mandatory contribution (the actual term is &amp;ldquo;eco-participation&amp;rdquo;) that must be paid by the customer. Then it’s donated by the seller to a collection agency.
-The amount of the ecotax is fixed and does not depend on the product price.</description>
+      <description>SPECIFICATIONS - ECOTAX WHAT IS THE ECOTAXThe ecotax is a contribution in France to finance the collect, the recycling and the depollution of a piece of furniture or used electrical and electronic equipment. The ecotax is not a tax per se, but a fixed mandatory contribution (the actual term is &amp;ldquo;eco-participation&amp;rdquo;) that must be paid by the customer. Then it’s donated by the seller to a collection agency.&#xA;The amount of the ecotax is fixed and does not depend on the product price.</description>
     </item>
-    
     <item>
       <title>Image File Formats</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/image-file-formats.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/image-file-formats.html</guid>
-      <description>SPECIFICATIONS - IMAGE FILE FORMATS As a merchant, I want to be able to use the best web suitable images on my store, such as .png, .svg, or .webp.
-Introduction Several issues have been brought to our attention on GitHub, especially on the need for PrestaShop to support more image formats. Indeed, images have great business value for online stores and their formats have quite evolved since the release of PrestaShop 1.</description>
+      <description>SPECIFICATIONS - IMAGE FILE FORMATSAs a merchant, I want to be able to use the best web suitable images on my store, such as .png, .svg, or .webp.&#xA;IntroductionSeveral issues have been brought to our attention on GitHub, especially on the need for PrestaShop to support more image formats. Indeed, images have great business value for online stores and their formats have quite evolved since the release of PrestaShop 1.</description>
     </item>
-    
     <item>
       <title>Multistore Specials Cases</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/multistorespecialsspecs.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/multistorespecialsspecs.html</guid>
-      <description>MULTISTORE SPECIALS CASES SPECS WHAT Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are many stores. Here are the specials behaviors. Here you can find general specs
-SPECIFICATIONS List of specific cases There are the 5 main specific cases:
-  “Add new” action is not possible (button disabled) in all shops or in a group context, this action is only enabled in a specific shop context.</description>
+      <description>MULTISTORE SPECIALS CASES SPECS WHATThus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are many stores. Here are the specials behaviors. Here you can find general specs&#xA;SPECIFICATIONS List of specific casesThere are the 5 main specific cases:&#xA;“Add new” action is not possible (button disabled) in all shops or in a group context, this action is only enabled in a specific shop context.</description>
     </item>
-    
     <item>
       <title>Price Calculation</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</guid>
-      <description>Price calculation specifications Introduction
-This document aims at explaining in details how product and order prices should be calculated in every shop scenarios.
-This is a legal requirement, especially as it has an impact on invoices, so we must ensure prices are correctly calculated on PrestaShop websites.
-Prices have impact on products, orders, but also on discounts, invoices, etc. so this document details the different behaviours for all pages according to the shop scenario.</description>
+      <description>Price calculation specificationsIntroduction&#xA;This document aims at explaining in details how product and order prices should be calculated in every shop scenarios.&#xA;This is a legal requirement, especially as it has an impact on invoices, so we must ensure prices are correctly calculated on PrestaShop websites.&#xA;Prices have impact on products, orders, but also on discounts, invoices, etc. so this document details the different behaviours for all pages according to the shop scenario.</description>
     </item>
-    
     <item>
       <title>SEO Rules &amp; Behaviours</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/seo-rules-and-behaviours.html</guid>
-      <description>Specifications related to SEO in PrestaShop Introduction SEO is key when choosing an ecommerce solution. A CMS which is SEO optimized is a strategic added value for many merchants, and an important selection criterion. It’s also a key factor for brand image and differentiation with our competitors.
-In the meantime, some technical and functional choices can have a huge impact (positive or negative) on stores’ SEO. It is exactly what happened between 1.</description>
+      <description>Specifications related to SEO in PrestaShop IntroductionSEO is key when choosing an ecommerce solution. A CMS which is SEO optimized is a strategic added value for many merchants, and an important selection criterion. It’s also a key factor for brand image and differentiation with our competitors.&#xA;In the meantime, some technical and functional choices can have a huge impact (positive or negative) on stores’ SEO. It is exactly what happened between 1.</description>
     </item>
-    
     <item>
       <title>Symfony Migration</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/symfony-migration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/symfony-migration.html</guid>
-      <description>symfony-migration SYMFONY MIGRATION GUIDELINES
-For UX, some guidelines have been defined for each most types of page in the back-office : table and grid pages, configuration pages, drag &amp;amp; drop, etc. These redesigns are made gradually as the development skills and migration progress. This is why no design has been specified for CRUD (with create - read - update - delete actions) pages.
-Please note that many pages in the BO have very specific behaviour and need their own redesign.</description>
+      <description>symfony-migrationSYMFONY MIGRATION GUIDELINES&#xA;For UX, some guidelines have been defined for each most types of page in the back-office : table and grid pages, configuration pages, drag &amp;amp; drop, etc. These redesigns are made gradually as the development skills and migration progress. This is why no design has been specified for CRUD (with create - read - update - delete actions) pages.&#xA;Please note that many pages in the BO have very specific behaviour and need their own redesign.</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,6 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions.html</link>
     <description>Recent content in Positions on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transplant a module</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/transplant-a-module-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/transplant-a-module-listing.html</guid>
+      <description>IMPROVE &amp;gt; Design &amp;gt; Positions &amp;gt; Transplant a module&#xA;This functionality can be used for certain positioning of the certain module in different Prestashop UI places. Any module can be registered on the placement operator called Hook. There are multiple different hook names in Prestashop, and module can be transplanted into the one of the desirable hooks.&#xA;UI elements listingThere are different UI elements in the Positions &amp;gt; Transplant a module directory:</description>
+    </item>
+    <item>
+      <title>View positions</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/view-positions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/view-positions.html</guid>
+      <description>IMPROVE &amp;gt; Design &amp;gt; PositionsThis UI of Prestashop application stands for the whole list of Positioning Hooks.&#xA;Positions listing&#xA;UI elements of the filtering in the topThe following elements of this page are:&#xA;Show All Modules dropdown - once clicked, the dropdown element appears with the vertical list of all the modules installed in Prestashop. For faster searching capability, there is a search input field right at the top of module list.</description>
+    </item>
   </channel>
 </rss>

@@ -5,17 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information.html</link>
     <description>Recent content in Information on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Information Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/information.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/information.html</guid>
-      <description>SPECIFICATIONS - INFORMATION PAGE [TO BE COMPLETED]
-List of overrides As a developer/merchant, I want to be able to know what PrestaShop behavior is overridden.
-As for the list of changed files, the Advanced Parameters &amp;gt; Information page should display the list of overrides.</description>
+      <description>InformationIn this section the information about the shop is provided in different sections:&#xA;Configuration informationThis information must be provided when you report an issue on GitHub or on the forum.&#xA;Server informationIn this section the following information is provided:&#xA;Server information: Server software version: PHP version: Memory limit: Max execution time: Upload Max File size: Database informationIn this section the following information is provided:&#xA;MySQL version: MySQL server: MySQL name: MySQL user: Tables prefix: MySQL engine: MySQL driver: Store informationIn this section the following information is provided:</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,6 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages.html</link>
     <description>Recent content in Order Messages on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add or Edit Order Messages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/add-edit-order-message.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/add-edit-order-message.html</guid>
+      <description>SELL &amp;gt; CUSTOMER SERVICE &amp;gt; Order Messages &amp;gt; Add / Edit Order Message&#xA;This UI shows the Order Message adding or editing form.&#xA;Top UI section of Adding or Editing message Multishop switcher - it is an ability to switch the available multistores while being on the current Order messages editing page, and to view the shop Front-Office homepage by redirection. Breadcrumbs, page title, Recommended modules and Help CTA&amp;rsquo;s - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation.</description>
+    </item>
+    <item>
+      <title>Order Messages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/order-messages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/order-messages.html</guid>
+      <description>SELL &amp;gt; CUSTOMER SERVICE &amp;gt; Order Messages&#xA;This UI shows the list of messages, that were sent by webshop customer, who created an Order. By default, Delay message is already created in the list.&#xA;Top UI section Multishop switcher - it is an ability to switch the available multistores while being on the current Order messages editing page, and to view the shop Front-Office homepage by redirection. Add new order message CTA button - this button, with plus icon (+), initiates the redirection to a new page, where a separate Order message creation form is displayed.</description>
+    </item>
   </channel>
 </rss>

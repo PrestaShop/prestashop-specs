@@ -5,36 +5,28 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings.html</link>
     <description>Recent content in Image Settings on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add new Image type</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/add-edit-image-setting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/add-edit-image-setting.html</guid>
+      <description>Design &amp;gt; Image Settings &amp;gt; Add new Image type Adding or editing Image type UI&#xA;This configuration UI is about adding the new Image type into the Image type listing.&#xA;During default Image type configuration, the notification is prompted as error: By default, all images settings are already installed in your store. Do not delete them, you will need it!&#xA;After setting up the Image type configuration, the UI prompts the warning notification: After modification, do not forget to regenerate thumbnails</description>
+    </item>
     <item>
       <title>Generation Options</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</guid>
-      <description>SPECIFICATIONS - DESIGN &amp;gt; IMAGE SETTINGS IMAGE SETTINGS [TO BE COMPLETED]
-IMAGE GENERATION OPTIONS Image format
- Use JPEG.
- Use PNG only if the base image is in PNG format.
- Use PNG for all images.
- Use WEBP only if the base image is in WEBP format.
- Use WEBP for all images.
-  JPEG Compression
-PNG Compression
-Generate images based on one side of the source image</description>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; IMAGE SETTINGS IMAGE SETTINGS[TO BE COMPLETED]&#xA;IMAGE GENERATION OPTIONSImage format&#xA;Use JPEG.&#xA;Use PNG only if the base image is in PNG format.&#xA;Use PNG for all images.&#xA;Use WEBP only if the base image is in WEBP format.&#xA;Use WEBP for all images.&#xA;JPEG Compression&#xA;PNG Compression&#xA;Generate images based on one side of the source image&#xA;Maximum file size of product customization pictures</description>
     </item>
-    
     <item>
       <title>Regenerate Thumbnails</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/regenerate-thumbnails.html</guid>
-      <description>Regenerate thumbnails might be a touchy operation for the user.
-In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature&amp;rsquo;s two options:
-Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails. Also, regenerating thumbnails for all existing images can take several minutes, please be patient., localized in Admin.Design.Notification
-Select an image [TO BE COMPLETED]</description>
+      <description>Regenerate thumbnails might be a touchy operation for the user.&#xA;In order to emphasize the irreversibility of this action, a yellow warning notification should be displayed before the feature&amp;rsquo;s two options:&#xA;Be careful! Depending on the options selected, former manually uploaded thumbnails might be erased and replaced by automatically generated thumbnails. Also, regenerating thumbnails for all existing images can take several minutes, please be patient., localized in Admin.Design.Notification&#xA;Select an image[TO BE COMPLETED]</description>
     </item>
-    
   </channel>
 </rss>

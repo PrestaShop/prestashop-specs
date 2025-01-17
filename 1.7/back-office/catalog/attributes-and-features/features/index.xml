@@ -5,52 +5,35 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features.html</link>
     <description>Recent content in Features on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add / Edit Feature</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html</guid>
-      <description>Add / Edit Feature While adding or editing a feature, the following fields / toggles / parameters are displayed:
- Name  This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: &amp;ldquo;The field name is required at least in default language&amp;rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
+      <description>Add / Edit Feature&#xA;While adding or editing a feature, the following fields / toggles / parameters are displayed:&#xA;Name This field is mandatory. If the save button is pressed and if this field is empty for the default language, the following error message is displayed: &amp;ldquo;The field name is required at least in default language&amp;rdquo;. This field can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
     </item>
-    
     <item>
       <title>Add / Edit Feature Value</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</guid>
-      <description>Add / Edit Feature Value While adding or editing a feature value, the following fields / toggles / parameters are displayed:
- Feature  This drop-down lists all the features and is mandatory. In the case of multistore, it lists only the features associated with the store(s) selected as context.
-Value  This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed.</description>
+      <description>Add / Edit Feature ValueWhile adding or editing a feature value, the following fields / toggles / parameters are displayed:&#xA;Feature This drop-down lists all the features and is mandatory. In the case of multistore, it lists only the features associated with the store(s) selected as context.&#xA;Value This field is mandatory and can be translated: When several languages are installed, a drop-down next to the field is displayed. It allows choosing in which language the field is displayed and customizing it according to the language.</description>
     </item>
-    
     <item>
       <title>Features listing</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</guid>
-      <description>Features listing HOW FEATURES WORK Features must first be registered on the shop using this &amp;ldquo;Features&amp;rdquo; tab under the &amp;ldquo;Attributes &amp;amp; Features&amp;rdquo; page from the &amp;ldquo;Catalog&amp;rdquo; menu.
-Then, they can be configured on a per-product basis, from the &amp;ldquo;Product&amp;rdquo; page under the &amp;ldquo;Catalog&amp;rdquo; menu.
-👉 See the specs of the add/edit product page
-Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the &amp;ldquo;Product Details&amp;rdquo; tab.</description>
+      <description>Features listing HOW FEATURES WORKFeatures must first be registered on the shop using this &amp;ldquo;Features&amp;rdquo; tab under the &amp;ldquo;Attributes &amp;amp; Features&amp;rdquo; page from the &amp;ldquo;Catalog&amp;rdquo; menu.&#xA;Then, they can be configured on a per-product basis, from the &amp;ldquo;Product&amp;rdquo; page under the &amp;ldquo;Catalog&amp;rdquo; menu.&#xA;👉 See the specs of the add/edit product page&#xA;Once configured on a per-product basis, the features and values of the products are displayed on the front-office product page, in the &amp;ldquo;Product Details&amp;rdquo; tab.</description>
     </item>
-    
     <item>
       <title>View Feature</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</guid>
-      <description>View Feature When viewing a feature, the name of the selected feature is displayed as the name of the block.
-Call to action A call to actions is displayed in the header of this page:
- Add new feature value  👉 See the specs of the add/edit feature value
-Settings wheel When clicking on the settings wheel, the following options are displayed:
- Refresh list  After clicking on it, the page is reloaded.</description>
+      <description>View FeatureWhen viewing a feature, the name of the selected feature is displayed as the name of the block.&#xA;Call to actionA call to actions is displayed in the header of this page:&#xA;Add new feature value 👉 See the specs of the add/edit feature value&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.</description>
     </item>
-    
   </channel>
 </rss>

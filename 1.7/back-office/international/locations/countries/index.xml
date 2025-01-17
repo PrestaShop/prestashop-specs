@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Countries on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries.html</link>
+    <description>Recent content in Countries on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add edit country</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/add-edit-country.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/add-edit-country.html</guid>
+      <description>Add edit countryWhen adding or editing a country, the following fields / drop-down / toggles are displayed:&#xA;Country - This field is mandatory. When trying to save without filling this field, the following error message is displayed: &amp;ldquo;The field name is required at least in default language.&amp;rdquo;. When trying to save with more than 64 chars are filled the following error message appears &amp;ldquo;Your entry in field name (language English (English)) exceeds max length 64 chars (incl.</description>
+    </item>
+    <item>
+      <title>Countries listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/countries-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/countries-listing.html</guid>
+      <description>Countries listing Call to actionA call to action button is displayed:&#xA;Add new country - See the specs of the add edit country Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
+  </channel>
+</rss>

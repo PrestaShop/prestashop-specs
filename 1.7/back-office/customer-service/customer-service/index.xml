@@ -5,25 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service.html</link>
     <description>Recent content in Customer Service on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dashboard</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html</guid>
-      <description>SPECIFICATIONS - CUSTOMERS SERVICE &amp;gt; CUSTOMERS SERVICE PAGE MOCKUPS https://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&amp;amp;scaling=min-zoom
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&amp;amp;scaling=min-zoom
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&amp;amp;scaling=min-zoom
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&amp;amp;scaling=min-zoom
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&amp;amp;scaling=min-zoom
-https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&amp;amp;scaling=min-zoom
-MESSAGES NOTIFICATIONS When a new message is sent by a customer or a visitor, then it&amp;rsquo;s displayed in the notifications (bell) in the header.
-If you click on it, the thread is opened (view page) and all the messages notifications are removed for the current employee.
-It could be a message written through:
- the order view page in the BO; the order details page in the customer account in the FO; or any message sent to the customer service via the store&amp;rsquo;s contact form.</description>
+      <description>SPECIFICATIONS - CUSTOMERS SERVICE &amp;gt; CUSTOMERS SERVICE PAGE MOCKUPShttps://www.figma.com/file/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service?node-id=12%3A1593&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A4083&amp;amp;scaling=min-zoom&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A5267&amp;amp;scaling=min-zoom&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A9835&amp;amp;scaling=min-zoom&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A8042&amp;amp;scaling=min-zoom&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop---Customer-Service-(migration)?node-id=12%3A11958&amp;amp;scaling=min-zoom&#xA;https://www.figma.com/proto/axasD3Kyg52okWHqvWPN1I/PrestaShop-Customer-Service?node-id=12%3A4083&amp;amp;scaling=min-zoom&#xA;MESSAGES NOTIFICATIONSWhen a new message is sent by a customer or a visitor, then it&amp;rsquo;s displayed in the notifications (bell) in the header.&#xA;If you click on it, the thread is opened (view page) and all the messages notifications are removed for the current employee.&#xA;It could be a message written through:&#xA;the order view page in the BO; the order details page in the customer account in the FO; or any message sent to the customer service via the store&amp;rsquo;s contact form.</description>
     </item>
-    
   </channel>
 </rss>

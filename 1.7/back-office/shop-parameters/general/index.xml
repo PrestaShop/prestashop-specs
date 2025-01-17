@@ -5,16 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general.html</link>
     <description>Recent content in General on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General view</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/view-general.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/view-general.html</guid>
+      <description>GeneralIn this page 12 settings are displayed:&#xA;Enable SSL Has a link in this section: &amp;ldquo;Please click here to check if your shop supports HTTPS.&amp;rdquo; A help text below is presented: &amp;ldquo;If you want to enable SSL on all the pages of your shop, activate the &amp;ldquo;Enable on all the pages&amp;rdquo; option below.&amp;rdquo;.&#xA;Enable SSL on all pages Mandatory toggle switch, by default is set to &amp;ldquo;Yes&amp;rdquo;. A help text below is shown: &amp;ldquo;When enabled, all the pages of your shop will be SSL-secured.</description>
+    </item>
     <item>
       <title>Maintenance Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/maintenance.html</guid>
-      <description>SPECIFICATIONS - MAINTENANCE PAGE As a merchant, I want to be able to turn my store offline to perform maintenance.
-General Enable store. Merchants have the possibility to temporarily disable their shop. It should only disable the front office, the back office is still accessible during maintenance. A help text is available: We recommend that you deactivate your store while performing maintenance. Note that it will not disable the webservice. in Admin.</description>
+      <description>SPECIFICATIONS - MAINTENANCE PAGEAs a merchant, I want to be able to turn my store offline to perform maintenance.&#xA;GeneralEnable store. Merchants have the possibility to temporarily disable their shop. It should only disable the front office, the back office is still accessible during maintenance. A help text is available: We recommend that you deactivate your store while performing maintenance. Note that it will not disable the webservice. in Admin.</description>
     </item>
-    
   </channel>
 </rss>

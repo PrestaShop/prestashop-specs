@@ -8,6 +8,9 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips/view-delivery-slips.html</loc>
+    <lastmod>2022-05-05T16:58:16+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/add-edit-contacts.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
@@ -16,9 +19,6 @@
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html</loc>
     <lastmod>2021-10-21T11:16:36+02:00</lastmod>
-  </url><url>
-    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/add-edit-quick-access.html</loc>
     <lastmod>2022-01-27T16:22:03+01:00</lastmod>
@@ -29,14 +29,50 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-new-shop.html</loc>
+    <lastmod>2022-03-18T17:36:42+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand.html</loc>
+    <lastmod>2022-03-02T10:32:17+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/add-edit-country.html</loc>
+    <lastmod>2022-04-06T13:03:53+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/add-edit-customer.html</loc>
+    <lastmod>2022-02-03T17:27:59+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/add-edit-language.html</loc>
+    <lastmod>2022-03-28T14:53:38+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/add-edit-social-titles.html</loc>
+    <lastmod>2022-04-27T15:06:45+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/add-edit-state.html</loc>
     <lastmod>2022-02-08T16:51:16+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/add-edit-zone.html</loc>
     <lastmod>2022-04-06T13:18:13+03:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-search-engine.html</loc>
+    <lastmod>2022-01-31T16:43:19+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/add-new-group.html</loc>
+    <lastmod>2022-05-04T16:10:44+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/add-edit-image-setting.html</loc>
+    <lastmod>2022-02-10T17:05:52+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.html</loc>
+    <lastmod>2022-04-07T16:31:40+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/add-edit-order-message.html</loc>
+    <lastmod>2022-05-05T15:29:48+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit-addresses.html</loc>
+    <lastmod>2022-02-01T17:39:26+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/add-edit-alias.html</loc>
     <lastmod>2021-12-09T09:52:50+02:00</lastmod>
@@ -47,59 +83,104 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</loc>
     <lastmod>2021-10-11T18:13:24+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit-category.html</loc>
+    <lastmod>2022-03-23T11:00:49+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-employee.html</loc>
+    <lastmod>2022-04-04T13:50:12+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand-address.html</loc>
+    <lastmod>2022-02-28T09:44:55+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-profile.html</loc>
+    <lastmod>2022-04-04T17:35:16+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/add-edit-shop-group.html</loc>
+    <lastmod>2022-03-16T17:29:27+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-cart-price-rule.html</loc>
+    <lastmod>2022-05-06T15:14:13+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/addresses-listing.html</loc>
+    <lastmod>2022-02-01T17:49:18+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/administration.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/administration/configure-administration.html</loc>
+    <lastmod>2022-04-21T16:01:58+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts-and-updates-listing.html</loc>
+    <lastmod>2022-02-23T15:58:18+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/alerts.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes.html</loc>
-    <lastmod>2021-10-27T10:48:42+03:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features.html</loc>
-    <lastmod>2021-10-21T11:16:36+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/bank-transfer.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/view-brand.html</loc>
+    <lastmod>2022-03-02T13:39:29+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands-and-suppliers-brands.html</loc>
+    <lastmod>2022-03-28T14:57:50+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/carriers-listing.html</loc>
     <lastmod>2021-12-14T11:40:23+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rules-listing.html</loc>
+    <lastmod>2022-01-20T12:36:43+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/view-catalog-price-rules.html</loc>
+    <lastmod>2021-10-27T15:45:49+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rule.html</loc>
+    <lastmod>2022-05-06T13:25:36+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</loc>
-    <lastmod>2021-06-17T10:50:34+02:00</lastmod>
+    <lastmod>2022-02-16T19:04:35+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/checklist.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -107,14 +188,29 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/checkout.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/drafted-configure-traffic-and-seo.html</loc>
+    <lastmod>2022-04-07T16:31:06+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/contact-information.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/contacts-listing.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/countries/countries-listing.html</loc>
+    <lastmod>2022-02-11T14:25:13+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/credit-slips.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/cross-selling.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -123,19 +219,25 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/view-customer-settings.html</loc>
+    <lastmod>2022-05-04T11:39:25+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/customers-listing.html</loc>
+    <lastmod>2022-02-03T15:47:29+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/customers.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -143,44 +245,68 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/customer-service/dashboard.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard.html</loc>
+    <lastmod>2022-01-13T10:10:20+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard-configure.html</loc>
+    <lastmod>2022-01-27T16:14:12+01:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/dateofdelivery.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/configure-database-backup.html</loc>
+    <lastmod>2022-05-02T16:09:19+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/dbbackup.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-delivery-slips.html</loc>
+    <lastmod>2022-02-28T16:13:36+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/discounts.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/ecotax.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/edit-customer.html</loc>
+    <lastmod>2022-05-02T16:08:23+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/edit-group.html</loc>
+    <lastmod>2022-05-04T16:59:12+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/email.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/email-theme.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-employees.html</loc>
+    <lastmod>2022-04-01T17:44:33+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_facetedsearch.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features.html</loc>
-    <lastmod>2021-10-21T11:16:36+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/features-listing.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
@@ -189,19 +315,25 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/functionnal-and-behaviors-specs-template.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2022-12-07T09:10:31+07:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html</loc>
     <lastmod>2021-10-14T15:48:05+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/general/view-general.html</loc>
+    <lastmod>2022-03-09T13:39:17+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings/generation-options.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/view-groups.html</loc>
+    <lastmod>2022-05-04T11:09:43+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/groups.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -213,28 +345,34 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/image-settings.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import/configure-import.html</loc>
+    <lastmod>2021-12-17T16:14:31+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/information/information.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2022-04-15T18:04:44+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/installer.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/installer/installer.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-invoices.html</loc>
+    <lastmod>2022-02-28T17:15:33+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/language-selector.html</loc>
     <lastmod>2022-02-23T23:26:12+01:00</lastmod>
@@ -242,11 +380,17 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-languages.html</loc>
+    <lastmod>2022-03-25T15:29:51+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/link-widget.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/link-widget/link-widget-listing.html</loc>
+    <lastmod>2022-05-06T17:01:01+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_linklist.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2022-12-06T15:54:19+07:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/list.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -258,7 +402,7 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</loc>
-    <lastmod>2022-08-10T10:23:03+02:00</lastmod>
+    <lastmod>2022-12-29T17:03:14+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html</loc>
     <lastmod>2022-03-17T10:13:54+01:00</lastmod>
@@ -267,16 +411,22 @@
     <lastmod>2022-03-17T10:15:09+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</loc>
     <lastmod>2022-02-23T18:35:04+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/login.html</loc>
+    <lastmod>2022-02-07T11:47:22+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/mail-alerts.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</loc>
     <lastmod>2021-06-14T11:13:22+02:00</lastmod>
@@ -285,37 +435,55 @@
     <lastmod>2021-06-17T18:18:05+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/menu/menu.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/add-edit-merchandise-returns.html</loc>
+    <lastmod>2021-12-06T16:46:24+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/merchandise-returns/merchandise-returns-listing.html</loc>
+    <lastmod>2021-12-06T16:48:50+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/merchant-expertise.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-catalog.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-catalog/module-catalog.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-catalog/module-selections.html</loc>
+    <lastmod>2022-02-23T17:59:45+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules-listing.html</loc>
+    <lastmod>2022-02-23T17:08:28+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/modules.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/monitoring/monitoring-listing.html</loc>
+    <lastmod>2022-05-02T11:07:02+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-movement.html</loc>
+    <lastmod>2022-04-15T17:43:15+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/multistore.html</loc>
     <lastmod>2021-12-15T10:18:55+01:00</lastmod>
@@ -324,43 +492,55 @@
     <lastmod>2021-10-07T17:45:38+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customer-service/order-messages/order-messages.html</loc>
+    <lastmod>2022-05-04T17:15:09+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-statuses.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/outstanding-listing.html</loc>
+    <lastmod>2022-01-31T10:05:47+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/pages/pages.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/payment.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/payment/payment-methods.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/payments-by-check.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/performance.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/permissions-listing.html</loc>
+    <lastmod>2022-02-02T09:08:36+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/payment/preferences.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/preferences.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/broader-topics/price-calculation-rules.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -372,7 +552,7 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</loc>
-    <lastmod>2021-11-02T12:45:59+01:00</lastmod>
+    <lastmod>2022-02-01T16:37:48+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -381,13 +561,13 @@
     <lastmod>2022-08-10T15:59:24+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/product-settings/page.html</loc>
     <lastmod>2021-09-24T18:04:52+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -396,7 +576,7 @@
     <lastmod>2022-02-23T23:26:46+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access.html</loc>
-    <lastmod>2021-12-21T12:02:06+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/quick-access/quick-access-listing.html</loc>
     <lastmod>2022-01-25T12:58:15+02:00</lastmod>
@@ -405,10 +585,13 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/search-engines-listing.html</loc>
+    <lastmod>2022-01-31T16:41:39+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/search-listing.html</loc>
     <lastmod>2021-12-21T09:25:29+02:00</lastmod>
@@ -426,28 +609,37 @@
     <lastmod>2022-02-23T23:27:24+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component/shop-selector-modal.html</loc>
     <lastmod>2022-02-23T23:27:47+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/shopping-carts.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/shopping-carts-listing.html</loc>
+    <lastmod>2022-09-08T13:47:52+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/database/sql_manager.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states.html</loc>
-    <lastmod>2022-01-27T17:19:42+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/states/states-listing.html</loc>
     <lastmod>2022-02-09T10:09:55+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-stock.html</loc>
+    <lastmod>2022-04-15T17:27:14+03:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores.html</loc>
-    <lastmod>2021-11-11T13:42:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/contact/stores/stores-listing.html</loc>
     <lastmod>2021-12-16T13:32:17+02:00</lastmod>
@@ -459,25 +651,37 @@
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags.html</loc>
-    <lastmod>2021-11-23T14:30:55+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/search/tags/tags-listing.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-taxes.html</loc>
+    <lastmod>2022-05-24T15:49:15+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes-listing.html</loc>
+    <lastmod>2022-05-24T15:07:03+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-tax-rules.html</loc>
+    <lastmod>2022-05-24T14:55:03+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/international-tax-rules-listing.html</loc>
+    <lastmod>2022-05-24T14:57:42+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2022-12-07T09:25:34+07:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/spec-templates.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -485,26 +689,38 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</loc>
     <lastmod>2021-06-07T11:36:04+02:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-add-new-theme.html</loc>
+    <lastmod>2022-04-15T17:11:54+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-choose-layouts.html</loc>
+    <lastmod>2022-02-22T11:18:13+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-listing.html</loc>
+    <lastmod>2022-02-17T17:46:45+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-catalog.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/titles.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/translations.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/translations/translations.html</loc>
-    <lastmod>2022-02-15T17:14:20+01:00</lastmod>
+    <lastmod>2022-04-01T09:50:50+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/transplant-a-module-listing.html</loc>
+    <lastmod>2022-09-08T12:58:09+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/ui-component.html</loc>
-    <lastmod>2022-02-23T18:27:20+01:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager/updates.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
@@ -512,29 +728,74 @@
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
   </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/view-categories.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/credit-slips/view-credit-notes.html</loc>
+    <lastmod>2022-04-11T17:40:42+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/view-customer.html</loc>
+    <lastmod>2022-02-15T12:32:07+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/email/view-email.html</loc>
+    <lastmod>2022-03-21T18:03:11+02:00</lastmod>
+  </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/attributes-and-features/features/view-feature.html</loc>
     <lastmod>2021-12-08T16:45:51+01:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-geolocation.html</loc>
+    <lastmod>2022-03-28T17:54:54+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/view-group.html</loc>
+    <lastmod>2022-04-22T14:10:47+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/view-invoices.html</loc>
+    <lastmod>2022-05-04T17:26:56+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs/view-logs.html</loc>
+    <lastmod>2022-03-30T18:03:02+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/multistore/view-multistore.html</loc>
+    <lastmod>2022-03-16T16:26:26+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</loc>
     <lastmod>2022-02-23T14:46:27+01:00</lastmod>
   </url><url>
-    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/webservice.html</loc>
-    <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/performance/view-performance.html</loc>
+    <lastmod>2022-03-07T17:36:12+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/positions/view-positions.html</loc>
+    <lastmod>2022-01-20T12:44:07+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/payment/preferences/view-preferences.html</loc>
+    <lastmod>2022-03-23T18:24:59+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-profiles.html</loc>
+    <lastmod>2022-04-04T16:16:38+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-shopping-cart.html</loc>
+    <lastmod>2022-05-30T12:11:08+03:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/customer-settings/view-titles.html</loc>
+    <lastmod>2022-04-27T14:38:20+03:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/webservice/webservice.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
+  </url><url>
+    <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/webservice.html</loc>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</loc>
     <lastmod>2021-06-04T12:45:53+02:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</loc>
-    <lastmod>2021-06-14T12:09:43+02:00</lastmod>
+    <lastmod>2022-12-13T18:06:33+07:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</loc>
     <lastmod>2022-02-23T18:42:01+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</loc>
-    <lastmod>2022-02-08T15:21:56+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones/zones-listing.html</loc>
     <lastmod>2022-04-06T13:17:35+03:00</lastmod>
@@ -552,7 +813,7 @@
     <lastmod>2022-01-11T15:56:15+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/1.7.html</loc>
-    <lastmod>2021-08-12T17:52:06+02:00</lastmod>
+    <lastmod>2025-01-14T12:24:13+01:00</lastmod>
   </url><url>
     <loc>https://build.prestashop.com/prestashop-specs/categories.html</loc>
   </url><url>

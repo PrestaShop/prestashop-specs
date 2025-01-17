@@ -5,29 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings.html</link>
     <description>Recent content in Order Settings on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Order Statuses</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-statuses.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-statuses.html</guid>
-      <description>SPECIFICATIONS - SHOP PARAMETERS &amp;gt; ORDER SETTINGS &amp;gt; ORDER STATUSES The statuses page has 2 lists for both the order statuses and the order return statuses.
-Order statuses Settings wheel When clicking on it, three options are displayed:
- Refresh list  After clicking ont it, the whole page is refreshed.
-Show SQL query  After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+      <description>SPECIFICATIONS - SHOP PARAMETERS &amp;gt; ORDER SETTINGS &amp;gt; ORDER STATUSESThe statuses page has 2 lists for both the order statuses and the order return statuses.&#xA;Order statuses&#xA;Settings wheelWhen clicking on it, three options are displayed:&#xA;Refresh list After clicking ont it, the whole page is refreshed.&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
     </item>
-    
     <item>
       <title>Settings</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/order-settings/order-settings.html</guid>
-      <description>Order settings specs General Enable final summary This toggle is on No by default.
-When enabled, a summary is displayed in the Front-Office during the checkout, at the payment step:
-This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method &amp;amp; its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.</description>
+      <description>Order settings specs General Enable final summaryThis toggle is on No by default.&#xA;When enabled, a summary is displayed in the Front-Office during the checkout, at the payment step:&#xA;This way, the customer can verify before the payment all the information: the delivery address, the invoice address, the selected shipping method &amp;amp; its cost, the products in the cart, the unit price of each product, the quantity of each product, the total for each product line, the subtotal, the shipping cost, and the order total.</description>
     </item>
-    
   </channel>
 </rss>

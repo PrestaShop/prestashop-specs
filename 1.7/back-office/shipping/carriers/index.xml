@@ -5,30 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers.html</link>
     <description>Recent content in Carriers on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add/edit carrier</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit-carrier.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/add-edit-carrier.html</guid>
-      <description>The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier
-Call to action A call to action button at the top right is displayed:
- Cancel : Pressing the button redirects to the carriers listing page.  A call to action button at the bottom right is displayed:
- Previous: In the first step, this button is disabled. Next: If there is an error, this button is disabled.</description>
+      <description>The following call to action, the logo, and steps are displayed at each step while adding or editing a carrier&#xA;Call to actionA call to action button at the top right is displayed:&#xA;Cancel : Pressing the button redirects to the carriers listing page. A call to action button at the bottom right is displayed:&#xA;Previous: In the first step, this button is disabled. Next: If there is an error, this button is disabled.</description>
     </item>
-    
     <item>
       <title>Carriers listing</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/carriers-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shipping/carriers/carriers-listing.html</guid>
-      <description>Carriers listing The &amp;ldquo;Carriers&amp;rdquo; page displays a list of all the current carriers. From here, it&amp;rsquo;s possible to directly change their status, indicate if shipping is free or not, and change their position in the front office.
-Call to action A call to actions is displayed in the header of this page:
- Add new carrier  👉 See the specs of the add/edit carrier
-Settings wheel When clicking on the settings wheel, the following options are displayed:</description>
+      <description>Carriers listingThe &amp;ldquo;Carriers&amp;rdquo; page displays a list of all the current carriers. From here, it&amp;rsquo;s possible to directly change their status, indicate if shipping is free or not, and change their position in the front office.&#xA;Call to actionA call to actions is displayed in the header of this page:&#xA;Add new carrier 👉 See the specs of the add/edit carrier&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:</description>
     </item>
-    
   </channel>
 </rss>

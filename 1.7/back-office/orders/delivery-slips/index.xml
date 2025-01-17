@@ -5,6 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips.html</link>
     <description>Recent content in Delivery Slips on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add / edit attribute value</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips/view-delivery-slips.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/delivery-slips/view-delivery-slips.html</guid>
+      <description>Delivery slipsIn this page 2 sections are present:&#xA;Print PDF2 Input fields are presented:&#xA;From Input field for the date, by default has the current day entered. Has a tooltip: &amp;ldquo;Format: 2011-12-31 (inclusive)&amp;rdquo;. When pressed opens a calendar to choose a date.&#xA;To Input field for the date, by default has the current day entered. Has a tooltip: &amp;ldquo;Format: 2011-12-31 (inclusive)&amp;rdquo;. When pressed opens a calendar to choose a date.</description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stock management on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock.html</link>
+    <description>Recent content in Stock management on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Movements view</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-movement.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-movement.html</guid>
+      <description>Movements view SearchIn this page firstly a text is presented: Search products (search by name, reference, supplier)&#xA;Below the text there is a search input field for the search, a button on the right: &amp;ldquo;Search&amp;rdquo; is displaed.&#xA;Below there is a drop-table with a placeholder &amp;ldquo;Advanced filters&amp;rdquo;, when pressed, a table below appears with the following:&#xA;Filter by movement type, this is a drop-down field, when pressed, by default the options are: none, Employee edition.</description>
+    </item>
+    <item>
+      <title>Stock view</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-stock.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/stock/view-stock.html</guid>
+      <description>Stock management Search productsIn this page firstly a text is presented: Search products (search by name, reference, supplier)&#xA;Below the text there is a search input field for the search, a button on the right: &amp;ldquo;Search&amp;rdquo; is displaed.&#xA;Below there is a drop-table with a placeholder &amp;ldquo;Advanced filters&amp;rdquo;, when pressed, a table below appears with the following:&#xA;Filter by supplier, this section had a search bar, and 2 check boxes.</description>
+    </item>
+  </channel>
+</rss>

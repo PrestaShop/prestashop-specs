@@ -5,16 +5,42 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes.html</link>
     <description>Recent content in Taxes on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taxes Editing page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-taxes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-taxes.html</guid>
+      <description>INTERNATIONAL &amp;gt; Taxes &amp;gt; Add or Edit Taxes&#xA;This inteface provides the ability to add customized tax or edit the existing tax of the Prestashop tax list.&#xA;Navigating to the Add or Edit Taxes formThe form can be accessed in 2 ways:&#xA;Adding a new Tax, Add new tax button must be clicked. Clicking on the Edit button of an item in the list Tax Editing formIf the webshop is on All shops context, there will be a blue notification message Note that this feature is available in all shops context only.</description>
+    </item>
+    <item>
+      <title>Taxes Listing page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes-listing.html</guid>
+      <description>IMPROVE &amp;gt; International &amp;gt; Taxes&#xA;This page stores all the available Tax titles in Prestashop application.&#xA;Top elements Taxes - page title. Add new tax CTA button - redirects to tax creating and editing page. Help - a side-bar with the helpful information, how to navigate in this page. Tabs: Taxes and Tax Rules - navigation tabs for taxes and tax rules. Middle elements - Tax table Taxes - table title with the total taxes in the list.</description>
+    </item>
+    <item>
+      <title>Taxes Rules Editing page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-tax-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/add-edit-tax-rules.html</guid>
+      <description>INTERNATIONAL &amp;gt; Taxes &amp;gt; Tax Rules &amp;gt; Add or Edit Tax Rule&#xA;This page interface allows to edit existing or add a brand new Tax Rule to the Prestashop Tax system.&#xA;Top elements Add New or Edit:{edited Tax Rule name} - page title. Add new tax rule button - toggles the expanding or subtracting the Tax rule creating and editing section below. Help - a side-bar with the helpful information, how to navigate in this page.</description>
+    </item>
+    <item>
+      <title>Taxes Rules listing page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/international-tax-rules-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/international-tax-rules-listing.html</guid>
+      <description>INTERNATIONAL &amp;gt; Taxes &amp;gt; Tax Rules&#xA;This page defines and lists all the Tax Rules stored in the Prestashop application. Rule can be applied defining the Country and Multishop, and managing other additional properties.&#xA;Top elements Tax Rules - page title. Add new tax rule button - redirects to tax rule creating and editing page. Recommended Modules and Services - redirects to recommended modules and services page. Help - a side-bar with the helpful information, how to navigate in this page.</description>
+    </item>
     <item>
       <title>Taxes Tab</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/taxes/taxes.html</guid>
-      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; TAXES &amp;gt; TAXES TAB Grid TaxGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; TAXES &amp;gt; TAXES TAB GridTaxGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
   </channel>
 </rss>

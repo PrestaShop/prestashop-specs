@@ -5,20 +5,42 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo.html</link>
     <description>Recent content in Traffic &amp; SEO on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add new / edit search engine</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-search-engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-search-engine.html</guid>
+      <description>SHOP PARAMETERS &amp;gt; Traffic &amp;amp; SEO &amp;gt; Add / Edit Search Engine&#xA;This UI lets the administrator to edit or add Search Engine value to the list.&#xA;Top UI elements Edit and the editing Server name - Server name. Help - a side-bar with the helpful information, how to navigate in this page. Tabs - navigation tabs for Traffic &amp;amp; SEO menu: SEO &amp;amp; URLs. Search Engines- highlighted tab. Referrers.</description>
+    </item>
+    <item>
+      <title>Add new SEO page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.html</guid>
+      <description>CONFIGURE &amp;gt; SHOP PARAMETERS &amp;gt; TRAFFIC &amp;amp; SEO &amp;gt; ADD / EDIT a new page&#xA;This UI represents the function of adding / editing a SEO &amp;amp; URL page, which is dedicated to Meta Tags section.&#xA;Top UI section Multishop switcher - it is an ability to switch the available multistores while being on the current SEO editing page, and to view the shop Front-Office homepage by redirection. Breadcrumbs, page title, Recommended modules and Help CTA&amp;rsquo;s - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation.</description>
+    </item>
+    <item>
+      <title>Configure SEO and URLs</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/drafted-configure-traffic-and-seo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/drafted-configure-traffic-and-seo.html</guid>
+      <description>CONFIGURE &amp;gt; SHOP PARAMETERS &amp;gt; TRAFFIC &amp;amp; SEO&#xA;This UI represents the configuration of SEO and URLs of the webshop.&#xA;Top UI section Multishop switcher - it is an ability to switch the available multistores while being on the current SEO editing page, and to view the shop Front-Office homepage by redirection. Breadcrumbs, page title, Recommended modules and Help CTA&amp;rsquo;s - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation.</description>
+    </item>
+    <item>
+      <title>Search Engines</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/search-engines-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/search-engines-listing.html</guid>
+      <description>SHOP PARAMETERS &amp;gt; Traffic &amp;amp; SEO &amp;gt; Search Engines&#xA;This UI lists the Prestashop Search Engines entries.&#xA;Meaning of this pageOnce the visitors are accessing the webshop, some of them come from Search Engines, like Google. Google Search Engine is added in the listing by default, after the Prestashop installation. The purpose of this page is to gather all the available Search Engines, that Prestashop can recognize. Then the shop administrators can manage those queries, and can be informed, where the visitors are coming from.</description>
+    </item>
     <item>
       <title>SEO &amp; URLs Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html</guid>
-      <description>SPECIFICATIONS - SEO &amp;amp; URLS PAGE Grid MetaGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column.
-SEO &amp;amp; URLs [TO BE COMPLETED]
-Rewritten URL. Should be available for all pages, even the index which stands for the store&amp;rsquo;s homepage.
-[TO BE COMPLETED]
-URLs set up Friendly URL. By default, this option is enabled.</description>
+      <description>SPECIFICATIONS - SEO &amp;amp; URLS PAGE GridMetaGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column.&#xA;SEO &amp;amp; URLs[TO BE COMPLETED]&#xA;Rewritten URL. Should be available for all pages, even the index which stands for the store&amp;rsquo;s homepage.&#xA;[TO BE COMPLETED]&#xA;URLs set upFriendly URL. By default, this option is enabled. A friendly URL is generated from the page/item name, it is available for all of the pages whose URL can be rewritten:</description>
     </item>
-    
   </channel>
 </rss>

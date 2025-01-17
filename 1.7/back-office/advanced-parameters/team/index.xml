@@ -5,26 +5,56 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team.html</link>
     <description>Recent content in Team on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add/edit employee</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-employee.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-employee.html</guid>
+      <description>EmployeesIn this section 11 fields are presented:&#xA;First name Mandatory field for the name, when trying to save without this input, will show a message above the field saying: &amp;ldquo;Please fill out this field&amp;rdquo;. Also, if the field is empty, when hovering on it, it will also show: &amp;ldquo;Please fill out this field&amp;rdquo;.&#xA;Last name Mandatory field for the last name, when trying to save without this input, will show a message above the field saying: &amp;ldquo;Please fill out this field&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Add/edit profile</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-profile.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/add-edit-profile.html</guid>
+      <description>MultistoreIf multistore is enabled on the shop, firstly a message is shown: &amp;ldquo;Note that this feature is available in all shops context only. It will be added to all your stores.&amp;rdquo;.&#xA;Profile2 Fields are present in this section:&#xA;Name This is a mandatory name field, trying to save it without entering a name, an error is shown: &amp;ldquo;The field name is required at least in your default language.&amp;rdquo;. The field is multilanguage, can be translated to the languages that are installed on the shop.</description>
+    </item>
     <item>
       <title>Employees</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/employees.html</guid>
-      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; EMPLOYEES Grid EmployeeGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; EMPLOYEES GridEmployeeGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
+    <item>
+      <title>Employees view</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-employees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-employees.html</guid>
+      <description>Employees Call to action1 call to action button is present at the top of the page:&#xA;Add new employee, when pressed redirects to the specs of the add/edit new employee In this page 2 sections are present&#xA;Settings wheel Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
+    <item>
+      <title>Permissions</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/permissions-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/permissions-listing.html</guid>
+      <description>ADVANCED PARAMETERS &amp;gt; Team &amp;gt; Employees &amp;gt; PermissionsThis UI allows to modify the permissions of the Prestashop application. Permissions lets or firbids the access to the certain elements of the application. The permissions can be ticked or unticked on the certain checkboxes, system saves the Premission status instantly after the ticking.&#xA;Top UI elements Permissions - page title. Help - a side-bar with the helpful information, how to navigate in this page.</description>
+    </item>
     <item>
       <title>Profiles Tab</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/profiles.html</guid>
-      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB Grid ProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - ADVANCED PARAMETERS &amp;gt; TEAM &amp;gt; PROFILES TAB GridProfileGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
+    <item>
+      <title>View profiles</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-profiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/team/view-profiles.html</guid>
+      <description>MultistoreIf multistore is enabled on the shop, firstly a message is presented: &amp;ldquo;Note that this page is available in all shops context only, this is why your context has just switched.&amp;rdquo;.&#xA;Settings wheel Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
+    </item>
   </channel>
 </rss>

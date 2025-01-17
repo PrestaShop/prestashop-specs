@@ -5,17 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations.html</link>
     <description>Recent content in Locations on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zones</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/locations/zones.html</guid>
-      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCATION &amp;gt; ZONES As a merchant I need to be able to manage the zone, add, edit, and/or delete them.
-WHAT Thus, in this project we aim at the current and expected behaviours when we add, edit or delete zones.
-WHY As a merchant, being able to manage zones will help to have my own subregions and manage my countries and shipping behaviours based on them as well.</description>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCATION &amp;gt; ZONESAs a merchant I need to be able to manage the zone, add, edit, and/or delete them.&#xA;WHATThus, in this project we aim at the current and expected behaviours when we add, edit or delete zones.&#xA;WHYAs a merchant, being able to manage zones will help to have my own subregions and manage my countries and shipping behaviours based on them as well.</description>
     </item>
-    
   </channel>
 </rss>

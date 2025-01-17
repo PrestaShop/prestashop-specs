@@ -5,32 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/spec-templates.html</link>
     <description>Recent content in Templates on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/spec-templates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional and behaviors specs</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/functionnal-and-behaviors-specs-template.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/functionnal-and-behaviors-specs-template.html</guid>
-      <description>Functional and behaviors specs template v1.0 December 19
-Disclaimer: This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.
-The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.
-Do not attempt to build what is written below
-Structure This template presents how to write a page Intro, and features&amp;rsquo;s Context, functional specs and behaviors for features.</description>
+      <description>Functional and behaviors specs template v1.0December 19&#xA;Disclaimer:This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.&#xA;The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.&#xA;Do not attempt to build what is written below&#xA;StructureThis template presents how to write a page Intro, and features&amp;rsquo;s Context, functional specs and behaviors for features.</description>
     </item>
-    
     <item>
       <title>Technical characteristics specs</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/spec-templates/technical-characteristics-template.html</guid>
-      <description>Technical characteristics specs template v1.0 December 19
-Disclaimer: This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.
-The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.
-Do not attempt to build what is written below
-Structure This template presents how to write technical characteristics specs.</description>
+      <description>Technical characteristics specs template v1.0December 19&#xA;Disclaimer:This document is a template which purpose is to present the structure and tone of voice/semantic specifications should follow.&#xA;The information detailed in this file are not relevant, and the different parts are not related to each other. It is made from different specs stitched together.&#xA;Do not attempt to build what is written below&#xA;StructureThis template presents how to write technical characteristics specs.</description>
     </item>
-    
   </channel>
 </rss>

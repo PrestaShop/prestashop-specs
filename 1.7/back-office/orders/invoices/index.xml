@@ -5,6 +5,28 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices.html</link>
     <description>Recent content in Invoices on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delivery Slips Configuration</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-delivery-slips.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-delivery-slips.html</guid>
+      <description>SELL &amp;gt; ORDERS &amp;gt; Delivery Slips&#xA;This UI allows to configure the Delivery Slips - download the PDF or manage the additional options.&#xA;Delivery Slips meaningDelivery Slip is a PDF-typed document in Prestashop, where the delivery information about order is being printed in.&#xA;Creation of the Delivery SlipOnce the Order is being entered to the Shipped status, the PDF of the Delivery Slip is generated, and it can be downloaded in the Order page.</description>
+    </item>
+    <item>
+      <title>Invoices Configuration</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-invoices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/configure-invoices.html</guid>
+      <description>SELL &amp;gt; ORDERS &amp;gt; INVOICES&#xA;This UI displays the Invoices configuration page and allows to generate the appropriate PDF invoices.&#xA;Top UI elements block Multistore switching dropdown - allows navigating through the available Multistores. View my shop and icon - allows opening the Front-Office in the blank new page by clicking this eye icon link. Redirection leads to the homepage of the Mulsitstore. Breadcrumbs navigation - identifies the page level.</description>
+    </item>
+    <item>
+      <title>View invoices</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/view-invoices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/invoices/view-invoices.html</guid>
+      <description>Invoices3 Sections are present in this page&#xA;By date2 Fields are present in this section:&#xA;From This is a field for selecting a date for the invoice, when pressed a calendar appears for choosing the date. By default the current day is shown firstly in the field. Has a tooltip: &amp;ldquo;Format: 2011-12-31 (inclusive).&amp;rdquo;&#xA;To This is a field for selecting a date for the invoice, when pressed a calendar appears for choosing the date.</description>
+    </item>
   </channel>
 </rss>

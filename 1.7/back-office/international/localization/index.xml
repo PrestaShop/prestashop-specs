@@ -5,38 +5,49 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization.html</link>
     <description>Recent content in Localization on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add edit language</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/add-edit-language.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/add-edit-language.html</guid>
+      <description>LanguageIn this section 10 fields are presented:&#xA;Name Mandatory name field, if it&amp;rsquo;s not entered, when trying to &amp;ldquo;save&amp;rdquo; will prompt the message near the field: &amp;ldquo;Please fill out this field&amp;rdquo;.&#xA;ISO code Has a help text below: &amp;ldquo;Two-letter ISO code (e.g. FR, EN, DE).&amp;rdquo;. When trying to save without entering this field: &amp;ldquo;Please fill out this field&amp;rdquo;.&#xA;Language code Mandatory language code field. Has a help text below: &amp;ldquo;IETF language tag (e.</description>
+    </item>
     <item>
       <title>Currencies</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/currencies.html</guid>
-      <description>Localization-Currencies-List-Add-Edit Currency format setting Localization &amp;gt; Currencies &amp;gt; Edit/Add Page
-USER STORY As a merchant, I want to manage the display of my currencies in the Front Office depending on the language if needed in order to adapt my shop to my clients&#39; visual expectations.
-WHY We have understood there is a big complexity on the currency display choose when you shop is for B2C or B2B, or when you sell in countries sharing the same symbol currency as in Latin America countries with the pesos.</description>
+      <description>Localization-Currencies-List-Add-Edit Currency format settingLocalization &amp;gt; Currencies &amp;gt; Edit/Add Page&#xA;USER STORYAs a merchant, I want to manage the display of my currencies in the Front Office depending on the language if needed in order to adapt my shop to my clients&amp;rsquo; visual expectations.&#xA;WHYWe have understood there is a big complexity on the currency display choose when you shop is for B2C or B2B, or when you sell in countries sharing the same symbol currency as in Latin America countries with the pesos.</description>
     </item>
-    
     <item>
       <title>Languages</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/languages.html</guid>
-      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LANGUAGES Grid LanguageGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LANGUAGES GridLanguageGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
+    <item>
+      <title>Languages</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-languages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-languages.html</guid>
+      <description>Languages MultistoreIf multistore is enabled, firstly, a message is shown: &amp;ldquo;Note that this page is available in all shops context only, this is why your context has just switched.&amp;rdquo;.&#xA;Below a message is shown: &amp;ldquo;When you delete a language, all related translations in the database will be deleted.&amp;rdquo;.&#xA;Languages Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Refresh list After clicking on it, the page is reloaded.</description>
+    </item>
     <item>
       <title>Localization</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/localization.html</guid>
-      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LOCALIZATION As a merchant, I need to be able to manage my localizations to handle the importation packages, the language and the currency configuration of the Front-Office, the local units used by the shop.
-WHAT In this page, we aim at describing the current and expected behaviors when we add, edit, or delete localizations.
-WHY As a merchant, being able to manage localizations will help to have my own units, languages, and currencies for each country separately or adding and/or modifying my own states and zones for each country as well.</description>
+      <description>SPECIFICATIONS - INTERNATIONAL &amp;gt; LOCALIZATION &amp;gt; LOCALIZATIONAs a merchant, I need to be able to manage my localizations to handle the importation packages, the language and the currency configuration of the Front-Office, the local units used by the shop.&#xA;WHATIn this page, we aim at describing the current and expected behaviors when we add, edit, or delete localizations.&#xA;WHYAs a merchant, being able to manage localizations will help to have my own units, languages, and currencies for each country separately or adding and/or modifying my own states and zones for each country as well.</description>
     </item>
-    
+    <item>
+      <title>View geolocation</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-geolocation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/international/localization/view-geolocation.html</guid>
+      <description>Geolocation3 sections are presented in this page.&#xA;Geolocation by IP addressIn this section a mandatory toggle swtich is displayed, by default it is set to &amp;ldquo;No&amp;rdquo;. Has a help text below: &amp;ldquo;This option allows you, among other things, to restrict access to your shop for certain countries. See below.&amp;rdquo;.&#xA;At the bottom a button is shown:&#xA;Save, when pressed, a message is shown: &amp;ldquo;Update successful&amp;rdquo;. OptionsThe name of the section has a tooltip: &amp;ldquo;The following features are only available if you enable the Geolocation by IP address feature.</description>
+    </item>
   </channel>
 </rss>

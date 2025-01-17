@@ -5,39 +5,28 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters.html</link>
     <description>Recent content in Advanced Parameters on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Listing sessions (Customers)</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html</guid>
-      <description>SPECS LISTING customer SESSIONS Settings wheel When clicking on it, 4 options are displayed:
- Export  After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done
-Import  After clicking on it, the user is redirected to the import page in advanced parameters
-Show SQL query  After clicking on it, the SQL query is displayed in a modal.</description>
+      <description>SPECS LISTING customer SESSIONS Settings wheelWhen clicking on it, 4 options are displayed:&#xA;Export After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done&#xA;Import After clicking on it, the user is redirected to the import page in advanced parameters&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
     </item>
-    
     <item>
       <title>Listing sessions (Employees)</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/employee-sessions-listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/employee-sessions-listing.html</guid>
-      <description>SPECS LISTING EMPLOYEE SESSIONS Settings wheel When clicking on it, 4 options are displayed:
- Export  After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done
-Import  After clicking on it, the user is redirected to the import page in advanced parameters
-Show SQL query  After clicking on it, the SQL query is displayed in a modal.</description>
+      <description>SPECS LISTING EMPLOYEE SESSIONS Settings wheelWhen clicking on it, 4 options are displayed:&#xA;Export After clicking on it, the list is exported in CSV format. The export takes into account filters and sorts that have been done&#xA;Import After clicking on it, the user is redirected to the import page in advanced parameters&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal. The SQL query takes into account filters and sorts that have been done.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/security.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/security/security.html</guid>
       <description>Back office token protection - toggle - By default is enabled. Enabled, a token is added in the URL during the navigation in the back office, if the token is invalid, it displays a warning with a message asking if the user really wants to display this page.</description>
     </item>
-    
   </channel>
 </rss>

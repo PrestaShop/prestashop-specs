@@ -5,6 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import.html</link>
     <description>Recent content in Import on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Import configuration page</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import/configure-import.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/import/configure-import.html</guid>
+      <description>CONFIGURE &amp;gt; Advanced Parameters &amp;gt; ImportImport&#xA;This UI page and functionality is based on the import actions of the Prestashop application. The listing is specified of all the visible sections in page.&#xA;Top UI section Multishop switcher - it is an ability to switch the available multistores while beiing on the Import page, and to view the shop homepage by redirection. Breadcrumbs, page title, Recommended modules and Help CTA&amp;rsquo;s - default Prestashop UI in the top position, helping administrators to improve the navigation.</description>
+    </item>
   </channel>
 </rss>

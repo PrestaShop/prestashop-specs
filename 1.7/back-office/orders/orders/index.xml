@@ -5,41 +5,42 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders.html</link>
     <description>Recent content in Orders on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add new order</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/add.html</guid>
-      <description>Orders &amp;gt; Orders &amp;gt; Add new order
-As a merchant, I want to be able to manually add an order to my back-office. Creating a new order is divided into 6 steps:
- I. Customer selection with his/her old orders and carts II. Order cart III. Vouchers IV. Address V. Summary VI. Multistore  I. Customer selection To select the customer, the merchant has to type any character chain that is contained in the customer&amp;rsquo;s first name, last name, or email.</description>
+      <description>Orders &amp;gt; Orders &amp;gt; Add new order&#xA;As a merchant, I want to be able to manually add an order to my back-office. Creating a new order is divided into 6 steps:&#xA;I. Customer selection with his/her old orders and carts II. Order cart III. Vouchers IV. Address V. Summary VI. Multistore I. Customer selectionTo select the customer, the merchant has to type any character chain that is contained in the customer&amp;rsquo;s first name, last name, or email.</description>
     </item>
-    
     <item>
       <title>Listing Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/listing.html</guid>
-      <description>SPECS LISTING ORDER PAGE 1. When there are 0 orders [WAINTING FOR DESIGN]
-The empty state card appears ONLY when there is no value (by default or created).
-2. Header In the header, there is &amp;ldquo;Add new order&amp;rdquo; button allowing to open the form to create a manual order.
-3. Top of the listing Settings wheel When clicking on it, 4 options are displayed:
- Export  After clicking on it, the list is exported in CSV format.</description>
+      <description>SPECS LISTING ORDER PAGE 1. When there are 0 orders[WAINTING FOR DESIGN]&#xA;The empty state card appears ONLY when there is no value (by default or created).&#xA;2. HeaderIn the header, there is &amp;ldquo;Add new order&amp;rdquo; button allowing to open the form to create a manual order.&#xA;3. Top of the listing Settings wheelWhen clicking on it, 4 options are displayed:&#xA;Export After clicking on it, the list is exported in CSV format.</description>
     </item>
-    
+    <item>
+      <title>Shopping Carts listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/shopping-carts-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/shopping-carts-listing.html</guid>
+      <description>ORDERS &amp;gt; SHOPPING CARTS&#xA;The page stores all shopping carts created by clients of the PrestaShop&amp;rsquo;s user, that were generated during the checkout process.&#xA;4 KPI calculation UI Conversion Rate - it is an icon, title, date, and the number of days with the percentage displayed. It indicates, how many Shopping Carts were generated during specific time range. The value is displayed in percentage. Abandoned Carts - it is an icon, title, 2 and 3 days time range of passed days, and numeric value displayed.</description>
+    </item>
     <item>
       <title>View Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-page.html</guid>
-      <description>Specifications for the order view page for 1.7.7 - 2019 As a merchant, I need to be able to manage all my orders processed on my website.
-As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:
- Check the order’s products to prepare it Manage the order’s progress, Edit the customer information or send him messages, Print his invoice, Handle payment methods, Follow my shipping through activities, Manage returns and refunds  WHY</description>
+      <description>Specifications for the order view page for 1.7.7 - 2019As a merchant, I need to be able to manage all my orders processed on my website.&#xA;As a merchant, managing my orders is essential for my e-commerce, so I need to be able to:&#xA;Check the order’s products to prepare it Manage the order’s progress, Edit the customer information or send him messages, Print his invoice, Handle payment methods, Follow my shipping through activities, Manage returns and refunds WHY</description>
     </item>
-    
+    <item>
+      <title>View Shopping Cart listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-shopping-cart.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/orders/orders/view-shopping-cart.html</guid>
+      <description>SELL &amp;gt; Orders &amp;gt; Shopping Carts &amp;gt; View&#xA;This dashboard is displaying the information about the Shopping Cart initiator - the customer, visitor or guest visitor who generated the Cart. It can be accessed by selecting the Shopping Cart row and clicking on View button on the right of the row.&#xA;The elements of the page UI Registered customer in Prestashop Total Cart - Total amount of the cart Customer information - a section, that lists the customer: first name, last name, account registration date, valid orders placed - total number of orders, that user has fully completed.</description>
+    </item>
   </channel>
 </rss>

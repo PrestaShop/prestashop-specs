@@ -5,6 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog.html</link>
     <description>Recent content in Catalog on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoring</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/monitoring/monitoring-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/monitoring/monitoring-listing.html</guid>
+      <description>SELL &amp;gt; CATALOG &amp;gt; Monitoring&#xA;This UI shows the list of features, that needs the attention from administrator.&#xA;Top UI section Multishop switcher - it is an ability to switch the available multistores while being on the current SEO editing page, and to view the shop Front-Office homepage by redirection. Breadcrumbs, page title, Recommended modules and Help CTA&amp;rsquo;s - default Prestashop UI in the top position, helping administrators to improve the navigation - to view the current Title of the page, see the level of the navigation.</description>
+    </item>
   </channel>
 </rss>

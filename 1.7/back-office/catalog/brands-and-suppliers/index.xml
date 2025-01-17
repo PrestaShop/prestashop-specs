@@ -5,28 +5,49 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers.html</link>
     <description>Recent content in Brands &amp; Suppliers on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add edit brand</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand.html</guid>
+      <description>In this page brand can be added or existing edited.&#xA;Brands9 Fields below are presented:&#xA;Name This field is mandatory, when trying to ssave it without entering the name, it will show the following message: &amp;ldquo;please fill out this field.&amp;rdquo;. Below a helpt text is presented: &amp;ldquo;Invalid characters:&amp;lt;&amp;gt;;=#{}&amp;rdquo;. When trying to save with invalid characters entered, will show the following error: &amp;quot; &amp;ldquo;invalid characters that were input&amp;rdquo; is invalid.&#xA;Short description This is a text input block, here it&amp;rsquo;s possible select in which language the text will be written, all the imported languages to the shop will be shown.</description>
+    </item>
+    <item>
+      <title>Add/edit new brand address</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand-address.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand-address.html</guid>
+      <description>In this field brand address can be added or edited.&#xA;AddressesIn this section there ar 13 input fields for the brand address to be entered or edited.&#xA;Brand This is a drop-down field of the current brands in the shop that can be selected.&#xA;Last name This is a mandatory input field, when trying to ssave it without entering the last name, it will show the following message: &amp;ldquo;please fill out this field.</description>
+    </item>
+    <item>
+      <title>Brand view</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/view-brand.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/view-brand.html</guid>
+      <description>In this page the information about the brand and it&amp;rsquo;s products is displayed.&#xA;AddressesIn this section there 8 columns are displayed:&#xA;Name Address Address (2) City State Home phone Mobile phone Other Call to action Edit, when pressed redirects to the add/edit brand address ProductsEvery product name is a link as well, when pressed the Product page is opened.&#xA;Below all the products under the brand are listed, the following product information is provided:</description>
+    </item>
     <item>
       <title>Brands</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands.html</guid>
-      <description>SPECIFICATIONS - CATALOG - BRANDS &amp;amp; SUPPLIERS - BRANDS Grid Brands ManufacturerGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.
-Grid Adresses ManufacturerAddressGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit
-Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
+      <description>SPECIFICATIONS - CATALOG - BRANDS &amp;amp; SUPPLIERS - BRANDS Grid BrandsManufacturerGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.&#xA;Grid AdressesManufacturerAddressGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: Delete Row action: Edit&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column.</description>
     </item>
-    
+    <item>
+      <title>Brands and suppliers brands</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands-and-suppliers-brands.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/brands-and-suppliers-brands.html</guid>
+      <description>In this page Brands and suppliers are displayed.&#xA;Call to action2 call to actions are displayed in the header of this page:&#xA;Add new brand 👉 See the specs of the add/edit brand&#xA;Add new brand address 👉 See the specs of the add/edit brand address&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Import After clicking on it, the Import page is opened.&#xA;Refresh list After clicking on it, the page is reloaded.</description>
+    </item>
     <item>
       <title>Supliers Tab</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/brands-and-suppliers/suppliers.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; BRANDS &amp;amp; SUPPLIERS &amp;gt; SUPPLIERS TAB Grid SupplierGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; BRANDS &amp;amp; SUPPLIERS &amp;gt; SUPPLIERS TAB GridSupplierGridDefinitionFactory.php Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
   </channel>
 </rss>

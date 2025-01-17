@@ -1,0 +1,12051 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="description" content="Specifications of the PrestaShop project">
+<meta name="twitter:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta name="twitter:site" content="@prestashop" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dashboard" />
+<meta name="twitter:description" content="Specifications of the PrestaShop project">
+<meta property="og:image" content="https://build.prestashop.com/prestashop-specs/img/social-cover.jpg" />
+<meta property="og:site_name" content="PrestaShop" />
+<meta property="og:title" content="Dashboard" />
+<meta property="og:description" content="Specifications of the PrestaShop project">
+<meta name="author" content="PrestaShop">
+
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Dashboard :: PrestaShop Specs</title>
+    
+    
+    <link href="../../../css/font-awesome.min.css?1737097535" rel="stylesheet">
+    <link href="../../../css/syntax-github.css?1737097535" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1737097535" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1737097535" rel="stylesheet"><link href="../../../css/auto-complete.css?1737097535" rel="stylesheet">
+    <link href="../../../style.css?1737097535" rel="stylesheet">
+
+    <script src="../../../js/jquery-3.3.1.min.js?1737097535"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+
+  </head>
+  <body class="" data-url="../../../1.7/back-office/dashboard/dashboard.html">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="../../../"><img src="../../../images/logo@2x.png" width="200" alt="PrestaShop Specs" /></a>
+    </div>
+    
+
+  </div>
+
+  <div class="highlightable">
+
+    
+  
+
+
+    <ul class="topics">
+
+      
+      
+      
+          
+              
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office.html" title="Back Office" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office.html">
+          <span>
+            Back Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters.html" title="Advanced Parameters" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters.html">
+          <span>
+            Advanced Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/administration.html" title="Administration" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/administration.html">
+          <span>
+            Administration
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/administration/administration.html" title="Administration Page" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/administration/administration.html">
+        Administration Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/administration/configure-administration.html" title="Administration Page" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/administration/configure-administration.html">
+        Administration Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/database.html" title="Database" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/database.html">
+          <span>
+            Database
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/configure-database-backup.html" title="DB Backup" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/database/configure-database-backup.html">
+        DB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/dbbackup.html" title="DB Backup" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/database/dbbackup.html">
+        DB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/database/sql_manager.html" title="SQL Manager" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/database/sql_manager.html">
+        SQL Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/email.html" title="Email" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/email.html">
+          <span>
+            Email
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/email/view-email.html" title="View e-mail" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/email/view-email.html">
+        View e-mail
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/import.html" title="Import" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/import.html">
+          <span>
+            Import
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/import/configure-import.html" title="Import configuration page" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/import/configure-import.html">
+        Import configuration page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/information.html" title="Information" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/information.html">
+          <span>
+            Information
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/information/information.html" title="Information Page" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/information/information.html">
+        Information Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/customer-sessions-listing.html" title="Listing sessions (Customers)" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/security/customer-sessions-listing.html">
+        Listing sessions (Customers)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/employee-sessions-listing.html" title="Listing sessions (Employees)" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/security/employee-sessions-listing.html">
+        Listing sessions (Employees)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/logs.html" title="Logs" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/logs.html">
+          <span>
+            Logs
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/logs/view-logs.html" title="View logs" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/logs/view-logs.html">
+        View logs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/menu.html" title="Menu" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/menu.html">
+          <span>
+            Menu
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/menu/menu.html" title="Menu Tab" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/menu/menu.html">
+        Menu Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/multistore.html" title="MultiStore" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/multistore.html">
+          <span>
+            MultiStore
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/add-new-shop.html" title="Add a new shop" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/multistore/add-new-shop.html">
+        Add a new shop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/add-edit-shop-group.html" title="Add/edit shop group" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/multistore/add-edit-shop-group.html">
+        Add/edit shop group
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/multistore.html" title="MultiStore" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/multistore/multistore.html">
+        MultiStore
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/multistore/view-multistore.html" title="View multistore" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/multistore/view-multistore.html">
+        View multistore
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/performance.html" title="Performance" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/performance.html">
+          <span>
+            Performance
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/performance/view-performance.html" title="View performance" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/performance/view-performance.html">
+        View performance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/team.html" title="Team" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/team.html">
+          <span>
+            Team
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/add-edit-employee.html" title="Add/edit employee" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/add-edit-employee.html">
+        Add/edit employee
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/add-edit-profile.html" title="Add/edit profile" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/add-edit-profile.html">
+        Add/edit profile
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/employees.html" title="Employees" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/employees.html">
+        Employees
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/view-employees.html" title="Employees view" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/view-employees.html">
+        Employees view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/permissions-listing.html" title="Permissions" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/permissions-listing.html">
+        Permissions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/profiles.html" title="Profiles Tab" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/profiles.html">
+        Profiles Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/team/view-profiles.html" title="View profiles" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/team/view-profiles.html">
+        View profiles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/advanced-parameters/webservice.html" title="WebService" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/advanced-parameters/webservice.html">
+          <span>
+            WebService
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/webservice/webservice.html" title="Webservice" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/webservice/webservice.html">
+        Webservice
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/advanced-parameters/security/security.html" title="" class="dd-item ">
+        <a href="../../../1.7/back-office/advanced-parameters/security/security.html">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog.html" title="Catalog" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog.html">
+          <span>
+            Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features.html" title="Attributes &amp; Features" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/attributes-and-features.html">
+          <span>
+            Attributes &amp; Features
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes.html" title="Attributes" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/attributes-and-features/attributes.html">
+          <span>
+            Attributes
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html" title="Add / edit attribute" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute.html">
+        Add / edit attribute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html" title="Add / edit attribute value" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/attributes/add-edit-attribute-value.html">
+        Add / edit attribute value
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html" title="Attributes listing" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/attributes/attributes-listing.html">
+        Attributes listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html" title="View attribute" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/attributes/view-attribute.html">
+        View attribute
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features.html" title="Features" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/attributes-and-features/features.html">
+          <span>
+            Features
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html" title="Add / Edit Feature" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/features/add-edit-feature.html">
+        Add / Edit Feature
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html" title="Add / Edit Feature Value" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/features/add-edit-feature-value.html">
+        Add / Edit Feature Value
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/features-listing.html" title="Features listing" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/features/features-listing.html">
+        Features listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/attributes-and-features/features/view-feature.html" title="View Feature" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/attributes-and-features/features/view-feature.html">
+        View Feature
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers.html" title="Brands &amp; Suppliers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/brands-and-suppliers.html">
+          <span>
+            Brands &amp; Suppliers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand.html" title="Add edit brand" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/add-edit-brand.html">
+        Add edit brand
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/add-edit-brand-address.html" title="Add/edit new brand address" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/add-edit-brand-address.html">
+        Add/edit new brand address
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/view-brand.html" title="Brand view" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/view-brand.html">
+        Brand view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/brands.html" title="Brands" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/brands.html">
+        Brands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/brands-and-suppliers-brands.html" title="Brands and suppliers brands" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/brands-and-suppliers-brands.html">
+        Brands and suppliers brands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/brands-and-suppliers/suppliers.html" title="Supliers Tab" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/brands-and-suppliers/suppliers.html">
+        Supliers Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/categories.html" title="Categories" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/categories.html">
+          <span>
+            Categories
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/add-edit-category.html" title="Add/edit category" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/categories/add-edit-category.html">
+        Add/edit category
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/categories.html" title="Categories" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/categories/categories.html">
+        Categories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/add-edit.html" title="Category Page" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/categories/add-edit.html">
+        Category Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/categories/view-categories.html" title="View categories" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/categories/view-categories.html">
+        View categories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/discount.html" title="Discount" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/discount.html">
+          <span>
+            Discount
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html" title="Add/Edit Catalog Price Rules.md" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html">
+        Add/Edit Catalog Price Rules.md
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/add-edit-cart-price-rule.html" title="Adding and Editing cart rules" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/add-edit-cart-price-rule.html">
+        Adding and Editing cart rules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/cart-rules-listing.html" title="Cart Price Rules listing" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/cart-rules-listing.html">
+        Cart Price Rules listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/view-catalog-price-rules.html" title="Catalog Price Rules" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/view-catalog-price-rules.html">
+        Catalog Price Rules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/add-edit-catalog-price-rule.html" title="Catalog Price Rules creation" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/add-edit-catalog-price-rule.html">
+        Catalog Price Rules creation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html" title="How does Cart Rule works ?" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/discount/how-does-cart-rule-works-.html">
+        How does Cart Rule works ?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/monitoring/monitoring-listing.html" title="Monitoring" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/monitoring/monitoring-listing.html">
+        Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/products.html" title="Products" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/products.html">
+          <span>
+            Products
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/listing.html" title="Listing" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/products/listing.html">
+        Listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/listing-v2.html" title="Listing Page - 8.0" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/products/listing-v2.html">
+        Listing Page - 8.0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/add-edit.html" title="Product Page" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/products/add-edit.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/products/add-edit-v2.html" title="Product Page - 8.0" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/products/add-edit-v2.html">
+        Product Page - 8.0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/catalog/stock.html" title="Stock management" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/catalog/stock.html">
+          <span>
+            Stock management
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/stock/view-movement.html" title="Movements view" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/stock/view-movement.html">
+        Movements view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/catalog/stock/view-stock.html" title="Stock view" class="dd-item ">
+        <a href="../../../1.7/back-office/catalog/stock/view-stock.html">
+        Stock view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/customer-service.html" title="Customer Service" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customer-service/customer-service.html">
+          <span>
+            Customer Service
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/customer-service/dashboard.html" title="Dashboard" class="dd-item ">
+        <a href="../../../1.7/back-office/customer-service/customer-service/dashboard.html">
+        Dashboard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/merchandise-returns.html" title="Merchandise Returns" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customer-service/merchandise-returns.html">
+          <span>
+            Merchandise Returns
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/merchandise-returns/add-edit-merchandise-returns.html" title="Merchandise Returns edit" class="dd-item ">
+        <a href="../../../1.7/back-office/customer-service/merchandise-returns/add-edit-merchandise-returns.html">
+        Merchandise Returns edit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/merchandise-returns/merchandise-returns-listing.html" title="Merchandise Returns listing" class="dd-item ">
+        <a href="../../../1.7/back-office/customer-service/merchandise-returns/merchandise-returns-listing.html">
+        Merchandise Returns listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customer-service/order-messages.html" title="Order Messages" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customer-service/order-messages.html">
+          <span>
+            Order Messages
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/order-messages/add-edit-order-message.html" title="Add or Edit Order Messages" class="dd-item ">
+        <a href="../../../1.7/back-office/customer-service/order-messages/add-edit-order-message.html">
+        Add or Edit Order Messages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customer-service/order-messages/order-messages.html" title="Order Messages" class="dd-item ">
+        <a href="../../../1.7/back-office/customer-service/order-messages/order-messages.html">
+        Order Messages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/addresses.html" title="Addresses" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customers/addresses.html">
+          <span>
+            Addresses
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/addresses/add-edit-addresses.html" title="Add/edit addresses" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/addresses/add-edit-addresses.html">
+        Add/edit addresses
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/addresses/addresses-listing.html" title="Addresses listing" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/addresses/addresses-listing.html">
+        Addresses listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/customers/customers.html" title="Customers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/customers/customers.html">
+          <span>
+            Customers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/add-edit-customer.html" title="Add edit customer" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/customers/add-edit-customer.html">
+        Add edit customer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/customers-listing.html" title="Customers listing" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/customers/customers-listing.html">
+        Customers listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/list.html" title="List" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/customers/list.html">
+        List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/outstanding-listing.html" title="Outstanding" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/customers/outstanding-listing.html">
+        Outstanding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/customers/customers/view-customer.html" title="View customer" class="dd-item ">
+        <a href="../../../1.7/back-office/customers/customers/view-customer.html">
+        View customer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/dashboard.html" title="Dashboard" class="dd-item
+        parent
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/dashboard.html">
+          <span>
+            Dashboard
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-up"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/dashboard/dashboard.html" title="Dashboard" class="dd-item active currentPage">
+        <a href="../../../1.7/back-office/dashboard/dashboard.html">
+        Dashboard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/dashboard/dashboard-configure.html" title="Dashboard Configure" class="dd-item ">
+        <a href="../../../1.7/back-office/dashboard/dashboard-configure.html">
+        Dashboard Configure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design.html" title="Design" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design.html">
+          <span>
+            Design
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/email-theme.html" title="Email Theme" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/design/email-theme.html">
+          <span>
+            Email Theme
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/image-settings.html" title="Image Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design/image-settings.html">
+          <span>
+            Image Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/add-edit-image-setting.html" title="Add new Image type" class="dd-item ">
+        <a href="../../../1.7/back-office/design/image-settings/add-edit-image-setting.html">
+        Add new Image type
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/generation-options.html" title="Generation Options" class="dd-item ">
+        <a href="../../../1.7/back-office/design/image-settings/generation-options.html">
+        Generation Options
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/image-settings/regenerate-thumbnails.html" title="Regenerate Thumbnails" class="dd-item ">
+        <a href="../../../1.7/back-office/design/image-settings/regenerate-thumbnails.html">
+        Regenerate Thumbnails
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/link-widget.html" title="Link Widget" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design/link-widget.html">
+          <span>
+            Link Widget
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/link-widget/link-widget-listing.html" title="Link Widget (Link List)" class="dd-item ">
+        <a href="../../../1.7/back-office/design/link-widget/link-widget-listing.html">
+        Link Widget (Link List)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/pages.html" title="Pages" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design/pages.html">
+          <span>
+            Pages
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/pages/pages.html" title="Pages" class="dd-item ">
+        <a href="../../../1.7/back-office/design/pages/pages.html">
+        Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/positions.html" title="Positions" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design/positions.html">
+          <span>
+            Positions
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/positions/transplant-a-module-listing.html" title="Transplant a module" class="dd-item ">
+        <a href="../../../1.7/back-office/design/positions/transplant-a-module-listing.html">
+        Transplant a module
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/positions/view-positions.html" title="View positions" class="dd-item ">
+        <a href="../../../1.7/back-office/design/positions/view-positions.html">
+        View positions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-and-logo.html" title="Themes &amp; Logo" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/design/themes-and-logo.html">
+          <span>
+            Themes &amp; Logo
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/theme-logo.html" title="Theme &amp; Logo" class="dd-item ">
+        <a href="../../../1.7/back-office/design/themes-and-logo/theme-logo.html">
+        Theme &amp; Logo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/themelogo-add-new-theme.html" title="Theme&amp;logo add new theme" class="dd-item ">
+        <a href="../../../1.7/back-office/design/themes-and-logo/themelogo-add-new-theme.html">
+        Theme&amp;logo add new theme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/themelogo-choose-layouts.html" title="Theme&amp;logo choose layouts" class="dd-item ">
+        <a href="../../../1.7/back-office/design/themes-and-logo/themelogo-choose-layouts.html">
+        Theme&amp;logo choose layouts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/design/themes-and-logo/themelogo-listing.html" title="Theme&amp;logo listing" class="dd-item ">
+        <a href="../../../1.7/back-office/design/themes-and-logo/themelogo-listing.html">
+        Theme&amp;logo listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/design/themes-catalog.html" title="Themes Catalog" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/design/themes-catalog.html">
+          <span>
+            Themes Catalog
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/multistoregeneralspecs.html" title="General MultiStore Back Office" class="dd-item ">
+        <a href="../../../1.7/back-office/multistoregeneralspecs.html">
+        General MultiStore Back Office
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international.html" title="International" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international.html">
+          <span>
+            International
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/localization.html" title="Localization" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/localization.html">
+          <span>
+            Localization
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/add-edit-language.html" title="Add edit language" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/add-edit-language.html">
+        Add edit language
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/currencies.html" title="Currencies" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/currencies.html">
+        Currencies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/languages.html" title="Languages" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/languages.html">
+        Languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/view-languages.html" title="Languages" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/view-languages.html">
+        Languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/localization.html" title="Localization" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/localization.html">
+        Localization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/localization/view-geolocation.html" title="View geolocation" class="dd-item ">
+        <a href="../../../1.7/back-office/international/localization/view-geolocation.html">
+        View geolocation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations.html" title="Locations" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/locations.html">
+          <span>
+            Locations
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations/countries.html" title="Countries" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/locations/countries.html">
+          <span>
+            Countries
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/countries/add-edit-country.html" title="Add edit country" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/countries/add-edit-country.html">
+        Add edit country
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/countries/countries-listing.html" title="Countries listing" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/countries/countries-listing.html">
+        Countries listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations/states.html" title="States" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/locations/states.html">
+          <span>
+            States
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/states/add-edit-state.html" title="Add edit state" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/states/add-edit-state.html">
+        Add edit state
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/states/states-listing.html" title="States listing" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/states/states-listing.html">
+        States listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/zones.html" title="Zones" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/zones.html">
+        Zones
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/locations/zones.html" title="Zones" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/locations/zones.html">
+          <span>
+            Zones
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/zones/add-edit-zone.html" title="Add edit zone" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/zones/add-edit-zone.html">
+        Add edit zone
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/locations/zones/zones-listing.html" title="Zones listing" class="dd-item ">
+        <a href="../../../1.7/back-office/international/locations/zones/zones-listing.html">
+        Zones listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/taxes.html" title="Taxes" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/taxes.html">
+          <span>
+            Taxes
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/add-edit-taxes.html" title="Taxes Editing page" class="dd-item ">
+        <a href="../../../1.7/back-office/international/taxes/add-edit-taxes.html">
+        Taxes Editing page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/taxes-listing.html" title="Taxes Listing page" class="dd-item ">
+        <a href="../../../1.7/back-office/international/taxes/taxes-listing.html">
+        Taxes Listing page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/add-edit-tax-rules.html" title="Taxes Rules Editing page" class="dd-item ">
+        <a href="../../../1.7/back-office/international/taxes/add-edit-tax-rules.html">
+        Taxes Rules Editing page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/international-tax-rules-listing.html" title="Taxes Rules listing page" class="dd-item ">
+        <a href="../../../1.7/back-office/international/taxes/international-tax-rules-listing.html">
+        Taxes Rules listing page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/taxes/taxes.html" title="Taxes Tab" class="dd-item ">
+        <a href="../../../1.7/back-office/international/taxes/taxes.html">
+        Taxes Tab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/international/translations.html" title="Translations" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/international/translations.html">
+          <span>
+            Translations
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/international/translations/translations.html" title="Translations" class="dd-item ">
+        <a href="../../../1.7/back-office/international/translations/translations.html">
+        Translations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/login.html" title="Login into Back-Office" class="dd-item ">
+        <a href="../../../1.7/back-office/login.html">
+        Login into Back-Office
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-catalog.html" title="Module Catalog" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/modules/module-catalog.html">
+          <span>
+            Module Catalog
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-catalog/module-catalog.html" title="Module Catalog Page" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-catalog/module-catalog.html">
+        Module Catalog Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-catalog/module-selections.html" title="Module selections" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-catalog/module-selections.html">
+        Module selections
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/modules/module-manager.html" title="Module Manager" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/modules/module-manager.html">
+          <span>
+            Module Manager
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/alerts-and-updates-listing.html" title="Alerts Page" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-manager/alerts-and-updates-listing.html">
+        Alerts Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/alerts.html" title="Alerts Page" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-manager/alerts.html">
+        Alerts Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/modules-listing.html" title="Modules" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-manager/modules-listing.html">
+        Modules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/modules.html" title="Modules Page" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-manager/modules.html">
+        Modules Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/modules/module-manager/updates.html" title="Updates Page" class="dd-item ">
+        <a href="../../../1.7/back-office/modules/module-manager/updates.html">
+        Updates Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/credit-slips.html" title="Credit Slips" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/orders/credit-slips.html">
+          <span>
+            Credit Slips
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/credit-slips/view-credit-notes.html" title="View credit notes" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/credit-slips/view-credit-notes.html">
+        View credit notes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/delivery-slips.html" title="Delivery Slips" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/orders/delivery-slips.html">
+          <span>
+            Delivery Slips
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/delivery-slips/view-delivery-slips.html" title="Add / edit attribute value" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/delivery-slips/view-delivery-slips.html">
+        Add / edit attribute value
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/invoices.html" title="Invoices" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/orders/invoices.html">
+          <span>
+            Invoices
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/invoices/configure-delivery-slips.html" title="Delivery Slips Configuration" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/invoices/configure-delivery-slips.html">
+        Delivery Slips Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/invoices/configure-invoices.html" title="Invoices Configuration" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/invoices/configure-invoices.html">
+        Invoices Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/invoices/view-invoices.html" title="View invoices" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/invoices/view-invoices.html">
+        View invoices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/orders.html" title="Orders" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/orders/orders.html">
+          <span>
+            Orders
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/add.html" title="Add new order" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/orders/add.html">
+        Add new order
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/listing.html" title="Listing Page" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/orders/listing.html">
+        Listing Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/shopping-carts-listing.html" title="Shopping Carts listing" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/orders/shopping-carts-listing.html">
+        Shopping Carts listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/view-page.html" title="View Page" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/orders/view-page.html">
+        View Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/orders/orders/view-shopping-cart.html" title="View Shopping Cart listing" class="dd-item ">
+        <a href="../../../1.7/back-office/orders/orders/view-shopping-cart.html">
+        View Shopping Cart listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/orders/shopping-carts.html" title="Shopping Carts" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/orders/shopping-carts.html">
+          <span>
+            Shopping Carts
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment.html" title="Payment" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/payment.html">
+          <span>
+            Payment
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/payment-methods.html" title="Payment Methods" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/payment/payment-methods.html">
+          <span>
+            Payment Methods
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/payment/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/payment/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/payment/preferences/view-preferences.html" title="View preference" class="dd-item ">
+        <a href="../../../1.7/back-office/payment/preferences/view-preferences.html">
+        View preference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/quick-access.html" title="Quick access" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/quick-access.html">
+          <span>
+            Quick access
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/quick-access/add-edit-quick-access.html" title="Add / edit quick access" class="dd-item ">
+        <a href="../../../1.7/back-office/quick-access/add-edit-quick-access.html">
+        Add / edit quick access
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/quick-access/quick-access-listing.html" title="Quick access listing" class="dd-item ">
+        <a href="../../../1.7/back-office/quick-access/quick-access-listing.html">
+        Quick access listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping.html" title="Shipping" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shipping.html">
+          <span>
+            Shipping
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/carriers.html" title="Carriers" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shipping/carriers.html">
+          <span>
+            Carriers
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shipping/carriers/add-edit-carrier.html" title="Add/edit carrier" class="dd-item ">
+        <a href="../../../1.7/back-office/shipping/carriers/add-edit-carrier.html">
+        Add/edit carrier
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shipping/carriers/carriers-listing.html" title="Carriers listing" class="dd-item ">
+        <a href="../../../1.7/back-office/shipping/carriers/carriers-listing.html">
+        Carriers listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shipping/preferences.html" title="Preferences" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/shipping/preferences.html">
+          <span>
+            Preferences
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters.html" title="Shop Parameters" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters.html">
+          <span>
+            Shop Parameters
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/contact.html" title="Contact" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/contact.html">
+          <span>
+            Contact
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/add-edit-contacts.html" title="Add / edit contact" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/contact/add-edit-contacts.html">
+        Add / edit contact
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/contacts-listing.html" title="Contacts listing" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/contact/contacts-listing.html">
+        Contacts listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores.html" title="Stores" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/contact/stores.html">
+          <span>
+            Stores
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores/add-edit-store.html" title="Add / Edit Store" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/contact/stores/add-edit-store.html">
+        Add / Edit Store
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/contact/stores/stores-listing.html" title="Stores listing" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/contact/stores/stores-listing.html">
+        Stores listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings.html" title="Customer Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/customer-settings.html">
+          <span>
+            Customer Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/add-edit-social-titles.html" title="Add edit social titles" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/add-edit-social-titles.html">
+        Add edit social titles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/add-new-group.html" title="Add new group" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/add-new-group.html">
+        Add new group
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/view-customer-settings.html" title="Customer settings" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/view-customer-settings.html">
+        Customer settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/customers.html" title="Customers Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/customers.html">
+        Customers Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/edit-customer.html" title="Edit customer" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/edit-customer.html">
+        Edit customer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/edit-group.html" title="Edit group" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/edit-group.html">
+        Edit group
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/view-groups.html" title="Groups" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/view-groups.html">
+        Groups
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/groups.html" title="Groups Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/groups.html">
+        Groups Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/titles.html" title="Titles Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/titles.html">
+        Titles Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/view-group.html" title="View group" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/view-group.html">
+        View group
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/customer-settings/view-titles.html" title="View titles" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/customer-settings/view-titles.html">
+        View titles
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/general.html" title="General" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/general.html">
+          <span>
+            General
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/general/view-general.html" title="General view" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/general/view-general.html">
+        General view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/general/maintenance.html" title="Maintenance Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/general/maintenance.html">
+        Maintenance Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/merchant-expertise.html" title="Merchant Expertise" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/merchant-expertise.html">
+          <span>
+            Merchant Expertise
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/order-settings.html" title="Order Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/order-settings.html">
+          <span>
+            Order Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-statuses.html" title="Order Statuses" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/order-settings/order-statuses.html">
+        Order Statuses
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/order-settings/order-settings.html" title="Settings" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/order-settings/order-settings.html">
+        Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/product-settings.html" title="Product Settings" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/product-settings.html">
+          <span>
+            Product Settings
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/product-settings/page.html" title="Product Settings Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/product-settings/page.html">
+        Product Settings Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/search.html" title="Search" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/search.html">
+          <span>
+            Search
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/add-edit-alias.html" title="Add/edit alias" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/search/add-edit-alias.html">
+        Add/edit alias
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/search-listing.html" title="Search listing" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/search/search-listing.html">
+        Search listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/search.html" title="Search Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/search/search.html">
+        Search Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/search/tags.html" title="Tags" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/search/tags.html">
+          <span>
+            Tags
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/tags/add-edit-tag.html" title="Add / Edit tag" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/search/tags/add-edit-tag.html">
+        Add / Edit tag
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/search/tags/tags-listing.html" title="Tags listing" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/search/tags/tags-listing.html">
+        Tags listing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo.html" title="Traffic &amp; SEO" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo.html">
+          <span>
+            Traffic &amp; SEO
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-search-engine.html" title="Add new / edit search engine" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo/add-edit-search-engine.html">
+        Add new / edit search engine
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.html" title="Add new SEO page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo/add-edit-new-seo-page.html">
+        Add new SEO page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/drafted-configure-traffic-and-seo.html" title="Configure SEO and URLs" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo/drafted-configure-traffic-and-seo.html">
+        Configure SEO and URLs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/search-engines-listing.html" title="Search Engines" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo/search-engines-listing.html">
+        Search Engines
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html" title="SEO &amp; URLs Page" class="dd-item ">
+        <a href="../../../1.7/back-office/shop-parameters/traffic-and-seo/seo-and-urls-page.html">
+        SEO &amp; URLs Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/broader-topics.html" title="Broader Topics" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/broader-topics.html">
+          <span>
+            Broader Topics
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/ecotax.html" title="EcoTax" class="dd-item ">
+        <a href="../../../1.7/broader-topics/ecotax.html">
+        EcoTax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/image-file-formats.html" title="Image File Formats" class="dd-item ">
+        <a href="../../../1.7/broader-topics/image-file-formats.html">
+        Image File Formats
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/multistorespecialsspecs.html" title="Multistore Specials Cases" class="dd-item ">
+        <a href="../../../1.7/broader-topics/multistorespecialsspecs.html">
+        Multistore Specials Cases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/price-calculation-rules.html" title="Price Calculation" class="dd-item ">
+        <a href="../../../1.7/broader-topics/price-calculation-rules.html">
+        Price Calculation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/seo-rules-and-behaviours.html" title="SEO Rules &amp; Behaviours" class="dd-item ">
+        <a href="../../../1.7/broader-topics/seo-rules-and-behaviours.html">
+        SEO Rules &amp; Behaviours
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/broader-topics/symfony-migration.html" title="Symfony Migration" class="dd-item ">
+        <a href="../../../1.7/broader-topics/symfony-migration.html">
+        Symfony Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office.html" title="Front Office" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/front-office.html">
+          <span>
+            Front Office
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/checkout.html" title="Checkout" class="dd-item ">
+        <a href="../../../1.7/front-office/checkout.html">
+        Checkout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/customer-account.html" title="Customer Account" class="dd-item ">
+        <a href="../../../1.7/front-office/customer-account.html">
+        Customer Account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/front-office/discounts.html" title="Discounts" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/front-office/discounts.html">
+          <span>
+            Discounts
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/discounts/cart-rules-free-gift.html" title="Free Gift" class="dd-item ">
+        <a href="../../../1.7/front-office/discounts/cart-rules-free-gift.html">
+        Free Gift
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/maintenance.html" title="Maintenance Mode" class="dd-item ">
+        <a href="../../../1.7/front-office/maintenance.html">
+        Maintenance Mode
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-images.html" title="Product Images" class="dd-item ">
+        <a href="../../../1.7/front-office/product-images.html">
+        Product Images
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/products-list.html" title="Product List" class="dd-item ">
+        <a href="../../../1.7/front-office/products-list.html">
+        Product List
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/product-page.html" title="Product Page" class="dd-item ">
+        <a href="../../../1.7/front-office/product-page.html">
+        Product Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/search.html" title="Search" class="dd-item ">
+        <a href="../../../1.7/front-office/search.html">
+        Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/front-office/your-vouchers.html" title="Your vouchers" class="dd-item ">
+        <a href="../../../1.7/front-office/your-vouchers.html">
+        Your vouchers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/installer.html" title="Installer" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/installer.html">
+          <span>
+            Installer
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/installer/installer.html" title="Installer" class="dd-item ">
+        <a href="../../../1.7/installer/installer.html">
+        Installer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/modules.html" title="Modules" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/modules.html">
+          <span>
+            Modules
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/bank-transfer.html" title="Bank transfer" class="dd-item ">
+        <a href="../../../1.7/modules/bank-transfer.html">
+        Bank transfer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/contact-information.html" title="Contact information" class="dd-item ">
+        <a href="../../../1.7/modules/contact-information.html">
+        Contact information
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/cross-selling.html" title="Cross-selling" class="dd-item ">
+        <a href="../../../1.7/modules/cross-selling.html">
+        Cross-selling
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/dateofdelivery.html" title="Date Of Delivery" class="dd-item ">
+        <a href="../../../1.7/modules/dateofdelivery.html">
+        Date Of Delivery
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_facetedsearch.html" title="Faceted Search" class="dd-item ">
+        <a href="../../../1.7/modules/ps_facetedsearch.html">
+        Faceted Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/ps_linklist.html" title="Linklist" class="dd-item ">
+        <a href="../../../1.7/modules/ps_linklist.html">
+        Linklist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/mail-alerts.html" title="Mail alerts" class="dd-item ">
+        <a href="../../../1.7/modules/mail-alerts.html">
+        Mail alerts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/payments-by-check.html" title="Payments by check" class="dd-item ">
+        <a href="../../../1.7/modules/payments-by-check.html">
+        Payments by check
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/psthemecusto.html" title="Theme Customization" class="dd-item ">
+        <a href="../../../1.7/modules/psthemecusto.html">
+        Theme Customization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/wishlist.html" title="Wishlist" class="dd-item ">
+        <a href="../../../1.7/modules/wishlist.html">
+        Wishlist
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/autoupgrade.html" title="" class="dd-item ">
+        <a href="../../../1.7/modules/autoupgrade.html">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/spec-templates.html" title="Templates" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/spec-templates.html">
+          <span>
+            Templates
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/functionnal-and-behaviors-specs-template.html" title="Functional and behaviors specs" class="dd-item ">
+        <a href="../../../1.7/spec-templates/functionnal-and-behaviors-specs-template.html">
+        Functional and behaviors specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/spec-templates/technical-characteristics-template.html" title="Technical characteristics specs" class="dd-item ">
+        <a href="../../../1.7/spec-templates/technical-characteristics-template.html">
+        Technical characteristics specs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+                      
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/ui-component.html" title="UI component" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="../../../1.7/ui-component.html">
+          <span>
+            UI component
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/language-selector.html" title="Language-Selector" class="dd-item ">
+        <a href="../../../1.7/ui-component/language-selector.html">
+        Language-Selector
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/progress-bar-modal.html" title="Progress Bar Modal" class="dd-item ">
+        <a href="../../../1.7/ui-component/progress-bar-modal.html">
+        Progress Bar Modal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/settings-wheel.html" title="Settings Wheel" class="dd-item ">
+        <a href="../../../1.7/ui-component/settings-wheel.html">
+        Settings Wheel
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/ui-component/shop-selector-modal.html" title="Shop Selector Modal" class="dd-item ">
+        <a href="../../../1.7/ui-component/shop-selector-modal.html">
+        Shop Selector Modal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+                  
+              
+          
+      
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p><a href="https://github.com/PrestaShop/PrestaShop/"><i class="fa fa-github" aria-hidden="true"></i> PrestaShop on GitHub</a></p>
+<p><a href="https://github.com/PrestaShop/PrestaShop/issues"><i class="fa fa-bug" aria-hidden="true"></i> Report a bug</a></p>
+<p><a href="https://www.prestashop-project.org/slack/readme/"><i class="fa fa-comment" aria-hidden="true"></i> Join us on Slack</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+
+      <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+<div>
+  <div id="top-bar">
+    
+      
+      <div id="top-github-link">
+        <a class="github-link" title='Improve this page' href="https://github.com/PrestaShop/prestashop-specs/edit/master/content/1.7/back-office/dashboard/dashboard.md" target="blank">
+          <i class="fa fa-pencil"></i>
+          <span id="top-github-link-text">Improve this page</span>
+        </a>
+        <a class="how-to-improve" href="https://devdocs.prestashop.com/1.7/contribute/documentation/how/">
+          <i class="fa fa-question-circle"></i>
+          <span>How</span>
+        </a>
+      </div>
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://schema.org/breadcrumb">
+      <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="links">
+        
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              <a href='../../../'>Home</a> > <a href='../../../1.7.html'>Specifications</a> > <a href='../../../1.7/back-office.html'>Back Office</a> > <a href='../../../1.7/back-office/dashboard.html'>Dashboard</a> > Dashboard
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+
+        
+        
+          
+            <div id="toc">
+  <div class="wrapper">
+    <div id="toc-title">Table of Contents</div>
+    
+    
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dashboard">Dashboard</a>
+      <ul>
+        <li><a href="#demo-mode">Demo mode</a></li>
+        <li><a href="#horizontal-bar">Horizontal bar</a>
+          <ul>
+            <li><a href="#date-range-selection">Date range selection</a></li>
+            <li><a href="#call-to-action">Call to action</a></li>
+          </ul>
+        </li>
+        <li><a href="#columns">Columns</a></li>
+        <li><a href="#central-column">Central column</a>
+          <ul>
+            <li><a href="#forecast-dashboard-goals-module">Forecast (Dashboard Goals module)</a>
+              <ul>
+                <li><a href="#call-to-action-1">Call to action</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+              </ul>
+            </li>
+            <li><a href="#dashboard-dashboard-trends-module">Dashboard (Dashboard Trends module)</a>
+              <ul>
+                <li><a href="#call-to-action-2">Call to action</a></li>
+                <li><a href="#tabs-1">Tabs</a></li>
+              </ul>
+            </li>
+            <li><a href="#products-and-sales-dashboard-products-module">Products and Sales (Dashboard Products module)</a>
+              <ul>
+                <li><a href="#call-to-action-3">Call to action</a></li>
+                <li><a href="#tabs-2">Tabs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#left-column">Left column</a>
+          <ul>
+            <li><a href="#activity-overview-dashboard-activity-module">Activity overview (Dashboard Activity module)</a>
+              <ul>
+                <li><a href="#call-to-action-4">Call to action</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <div id="navigation">
+  
+  
+
+  
+
+  
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+
+  
+  
+  <a class="nav nav-next" href="../../../1.7/back-office/dashboard/dashboard-configure.html" title="Dashboard Configure" style="margin-right: 0px;">
+    <i class="fa fa-chevron-right"></i>
+    Next article
+  </a>
+  
+</div>
+
+  </div>
+</div>
+
+          
+        
+
+        <div id="body-inner">
+
+          
+
+
+
+
+
+
+
+<h1 id="dashboard">Dashboard<a href="#dashboard"></a></h1><p>The dashboard is the default homepage of the back office, it gives a summary of the shop&rsquo;s daily activities and main statistics at a glance.
+The dashboard is divided into 4 main areas: a horizontal bar, and three columns.</p>
+
+<h2 id="demo-mode">Demo mode<a href="#demo-mode"></a></h2><ul>
+<li><strong>Demo mode</strong>: This toggle allows to enable or disable fake data. By default, it is disabled. When enabled, fake data are used. When disabled, the real store&rsquo;s data are used. The store&rsquo;s data are gathered by PrestaShop&rsquo;s statistics system.
+The following tooltip is displayed: &ldquo;This mode displays sample data so you can try your dashboard without real numbers.&rdquo;</li>
+</ul>
+
+<h2 id="horizontal-bar">Horizontal bar<a href="#horizontal-bar"></a></h2><p>At the top of the Dashboard, a single bar allows choosing the period of time for the currently displayed dashboard statistics. The following options are available:</p>
+<ul>
+<li><strong>Day</strong>: The current day</li>
+<li><strong>Month</strong>: The current month</li>
+<li><strong>Year</strong>: The current year (selected by default)</li>
+<li><strong>Day-1</strong>: The previous day</li>
+<li><strong>Month-1</strong>: The previous month</li>
+<li><strong>Year-1</strong>: The previous year</li>
+</ul>
+<p>Choosing an option updates all the blocks that are on the Dashboard, so they display data for the chosen period of time only. Blocks that are not stats-based do not change.</p>
+
+<h3 id="date-range-selection">Date range selection<a href="#date-range-selection"></a></h3><p>On the right, a date picker allows selecting a precise date range. By default, the date range depends on which time frame is selected.</p>
+<p>After the calendar is extended, 2 fields &ldquo;from&rdquo; and &ldquo;to&rdquo; for date ranges are displayed. In order to choose a period of time, you can either click the first and last date of that period in the calendar or type the dates in the YYYY-MM-DD format in the fields.</p>
+<p>Two periods of time can be compared together by checking the &ldquo;Compare to&rdquo; box.
+Once checked, the second period can be selected either through the same 2 fields &ldquo;from&rdquo; and &ldquo;to&rdquo; or through the drop-down allowing to select:</p>
+<ul>
+<li>Previous period</li>
+<li>Previous year</li>
+<li>Custom</li>
+</ul>
+<p>If a personalized range is indicated in the &ldquo;from&rdquo; and &ldquo;to&rdquo; fields, then the option &ldquo;custom&rdquo; is automatically selected in the drop-down.</p>
+<p>When comparing two periods, the blocks on the Dashboard are updated to indicate the evolution of the data.</p>
+<p>If the selected dates are incorrect, the following error message is displayed: &ldquo;The selected date range is not valid.&rdquo;</p>
+
+<h3 id="call-to-action">Call to action<a href="#call-to-action"></a></h3><p>2 buttons are located at the bottom:</p>
+<ul>
+<li><strong>Cancel</strong> - Closes the tab and keeps the previous selection.</li>
+<li><strong>Apply</strong> - Closes the tab and displays the results for the selection.</li>
+</ul>
+
+<h2 id="columns">Columns<a href="#columns"></a></h2><p>There are 3 columns in the dashboard:</p>
+<ul>
+<li>the left column: this column presents the data from the Dashboard Activity module</li>
+<li>the central column: there are three blocks in this column, which are handled by modules</li>
+<li>the right column: this column presents a &ldquo;PrestaShop upgrade&rdquo; block</li>
+</ul>
+
+<h2 id="central-column">Central column<a href="#central-column"></a></h2>
+<h3 id="forecast-dashboard-goals-module">Forecast (Dashboard Goals module)<a href="#forecast-dashboard-goals-module"></a></h3><p>This block presents the goals defined for the coming months, and how the shop is doing as compared to them. When hovering the graphic with the mouse, the details are displayed.</p>
+
+<h4 id="call-to-action-1">Call to action<a href="#call-to-action-1"></a></h4><p>Firstly, 2 buttons to navigate between years are displayed:</p>
+<ul>
+<li><strong>Previous arrow</strong> - when pressed, the forecast of the previous year is displayed.</li>
+<li><strong>Next arrow</strong> - when pressed, the forecast of the following year is displayed.</li>
+</ul>
+<p>On the right of the block, 2 buttons are displayed:</p>
+<ul>
+<li>
+<p><strong>Configure</strong> - Depending on the monthly results, the user can update his forthcoming goals by clicking on this button. When pressed, the forecast graph disappears and a configuration table with the following 5 columns is displayed:</p>
+</li>
+<li>
+<p>Months: The 12 months of the year are displayed</p>
+</li>
+<li>
+<p>Traffic: The user can update his forthcoming traffic in this field.</p>
+</li>
+<li>
+<p>Conversion rate (%): The user can update his forthcoming conversion rate in this field.</p>
+</li>
+<li>
+<p>Average cart value (default currency): The user can update his forthcoming average cart value (in the default currency) in this field.</p>
+</li>
+<li>
+<p>Sales: This column will be updated according to the goals set in the other columns (for instance, for a 1000 visitors with a 2% conversion rate and a $10 average cart, you would get 1000*(2/100)*10 = $200).</p>
+</li>
+<li>
+<p><strong>Save</strong> -  When this button is pressed, the configuration is saved and the forecast stats are displayed.</p>
+</li>
+<li>
+<p><strong>Refresh</strong> - refreshes the graphic of the Forecast block.</p>
+</li>
+</ul>
+
+<h4 id="tabs">Tabs<a href="#tabs"></a></h4><p>4 tabs that can be selected to display the wanted graphic:</p>
+<ul>
+<li><strong>Traffic</strong></li>
+<li><strong>Conversion</strong></li>
+<li><strong>Average Cart Value</strong></li>
+<li><strong>Sales</strong></li>
+</ul>
+
+<h3 id="dashboard-dashboard-trends-module">Dashboard (Dashboard Trends module)<a href="#dashboard-dashboard-trends-module"></a></h3>
+<h4 id="call-to-action-2">Call to action<a href="#call-to-action-2"></a></h4><p>On the top right of this block, 2 buttons are displayed:</p>
+<ul>
+<li><strong>Configure</strong> - opens a new page where various expenses of the store can be configured, in order to better indicate the trends. <a href="https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard-configure.html" title="dashboard configure">dashboard-configure</a></li>
+<li><strong>Refresh</strong> - refreshes the stats of the shop.</li>
+</ul>
+
+<h4 id="tabs-1">Tabs<a href="#tabs-1"></a></h4><p>The following tabs are displayed and can be selected to display the evolution.</p>
+<ul>
+<li><strong>Sales</strong> - displays the sales amount in the default currency tax excluded within the date range. A tooltip is displayed: &ldquo;Sum of revenue (excl. tax) generated within the range by orders considered validated.&rdquo;.</li>
+<li><strong>Orders</strong> - displays the number of orders within the date range. A tooltip is displayed: &ldquo;Total number of orders received within the date range that are considered validated.&rdquo;.</li>
+<li><strong>Cart Value</strong> - displays the average cart value in the default currency tax excluded within the date range. A tooltip is displayed: &ldquo;Average Cart Value is a metric representing the value of an average order within the date range. It is calculated by dividing Sales by Orders.&rdquo;.</li>
+<li><strong>Visits</strong> - displays the number of visits within the date range. A tooltip is displayed: &ldquo;Total number of visits within the date range. A visit is the period of time a user is actively engaged with your website.&rdquo;.</li>
+<li><strong>Conversion Rate</strong> - displays the conversion rate in percentage. A tooltip is displayed: &ldquo;Ecommerce Conversion Rate is the percentage of visits that resulted in an validated order.&rdquo;.</li>
+<li><strong>Net Profit</strong> - displays the net profit in the default currency tax excluded. A tooltip is displayed: &ldquo;Net profit is a measure of the profitability of a venture after accounting for all Ecommerce costs. You can provide these costs by clicking on the configuration icon right above here.&rdquo;.</li>
+</ul>
+<p>After selecting a tab, the corresponding graphic is displayed. When hovering the graphic with the mouse, the details are displayed.
+Additionally, when comparing two time periods, it displays the evolution of each figure in percentages.</p>
+
+<h3 id="products-and-sales-dashboard-products-module">Products and Sales (Dashboard Products module)<a href="#products-and-sales-dashboard-products-module"></a></h3><p>This block presents a table of the latest orders and a ranking of the products: bestsellers, most viewed, and top searches (as searched in the shop&rsquo;s search form, not from search engines).</p>
+
+<h4 id="call-to-action-3">Call to action<a href="#call-to-action-3"></a></h4><ul>
+<li><strong>Configure</strong> - The user can set the number of items to display in each by clicking on this button.
+When pressed, the stats disappear, and 4 dropdowns are displayed:</li>
+<li><strong>Number of &ldquo;Recent Orders&rdquo; to display</strong> - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.</li>
+<li><strong>Number of &ldquo;Best Sellers&rdquo; to display</strong> - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.</li>
+<li><strong>Number of &ldquo;Most Viewed&rdquo; to display</strong> - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.</li>
+<li><strong>Number of &ldquo;Top Searches&rdquo; to display</strong> - drop down with the following options: 5, 10, 20, 50. By default the number is set to 10.</li>
+<li><strong>Refresh</strong> - refreshes the stats of the Products and Sales block.</li>
+<li><strong>Save</strong> -  When this button is pressed, the configuration is saved and the product and sales stats are displayed.</li>
+</ul>
+
+<h4 id="tabs-2">Tabs<a href="#tabs-2"></a></h4><p>4 tabs can be selected:</p>
+<ul>
+<li><strong>Recent orders</strong> - when this tab is selected, a table with the last X orders is displayed (X depends to the number of Recent Orders to display selected in the configuration of this block).</li>
+</ul>
+<p>In this table, the following columns are displayed:
+- <strong>Customer name</strong> - After clicking on the name, the customer&rsquo;s view page is displayed.
+- <strong>Products</strong> - Displays the number of products of the order
+- <strong>Total Tax excl.</strong> of the order
+- <strong>Date</strong> of the order
+- <strong>Status</strong> of the order
+- A search button at the right of every line is displayed. When pressed, the order detail page of this order is displayed.</p>
+<ul>
+<li>
+<p><strong>Best sellers</strong> - when this tab is selected, a table with the following columns are displayed:</p>
+<ul>
+<li><strong>Image</strong></li>
+<li><strong>Product</strong></li>
+<li><strong>Category</strong></li>
+<li><strong>Total sold</strong></li>
+<li><strong>Sales</strong></li>
+<li><strong>Net profit</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Most viewed</strong> - when this tab is selected and if the &ldquo;Save global page views&rdquo; option from the &ldquo;Data mining for statistics&rdquo; module is disabled, the following message is displayed: &ldquo;You must enable the &ldquo;Save global page views&rdquo; option from the &ldquo;Data mining for statistics&rdquo; module in order to display the most viewed products, or use the Google Analytics module.&rdquo;</p>
+</li>
+</ul>
+<p>The following columns are displayed:</p>
+<pre><code>- **Image** - The image of the product is displayed.
+- **Product** - The product's name and price is displayed.
+- **Views** - The number of times the product has been viewed is displayed.
+- **Added to cart** - The number of times the product has been added to the cart is displayed.
+- **Purchased** - The number of times the product has been purchased is displayed.
+- **Percentage** - The percentage of how many times the product was bought is displayed.
+</code></pre>
+<ul>
+<li>
+<p><strong>Top searches</strong> - when this tab is selected, a table with the following columns are displayed:</p>
+<ul>
+<li><strong>Term</strong></li>
+<li><strong>Search</strong></li>
+<li><strong>Results</strong></li>
+</ul>
+</li>
+</ul>
+
+<h2 id="left-column">Left column<a href="#left-column"></a></h2>
+<h3 id="activity-overview-dashboard-activity-module">Activity overview (Dashboard Activity module)<a href="#activity-overview-dashboard-activity-module"></a></h3>
+<h4 id="call-to-action-4">Call to action<a href="#call-to-action-4"></a></h4><p>On the top right of this block there are 2 buttons:</p>
+<ul>
+<li><strong>Configure</strong> - when pressed, the activity overview is changed to a configuration block with the following parameters:
+<ul>
+<li><strong>Active cart</strong> - drop down with the following options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: &ldquo;How long (in minutes) a cart is to be considered as active after the last recorded change (default: 30 min).&rdquo;</li>
+<li><strong>Online visitors</strong> - drop down field with options: 15, 30, 45, 60, 90, 120. By default it is set to 30. The tooltip displays: &ldquo;How long (in minutes) a visitor is to be considered as online after their last action (default: 30min).&rdquo;</li>
+<li><strong>Abandoned cart (min)</strong> - input field measured by &ldquo;hrs&rdquo;. By default it is set to 24 mins. The tooltip displays: &ldquo;How long (in hours) after the last action a cart is to be considered as abandoned (default: 24 hrs).&rdquo;</li>
+<li><strong>Abandoned cart (max)</strong> - input field measured by &ldquo;hrs&rdquo;. By default it is set to 48 hours. The tooltip displays: &ldquo;How long (in hours) after the last action a cart is no longer to be considered as abandoned (default: 24 hrs).&rdquo;</li>
+<li>&ldquo;Save&rdquo; - When this button is pressed, the configuration is saved and the Dashboard Activity is displayed.</li>
+</ul>
+</li>
+<li><strong>Refresh</strong> - refreshes the stats of the Activity Overview block.</li>
+</ul>
+<p>Below in a table, these shop parameters are listed below:</p>
+<ul>
+<li>
+<p><strong>Online visitors</strong></p>
+</li>
+<li>
+<p><strong>Active shopping carts</strong></p>
+</li>
+<li>
+<p><strong>Currently Pending</strong></p>
+<ul>
+<li><strong>Orders</strong> - when pressed, redirects to the Orders list page.</li>
+<li><strong>Return/Exchanges</strong> - when pressed, redirects to the Merchandise Returns page.</li>
+<li><strong>Abandoned Carts</strong> - when pressed, redirects to the Shopping Carts list page.</li>
+<li><strong>Out of stock products</strong> - when pressed, redirects to the Monitoring page.</li>
+</ul>
+</li>
+<li>
+<p><strong>Notifications</strong></p>
+<ul>
+<li><strong>New Messages</strong> - when pressed, redirects to the Customer Service page.</li>
+<li><strong>Product Reviews</strong> - It&rsquo;s displayed only if the module product comments is installed and enabled. When pressed, redirects to the Configuration page of the product comments module</li>
+</ul>
+</li>
+<li>
+<p><strong>Customers &amp; Newsletters (Displays the time frame which is enabled)</strong></p>
+<ul>
+<li><strong>New customers</strong> - when pressed, redirects to the Customers list page.</li>
+<li><strong>New subscriptions</strong> - when pressed, redirects to the Stats &gt; Newsletter page.</li>
+<li><strong>Total subscribers</strong> - when pressed, redirects to the configuration&rsquo;s page of the ps_emailsubscription module</li>
+</ul>
+</li>
+<li>
+<p><strong>Traffic (Displays the time frame which is enabled)</strong></p>
+<ul>
+<li><strong>Link to your Google Analytics account</strong> - when pressed, redirects to the Module manager page.</li>
+<li><strong>Visits</strong> - when pressed, redirects to the Stats &gt; Stats dashboard page.</li>
+<li><strong>Unique visitors</strong> - when pressed, redirects to the Stats &gt; Visits and visitors page.</li>
+<li><strong>Traffic Sources</strong> - the sources from which the shop is reached are displayed in a circle graph below the statistics.</li>
+</ul>
+</li>
+</ul>
+
+
+<footer class="article-footer">
+	
+
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1737097535"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1737097535"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1737097535"></script>
+    <script src="../../../js/jquery.sticky.js?1737097535"></script>
+    <script src="../../../js/featherlight.min.js?1737097535"></script>
+    <script src="../../../js/html5shiv-printshiv.min.js?1737097535"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1737097535"></script>
+    <script src="../../../js/learn.js?1737097535"></script>
+    <script src="../../../js/hugo-learn.js?1737097535"></script>
+    
+    <script src="../../../main.js?1737097535"></script>
+    
+    
+    
+
+
+  </body>
+</html>
+

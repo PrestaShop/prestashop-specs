@@ -5,16 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses.html</link>
     <description>Recent content in Addresses on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Add / Edit Page</title>
-      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</link>
+      <title>Add/edit addresses</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit-addresses.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit.html</guid>
-      <description>To save or change a Back-Office address, the following field must be filled in:
- the first name, last name, address1, country city  The others fields are optional</description>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/add-edit-addresses.html</guid>
+      <description>Add/edit addressesIn this page 16 input fields are presented:&#xA;Customer email - this field is mandatory, when trying to save without input in this field, a message by the field will appear: &amp;ldquo;Please fill out this field.&amp;rdquo;. If an incorrect email address input, a message by the field appears: &amp;ldquo;Please enter an email address&amp;rdquo;. If the customer&amp;rsquo;s email isn&amp;rsquo;t registered on the shop, when saving, will show the following error: &amp;ldquo;This email address is not registered&amp;rdquo;.</description>
     </item>
-    
+    <item>
+      <title>Addresses listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/addresses-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/addresses/addresses-listing.html</guid>
+      <description>Addresses listing Call to actionA call to actions is displayed in the header of this page:&#xA;Add new zone 👉 See the specs of the add edit addresses&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:&#xA;Refresh list After clicking on it, the page is reloaded. Sorts and searches are kept.&#xA;Show SQL query After clicking on it, the SQL query is displayed in a modal.</description>
+    </item>
   </channel>
 </rss>

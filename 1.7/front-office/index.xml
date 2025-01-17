@@ -5,93 +5,63 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/front-office.html</link>
     <description>Recent content in Front Office on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/front-office/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/front-office/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Checkout</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/checkout.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/checkout.html</guid>
-      <description>SPECIFICATIONS - CHECKOUT [TO BE COMPLETED]
-Personal information step Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It should indicate the name of the company processing the order.
-Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It stands for the SIRET of the company.</description>
+      <description>SPECIFICATIONS - CHECKOUT[TO BE COMPLETED]&#xA;Personal information stepCompany. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It should indicate the name of the company processing the order.&#xA;Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It stands for the SIRET of the company.</description>
     </item>
-    
     <item>
       <title>Customer Account</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/customer-account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/customer-account.html</guid>
-      <description>SPECIFICATIONS - CUSTOMER ACCOUNT [TO BE COMPLETED]
-Personal information [TO BE COMPLETED]
-Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It displays the name of the company, as written in the BO.
-Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office.</description>
+      <description>SPECIFICATIONS - CUSTOMER ACCOUNT[TO BE COMPLETED]&#xA;Personal information[TO BE COMPLETED]&#xA;Company. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office. It displays the name of the company, as written in the BO.&#xA;Identification number. Optional field displayed if the merchant has enabled the B2B mode in the Shop Parameters &amp;gt; Customers Settings section of the back office.</description>
     </item>
-    
     <item>
       <title>Maintenance Mode</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/maintenance.html</guid>
-      <description>SPECIFICATIONS - MAINTENANCE MODE Authorized ip addresses I want to be able to access the front office during maintenance mode from some ip addresses.
-In the back office&amp;rsquo;s Shop Parameters &amp;gt; Maintenance page, you can allow a set of ip v4 address to access the front office. Since 1.7.8 you can add ip v6 addresses and ip subnet cf. issue #16032.
-Ip subnet has to be in CIDR format : something like x.</description>
+      <description>SPECIFICATIONS - MAINTENANCE MODE Authorized ip addressesI want to be able to access the front office during maintenance mode from some ip addresses.&#xA;In the back office&amp;rsquo;s Shop Parameters &amp;gt; Maintenance page, you can allow a set of ip v4 address to access the front office. Since 1.7.8 you can add ip v6 addresses and ip subnet cf. issue #16032.&#xA;Ip subnet has to be in CIDR format : something like x.</description>
     </item>
-    
     <item>
       <title>Product Images</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-images.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-images.html</guid>
-      <description>Managing product images in front-office Current context In 1.7.7, it has been decided to introduce a change in behaviour in product thumbnails following a topwatchers issue : [#12241] (https://github.com/PrestaShop/PrestaShop/issues/12241). To ensure this change did not impact developers&#39; modules, we have also let the possibility to override the image used as cover. The following specs aim at detailing what are the different behaviours, in back-office and front office listings and product pages.</description>
+      <description>Managing product images in front-officeCurrent context In 1.7.7, it has been decided to introduce a change in behaviour in product thumbnails following a topwatchers issue : [#12241] (https://github.com/PrestaShop/PrestaShop/issues/12241). To ensure this change did not impact developers&amp;rsquo; modules, we have also let the possibility to override the image used as cover. The following specs aim at detailing what are the different behaviours, in back-office and front office listings and product pages.</description>
     </item>
-    
     <item>
       <title>Product List</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/products-list.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/products-list.html</guid>
-      <description>SPECIFICATIONS - THEME CLASSIC - PRODUCTS LIST Product thumbnail Link to the product The picture area and the product name are linked to the product page. The flags and the white area are not linked.
-On hover, the white area deploys vertically to reveal the &amp;ldquo;Quick view&amp;rdquo; link. The &amp;ldquo;Quick view&amp;rdquo; link opens a modal to preview the product.</description>
+      <description>SPECIFICATIONS - THEME CLASSIC - PRODUCTS LIST Product thumbnail Link to the productThe picture area and the product name are linked to the product page. The flags and the white area are not linked.&#xA;On hover, the white area deploys vertically to reveal the &amp;ldquo;Quick view&amp;rdquo; link. The &amp;ldquo;Quick view&amp;rdquo; link opens a modal to preview the product.</description>
     </item>
-    
     <item>
       <title>Product Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/product-page.html</guid>
-      <description>SPECIFICATIONS - PRODUCT PAGE [TO BE COMPLETED]
-Prices If a product has a discount, merchants can choose to display the discounted price on the product page (in Shop Parameters &amp;gt; Product Settings). By default, this setting is disabled so the discounted price should not appear in the front office.</description>
+      <description>SPECIFICATIONS - PRODUCT PAGE[TO BE COMPLETED]&#xA;PricesIf a product has a discount, merchants can choose to display the discounted price on the product page (in Shop Parameters &amp;gt; Product Settings). By default, this setting is disabled so the discounted price should not appear in the front office.</description>
     </item>
-    
     <item>
       <title>Search</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/search.html</guid>
-      <description>SPECIFICATIONS - SEARCH [TO BE COMPLETED]
-Empty search results If the visitor&amp;rsquo;s search is unsuccessful, the page should display the following message:
-No matches were found for your search in Shop.Theme.Catalog Please try other keywords to describe what you are looking for. in Shop.Theme.Catalog
-A search bar is available right below to allow visitors to try another query: Search our catalog in Shop.Theme.Global.
-Empty catalog pages If the visitor reaches a page that contains no product, the page should display the following message:</description>
+      <description>SPECIFICATIONS - SEARCH[TO BE COMPLETED]&#xA;Empty search resultsIf the visitor&amp;rsquo;s search is unsuccessful, the page should display the following message:&#xA;No matches were found for your search in Shop.Theme.Catalog Please try other keywords to describe what you are looking for. in Shop.Theme.Catalog&#xA;A search bar is available right below to allow visitors to try another query: Search our catalog in Shop.Theme.Global.&#xA;Empty catalog pagesIf the visitor reaches a page that contains no product, the page should display the following message:</description>
     </item>
-    
     <item>
       <title>Your vouchers</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/front-office/your-vouchers.html</guid>
-      <description>Rules of the vouchers displayed in the customer&amp;rsquo;s account in front-office Vouchers are displayed in the customer account in the front-office, according to their parameters:
-On the table below are listed all the different cases.
-   Cases Code Highlighted Group restriction User restriction Available in the FO vouchers page?     1 Yes or No Yes Yes or No Yes or No Yes   2 Yes or No Yes or No Yes or No Yes Yes   3 Yes No No No No   4 No No Yes No Yes   5 No No No No Yes   6 Yes No Yes No No    When there is no voucher for the customer, the page displays a notification: You do not have any vouchers.</description>
+      <description>Rules of the vouchers displayed in the customer&amp;rsquo;s account in front-officeVouchers are displayed in the customer account in the front-office, according to their parameters:&#xA;On the table below are listed all the different cases.&#xA;Cases Code Highlighted Group restriction User restriction Available in the FO vouchers page? 1 Yes or No Yes Yes or No Yes or No Yes 2 Yes or No Yes or No Yes or No Yes Yes 3 Yes No No No No 4 No No Yes No Yes 5 No No No No Yes 6 Yes No Yes No No When there is no voucher for the customer, the page displays a notification: You do not have any vouchers.</description>
     </item>
-    
   </channel>
 </rss>

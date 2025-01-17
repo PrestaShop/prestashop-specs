@@ -5,17 +5,21 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office.html</link>
     <description>Recent content in Back Office on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General MultiStore Back Office</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/multistoregeneralspecs.html</guid>
-      <description>SPECS GENERAL MULTISTORE BACK-OFFICE As a merchant I need to be able to correctly manage all my stores
-WHAT Thus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It&amp;rsquo;s the general behavior. Some pages can have specific behaviors, you can find these specific cases here
-SPECIFICATIONS Shop &amp;amp; shop group color From 1.7.8, while creating a shop or a group, the user can select a color as described in the specs to setup the multistore feature This color will be displayed in the multistore header for the selected shop or shop group.</description>
+      <description>SPECS GENERAL MULTISTORE BACK-OFFICEAs a merchant I need to be able to correctly manage all my stores&#xA;WHATThus, this project aims at specifying the current and expected behaviour when the multistore is enabled and when there are several stores. It&amp;rsquo;s the general behavior. Some pages can have specific behaviors, you can find these specific cases here&#xA;SPECIFICATIONS Shop &amp;amp; shop group colorFrom 1.7.8, while creating a shop or a group, the user can select a color as described in the specs to setup the multistore feature This color will be displayed in the multistore header for the selected shop or shop group.</description>
     </item>
-    
+    <item>
+      <title>Login into Back-Office</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/login.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/login.html</guid>
+      <description>PRESTASHOP AUTHENTICATION WINDOW&#xA;This page allows any authorized user to connect to the PrestaShop back-office.&#xA;Top UI Section The top section represents the Prestashop main title name and the Prestashop version, that the administrator is accessing. Prestashop version - 1.7.8.0. Middle UI Section Logo - PrestaShop&amp;rsquo;s logo. Shop name - the shop name, that was defined during the installation process of Prestashop application. Email address - email input - Email from a SuperAdmin or Employees acount must be used to log-in.</description>
+    </item>
   </channel>
 </rss>

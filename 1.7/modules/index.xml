@@ -5,67 +5,84 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/modules.html</link>
     <description>Recent content in Modules on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/modules/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bank transfer</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/bank-transfer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/bank-transfer.html</guid>
+      <description>Call to action Back When pressed redirect back to the module manager Modules &amp;gt; Module manager).&#xA;Translate When pressed, a pop-up opens with a drop-down, from which it is possible to select one of the languages installed on the shop to translate the module.&#xA;Check update Checks for updates on the module.&#xA;Manage hooks When pressed redirects to the Design &amp;gt; Positions).&#xA;The module has 3 sections for configurations:</description>
+    </item>
+    <item>
+      <title>Contact information</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/contact-information.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/contact-information.html</guid>
+      <description>Call to action Back When pressed redirect back to the module manager Modules &amp;gt; Module manager).&#xA;Translate When pressed, a pop-up opens with a drop-down, from which it is possible to select one of the languages installed on the shop to translate the module.&#xA;Check update Checks for updates on the module.&#xA;Manage hooks When pressed redirects to the Design &amp;gt; Positions).&#xA;The module has 2 sections for configurations:</description>
+    </item>
+    <item>
+      <title>Cross-selling</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/cross-selling.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/cross-selling.html</guid>
+      <description>Front-OfficeThe module when enabled allows cross-selling products to appear in the front office&#xA;Call to action Back When pressed redirect back to the module manager [Modules &amp;gt; Module manager]https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager.html &amp;ldquo;View module manager&amp;rdquo;)).&#xA;Translate When pressed, a pop-up opens with a drop-down, from which it is possible to select one of the languages installed on the shop to translate the module.&#xA;Check update Checks for updates on the module.&#xA;Manage hooks When pressed redirects to the Design &amp;gt; Positions).</description>
+    </item>
     <item>
       <title>Date Of Delivery</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/dateofdelivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/dateofdelivery.html</guid>
-      <description>Specifications for Date of delivery module In 1.7, the dateofdelivery module has never been integrated with Classic Theme, which results in the module not being displayed in front-office (when using the $hookDisplayBeforeCarrier). This specification aims at redefining available features with this module so that it is easier to make it work on PrestaShop 1.7.
-FRONT-OFFICE This module displays an approximate date of delivery during the checkout process. It should be displayed in the &amp;ldquo;Shipping&amp;rdquo; section of the process, as shown on the mock up below.</description>
+      <description>Specifications for Date of delivery moduleIn 1.7, the dateofdelivery module has never been integrated with Classic Theme, which results in the module not being displayed in front-office (when using the $hookDisplayBeforeCarrier). This specification aims at redefining available features with this module so that it is easier to make it work on PrestaShop 1.7.&#xA;FRONT-OFFICE This module displays an approximate date of delivery during the checkout process. It should be displayed in the &amp;ldquo;Shipping&amp;rdquo; section of the process, as shown on the mock up below.</description>
     </item>
-    
     <item>
       <title>Faceted Search</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_facetedsearch.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_facetedsearch.html</guid>
-      <description>ps_facetedsearch specifications The faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.
-This module has been massively reworked and keeps evolving frequently. This master issue (EPIC) allows to track the status of the module and follow its improvements : https://github.com/PrestaShop/PrestaShop/issues/9684
-Introduction
-The module displays a block on category pages with layered navigation filters.</description>
+      <description>ps_facetedsearch specificationsThe faceted navigation displays a block with different criteria available to filter the products, mostly attributes, features, and price ranges. It is very handy to help the customers easily find a product.&#xA;This module has been massively reworked and keeps evolving frequently. This master issue (EPIC) allows to track the status of the module and follow its improvements : https://github.com/PrestaShop/PrestaShop/issues/9684&#xA;Introduction&#xA;The module displays a block on category pages with layered navigation filters.</description>
     </item>
-    
     <item>
       <title>Linklist</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_linklist.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/ps_linklist.html</guid>
-      <description>SPECS MULTISTORE LINKLIST MODULE As a merchant I need to be able to display different links in the front office depending on my stores
-WHAT Thus, this project aims at specifying the current and expected behaviour of the module when the multistore is enabled and when there are several stores.
-SPECIFICATIONS Multisotre header The multistore header is displayed, the specifications of this component are described in the multistore general specs in back-office/multistoregeneralspecs.</description>
+      <description>SPECS MULTISTORE LINKLIST MODULEAs a merchant I need to be able to display different links in the front office depending on my stores&#xA;WHATThus, this project aims at specifying the current and expected behaviour of the module when the multistore is enabled and when there are several stores.&#xA;SPECIFICATIONS Multistore headerThe multistore header is displayed, the specifications of this component are described in the multistore general specs in back-office/multistoregeneralspecs.md</description>
     </item>
-    
+    <item>
+      <title>Mail alerts</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/mail-alerts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/mail-alerts.html</guid>
+      <description>Call to action Back When pressed redirect back to the module manager Modules &amp;gt; Module manager).&#xA;Translate When pressed, a pop-up opens with a drop-down, from which it is possible to select one of the languages installed on the shop to translate the module.&#xA;Check update Checks for updates on the module.&#xA;Manage hooks When pressed redirects to the Design &amp;gt; Positions).&#xA;The module has 3 sections for configurations:</description>
+    </item>
+    <item>
+      <title>Payments by check</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/modules/payments-by-check.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/payments-by-check.html</guid>
+      <description>Front-OfficeThe module when enabled appears within the payment methods when checking out can be selected as payment method.&#xA;Call to action Back When pressed redirect back to the module manager [Modules &amp;gt; Module manager]https://build.prestashop.com/prestashop-specs/1.7/back-office/modules/module-manager.html &amp;ldquo;View module manager&amp;rdquo;)).&#xA;Translate When pressed, a pop-up opens with a drop-down, from which it is possible to select one of the languages installed on the shop to translate the module.&#xA;Check update Checks for updates on the module.</description>
+    </item>
     <item>
       <title>Theme Customization</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/psthemecusto.html</guid>
       <description>When a module is disabled, the &amp;ldquo;Disable mobile&amp;rdquo; and &amp;ldquo;Enable mobile&amp;rdquo; options are hidden.</description>
     </item>
-    
     <item>
       <title>Wishlist</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/wishlist.html</guid>
-      <description>Wishlist native module functional specifications Feature 1: Add to favorites US 1: Add a product to a favorites list As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites list Several cases:
- Connected users Non-logged-in users Products with combinations &amp;amp; customizations  Functional rules: What type of users can add products to their favorites?</description>
+      <description>Wishlist native module functional specifications Feature 1: Add to favorites US 1: Add a product to a favorites list As a logged-in user, I can add a product to my favorites from the product sheet or any other product listing page with product blocks in a favorites listSeveral cases:&#xA;Connected users Non-logged-in users Products with combinations &amp;amp; customizations Functional rules: What type of users can add products to their favorites?</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/modules/autoupgrade.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/modules/autoupgrade.html</guid>
-      <description>Upgrade Options  Regenerate RTL stylesheet - toggle - Yes/No - All RTL files detected in the installed themes will be regenerated in the upgrade process  help text: If enabled, any RTL-specific files that you might have added to all your themes might be deleted by the created stylesheet</description>
+      <description>Upgrade Options Regenerate RTL stylesheet - toggle - Yes/No - All RTL files detected in the installed themes will be regenerated in the upgrade process help text: If enabled, any RTL-specific files that you might have added to all your themes might be deleted by the created stylesheet</description>
     </item>
-    
   </channel>
 </rss>

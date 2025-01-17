@@ -5,21 +5,35 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo.html</link>
     <description>Recent content in Themes &amp; Logo on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme &amp; Logo</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/theme-logo.html</guid>
-      <description>SPECIFICATIONS - DESIGN &amp;gt; THEME &amp;amp; LOGO &amp;gt; THEME &amp;amp; LOGO As a merchant, I want to be able to set up my store&amp;rsquo;s look.
-The page can have extra sections if:
- several themes are installed;
- the multistore feature is enabled;
- RTL languages are enabled;
- the MBO module is installed.  Header There are 4 buttons:
-  &amp;lsquo;Add new theme&amp;rsquo; button redirects to the Design &amp;gt; Theme &amp;amp; Logo &amp;gt; Add new theme page.</description>
+      <description>SPECIFICATIONS - DESIGN &amp;gt; THEME &amp;amp; LOGO &amp;gt; THEME &amp;amp; LOGOAs a merchant, I want to be able to set up my store&amp;rsquo;s look.&#xA;The page can have extra sections if:&#xA;several themes are installed;&#xA;the multistore feature is enabled;&#xA;RTL languages are enabled;&#xA;the MBO module is installed. HeaderThere are 4 buttons:&#xA;&amp;lsquo;Add new theme&amp;rsquo; button redirects to the Design &amp;gt; Theme &amp;amp; Logo &amp;gt; Add new theme page.</description>
     </item>
-    
+    <item>
+      <title>Theme&amp;logo add new theme</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-add-new-theme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-add-new-theme.html</guid>
+      <description>In this page theme for the shop can be uploaded.&#xA;Call to action Add new theme - does not redirect anywhere, refreshes the same page. Export current theme - when pressed redirects to the specs of the Theme&amp;amp;logo listing, also shows the message: &amp;ldquo;Your theme has been correctly exported: &amp;ldquo;URL of the theme location in your files&amp;rdquo;. Below there are 3 tables:&#xA;Import from your computer In here field named &amp;ldquo;Zip file&amp;rdquo; is present, it has a button: &amp;ldquo;Browse&amp;rdquo;, when pressed opens a window where a file can be chosen to upload.</description>
+    </item>
+    <item>
+      <title>Theme&amp;logo choose layouts</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-choose-layouts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-choose-layouts.html</guid>
+      <description>In this page 1 table is present for the shop layouts.&#xA;Choose layoutsBelow there 3 rows:&#xA;Page - by default there are 47 pages.&#xA;Description - by default there are 10 descriptions.&#xA;Layout, this section is a drop-down field, it has 4 selections when pressed:&#xA;Full Width - No side columns, ideal for distraction-free pages such as product pages. Three columns - One large central column and 2 side columns. Two small columns, small left column - Two columns with a small left column.</description>
+    </item>
+    <item>
+      <title>Theme&amp;logo listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/design/themes-and-logo/themelogo-listing.html</guid>
+      <description>Theme&amp;amp;logo listingIn this page the theme and logo of the selected shop is configured.&#xA;Call to actionFirstly 2 call to action buttons are displayed at the top:&#xA;Add new theme - when pressed redirects to the specs of the Theme&amp;amp;logo-add-new-theme&#xA;Export current theme - when pressed, exports the theme, and a green background message appears: &amp;ldquo;Your theme has been correctly exported: /var/www/html/PS1782/themes/classic.zip&amp;rdquo; Where it exports depends on the folders that Prestashop is created in, and the zip theme that is uploaded.</description>
+    </item>
   </channel>
 </rss>

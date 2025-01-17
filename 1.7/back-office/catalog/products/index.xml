@@ -5,52 +5,35 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products.html</link>
     <description>Recent content in Products on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Listing</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing.html</guid>
-      <description>SPECS LISTING PRODUCT PAGE 1. When there is 0 products The empty state card appears ONLY when there is no value (by default or created). It can also reappear IF the merchant decides to remove every existing value in the table.
-https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592
-2. Header In the header, there is &amp;ldquo;New product&amp;rdquo; button allowing to open the form to create a new product
-3. Top of the listing Settings wheel When clicking on it, 4 options are displayed:</description>
+      <description>SPECS LISTING PRODUCT PAGE 1. When there is 0 productsThe empty state card appears ONLY when there is no value (by default or created). It can also reappear IF the merchant decides to remove every existing value in the table.&#xA;https://projects.invisionapp.com/share/5FRLCBENAS4#/screens/358670592&#xA;2. HeaderIn the header, there is &amp;ldquo;New product&amp;rdquo; button allowing to open the form to create a new product&#xA;3. Top of the listing Settings wheelWhen clicking on it, 4 options are displayed:</description>
     </item>
-    
     <item>
       <title>Listing Page - 8.0</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/listing-v2.html</guid>
-      <description>SPECS LISTING PRODUCT PAGE V2 Empty state The empty state card appears WHEN there is no product
-Header  New product - Button - Opens the &amp;ldquo;Add new product modal&amp;rdquo;  If multistore is enabled then Shop-Selector-Modal (title: &amp;ldquo;Add new product&amp;rdquo;) is opened before the &amp;ldquo;Add new product modal&amp;rdquo;
-Top of the listing   Settings wheel component
-  Bulk actions - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled</description>
+      <description>SPECS LISTING PRODUCT PAGE V2 Empty stateThe empty state card appears WHEN there is no product&#xA;Header New product - Button - Opens the &amp;ldquo;Add new product modal&amp;rdquo; If multistore is enabled then Shop-Selector-Modal (title: &amp;ldquo;Add new product&amp;rdquo;) is opened before the &amp;ldquo;Add new product modal&amp;rdquo;&#xA;Top of the listing Settings wheel component&#xA;Bulk actions - Dropdown - When a product is selected, THEN the dropdown is enabled, otherwise it is disabled</description>
     </item>
-    
     <item>
       <title>Product Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit.html</guid>
-      <description>SPECS PRODUCT PAGE As a merchant I need to be able to correctly create, edit and delete my products.
-WHY The add / edit product page (Catalog &amp;gt; Products) has already been migrated to Symfony for the 1.7.0 version, but many behaviours are not specified which have introduced regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test and avoid any new bugs.</description>
+      <description>SPECS PRODUCT PAGEAs a merchant I need to be able to correctly create, edit and delete my products.&#xA;WHYThe add / edit product page (Catalog &amp;gt; Products) has already been migrated to Symfony for the 1.7.0 version, but many behaviours are not specified which have introduced regressions and bugs. We need to specify the whole behaviour of this page to make it easier to test and avoid any new bugs.</description>
     </item>
-    
     <item>
       <title>Product Page - 8.0</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/products/add-edit-v2.html</guid>
-      <description>SPECS PRODUCT PAGE Add a new product  As a merchant, when I create a new product, I want to select the type of product before.
-When I press add new product button, a modal is displayed.
-The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack). A simple product is selected by default.
-Each product type has its shorts&#39; description. Selecting a product type displays its description.</description>
+      <description>SPECS PRODUCT PAGE Add a new product As a merchant, when I create a new product, I want to select the type of product before.&#xA;When I press add new product button, a modal is displayed.&#xA;The modal lists all the PrestaShop product types (standard product, combination product, virtual product, and products’ pack). A simple product is selected by default.&#xA;Each product type has its shorts&amp;rsquo; description. Selecting a product type displays its description.</description>
     </item>
-    
   </channel>
 </rss>

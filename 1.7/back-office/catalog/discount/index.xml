@@ -5,30 +5,49 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount.html</link>
     <description>Recent content in Discount on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add/Edit Catalog Price Rules.md</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rules.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULES User Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.
-WHY The Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; DISCOUNTS &amp;gt; CATALOG PRICE RULESUser Story : As a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.&#xA;WHYThe Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.7.7 version, but many behaviours (especially for complex rules) are not well specified which may introduce regressions and bugs.</description>
     </item>
-    
+    <item>
+      <title>Adding and Editing cart rules</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-cart-price-rule.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-cart-price-rule.html</guid>
+      <description>Cart Rule &amp;gt; EditWhen you enter the Cart rule editing UI, there are 3 separate tabs - Information, Conditions and Actions. Each of them are combined together with the general cart rules functionality.&#xA;The explanations of the input fields, dropdowns, switch toggle buttons and text fields are stated below:&#xA;Information tab&#xA;Name - text field - it is a mandatory field with a language selector Description - text field - to describe the cart rule in more details.</description>
+    </item>
+    <item>
+      <title>Cart Price Rules listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rules-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/cart-rules-listing.html</guid>
+      <description>Catalog &amp;gt; Discounts &amp;gt; Cart RulesIt is an UI (user interface) where the user can view all the cart rules that has been created.&#xA;The UI elements of the listing page and Filtering funcionalitiesBy default, text input fields and date picker widgets are set to empty statuses.&#xA;New cart rule can be added by clicking the (+) Add new cart rule, or smaller (+) in the listing table Cart rules and numbering - indication, how many rules are there in this listing.</description>
+    </item>
+    <item>
+      <title>Catalog Price Rules</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/view-catalog-price-rules.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/view-catalog-price-rules.html</guid>
+      <description>Catalog &amp;gt; Discounts &amp;gt; Catalog Price Rules&#xA;This page is the main User Interface (UI) page, of all the Prestashop&amp;rsquo;s Catalog Price Rules in a one list-type of block.&#xA;User StoryAs a merchant I need to be able to correctly create and edit discounts to my customers based on specific conditions, such as product quantity or category, combinations or brands.&#xA;WhyThe Add/edit catalog price rule page (Catalog &amp;gt; Discounts &amp;gt; Catalog price rules) is expected to be migrated to Symfony for the 1.</description>
+    </item>
+    <item>
+      <title>Catalog Price Rules creation</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rule.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/add-edit-catalog-price-rule.html</guid>
+      <description>SpecificationsThe first step of this document is to detail global and generic expected behaviour for this page, both on back office and front office. The second step gives a specific definition of scenarios and behaviours involving conditions groups. The last step details specs for cases with several rules.&#xA;Creating Price rules for catalogsFirst Catalog price rule can be created by clicking on the blue button with plus on the top-right of the page - (+) Add new catalog price rule.</description>
+    </item>
     <item>
       <title>How does Cart Rule works ?</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/discount/how-does-cart-rule-works-.html</guid>
-      <description>Cart Rule when 2 vouchers applied to a cart have free shipping.
-2 vouchers should be applied but the shipping should be deducted once.
-If I applied 2 vouchers in a cart:
- Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift  Then
-Free shipping is applied once with a 5 % discount and a gift.
- When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
+      <description>Cart Rulewhen 2 vouchers applied to a cart have free shipping.&#xA;2 vouchers should be applied but the shipping should be deducted once.&#xA;If I applied 2 vouchers in a cart:&#xA;Voucher 1: Free Shipping + 5% Voucher 2: Free Shipping + Gift Then&#xA;Free shipping is applied once with a 5 % discount and a gift.&#xA;When a discount is applied for the cheapest product then the discount summary displays the value of the discount and not the percentage.</description>
     </item>
-    
   </channel>
 </rss>

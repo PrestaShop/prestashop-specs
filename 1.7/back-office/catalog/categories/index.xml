@@ -5,27 +5,35 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories.html</link>
     <description>Recent content in Categories on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add/edit category</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit-category.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit-category.html</guid>
+      <description>Add new/edit categoryIn this page 13 fields are shown:&#xA;Name Mandatory input field for the name. Below a text is displayed: &amp;ldquo;Invalid characters: &amp;lt;&amp;gt;;=#{}&amp;rdquo;. When trying to save with the field empty, a message is shown: &amp;ldquo;The field name is required at least in your default language.&amp;rdquo;. When trying to save with invalid characters, the following message is shown: &amp;ldquo;&amp;quot;input characters displayed&amp;rdquo; is invalid. - Language: displays the language the filed is in&amp;quot;.</description>
+    </item>
     <item>
       <title>Categories</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/categories.html</guid>
-      <description>SPECIFICATIONS - CATALOG &amp;gt; CATEGORIES Grid CategoryGridDefinitionFactory.php
- If the category has at least 1 children category  Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View   If the category does not have children category  Default action in the button: Edit Other available actions in the menu: Edit, Delete Row action: Edit    Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - CATALOG &amp;gt; CATEGORIES GridCategoryGridDefinitionFactory.php&#xA;If the category has at least 1 children category Default action in the button: View Other available actions in the menu: Edit, Delete Row action: View If the category does not have children category Default action in the button: Edit Other available actions in the menu: Edit, Delete Row action: Edit Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
     <item>
       <title>Category Page</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/add-edit.html</guid>
-      <description>SPECS CATEGORY PAGE As a merchant I need to be able to correctly create, edit and delete my categories.
-SPECIFICATIONS When I disable a category, I expect it to still be present in as a parent in the category tree (issue 14790)
-Group access When I add a category, all the customers groups should be selected by default, even the one created by the merchant (issue 20691)</description>
+      <description>SPECS CATEGORY PAGEAs a merchant I need to be able to correctly create, edit and delete my categories.&#xA;SPECIFICATIONSWhen I disable a category, I expect it to still be present in as a parent in the category tree (issue 14790)&#xA;Group accessWhen I add a category, all the customers groups should be selected by default, even the one created by the merchant (issue 20691)&#xA;Bottom description: Properties Values Error message Type field Text Area Allowed Caracters All Default value Empty Help Text N/A Upper limit 21844 Behavior - WHEN fullfilled THEN it displays bottom category description.</description>
     </item>
-    
+    <item>
+      <title>View categories</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/view-categories.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/catalog/categories/view-categories.html</guid>
+      <description>In this page the categories of the shop are shown.&#xA;Categories Call to action Add new category, when pressed redirects to the specs of the add new edit category Below there is a table with the following metrics:&#xA;Disabled categories Empty categories (can be pressed, when pressed redirects to the Monitoring page Top categories Average number of products per category And a &amp;ldquo;refresh&amp;rdquo; button, when pressed refreshes the metrics.&#xA;Below Home category location is shown, and there is an: &amp;ldquo;Edit&amp;rdquo; button, when pressed redirects to the specs of the add new edit category</description>
+    </item>
   </channel>
 </rss>

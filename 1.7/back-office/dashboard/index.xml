@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dashboard on PrestaShop Specs</title>
+    <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard.html</link>
+    <description>Recent content in Dashboard on PrestaShop Specs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dashboard</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard.html</guid>
+      <description>DashboardThe dashboard is the default homepage of the back office, it gives a summary of the shop&amp;rsquo;s daily activities and main statistics at a glance. The dashboard is divided into 4 main areas: a horizontal bar, and three columns.&#xA;Demo mode Demo mode: This toggle allows to enable or disable fake data. By default, it is disabled. When enabled, fake data are used. When disabled, the real store&amp;rsquo;s data are used.</description>
+    </item>
+    <item>
+      <title>Dashboard Configure</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard-configure.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/dashboard/dashboard-configure.html</guid>
+      <description>Dashboard configure3 blocks are displayed on this page:&#xA;Average bank fees per payment method Average shipping fees per shipping method Other settings Demo mode Demo mode: This toggle allows to enable or disable fake data. By default, it is disabled. When enabled, fake data are used. When disabled, the real store&amp;rsquo;s data are used. The store&amp;rsquo;s data are gathered by PrestaShop&amp;rsquo;s statistics system. The following tooltip is displayed: &amp;ldquo;This mode displays sample data so you can try your dashboard without real numbers.</description>
+    </item>
+  </channel>
+</rss>

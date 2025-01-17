@@ -5,17 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/installer.html</link>
     <description>Recent content in Installer on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/installer/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/installer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installer</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/installer/installer.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/installer/installer.html</guid>
-      <description>SPECIFICATIONS - INSTALLER [TO BE COMPLETED]
-System compatibility [TO BE COMPLETED]
-A warning notification should be displayed to let the users know about a possible limitation if the server configuration is too low, cf. to do #9561 issue: Limitation of the server configuration: the set_time_limit function must be enabled on your web server for PrestaShop to run correctly. in Install.</description>
+      <description>SPECIFICATIONS - INSTALLER[TO BE COMPLETED]&#xA;System compatibility[TO BE COMPLETED]&#xA;A warning notification should be displayed to let the users know about a possible limitation if the server configuration is too low, cf. to do #9561 issue: Limitation of the server configuration: the set_time_limit function must be enabled on your web server for PrestaShop to run correctly. in Install.</description>
     </item>
-    
   </channel>
 </rss>

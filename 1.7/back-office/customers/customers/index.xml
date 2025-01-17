@@ -5,16 +5,42 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers.html</link>
     <description>Recent content in Customers on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add edit customer</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/add-edit-customer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/add-edit-customer.html</guid>
+      <description>In this page the customer details are input.&#xA;Customer Social title Can be selected: &amp;ldquo;Mr.&amp;rdquo; or &amp;ldquo;Mrs.&amp;rdquo;&#xA;First name This field is mandatory, when trying to save with the field empty, will show a message: &amp;ldquo;please fill out this field.&amp;rdquo;. Below has a help text: &amp;ldquo;Only letters and the dot (.) character, followed by a space, are allowed.&amp;rdquo;. When trying to save with invalid characters entered, will show an error: &amp;ldquo;The &amp;ldquo;First name&amp;rdquo; field is invalid.</description>
+    </item>
+    <item>
+      <title>Customers listing</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/customers-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/customers-listing.html</guid>
+      <description>Customers listingIn this page, all of the shop customers registered are displayed.&#xA;Call to action Add new customer - redirects to the specs of the add/edit customer Below there is a table with the following metrics:&#xA;Customers all time Average age all time Orders per Customer all time Newsletter Registrations all time On the right of the table there is a refresh button, when pressed, updates the metrics.&#xA;Settings wheelWhen clicking on the settings wheel, the following options are displayed:</description>
+    </item>
     <item>
       <title>List</title>
       <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/list.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/list.html</guid>
-      <description>SPECIFICATIONS - CUSTOMERS &amp;gt; CUSTOMERS - LIST Grid CustomerGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: View, Delete Row action: View
-Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
+      <description>SPECIFICATIONS - CUSTOMERS &amp;gt; CUSTOMERS - LIST GridCustomerGridDefinitionFactory.php Default action in the button: Edit Other available actions in the menu: View, Delete Row action: View&#xA;Row action does not apply to the ID&amp;rsquo;s checkbox column and to columns with enable/disable actions.</description>
     </item>
-    
+    <item>
+      <title>Outstanding</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/outstanding-listing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/outstanding-listing.html</guid>
+      <description>SELL &amp;gt; CUSTOMERS &amp;gt; Outstanding&#xA;This UI is shown after Enabling the Enable B2B mode toggle switch in CONFIGURE &amp;gt; Customer Settings and it allows to track the B2B customer behavior.&#xA;Outstanding countingThe entries, that stored in this listing page, are produced by Visitor, Customer or Guest using Checkout process from Front-Office or adding a new Order in Back-Office.&#xA;Configuration of the new B2B input fields in Customer edit pageOnce the B2B mode is enabled, new input fields are displayed in the Customer edit page by navigating to Customers &amp;gt; Customers and editing the desired Customer.</description>
+    </item>
+    <item>
+      <title>View customer</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/view-customer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/customers/customers/view-customer.html</guid>
+      <description>In this section the information about the customer is presented.&#xA;Information about customerBelow there are 12 sections with infomration about the customer.&#xA;ColumnsCustomer name, number and email - on the right of this section is an edit button, when pressed redirects to specs of the add edit customer&#xA;Below the following information about the customer is displayed:&#xA;Social title: if the title is not input, just shows &amp;ldquo;Unknown&amp;rdquo; Age: if the title is not input, just shows &amp;ldquo;Unknown&amp;rdquo; Registration date Last visit Shop: shows the shop that the customer is registered on Language Registrations: shows the possible registrations, and in an red square if the customer is not registered there Latest Update Status: shows if the customer is active Orders - on the right of the title the number of orders is displayed.</description>
+    </item>
   </channel>
 </rss>

@@ -5,6 +5,14 @@
     <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs.html</link>
     <description>Recent content in Logs on PrestaShop Specs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>View logs</title>
+      <link>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs/view-logs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://build.prestashop.com/prestashop-specs/1.7/back-office/advanced-parameters/logs/view-logs.html</guid>
+      <description>Severity levelsIn this section the meaning of the logs is shown. 4 levels are presented&#xA;Meaning of severity levels:&#xA;Informative only, green coloured Warning - colored yellow Error Major issue (crash!) Settings wheel Erase all When clicking on the Erase all, a modal asks if you are sure to delete it, after clicking &amp;ldquo;OK&amp;rdquo; deletes all the logs, if pressed &amp;ldquo;Cancel&amp;rdquo;, closes the modal.&#xA;Refresh list After clicking on it, the page is reloaded.</description>
+    </item>
   </channel>
 </rss>
