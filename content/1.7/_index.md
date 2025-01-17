@@ -6,4 +6,4 @@ chapter: true
 
 # Specifications
 
-{{% children %}}
+{{% children /%}}

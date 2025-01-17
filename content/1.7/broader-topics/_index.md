@@ -6,4 +6,4 @@ pre: ""
 chapter: true
 ---
 
-{{% children %}}
+{{% children /%}}
